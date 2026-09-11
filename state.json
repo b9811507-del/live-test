@@ -3,6 +3,10 @@
   "malwa": {
    "book": "malwa_vol1",
    "bidx": 0
+  },
+  "iari": {
+   "book": "iari",
+   "bidx": 0
   }
  },
  "afo": {
@@ -42,7 +46,43 @@
      "128DIQLj:37"
     ]
    },
-   "iari": {},
+   "iari": {
+    "step": 0,
+    "go": 1789117200.0,
+    "deadline": 1789117830.0,
+    "nq": 21,
+    "title": "IARI BOOK MCQ 2026",
+    "pages": [
+     2,
+     2
+    ],
+    "book": "iari",
+    "bidx": 0,
+    "n_batches": 358,
+    "sn": [
+     "1sUgWsko:1",
+     "1sUgWsko:2",
+     "1sUgWsko:3",
+     "1sUgWsko:4",
+     "1sUgWsko:5",
+     "1sUgWsko:6",
+     "1sUgWsko:7",
+     "1sUgWsko:8",
+     "1sUgWsko:9",
+     "1sUgWsko:10",
+     "1sUgWsko:11",
+     "1sUgWsko:12",
+     "1sUgWsko:13",
+     "1sUgWsko:14",
+     "1sUgWsko:15",
+     "1sUgWsko:16",
+     "1sUgWsko:17",
+     "1sUgWsko:18",
+     "1sUgWsko:19",
+     "1sUgWsko:20",
+     "1sUgWsko:21"
+    ]
+   },
    "afo": {}
   }
  },
