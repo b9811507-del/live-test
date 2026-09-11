@@ -284,6 +284,7 @@ def bot_poller():
         print("paidbot crashed:", e)
 
 init()
+app = APP  # alias so `gunicorn app:app` resolves
 threading.Thread(target=bot_poller, daemon=True).start()
 
 if __name__ == "__main__":
