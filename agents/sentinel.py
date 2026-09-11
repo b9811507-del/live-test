@@ -7,7 +7,7 @@ import os, sys, json, time
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import llmsupport
+from renderapp import llmsupport
 
 R_URL = os.environ.get("RENDER_URL", "https://livescore-zp5w.onrender.com").rstrip("/")
 R_KEY = os.environ.get("RENDER_API_KEY", "")

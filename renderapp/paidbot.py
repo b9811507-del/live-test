@@ -11,8 +11,11 @@ DEMO_MODE=1: fake payment page. MT bridge (MT_URL) for member_limit=1 links when
 import os, sys, json, time, sqlite3, threading, re, base64
 import urllib.request, urllib.parse, html as _html
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))   # for llmsupport
-import llmsupport
+try:
+    import llmsupport
+except ImportError:  # when imported as renderapp.paidbot from repo root (agents/tests)
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import llmsupport
 
 TOKEN = os.environ.get("PAID_BOT_TOKEN", "8533597307:AAF_8uqRRxlQ0dKQQm5-o9KEkUHrNqZKp0c")
 RZP_ID = os.environ.get("RZP_KEY_ID", "")

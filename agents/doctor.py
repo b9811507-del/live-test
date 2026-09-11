@@ -6,7 +6,7 @@ import os, sys, json, re, time, base64, tempfile, py_compile
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import llmsupport
+from renderapp import llmsupport
 
 TGT = os.environ.get("GITHUB_REPOSITORY", "b9811507-del/live-test")
 GT = os.environ.get("GITHUB_TOKEN", "")

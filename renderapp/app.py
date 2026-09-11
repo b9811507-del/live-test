@@ -8,6 +8,10 @@ import os, time, json, sqlite3, threading, re
 from flask import Flask, request, jsonify, Response
 
 APP = Flask(__name__)
+try:
+    import paidbot  # eager import: module fully initialized before threads/routes
+except Exception as _e:
+    print("paidbot import failed:", _e)
 DB = os.environ.get("DATA_PATH", os.path.join(os.path.dirname(__file__), "live.db"))
 ADMIN_KEY = os.environ.get("ADMIN_KEY", "")
 _lock = threading.Lock()
