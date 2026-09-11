@@ -342,6 +342,9 @@ def make_pay_link(uid, batch):
         return f"{PUB}/paydemo/{o['note']}"
     return f"{PUB}/p/{o['note']}/{_tok(o['note'])}"
 
+def join_link(batch):
+    return os.environ.get(f"JOIN_{batch.upper()}", "")
+
 def gen_onetime_link(chat_id, tag):
     if MT_URL:
         try:
@@ -365,10 +368,12 @@ def fulfill(uid, batch, note, paid=True):
                 f"✅ <b>Payment successful — {_html.escape(title)}</b>\n\n🎟 <b>One-time join link</b> (sirf 1 member join kar sakta hai — sirf aap):\n{link}\n\n"
                 f"⚠️ Ye link share mat karna — ek hi use allowed hai. Join ke baad pinned Intro padh lena 📌"))
         else:
+            jl = join_link(batch)
+            extra = (f"\n\n🎟 <a href=\"{jl}\">👉 Tap to Join (Request bhejo — turant approve ho jaayega)</a>"
+                     if jl else "\n\n⏳ Group me join request bhejo — paid list se turant approve ho jaayega.")
             tg("sendMessage", chat_id=uid, parse_mode="HTML", text=(
-                f"✅ <b>Payment successful — {_html.escape(title)}</b>\n\n⏳ Join link admin ke setup se deliver hoga "
-                f"({'one-time link service pending: session-API' if not MT_URL else 'group-add pending'})\n"
-                f"📌 Admin ko ye dikhao — turant add kar denge: <b>{_html.escape(title)}</b> · txn <code>{note}</code>"))
+                f"✅ <b>Payment successful — {_html.escape(title)}</b>" + extra +
+                f"\n🧾 Order ref: <code>{note}</code>"))
         tg("sendMessage", chat_id=ADMIN_ID, parse_mode="HTML", text=(
             f"💰 <b>PAID</b> — {_html.escape(title)}\n👤 <code>{uid}</code> · txn <code>{note}</code>" + (f"\n🎟 link sent ✓" if ok else "\n⚠️ link pending — /give " + note)))
     elif paid:
@@ -466,7 +471,7 @@ def run(offset=None):
     last_chk = 0
     while True:
         try:
-            r = urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=40&allowed_updates=[\"message\",\"callback_query\"]", timeout=55)
+            r = urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=40&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", timeout=55)
             for u in json.loads(r.read()).get("result", []):
                 OFF = u["update_id"] + 1
                 try:
@@ -505,10 +510,52 @@ def handle(u):
                text=f"{'🔔' if hot else '📩'} <code>{uid}</code>{' @' + un if un else ''}: {_html.escape(str(fwd))[:400]}"
                     + (f"\n/reply — /give uid:batch:txn-note se link bhejo" if hot else ""))
         return
+    if "chat_join_request" in u:
+        jr = u["chat_join_request"]
+        req_uid = jr["from"]["id"]
+        chat_id = jr["chat"]["id"]
+        title = jr["chat"].get("title", "")
+        batch = next((k for k, b in get_batches().items() if str(b.get("chat", "")) == str(chat_id)), "")
+        paid = False
+        if batch:
+            with db() as c:
+                paid = bool(c.execute("SELECT 1 FROM orders WHERE uid=? AND batch=? AND status IN ('paid','delivered')",
+                                      (req_uid, batch)).fetchone())
+        if paid:
+            tg("approveChatJoinRequest", chat_id=chat_id, user_id=req_uid)
+            with db() as c:
+                c.execute("UPDATE orders SET status='delivered' WHERE uid=? AND batch=? AND status='paid'", (req_uid, batch))
+            tg("sendMessage", chat_id=req_uid, parse_mode="HTML",
+               text=f"🎉 <b>Joined!</b> {_html.escape(title)} — welcome! Pinned rules padh lena 📌\nAb daily live tests me full speed 🚀")
+            tg("sendMessage", chat_id=ADMIN_ID, parse_mode="HTML",
+               text=f"✅ auto-approved <code>{req_uid}</code> → {_html.escape(str(title))} ({batch}, paid ✓)")
+        elif req_uid == ADMIN_ID:
+            tg("approveChatJoinRequest", chat_id=chat_id, user_id=req_uid)
+        else:
+            kb = {"inline_keyboard": [[{"text": "✅ Approve", "callback_data": f"jreq:ok:{chat_id}:{req_uid}:{batch}"},
+                                       {"text": "🚫 Deny", "callback_data": f"jreq:no:{chat_id}:{req_uid}"}]]}
+            tg("sendMessage", chat_id=ADMIN_ID, parse_mode="HTML",
+               text=f"🙋 <b>Join request</b> — <code>{req_uid}</code> → {_html.escape(str(title))}\n"
+                    + ("⚠️ iska paid order nahi mila — manual approve karo to bhejo txn dekhke" if batch else ""),
+               reply_markup=kb)
+        return
     if "callback_query" in u:
         q = u["callback_query"]
         uid = q["from"]["id"]
         data = q.get("data", "")
+        if data.startswith("jreq:") and uid == ADMIN_ID:
+            parts = data.split(":")
+            if parts[1] == "ok":
+                tg("approveChatJoinRequest", chat_id=int(parts[2]), user_id=int(parts[3]))
+                if len(parts) > 4 and parts[4]:
+                    with db() as c:
+                        c.execute("UPDATE orders SET status='delivered' WHERE uid=? AND batch=? AND status='paid'", (int(parts[3]), parts[4]))
+                    tg("sendMessage", chat_id=int(parts[3]), parse_mode="HTML", text="🎉 Admin ne join approve kar diya — welcome! 📌")
+                tg("answerCallbackQuery", callback_query_id=q["id"], text="Approved ✓")
+            else:
+                tg("declineChatJoinRequest", chat_id=int(parts[2]), user_id=int(parts[3]))
+                tg("answerCallbackQuery", callback_query_id=q["id"], text="Denied")
+            return
         mid = q["message"]["message_id"]
         cid = q["message"]["chat"]["id"]
         if data == "cat":
