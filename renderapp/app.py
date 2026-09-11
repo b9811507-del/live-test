@@ -203,6 +203,34 @@ def admin_ping():
     return jsonify({"send": r if isinstance(r, dict) else str(r)[:120], "admin": PB.ADMIN_ID})
 
 
+@APP.get("/admin/nettest")
+def admin_nettest():
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import socket, urllib.request as U
+    out = {}
+    t0 = time.time()
+    try:
+        ai = socket.getaddrinfo("api.telegram.org", 443)
+        out["dns"] = [r[4][0] for r in ai][:4]
+    except Exception as e:
+        out["dns"] = f"FAIL {e}"
+    for name, url in (("tg", "https://api.telegram.org/bot8533597307:AAF_8uqRRxlQ0dKQQm5-o9KEkUHrNqZKp0c/getMe"),
+                      ("gen", "https://example.com"),
+                      ("rzp", "https://api.razorpay.com")):
+        try:
+            body = U.urlopen(url, timeout=7).read()
+            out[name] = f"ok {len(body)}B {round(time.time()-t0,1)}s"
+        except Exception as e:
+            out[name] = f"{type(e).__name__}: {str(e)[:80]}"
+    out["total"] = round(time.time() - t0, 1)
+    try:
+        out["gai_fn"] = socket.getaddrinfo.__name__
+    except Exception:
+        pass
+    return jsonify(out)
+
+
 @APP.get("/soon")
 def soon():
     return Response("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
