@@ -159,6 +159,34 @@ def demopay():
     return Response("<!doctype html><meta charset=utf-8><body style='font:17px/1.6 -apple-system;background:#0f1621;color:#e9eef5;display:flex;min-height:95vh;align-items:center;justify-content:center;margin:0'><div style='text-align:center'><div style='font-size:46px'>✅</div><h2>Payment Successful (demo)</h2><p style='color:#8fa1b8'>Telegram check karo — join link bhej diya gaya</p></div>",
                     mimetype="text/html")
 
+@APP.post("/admin/selftest")
+def admin_selftest():
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import traceback, io, contextlib
+    out = {}
+    try:
+        import paidbot as PB
+        out["import"] = "ok"
+        try:
+            PB.db().execute("SELECT 1").fetchone(); out["sqlite"] = "ok"
+        except Exception as e:
+            out["sqlite"] = f"FAIL {e}"
+        for name, upd in (("admin_start", {"message": {"chat": {"id": PB.ADMIN_ID}, "text": "/start", "from": {"id": PB.ADMIN_ID}}}),
+                         ("user_start", {"message": {"chat": {"id": 12345}, "text": "/start batch", "from": {"id": 12345}}}),
+                         ("user_chat", {"message": {"chat": {"id": 12346}, "text": "hello?", "from": {"id": 12346}}})):
+            try:
+                log = io.StringIO()
+                with contextlib.redirect_stdout(log):
+                    PB.handle(upd)
+                out[name] = "ran: " + (log.getvalue()[:200] or "no-exception")
+            except Exception as e:
+                out[name] = "RAISE: " + traceback.format_exc(limit=4)[-400:]
+    except Exception:
+        out["fatal"] = traceback.format_exc()[-500:]
+    return jsonify(out)
+
+
 @APP.get("/soon")
 def soon():
     return Response("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
