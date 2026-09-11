@@ -1,0 +1,29 @@
+name: slot-afo
+on:
+  schedule:
+    - cron: "35 11 * * *"   # prebuild+translate
+    - cron: "29 12 * * *"   # 05:29 UTC = announce 5:59 PM IST (50 polls = 25 min)
+    - cron: "10 13 * * *"    # resume-finish if interrupted
+  workflow_dispatch: { }
+permissions: { contents: write, actions: write }
+concurrency: { group: slot-afo, cancel-in-progress: false }
+jobs:
+  slot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: run
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          RENDER_URL: ${{ secrets.RENDER_URL }}
+          ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          S="${{ github.event.schedule }}"
+          D=$(TZ=Asia/Kolkata date +%F)
+          if [ "$D" \> "2026-11-01" ]; then echo "AFO ended"; exit 0; fi
+          if [ "$S" = "35 11 * * *" ]; then python3 engine/engine.py prebuild $JOB; exit 0; fi
+          if [ "$S" = "10 13 * * *" ]; then python3 engine/engine.py finish $JOB; else python3 engine/engine.py run $JOB; fi
