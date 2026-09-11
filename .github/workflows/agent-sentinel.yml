@@ -1,0 +1,27 @@
+name: agent-sentinel
+on:
+  schedule:
+    - cron: "*/15 * * * *"      # watch Render + bots, self-heal, DM only on trouble
+  workflow_dispatch:
+permissions: { contents: read }
+concurrency: { group: sentinel, cancel-in-progress: true }
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          RENDER_URL: ${{ secrets.RENDER_URL }}
+          RENDER_SVC: ${{ secrets.RENDER_SVC }}
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          PAID_BOT_TOKEN: ${{ secrets.PAID_BOT_TOKEN }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+          ADMIN_KEY: ${{ secrets.ADMIN_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY2: ${{ secrets.GEMINI_API_KEY2 }}
+        run: python3 agents/sentinel.py
