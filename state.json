@@ -1,151 +1,15 @@
 {
- "ptr": {
-  "malwa": {
-   "book": "malwa_vol1",
-   "bidx": 0
-  },
-  "iari": {
-   "book": "iari",
-   "bidx": 0
-  }
- },
+ "ptr": {},
  "afo": {
-  "cursor": 50,
+  "cursor": 0,
   "seed": 20260911,
   "closed": false
  },
  "days": {
   "2026-09-11": {
-   "malwa": {
-    "step": 0,
-    "go": 1789104600.0,
-    "deadline": 1789105020.0,
-    "nq": 14,
-    "title": "MALWA BOOK VOL 1",
-    "pages": [
-     1,
-     4
-    ],
-    "book": "malwa_vol1",
-    "bidx": 0,
-    "n_batches": 150,
-    "sn": [
-     "128DIQLj:21",
-     "128DIQLj:22",
-     "128DIQLj:23",
-     "128DIQLj:24",
-     "128DIQLj:25",
-     "128DIQLj:26",
-     "128DIQLj:27",
-     "128DIQLj:31",
-     "128DIQLj:32",
-     "128DIQLj:33",
-     "128DIQLj:34",
-     "128DIQLj:35",
-     "128DIQLj:36",
-     "128DIQLj:37"
-    ]
-   },
-   "iari": {
-    "step": 0,
-    "go": 1789117200.0,
-    "deadline": 1789117830.0,
-    "nq": 21,
-    "title": "IARI BOOK MCQ 2026",
-    "pages": [
-     2,
-     2
-    ],
-    "book": "iari",
-    "bidx": 0,
-    "n_batches": 358,
-    "sn": [
-     "1sUgWsko:1",
-     "1sUgWsko:2",
-     "1sUgWsko:3",
-     "1sUgWsko:4",
-     "1sUgWsko:5",
-     "1sUgWsko:6",
-     "1sUgWsko:7",
-     "1sUgWsko:8",
-     "1sUgWsko:9",
-     "1sUgWsko:10",
-     "1sUgWsko:11",
-     "1sUgWsko:12",
-     "1sUgWsko:13",
-     "1sUgWsko:14",
-     "1sUgWsko:15",
-     "1sUgWsko:16",
-     "1sUgWsko:17",
-     "1sUgWsko:18",
-     "1sUgWsko:19",
-     "1sUgWsko:20",
-     "1sUgWsko:21"
-    ]
-   },
-   "afo": {
-    "step": 0,
-    "go": 1789129800.0,
-    "deadline": 1789131300.0,
-    "nq": 50,
-    "title": "AFO MAINS TEST (NEW PATTERN)",
-    "pages": null,
-    "book": null,
-    "bidx": 0,
-    "n_batches": 330,
-    "sn": [
-     "1UgnIe-g:2063",
-     "1sUgWsko:4314",
-     "1sUgWsko:5845",
-     "1sUgWsko:4929",
-     "1sUgWsko:5600",
-     "1sUgWsko:2258",
-     "1bxM1Q-4:1008",
-     "128DIQLj:2516",
-     "1UgnIe-g:2840",
-     "1bxM1Q-4:2334",
-     "1bxM1Q-4:3412",
-     "1bxM1Q-4:440",
-     "1YcJWVgW:133",
-     "1UgnIe-g:1903",
-     "1bxM1Q-4:4245",
-     "1bxM1Q-4:1783",
-     "1sUgWsko:69",
-     "1sUgWsko:6014",
-     "1UgnIe-g:1277",
-     "1bxM1Q-4:2222",
-     "1bxM1Q-4:3897",
-     "1UgnIe-g:2794",
-     "1sUgWsko:6029",
-     "1UgnIe-g:2811",
-     "128DIQLj:2583",
-     "1sUgWsko:741",
-     "1sUgWsko:1316",
-     "1sUgWsko:5230",
-     "1bxM1Q-4:1599",
-     "1sUgWsko:6112",
-     "1UgnIe-g:1009",
-     "1sUgWsko:4792",
-     "1YcJWVgW:811",
-     "128DIQLj:193",
-     "1sUgWsko:3161",
-     "1UgnIe-g:2403",
-     "1bxM1Q-4:335",
-     "1bxM1Q-4:1249",
-     "1sUgWsko:6499",
-     "1UgnIe-g:648",
-     "128DIQLj:1052",
-     "1bxM1Q-4:3625",
-     "1sUgWsko:3845",
-     "1YcJWVgW:1257",
-     "1bxM1Q-4:273",
-     "1bxM1Q-4:2150",
-     "1sUgWsko:228",
-     "128DIQLj:804",
-     "1YcJWVgW:702",
-     "1bxM1Q-4:2333"
-    ]
-   }
+   "malwa": {},
+   "iari": {},
+   "afo": {}
   }
  },
  "agent_log": [
@@ -158,8 +22,21 @@
    "problems": [
     "afo: sheet fetch failed 17U0MEc-3lXtKUH1WNBaHKNO25E7nS7BL2f9WymeGXY4"
    ]
+  },
+  {
+   "t": "2026-09-11 17:23:50",
+   "fixes": [
+    "retried run slot-afo",
+    "retried run slot-afo",
+    "retried run slot-afo"
+   ],
+   "problems": [
+    "malwa: HTTP Error 400: Bad Request",
+    "iari: HTTP Error 400: Bad Request",
+    "afo: HTTP Error 400: Bad Request"
+   ]
   }
  ],
- "last_digest": 1789137355.1198044,
+ "last_digest": 1789147430.652611,
  "tc": {}
 }
