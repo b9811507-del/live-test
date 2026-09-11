@@ -2,7 +2,7 @@
  "ptr": {
   "malwa": {
    "book": "malwa_vol1",
-   "bidx": 0
+   "bidx": 1
   }
  },
  "afo": {
@@ -299,5 +299,12 @@
   }
  },
  "agent_log": [],
- "tc": {}
+ "tc": {},
+ "pins_prev": {
+  "malwa": [
+   28919,
+   28921,
+   28925
+  ]
+ }
 }
