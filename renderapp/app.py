@@ -163,10 +163,13 @@ def demopay():
 def admin_selftest():
     if not _auth():
         return jsonify({"error": "bad key"}), 403
-    import traceback, io, contextlib
+    import traceback, io, contextlib, sys as _sys
     out = {}
     try:
-        import paidbot as PB
+        PM = _sys.modules.get("paidbot")
+        out["in_sys_modules"] = bool(PM)
+        out["attrs"] = sorted([k for k in vars(PM).keys() if not k.startswith("__")])[:25] if PM else None
+        PB = __import__("paidbot")
         out["import"] = "ok"
         try:
             PB.db().execute("SELECT 1").fetchone(); out["sqlite"] = "ok"
