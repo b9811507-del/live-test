@@ -571,7 +571,7 @@
     "msg_cta": 28956
    },
    "afo": {
-    "step": 1,
+    "step": 3,
     "go": 1789129800.0,
     "deadline": 1789131300.0,
     "nq": 50,
@@ -632,7 +632,317 @@
      "1YcJWVgW:702",
      "1bxM1Q-4:2333"
     ],
-    "msg_ann": 28959
+    "msg_ann": 28959,
+    "votes": {
+     "5314432132": {
+      "name": "mira",
+      "right": 22,
+      "wrong": 19,
+      "att": 41,
+      "final": 34.5
+     },
+     "1257179874": {
+      "name": "Aakriti",
+      "right": 2,
+      "wrong": 5,
+      "att": 7,
+      "final": 1.5
+     },
+     "1856281383": {
+      "name": "krsankar#27",
+      "right": 31,
+      "wrong": 10,
+      "att": 41,
+      "final": 57.0
+     },
+     "1143441820": {
+      "name": "GMG",
+      "right": 23,
+      "wrong": 22,
+      "att": 45,
+      "final": 35.0
+     },
+     "6617236552": {
+      "name": "Prathyusha",
+      "right": 18,
+      "wrong": 26,
+      "att": 44,
+      "final": 23.0
+     },
+     "8058257474": {
+      "name": "Iamgopi",
+      "right": 19,
+      "wrong": 27,
+      "att": 46,
+      "final": 24.5
+     },
+     "5500489544": {
+      "name": "Tayyaba",
+      "right": 13,
+      "wrong": 19,
+      "att": 32,
+      "final": 16.5
+     },
+     "5028737048": {
+      "name": "Keerthana K",
+      "right": 5,
+      "wrong": 8,
+      "att": 13,
+      "final": 6.0
+     },
+     "1347595171": {
+      "name": "Kaushal",
+      "right": 18,
+      "wrong": 25,
+      "att": 43,
+      "final": 23.5
+     },
+     "497002250": {
+      "name": "Punit",
+      "right": 25,
+      "wrong": 20,
+      "att": 45,
+      "final": 40.0
+     },
+     "8824694648": {
+      "name": "WAR",
+      "right": 30,
+      "wrong": 14,
+      "att": 44,
+      "final": 53.0
+     },
+     "1922665327": {
+      "name": "Baji",
+      "right": 6,
+      "wrong": 2,
+      "att": 8,
+      "final": 11.0
+     },
+     "1978931116": {
+      "name": "Mademoni Mahesh",
+      "right": 22,
+      "wrong": 17,
+      "att": 39,
+      "final": 35.5
+     },
+     "382728002": {
+      "name": "Mr. Shrikant",
+      "right": 20,
+      "wrong": 26,
+      "att": 46,
+      "final": 27.0
+     },
+     "1903140467": {
+      "name": "Sagarik@",
+      "right": 22,
+      "wrong": 23,
+      "att": 45,
+      "final": 32.5
+     },
+     "1217648983": {
+      "name": "Muskan Shrivastava",
+      "right": 10,
+      "wrong": 11,
+      "att": 21,
+      "final": 14.5
+     },
+     "5537854723": {
+      "name": "@subham kandu",
+      "right": 20,
+      "wrong": 26,
+      "att": 46,
+      "final": 27.0
+     },
+     "8797499130": {
+      "name": "Baghel",
+      "right": 4,
+      "wrong": 7,
+      "att": 11,
+      "final": 4.5
+     },
+     "8260868348": {
+      "name": "Pallu",
+      "right": 17,
+      "wrong": 27,
+      "att": 44,
+      "final": 20.5
+     },
+     "5663965932": {
+      "name": "O positive",
+      "right": 26,
+      "wrong": 15,
+      "att": 41,
+      "final": 44.5
+     },
+     "1168044151": {
+      "name": "S.h.a.r.a.v",
+      "right": 24,
+      "wrong": 19,
+      "att": 43,
+      "final": 38.5
+     },
+     "5261055239": {
+      "name": "SAURABH GIRI",
+      "right": 17,
+      "wrong": 13,
+      "att": 30,
+      "final": 27.5
+     },
+     "1300174133": {
+      "name": "Chandrakant",
+      "right": 0,
+      "wrong": 1,
+      "att": 1,
+      "final": -0.5
+     },
+     "8567101693": {
+      "name": "Tushar",
+      "right": 6,
+      "wrong": 14,
+      "att": 20,
+      "final": 5.0
+     },
+     "6709956742": {
+      "name": "Archana Abraham",
+      "right": 19,
+      "wrong": 12,
+      "att": 31,
+      "final": 32.0
+     },
+     "7529150250": {
+      "name": "Mafia",
+      "right": 15,
+      "wrong": 27,
+      "att": 42,
+      "final": 16.5
+     },
+     "8246201878": {
+      "name": "Niki",
+      "right": 2,
+      "wrong": 3,
+      "att": 5,
+      "final": 2.5
+     },
+     "5139056210": {
+      "name": "Pratu",
+      "right": 10,
+      "wrong": 27,
+      "att": 37,
+      "final": 6.5
+     },
+     "1379917406": {
+      "name": "A+k",
+      "right": 1,
+      "wrong": 3,
+      "att": 4,
+      "final": 0.5
+     },
+     "852863257": {
+      "name": "LALIT KUMAR",
+      "right": 1,
+      "wrong": 1,
+      "att": 2,
+      "final": 1.5
+     },
+     "1860674750": {
+      "name": "Neha",
+      "right": 0,
+      "wrong": 1,
+      "att": 1,
+      "final": -0.5
+     },
+     "8509554164": {
+      "name": "RAHUL",
+      "right": 16,
+      "wrong": 10,
+      "att": 26,
+      "final": 27.0
+     },
+     "1682664489": {
+      "name": "ÆkæßH",
+      "right": 0,
+      "wrong": 2,
+      "att": 2,
+      "final": -1.0
+     },
+     "1789144881": {
+      "name": "Musharrat",
+      "right": 5,
+      "wrong": 8,
+      "att": 13,
+      "final": 6.0
+     },
+     "1883171881": {
+      "name": "Rohan Bhardwaj",
+      "right": 2,
+      "wrong": 1,
+      "att": 3,
+      "final": 3.5
+     },
+     "2023943856": {
+      "name": "Ankit",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 2.0
+     },
+     "1214112610": {
+      "name": "SHIVA",
+      "right": 3,
+      "wrong": 8,
+      "att": 11,
+      "final": 2.0
+     },
+     "1947225438": {
+      "name": "Sivaguru",
+      "right": 2,
+      "wrong": 0,
+      "att": 2,
+      "final": 4.0
+     },
+     "6137136459": {
+      "name": "Dheeraj Rajbhar",
+      "right": 2,
+      "wrong": 2,
+      "att": 4,
+      "final": 3.0
+     },
+     "1269206629": {
+      "name": "Satyam Mishra",
+      "right": 0,
+      "wrong": 1,
+      "att": 1,
+      "final": -0.5
+     },
+     "1151444210": {
+      "name": "mrr",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 2.0
+     },
+     "7884866612": {
+      "name": "Vinothini G",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 2.0
+     },
+     "1251207310": {
+      "name": "KRISHNA Abhishek",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 2.0
+     },
+     "466808016": {
+      "name": "Люцифер",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 2.0
+     }
+    }
    }
   }
  },
