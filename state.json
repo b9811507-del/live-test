@@ -301,7 +301,7 @@
     "msg_cta": 28924
    },
    "iari": {
-    "step": 5,
+    "step": 6,
     "go": 1789117200.0,
     "deadline": 1789117830.0,
     "nq": 21,
@@ -566,7 +566,8 @@
     "msg_board": [
      28951
     ],
-    "msg_congrats": 28953
+    "msg_congrats": 28953,
+    "msg_file": 28955
    }
   }
  },
