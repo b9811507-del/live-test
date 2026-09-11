@@ -88,14 +88,15 @@ def get_batches():
     _bcache.update(t=time.time(), d=out)
     return out
 
-def _save(out):
+def _save(out, push=True):
     with db() as c:
         c.execute("DELETE FROM batches")
         for k, b in out.items():
             c.execute("INSERT OR REPLACE INTO batches VALUES(?,?,?,?,?,?)",
                       (k, b["title"], b["price"], b.get("chat", ""), b.get("what", ""), time.time()))
     _bcache.update(t=time.time(), d=out)
-    push_github(out)
+    if push:
+        push_github(out)
 
 def put_batch(key, title, price, chat="", what=""):
     out = dict(get_batches())
@@ -130,9 +131,12 @@ def pull_github():
         raw = urllib.request.urlopen(f"https://raw.githubusercontent.com/{GH_REPO}/main/{BATCH_FILE}", timeout=20).read()
         out = json.loads(raw)
         if isinstance(out, dict) and out:
-            _save({k: {"title": b.get("title", k), "price": int(b.get("price", 0)),
-                       "chat": b.get("chat", ""), "what": b.get("what", "")} for k, b in out.items()})
-            return len(out)
+            norm = {k: {"title": b.get("title", k), "price": int(b.get("price", 0)),
+                        "chat": b.get("chat", ""), "what": b.get("what", "")} for k, b in out.items()}
+            cur = _bcache["d"] if _bcache["d"] else get_batches()
+            if cur != norm:
+                _save(norm, push=False)
+            return len(norm)
     except Exception:
         pass
     return 0

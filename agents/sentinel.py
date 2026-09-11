@@ -67,6 +67,18 @@ def health():
     return None
 
 
+def workflow_ran_recently(wf, hours=16):
+    """slot cron must have executed in last `hours` (else system not yet expected to have it)."""
+    try:
+        repo = os.environ.get("GITHUB_REPOSITORY", "b9811507-del/live-test")
+        since = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time() - hours * 3600))
+        url = f"https://api.github.com/repos/{repo}/actions/workflows/{wf}/runs?per_page=3&created=%3E={since[1:]}"
+        j = json.loads(get(url, timeout=20, hdr={"Accept": "application/vnd.github+json"}))
+        return any(r.get("status") in ("completed", "in_progress", "queued") for r in j.get("workflow_runs", []))
+    except Exception:
+        return False
+
+
 def main():
     issues, fixes = [], []
     h = health()
@@ -90,17 +102,23 @@ def main():
                 issues.append("tg last error: " + wi["last_error_message"][:120])
         except Exception as e:
             issues.append(f"paid bot API unreachable: {e}")
-    # slot staleness: today's 3 slots — if now past IST slot-time +20min and /admin/day has no today entry → warn
+    # slot freshness ONLY inside its live window and only if that slot workflow actually ran recently
     ist = time.time() + 19800
     day = time.strftime("%Y-%m-%d", time.gmtime(ist))
     hh = time.gmtime(ist).tm_hour * 60 + time.gmtime(ist).tm_min
     try:
         days = h.get("days", {}) if h else {}
-        for job, at in (("malwa", 11 * 60 + 5), ("iari", 14 * 60 + 35), ("afo", 18 * 60 + 5)):
+        for job, win, wf in (("malwa", (11 * 60 + 4, 11 * 60 + 40), "slot-malwa.yml"),
+                             ("iari", (14 * 60 + 34, 15 * 60 + 5), "slot-iari.yml"),
+                             ("afo", (18 * 60 + 4, 19 * 60 + 15), "slot-afo.yml")):
+            if not (win[0] <= hh <= win[1]):
+                continue
+            if not workflow_ran_recently(wf):
+                continue
             d0 = days.get(job)
             dd = d0.get("date") if isinstance(d0, dict) else d0
-            if hh > at and dd != day:
-                issues.append(f"{job}: aaj ka slot ({day}) Render par nahi mila")
+            if dd != day:
+                issues.append(f"{job}: window me hai par Render par aaj ka slot ({day}) nahi mila — prebuild/run check karo")
     except Exception:
         pass
     # test-page sanity for AFO tonight
