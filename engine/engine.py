@@ -8,6 +8,8 @@ Env: TG_TOKEN CHAT_ID ADMIN_CHAT RENDER_URL [GIT_TOKEN]
 """
 import os, sys, csv, io, re, json, time, html, hashlib, random, subprocess, urllib.request, urllib.parse
 import datetime as dt
+sys.path.insert(0, os.path.dirname(__file__))
+import builder as BL
 
 def _env(k, d=""):
     return os.environ.get(k, d)
@@ -234,7 +236,9 @@ def parse_page(v):
     return (lo, hi)
 
 def rows(sid):
+    global _raw_by_uid
     out = []
+    _raw_by_uid = {}
     for r in csv.DictReader(io.StringIO(fetch_csv(sid))):
         r = {k.strip(): (v or "").strip() for k, v in r.items() if k}
         r["_src"] = sid[:8]
@@ -248,6 +252,14 @@ def rows(sid):
             out.append(r)
     out.sort(key=lambda r: (r["_ph"], r["_sn"]))
     return out
+
+_raw_by_uid = {}
+def raw_by_uid(sid, rs=None):
+    d = {}
+    for r in (rs if rs is not None else rows(sid)):
+        d[f"{sid[:8]}:{r['_sn']}"] = r
+    d.update(_raw_by_uid)
+    return d
 
 OPT_LETTER = re.compile(r"^\(?\s*([a-eA-E])\b")
 def resolve_key(row, opts):
@@ -271,8 +283,10 @@ def question_from_row(r):
     k = resolve_key(r, opts)
     if k < 0:
         return None
-    return {"uid": f"{r['_src']}:{r['_sn']}", "sn": r["_sn"], "q": clean(r["Question"]), "o": [clean(o) for o in opts],
-            "key": k, "exp": clean(r.get("Explanation", ""))[:400], "page": r["_ph"], "topic": r.get("Topic", "")}
+    q = {"uid": f"{r['_src']}:{r['_sn']}", "sn": r["_sn"], "q": clean(r["Question"]), "o": [clean(o) for o in opts],
+         "key": k, "exp": clean(r.get("Explanation", ""))[:400], "page": r["_ph"], "topic": r.get("Topic", "")}
+    _raw_by_uid.setdefault(q["uid"], r)
+    return q
 
 # ---------------- planners ----------------
 def book_batches(sid):
@@ -376,32 +390,30 @@ def day_meta(job, st, date, pretranslate=False):
 
 # ---------------- offline file (NOT pinned) ----------------
 def gen_offline_file(job, date, day):
-    cfg = JOBS[job]
+    """6065-format: full textbook-style template app (timer, themes, offline)."""
+    raws = dict(_raw_by_uid)
+    rowsp, DATA = [], []
+    for q in day["questions"]:
+        r = raws.get(q["uid"])
+        if r is not None:
+            rowsp.append((r["_ph"] or q.get("page") or 1, r))
+    if rowsp:
+        DATA, _bad = BL.build_questions(rowsp)
+    if not DATA:                                  # fallback: build from parsed questions
+        DATA = [{"s": q.get("sn", i + 1), "p": q.get("page", 0), "t": q.get("topic", ""), "q": q["q"],
+                 "o": q["o"], "k": ["A", "B", "C", "D", "E"][:len(q["o"])], "a": q["key"], "e": q.get("exp", "")}
+                for i, q in enumerate(day["questions"])]
+    pages_per = {}
+    if day.get("pages"):
+        for r in raws.values():
+            for p in range(max(r["_pl"], 1), r["_ph"] + 1):
+                pages_per[p] = pages_per.get(p, 0) + 1
+    book = f"{day['title']} \u2014 LIVE TEST"
     p = day.get("pages")
-    name = f"LIVE_{'p%d-%d' % tuple(p) if p else 'AFO'}_{date}_{len(day['questions'])}Q.html"
-    parts = ["<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>",
-             f"<title>Q · {html.escape(day['title'])} — offline</title>",
-             "<style>body{font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif;background:#0f1621;color:#e9eef5;margin:0}"
-             ".w{max-width:680px;margin:0 auto;padding:18px 14px 60px}.q{background:#182333;border-radius:12px;padding:12px;margin:0 0 12px}"
-             ".o{padding:6px 8px;border-radius:8px;margin:3px 0;background:#0f1621}.ok{outline:1px solid #2e9e5b}"
-             "details{margin-top:8px;font-size:13px;color:#9fd0ff}summary{cursor:pointer}</style><div class=w>",
-             f"<h2>Q · {html.escape(day['title'])}</h2><p style='color:#8fa1b8'>{date} · {len(day['questions'])} Q · "
-             f"✅ +{cfg['right']} / ❌ {cfg['wrong']} · <b>biligual EN + हिंदी</b> · answers in 👁 — self-check after finishing · by SatyamSir 🖊</p>"]
-    for i, q in enumerate(day["questions"], 1):
-        hi = tr_hi(q["q"])
-        parts.append(f"<div class=q><b style='color:#8774e2'>Q{q['sn']}</b>" +
-                     (f" <span style='color:#8fa1b8;font-size:12px'>{html.escape(q.get('topic') or '')}</span>" if q.get("topic") else "") +
-                     f"<p>{html.escape(q['q'])}" + (f"<br><span style='color:#ffd76b'>{html.escape(hi)}</span>" if hi else "") + "</p>")
-        for j, o in enumerate(q["o"]):
-            oh = tr_hi(o)
-            parts.append(f"<div class='o{' ok' if j == q['key'] else ''}'>{'ABCDE'[j]}) {html.escape(o)}"
-                         + (f" <span style='color:#9fd0ff'>({html.escape(oh)})</span>" if oh else "") + "</div>")
-        exp = html.escape(q.get("exp") or "")[:300]
-        parts.append(f"<details><summary>👁 answer</summary>Correct: <b>{'ABCDE'[q['key']]}</b>{'<br>' + exp if exp else ''}</details></div>")
-    parts.append("</div>")
+    slug = f"live_{job}_{'p%dp%d' % tuple(p) if p else date.replace('-','')}"
+    name = f"LIVE_{('p%d-%d' % tuple(p)) if p else 'AFO'}_{date}_{len(DATA)}Q.html"
     path = os.path.join(FILES_DIR, name)
-    with open(path, "w") as f:
-        f.write("".join(parts))
+    BL.render_html(DATA, pages_per, book, "By SatyamSir", "Agri Learning Point", QPACE, slug, path)
     return path, name
 
 # ---------------- messages ----------------
@@ -459,16 +471,11 @@ def congrats_msg(rows_):
     return "\n".join(lines)
 
 def cta_msg(job):
-    B = lambda s: f"<b>{s}</b>"
-    if job == "afo":
-        head, extra = "💪 " + B("Great Effort! Live Test Completed Successfully 🎉"), "\n⚠️ " + B("Last date to join: 1 Nov 2026") + " — after that AFO batch closes."
-        body = "Keep the consistency — 50 questions daily is what separates a selection from an attempt 💪"
-    else:
-        head, extra = "💪 " + B("Great Effort! Book Test Completed Successfully 🎉"), ""
-        body = "Consistency is the real test — 3 pages a day, and these books belong to you in the exam hall 💪"
-    return (f"{head}\n\n{body}\n\n🎓 Want full guidance + daily mentorship? Join a <b>paid batch</b>: "
-            f"complete course, live doubt sessions, full PDF library & exclusive test series.{extra}\n"
-            f"<i>Seats limited · details inside 👇</i>")
+    """SHORT version — user order: 2 lines + join paid batches."""
+    kind = "Live" if job == "afo" else "Book"
+    return (f"💪 <b>Great Effort! {kind} Test Completed Successfully</b>\n"
+            f"Consistency is the real test 📈\n"
+            f"<i>Join paid batches 👇</i>")
 
 def tomorrow_msg(st, date):
     try:
@@ -674,10 +681,11 @@ def step_finish(st, date, job, rows_):
         cid = send(congrats_msg(rows_), pin=True); pins.append(cid)
         j.update({"step": 5, "msg_congrats": cid}); save_state(st, f"{job} {date} congrats")
     if j.get("step", 0) < 6:
-        path, name = gen_offline_file(job, date, {**day, "questions": day["questions"] or []})
-        cap = (f"🎁 <b>Live test file</b> — {day['title']}" +
-               (f" · Pages {day['pages'][0]}-{day['pages'][1]}" if day.get("pages") else " · 50 Q") +
-               f" · <b>bilingual EN+हिंदी</b> · <i>offline re-attempt copy — 👁 se answers check karo</i>")
+        path, name = gen_offline_file(job, date, day)
+        n = len(day["questions"])
+        cap = (f"📗 *{day['title']} — LIVE TEST*\n" +
+               (f"Pages {day['pages'][0]}–{day['pages'][1]}" if day.get("pages") else f"{n} MCQs · all-subject mix") +
+               f"  ·  {n} MCQs  ·  {BL.fmt(n * QPACE)} timer\nBy SatyamSir\nOpen the file in any browser — works offline.")
         fid = send_file(path, name, cap)          # NOT pinned per user
         j.update({"step": 6, "msg_file": fid}); save_state(st, f"{job} {date} file")
     if j.get("step", 0) < 7:
@@ -713,7 +721,7 @@ def series_champ(st):
 
 def send_file(path, name, caption, pin=False):
     blob = open(path, "rb").read()
-    r = tg("sendDocument", {"document": (name, blob)}, chat_id=CHAT, caption=caption, parse_mode="HTML")
+    r = tg("sendDocument", {"document": (name, blob)}, chat_id=CHAT, caption=caption, parse_mode="Markdown")
     if pin:
         try: tg("pinChatMessage", chat_id=CHAT, message_id=r["message_id"])
         except Exception as e: log("pin fail", e)
