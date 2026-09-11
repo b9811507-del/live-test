@@ -120,6 +120,28 @@ def rzp_hook():
     paidbot.handle_webhook(b)
     return jsonify({"ok": True})
 
+@APP.get("/p/<note>/<tok>")
+def pay_page(note, tok):
+    import paidbot, hmac
+    if not hmac.compare_digest(paidbot._tok(note), tok):
+        return Response("<body style='font:16px sans-serif;background:#0f1621;color:#fff;text-align:center;padding:60px'>❌ Link expired / invalid</body>", mimetype="text/html")
+    return Response(paidbot.checkout_page(note), mimetype="text/html")
+
+@APP.route("/confirm", methods=["GET", "POST"])
+def confirm():
+    import paidbot
+    d = request.args if request.method == "GET" else (request.get_json(silent=True) or request.form)
+    note, oid, pid, sig = d.get("note", ""), d.get("order_id", ""), d.get("payment_id", ""), d.get("signature", "")
+    with paidbot.db() as c:
+        row = c.execute("SELECT batch,uid,status FROM orders WHERE note=?", (note,)).fetchone()
+    if not row or row[2] == "paid":
+        return jsonify({"ok": row and row[2] == "paid"})
+    if not paidbot.verify_sig(oid, pid, sig):
+        return jsonify({"ok": False, "err": "bad signature"}), 400
+    uid, batch = int(row[1]), row[0]
+    paidbot.fulfill(uid, batch, note)
+    return jsonify({"ok": True})
+
 @APP.get("/paydemo/<path:note>")
 def paydemo(note):
     import paidbot

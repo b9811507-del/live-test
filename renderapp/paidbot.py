@@ -56,30 +56,46 @@ def tg(m, **kw):
             time.sleep(2 + 2 * a)
     return {"_err": "retries"}
 
+def _rzp_auth():
+    import base64
+    return "Basic " + base64.b64encode(f"{RZP_ID}:{RZP_SECRET}".encode()).decode()
+
 def api_post(path, body, auth=True):
     hdr = {"Content-Type": "application/json"}
     if auth and RZP_ID:
-        import base64
-        hdr["Authorization"] = "Basic " + base64.b64encode(f"{RZP_ID}:{RZP_SECRET}".encode()).decode()
+        hdr["Authorization"] = _rzp_auth()
     rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", data=json.dumps(body).encode(), headers=hdr)
     return json.loads(urllib.request.urlopen(rq, timeout=30).read())
 
+def _rzp_get(path):
+    rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", headers={"Authorization": _rzp_auth()})
+    return json.loads(urllib.request.urlopen(rq, timeout=25).read())
+
 # ---------------- messages ----------------
 def catalog_msg():
-    L = ["🎓 <b>PAID BATCHES — AGRI LEARNING POINT</b>", "🖊 By <b>SatyamSir</b>", "",
-         "Lifetime validity · Unlimited attempts · Daily live tests included 👇", ""]
-    L.append("— Tap a batch for details &amp; price —")
-    return "\n".join(L)
+    return ("🎓 <b>PAID BATCHES — AGRI LEARNING POINT</b>\n\n"
+            "💳 <b>Ek baar lo · Lifetime access · Koi expiry nahi</b>\n\n"
+            "🖊 <b>By SatyamSir</b>\n\n"
+            "⬇️ <b>Tap a batch — details &amp; secure payment</b>\n"
+            "⬇️ <b>बैच पर टैप करें — पूरी जानकारी व सुरक्षित पेमेंट</b>")
 
 def catalog_kb():
-    rows = [[{"text": f"{b['title'].split(' ')[0]} {b['title'].split(' ',1)[1][:34]} — ₹{b['price']}", "callback_data": f"b:{k}"}]
-            for k, b in BATCHES.items()]
+    rows = []
+    for k, b in BATCHES.items():
+        em, rest = b["title"].split(" ", 1)
+        rows.append([{"text": f"{em} {rest[:30]} — ₹{b['price']}\n🗓 Lifetime  ·  🔁 Unlimited Attempts",
+                      "callback_data": f"b:{k}"}])
     return {"inline_keyboard": rows}
 
 def batch_msg(k):
     b = BATCHES[k]
-    return (f"{b['title']}\n\n💰 <b>₹{b['price']}</b>  (one-time)\n{VALID}\n\n📦 {b['what']}\n\n"
-            "✅ Payment ke turant baad <b>one-time join link</b> — sirf AAP join kar sakte ho 👇")
+    return (f"{b['title']}\n\n"
+            f"💰 <b>Fees: ₹{b['price']}</b> (one-time)\n\n"
+            f"🗓 <b>Validity: Lifetime</b> · <b>आयुभर</b>\n\n"
+            f"🔁 <b>Attempts: Unlimited</b> · <b>असीमित प्रयास</b>\n\n"
+            f"📦 {b['what']}\n\n"
+            "🔑 Payment ke turant baad <b>One-Time Join Link</b>\n"
+            "🔑 पेमेंट के तुरंत बाद <b>व्यक्तिगत जॉइन लिंक</b> — सिर्फ़ आप join कर सकेंगे")
 
 def batch_kb(k):
     pay = {"text": f"👉 Pay ₹{BATCHES[k]['price']} & Join", "callback_data": f"p:{k}"}
@@ -87,32 +103,47 @@ def batch_kb(k):
         pay["text"] = f"💳 Pay & Join ₹{BATCHES[k]['price']}"
     return {"inline_keyboard": [[pay], [{"text": "◀ All batches", "callback_data": "cat"}]]}
 
-# ---------------- payment ----------------
-def make_pay_link(uid, batch):
+# ---------------- payment (Razorpay Orders + Checkout) ----------------
+def _tok(note):
+    import hmac, hashlib
+    return hmac.new((RZP_SECRET or "demo").encode(), note.encode(), hashlib.sha256).hexdigest()[:16]
+
+def verify_sig(oid, pid, sig):
+    import hmac, hashlib
+    return hmac.compare_digest(hmac.new(RZP_SECRET.encode(), f"{oid}|{pid}".encode(), hashlib.sha256).hexdigest(), sig or "")
+
+def make_order(uid, batch):
     b = BATCHES[batch]
+    with db() as c:
+        pend = c.execute("SELECT note,link FROM orders WHERE uid=? AND batch=? AND status='created' ORDER BY id DESC LIMIT 1", (uid, batch)).fetchone()
+    if pend and pend[1] and not pend[1].startswith("order_"):
+        return {"demo": True, "note": pend[0], "amount": b["price"]}
+    if pend and pend[1].startswith("order_"):
+        return {"demo": False, "note": pend[0], "order_id": pend[1], "amount": b["price"]}
     note = f"{uid}:{batch}:{int(time.time())}"
     with db() as c:
-        pend = c.execute("SELECT id,link,status FROM orders WHERE uid=? AND batch=? AND status='created'", (uid, batch)).fetchone()
-        if pend:
-            return pend[1]
+        c.execute("INSERT INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)", (uid, batch, "", "created", note, time.time()))
     if DEMO or not RZP_ID:
-        link = f"{PUB}/paydemo/{note}" if PUB else f"(demo) {b['title']} ₹{b['price']}"
-        with db() as c:
-            c.execute("INSERT INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)",
-                      (uid, batch, link, "created", note, time.time()))
-        return link
+        return {"demo": True, "note": note, "amount": b["price"]}
     try:
-        r = api_post("/payment/link", {"amount": b["price"] * 100, "currency": "INR",
-                "customer": {"name": f"user{uid}"}, "notify": {"email": False, "sms": False},
-                "reference_id": note, "description": b["title"], "reminder_contact": 0,
-                "callback_url": f"{PUB}/done?n={note}"})
-        link = r.get("short_url")
+        r = api_post("/orders", {"amount": b["price"] * 100, "currency": "INR",
+                                 "receipt": note, "notes": {"ref": note},
+                                 "partial_enabled": False})
         with db() as c:
-            c.execute("INSERT INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)",
-                      (uid, batch, link, "created", note, time.time()))
-        return link
+            c.execute("UPDATE orders SET link=? WHERE note=?", (r["id"], note))
+        return {"demo": False, "note": note, "order_id": r["id"], "amount": b["price"]}
     except Exception as e:
+        print("rzp order fail:", e)
         return None
+
+def make_pay_link(uid, batch):
+    o = make_order(uid, batch)
+    if not o:
+        return None
+    if o["demo"]:
+        return f"{PUB}/paydemo/{o['note']}"
+    return f"{PUB}/p/{o['note']}/{_tok(o['note'])}"
+
 
 def gen_onetime_link(chat_id, tag):
     if MT_URL:
@@ -165,6 +196,30 @@ def handle_webhook(body):
         print("webhook err", e)
     return True
 
+def checkout_page(note):
+    uid, batch = int(note.split(":")[0]), note.split(":")[1]
+    b = BATCHES[batch]
+    with db() as c:
+        oid = c.execute("SELECT link FROM orders WHERE note=?", (note,)).fetchone()[0]
+    return f"""<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>Pay ₹{b['price']} — {html.escape(b['title'])}</title>
+<style>body{{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;background:#0f1621;color:#e9eef5;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}}
+.c{{background:#182333;border-radius:16px;padding:26px;max-width:400px;width:92%;box-shadow:0 20px 60px -20px #000}}
+h2{{margin:0 0 4px;font-size:18px}}.p{{color:#8fa1b8;font-size:13.5px;margin:0 0 18px}}
+button{{width:100%;padding:15px;border:0;border-radius:12px;background:#3395ff;color:#fff;font-size:16px;font-weight:700;cursor:pointer}}
+button:disabled{{opacity:.6}}.f{{margin-top:14px;font-size:11.5px;color:#8fa1b8;text-align:center}}</style></head><body>
+<div class=c><div style="font-size:34px;text-align:center">🌾</div>
+<h2 style="text-align:center">{html.escape(b['title'])}</h2>
+<p class=p style="text-align:center">₹{b['price']} one-time · Lifetime · Unlimited attempts<br>पेमेंट Razorpay पर सुरक्षित · <b>By SatyamSir</b></p>
+<button id=pay>💳 Pay ₹{b['price']} via Razorpay</button>
+<div class=f>Payment होते ही Join link Telegram पर मिलेगा ✅</div></div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script><script>
+var o={json.dumps({"key":RZP_ID,"order_id":oid,"name":"AGRI LEARNING POINT","description":b['title'][:70],"prefill":{"name":"user"},"theme":{"color":"#13733e"}})};
+document.getElementById("pay").onclick=function(){{var r=new Razorpay(Object.assign(o,{{handler:function(res){{
+ fetch("/confirm?note="+encodeURIComponent("{note}")+"&order_id="+res.razorpay_order_id+"&payment_id="+res.razorpay_payment_id+"&signature="+encodeURIComponent(res.razorpay_signature))
+ .then(x=>x.json()).then(j=>{{document.querySelector(".c").innerHTML=j.ok?'<div style=\"text-align:center;padding:10px\"><div style=\'font-size:40px\'>✅</div><h2>Payment Successful</h2><p style=color:#8fa1b8>Telegram जाओ — One-Time Join Link भेज दिया गया 🎟</p></div>':'<h2 style=color:#ff8a8a>Verify failed — admin को बताओ</h2>';}});}}}}));r.open();}};
+</script></body></html>"""
+
 def demo_page(note):
     uid, batch = int(note.split(":")[0]), note.split(":")[1]
     b = BATCHES[batch]
@@ -176,12 +231,37 @@ def demo_page(note):
             f"<a href='{PUB}/demopay?n={note}' style='display:inline-block;background:#8774e2;color:#fff;padding:13px 26px;border-radius:12px;font-weight:700;text-decoration:none'>✅ Pay ₹{b['price']} (simulate)</a>"
             f"</div></body>")
 
+def poll_pending():
+    """belt-and-braces: even without Razorpay webhook, check created payment links."""
+    if DEMO or not RZP_ID:
+        return
+    try:
+        with db() as c:
+            rows = c.execute("SELECT id,link,note FROM orders WHERE status='created' AND ts < ? ORDER BY id DESC LIMIT 5",
+                             (time.time() - 45,)).fetchall()
+        for oid, link, note in rows:
+            if "/paydemo/" in (link or ""):
+                continue
+            lid = link.rstrip("/").split("/")[-1] if link else ""
+            if not lid:
+                continue
+            try:
+                st = _rzp_get(f"/payment/link/{lid}")
+            except Exception:
+                continue
+            if st.get("status") == "paid":
+                uid, batch = int(note.split(":")[0]), note.split(":")[1]
+                fulfill(uid, batch, note)
+    except Exception:
+        pass
+
 # ---------------- main poll loop ----------------
 OFF = 0
 def run(offset=None):
     global OFF
     if offset:
         OFF = offset
+    last_chk = 0
     while True:
         try:
             r = urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=40&allowed_updates=[\"message\",\"callback_query\"]", timeout=55)
@@ -190,6 +270,9 @@ def run(offset=None):
                 handle(u)
         except Exception:
             time.sleep(3)
+        if time.time() - last_chk > 40:
+            last_chk = time.time()
+            poll_pending()
 
 def handle(u):
     if "message" in u:
@@ -201,8 +284,11 @@ def handle(u):
             if cb.startswith("batch"):
                 tg("sendMessage", chat_id=uid, parse_mode="HTML", text=catalog_msg(), reply_markup=catalog_kb()); return
             tg("sendMessage", chat_id=uid, parse_mode="HTML", text=(
-                "🌾 <b>AGRI LEARNING POINT</b> — SatyamSir\n\n🎓 Paid batches + daily LIVE tests ka official bot.\n"
-                " Neeche batch chuno:"), reply_markup=catalog_kb())
+                "🌾 <b>AGRI LEARNING POINT</b>\n\n"
+                "🎓 <b>Paid Batches &amp; Daily LIVE Tests — Official Bot</b>\n\n"
+                "📚 <b>पेड बैच और रोज़ाना लाइव टेस्ट — आधिकारिक बॉट</b>\n\n"
+                "🖊 <b>By SatyamSir</b>\n\n"
+                "⬇️ <b>Neeche apna batch chuniye</b>"), reply_markup=catalog_kb())
         elif txt in ("/help",):
             tg("sendMessage", chat_id=uid, text="Commands: /start · /batches · /status")
         elif txt in ("/status", "/my"):
@@ -229,8 +315,10 @@ def handle(u):
             if link and link.startswith("http"):
                 tg("answerCallbackQuery", callback_query_id=q["id"], text="Opening secure payment…")
                 tg("sendMessage", chat_id=uid, parse_mode="HTML",
-                   text=f"🔐 <b>Secure payment</b> — ₹{BATCHES[k]['price']} (Razorpay):\n{link}\n\n"
-                        f"Pay karte hi <b>one-time join link</b> auto mil jayega ✅")
+                   text=f"🔐 <b>Secure Payment</b> — ₹{BATCHES[k]['price']} <i>(Razorpay)</i>\n\n"
+                        f"💳 <a href=\"{link}\">Tap to pay now · अभी भुगतान करें</a>\n\n"
+                        f"✅ Pay karte hi <b>One-Time Join Link</b> yahin milega\n"
+                        f"✅ पेमेंट होते ही <b>जॉइन लिंक</b> यहीं मिलेगा", disable_web_page_preview=False)
             else:
                 tg("answerCallbackQuery", callback_query_id=q["id"], text="Payment setup pending (keys)", show_alert=True)
 

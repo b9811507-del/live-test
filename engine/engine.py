@@ -137,9 +137,12 @@ def bl_opt(en):
 def load_state():
     try:
         with open(STATE_PATH) as f:
-            return json.load(f)
+            st = json.load(f)
     except Exception:
         return {}
+    for k, v in (st.get("tc") or {}).items():
+        _tc.setdefault(k, v)
+    return st
 
 def save_state(st, msg="state update"):
     st["tc"] = dict(list(_tc.items())[-25000:])
@@ -342,8 +345,12 @@ def build_book_day(job, st):
 
 def afo_pool():
     rs, seen = [], set()
-    for sid in SHEETS.values():
-        for r in rows(sid):
+    for sid in list(SHEETS.values()):
+        try:
+            src = rows(sid)
+        except Exception as e:
+            log("pool: sheet unavailable, skipping", KEYBY_SID.get(sid, "?")); continue
+        for r in src:
             if AFO_EXCLUDE.search(r.get("Topic", "")) or not r.get("Topic"):
                 continue
             t = re.sub(r"[^a-z0-9]+", " ", r["Topic"].lower()).strip()
