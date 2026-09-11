@@ -112,6 +112,31 @@ def api_board():
     return jsonify({"job": job, "date": date, "n": len(out),
                     "deadline": d["go"] + d["dur"], "rows": out})
 
+@APP.post("/rzp/webhook")
+def rzp_hook():
+    import paidbot
+    b = dict(request.get_json(force=True) or {})
+    b["_sig"] = request.headers.get("X-Razorpay-Signature", "")
+    paidbot.handle_webhook(b)
+    return jsonify({"ok": True})
+
+@APP.get("/paydemo/<path:note>")
+def paydemo(note):
+    import paidbot
+    return Response(paidbot.demo_page(note), mimetype="text/html")
+
+@APP.get("/demopay")
+def demopay():
+    import paidbot
+    n = request.args.get("n", "")
+    try:
+        uid, batch = int(n.split(":")[0]), n.split(":")[1]
+        paidbot.fulfill(uid, batch, n, paid=True)
+    except Exception:
+        pass
+    return Response("<!doctype html><meta charset=utf-8><body style='font:17px/1.6 -apple-system;background:#0f1621;color:#e9eef5;display:flex;min-height:95vh;align-items:center;justify-content:center;margin:0'><div style='text-align:center'><div style='font-size:46px'>✅</div><h2>Payment Successful (demo)</h2><p style='color:#8fa1b8'>Telegram check karo — join link bhej diya gaya</p></div>",
+                    mimetype="text/html")
+
 @APP.get("/soon")
 def soon():
     return Response("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
@@ -227,25 +252,14 @@ load();
 </script></body></html>"""
 
 def bot_poller():
-    """Optional paid-bot responder (disabled until PAID_BOT_TOKEN set)."""
-    tok = os.environ.get("PAID_BOT_TOKEN", "")
-    if not tok:
+    """paid catalog bot — runs when PAID_BOT_TOKEN set (real handler in paidbot.py)."""
+    if not os.environ.get("PAID_BOT_TOKEN", ""):
         return
-    import urllib.request
-    off = 0
-    while True:
-        try:
-            with urllib.request.urlopen(f"https://api.telegram.org/bot{tok}/getUpdates?offset={off}&timeout=50", timeout=60) as f:
-                for up in json.load(f).get("result", []):
-                    off = up["update_id"] + 1
-                    m = up.get("message") or {}
-                    if m.get("text", "").startswith(("/start", "/help")):
-                        body = json.dumps({"chat_id": m["chat"]["id"], "parse_mode": "HTML",
-                                           "text": "🚧 <b>Batches opening soon</b>\nPayment setup is being finished by admin. Meanwhile keep appearing in daily LIVE tests 💪🌾"}).encode()
-                        rq = urllib.request.Request(f"https://api.telegram.org/bot{tok}/sendMessage", data=body, headers={"Content-Type": "application/json"})
-                        urllib.request.urlopen(rq, timeout=20)
-        except Exception:
-            time.sleep(15)
+    try:
+        import paidbot
+        paidbot.run()
+    except Exception as e:
+        print("paidbot crashed:", e)
 
 init()
 threading.Thread(target=bot_poller, daemon=True).start()

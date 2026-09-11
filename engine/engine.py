@@ -689,9 +689,7 @@ def step_finish(st, date, job, rows_):
         fid = send_file(path, name, cap)          # NOT pinned per user
         j.update({"step": 6, "msg_file": fid}); save_state(st, f"{job} {date} file")
     if j.get("step", 0) < 7:
-        kb = {"inline_keyboard": [[{"text": "🎟 JOIN NOW", "url": (RENDER or "https://t.me/agriquizworld") + "/soon"},
-                                   {"text": "📄 PDFs + Course", "url": (RENDER or "https://t.me/agriquizworld") + "/soon"}]]} \
-            if RENDER else None
+        kb = {"inline_keyboard": [[{"text": "🎟 JOIN NOW — Paid Batches", "url": "https://t.me/Quizbotagri2_bot?start=batch"}]]}
         cid = send(cta_msg(job), reply_markup=kb)
         j.update({"step": 7, "msg_cta": cid}); save_state(st, f"{job} {date} cta")
     if j.get("step", 0) < 8:
