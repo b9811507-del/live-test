@@ -301,7 +301,7 @@
     "msg_cta": 28924
    },
    "iari": {
-    "step": 1,
+    "step": 3,
     "go": 1789117200.0,
     "deadline": 1789117830.0,
     "nq": 21,
@@ -336,7 +336,233 @@
      "1sUgWsko:20",
      "1sUgWsko:21"
     ],
-    "msg_ann": 28927
+    "msg_ann": 28927,
+    "votes": {
+     "1903140467": {
+      "name": "Sagarik@",
+      "right": 16,
+      "wrong": 5,
+      "att": 21,
+      "final": 14.75
+     },
+     "1257179874": {
+      "name": "Aakriti",
+      "right": 18,
+      "wrong": 3,
+      "att": 21,
+      "final": 17.25
+     },
+     "5314432132": {
+      "name": "mira",
+      "right": 16,
+      "wrong": 5,
+      "att": 21,
+      "final": 14.75
+     },
+     "5663965932": {
+      "name": "O positive",
+      "right": 16,
+      "wrong": 5,
+      "att": 21,
+      "final": 14.75
+     },
+     "1856281383": {
+      "name": "krsankar#27",
+      "right": 19,
+      "wrong": 2,
+      "att": 21,
+      "final": 18.5
+     },
+     "7529150250": {
+      "name": "Mafia",
+      "right": 13,
+      "wrong": 8,
+      "att": 21,
+      "final": 11.0
+     },
+     "1217648983": {
+      "name": "Muskan Shrivastava",
+      "right": 10,
+      "wrong": 11,
+      "att": 21,
+      "final": 7.25
+     },
+     "8824694648": {
+      "name": "WAR",
+      "right": 20,
+      "wrong": 1,
+      "att": 21,
+      "final": 19.75
+     },
+     "5537854723": {
+      "name": "@subham kandu",
+      "right": 15,
+      "wrong": 6,
+      "att": 21,
+      "final": 13.5
+     },
+     "6883412433": {
+      "name": "Sarmad",
+      "right": 5,
+      "wrong": 0,
+      "att": 5,
+      "final": 5.0
+     },
+     "1922665327": {
+      "name": "Baji",
+      "right": 19,
+      "wrong": 2,
+      "att": 21,
+      "final": 18.5
+     },
+     "497002250": {
+      "name": "Punit",
+      "right": 17,
+      "wrong": 4,
+      "att": 21,
+      "final": 16.0
+     },
+     "8058257474": {
+      "name": "Iamgopi",
+      "right": 13,
+      "wrong": 8,
+      "att": 21,
+      "final": 11.0
+     },
+     "8260868348": {
+      "name": "Pallu",
+      "right": 11,
+      "wrong": 10,
+      "att": 21,
+      "final": 8.5
+     },
+     "6944658236": {
+      "name": "@nkitha",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 1.0
+     },
+     "6709956742": {
+      "name": "Archana Abraham",
+      "right": 18,
+      "wrong": 3,
+      "att": 21,
+      "final": 17.25
+     },
+     "7208042501": {
+      "name": "✧*•. TARVEJ .•*✧",
+      "right": 0,
+      "wrong": 1,
+      "att": 1,
+      "final": -0.25
+     },
+     "1287164565": {
+      "name": "Pittala",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 1.0
+     },
+     "382728002": {
+      "name": "Mr. Shrikant",
+      "right": 14,
+      "wrong": 6,
+      "att": 20,
+      "final": 12.5
+     },
+     "1978931116": {
+      "name": "Mademoni Mahesh",
+      "right": 12,
+      "wrong": 8,
+      "att": 20,
+      "final": 10.0
+     },
+     "7203525577": {
+      "name": "Karan",
+      "right": 2,
+      "wrong": 1,
+      "att": 3,
+      "final": 1.75
+     },
+     "6617236552": {
+      "name": "Prathyusha",
+      "right": 17,
+      "wrong": 2,
+      "att": 19,
+      "final": 16.5
+     },
+     "1347595171": {
+      "name": "Kaushal",
+      "right": 13,
+      "wrong": 5,
+      "att": 18,
+      "final": 11.75
+     },
+     "1168044151": {
+      "name": "S.h.a.r.a.v",
+      "right": 13,
+      "wrong": 3,
+      "att": 16,
+      "final": 12.25
+     },
+     "7959642681": {
+      "name": "Ashutosh",
+      "right": 2,
+      "wrong": 2,
+      "att": 4,
+      "final": 1.5
+     },
+     "7998124073": {
+      "name": "Julaganti",
+      "right": 7,
+      "wrong": 1,
+      "att": 8,
+      "final": 6.75
+     },
+     "8567101693": {
+      "name": "Tushar",
+      "right": 12,
+      "wrong": 1,
+      "att": 13,
+      "final": 11.75
+     },
+     "8246201878": {
+      "name": "Niki",
+      "right": 9,
+      "wrong": 3,
+      "att": 12,
+      "final": 8.25
+     },
+     "1027390571": {
+      "name": "Sns",
+      "right": 5,
+      "wrong": 3,
+      "att": 8,
+      "final": 4.25
+     },
+     "998749755": {
+      "name": "Aspirant.20",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 1.0
+     },
+     "8646439292": {
+      "name": "Rahul",
+      "right": 0,
+      "wrong": 1,
+      "att": 1,
+      "final": -0.25
+     },
+     "1143441820": {
+      "name": "GMG",
+      "right": 3,
+      "wrong": 2,
+      "att": 5,
+      "final": 2.5
+     }
+    }
    }
   }
  },
