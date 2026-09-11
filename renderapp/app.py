@@ -194,6 +194,15 @@ def admin_selftest():
     return jsonify(out)
 
 
+@APP.get("/admin/ping")
+def admin_ping():
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import paidbot as PB
+    r = PB.tg("sendMessage", chat_id=PB.ADMIN_ID, text="🤖 bot↔telegram link OK (self-test ping)")
+    return jsonify({"send": r if isinstance(r, dict) else str(r)[:120], "admin": PB.ADMIN_ID})
+
+
 @APP.get("/soon")
 def soon():
     return Response("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
