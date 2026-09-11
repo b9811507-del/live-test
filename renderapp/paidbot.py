@@ -8,8 +8,20 @@ Batches persist: sqlite + state/batches.json pushed to GitHub (survives Render r
 Non-admin free text: NO reply to them — silently forwarded to admin DM (buyer txn msgs get 🔔).
 DEMO_MODE=1: fake payment page. MT bridge (MT_URL) for member_limit=1 links when available.
 """
-import os, sys, json, time, sqlite3, threading, re, base64
+import os, sys, json, time, sqlite3, threading, re, base64, socket
 import urllib.request, urllib.parse, html as _html
+
+# --- force IPv4 for all urllib calls (Render oregon IPv6 to TG/RZP can blackhole) ---
+_gai = socket.getaddrinfo
+def _gai4(host, port, family=0, type=0, proto=0, flags=0):
+    try:
+        res = [r for r in _gai(host, port, socket.AF_INET, type, proto, flags) if r[0] == socket.AF_INET]
+        if res:
+            return res
+    except Exception:
+        pass
+    return _gai(host, port, family, type, proto, flags)
+socket.getaddrinfo = _gai4
 
 try:
     import llmsupport
