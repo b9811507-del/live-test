@@ -1,1 +1,49 @@
-{"ptr":{},"afo":{"cursor":0,"seed":20260911,"closed":false},"days":{},"agent_log":[]}
+{
+ "ptr": {
+  "malwa": {
+   "book": "malwa_vol1",
+   "bidx": 0
+  }
+ },
+ "afo": {
+  "cursor": 0,
+  "seed": 20260911,
+  "closed": false
+ },
+ "days": {
+  "2026-09-11": {
+   "malwa": {
+    "step": 0,
+    "go": 1789104600.0,
+    "deadline": 1789105020.0,
+    "nq": 14,
+    "title": "MALWA BOOK VOL 1",
+    "pages": [
+     1,
+     4
+    ],
+    "book": "malwa_vol1",
+    "bidx": 0,
+    "n_batches": 150,
+    "sn": [
+     "128DIQLj:21",
+     "128DIQLj:22",
+     "128DIQLj:23",
+     "128DIQLj:24",
+     "128DIQLj:25",
+     "128DIQLj:26",
+     "128DIQLj:27",
+     "128DIQLj:31",
+     "128DIQLj:32",
+     "128DIQLj:33",
+     "128DIQLj:34",
+     "128DIQLj:35",
+     "128DIQLj:36",
+     "128DIQLj:37"
+    ]
+   }
+  }
+ },
+ "agent_log": [],
+ "tc": {}
+}
