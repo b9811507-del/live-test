@@ -469,8 +469,15 @@ def gen_onetime_link(chat_id, tag):
 
 def fulfill(uid, batch, note, paid=True):
     b = get_batches().get(batch, {})
+    newst = "paid" if paid else "failed"
     with db() as c:
-        c.execute("UPDATE orders SET status=?, ts=? WHERE note=?", ("paid" if paid else "failed", time.time(), note))
+        # UPDATE OR IGNORE: UNIQUE(uid,batch,status) — second paid row for the same buyer must
+        # not crash fulfilment (re-run /give after a partial failure used to die right here)
+        c.execute("UPDATE OR IGNORE orders SET status=?, ts=? WHERE note=?", (newst, time.time(), note))
+        if paid:
+            c.execute("UPDATE OR IGNORE orders SET status='paid', ts=? WHERE uid=? AND batch=? AND status='created' AND note=?",
+                      (time.time(), uid, batch, note))
+        c.execute("DELETE FROM orders WHERE note=? AND status NOT IN ('paid','delivered')", (note,))  # drop dup leftovers
         done = c.execute("SELECT COUNT(*) FROM orders WHERE uid=? AND batch=? AND status='paid'", (uid, batch)).fetchone()[0]
     title = b.get("title", batch)
     if paid and done == 1:
@@ -821,8 +828,9 @@ def admin_message(m):
                 note = parts[1]
                 uid2, batch = int(note.split(":")[0]), note.split(":")[1]
                 with db() as c:
-                    c.execute("INSERT OR IGNORE INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)",
-                              (uid2, batch, "manual", "created", note, time.time()))
+                    if not c.execute("SELECT 1 FROM orders WHERE note=?", (note,)).fetchone():
+                        c.execute("INSERT INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)",
+                                  (uid2, batch, "manual", "created", note, time.time()))
                 fulfill(uid2, batch, note)
                 tg("sendMessage", chat_id=uid, text="✅ fulfill() chala gaya — check buyer DM.")
             else:
