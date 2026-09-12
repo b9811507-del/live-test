@@ -457,7 +457,10 @@ def bot_poller():
 
 init()
 app = APP  # alias so `gunicorn app:app` resolves
-threading.Thread(target=bot_poller, daemon=True).start()
+# NOTE: do NOT start the poller at module level — under gunicorn that line runs in the
+# MASTER, whose thread would keep polling forever and 409-conflict the real worker.
+# Workers start it themselves via _ensure_bot on their first request (keepwarm pings
+# /healthz every 10 min, so activation is automatic after every deploy).
 
 # gunicorn imports the app in the MASTER then FORKS workers — threads never survive fork,
 # so the poller above dies with the master's copy. (post_fork hooks need a gunicorn config
@@ -477,4 +480,5 @@ def _ensure_bot():
         print(f"ensure_bot: poller started in worker pid={pid}", flush=True)
 
 if __name__ == "__main__":
+    threading.Thread(target=bot_poller, daemon=True).start()
     APP.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
