@@ -514,10 +514,10 @@ function chk(){{fetch("/pstatus?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComp
 function pollPaid(){{var n=0,iv=setInterval(function(){{if(done){{clearInterval(iv);return;}}
  fetch("/pstatus?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(j.paid){{clearInterval(iv);ok();}}}}).catch(function(){{}});
  if(++n>20){{clearInterval(iv);}}}},5000);}}
-function openRp(oid){{var r=new Razorpay({{key:RZPKEY,order_id:oid,name:"AGRI LEARNING POINT",description:{json.dumps(b['title'][:70])},theme:{{color:"#13733e"}},
- handler:function(res){{fetch("/confirm?note="+encodeURIComponent(NOTE)+"&order_id="+res.razorpay_order_id+"&payment_id="+res.razorpay_payment_id+"&signature="+encodeURIComponent(res.razorpay_signature)).then(function(x){{return x.json()}}).then(function(j){{if(j.ok){{ok()}}else{{pollPaid();fail("Payment ho gayi — verify 1 min me complete ho jayega, page mat band karo")}}}}).catch(function(){{pollPaid()}});}},
- modal:{{ondie:function(){{if(!done&&!window.paying){{fail("Payment adhuri reh gayi")}}}}}}}});
- r.on("payment.failed",function(){{window.paying=false;fail("Payment fail ho gayi — dobara try karein")}});r.open();}}
+function openRp(oid){{/* Razorpay-hosted checkout: origin = razorpay.com (registered domain)
+ so the "website does not match registered website(s)" risk-block on our .onrender origin
+ is bypassed entirely. Fulfilment arrives via webhook / poll_pending while they pay. */
+window.location.replace("https://api.razorpay.com/v1/checkout/"+oid);}}
 function go(){{var bt=document.getElementById("pay");if(bt){{bt.disabled=true;bt.textContent="⏳ Server se connect ho raha hai…";}}
  fetch("/startpay?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}
  if(j.order_id){{window.paying=true;openRp(j.order_id);}}else{{window.paying=false;fail(j.err||"Payment server busy hai");}}}}).catch(function(){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}window.paying=false;fail("Payment server busy hai — dobara try karein");}});}}
