@@ -470,6 +470,8 @@ def handle_webhook(body):
                 return False
         ent = body.get("entity") or body          # accept both nested & flat formats
         ev = ent.get("event", "")
+        if isinstance(LAST_HOOK[0], dict):
+            LAST_HOOK[0]["event"] = ev
         payload = ent.get("payload") or {}
         pe = (payload.get("payment") or {}).get("entity") or payload.get("payment") or {}
         note = pe.get("notes", {}).get("ref", "") \
@@ -563,6 +565,7 @@ BOOT_ID = "?"
 BEAT = [time.time()]          # heartbeat: watchdog + /admin/loopfix restart if loop freezes
 PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
 LASTERR = [""]
+LAST_HOOK = [None]          # last Razorpay webhook delivery (observability)
 
 # ---- slow work goes through ONE import-time queue worker: no per-call thread spawns
 # (Render container starved Thread.start() under GIL/network pressure and froze the bot) ----
@@ -636,6 +639,7 @@ BOOT_ID = "?"
 BEAT = [time.time()]          # heartbeat: watchdog + /admin/loopfix restart if loop freezes
 PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
 LASTERR = [""]
+LAST_HOOK = [None]          # last Razorpay webhook delivery (observability)
 
 # ---- slow work goes through ONE import-time queue worker: no per-call thread spawns
 # (Render container starved Thread.start() under GIL/network pressure and froze the bot) ----

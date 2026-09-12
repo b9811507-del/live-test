@@ -126,6 +126,12 @@ def rzp_hook():
     b = dict(request.get_json(force=True) or {})
     b["_sig"] = request.headers.get("X-Razorpay-Signature", "")
     b["_raw"] = raw
+    try:
+        paidbot.LAST_HOOK[0] = {"at": time.strftime("%F %T UTC", time.gmtime()),
+                                "bytes": len(raw), "has_sig": bool(b["_sig"]),
+                                "preview": raw[:180].decode("utf-8", "ignore")}
+    except Exception:
+        pass
     paidbot._bg(lambda: paidbot.handle_webhook(b))   # queued (no thread-spawn starvation here); ack fast
     return jsonify({"ok": True})
 
@@ -276,6 +282,14 @@ def admin_stackdump():
             loc = " <- ".join(f"{s.filename.split('/')[-1]}:{s.lineno} in {s.name}" for s in st[:4])
         out.append(f"{t.name}: {loc}")
     return Response("\n".join(out), mimetype="text/plain")
+
+@APP.get("/admin/lasthook")
+def admin_lasthook():
+    """Shows the LAST webhook delivery Razorpay actually sent (proves dashboard config works)."""
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import paidbot
+    return jsonify({"last_hook": paidbot.LAST_HOOK[0] or "none received yet"})
 
 @APP.get("/admin/loopinfo")
 def admin_loopinfo():
