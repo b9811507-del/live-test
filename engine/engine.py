@@ -759,6 +759,8 @@ def cmd_run(job):
         send(f"🏁 <b>{JOBS[job]['label']}</b> — poori series complete! 🎉 Series khatam — thanks for the daily consistency 💪🌾", pin=True)
         st.setdefault("finished", {})[job] = date; save_state(st, f"{job} finished"); return
     save_state(st, f"{job} {date} plan")
+    if day and j.get("step", 0) == 0 and now() > j["go"] + 4 * 3600:
+        log(f"{job} {date}: slot window over — MISSED, not started retroactively"); return
     if not day:
         day = rebuild_questions(st, date, job)
     target = j["go"] - 45
@@ -790,12 +792,11 @@ def cmd_agent():
         if job == "afo" and (st.get("afo", {}).get("closed") or date > JOBS["afo"]["last_day"]):
             continue
         j = jd(st, date, job)
-        go = j.get("go") or slot_go(job, date)
-        if j.get("step", 0) < 8:
-            if j.get("step", 0) == 0 and now() < go - 120:
-                continue
+        step = j.get("step", 0)
+        if 0 < step < 8:  # resume an INTERRUPTED test only — never start a missed slot
+            # retroactively (old behaviour fired all 3 slots back-to-back at night)
             try:
-                cmd_run(job); fixes.append(f"{job}: resumed (step {j.get('step',0)})")
+                cmd_run(job); fixes.append(f"{job}: resumed (step {step})")
             except Exception as e:
                 problems.append(f"{job}: {e}")
     if _env("GITHUB_ACTIONS") and _env("GITHUB_TOKEN") and _env("GITHUB_REPOSITORY"):
@@ -866,13 +867,15 @@ def cmd_prebuild(job):
 if __name__ == "__main__":
     c = sys.argv[1] if len(sys.argv) > 1 else "status"
     a = sys.argv[2:]
+    if c in ("prebuild", "run", "finish") and not a:
+        print("usage: engine.py prebuild|run|finish <job> [date]"); sys.exit(2)
     if c == "prebuild":
         cmd_prebuild(a[0])
     elif c == "run":
         cmd_run(a[0])
-    elif c == "finish":   # resume only
+    elif c == "finish":   # resume only; optional 2nd arg = date (e.g. finish afo 2026-09-11)
         st = load_state()
-        date = today()
+        date = a[1] if len(a) > 1 else today()
         j = jd(st, date, a[0])
         if j.get("step", 0) >= 3:
             cfg = JOBS[a[0]]
