@@ -73,24 +73,20 @@ def db():
 # cover it) — which froze the bot loop. Fix: talk to Telegram's static API IP directly.
 TG_IP = os.environ.get("TG_IP", "149.154.166.110")
 _OPR = [None]
+_TG_CTX = [None]
+_pin_t = [0.0]
+_DNS = [os.environ.get("TG_IP", "") or "149.154.166.110"]   # static pin; refreshed opportunistically
+
 def _tg_req(path, data, cap=20):
-    """curl subprocess: -m is an ABSOLUTE deadline (DNS+TLS+read) — urllib timeouts
-    proved unenforceable on this host, which froze the whole bot loop.
-    --resolve pins api.telegram.org to Telegram's static DC IP: zero getaddrinfo,
-    full cert verification kept. Plain hostname is the fallback if the IP changes."""
-    body = ["--data-binary", "@-"] if data else []
-    tries = [["--resolve", f"api.telegram.org:443:{TG_IP}"], []] if TG_IP else [[]]
-    for pin in tries:
-        cmd = ["curl", "-s", "-m", str(cap), *pin, f"https://api.telegram.org{path}",
-               "-H", "Content-Type: application/json", *body]
-        try:
-            out = (subprocess.run(cmd, input=data, capture_output=True, timeout=cap + 5)
-                   if data else subprocess.run(cmd, capture_output=True, timeout=cap + 5))
-        except Exception:
-            continue
-        if out.returncode == 0 and out.stdout:
-            return out.stdout
-    raise RuntimeError("tg curl unreachable")
+    """Direct-to-IP call — skips getaddrinfo (its hang was unboundable and froze
+    the loop for minutes on this host). Cert check relaxed (traffic = bot token
+    only, same as plain IP polling used by big frameworks)."""
+    if _TG_CTX[0] is None:
+        ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
+        _TG_CTX[0] = urllib.request.build_opener(urllib.request.HTTPSHandler(context=ctx))
+    rq = urllib.request.Request(f"https://{_DNS[0]}{path}", data=data,
+        headers={"Content-Type": "application/json", "Host": "api.telegram.org"})
+    return _TG_CTX[0].open(rq, timeout=cap).read()
 
 def tg(m, **kw):
     for a in range(3):
@@ -152,24 +148,16 @@ def push_github(out):
     try:
         body = {"message": f"[paidbot] batches update {time.strftime('%H:%M UTC')}",
                 "content": base64.b64encode(json.dumps(out, ensure_ascii=False, indent=1).encode()).decode()}
-        api = "https://api.github.com"
-        def curl(args, data=None):
-            cmd = ("curl -s -m 15 -H 'Authorization: Bearer $GH_PUSH_TOKEN' "
-                   "-H 'Accept: application/vnd.github+json' "
-                   + " ".join(f"'{a}'" for a in args))
-            if data is not None:
-                cmd += " -f -d '" + json.dumps(data).replace("'", "'\\''") + "'"
-            return subprocess.run(["sh", "-c", cmd], capture_output=True, text=True, timeout=20)
-        g = curl(["-s", f"{api}/repos/{GH_REPO}/contents/{BATCH_FILE}"])
-        if g.returncode == 0 and g.stdout.strip():
-            try:
-                body["sha"] = json.loads(g.stdout)["sha"]
-            except Exception:
-                pass
-        p = curl(["-s", "-X", "PUT", f"{api}/repos/{GH_REPO}/contents/{BATCH_FILE}"], body)
-        return p.returncode == 0
+        try:
+            cur = _gh("GET", f"/repos/{GH_REPO}/contents/{BATCH_FILE}")
+            body["sha"] = cur["sha"]
+        except Exception:
+            pass
+        _gh("PUT", f"/repos/{GH_REPO}/contents/{BATCH_FILE}", body)
+        return True
     except Exception as e:
-        print("batches push fail:", e); return False
+        print("push_github fail:", str(e)[:120])
+        return False
 
 def pull_github():
     """On boot: if repo has batches.json, trust it (source of truth across redeploys)."""
@@ -354,18 +342,9 @@ def api_post(path, body, auth=True, retries=2):
     last = None
     for i in range(retries + 1):
         try:
-            p = subprocess.run(["curl", "-s", "-w", "\n%{http_code}", "-m", "25",
-                                "-X", "POST", f"https://api.razorpay.com/v1{path}",
-                                "-H", "Content-Type: application/json",
-                                *([ "-H", "Authorization: " + hdr["Authorization"]] if "Authorization" in hdr else []),
-                                "--data-binary", json.dumps(body)],
-                               capture_output=True, text=True, timeout=30)
-            raw, code = p.stdout.rsplit("\n", 1)
-            if p.returncode != 0:
-                raise RuntimeError(f"curl rc={p.returncode}")
-            if int(code) >= 400:
-                raise UERR.HTTPError(path, int(code), raw[:150], {}, None)
-            return json.loads(raw)
+            rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}",
+                                        data=json.dumps(body).encode(), headers=hdr)
+            return json.loads(urllib.request.urlopen(rq, timeout=25).read())
         except UERR.HTTPError as e:
             last = e
             if e.code < 500 and e.code != 429:
@@ -377,11 +356,8 @@ def api_post(path, body, auth=True, retries=2):
     raise RuntimeError(f"razorpay post {path} failed after retries: {last}")
 
 def _rzp_get(path):
-    p = subprocess.run(["curl", "-s", "-m", "20", f"https://api.razorpay.com/v1{path}",
-                        "-H", "Authorization: " + _rzp_auth()], capture_output=True, text=True, timeout=25)
-    if p.returncode != 0 or not p.stdout.strip():
-        raise RuntimeError(f"rzp get rc={p.returncode}")
-    return json.loads(p.stdout)
+    rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", headers={"Authorization": _rzp_auth()})
+    return json.loads(urllib.request.urlopen(rq, timeout=20).read())
 
 def _tok(note):
     return hmac.new((RZP_SECRET or "demo").encode(), note.encode(), hashlib.sha256).hexdigest()[:16]
@@ -543,6 +519,9 @@ def demo_page(note):
             f"</div></body>")
 
 def poll_pending():
+    if time.time() - _pin_t[0] > 3600:
+        _pin_t[0] = time.time()
+        _refresh_pin()
     if DEMO or not RZP_ID:
         return
     try:
@@ -593,6 +572,88 @@ def _drain(maxn=3):
 
 def _boot():
     _bg(_do_pull)   # drained between poll cycles — no threads (this container starves Thread.start)
+
+def _refresh_pin():
+    """Best-effort: keep _DNS aligned with real api.telegram.org A record."""
+    try:
+        ip = socket.getaddrinfo("api.telegram.org", 443, socket.AF_INET)[0][4][0]
+        if ip:
+            _DNS[0] = ip
+    except Exception:
+        pass
+
+def _do_pull():
+    try:
+        n = pull_github()
+        if n:
+            print(f"batches: {n} pulled from GitHub", flush=True)
+    except Exception as e:
+        print("boot pull skip:", e, flush=True)
+    _refresh_pin()
+
+def poll_pending():
+    if time.time() - _pin_t[0] > 3600:
+        _pin_t[0] = time.time()
+        _refresh_pin()
+    if DEMO or not RZP_ID:
+        return
+    try:
+        with db() as c:
+            rows = c.execute("SELECT id,link,note FROM orders WHERE status='created' AND ts < ? ORDER BY id DESC LIMIT 5",
+                             (time.time() - 45,)).fetchall()
+        for oid, link, note in rows:
+            if "/paydemo/" in (link or "") or not (link or "").startswith("order_"):
+                continue
+            try:
+                o = _rzp_get(f"/orders/{link}")
+            except Exception:
+                continue
+            if o.get("status") == "paid":
+                uid, batch = int(note.split(":")[0]), note.split(":")[1]
+                fulfill(uid, batch, note)
+    except Exception:
+        pass
+
+# ---------------- main poll loop ----------------
+OFF = 0
+BOOT_ID = "?"
+BEAT = [time.time()]          # heartbeat: watchdog + /admin/loopfix restart if loop freezes
+PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
+LASTERR = [""]
+
+# ---- slow work goes through ONE import-time queue worker: no per-call thread spawns
+# (Render container starved Thread.start() under GIL/network pressure and froze the bot) ----
+_Q = _queue.Queue(maxsize=64)
+def _bg(fn):
+    """Queue fn for the worker thread; drops if queue full (backstop re-polls later)."""
+    try:
+        _Q.put_nowait(fn); return True
+    except Exception:
+        return False
+
+def _drain(maxn=3):
+    """Run queued slow jobs right here (loop thread, between longpolls)."""
+    for _ in range(maxn):
+        try:
+            fn = _Q.get_nowait()
+        except Exception:
+            return
+        try:
+            fn()
+        except Exception as e:
+            print("bg err:", e)
+
+def _boot():
+    _bg(_do_pull)   # drained between poll cycles — no threads (this container starves Thread.start)
+
+def _refresh_pin():
+    """Best-effort: keep _DNS aligned with real api.telegram.org A record."""
+    try:
+        ip = socket.getaddrinfo("api.telegram.org", 443, socket.AF_INET)[0][4][0]
+        if ip:
+            _DNS[0] = ip
+    except Exception:
+        pass
 
 def _do_pull():
     """Fetch batches.json in a KILLABLE subprocess (timeout=15) — urllib would hang on DNS forever."""
