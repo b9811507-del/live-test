@@ -53,12 +53,6 @@ def build():
     sets_c.create_index("date", unique=True); used_c.create_index("uid", unique=True)
     # used question uids (historical sets + legacy engine ledger)
     used_uids = {d["uid"] for d in used_c.find({}, {"uid": 1})}
-    try:
-        st = json.load(open(os.path.join(HERE, "..", "state.json")))
-        for dd in (st.get("afo", {}) or {}).get("done_dates", []):
-            pass  # per-day uids already in afo_used_q once any set was built here
-    except Exception:
-        pass
     have = {d["date"] for d in sets_c.find({"status": "ready"}, {"date": 1})}
     need = [d for d in all_dates() if d not in have]
     # also exclude dates that already used
@@ -93,7 +87,7 @@ def build():
             need = need[: len(avail) // PER_DAY]
     seed = int(os.environ.get("AFO_SEED", "20260911"))
     order = sorted(avail, key=lambda q: hashlib.sha256(f"{seed}|{q['uid']}".encode()).hexdigest())
-    meta = meta_c.find_one({"key": "meta"}) or {"key": "meta", "next_set_no": 1}
+    meta = meta_c.find_one({"key": "meta"}) or {"key": "meta", "next_set_no": 0}
     docs, cur = [], 0
     for d in need:
         batch = order[cur: cur + PER_DAY]
@@ -145,9 +139,9 @@ def pick(date):
 
 def mark(date):
     db = dbs()
-    r = db["afo_sets"].update_one({"date": date, "status": ["running", "ready"]},
+    r = db["afo_sets"].update_one({"date": date, "status": {"$in": ["running", "ready"]}},
                                   {"$set": {"status": "used", "used_at": time.strftime("%F %T")}})
-    print("marked used:", r.modified_count)
+    print("marked used:", r.modified_count, "(matched", r.matched_count, ")")
 
 def status():
     db = dbs()
