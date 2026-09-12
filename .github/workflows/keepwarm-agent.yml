@@ -1,7 +1,7 @@
 name: keepwarm+agent
 on:
   schedule:
-    - cron: "*/10 * * * *"     # keep Render awake + self-heal agent each pass
+    - cron: "*/5 * * * *"     # keep Render awake + wake poller + self-heal (5 min = faster loopfix)
   workflow_dispatch:
 permissions: { contents: write, actions: write }
 concurrency: { group: warm, cancel-in-progress: true }
