@@ -255,6 +255,23 @@ def admin_loopfix():
         os._exit(1)
     return jsonify({"ok": True, "loop_age_s": round(age, 1)})
 
+@APP.get("/admin/stackdump")
+def admin_stackdump():
+    """Exact line where every thread of this worker sits — ultimate freeze diagnostic."""
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import sys, threading, traceback
+    frames = sys._current_frames()
+    out = []
+    for t in threading.enumerate():
+        f = frames.get(t.ident)
+        loc = ""
+        if f:
+            st = traceback.StackSummary.extract(traceback.walk_stack(f), limit=4, capture_locals=False)
+            loc = " <- ".join(f"{s.filename.split('/')[-1]}:{s.lineno} in {s.name}" for s in st[:4])
+        out.append(f"{t.name}: {loc}")
+    return Response("\n".join(out), mimetype="text/plain")
+
 @APP.get("/admin/loopinfo")
 def admin_loopinfo():
     if not _auth():
