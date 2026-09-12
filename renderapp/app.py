@@ -459,5 +459,13 @@ init()
 app = APP  # alias so `gunicorn app:app` resolves
 threading.Thread(target=bot_poller, daemon=True).start()
 
+def post_fork(server, worker):
+    """gunicorn imports in the master then FORKS workers — threads die at fork.
+    Without this hook the bot poller lived (and froze) in the master's dead copy.
+    (gunicorn calls post_fork inside each fresh worker)."""
+    if os.environ.get("PAID_BOT_TOKEN", ""):
+        threading.Thread(target=bot_poller, daemon=True).start()
+        print(f"post_fork: bot poller (re)started in worker pid={os.getpid()}", flush=True)
+
 if __name__ == "__main__":
     APP.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))

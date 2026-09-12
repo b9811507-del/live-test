@@ -632,6 +632,8 @@ def run(offset=None):
     global OFF
     if offset:
         OFF = offset
+    BEAT[0] = time.time()
+    PHASE[0] = "warm"
     last_chk = 0
     while True:
         BEAT[0] = time.time(); PHASE[0] = "longpoll"
