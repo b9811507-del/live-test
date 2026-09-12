@@ -5,6 +5,7 @@ leaderboard API, health/keep-warm, offline /soon page. SQLite storage.
 Admin endpoints require header X-Admin-Key == env ADMIN_KEY.
 """
 import os, time, json, sqlite3, threading, re, hmac, traceback
+from urllib.parse import quote_plus
 from flask import Flask, request, jsonify, Response
 
 APP = Flask(__name__)
@@ -168,7 +169,13 @@ def startpay():
     if not note or not hmac.compare_digest(paidbot._tok(note), t):
         return jsonify({"err": "bad link"}), 403
     try:
-        return jsonify({"order_id": paidbot.ensure_rzp_order(note)})
+        r_ = paidbot.ensure_rzp_order(note)
+        if r_:
+            return jsonify({"pay_url": r_})
+        row = None
+        with paidbot.db() as c:
+            row = c.execute("SELECT link FROM orders WHERE note=?", (note,)).fetchone()
+        return jsonify({"order_id": (row[0] if row else "")})   # legacy modal order
     except Exception as e:
         msg = str(e)[:160].lower()
         friendly = "payment"
@@ -189,6 +196,28 @@ def pstatus():
         row = c.execute("SELECT status FROM orders WHERE note=?", (note,)).fetchone()
     st = row[0] if row else "none"
     return jsonify({"paid": st in ("paid", "delivered"), "status": st})
+
+@APP.get("/paydone")
+def paydone():
+    """Razorpay-hosted payment link returns here after paying (callback_url)."""
+    import paidbot
+    n, t = request.args.get("n", ""), request.args.get("t", "")
+    if not n or not hmac.compare_digest(paidbot._tok(n), t):
+        return Response("<body style='font:16px sans-serif;text-align:center;padding:60px;background:#0f1621;color:#fff'>❌ Invalid return link</body>", mimetype="text/html")
+    html = f"""<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<body style="font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;background:#0f1621;color:#e9eef5;display:flex;min-height:95vh;align-items:center;justify-content:center;margin:0">
+<div style="text-align:center;max-width:420px;padding:20px"><div style="font-size:42px">⏳</div><h2>Payment process ho rahi hai…</h2>
+<p style="color:#8fa1b8;font-size:14px">Ye page khula rakho — 1-2 minute me <b>One-Time Join Link</b> Telegram par mil jayega.</p>
+<div id=st></div></div>
+<script>
+var N="{n}",T="{t}";
+(function chk(){{fetch("/pstatus?n="+encodeURIComponent(N)+"&t="+encodeURIComponent(T)).then(function(x){{return x.json()}}).then(function(j){{
+ if(j.paid){{document.querySelector("div>div").innerHTML='<div style="font-size:42px">✅</div><h2>Payment Successful</h2><p style="color:#8fa1b8">Telegram check karo — One-Time Join Link bhej diya gaya 🎟</p>';return;}}
+ document.getElementById("st").textContent="Abhi verify ho raha hai… (page mat band karo)";}}).catch(function(){{}});
+ setTimeout(chk,5000);}})();
+</script></body>"""
+    from urllib.parse import quote_plus as _qp
+    return Response(html, mimetype="text/html")
 
 @APP.get("/paydemo/<path:note>")
 def paydemo(note):

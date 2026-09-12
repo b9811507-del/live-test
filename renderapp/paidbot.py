@@ -11,6 +11,7 @@ DEMO_MODE=1: fake payment page. MT bridge (MT_URL) for member_limit=1 links when
 import os, sys, json, time, sqlite3, threading, re, base64, socket, subprocess, hmac, hashlib, ssl, queue as _queue
 import urllib.error as UERR
 import urllib.request, urllib.parse, html as _html
+from urllib.parse import quote_plus
 
 # --- force IPv4 for all urllib calls (Render oregon IPv6 to TG/RZP can blackhole) ---
 _gai = socket.getaddrinfo
@@ -387,26 +388,45 @@ def make_order_local(uid, batch):
     return {"demo": DEMO or not RZP_ID, "note": note, "amount": b["price"]}
 
 def ensure_rzp_order(note):
-    """Create the Razorpay order lazily (called from the web request thread, never the bot loop)."""
+    """Create a Razorpay HOSTED payment link lazily (web thread, never the bot loop).
+    Returns the public pay URL. Chosen over the JS modal because Razorpay risk-blocks
+    checkouts whose origin domain isn't whitelisted (onrender subdomain) — hosted pages
+    originate from razorpay itself and are unaffected. link column stores:
+    'plink:<payment_link_id>:<short_url>' (or legacy 'order_<id>')."""
     with db() as c:
         row = c.execute("SELECT batch,link,status FROM orders WHERE note=?", (note,)).fetchone()
     if not row:
         raise RuntimeError("order not found")
-    if row[1] and row[1].startswith("order_"):
-        return row[1]
+    link = row[1] or ""
+    if link.startswith("plink:"):
+        return link.split(":", 2)[2]
+    if link.startswith("order_"):
+        return None  # legacy modal orders still payable via /confirm flow
     if row[2] not in ("created",):
         raise RuntimeError("order closed — start again")
-    price = get_batches().get(row[0], {}).get("price")
-    if price is None:
+    b = get_batches().get(row[0])
+    if not b:
         raise RuntimeError("batch removed")
+    uid = note.split(":")[0]
+    contact = "".join(ch for ch in uid if ch.isdigit())[-10:]
+    contact = (contact if len(contact) >= 10 and contact[0] in "6789" else "8" + contact.zfill(9)[:9])
     try:
-        r = api_post("/orders", {"amount": int(price) * 100, "currency": "INR",
-                                 "receipt": note, "notes": {"ref": note}})
+        r = api_post("/payment_links", {
+            "amount": int(b["price"]) * 100, "currency": "INR",
+            "description": f"AGRI LEARNING POINT - batch {row[0].upper()}"[:60],  # ASCII only!
+            "notes": {"ref": note},
+            "customer": {"name": f"TG-{uid}", "contact": contact,
+                         "email": f"{uid.lstrip('-')}@pay.agrilearningpoint.in"},
+            "notify": {"email": False, "sms": False},
+            "callback_url": f"{PUB}/paydone?n={quote_plus(note)}&t={_tok(note)}",
+            "callback_method": "get",
+            "expire_by": int(time.time()) + 1400})
         with db() as c:
-            c.execute("UPDATE orders SET link=? WHERE note=?", (r["id"], note))
-        return r["id"]
+            c.execute("UPDATE orders SET link=? WHERE note=?",
+                      (f"plink:{r['id']}:{r['short_url']}", note))
+        return r["short_url"]
     except Exception as e:
-        _admin_alert(f"order create fail note={note}: {str(e)[:160]}")
+        _admin_alert(f"pay-link create fail note={note}: {str(e)[:160]}")
         raise
 
 def make_pay_link(uid, batch):
@@ -481,6 +501,13 @@ def handle_webhook(body):
                 r = c.execute("SELECT note FROM orders WHERE link=?", (pe["order_id"],)).fetchone()
             if r:
                 note = r[0]
+        if ":" not in note:                       # payment made via a hosted link
+            lid = ((payload.get("payment_link") or {}).get("entity") or {}).get("id", "")
+            if lid.startswith("plink_"):
+                with db() as c:
+                    r = c.execute("SELECT note FROM orders WHERE link LIKE ?", (f"plink:{lid}:%",)).fetchone()
+                if r:
+                    note = r[0]
         if ev in ("payment.captured", "payment_link.captured", "order.paid") and ":" in note:
             uid, batch = int(note.split(":")[0]), note.split(":")[1]
             fulfill(uid, batch, note)
@@ -520,7 +547,9 @@ function openRp(oid){{/* Razorpay-hosted checkout: origin = razorpay.com (regist
 window.location.replace("https://api.razorpay.com/v1/checkout/"+oid);}}
 function go(){{var bt=document.getElementById("pay");if(bt){{bt.disabled=true;bt.textContent="⏳ Server se connect ho raha hai…";}}
  fetch("/startpay?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}
- if(j.order_id){{window.paying=true;openRp(j.order_id);}}else{{window.paying=false;fail(j.err||"Payment server busy hai");}}}}).catch(function(){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}window.paying=false;fail("Payment server busy hai — dobara try karein");}});}}
+ if(j.pay_url){{window.paying=true;window.location.replace(j.pay_url);}}
+ else if(j.order_id){{window.paying=true;openRp(j.order_id);}}
+ else{{window.paying=false;fail(j.err||"Payment server busy hai");}}}}).catch(function(){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}window.paying=false;fail("Payment server busy hai — dobara try karein");}});}}
 document.getElementById("pay").onclick=go;
 pollPaid();
 </script></body></html>"""
@@ -547,87 +576,20 @@ def poll_pending():
             rows = c.execute("SELECT id,link,note FROM orders WHERE status='created' AND ts < ? ORDER BY id DESC LIMIT 5",
                              (time.time() - 45,)).fetchall()
         for oid, link, note in rows:
-            if "/paydemo/" in (link or "") or not (link or "").startswith("order_"):
-                continue
+            link = link or ""
             try:
-                o = _rzp_get(f"/orders/{link}")
+                if link.startswith("order_"):
+                    o = _rzp_get(f"/orders/{link}")
+                    paid = o.get("status") == "paid"
+                elif link.startswith("plink:"):
+                    pid = link.split(":")[1]
+                    o = _rzp_get(f"/payment_links/{pid}")
+                    paid = o.get("status") in ("paid", "partially_paid")
+                else:
+                    continue
             except Exception:
                 continue
-            if o.get("status") == "paid":
-                uid, batch = int(note.split(":")[0]), note.split(":")[1]
-                fulfill(uid, batch, note)
-    except Exception:
-        pass
-
-# ---------------- main poll loop ----------------
-OFF = 0
-BOOT_ID = "?"
-BEAT = [time.time()]          # heartbeat: watchdog + /admin/loopfix restart if loop freezes
-PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
-LASTERR = [""]
-LAST_HOOK = [None]          # last Razorpay webhook delivery (observability)
-
-# ---- slow work goes through ONE import-time queue worker: no per-call thread spawns
-# (Render container starved Thread.start() under GIL/network pressure and froze the bot) ----
-_Q = _queue.Queue(maxsize=64)
-def _bg(fn):
-    """Queue fn for the worker thread; drops if queue full (backstop re-polls later)."""
-    try:
-        _Q.put_nowait(fn); return True
-    except Exception:
-        return False
-
-def _drain(maxn=3):
-    """Run queued slow jobs right here (loop thread, between longpolls)."""
-    for _ in range(maxn):
-        try:
-            fn = _Q.get_nowait()
-        except Exception:
-            return
-        try:
-            fn()
-        except Exception as e:
-            print("bg err:", e)
-
-def _boot():
-    _bg(_do_pull)   # drained between poll cycles — no threads (this container starves Thread.start)
-
-def _refresh_pin():
-    """Best-effort: keep _DNS aligned with real api.telegram.org A record."""
-    try:
-        ip = socket.getaddrinfo("api.telegram.org", 443, socket.AF_INET)[0][4][0]
-        if ip:
-            _DNS[0] = ip
-    except Exception:
-        pass
-
-def _do_pull():
-    try:
-        n = pull_github()
-        if n:
-            print(f"batches: {n} pulled from GitHub", flush=True)
-    except Exception as e:
-        print("boot pull skip:", e, flush=True)
-    _refresh_pin()
-
-def poll_pending():
-    if time.time() - _pin_t[0] > 3600:
-        _pin_t[0] = time.time()
-        _refresh_pin()
-    if DEMO or not RZP_ID:
-        return
-    try:
-        with db() as c:
-            rows = c.execute("SELECT id,link,note FROM orders WHERE status='created' AND ts < ? ORDER BY id DESC LIMIT 5",
-                             (time.time() - 45,)).fetchall()
-        for oid, link, note in rows:
-            if "/paydemo/" in (link or "") or not (link or "").startswith("order_"):
-                continue
-            try:
-                o = _rzp_get(f"/orders/{link}")
-            except Exception:
-                continue
-            if o.get("status") == "paid":
+            if paid:
                 uid, batch = int(note.split(":")[0]), note.split(":")[1]
                 fulfill(uid, batch, note)
     except Exception:
