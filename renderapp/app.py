@@ -4,7 +4,7 @@ Hosts: locked-until-GO test page, server-side grading (answer keys never leave s
 leaderboard API, health/keep-warm, offline /soon page. SQLite storage.
 Admin endpoints require header X-Admin-Key == env ADMIN_KEY.
 """
-import os, time, json, sqlite3, threading, re
+import os, time, json, sqlite3, threading, re, hmac, traceback
 from flask import Flask, request, jsonify, Response
 
 APP = Flask(__name__)
@@ -121,15 +121,15 @@ def api_board():
 
 @APP.post("/rzp/webhook")
 def rzp_hook():
-    import paidbot, threading as _th
+    import paidbot
     b = dict(request.get_json(force=True) or {})
     b["_sig"] = request.headers.get("X-Razorpay-Signature", "")
-    _th.Thread(target=paidbot.handle_webhook, args=(b,), daemon=True).start()
-    return jsonify({"ok": True})   # ack fast; failures are covered by poll_pending backstop
+    paidbot._bg(lambda: paidbot.handle_webhook(b))   # queued (no thread-spawn starvation here); ack fast
+    return jsonify({"ok": True})
 
 @APP.get("/p/<note>/<tok>")
 def pay_page(note, tok):
-    import paidbot, hmac
+    import paidbot
     if not hmac.compare_digest(paidbot._tok(note), tok):
         return Response("<body style='font:16px sans-serif;background:#0f1621;color:#fff;text-align:center;padding:60px'>❌ Link expired / invalid</body>", mimetype="text/html")
     return Response(paidbot.checkout_page(note, tok), mimetype="text/html")
@@ -154,7 +154,7 @@ def confirm():
 @APP.get("/startpay")
 def startpay():
     """Lazily create the Razorpay order — runs in a web thread, never blocks the bot."""
-    import paidbot, hmac
+    import paidbot
     d = request.args if request.method == "GET" else {**request.args.to_dict(), **(request.get_json(silent=True) or {})}
     note, t = d.get("n", ""), d.get("t", "")
     if not note or not hmac.compare_digest(paidbot._tok(note), t):
@@ -173,7 +173,7 @@ def startpay():
 @APP.get("/pstatus")
 def pstatus():
     """Lightweight payment-status poll used by the checkout page auto-recovery."""
-    import paidbot, hmac
+    import paidbot
     note, t = request.args.get("n", ""), request.args.get("t", "")
     if not note or not hmac.compare_digest(paidbot._tok(note), t):
         return jsonify({"paid": False, "err": "bad token"}), 403

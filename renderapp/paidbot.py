@@ -8,7 +8,8 @@ Batches persist: sqlite + state/batches.json pushed to GitHub (survives Render r
 Non-admin free text: NO reply to them — silently forwarded to admin DM (buyer txn msgs get 🔔).
 DEMO_MODE=1: fake payment page. MT bridge (MT_URL) for member_limit=1 links when available.
 """
-import os, sys, json, time, sqlite3, threading, re, base64, socket
+import os, sys, json, time, sqlite3, threading, re, base64, socket, subprocess, hmac, hashlib, ssl, queue as _queue
+import urllib.error as UERR
 import urllib.request, urllib.parse, html as _html
 
 # --- force IPv4 for all urllib calls (Render oregon IPv6 to TG/RZP can blackhole) ---
@@ -72,19 +73,11 @@ def db():
 # cover it) — which froze the bot loop. Fix: talk to Telegram's static API IP directly.
 TG_IP = os.environ.get("TG_IP", "149.154.166.110")
 _OPR = [None]
-def _tg_opener():
-    if _OPR[0] is None:
-        import ssl, urllib.request as U
-        ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
-        _OPR[0] = U.build_opener(U.HTTPSHandler(context=ctx))
-    return _OPR[0]
-
 def _tg_req(path, data, cap=20):
     """curl subprocess: -m is an ABSOLUTE deadline (DNS+TLS+read) — urllib timeouts
     proved unenforceable on this host, which froze the whole bot loop.
     --resolve pins api.telegram.org to Telegram's static DC IP: zero getaddrinfo,
     full cert verification kept. Plain hostname is the fallback if the IP changes."""
-    import subprocess
     body = ["--data-binary", "@-"] if data else []
     tries = [["--resolve", f"api.telegram.org:443:{TG_IP}"], []] if TG_IP else [[]]
     for pin in tries:
@@ -157,7 +150,6 @@ def push_github(out):
     if not GH_TOKEN:
         return False
     try:
-        import subprocess
         body = {"message": f"[paidbot] batches update {time.strftime('%H:%M UTC')}",
                 "content": base64.b64encode(json.dumps(out, ensure_ascii=False, indent=1).encode()).decode()}
         api = "https://api.github.com"
@@ -356,11 +348,9 @@ def _admin_alert(msg):
 
 def api_post(path, body, auth=True, retries=2):
     """POST to Razorpay with retry on transient errors (timeout/429/5xx). 4xx fails fast."""
-    import urllib.error as UERR
     hdr = {"Content-Type": "application/json"}
     if auth and RZP_ID:
         hdr["Authorization"] = _rzp_auth()
-    import subprocess
     last = None
     for i in range(retries + 1):
         try:
@@ -387,7 +377,6 @@ def api_post(path, body, auth=True, retries=2):
     raise RuntimeError(f"razorpay post {path} failed after retries: {last}")
 
 def _rzp_get(path):
-    import subprocess
     p = subprocess.run(["curl", "-s", "-m", "20", f"https://api.razorpay.com/v1{path}",
                         "-H", "Authorization: " + _rzp_auth()], capture_output=True, text=True, timeout=25)
     if p.returncode != 0 or not p.stdout.strip():
@@ -395,11 +384,9 @@ def _rzp_get(path):
     return json.loads(p.stdout)
 
 def _tok(note):
-    import hmac, hashlib
     return hmac.new((RZP_SECRET or "demo").encode(), note.encode(), hashlib.sha256).hexdigest()[:16]
 
 def verify_sig(oid, pid, sig):
-    import hmac, hashlib
     return hmac.compare_digest(hmac.new(RZP_SECRET.encode(), f"{oid}|{pid}".encode(), hashlib.sha256).hexdigest(), sig or "")
 
 def make_order_local(uid, batch):
@@ -492,7 +479,6 @@ def fulfill(uid, batch, note, paid=True):
 # ---------------- webhook / demo callback ----------------
 def handle_webhook(body):
     try:
-        import hmac, hashlib
         sig = body.get("_sig", "")
         raw = json.dumps({k: v for k, v in body.items() if k != "_sig"}, separators=(",", ":"))
         if RZP_WEBHOOK_SECRET and not hmac.compare_digest(sig, hmac.new(RZP_WEBHOOK_SECRET.encode(), raw.encode(), hashlib.sha256).hexdigest()):
@@ -585,7 +571,6 @@ LASTERR = [""]
 
 # ---- slow work goes through ONE import-time queue worker: no per-call thread spawns
 # (Render container starved Thread.start() under GIL/network pressure and froze the bot) ----
-import queue as _queue
 _Q = _queue.Queue(maxsize=64)
 def _bg(fn):
     """Queue fn for the worker thread; drops if queue full (backstop re-polls later)."""
@@ -612,7 +597,6 @@ def _boot():
 def _do_pull():
     """Fetch batches.json in a KILLABLE subprocess (timeout=15) — urllib would hang on DNS forever."""
     try:
-        import subprocess
         url = f"https://raw.githubusercontent.com/{GH_REPO}/main/{BATCH_FILE}"
         out = subprocess.run(["curl", "-sfL", "-m", "15", url], capture_output=True, text=True, timeout=20)
         if out.returncode == 0 and out.stdout.strip():
