@@ -8,9 +8,12 @@ import os, time, json, sqlite3, threading, re
 from flask import Flask, request, jsonify, Response
 
 APP = Flask(__name__)
+BOOT_ERR = ""
 try:
     import paidbot  # eager import: module fully initialized before threads/routes
 except Exception as _e:
+    import traceback
+    BOOT_ERR = "eager: " + traceback.format_exc()[-400:]
     print("paidbot import failed:", _e)
 DB = os.environ.get("DATA_PATH", os.path.join(os.path.dirname(__file__), "live.db"))
 ADMIN_KEY = os.environ.get("ADMIN_KEY", "")
@@ -277,9 +280,12 @@ def admin_loopinfo():
     if not _auth():
         return jsonify({"error": "bad key"}), 403
     import paidbot
+    procs = [d for d in os.listdir("/proc") if d.isdigit()]
     return jsonify({"loop_age_s": round(__import__("time").time() - paidbot.BEAT[0], 1),
                     "updates_off": paidbot.OFF, "phase": paidbot.PHASE[0],
-                    "last_err": paidbot.LASTERR[0],
+                    "last_err": paidbot.LASTERR[0], "boot_id": getattr(paidbot, "BOOT_ID", "?"),
+                    "pid": os.getpid(), "procs": len(procs),
+                    "boot_err": BOOT_ERR[:600] or "(clean)",
                     "threads": __import__("threading").active_count()})
 
 @APP.get("/admin/ping")
@@ -435,17 +441,18 @@ load();
 
 def bot_poller():
     """paid catalog bot — runs when PAID_BOT_TOKEN set (real handler in paidbot.py)."""
+    global BOOT_ERR
     if not os.environ.get("PAID_BOT_TOKEN", ""):
+        BOOT_ERR += " | no PAID_BOT_TOKEN"
         return
     try:
         import paidbot
+        paidbot.BOOT_ID = os.environ.get("RENDER_DEPLOY_ID", "x") + "/" + str(os.getpid())
         paidbot.run()
-    except Exception as e:
+        BOOT_ERR += " | run() RETURNED (should never)"
+    except BaseException as e:      # BaseException: catch SystemExit too
         import traceback
-        try:
-            paidbot.LASTERR[0] = "CRASH: " + traceback.format_exc()[-300:]
-        except Exception:
-            pass
+        BOOT_ERR += " | poller: " + traceback.format_exc()[-500:]
         print("paidbot crashed:", e)
 
 init()

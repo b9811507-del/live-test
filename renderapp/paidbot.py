@@ -578,6 +578,7 @@ def poll_pending():
 
 # ---------------- main poll loop ----------------
 OFF = 0
+BOOT_ID = "?"
 BEAT = [time.time()]          # heartbeat: watchdog + /admin/loopfix restart if loop freezes
 PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
 LASTERR = [""]
