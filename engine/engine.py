@@ -831,6 +831,14 @@ def cmd_keepwarm():
         print("render:", _req(RENDER + "/healthz", timeout=15).get("ok"))
     except Exception as e:
         print("render down:", e)
+    # external breaker: if paidbot's poll loop froze >150s, Render worker respawns itself
+    try:
+        k = os.environ.get("ADMIN_KEY", "")
+        if k:
+            print("loopfix:", _req(RENDER + "/admin/loopfix", timeout=20,
+                                  headers={"X-Admin-Key": k}).get("loop_age_s"), "s")
+    except Exception as e:
+        print("loopfix:", str(e)[:80])
 
 def cmd_status():
     st = load_state()
