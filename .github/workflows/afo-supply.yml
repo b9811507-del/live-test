@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: "30 23 * * *"      # 05:00 IST daily — before any slot, after yesterday mark
   workflow_dispatch:
+    inputs:
+      cmd: { description: "engine command to run instead of supply (e.g. finish afo 2026-09-11)", required: false, default: "supply" }
 permissions: { contents: read }
 concurrency: { group: supply, cancel-in-progress: false }
 jobs:
@@ -15,5 +17,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install -q pymongo || true
-      - run: python3 engine/afo_mongo.py build
-      - run: python3 engine/afo_mongo.py status
+      - name: supply
+        if: ${{ github.event.inputs.cmd == '' || github.event.inputs.cmd == 'supply' }}
+        run: |
+          python3 engine/afo_mongo.py build
+          python3 engine/afo_mongo.py status
+      - name: manual cmd
+        if: ${{ github.event.inputs.cmd != '' && github.event.inputs.cmd != 'supply' }}
+        env:
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          RENDER_URL: ${{ secrets.RENDER_URL }}
+          ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+        run: python3 engine/engine.py ${{ github.event.inputs.cmd }}
