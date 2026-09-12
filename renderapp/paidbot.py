@@ -111,7 +111,7 @@ def _save(out, push=True):
                       (k, b["title"], b["price"], b.get("chat", ""), b.get("what", ""), time.time()))
     _bcache.update(t=time.time(), d=out)
     if push:
-        threading.Thread(target=push_github, args=(out,), daemon=True).start()  # never block caller
+        _bg(lambda: push_github(out))   # queued — caller (admin tap) never blocks
 
 def put_batch(key, title, price, chat="", what=""):
     out = dict(get_batches())
@@ -524,24 +524,31 @@ def poll_pending():
 
 # ---------------- main poll loop ----------------
 OFF = 0
-BEAT = [time.time()]          # heartbeat: watchdog kills+restarts if loop freezes
+BEAT = [time.time()]          # heartbeat: watchdog + /admin/loopfix restart if loop freezes
 PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
 LASTERR = [""]
-_slow = threading.Lock()
 
+# ---- slow work goes through ONE import-time queue worker: no per-call thread spawns
+# (Render container starved Thread.start() under GIL/network pressure and froze the bot) ----
+import queue as _queue
+_Q = _queue.Queue(maxsize=64)
 def _bg(fn):
-    """Run fn in a one-off daemon thread; skip if one is already running."""
-    if _slow.acquire(blocking=False):
-        def _w():
+    """Queue fn for the worker thread; drops if queue full (backstop re-polls later)."""
+    try:
+        _Q.put_nowait(fn); return True
+    except Exception:
+        return False
+
+def _qworker():
+    while True:
+        try:
+            fn = _Q.get()
             try:
                 fn()
             except Exception as e:
                 print("bg err:", e)
-            finally:
-                _slow.release()
-        threading.Thread(target=_w, daemon=True).start()
-        return True
-    return False
+        except Exception:
+            time.sleep(1)
 
 def _watchdog():
     while True:
@@ -551,22 +558,34 @@ def _watchdog():
             print(f"bot loop stuck {int(stuck)}s — hard restart (gunicorn respawns)", flush=True)
             os._exit(1)
 
+def _boot():
+    for i in range(2):   # 2 workers: a stalled net call can't starve the other jobs
+        try:
+            threading.Thread(target=_qworker, name=f"qworker{i}", daemon=True).start()
+        except Exception as e:
+            print("qworker start fail:", e, flush=True)
+            break
+    try:
+        threading.Thread(target=_watchdog, daemon=True).start()
+    except Exception as e:
+        print("watchdog start fail:", e, flush=True)
+    _bg(_do_pull)
+
+def _do_pull():
+    try:
+        n = pull_github()
+        if n:
+            print(f"batches: {n} pulled from GitHub", flush=True)
+    except Exception as e:
+        print("boot pull skip:", e, flush=True)
+
+_boot()
+
 def run(offset=None):
     global OFF
     if offset:
         OFF = offset
-    PHASE[0] = "watchdog"
-    threading.Thread(target=_watchdog, daemon=True).start()
-    def _boot_pull():
-        try:
-            n = pull_github()
-            if n:
-                print(f"batches: {n} pulled from GitHub", flush=True)
-        except Exception as e:
-            print("boot pull skip:", e, flush=True)
-    threading.Thread(target=_boot_pull, daemon=True).start()   # NEVER in the poll loop
     last_chk = 0
-    PHASE[0] = "loop"
     while True:
         BEAT[0] = time.time(); PHASE[0] = "longpoll"
         try:
@@ -587,7 +606,7 @@ def run(offset=None):
             time.sleep(1)
         if time.time() - last_chk > 20:
             last_chk = time.time()
-            _bg(poll_pending)   # NEVER in the bot loop thread
+            _bg(poll_pending)   # queued to worker — never in the bot loop
         PHASE[0] = "loop"
 
 def handle(u):

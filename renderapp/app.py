@@ -242,6 +242,19 @@ def admin_selftest():
     return jsonify(out)
 
 
+@APP.get("/admin/loopfix")
+def admin_loopfix():
+    """External breaker (keepwarm cron hits this): if the bot loop froze >150s, kill the
+    worker so gunicorn respawns a fresh one. Cheap insurance that needs no threads."""
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import paidbot, time as _t
+    age = _t.time() - paidbot.BEAT[0]
+    if age > 150:
+        print(f"loopfix: loop stuck {int(age)}s — respawning worker", flush=True)
+        os._exit(1)
+    return jsonify({"ok": True, "loop_age_s": round(age, 1)})
+
 @APP.get("/admin/loopinfo")
 def admin_loopinfo():
     if not _auth():
