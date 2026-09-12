@@ -118,11 +118,11 @@ def api_board():
 
 @APP.post("/rzp/webhook")
 def rzp_hook():
-    import paidbot
+    import paidbot, threading as _th
     b = dict(request.get_json(force=True) or {})
     b["_sig"] = request.headers.get("X-Razorpay-Signature", "")
-    paidbot.handle_webhook(b)
-    return jsonify({"ok": True})
+    _th.Thread(target=paidbot.handle_webhook, args=(b,), daemon=True).start()
+    return jsonify({"ok": True})   # ack fast; failures are covered by poll_pending backstop
 
 @APP.get("/p/<note>/<tok>")
 def pay_page(note, tok):
@@ -146,6 +146,26 @@ def confirm():
     uid, batch = int(row[1]), row[0]
     paidbot.fulfill(uid, batch, note)
     return jsonify({"ok": True})
+
+@APP.post("/startpay")
+@APP.get("/startpay")
+def startpay():
+    """Lazily create the Razorpay order — runs in a web thread, never blocks the bot."""
+    import paidbot, hmac
+    d = request.args if request.method == "GET" else {**request.args.to_dict(), **(request.get_json(silent=True) or {})}
+    note, t = d.get("n", ""), d.get("t", "")
+    if not note or not hmac.compare_digest(paidbot._tok(note), t):
+        return jsonify({"err": "bad link"}), 403
+    try:
+        return jsonify({"order_id": paidbot.ensure_rzp_order(note)})
+    except Exception as e:
+        msg = str(e)[:160].lower()
+        friendly = "payment"
+        if "expire" in msg or "closed" in msg:
+            friendly = "order expire ho gaya — dobara dabayein"
+        elif "busy" in msg or "timed" in msg or "read" in msg:
+            friendly = "payment server busy hai — 1 min baad try karein"
+        return jsonify({"err": friendly})
 
 @APP.get("/pstatus")
 def pstatus():
@@ -221,6 +241,15 @@ def admin_selftest():
         out["fatal"] = traceback.format_exc()[-500:]
     return jsonify(out)
 
+
+@APP.get("/admin/loopinfo")
+def admin_loopinfo():
+    if not _auth():
+        return jsonify({"error": "bad key"}), 403
+    import paidbot
+    return jsonify({"loop_age_s": round(__import__("time").time() - paidbot.BEAT[0], 1),
+                    "updates_off": paidbot.OFF,
+                    "threads": __import__("threading").active_count()})
 
 @APP.get("/admin/ping")
 def admin_ping():

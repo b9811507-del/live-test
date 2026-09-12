@@ -34,7 +34,7 @@ RZP_ID = os.environ.get("RZP_KEY_ID", "")
 RZP_SECRET = os.environ.get("RZP_KEY_SECRET", "")
 RZP_WEBHOOK_SECRET = os.environ.get("RZP_WEBHOOK_SECRET", "")
 MT_URL = os.environ.get("MT_URL", "")
-PUB = os.environ.get("PUBLIC_URL", "").rstrip("/")
+PUB = (os.environ.get("PUBLIC_URL", "") or "https://livescore-zp5w.onrender.com").rstrip("/").rstrip("/")
 DEMO = os.environ.get("DEMO_MODE") == "1"
 DB = os.environ.get("DATA_PATH", os.path.join(os.path.dirname(__file__), "paid.db"))
 ADMIN_ID = int(os.environ.get("ADMIN_ID", "1138783169"))
@@ -69,19 +69,19 @@ def db():
     return c
 
 def tg(m, **kw):
-    for a in range(5):
+    for a in range(3):
         try:
             rq = urllib.request.Request(f"https://api.telegram.org/bot{TOKEN}/{m}",
                 data=json.dumps({k: v for k, v in kw.items() if v is not None}).encode(),
                 headers={"Content-Type": "application/json"})
-            r = json.loads(urllib.request.urlopen(rq, timeout=30).read())
+            r = json.loads(urllib.request.urlopen(rq, timeout=15).read())
             if r.get("ok"):
                 return r["result"]
             if r.get("error_code") == 429:
-                time.sleep(r.get("parameters", {}).get("retry_after", 3) + 1); continue
+                time.sleep(min(r.get("parameters", {}).get("retry_after", 3), 5)); continue
             return {"_err": r.get("description")}
         except Exception:
-            time.sleep(2 + 2 * a)
+            time.sleep(0.6 + a)
     return {"_err": "retries"}
 
 # ---------------- dynamic batches (DB + GitHub persistence) ----------------
@@ -348,44 +348,50 @@ def verify_sig(oid, pid, sig):
     import hmac, hashlib
     return hmac.compare_digest(hmac.new(RZP_SECRET.encode(), f"{oid}|{pid}".encode(), hashlib.sha256).hexdigest(), sig or "")
 
-def make_order(uid, batch):
+def make_order_local(uid, batch):
+    """DB-only reservation — NO network. Instant, so the bot never blocks."""
     b = get_batches().get(batch)
     if not b:
         return None
     with db() as c:
         pend = c.execute("SELECT id,note,link,ts FROM orders WHERE uid=? AND batch=? AND status='created' ORDER BY id DESC LIMIT 1", (uid, batch)).fetchone()
-    if pend and time.time() - (pend[3] or 0) > 13 * 60:
+    if pend and time.time() - float(pend[3] or 0) > 13 * 60:
         with db() as c:   # Razorpay orders expire in 15 min — stop reusing a stale one
             c.execute("UPDATE orders SET status='expired' WHERE id=?", (pend[0],))
         pend = None
-    if pend and pend[1] and not pend[2]:
-        return {"demo": True, "note": pend[1], "amount": b["price"]}
-    if pend and (pend[2] or "").startswith("order_"):
-        return {"demo": False, "note": pend[1], "order_id": pend[2], "amount": b["price"]}
+    if pend:
+        return {"demo": DEMO or not RZP_ID, "note": pend[1], "amount": b["price"]}
     note = f"{uid}:{batch}:{int(time.time())}"
     with db() as c:
         c.execute("INSERT INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)", (uid, batch, "", "created", note, time.time()))
-    if DEMO or not RZP_ID:
-        return {"demo": True, "note": note, "amount": b["price"]}
+    return {"demo": DEMO or not RZP_ID, "note": note, "amount": b["price"]}
+
+def ensure_rzp_order(note):
+    """Create the Razorpay order lazily (called from the web request thread, never the bot loop)."""
+    with db() as c:
+        row = c.execute("SELECT batch,link,status FROM orders WHERE note=?", (note,)).fetchone()
+    if not row:
+        raise RuntimeError("order not found")
+    if row[1] and row[1].startswith("order_"):
+        return row[1]
+    if row[2] not in ("created",):
+        raise RuntimeError("order closed — start again")
+    price = get_batches().get(row[0], {}).get("price")
+    if price is None:
+        raise RuntimeError("batch removed")
     try:
-        r = api_post("/orders", {"amount": b["price"] * 100, "currency": "INR",
+        r = api_post("/orders", {"amount": int(price) * 100, "currency": "INR",
                                  "receipt": note, "notes": {"ref": note},
                                  "partial_enabled": False})
         with db() as c:
             c.execute("UPDATE orders SET link=? WHERE note=?", (r["id"], note))
-        return {"demo": False, "note": note, "order_id": r["id"], "amount": b["price"]}
+        return r["id"]
     except Exception as e:
-        print("rzp order fail:", e)
-        try:
-            with db() as c:
-                c.execute("UPDATE orders SET status='failed' WHERE note=?", (note,))
-        except Exception:
-            pass
-        _admin_alert(f"order create fail uid={uid} batch={batch}: {str(e)[:160]}")
-        return None
+        _admin_alert(f"order create fail note={note}: {str(e)[:160]}")
+        raise
 
 def make_pay_link(uid, batch):
-    o = make_order(uid, batch)
+    o = make_order_local(uid, batch)
     if not o:
         return None
     if o["demo"]:
@@ -453,9 +459,7 @@ def handle_webhook(body):
 
 def checkout_page(note, tok=""):
     uid, batch = int(note.split(":")[0]), note.split(":")[1]
-    b = get_batches()[batch]
-    with db() as c:
-        oid = c.execute("SELECT link FROM orders WHERE note=?", (note,)).fetchone()[0]
+    b = get_batches().get(batch) or {"title": "AGRI Batch", "price": 0}
     return f"""<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
 <title>Pay ₹{b['price']} — {_html.escape(b['title'])}</title>
 <style>body{{font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;background:#0f1621;color:#e9eef5;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}}
@@ -469,25 +473,27 @@ button:disabled{{opacity:.6}}.f{{margin-top:14px;font-size:11.5px;color:#8fa1b8;
 <button id=pay>💳 Pay ₹{b['price']} via Razorpay</button>
 <div class=f>Payment होते ही Join link Telegram पर मिलेगा ✅</div></div>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script><script>
-var NOTE="{note}",TOK="{tok}",done=false;
-var o={json.dumps({"key":RZP_ID,"order_id":oid,"name":"AGRI LEARNING POINT","description":b['title'][:70],"prefill":{"name":"user"},"theme":{"color":"#13733e"}})};
+var NOTE="{note}",TOK="{tok}",done=false,RZPKEY="{RZP_ID}";
 function ok(){{done=true;document.querySelector(".c").innerHTML='<div style="text-align:center;padding:10px"><div style="font-size:40px">✅</div><h2>Payment Successful</h2><p style="color:#8fa1b8">Telegram जाओ — One-Time Join Link भेज दिया गया 🎟</p></div>';}}
-function fail(t){{if(done)return;document.querySelector(".c").innerHTML='<div style="text-align:center;padding:10px"><div style="font-size:36px">⚠️</div><h2>'+t+'</h2><p style="color:#8fa1b8;font-size:14px">Dobara try kar sakte ho. Paisa kat gaya hai to page band MAT karo — 1-2 min me join link Telegram par apne aap mil jayega.</p><button onclick="chk()">🔄 Status check karein</button></div>';}}
+function fail(t){{if(done)return;document.querySelector(".c").innerHTML='<div style="text-align:center;padding:10px"><div style="font-size:36px">⚠️</div><h2>'+t+'</h2><p style="color:#8fa1b8;font-size:14px">Dobara try kar sakte ho. Paisa kat gaya hai to page band MAT karo — 1-2 min me join link Telegram par apne aap mil jayega.</p><button id="retry" onclick="go()">🔄 Dobara try karein</button><button onclick="chk()" style="background:#2a3a52;margin-top:8px">📥 Status check</button></div>';}}
 function chk(){{fetch("/pstatus?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(j.paid){{ok()}}else{{fail("Payment abhi pending dikha raha hai")}}}}).catch(function(){{fail("Network me dikkat — thodi der me dobara check karein")}});}}
 function pollPaid(){{var n=0,iv=setInterval(function(){{if(done){{clearInterval(iv);return;}}
  fetch("/pstatus?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(j.paid){{clearInterval(iv);ok();}}}}).catch(function(){{}});
- if(++n>10){{clearInterval(iv);}}}},6000);}}
-document.getElementById("pay").onclick=function(){{var r=new Razorpay(Object.assign(o,{{
+ if(++n>20){{clearInterval(iv);}}}},5000);}}
+function openRp(oid){{var r=new Razorpay({{key:RZPKEY,order_id:oid,name:"AGRI LEARNING POINT",description:{json.dumps(b['title'][:70])},theme:{{color:"#13733e"}},
  handler:function(res){{fetch("/confirm?note="+encodeURIComponent(NOTE)+"&order_id="+res.razorpay_order_id+"&payment_id="+res.razorpay_payment_id+"&signature="+encodeURIComponent(res.razorpay_signature)).then(function(x){{return x.json()}}).then(function(j){{if(j.ok){{ok()}}else{{pollPaid();fail("Payment ho gayi — verify 1 min me complete ho jayega, page mat band karo")}}}}).catch(function(){{pollPaid()}});}},
- modal:{{ondie:function(){{if(!done){{fail("Payment adhuri reh gayi")}}}}}}}}));
- r.on("payment.failed",function(){{fail("Payment fail ho gayi — dobara try karein")}});
- r.open();}};
+ modal:{{ondie:function(){{if(!done&&!window.paying){{fail("Payment adhuri reh gayi")}}}}}}}});
+ r.on("payment.failed",function(){{window.paying=false;fail("Payment fail ho gayi — dobara try karein")}});r.open();}}
+function go(){{var bt=document.getElementById("pay");if(bt){{bt.disabled=true;bt.textContent="⏳ Server se connect ho raha hai…";}}
+ fetch("/startpay?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}
+ if(j.order_id){{window.paying=true;openRp(j.order_id);}}else{{window.paying=false;fail(j.err||"Payment server busy hai");}}}}).catch(function(){{if(bt){{bt.disabled=false;bt.textContent="💳 Pay ₹{b['price']} via Razorpay";}}window.paying=false;fail("Payment server busy hai — dobara try karein");}});}}
+document.getElementById("pay").onclick=go;
 pollPaid();
 </script></body></html>"""
 
 def demo_page(note):
     uid, batch = int(note.split(":")[0]), note.split(":")[1]
-    b = get_batches()[batch]
+    b = get_batches().get(batch) or {"title": "AGRI Batch", "price": 0}
     return (f"<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
             f"<body style='font:16px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;background:#0f1621;color:#e9eef5;"
             f"display:flex;min-height:92vh;align-items:center;justify-content:center;margin:0'><div style='text-align:center;max-width:420px;padding:20px'>"
@@ -518,10 +524,36 @@ def poll_pending():
 
 # ---------------- main poll loop ----------------
 OFF = 0
+BEAT = [time.time()]          # heartbeat: watchdog kills+restarts if loop freezes
+_slow = threading.Lock()
+
+def _bg(fn):
+    """Run fn in a one-off daemon thread; skip if one is already running."""
+    if _slow.acquire(blocking=False):
+        def _w():
+            try:
+                fn()
+            except Exception as e:
+                print("bg err:", e)
+            finally:
+                _slow.release()
+        threading.Thread(target=_w, daemon=True).start()
+        return True
+    return False
+
+def _watchdog():
+    while True:
+        time.sleep(30)
+        stuck = time.time() - BEAT[0]
+        if stuck > 240:
+            print(f"bot loop stuck {int(stuck)}s — hard restart (gunicorn respawns)", flush=True)
+            os._exit(1)
+
 def run(offset=None):
     global OFF
     if offset:
         OFF = offset
+    threading.Thread(target=_watchdog, daemon=True).start()
     try:
         n = pull_github()
         if n:
@@ -530,8 +562,10 @@ def run(offset=None):
         pass
     last_chk = 0
     while True:
+        BEAT[0] = time.time()
         try:
-            r = urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=40&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", timeout=55)
+            r = urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", timeout=40)
+            BEAT[0] = time.time()
             for u in json.loads(r.read()).get("result", []):
                 OFF = u["update_id"] + 1
                 try:
@@ -539,10 +573,11 @@ def run(offset=None):
                 except Exception as e:
                     print("handle err:", e)
         except Exception:
-            time.sleep(3)
-        if time.time() - last_chk > 40:
+            BEAT[0] = time.time()
+            time.sleep(1)
+        if time.time() - last_chk > 20:
             last_chk = time.time()
-            poll_pending()
+            _bg(poll_pending)   # NEVER in the bot loop thread
 
 def handle(u):
     if "message" in u:
@@ -626,9 +661,9 @@ def handle(u):
                 tg("editMessageText", chat_id=cid, message_id=mid, parse_mode="HTML", text=batch_msg(k), reply_markup=batch_kb(k))
         elif data.startswith("p:"):
             k = data[2:]
+            tg("answerCallbackQuery", callback_query_id=q["id"], text="⏳ Payment link taiyar ho raha hai…")
             link = make_pay_link(uid, k)
             if link and link.startswith("http"):
-                tg("answerCallbackQuery", callback_query_id=q["id"], text="Opening secure payment…")
                 tg("sendMessage", chat_id=uid, parse_mode="HTML",
                    text=f"🔐 <b>Secure Payment</b> — ₹{get_batches()[k]['price']} <i>(Razorpay)</i>\n\n"
                         f"💳 <a href=\"{link}\">Tap to pay now · अभी भुगतान करें</a>\n\n"
