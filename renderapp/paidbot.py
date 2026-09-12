@@ -441,12 +441,24 @@ def join_link(batch):
     return os.environ.get(f"JOIN_{batch.upper()}", "")
 
 def gen_onetime_link(chat_id, tag):
+    """One-time (member_limit=1) invite link. Path 1: MT bridge if MT_URL set.
+    Path 2: Bot API — requires the PAID bot itself to be admin in that group with
+    'Invite Members' right. None => caller falls back to join-request flow."""
     if MT_URL:
         try:
             r = json.loads(urllib.request.urlopen(f"{MT_URL}/genlink?chat={chat_id}&name={urllib.parse.quote(tag)}&member_limit=1", timeout=25).read())
-            return r.get("link")
+            if r.get("link"):
+                return r["link"]
         except Exception:
-            return None
+            pass
+    if chat_id:
+        try:
+            r = tg("createChatInviteLink", chat_id=chat_id, member_limit=1, name=str(tag)[:64])
+            if isinstance(r, dict) and r.get("invite_link"):
+                return r["invite_link"]
+            _admin_alert(f"invite-link fail chat={chat_id}: {str(r.get('_err') if isinstance(r, dict) else r)[:120]}")
+        except Exception as e:
+            _admin_alert(f"invite-link exc chat={chat_id}: {str(e)[:120]}")
     return None
 
 def fulfill(uid, batch, note, paid=True):
