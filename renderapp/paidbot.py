@@ -99,6 +99,12 @@ def tg(m, **kw):
             if r.get("error_code") == 429:
                 time.sleep(min(r.get("parameters", {}).get("retry_after", 3), 5)); continue
             return {"_err": r.get("description")}
+        except UERR.HTTPError as e:      # Telegram errors come back as 4xx/5xx bodies — surface the real reason
+            try:
+                body = json.loads(e.read().decode())
+                return {"_err": f"{e.code}: {body.get('description')}"}
+            except Exception:
+                return {"_err": f"http {e.code}"}
         except Exception:
             time.sleep(0.6 + a)
     return {"_err": "retries"}
