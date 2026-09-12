@@ -129,7 +129,7 @@ def pay_page(note, tok):
     import paidbot, hmac
     if not hmac.compare_digest(paidbot._tok(note), tok):
         return Response("<body style='font:16px sans-serif;background:#0f1621;color:#fff;text-align:center;padding:60px'>❌ Link expired / invalid</body>", mimetype="text/html")
-    return Response(paidbot.checkout_page(note), mimetype="text/html")
+    return Response(paidbot.checkout_page(note, tok), mimetype="text/html")
 
 @APP.route("/confirm", methods=["GET", "POST"])
 def confirm():
@@ -141,10 +141,23 @@ def confirm():
     if not row or row[2] == "paid":
         return jsonify({"ok": row and row[2] == "paid"})
     if not paidbot.verify_sig(oid, pid, sig):
+        paidbot._admin_alert(f"confirm bad signature note={note} order={oid}")
         return jsonify({"ok": False, "err": "bad signature"}), 400
     uid, batch = int(row[1]), row[0]
     paidbot.fulfill(uid, batch, note)
     return jsonify({"ok": True})
+
+@APP.get("/pstatus")
+def pstatus():
+    """Lightweight payment-status poll used by the checkout page auto-recovery."""
+    import paidbot, hmac
+    note, t = request.args.get("n", ""), request.args.get("t", "")
+    if not note or not hmac.compare_digest(paidbot._tok(note), t):
+        return jsonify({"paid": False, "err": "bad token"}), 403
+    with paidbot.db() as c:
+        row = c.execute("SELECT status FROM orders WHERE note=?", (note,)).fetchone()
+    st = row[0] if row else "none"
+    return jsonify({"paid": st in ("paid", "delivered"), "status": st})
 
 @APP.get("/paydemo/<path:note>")
 def paydemo(note):
@@ -179,6 +192,21 @@ def admin_selftest():
             PB.db().execute("SELECT 1").fetchone(); out["sqlite"] = "ok"
         except Exception as e:
             out["sqlite"] = f"FAIL {e}"
+        # LIVE payment path check: real ₹1 order create (retries included) + cancel
+        try:
+            if PB.RZP_ID and not PB.DEMO:
+                oid_ = PB.api_post("/orders", {"amount": 100, "currency": "INR",
+                                                "receipt": "selftest", "notes": {"ref": "selftest"}})["id"]
+                cancel = "cancelled"
+                try:
+                    PB.api_post(f"/orders/{oid_}/cancel", {})
+                except Exception:
+                    cancel = "left-created(expire 15m)"
+                out["rzp"] = f"live order {oid_} ok · {cancel}"
+            else:
+                out["rzp"] = "demo mode or no keys"
+        except Exception as e:
+            out["rzp"] = f"FAIL: {str(e)[:220]}"
         for name, upd in (("admin_start", {"message": {"chat": {"id": PB.ADMIN_ID}, "text": "/start", "from": {"id": PB.ADMIN_ID}}}),
                          ("user_start", {"message": {"chat": {"id": 12345}, "text": "/start batch", "from": {"id": 12345}}}),
                          ("user_chat", {"message": {"chat": {"id": 12346}, "text": "hello?", "from": {"id": 12346}}})):

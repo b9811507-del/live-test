@@ -304,12 +304,37 @@ def admin_orders_today():
 def _rzp_auth():
     return "Basic " + base64.b64encode(f"{RZP_ID}:{RZP_SECRET}".encode()).decode()
 
-def api_post(path, body, auth=True):
+_last_alert = [0.0]
+def _admin_alert(msg):
+    """DM admin on payment problems (throttled 3 min). Never raises."""
+    try:
+        if time.time() - _last_alert[0] < 180:
+            return
+        _last_alert[0] = time.time()
+        tg("sendMessage", chat_id=ADMIN_ID, text=f"🚨 PAYMENT ISSUE: {msg}")
+    except Exception as e:
+        print("admin alert fail:", e)
+
+def api_post(path, body, auth=True, retries=2):
+    """POST to Razorpay with retry on transient errors (timeout/429/5xx). 4xx fails fast."""
+    import urllib.error as UERR
     hdr = {"Content-Type": "application/json"}
     if auth and RZP_ID:
         hdr["Authorization"] = _rzp_auth()
-    rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", data=json.dumps(body).encode(), headers=hdr)
-    return json.loads(urllib.request.urlopen(rq, timeout=30).read())
+    last = None
+    for i in range(retries + 1):
+        try:
+            rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", data=json.dumps(body).encode(), headers=hdr)
+            return json.loads(urllib.request.urlopen(rq, timeout=30).read())
+        except UERR.HTTPError as e:
+            last = e
+            if e.code < 500 and e.code != 429:
+                break                      # auth/bad-request — retrying is useless
+        except Exception as e:
+            last = e
+        if i < retries:
+            time.sleep([2, 5][i])
+    raise RuntimeError(f"razorpay post {path} failed after retries: {last}")
 
 def _rzp_get(path):
     rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", headers={"Authorization": _rzp_auth()})
@@ -328,11 +353,15 @@ def make_order(uid, batch):
     if not b:
         return None
     with db() as c:
-        pend = c.execute("SELECT note,link FROM orders WHERE uid=? AND batch=? AND status='created' ORDER BY id DESC LIMIT 1", (uid, batch)).fetchone()
-    if pend and pend[1] and not pend[1].startswith("order_"):
-        return {"demo": True, "note": pend[0], "amount": b["price"]}
-    if pend and pend[1].startswith("order_"):
-        return {"demo": False, "note": pend[0], "order_id": pend[1], "amount": b["price"]}
+        pend = c.execute("SELECT id,note,link,ts FROM orders WHERE uid=? AND batch=? AND status='created' ORDER BY id DESC LIMIT 1", (uid, batch)).fetchone()
+    if pend and time.time() - (pend[3] or 0) > 13 * 60:
+        with db() as c:   # Razorpay orders expire in 15 min — stop reusing a stale one
+            c.execute("UPDATE orders SET status='expired' WHERE id=?", (pend[0],))
+        pend = None
+    if pend and pend[1] and not pend[2]:
+        return {"demo": True, "note": pend[1], "amount": b["price"]}
+    if pend and (pend[2] or "").startswith("order_"):
+        return {"demo": False, "note": pend[1], "order_id": pend[2], "amount": b["price"]}
     note = f"{uid}:{batch}:{int(time.time())}"
     with db() as c:
         c.execute("INSERT INTO orders(uid,batch,link,status,note,ts) VALUES(?,?,?,?,?,?)", (uid, batch, "", "created", note, time.time()))
@@ -347,6 +376,12 @@ def make_order(uid, batch):
         return {"demo": False, "note": note, "order_id": r["id"], "amount": b["price"]}
     except Exception as e:
         print("rzp order fail:", e)
+        try:
+            with db() as c:
+                c.execute("UPDATE orders SET status='failed' WHERE note=?", (note,))
+        except Exception:
+            pass
+        _admin_alert(f"order create fail uid={uid} batch={batch}: {str(e)[:160]}")
         return None
 
 def make_pay_link(uid, batch):
@@ -416,7 +451,7 @@ def handle_webhook(body):
         print("webhook err", e)
     return True
 
-def checkout_page(note):
+def checkout_page(note, tok=""):
     uid, batch = int(note.split(":")[0]), note.split(":")[1]
     b = get_batches()[batch]
     with db() as c:
@@ -434,10 +469,20 @@ button:disabled{{opacity:.6}}.f{{margin-top:14px;font-size:11.5px;color:#8fa1b8;
 <button id=pay>💳 Pay ₹{b['price']} via Razorpay</button>
 <div class=f>Payment होते ही Join link Telegram पर मिलेगा ✅</div></div>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script><script>
+var NOTE="{note}",TOK="{tok}",done=false;
 var o={json.dumps({"key":RZP_ID,"order_id":oid,"name":"AGRI LEARNING POINT","description":b['title'][:70],"prefill":{"name":"user"},"theme":{"color":"#13733e"}})};
-document.getElementById("pay").onclick=function(){{var r=new Razorpay(Object.assign(o,{{handler:function(res){{
- fetch("/confirm?note="+encodeURIComponent("{note}")+"&order_id="+res.razorpay_order_id+"&payment_id="+res.razorpay_payment_id+"&signature="+encodeURIComponent(res.razorpay_signature))
- .then(x=>x.json()).then(j=>{{document.querySelector(".c").innerHTML=j.ok?'<div style=\"text-align:center;padding:10px\"><div style=\'font-size:40px\'>✅</div><h2>Payment Successful</h2><p style=color:#8fa1b8>Telegram जाओ — One-Time Join Link भेज दिया गया 🎟</p></div>':'<h2 style=color:#ff8a8a>Verify failed — admin को बताओ</h2>';}});}}}}));r.open();}};
+function ok(){{done=true;document.querySelector(".c").innerHTML='<div style="text-align:center;padding:10px"><div style="font-size:40px">✅</div><h2>Payment Successful</h2><p style="color:#8fa1b8">Telegram जाओ — One-Time Join Link भेज दिया गया 🎟</p></div>';}}
+function fail(t){{if(done)return;document.querySelector(".c").innerHTML='<div style="text-align:center;padding:10px"><div style="font-size:36px">⚠️</div><h2>'+t+'</h2><p style="color:#8fa1b8;font-size:14px">Dobara try kar sakte ho. Paisa kat gaya hai to page band MAT karo — 1-2 min me join link Telegram par apne aap mil jayega.</p><button onclick="chk()">🔄 Status check karein</button></div>';}}
+function chk(){{fetch("/pstatus?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(j.paid){{ok()}}else{{fail("Payment abhi pending dikha raha hai")}}}}).catch(function(){{fail("Network me dikkat — thodi der me dobara check karein")}});}}
+function pollPaid(){{var n=0,iv=setInterval(function(){{if(done){{clearInterval(iv);return;}}
+ fetch("/pstatus?n="+encodeURIComponent(NOTE)+"&t="+encodeURIComponent(TOK)).then(function(x){{return x.json()}}).then(function(j){{if(j.paid){{clearInterval(iv);ok();}}}}).catch(function(){{}});
+ if(++n>10){{clearInterval(iv);}}}},6000);}}
+document.getElementById("pay").onclick=function(){{var r=new Razorpay(Object.assign(o,{{
+ handler:function(res){{fetch("/confirm?note="+encodeURIComponent(NOTE)+"&order_id="+res.razorpay_order_id+"&payment_id="+res.razorpay_payment_id+"&signature="+encodeURIComponent(res.razorpay_signature)).then(function(x){{return x.json()}}).then(function(j){{if(j.ok){{ok()}}else{{pollPaid();fail("Payment ho gayi — verify 1 min me complete ho jayega, page mat band karo")}}}}).catch(function(){{pollPaid()}});}},
+ modal:{{ondie:function(){{if(!done){{fail("Payment adhuri reh gayi")}}}}}}}}));
+ r.on("payment.failed",function(){{fail("Payment fail ho gayi — dobara try karein")}});
+ r.open();}};
+pollPaid();
 </script></body></html>"""
 
 def demo_page(note):
@@ -590,7 +635,8 @@ def handle(u):
                         f"✅ Pay karte hi <b>One-Time Join Link</b> yahin milega\n"
                         f"✅ पेमेंट होते ही <b>जॉइन लिंक</b> यहीं मिलेगा", disable_web_page_preview=False)
             else:
-                tg("answerCallbackQuery", callback_query_id=q["id"], text="Payment setup pending (keys)", show_alert=True)
+                tg("answerCallbackQuery", callback_query_id=q["id"],
+                   text="⚠️ Payment server thoda busy hai — 2 min baad dobara 'Pay' dabayein 🙏", show_alert=True)
         elif uid == ADMIN_ID and data.startswith("ad:"):
             admin_callback(q, data, cid, mid)
 
