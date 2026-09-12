@@ -111,7 +111,7 @@ def _save(out, push=True):
                       (k, b["title"], b["price"], b.get("chat", ""), b.get("what", ""), time.time()))
     _bcache.update(t=time.time(), d=out)
     if push:
-        push_github(out)
+        threading.Thread(target=push_github, args=(out,), daemon=True).start()  # never block caller
 
 def put_batch(key, title, price, chat="", what=""):
     out = dict(get_batches())
@@ -557,13 +557,14 @@ def run(offset=None):
         OFF = offset
     PHASE[0] = "watchdog"
     threading.Thread(target=_watchdog, daemon=True).start()
-    PHASE[0] = "pull"
-    try:
-        n = pull_github()
-        if n:
-            print(f"batches: {n} pulled from GitHub")
-    except Exception:
-        pass
+    def _boot_pull():
+        try:
+            n = pull_github()
+            if n:
+                print(f"batches: {n} pulled from GitHub", flush=True)
+        except Exception as e:
+            print("boot pull skip:", e, flush=True)
+    threading.Thread(target=_boot_pull, daemon=True).start()   # NEVER in the poll loop
     last_chk = 0
     PHASE[0] = "loop"
     while True:
