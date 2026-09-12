@@ -248,7 +248,8 @@ def admin_loopinfo():
         return jsonify({"error": "bad key"}), 403
     import paidbot
     return jsonify({"loop_age_s": round(__import__("time").time() - paidbot.BEAT[0], 1),
-                    "updates_off": paidbot.OFF,
+                    "updates_off": paidbot.OFF, "phase": paidbot.PHASE[0],
+                    "last_err": paidbot.LASTERR[0],
                     "threads": __import__("threading").active_count()})
 
 @APP.get("/admin/ping")
@@ -410,6 +411,11 @@ def bot_poller():
         import paidbot
         paidbot.run()
     except Exception as e:
+        import traceback
+        try:
+            paidbot.LASTERR[0] = "CRASH: " + traceback.format_exc()[-300:]
+        except Exception:
+            pass
         print("paidbot crashed:", e)
 
 init()

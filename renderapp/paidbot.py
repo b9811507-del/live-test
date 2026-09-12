@@ -525,6 +525,8 @@ def poll_pending():
 # ---------------- main poll loop ----------------
 OFF = 0
 BEAT = [time.time()]          # heartbeat: watchdog kills+restarts if loop freezes
+PHASE = ["boot"]              # where the loop currently is (visible at /admin/loopinfo)
+LASTERR = [""]
 _slow = threading.Lock()
 
 def _bg(fn):
@@ -553,7 +555,9 @@ def run(offset=None):
     global OFF
     if offset:
         OFF = offset
+    PHASE[0] = "watchdog"
     threading.Thread(target=_watchdog, daemon=True).start()
+    PHASE[0] = "pull"
     try:
         n = pull_github()
         if n:
@@ -561,23 +565,29 @@ def run(offset=None):
     except Exception:
         pass
     last_chk = 0
+    PHASE[0] = "loop"
     while True:
-        BEAT[0] = time.time()
+        BEAT[0] = time.time(); PHASE[0] = "longpoll"
         try:
-            r = urllib.request.urlopen(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", timeout=40)
-            BEAT[0] = time.time()
-            for u in json.loads(r.read()).get("result", []):
+            rq = urllib.request.Request(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]")
+            r = urllib.request.urlopen(rq, timeout=35)
+            body = r.read(); r.close()
+            BEAT[0] = time.time(); PHASE[0] = "dispatch"
+            for u in json.loads(body).get("result", []):
                 OFF = u["update_id"] + 1
                 try:
                     handle(u)
                 except Exception as e:
-                    print("handle err:", e)
-        except Exception:
-            BEAT[0] = time.time()
+                    LASTERR[0] = "handle: " + str(e)[:200]; print("handle err:", e)
+                BEAT[0] = time.time(); PHASE[0] = "dispatch"
+        except Exception as e:
+            LASTERR[0] = "getUpdates: " + str(e)[:200]
+            BEAT[0] = time.time(); PHASE[0] = "retry"
             time.sleep(1)
         if time.time() - last_chk > 20:
             last_chk = time.time()
             _bg(poll_pending)   # NEVER in the bot loop thread
+        PHASE[0] = "loop"
 
 def handle(u):
     if "message" in u:
