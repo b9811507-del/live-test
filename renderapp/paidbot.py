@@ -346,7 +346,10 @@ def api_post(path, body, auth=True, retries=2):
                                         data=json.dumps(body).encode(), headers=hdr)
             return json.loads(urllib.request.urlopen(rq, timeout=25).read())
         except UERR.HTTPError as e:
-            last = e
+            try:                            # keep Razorpay's actual reason — admin alerts are useful
+                last = f"HTTP {e.code}: {e.read().decode()[:180]}"
+            except Exception:
+                last = f"HTTP {e.code}"
             if e.code < 500 and e.code != 429:
                 break                      # auth/bad-request — retrying is useless
         except Exception as e:
@@ -398,8 +401,7 @@ def ensure_rzp_order(note):
         raise RuntimeError("batch removed")
     try:
         r = api_post("/orders", {"amount": int(price) * 100, "currency": "INR",
-                                 "receipt": note, "notes": {"ref": note},
-                                 "partial_enabled": False})
+                                 "receipt": note, "notes": {"ref": note}})
         with db() as c:
             c.execute("UPDATE orders SET link=? WHERE note=?", (r["id"], note))
         return r["id"]
