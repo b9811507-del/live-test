@@ -122,8 +122,10 @@ def api_board():
 @APP.post("/rzp/webhook")
 def rzp_hook():
     import paidbot
+    raw = request.get_data()
     b = dict(request.get_json(force=True) or {})
     b["_sig"] = request.headers.get("X-Razorpay-Signature", "")
+    b["_raw"] = raw
     paidbot._bg(lambda: paidbot.handle_webhook(b))   # queued (no thread-spawn starvation here); ack fast
     return jsonify({"ok": True})
 

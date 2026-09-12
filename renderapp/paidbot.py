@@ -456,16 +456,30 @@ def fulfill(uid, batch, note, paid=True):
 
 # ---------------- webhook / demo callback ----------------
 def handle_webhook(body):
+    """Razorpay webhooks v2: everything nests under body.entity.
+    Signature is HMAC of the RAW request bytes — verified against _raw (re-serializing
+    JSON breaks it). Unknown note? Resolve via order_id against our orders table."""
     try:
         sig = body.get("_sig", "")
-        raw = json.dumps({k: v for k, v in body.items() if k != "_sig"}, separators=(",", ":"))
-        if RZP_WEBHOOK_SECRET and not hmac.compare_digest(sig, hmac.new(RZP_WEBHOOK_SECRET.encode(), raw.encode(), hashlib.sha256).hexdigest()):
-            return False
-        ev = body.get("event", "")
-        payload = (body.get("payload") or {})
-        pl = payload.get("payment_link") or {}
-        note = pl.get("reference_id") or (payload.get("payment", {}) or {}).get("notes", {}).get("ref", "")
-        if ev in ("payment_link.captured", "payment.captured") and ":" in note:
+        raw = body.get("_raw") or json.dumps({k: v for k, v in body.items() if k not in ("_sig", "_raw")},
+                                             separators=(",", ":")).encode()
+        if RZP_WEBHOOK_SECRET:
+            want = hmac.new(RZP_WEBHOOK_SECRET.encode(), raw, hashlib.sha256).hexdigest()
+            if not hmac.compare_digest(sig, want):
+                _admin_alert("webhook bad signature (secret mismatch? check RZP_WEBHOOK_SECRET env)")
+                return False
+        ent = body.get("entity") or body          # accept both nested & flat formats
+        ev = ent.get("event", "")
+        payload = ent.get("payload") or {}
+        pe = (payload.get("payment") or {}).get("entity") or payload.get("payment") or {}
+        note = pe.get("notes", {}).get("ref", "") \
+            or (payload.get("payment_link") or {}).get("reference_id", "")
+        if ":" not in note and pe.get("order_id"):
+            with db() as c:
+                r = c.execute("SELECT note FROM orders WHERE link=?", (pe["order_id"],)).fetchone()
+            if r:
+                note = r[0]
+        if ev in ("payment.captured", "payment_link.captured", "order.paid") and ":" in note:
             uid, batch = int(note.split(":")[0]), note.split(":")[1]
             fulfill(uid, batch, note)
         elif ev in ("payment_link.expired", "payment.failed") and ":" in note:
