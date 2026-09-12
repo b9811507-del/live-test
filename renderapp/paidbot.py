@@ -68,13 +68,27 @@ def db():
     c.execute("CREATE TABLE IF NOT EXISTS batches(key TEXT PRIMARY KEY, title TEXT, price INT, chat TEXT, what TEXT, updated REAL)")
     return c
 
+# Render's DNS resolver can hang FOREVER inside getaddrinfo (urlopen timeouts don't
+# cover it) — which froze the bot loop. Fix: talk to Telegram's static API IP directly.
+TG_IP = os.environ.get("TG_IP", "149.154.166.110")
+_OPR = [None]
+def _tg_opener():
+    if _OPR[0] is None:
+        import ssl, urllib.request as U
+        ctx = ssl.create_default_context(); ctx.check_hostname = False; ctx.verify_mode = ssl.CERT_NONE
+        _OPR[0] = U.build_opener(U.HTTPSHandler(context=ctx))
+    return _OPR[0]
+
+def _tg_req(path, data):
+    rq = urllib.request.Request(f"https://{TG_IP}{path}", data=data,
+        headers={"Content-Type": "application/json", "Host": "api.telegram.org"})
+    return _tg_opener().open(rq, timeout=15).read()
+
 def tg(m, **kw):
     for a in range(3):
         try:
-            rq = urllib.request.Request(f"https://api.telegram.org/bot{TOKEN}/{m}",
-                data=json.dumps({k: v for k, v in kw.items() if v is not None}).encode(),
-                headers={"Content-Type": "application/json"})
-            r = json.loads(urllib.request.urlopen(rq, timeout=15).read())
+            r = json.loads(_tg_req(f"/bot{TOKEN}/{m}",
+                json.dumps({k: v for k, v in kw.items() if v is not None}).encode()))
             if r.get("ok"):
                 return r["result"]
             if r.get("error_code") == 429:
@@ -128,15 +142,25 @@ def push_github(out):
     if not GH_TOKEN:
         return False
     try:
+        import subprocess
         body = {"message": f"[paidbot] batches update {time.strftime('%H:%M UTC')}",
                 "content": base64.b64encode(json.dumps(out, ensure_ascii=False, indent=1).encode()).decode()}
-        try:
-            cur = _gh("GET", f"/repos/{GH_REPO}/contents/{BATCH_FILE}")
-            body["sha"] = cur["sha"]
-        except Exception:
-            pass
-        _gh("PUT", f"/repos/{GH_REPO}/contents/{BATCH_FILE}", body)
-        return True
+        api = "https://api.github.com"
+        def curl(args, data=None):
+            cmd = ("curl -s -m 15 -H 'Authorization: Bearer $GH_PUSH_TOKEN' "
+                   "-H 'Accept: application/vnd.github+json' "
+                   + " ".join(f"'{a}'" for a in args))
+            if data is not None:
+                cmd += " -f -d '" + json.dumps(data).replace("'", "'\\''") + "'"
+            return subprocess.run(["sh", "-c", cmd], capture_output=True, text=True, timeout=20)
+        g = curl(["-s", f"{api}/repos/{GH_REPO}/contents/{BATCH_FILE}"])
+        if g.returncode == 0 and g.stdout.strip():
+            try:
+                body["sha"] = json.loads(g.stdout)["sha"]
+            except Exception:
+                pass
+        p = curl(["-s", "-X", "PUT", f"{api}/repos/{GH_REPO}/contents/{BATCH_FILE}"], body)
+        return p.returncode == 0
     except Exception as e:
         print("batches push fail:", e); return False
 
@@ -539,43 +563,35 @@ def _bg(fn):
     except Exception:
         return False
 
-def _qworker():
-    while True:
+def _drain(maxn=3):
+    """Run queued slow jobs right here (loop thread, between longpolls)."""
+    for _ in range(maxn):
         try:
-            fn = _Q.get()
-            try:
-                fn()
-            except Exception as e:
-                print("bg err:", e)
+            fn = _Q.get_nowait()
         except Exception:
-            time.sleep(1)
-
-def _watchdog():
-    while True:
-        time.sleep(30)
-        stuck = time.time() - BEAT[0]
-        if stuck > 240:
-            print(f"bot loop stuck {int(stuck)}s — hard restart (gunicorn respawns)", flush=True)
-            os._exit(1)
+            return
+        try:
+            fn()
+        except Exception as e:
+            print("bg err:", e)
 
 def _boot():
-    for i in range(2):   # 2 workers: a stalled net call can't starve the other jobs
-        try:
-            threading.Thread(target=_qworker, name=f"qworker{i}", daemon=True).start()
-        except Exception as e:
-            print("qworker start fail:", e, flush=True)
-            break
-    try:
-        threading.Thread(target=_watchdog, daemon=True).start()
-    except Exception as e:
-        print("watchdog start fail:", e, flush=True)
-    _bg(_do_pull)
+    _bg(_do_pull)   # drained between poll cycles — no threads (this container starves Thread.start)
 
 def _do_pull():
+    """Fetch batches.json in a KILLABLE subprocess (timeout=15) — urllib would hang on DNS forever."""
     try:
-        n = pull_github()
-        if n:
-            print(f"batches: {n} pulled from GitHub", flush=True)
+        import subprocess
+        url = f"https://raw.githubusercontent.com/{GH_REPO}/main/{BATCH_FILE}"
+        out = subprocess.run(["curl", "-sfL", "-m", "15", url], capture_output=True, text=True, timeout=20)
+        if out.returncode == 0 and out.stdout.strip():
+            data = json.loads(out.stdout)
+            if isinstance(data, dict) and data:
+                norm = {k: {"title": b.get("title", k), "price": int(b.get("price", 0)),
+                            "chat": b.get("chat", ""), "what": b.get("what", "")} for k, b in data.items()}
+                if get_batches() != norm:
+                    _save(norm, push=False)
+                print(f"batches: {len(norm)} pulled from GitHub", flush=True)
     except Exception as e:
         print("boot pull skip:", e, flush=True)
 
@@ -589,9 +605,7 @@ def run(offset=None):
     while True:
         BEAT[0] = time.time(); PHASE[0] = "longpoll"
         try:
-            rq = urllib.request.Request(f"https://api.telegram.org/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]")
-            r = urllib.request.urlopen(rq, timeout=35)
-            body = r.read(); r.close()
+            body = _tg_req(f"/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", None)
             BEAT[0] = time.time(); PHASE[0] = "dispatch"
             for u in json.loads(body).get("result", []):
                 OFF = u["update_id"] + 1
@@ -606,7 +620,9 @@ def run(offset=None):
             time.sleep(1)
         if time.time() - last_chk > 20:
             last_chk = time.time()
-            _bg(poll_pending)   # queued to worker — never in the bot loop
+            _bg(poll_pending)   # re-arm backstop
+        PHASE[0] = "drain"
+        _drain()
         PHASE[0] = "loop"
 
 def handle(u):
