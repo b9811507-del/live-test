@@ -79,16 +79,31 @@ def _tg_opener():
         _OPR[0] = U.build_opener(U.HTTPSHandler(context=ctx))
     return _OPR[0]
 
-def _tg_req(path, data):
-    rq = urllib.request.Request(f"https://{TG_IP}{path}", data=data,
-        headers={"Content-Type": "application/json", "Host": "api.telegram.org"})
-    return _tg_opener().open(rq, timeout=15).read()
+def _tg_req(path, data, cap=20):
+    """curl subprocess: -m is an ABSOLUTE deadline (DNS+TLS+read) — urllib timeouts
+    proved unenforceable on this host, which froze the whole bot loop.
+    --resolve pins api.telegram.org to Telegram's static DC IP: zero getaddrinfo,
+    full cert verification kept. Plain hostname is the fallback if the IP changes."""
+    import subprocess
+    body = ["--data-binary", "@-"] if data else []
+    tries = [["--resolve", f"api.telegram.org:443:{TG_IP}"], []] if TG_IP else [[]]
+    for pin in tries:
+        cmd = ["curl", "-s", "-m", str(cap), *pin, f"https://api.telegram.org{path}",
+               "-H", "Content-Type: application/json", *body]
+        try:
+            out = (subprocess.run(cmd, input=data, capture_output=True, timeout=cap + 5)
+                   if data else subprocess.run(cmd, capture_output=True, timeout=cap + 5))
+        except Exception:
+            continue
+        if out.returncode == 0 and out.stdout:
+            return out.stdout
+    raise RuntimeError("tg curl unreachable")
 
 def tg(m, **kw):
     for a in range(3):
         try:
             r = json.loads(_tg_req(f"/bot{TOKEN}/{m}",
-                json.dumps({k: v for k, v in kw.items() if v is not None}).encode()))
+                json.dumps({k: v for k, v in kw.items() if v is not None}).encode(), cap=16))
             if r.get("ok"):
                 return r["result"]
             if r.get("error_code") == 429:
@@ -345,11 +360,22 @@ def api_post(path, body, auth=True, retries=2):
     hdr = {"Content-Type": "application/json"}
     if auth and RZP_ID:
         hdr["Authorization"] = _rzp_auth()
+    import subprocess
     last = None
     for i in range(retries + 1):
         try:
-            rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", data=json.dumps(body).encode(), headers=hdr)
-            return json.loads(urllib.request.urlopen(rq, timeout=30).read())
+            p = subprocess.run(["curl", "-s", "-w", "\n%{http_code}", "-m", "25",
+                                "-X", "POST", f"https://api.razorpay.com/v1{path}",
+                                "-H", "Content-Type: application/json",
+                                *([ "-H", "Authorization: " + hdr["Authorization"]] if "Authorization" in hdr else []),
+                                "--data-binary", json.dumps(body)],
+                               capture_output=True, text=True, timeout=30)
+            raw, code = p.stdout.rsplit("\n", 1)
+            if p.returncode != 0:
+                raise RuntimeError(f"curl rc={p.returncode}")
+            if int(code) >= 400:
+                raise UERR.HTTPError(path, int(code), raw[:150], {}, None)
+            return json.loads(raw)
         except UERR.HTTPError as e:
             last = e
             if e.code < 500 and e.code != 429:
@@ -361,8 +387,12 @@ def api_post(path, body, auth=True, retries=2):
     raise RuntimeError(f"razorpay post {path} failed after retries: {last}")
 
 def _rzp_get(path):
-    rq = urllib.request.Request(f"https://api.razorpay.com/v1{path}", headers={"Authorization": _rzp_auth()})
-    return json.loads(urllib.request.urlopen(rq, timeout=25).read())
+    import subprocess
+    p = subprocess.run(["curl", "-s", "-m", "20", f"https://api.razorpay.com/v1{path}",
+                        "-H", "Authorization: " + _rzp_auth()], capture_output=True, text=True, timeout=25)
+    if p.returncode != 0 or not p.stdout.strip():
+        raise RuntimeError(f"rzp get rc={p.returncode}")
+    return json.loads(p.stdout)
 
 def _tok(note):
     import hmac, hashlib
@@ -605,7 +635,7 @@ def run(offset=None):
     while True:
         BEAT[0] = time.time(); PHASE[0] = "longpoll"
         try:
-            body = _tg_req(f"/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", None)
+            body = _tg_req(f"/bot{TOKEN}/getUpdates?offset={OFF}&timeout=28&allowed_updates=[\"message\",\"callback_query\",\"chat_join_request\"]", None, cap=34)
             BEAT[0] = time.time(); PHASE[0] = "dispatch"
             for u in json.loads(body).get("result", []):
                 OFF = u["update_id"] + 1
