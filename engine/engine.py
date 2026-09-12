@@ -375,6 +375,16 @@ def build_afo_day(st, date):
     a = st.setdefault("afo", {"cursor": 0, "seed": 20260911, "closed": False})
     if a.get("closed") or date > JOBS["afo"]["last_day"]:
         return None
+    # -- MongoDB prebuilt-set path (daily set picked from Atlas; used-sets never re-picked) --
+    if os.environ.get("MONGO_URI"):
+        try:
+            import afo_mongo
+            doc = afo_mongo.pick(date)
+            if doc and doc.get("questions"):
+                log(f"afo: set #{doc.get('set_no')} from Mongo for {date} ({len(doc['questions'])}Q)")
+                return {"pages": None, "questions": doc["questions"], "n_batches": None, "book": None, "mongo_set": doc["set_no"]}
+        except Exception as e:
+            log("afo mongo pick fail (legacy fallback):", str(e)[:120])
     pool = afo_pool()
     order = sorted(pool, key=lambda q: hashlib.sha256(f"{a['seed']}|{q['uid']}".encode()).hexdigest())
     sel = order[a["cursor"]: a["cursor"] + 50] or order[:50]
@@ -707,6 +717,12 @@ def step_finish(st, date, job, rows_):
             st["ptr"][job] = {"book": j.get("book"), "bidx": j.get("bidx", 0) + 1}
         else:
             st["afo"]["done_dates"] = st.get("afo", {}).get("done_dates", []) + [date]
+            if os.environ.get("MONGO_URI"):
+                try:
+                    import afo_mongo
+                    afo_mongo.mark(date)
+                except Exception as e:
+                    log("afo mark fail:", str(e)[:100])
             if date >= JOBS["afo"]["last_day"]:
                 st["afo"]["closed"] = True
                 try:
@@ -835,6 +851,12 @@ def cmd_prebuild(job):
         print("already planned"); return
     if job == "afo" and (st.get("afo", {}).get("closed") or date > JOBS["afo"]["last_day"]):
         print("afo closed"); return
+    if job == "afo" and os.environ.get("MONGO_URI"):
+        try:
+            import afo_mongo
+            afo_mongo.build()          # idempotent top-up: keeps supply full till 1-Nov
+        except Exception as e:
+            log("afo supply topup fail:", str(e)[:120])
     day = day_meta(job, st, date, pretranslate=True)
     if day is None:
         print("chain finished flag"); st.setdefault("finished", {})[job] = date; save_state(st, f"{job} finished"); return

@@ -1,0 +1,19 @@
+name: afo-supply
+# Keeps the MongoDB AFO set bank topped-up till 1 Nov (build is idempotent) + audits no-repeat.
+# This workflow NEVER posts to Telegram.
+on:
+  schedule:
+    - cron: "30 23 * * *"      # 05:00 IST daily — before any slot, after yesterday mark
+  workflow_dispatch:
+permissions: { contents: read }
+concurrency: { group: supply, cancel-in-progress: false }
+jobs:
+  topup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env: { MONGO_URI: "${{ secrets.MONGO_URI }}", TZ: "Asia/Kolkata" }
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pymongo || true
+      - run: python3 engine/afo_mongo.py build
+      - run: python3 engine/afo_mongo.py status
