@@ -26,31 +26,8 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          if [ -f .GHA_DISPATCH.json ]; then
-            python3 - <<'PYEOF'
-            import json, os, urllib.request
-            tok = os.environ["GH_TOKEN"]
-            items = json.load(open(".GHA_DISPATCH.json")).get("items", [])
-            left = []
-            for it in items:
-                body = json.dumps({"ref": "main", "inputs": it.get("inputs") or {}}).encode()
-                req = urllib.request.Request(
-                    f"https://api.github.com/repos/b9811507-del/live-test/actions/workflows/{it['wf']}/dispatches",
-                    method="PUT", data=body,
-                    headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
-                try:
-                    urllib.request.urlopen(req, timeout=15); print("dispatched:", it["wf"])
-                except Exception as e:
-                    print("fail:", it["wf"], str(e)[:80]); left.append(it)
-            json.dump({"items": left}, open(".GHA_DISPATCH.json", "w")) if left else os.remove(".GHA_DISPATCH.json")
-            PYEOF
-            if [ -f .GHA_DISPATCH.json ] && ! grep -q '"wf"' .GHA_DISPATCH.json; then git rm -q .GHA_DISPATCH.json; fi
-            git add -A .GHA_DISPATCH.json 2>/dev/null || true
-            git -c user.name=live-test-bot -c user.email=bot@local commit -qm "gha dispatch relay" || true
-            P="https://runner:${GH_TOKEN}@github.com/b9811507-del/live-test"
-            git push -q $P HEAD:main || { git fetch -q $P main && git rebase -q FETCH_HEAD && git push -q $P HEAD:main; } || true
-          fi
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 agents/relay.py
       - name: rearm
         if: always()
         env:
