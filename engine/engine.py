@@ -25,7 +25,7 @@ def now(): return time.time()
 JOBS = {
     "malwa": {"hh": 11, "mm": 0,  "emoji": "☀️", "right": 1, "wrong": -0.25, "label": "MALWA BOOK",
               "chain": ["malwa_vol1", "malwa_vol2", "malwa_horti"]},
-    "iari":  {"hh": 14, "mm": 30, "emoji": "🌤", "right": 1, "wrong": -0.25, "label": "IARI BOOK MCQ 2026",
+    "iari":  {"hh": 14, "mm": 0, "emoji": "🌤", "right": 1, "wrong": -0.25, "label": "IARI BOOK MCQ 2026",
               "chain": ["iari"]},
     "afo":   {"hh": 18, "mm": 0,  "emoji": "🌆", "right": 2, "wrong": -0.5,  "label": "AFO MAINS TEST (NEW PATTERN)",
               "chain": None, "last_day": "2026-11-01"},
@@ -946,6 +946,45 @@ def cmd_booksend(job, rng="", step=5):
            text=f"✅ booksend {job}: {len(bz['done'])} files + {len(parts)} index parts (this run {sent_this_run}, fails {fails})")
     print(f"booksend {job}: total {len(bz['done'])}/{total} · fails {fails}")
 
+def cmd_slotchain():
+    """slot-chain workflow calls this EVERY cycle (~3 min, self-dispatched — no cron reliance).
+    Per job: warm window opens at go-50min (prebuild+start), hard-miss cutoff at go+4h
+    (existing engine rule: a missed slot stays missed — no retro-fire after 4h).
+    An interrupted test RESUMES from its journal; never re-announced, never killed mid-test
+    (workflow concurrency has cancel-in-progress=false)."""
+    global NET
+    NET = True
+    acts = []
+    st = load_state()
+    date = today()
+    for job in JOBS:
+        cfg = JOBS[job]
+        if job == "afo" and (st.get("afo", {}).get("closed") or date > cfg.get("last_day", "9999")):
+            continue
+        j = jd(st, date, job)
+        step = j.get("step", 0)
+        if step >= 8:
+            continue
+        go = slot_go(job, date)
+        if step == 0 and now() > go + 4 * 3600:
+            continue                                   # missed → stays missed (user rule)
+        if step == 0 and now() < go - 50 * 60:
+            continue                                   # not in window yet
+        try:
+            if step == 0:
+                try:
+                    cmd_prebuild(job)                  # idempotent, budgeted translate warm
+                except Exception as e:
+                    log(f"prebuild {job} skip: {str(e)[:80]}")
+            cmd_run(job)                               # start OR resume (step journal inside)
+            acts.append(f"{job}: ran")
+        except Exception as e:
+            LAST = str(e)[:140]
+            acts.append(f"{job}: ERR {LAST}")
+            log(f"slotchain {job} error: {e}")
+    log("slotchain:", "; ".join(acts) if acts else "idle")
+    return acts
+
 def cmd_status():
     st = load_state()
     print(json.dumps({"ptr": st.get("ptr"), "afo": {k: v for k, v in st.get("afo", {}).items() if k != "done_dates"},
@@ -981,6 +1020,8 @@ def cmd_prebuild(job):
 if __name__ == "__main__":
     c = sys.argv[1] if len(sys.argv) > 1 else "status"
     a = sys.argv[2:]
+    if c == "slotchain":
+        cmd_slotchain(); sys.exit(0)
     if c == "booksend":
         if not a:
             print("usage: engine.py booksend <job> [lo-hi] [step]"); sys.exit(2)

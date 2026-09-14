@@ -1,0 +1,62 @@
+name: slot-guard
+# Watchdog for slot-chain: if the main chain's last run is stale (>25 min) and nothing is
+# in progress, force-dispatch it and tell the admin. Also self-chains (~7 min cadence),
+# so it survives GHA schedule skips. Independent workflow ⇒ can revive a dead chain.
+on:
+  workflow_dispatch: { }
+  schedule:
+    - cron: "*/15 * * * *"
+permissions: { actions: write, contents: read }
+concurrency: { group: slot-guard, cancel-in-progress: true }
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: check & revive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TG_TOKEN: ${{ secrets.TG_TOKEN }}
+          ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import calendar, json, os, time, urllib.request
+          tok = os.environ["GH_TOKEN"]; repo = os.environ.get("REPO") or "b9811507-del/live-test"
+          def api(p, method="GET", data=None):
+              req = urllib.request.Request(f"https://api.github.com/repos/{repo}{p}", method=method,
+                  data=json.dumps(data).encode() if data else None,
+                  headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
+              try:
+                  return json.loads(urllib.request.urlopen(req, timeout=20).read() or b"{}")
+              except urllib.error.HTTPError as e:
+                  return {"_err": e.code, "_b": e.read().decode()[:120]}
+              except Exception as e:
+                  return {"_err": str(e)[:80]}
+          runs = api("/actions/workflows/slot-chain.yml/runs?per_page=1").get("workflow_runs") or []
+          fresh, why = False, "no runs ever"
+          if runs:
+              r = runs[0]
+              if r["status"] in ("in_progress", "queued"):
+                  fresh, why = True, f"chain {r['status']}"
+              else:
+                  age = time.time() - calendar.timegm(time.strptime(r["created_at"][:19], "%Y-%m-%dT%H:%M:%S"))
+                  fresh, why = age < 25 * 60, f"last cycle {int(age // 60)} min ago"
+          if not fresh:
+              print("STALE:", why, "→ reviving slot-chain")
+              d = api("/actions/workflows/slot-chain.yml/dispatches", "PUT", {"ref": "main"})
+              print("dispatch:", d if d.get("_err") else "ok")
+              tgo, ach = os.environ.get("TG_TOKEN", ""), os.environ.get("ADMIN_CHAT", "")
+              if tgo and ach:
+                  try:
+                      urllib.request.urlopen(urllib.request.Request(
+                          f"https://api.telegram.org/bot{tgo}/sendMessage",
+                          data=json.dumps({"chat_id": ach, "text": f"🛡 slot-guard: chain stale ({why}) — revived ✅"}).encode(),
+                          headers={"Content-Type": "application/json"}), timeout=15)
+                  except Exception as e:
+                      print("admin DM fail:", e)
+          else:
+              print("slot-chain healthy:", why)
+          PY
+          sleep 420
+          gh workflow run slot-guard.yml --repo "${REPO:-b9811507-del/live-test}" --ref main || true
