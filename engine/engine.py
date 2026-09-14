@@ -867,6 +867,81 @@ def cmd_keepwarm():
     except Exception as e:
         print("loopfix:", str(e)[:80])
 
+def cmd_booksend(job, rng="", step=5):
+    """One-time book delivery: 6065-format HTML file per `step` pages → CHAT group,
+    EVERY file pinned, full INDEX sent last. Journal in state.json[booksend][job] makes a
+    re-run RESUME exactly where it stopped — already-delivered chunks are never repeated."""
+    global CHAT, NET
+    NET = True
+    st = load_state()
+    bz = st.setdefault("booksend", {}).setdefault(job, {"done": []})
+    done = {(d[0], d[1]) for d in bz["done"]}
+    sid = SHEETS.get(job) or next((v for k, v in SHEETS.items() if k.startswith(job)), "")
+    if not sid:
+        print(f"no sheet for {job}"); return
+    rs = rows(sid)
+    maxp = max((r["_ph"] for r in rs), default=0)
+    rng = rng or f"1-{maxp}"
+    try:
+        lo, hi = (int(x) for x in rng.split("-")[:2])
+    except ValueError:
+        lo, hi = 1, maxp
+    label = JOBS.get(job, {}).get("label", job.upper())
+    step = max(1, int(step))
+    total = len(range(lo, hi + 1, step))
+    sent_this_run = fails = 0
+    for a in range(lo, hi + 1, step):
+        b = min(a + step - 1, hi)
+        if (a, b) in done:
+            continue
+        sel = [r for r in rs if r["_pl"] <= b and r["_ph"] >= a]
+        try:
+            DATA, _bad = BL.build_questions([(r["_ph"] or a, r) for r in sel])
+        except Exception as e:
+            log(f"build {a}-{b} fail: {e}"); fails += 1; continue
+        if not DATA:
+            bz["done"].append([a, b, 0, 0]); continue          # empty page range — record & skip
+        pages_per = {}
+        for r in sel:
+            for p in range(max(r["_pl"], 1), r["_ph"] + 1):
+                pages_per[p] = pages_per.get(p, 0) + 1
+        name = f"{job.upper()}_p{a}-{b}_{len(DATA)}Q.html"
+        path = os.path.join(FILES_DIR, name)
+        BL.render_html(DATA, pages_per, f"{label} — Pages {a}-{b}", "By SatyamSir",
+                       "Agri Learning Point", QPACE, f"booksend_{job}_p{a}p{b}", path)
+        cap = (f"📗 *{label}* \u00b7 Pages *{a}-{b}* \u00b7 {len(DATA)} Q \u00b7 File {len(done)+1}/{total}")
+        try:
+            mid = send_file(path, name, cap, pin=True)
+        except Exception as e:
+            log(f"send {a}-{b} fail: {e}"); fails += 1; continue
+        bz["done"].append([a, b, len(DATA), mid]); done.add((a, b))
+        sent_this_run += 1
+        if sent_this_run % 10 == 0:
+            save_state(st, f"booksend {job}: {len(done)}/{total}")
+            log(f"booksend {job}: {len(done)}/{total} delivered")
+        time.sleep(1.2)
+    save_state(st, f"booksend {job}: files done ({len(done)}/{total})")
+
+    # ---- INDEX last, chunked so Telegram never rejects (60 lines/msg), every part pinned ----
+    parts, cur = [], [f"📚 *{label} — INDEX* \u00b7 {step} pages/file \u00b7 {len(done)} files \u00b7 pages {lo}-{hi}"]
+    for i, (a, b, q, mid) in enumerate(sorted(bz["done"]), 1):
+        cur.append(f"{i}. Pages {a}-{b} \u00b7 {q}Q")
+        if len(cur) >= 61:
+            parts.append(cur); cur = [f"📚 *INDEX {len(parts)+2}* \u2192"]
+    if len(cur) > 1 or not parts:
+        parts.append(cur)
+    for pi, c in enumerate(parts):
+        txt = "\n".join(c)
+        r = tg("sendMessage", chat_id=CHAT, text=txt, parse_mode="Markdown")
+        try: tg("pinChatMessage", chat_id=CHAT, message_id=r["message_id"])
+        except Exception: pass
+        time.sleep(1.2)
+    save_state(st, f"booksend {job}: index sent ({len(parts)} parts)")
+    if ADMIN_CHAT:
+        tg("sendMessage", chat_id=ADMIN_CHAT,
+           text=f"✅ booksend {job}: {len(bz['done'])} files + {len(parts)} index parts (this run {sent_this_run}, fails {fails})")
+    print(f"booksend {job}: total {len(bz['done'])}/{total} · fails {fails}")
+
 def cmd_status():
     st = load_state()
     print(json.dumps({"ptr": st.get("ptr"), "afo": {k: v for k, v in st.get("afo", {}).items() if k != "done_dates"},
@@ -902,6 +977,11 @@ def cmd_prebuild(job):
 if __name__ == "__main__":
     c = sys.argv[1] if len(sys.argv) > 1 else "status"
     a = sys.argv[2:]
+    if c == "booksend":
+        if not a:
+            print("usage: engine.py booksend <job> [lo-hi] [step]"); sys.exit(2)
+        cmd_booksend(a[0], a[1] if len(a) > 1 else "", int(a[2]) if len(a) > 2 else 5)
+        sys.exit(0)
     if c in ("prebuild", "run", "finish") and not a:
         print("usage: engine.py prebuild|run|finish <job> [date]"); sys.exit(2)
     if c == "prebuild":
