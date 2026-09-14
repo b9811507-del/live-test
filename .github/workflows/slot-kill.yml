@@ -1,0 +1,21 @@
+name: slot-kill
+# Emergency stop: cancels running/queued slot-chain runs and seals open job journals so
+# the chain cannot resume them. Trigger: push a ".KILLTEST" file (one-shot, self-removing)
+# or workflow_dispatch (registered now => dispatch works).
+on:
+  push:
+    branches: [main]
+    paths: [".KILLTEST"]
+  workflow_dispatch: { }
+permissions: { contents: write, actions: write }
+concurrency: { group: slot-kill, cancel-in-progress: false }
+jobs:
+  kill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 agents/kill.py
