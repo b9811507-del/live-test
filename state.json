@@ -1,5 +1,10 @@
 {
- "ptr": {},
+ "ptr": {
+  "malwa": {
+   "book": "malwa_vol1",
+   "bidx": 0
+  }
+ },
  "afo": {
   "cursor": 0,
   "seed": 20260911,
@@ -310,7 +315,9 @@
   }
  ],
  "last_digest": 1789371676.5385885,
- "tc": {},
+ "tc": {
+  "155a56843455b1dd": ""
+ },
  "booksend": {
   "iari": {
    "done": [
