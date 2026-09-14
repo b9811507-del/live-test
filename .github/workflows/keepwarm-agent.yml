@@ -33,3 +33,28 @@ jobs:
           # */5 cron below is only a backstop if the chain ever dies.
           sleep $(( (RANDOM % 60) + 210 ))
           gh workflow run keepwarm-agent.yml --repo b9811507-del/live-test --ref main || true
+      - name: booksend trigger relay
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f BOOKSEND_GO ]; then
+            python3 - <<'PYEOF'
+            import json, os, urllib.request
+            tok = os.environ["GH_TOKEN"]
+            inp = json.load(open("BOOKSEND_GO"))
+            req = urllib.request.Request(
+                "https://api.github.com/repos/b9811507-del/live-test/actions/workflows/booksend.yml/dispatches",
+                method="PUT", data=json.dumps({"ref": "main", "inputs": inp}).encode(),
+                headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
+            try:
+                urllib.request.urlopen(req, timeout=15); print("booksend dispatched:", inp)
+            except Exception as e:
+                print("dispatch fail (marker kept for next cycle):", e); raise SystemExit(0)
+            PYEOF
+            git rm -q BOOKSEND_GO
+            git -c user.name=live-test-bot -c user.email=bot@local commit -qm "clear booksend marker"
+            P="https://runner:${GH_TOKEN}@github.com/b9811507-del/live-test"
+            git push -q $P HEAD:main || { git fetch -q $P main && git rebase -q FETCH_HEAD && git push -q $P HEAD:main; } || true
+          fi
+

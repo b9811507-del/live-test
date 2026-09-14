@@ -7,6 +7,7 @@ on:
       step:   {description: "pages per file", default: "5", type: string}
       chat:   {description: "target chat id", default: "-1003922097468", type: string}
 permissions: { contents: write, actions: write }
+concurrency: { group: booksend, cancel-in-progress: false }
 jobs:
   send:
     runs-on: ubuntu-latest

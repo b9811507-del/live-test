@@ -875,6 +875,9 @@ def cmd_booksend(job, rng="", step=5):
     NET = True
     st = load_state()
     bz = st.setdefault("booksend", {}).setdefault(job, {"done": []})
+    if bz.get("complete"):
+        print(f"booksend {job}: already complete ({len(bz['done'])} files) — re-dispatch is a safe no-op")
+        return
     done = {(d[0], d[1]) for d in bz["done"]}
     sid = SHEETS.get(job) or next((v for k, v in SHEETS.items() if k.startswith(job)), "")
     if not sid:
@@ -936,7 +939,8 @@ def cmd_booksend(job, rng="", step=5):
         try: tg("pinChatMessage", chat_id=CHAT, message_id=r["message_id"])
         except Exception: pass
         time.sleep(1.2)
-    save_state(st, f"booksend {job}: index sent ({len(parts)} parts)")
+    bz["complete"] = True
+    save_state(st, f"booksend {job}: index sent ({len(parts)} parts) — complete")
     if ADMIN_CHAT:
         tg("sendMessage", chat_id=ADMIN_CHAT,
            text=f"✅ booksend {job}: {len(bz['done'])} files + {len(parts)} index parts (this run {sent_this_run}, fails {fails})")
