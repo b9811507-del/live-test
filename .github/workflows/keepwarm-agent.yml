@@ -33,9 +33,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # GHA schedule queue lags HOURS (observed) -> Render sleeps -> paid bot = no response.
-          # Chain ourselves instead: each run sleeps ~4 min then re-dispatches. Dispatch does
-          # NOT wait in the schedule queue. concurrency=cancel collapses any duplicates, and
-          # */5 cron below is only a backstop if the chain ever dies.
-          sleep $(( (RANDOM % 60) + 210 ))
+          # Chain: dispatch-then-work (a cancelled mid-sleep job KILLED the whole chain on
+          # 2026-09-14: queued runs got cancelled by the next dispatch before reaching steps).
+          # Cadence throttle: skip dispatch if a cycle ran < 150s ago (job itself lasts ~2 min).
+          AGE=$(gh api "repos/b9811507-del/live-test/actions/runs?per_page=1" --jq '.workflow_runs[0].created_at' 2>/dev/null | tr -d '"')
+          if [ -n "$AGE" ]; then
+            A=$(python3 -c "import time,calendar;print(int(time.time()-calendar.timegm(time.strptime('$AGE','%Y-%m-%dT%H:%M:%S'))))" 2>/dev/null || echo 999)
+            if [ "$A" -lt 150 ]; then echo "throttled (last dispatch ${A}s ago) — no new dispatch"; exit 0; fi
+          fi
           gh workflow run keepwarm-agent.yml --repo b9811507-del/live-test --ref main || true
+          sleep 20   # pad so the dispatched run registers before this job ends
