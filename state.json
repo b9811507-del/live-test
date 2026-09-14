@@ -3,6 +3,10 @@
   "malwa": {
    "book": "malwa_vol1",
    "bidx": 1
+  },
+  "iari": {
+   "book": "iari",
+   "bidx": 0
   }
  },
  "afo": {
@@ -473,7 +477,8 @@
  ],
  "last_digest": 1789371676.5385885,
  "tc": {
-  "155a56843455b1dd": ""
+  "155a56843455b1dd": "",
+  "97f1521e2eb52806": ""
  },
  "booksend": {
   "iari": {
