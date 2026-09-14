@@ -17,7 +17,7 @@
 - No restore of old code. New files, new root commit(s) in private repo `b9811507-del/live-test` (repo = keys vault: 16 GHA secrets stay).
 - Re-carried admin rules (they are ORDERS, not old code): 30s/question · +1 right / −0.25 wrong (AFO: its own pattern) · 4-line announce, pinned · polls unpinned · leaderboard 48 rows/msg · congrats pinned · 6065-format result FILE sent **unpinned** · short CTA after file · resume-by-journal, never re-announce · ONE data copy (no duplicate posts, delete superseded copies) · NOTHING posted to any group without explicit admin order (booksend-style jobs = manual dispatch only) · state.json in git = single database.
 
-## T4 — DATA SOURCES (draft — lock after admin answer)
+## T4 — DATA SOURCES ✅ LOCKED 2026-09-14 (Mongo fresh-fixed: 50/50 sets ready)
 - malwa_vol1  = Google Sheet `128DIQLjlO0FfsTUReGbr2sHJcaJDg6WLjJc7CVRpNhg`
 - malwa_vol2  = Google Sheet `1UgnIe-g8Fh0GiwtbQpSHgtlVtPk2hEngzBW5idqFD_E`
 - malwa_horti = Google Sheet `1YcJWVgWofbLkzOGeeDuPke7XPpyW_EETn9LeEEuz_dE`
@@ -25,7 +25,8 @@
 - afo         = MongoDB Atlas bank (secret `MONGO_URI`), topped daily 05:00 IST by supply job; no-repeat audit enforced at draw.
 - QUESTION SOURCE RULE: read-only from these; engine never edits sheets.
 
-## T5 — ROUTING (draft — lock after admin answer)
+## T5 — ROUTING ✅ LOCKED 2026-09-14
+ALL THREE tests run in **@agriquizworld (-1003784795446)** using **only** bot @Arunkatyanquiz_bot (secret `EXAM_TG_TOKEN`; admin in group ✓; stale Render webhook removed ✓). IARI/AFO paid-group routing DROPPED by admin order.
 - malwa → free group @agriquizworld (`CHAT_ID` = -1003784795446) ✅ (as today)
 - iari  → paid IARI group (`IARI_CHAT`) — ⚠ quiz bot @Malwaquiz_bot ko wahan admin add karna admin ka kaam hai; tab tak fallback: @agriquizworld + admin DM
 - afo   → ❓ KAUNSE group me? (AFO group ka chat-id + bot admin chahiye; warna fallback @agriquizworld)

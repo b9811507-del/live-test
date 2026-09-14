@@ -1,0 +1,37 @@
+name: afo-today
+# One-off fresh runner for the FIRST AFO mains test: 14 Sep 2026, 18:00 IST, @agriquizworld.
+# Self-chaining short cycles (sleep 150s when too early); concurrency NEVER cancels (test
+# can't be killed mid-poll); journal in state.json; --rearm keeps the chain alive until done.
+# Delete this workflow AFTER the day passes (one-off, per T3).
+on:
+  workflow_dispatch: { }
+  push:
+    branches: [main]
+    paths: [".github/workflows/afo-today.yml", "engine/afo18.py"]
+permissions: { contents: write, actions: write }
+concurrency: { group: afo-today, cancel-in-progress: false }
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    env:
+      TZ: Asia/Kolkata
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+      EXAM_TG_TOKEN: ${{ secrets.EXAM_TG_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: pip install -q pymongo || true
+      - name: cycle
+        run: |
+          for i in 1 2; do
+            python3 engine/afo18.py && break
+            echo "attempt $i failed — retry"; sleep 12
+          done || true
+      - name: rearm
+        if: always()
+        run: |
+          sleep $(( (RANDOM % 40) + 90 ))
+          python3 engine/afo18.py --rearm || true
