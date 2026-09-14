@@ -1,297 +1,359 @@
 {
+ "ptr": {
+  "malwa": {
+   "book": "malwa_vol1",
+   "bidx": 0
+  }
+ },
  "afo": {
-  "closed": false,
   "cursor": 0,
-  "seed": 20260911
+  "seed": 20260911,
+  "closed": false
+ },
+ "days": {
+  "2026-09-11": {
+   "malwa": {},
+   "iari": {},
+   "afo": {}
+  },
+  "2026-09-12": {
+   "malwa": {},
+   "iari": {},
+   "afo": {}
+  },
+  "2026-09-13": {
+   "malwa": {},
+   "iari": {},
+   "afo": {}
+  },
+  "2026-09-14": {
+   "malwa": {
+    "step": 1,
+    "go": 1789363800.0,
+    "deadline": 1789364220.0,
+    "nq": 14,
+    "title": "MALWA BOOK VOL 1",
+    "pages": [
+     1,
+     4
+    ],
+    "book": "malwa_vol1",
+    "bidx": 0,
+    "n_batches": 150,
+    "sn": [
+     "128DIQLj:21",
+     "128DIQLj:22",
+     "128DIQLj:23",
+     "128DIQLj:24",
+     "128DIQLj:25",
+     "128DIQLj:26",
+     "128DIQLj:27",
+     "128DIQLj:31",
+     "128DIQLj:32",
+     "128DIQLj:33",
+     "128DIQLj:34",
+     "128DIQLj:35",
+     "128DIQLj:36",
+     "128DIQLj:37"
+    ],
+    "msg_ann": 29010
+   },
+   "iari": {},
+   "afo": {}
+  }
  },
  "agent_log": [
   {
+   "t": "2026-09-14 07:23:12",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:19:03"
+   ]
   },
   {
+   "t": "2026-09-14 07:27:21",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:23:12"
+   ]
   },
   {
+   "t": "2026-09-14 07:27:53",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:27:21"
+   ]
   },
   {
+   "t": "2026-09-14 07:28:29",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:27:53"
+   ]
   },
   {
+   "t": "2026-09-14 07:29:02",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:28:29"
+   ]
   },
   {
+   "t": "2026-09-14 07:29:35",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:29:02"
+   ]
   },
   {
+   "t": "2026-09-14 07:30:44",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:29:35"
+   ]
   },
   {
+   "t": "2026-09-14 07:31:19",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:30:44"
+   ]
   },
   {
+   "t": "2026-09-14 07:31:52",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:31:19"
+   ]
   },
   {
+   "t": "2026-09-14 07:32:30",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:31:52"
+   ]
   },
   {
+   "t": "2026-09-14 07:33:01",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:32:30"
+   ]
   },
   {
+   "t": "2026-09-14 07:33:32",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:33:01"
+   ]
   },
   {
+   "t": "2026-09-14 07:34:04",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:33:32"
+   ]
   },
   {
+   "t": "2026-09-14 07:34:36",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:34:04"
+   ]
   },
   {
+   "t": "2026-09-14 07:35:09",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:34:36"
+   ]
   },
   {
+   "t": "2026-09-14 07:35:42",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:35:09"
+   ]
   },
   {
+   "t": "2026-09-14 07:36:15",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:35:42"
+   ]
   },
   {
+   "t": "2026-09-14 07:36:47",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:36:15"
+   ]
   },
   {
+   "t": "2026-09-14 07:37:20",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:36:47"
+   ]
   },
   {
+   "t": "2026-09-14 07:37:58",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:37:20"
+   ]
   },
   {
+   "t": "2026-09-14 07:38:31",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:37:58"
+   ]
   },
   {
+   "t": "2026-09-14 07:39:04",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:38:31"
+   ]
   },
   {
+   "t": "2026-09-14 07:39:40",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:39:04"
+   ]
   },
   {
+   "t": "2026-09-14 07:40:12",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:39:40"
+   ]
   },
   {
+   "t": "2026-09-14 07:40:43",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:40:12"
+   ]
   },
   {
+   "t": "2026-09-14 07:41:15",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:40:43"
+   ]
   },
   {
+   "t": "2026-09-14 07:41:47",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:41:15"
+   ]
   },
   {
+   "t": "2026-09-14 07:42:19",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:41:47"
+   ]
   },
   {
+   "t": "2026-09-14 07:42:54",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:42:19"
+   ]
   },
   {
+   "t": "2026-09-14 07:43:27",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:42:54"
+   ]
   },
   {
+   "t": "2026-09-14 07:44:00",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:43:27"
+   ]
   },
   {
+   "t": "2026-09-14 07:44:33",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:44:00"
+   ]
   },
   {
+   "t": "2026-09-14 07:45:05",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:44:33"
+   ]
   },
   {
+   "t": "2026-09-14 07:46:34",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:45:05"
+   ]
   },
   {
+   "t": "2026-09-14 07:47:06",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:46:34"
+   ]
   },
   {
+   "t": "2026-09-14 07:47:43",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:47:06"
+   ]
   },
   {
+   "t": "2026-09-14 07:48:18",
    "fixes": [],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:47:43"
+   ]
   },
   {
-   "fixes": [],
-   "problems": [
-    "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:48:18"
-  },
-  {
+   "t": "2026-09-14 07:56:47",
    "fixes": [],
    "problems": [
     "malwa: 'book'",
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 07:56:47"
+   ]
   },
   {
+   "t": "2026-09-14 08:05:01",
    "fixes": [
     "malwa: resumed (step 1)"
    ],
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
-   ],
-   "t": "2026-09-14 08:05:01"
+   ]
+  },
+  {
+   "t": "2026-09-14 08:12:53",
+   "fixes": [],
+   "problems": [
+    "malwa: 'book'",
+    "gh rerun: HTTP Error 403: Forbidden"
+   ]
   }
  ],
+ "last_digest": 1789371676.5385885,
+ "tc": {
+  "155a56843455b1dd": ""
+ },
  "booksend": {
   "iari": {
-   "complete": true,
    "done": [
     [
      1,
@@ -1584,6 +1646,7 @@
      889
     ]
    ],
+   "complete": true,
    "index_mids": [
     899,
     900,
@@ -1592,74 +1655,5 @@
     903
    ]
   }
- },
- "days": {
-  "2026-09-11": {
-   "afo": {},
-   "iari": {},
-   "malwa": {}
-  },
-  "2026-09-12": {
-   "afo": {},
-   "iari": {},
-   "malwa": {}
-  },
-  "2026-09-13": {
-   "afo": {},
-   "iari": {},
-   "malwa": {}
-  },
-  "2026-09-14": {
-   "afo": {},
-   "iari": {},
-   "malwa": {
-    "bidx": 0,
-    "book": "malwa_vol1",
-    "deadline": 1789364220.0,
-    "go": 1789363800.0,
-    "killed": true,
-    "killed_at": "2026-09-14T08:09:53Z",
-    "msg_ann": 29010,
-    "n_batches": 150,
-    "nq": 14,
-    "pages": [
-     1,
-     4
-    ],
-    "sn": [
-     "128DIQLj:21",
-     "128DIQLj:22",
-     "128DIQLj:23",
-     "128DIQLj:24",
-     "128DIQLj:25",
-     "128DIQLj:26",
-     "128DIQLj:27",
-     "128DIQLj:31",
-     "128DIQLj:32",
-     "128DIQLj:33",
-     "128DIQLj:34",
-     "128DIQLj:35",
-     "128DIQLj:36",
-     "128DIQLj:37"
-    ],
-    "step": 8,
-    "title": "MALWA BOOK VOL 1"
-   }
-  }
- },
- "last_digest": 1789371676.5385885,
- "ptr": {
-  "malwa": {
-   "bidx": 0,
-   "book": "malwa_vol1"
-  },
-  "iari": {
-   "book": "iari",
-   "bidx": 0
-  }
- },
- "tc": {
-  "155a56843455b1dd": "",
-  "97f1521e2eb52806": ""
  }
 }
