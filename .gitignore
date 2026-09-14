@@ -1,7 +1,0 @@
-__pycache__/
-*.db
-*.db-wal
-*.db-shm
-engine/gen/
-data/
-*.sqlite*
