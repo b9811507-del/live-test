@@ -22,17 +22,6 @@ jobs:
         run: |
           python3 engine/engine.py keepwarm || true
           python3 engine/engine.py agent || true
-      - name: rearm
-        if: always()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # GHA schedule queue lags HOURS (observed) -> Render sleeps -> paid bot = no response.
-          # Chain ourselves instead: each run sleeps ~4 min then re-dispatches. Dispatch does
-          # NOT wait in the schedule queue. concurrency=cancel collapses any duplicates, and
-          # */5 cron below is only a backstop if the chain ever dies.
-          sleep $(( (RANDOM % 60) + 210 ))
-          gh workflow run keepwarm-agent.yml --repo b9811507-del/live-test --ref main || true
       - name: booksend trigger relay
         if: always()
         env:
@@ -57,4 +46,14 @@ jobs:
             P="https://runner:${GH_TOKEN}@github.com/b9811507-del/live-test"
             git push -q $P HEAD:main || { git fetch -q $P main && git rebase -q FETCH_HEAD && git push -q $P HEAD:main; } || true
           fi
-
+      - name: rearm
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # GHA schedule queue lags HOURS (observed) -> Render sleeps -> paid bot = no response.
+          # Chain ourselves instead: each run sleeps ~4 min then re-dispatches. Dispatch does
+          # NOT wait in the schedule queue. concurrency=cancel collapses any duplicates, and
+          # */5 cron below is only a backstop if the chain ever dies.
+          sleep $(( (RANDOM % 60) + 210 ))
+          gh workflow run keepwarm-agent.yml --repo b9811507-del/live-test --ref main || true
