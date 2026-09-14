@@ -806,8 +806,77 @@ def handle(u):
         elif uid == ADMIN_ID and data.startswith("ad:"):
             admin_callback(q, data, cid, mid)
 
+_RLY = []            # queued copy-payloads for the IARI content relay
+_RLY_SEEN = set()    # dedupe keys — user re-forwarding the same post never double-posts
+
+def _relay_target():
+    return str((get_batches().get("iari") or {}).get("chat") or "")
+
+def _relay_capture(m):
+    """Admin DM containing a FORWARDED msg → queue an exact re-post for the IARI group."""
+    ch = _relay_target()
+    if not ch or not (m.get("forward_origin") or m.get("forward_from_chat")):
+        return False
+    fo = m.get("forward_origin") or {}
+    ffc = m.get("forward_from_chat") or {}
+    date = fo.get("date") or m.get("forward_date") or 0
+    media, field = None, None
+    for k in ("photo", "document", "video", "animation"):
+        if m.get(k):
+            field = k
+            media = (m[k][-1]["file_id"] if k == "photo" else m[k]["file_id"])
+            break
+    txt = (m.get("text") or m.get("caption") or "").strip()
+    if not media and not txt:
+        return False
+    key = hashlib.sha256(f"{field}|{date}|{txt[:200]}|{str(media)[:40]}".encode()).hexdigest()
+    if key in _RLY_SEEN:
+        return True                      # duplicate forward → drop silently
+    _RLY_SEEN.add(key)
+    _RLY.append({"kind": field or "text", "text": txt, "file": media})
+    _bg(_relay_flush)
+    return True
+
+def _relay_flush():
+    """Repost queued copies into the IARI group + pin (small batches: never starve the bot loop)."""
+    ch = _relay_target()
+    if not ch or not _RLY:
+        return
+    done = fails = 0
+    while _RLY and done + fails < 6:
+        it = _RLY.pop(0)
+        try:
+            if it["kind"] == "photo":
+                r = tg("sendPhoto", chat_id=ch, photo=it["file"], caption=it["text"] or None)
+            elif it["kind"] in ("document", "video", "animation"):
+                r = tg("send" + it["kind"].capitalize(), chat_id=ch, **{it["kind"]: it["file"], "caption": it["text"] or None})
+            else:
+                r = tg("sendMessage", chat_id=ch, text=it["text"], disable_web_page_preview=True)
+            mid = (r or {}).get("message_id") if isinstance(r, dict) else None
+            if mid:
+                tg("pinChatMessage", chat_id=ch, message_id=mid)
+                done += 1
+                time.sleep(0.5)
+            else:
+                _RLY.insert(0, it); fails += 1
+                break                    # Telegram-side error → retry next drain tick
+        except Exception as e:
+            print("relay err:", e); _RLY.insert(0, it); fails += 1; break
+    if done:
+        tg("sendMessage", chat_id=ADMIN_ID, text=f"♻️ Relay: {done} repost+pin ´ queue left: {len(_RLY)}")
+    if _RLY:
+        _bg(_relay_flush)                # keep the flow going every drain
+
 def admin_message(m):
     uid = m["chat"]["id"]; txt = (m.get("text") or "").strip(); low = txt.lower()
+    if low == "/relay":
+        tg("sendMessage", chat_id=uid,
+           text=f"♻️ Relay mode: ON (target IARI {_relay_target()})\nBuffer: {len(_RLY)} ´ dedup-known: {len(_RLY_SEEN)}\n"
+                "Group ke messages select karke isi bot ko FORWARD karte jao — exact copy group me "
+                "dobara post + pin ho jaayegi. Double data dedupe ho jaata hai.")
+        return
+    if (m.get("forward_origin") or m.get("forward_from_chat")) and _relay_capture(m):
+        return
     if low.startswith(("/start", "/panel", "/help")):
         tg("sendMessage", chat_id=uid, parse_mode="HTML",
            text=("🛠 <b>ADMIN CONSOLE — SatyamSir</b>\n\n"
