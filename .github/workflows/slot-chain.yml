@@ -5,6 +5,10 @@ name: slot-chain
 # live test mid-poll. The engine journal (state.json steps) makes resume idempotent.
 on:
   workflow_dispatch: { }
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/slot-chain.yml   # self-registration: an unrun workflow file 404s on workflow_dispatch (root cause 2026-09-14)
   schedule:
     - cron: "*/30 * * * *"
 permissions: { contents: write, actions: write }

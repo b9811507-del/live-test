@@ -4,6 +4,10 @@ name: slot-guard
 # so it survives GHA schedule skips. Independent workflow ⇒ can revive a dead chain.
 on:
   workflow_dispatch: { }
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/slot-guard.yml   # self-registration: an unrun workflow file 404s on workflow_dispatch (root cause 2026-09-14)
   schedule:
     - cron: "*/15 * * * *"
 permissions: { actions: write, contents: read }
