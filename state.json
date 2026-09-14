@@ -2,10 +2,6 @@
  "ptr": {
   "malwa": {
    "book": "malwa_vol1",
-   "bidx": 1
-  },
-  "iari": {
-   "book": "iari",
    "bidx": 0
   }
  },
@@ -32,7 +28,7 @@
   },
   "2026-09-14": {
    "malwa": {
-    "step": 7,
+    "step": 1,
     "go": 1789363800.0,
     "deadline": 1789364220.0,
     "nq": 14,
@@ -60,147 +56,13 @@
      "128DIQLj:36",
      "128DIQLj:37"
     ],
-    "msg_ann": 29010,
-    "votes": {
-     "1347595171": {
-      "name": "Kaushal",
-      "right": 1,
-      "wrong": 2,
-      "att": 3,
-      "final": 0.5
-     },
-     "382728002": {
-      "name": "Mr. Shrikant",
-      "right": 8,
-      "wrong": 5,
-      "att": 13,
-      "final": 6.75
-     },
-     "1379917406": {
-      "name": "A+k",
-      "right": 11,
-      "wrong": 3,
-      "att": 14,
-      "final": 10.25
-     },
-     "1922665327": {
-      "name": "Baji",
-      "right": 2,
-      "wrong": 0,
-      "att": 2,
-      "final": 2.0
-     },
-     "7208042501": {
-      "name": "✧*•. TARVEJ .•*✧",
-      "right": 6,
-      "wrong": 6,
-      "att": 12,
-      "final": 4.5
-     },
-     "1143441820": {
-      "name": "GMG",
-      "right": 5,
-      "wrong": 0,
-      "att": 5,
-      "final": 5.0
-     },
-     "6172109933": {
-      "name": "Manish",
-      "right": 2,
-      "wrong": 0,
-      "att": 2,
-      "final": 2.0
-     },
-     "8058257474": {
-      "name": "Imgopi",
-      "right": 1,
-      "wrong": 0,
-      "att": 1,
-      "final": 1.0
-     },
-     "7562034435": {
-      "name": "Rasiga",
-      "right": 1,
-      "wrong": 0,
-      "att": 1,
-      "final": 1.0
-     },
-     "5863480647": {
-      "name": "यश दुबे",
-      "right": 8,
-      "wrong": 2,
-      "att": 10,
-      "final": 7.5
-     },
-     "1183917981": {
-      "name": "Sri",
-      "right": 1,
-      "wrong": 0,
-      "att": 1,
-      "final": 1.0
-     },
-     "8292389515": {
-      "name": "AMRESH",
-      "right": 0,
-      "wrong": 1,
-      "att": 1,
-      "final": -0.25
-     },
-     "5424004006": {
-      "name": "Ankush Kumar",
-      "right": 3,
-      "wrong": 4,
-      "att": 7,
-      "final": 2.0
-     },
-     "1903140467": {
-      "name": "Sagarik@",
-      "right": 2,
-      "wrong": 1,
-      "att": 3,
-      "final": 1.75
-     },
-     "1382290237": {
-      "name": "Pc",
-      "right": 3,
-      "wrong": 1,
-      "att": 4,
-      "final": 2.75
-     },
-     "6617236552": {
-      "name": "Prathyusha",
-      "right": 0,
-      "wrong": 4,
-      "att": 4,
-      "final": -1.0
-     },
-     "978174619": {
-      "name": "Kuldeep",
-      "right": 0,
-      "wrong": 1,
-      "att": 1,
-      "final": -0.25
-     }
-    },
-    "msg_board": [
-     29043
-    ],
-    "msg_congrats": 29045,
-    "msg_file": 29047,
-    "msg_cta": 29048
+    "msg_ann": 29010
    },
    "iari": {},
    "afo": {}
   }
  },
  "agent_log": [
-  {
-   "t": "2026-09-14 07:10:28",
-   "fixes": [],
-   "problems": [
-    "gh rerun: HTTP Error 403: Forbidden"
-   ]
-  },
   {
    "t": "2026-09-14 07:14:40",
    "fixes": [],
@@ -473,12 +335,19 @@
    "problems": [
     "gh rerun: HTTP Error 403: Forbidden"
    ]
+  },
+  {
+   "t": "2026-09-14 07:56:47",
+   "fixes": [],
+   "problems": [
+    "malwa: 'book'",
+    "gh rerun: HTTP Error 403: Forbidden"
+   ]
   }
  ],
  "last_digest": 1789371676.5385885,
  "tc": {
-  "155a56843455b1dd": "",
-  "97f1521e2eb52806": ""
+  "155a56843455b1dd": ""
  },
  "booksend": {
   "iari": {
@@ -1783,12 +1652,5 @@
     903
    ]
   }
- },
- "pins_prev": {
-  "malwa": [
-   29043,
-   29045,
-   29049
-  ]
  }
 }
