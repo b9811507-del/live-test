@@ -28,7 +28,7 @@
   },
   "2026-09-14": {
    "malwa": {
-    "step": 3,
+    "step": 1,
     "go": 1789363800.0,
     "deadline": 1789364220.0,
     "nq": 14,
@@ -56,57 +56,13 @@
      "128DIQLj:36",
      "128DIQLj:37"
     ],
-    "msg_ann": 29010,
-    "votes": {
-     "8615518635": {
-      "name": "Animesh",
-      "right": 2,
-      "wrong": 0,
-      "att": 2,
-      "final": 2.0
-     },
-     "6738965893": {
-      "name": "Golu",
-      "right": 2,
-      "wrong": 0,
-      "att": 2,
-      "final": 2.0
-     },
-     "8292389515": {
-      "name": "AMRESH",
-      "right": 1,
-      "wrong": 1,
-      "att": 2,
-      "final": 0.75
-     },
-     "6422727059": {
-      "name": "Subashini",
-      "right": 1,
-      "wrong": 1,
-      "att": 2,
-      "final": 0.75
-     },
-     "8260868348": {
-      "name": "Pallu",
-      "right": 1,
-      "wrong": 0,
-      "att": 1,
-      "final": 1.0
-     }
-    }
+    "msg_ann": 29010
    },
    "iari": {},
    "afo": {}
   }
  },
  "agent_log": [
-  {
-   "t": "2026-09-14 07:23:12",
-   "fixes": [],
-   "problems": [
-    "gh rerun: HTTP Error 403: Forbidden"
-   ]
-  },
   {
    "t": "2026-09-14 07:27:21",
    "fixes": [],
@@ -381,6 +337,14 @@
    "fixes": [],
    "problems": [
     "malwa: 'book'",
+    "gh rerun: HTTP Error 403: Forbidden"
+   ]
+  },
+  {
+   "t": "2026-09-14 08:21:00",
+   "fixes": [],
+   "problems": [
+    "malwa: HTTP Error 400: Bad Request",
     "gh rerun: HTTP Error 403: Forbidden"
    ]
   }
