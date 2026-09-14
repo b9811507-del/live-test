@@ -28,7 +28,7 @@
   },
   "2026-09-14": {
    "malwa": {
-    "step": 1,
+    "step": 3,
     "go": 1789363800.0,
     "deadline": 1789364220.0,
     "nq": 14,
@@ -56,7 +56,72 @@
      "128DIQLj:36",
      "128DIQLj:37"
     ],
-    "msg_ann": 29010
+    "msg_ann": 29010,
+    "votes": {
+     "382728002": {
+      "name": "Mr. Shrikant",
+      "right": 14,
+      "wrong": 0,
+      "att": 14,
+      "final": 14.0
+     },
+     "1379917406": {
+      "name": "A+k",
+      "right": 2,
+      "wrong": 0,
+      "att": 2,
+      "final": 2.0
+     },
+     "5022487451": {
+      "name": "Ritesh",
+      "right": 8,
+      "wrong": 5,
+      "att": 13,
+      "final": 6.75
+     },
+     "5480207236": {
+      "name": "Rishu 🥰",
+      "right": 1,
+      "wrong": 0,
+      "att": 1,
+      "final": 1.0
+     },
+     "5261055239": {
+      "name": "SAURABH GIRI",
+      "right": 3,
+      "wrong": 4,
+      "att": 7,
+      "final": 2.0
+     },
+     "8292389515": {
+      "name": "AMRESH",
+      "right": 6,
+      "wrong": 4,
+      "att": 10,
+      "final": 5.0
+     },
+     "978174619": {
+      "name": "Kuldeep",
+      "right": 8,
+      "wrong": 0,
+      "att": 8,
+      "final": 8.0
+     },
+     "1204430228": {
+      "name": "🧿",
+      "right": 5,
+      "wrong": 0,
+      "att": 5,
+      "final": 5.0
+     },
+     "8615518635": {
+      "name": "Animesh",
+      "right": 1,
+      "wrong": 1,
+      "att": 2,
+      "final": 0.75
+     }
+    }
    },
    "iari": {},
    "afo": {}
