@@ -7,7 +7,7 @@ journal in state.json (git) = resume, never re-announce · missed after go+4h st
 lock (locked_by/lock_ts, heartbeat) = two cycles never run the test twice.
 Modes: cycle (default) · --rearm (workflow's last step, always runs).
 """
-import json, os, sys, time, html, urllib.request, urllib.error, datetime as dt, subprocess
+import json, os, sys, time, html, base64, urllib.request, urllib.error, datetime as dt
 
 DAY = "2026-09-14"
 GO_UTC = 12.5 * 3600            # 18:00 IST = 12:30 UTC
@@ -145,7 +145,7 @@ def rearm():
     try:
         req = urllib.request.Request(f"https://api.github.com/repos/{REPO}/actions/workflows/afo-today.yml/dispatches",
             data=json.dumps({"ref": "main"}).encode(), method="POST",
-            headers={"Authorization": f"Bearer {GH}", "Content-Length": "0"})
+            headers={"Authorization": f"Bearer {GH}", "Content-Type": "application/json", "Accept": "application/vnd.github+json"})
         urllib.request.urlopen(req, timeout=20)
         log("rearm: dispatched next cycle")
     except Exception as e:
