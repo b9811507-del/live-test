@@ -28,7 +28,7 @@
   },
   "2026-09-14": {
    "malwa": {
-    "step": 5,
+    "step": 6,
     "go": 1789363800.0,
     "deadline": 1789364220.0,
     "nq": 14,
@@ -181,7 +181,8 @@
     "msg_board": [
      29043
     ],
-    "msg_congrats": 29045
+    "msg_congrats": 29045,
+    "msg_file": 29047
    },
    "iari": {},
    "afo": {}
