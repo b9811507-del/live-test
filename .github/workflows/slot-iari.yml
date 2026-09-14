@@ -23,6 +23,7 @@ jobs:
         env:
           TG_TOKEN: ${{ secrets.TG_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+      IARI_CHAT: ${{ secrets.IARI_CHAT }}
           RENDER_URL: ${{ secrets.RENDER_URL }}
           ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

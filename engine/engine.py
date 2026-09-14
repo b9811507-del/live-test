@@ -441,6 +441,32 @@ def fmt_date(d):
     except ValueError:
         return d
 
+_chatpick = {}
+def chat_for(job):
+    """Route a job's live test to its own paid group when {JOB}_CHAT env is set AND the
+    bot can actually post there (membership probe); else keep CHAT_ID (free group).
+    A mis-added/removed bot can therefore NEVER kill a scheduled test."""
+    global CHAT
+    if job in _chatpick:
+        CHAT = _chatpick[job]; return
+    want = _env(job.upper() + "_CHAT", "")
+    if not want:
+        _chatpick[job] = CHAT; return
+    try:
+        me = tg("getMe") or {}
+        m = tg("getChatMember", chat_id=want, user_id=me.get("id") or 0) or {}
+        if m.get("status") in ("creator", "administrator", "member"):
+            CHAT = want
+            log(f"{job}: delivering in own group {want}")
+        else:
+            log(f"{job}: bot not in {want} — fallback {CHAT}")
+            if ADMIN_CHAT:
+                tg("sendMessage", chat_id=ADMIN_CHAT,
+                   text=f"⚠️ {job.upper()}: bot missing in paid group {want} — test runs in {CHAT} instead")
+    except Exception as e:
+        log(f"{job} chat probe fail: {e} — fallback {CHAT}")
+    _chatpick[job] = CHAT
+
 def announce_text(job, date, day):
     """NEAT & PROFESSIONAL — 4 lines only (user order): title / By / date+pages / marks. No instructions."""
     cfg = JOBS[job]
@@ -750,6 +776,7 @@ def send_file(path, name, caption, pin=False):
 
 # ---------------- commands ----------------
 def cmd_run(job):
+    chat_for(job)
     st = load_state()
     date = today()
     if job == "afo" and (st.get("afo", {}).get("closed") or date > JOBS["afo"]["last_day"]):
@@ -882,6 +909,7 @@ if __name__ == "__main__":
     elif c == "run":
         cmd_run(a[0])
     elif c == "finish":   # resume only; optional 2nd arg = date (e.g. finish afo 2026-09-11)
+        chat_for(a[0])
         st = load_state()
         date = a[1] if len(a) > 1 else today()
         j = jd(st, date, a[0])
