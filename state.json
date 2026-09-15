@@ -2257,7 +2257,22 @@
 }
 },
 "msg_2026-09-15_iari": 29165,
-"posted_at": "2026-09-15T15:04:00+05:30"
+"posted_at": "2026-09-15T15:04:00+05:30",
+"users": {
+"1404352962": {
+"batches": {
+"afo": {
+"at": "2026-09-15T16:21:22+05:30",
+"issued_at": "2026-09-15T16:21:23+05:30",
+"link_name": "afo-352962",
+"link_status": "issued",
+"mode": "claim_auto",
+"ref": ""
+}
+},
+"name": "Vijay"
+}
+}
 },
 "series_reset": {
 "iari": "2026-09-16",
