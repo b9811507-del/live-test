@@ -35,7 +35,7 @@ def build_tree(tmp, journal, env_extra=None):
     json.dump(journal, open(st, "w"), indent=0, sort_keys=True)
 
 
-def run(tmp, args, now, env_extra=None, speed="900"):
+def run(tmp, args, now, env_extra=None, speed="300"):
     env = dict(os.environ)
     env.update({
         "ENGINE_FAKE": "1", "ENGINE_NOW": now, "ENGINE_FAKE_SPEED": speed,
@@ -109,7 +109,7 @@ def case2_warm(tmp):
     day = "2026-09-16"
     p, log, st = mk(tmp, day + "T10:57:00+05:30", journal=empty_journal(day))
     j = day_of(st, day, "malwa")
-    ann = [t for t in texts(log) if "poll auto-closes" in t]
+    ann = [t for t in texts(log) if "poll auto-closes" in t and "MALWA BOOK VOL 1" in t]
     pin_calls = pins(log)
     unpins = methods(log, "unpinChatMessage", GROUP)
     tmr = [t for t in texts(log) if t.startswith("🗓")]
@@ -125,9 +125,11 @@ def case2_warm(tmp):
     kb = [e for e in methods(log, "sendMessage", GROUP) if e.get("reply_markup")]
     hinglish = [t for t in texts(log) if any(w in t for w in ("sawal", "dhanyavaad", "Roz ka", "ko pin", "jawab"))]
     last_group_msg = [e for e in log if e.get("chat") == GROUP and e["method"] == "sendMessage"][-1]
-    pl = polls(log)
+    pl = [e for e in polls(log) if re.match(r"^\d+/20\.", e.get("question") or "")]   # malwa only
     idx = texts(log)
     ok = (len(ann) == 1 and len(pl) == 20 and all(e.get("open_period") == 30 for e in pl)
+          and all(e.get("type") == "quiz" and isinstance(e.get("correct_option_id"), int) for e in pl)
+          and all(e.get("explanation") for e in pl) and all(e.get("is_anonymous") is False for e in pl)
           and all(e["question"].startswith("%d/20." % (i + 1)) for i, e in enumerate(pl))
           and len(pin_calls) == 1 and pin_calls[0]["message_id"] == ann_id          # announce is the ONLY pin
           and "Book pages" in ann[0]
@@ -140,9 +142,12 @@ def case2_warm(tmp):
           and not hinglish and int(j.get("step", 0)) == 8
           and int(day_of(st, day, "iari").get("step", 0)) == 0)
     _ = last_group_msg
-    return ok, ("announce=%d polls=%d reveals=%d ticks=%s pins=%d unpins=%d lb=%d top3=%d docs=%d plan=%r "
+    return ok, ("announce=%d polls=%d reveals=%d quiz=%d/%d expl=%d ticks=%s pins=%d unpins=%d lb=%d top3=%d docs=%d plan=%r "
                 "cta=%d paid=%d hinglish=%d step=%s" % (
-                    len(ann), len(pl), len(reveals), cd_vals, len(pin_calls), len(unpins), len(lb),
+                    len(ann), len(pl), len(reveals),
+                    sum(1 for e in pl if e.get("type") == "quiz"), len(pl),
+                    sum(1 for e in pl if e.get("explanation")),
+                    cd_vals, len(pin_calls), len(unpins), len(lb),
                     len(toppers), len(docs), (tmr[0][:40] if tmr else None), len(cta), len(paid_msgs),
                     len(hinglish), j.get("step")))
 

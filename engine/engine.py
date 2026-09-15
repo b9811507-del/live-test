@@ -107,6 +107,8 @@ WINDOW_BEFORE = 50 * 60          # start allowed from go-50min
 WINDOW_AFTER = 4 * 3600          # after go+4h a missed slot stays missed
 POLL_SECONDS = 30                # open_period + drain window
 PAPER_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "paper_template.html")
+POLL_MODE = (os.environ.get("POLL_MODE", "quiz") or "quiz").strip().lower()   # quiz = explanation in the poll
+POLL_EXPL_LIMIT = int(os.environ.get("POLL_EXPL_LIMIT", "200"))            # Telegram quiz explanation limit
 PAPER_BRAND = os.environ.get("PAPER_BRAND", "Agri Learning Point")      # matches the IARI group files
 PAPER_AUTHOR = os.environ.get("PAPER_AUTHOR", "By SatyamSir")
 LB_ROWS = 48                     # leaderboard rows per message
@@ -218,7 +220,10 @@ def _fake_tg(method, params):
              "text": params.get("text"), "caption": params.get("caption"), "question": params.get("question"),
              "options": params.get("options"), "open_period": params.get("open_period"),
              "reply_markup": params.get("reply_markup"), "member_limit": params.get("member_limit"),
-             "payload": params.get("payload"), "data": params.get("data")}
+             "payload": params.get("payload"), "data": params.get("data"),
+             "type": params.get("type"), "correct_option_id": params.get("correct_option_id"),
+             "explanation": params.get("explanation"), "is_anonymous": params.get("is_anonymous"),
+             "allows_multiple_answers": params.get("allows_multiple_answers")}
     if method in ("sendMessage", "sendPoll", "sendDocument", "sendPhoto"):
         _fake_ids[0] += 1
         entry["message_id"] = _fake_ids[0]
@@ -604,6 +609,23 @@ def _page_max(v):
     return int(m[-1]) if m else 0
 
 
+def en(text):
+    """Professional English for any sheet/mongo text: translate only when it is not English already."""
+    t = " ".join(str(text or "").split())
+    if not t:
+        return ""
+    if tr.needs_translation(t):
+        t = tr.translate_safe(t)
+    return " ".join(str(t or "").split())
+
+
+def fit_explanation(text, limit=None):
+    """Telegram quiz-explanation limit (200 chars) -> trim with an ellipsis; full text stays elsewhere."""
+    limit = int(limit or POLL_EXPL_LIMIT)
+    t = " ".join(str(text or "").split())
+    return t if len(t) <= limit else t[:limit - 1].rstrip() + "…"
+
+
 def fit_options(opts, key_idx):
     """Telegram poll limits: option <=100 chars, 2-10 options.
     Long options are truncated; if two options become identical they get an option-letter tag so
@@ -674,14 +696,13 @@ def _take_questions(rows, start, count, used_pages=None):
         r = rows[i]
         if used_pages is not None and _page_num(r["page"]) not in used_pages:
             break
-        opts, trunc, ok = fit_options(r["opts"], r["key"])
-        qt, qtr = fit_question(r["q"])
+        # v11.4.6: English first, then the platform limits (question 292 / option 100 chars)
+        opts, trunc, ok = fit_options([en(o) for o in r["opts"]], r["key"])
+        qt, qtr = fit_question(en(r["q"]))
         if ok:
-            expl = r.get("expl") or ""
-            if expl and tr.needs_translation(expl):
-                expl = tr.translate_safe(expl)          # explanation in English (cached)
+            expl, topic = en(r.get("expl") or ""), en(r.get("topic") or "")
             picked.append({"uid": "%s:%s" % (r["page"], r["serial"]), "serial": r["serial"], "page": r["page"],
-                           "topic": r["topic"], "q": qt, "o": opts, "key": r["key"], "trunc": trunc + qtr,
+                           "topic": topic, "q": qt, "o": opts, "key": r["key"], "trunc": trunc + qtr,
                            "expl": expl[:600], "src_row": r["src_row"]})
         else:
             skips.append({"src_row": r["src_row"], "serial": r["serial"], "why": "option-limit collision"})
@@ -752,14 +773,12 @@ def plan_afo(day, j):
     qs = afo_mongo.pick(day, db=db, flush=flush)
     picked = []
     for q in qs:
-        opts, trunc, ok = fit_options([str(o) for o in (q.get("o") or [])], int(q.get("key") or 0))
+        opts, trunc, ok = fit_options([en(o) for o in (q.get("o") or [])], int(q.get("key") or 0))
         if not ok:
             raise EngineError("mongo set %s has an unusable question (uid=%s)" % (day, q.get("uid")))
-        qt, qtr = fit_question(q.get("q"))
-        expl = " ".join(str(q.get("expl") or "").split())
-        if expl and tr.needs_translation(expl):
-            expl = tr.translate_safe(expl)
-        picked.append({"uid": q.get("uid"), "serial": q.get("uid"), "page": "", "topic": "",
+        qt, qtr = fit_question(en(q.get("q")))
+        expl = en(q.get("expl") or "")
+        picked.append({"uid": q.get("uid"), "serial": q.get("uid"), "page": "", "topic": en(q.get("topic") or ""),
                        "q": qt, "o": opts, "key": int(q["key"]), "trunc": trunc + qtr,
                        "expl": expl[:600], "src_row": None})
     plan = {"src": "mongo:agri.afo_sets", "kind": "mongo", "n": len(picked), "label": JOBS["afo"]["label"],
@@ -977,7 +996,7 @@ def _names(uid_list, names, cap=5):
 
 
 def reveal_text(job, plan, i, q, aq, names):
-    """Native-quiz-bot style reveal right after the 30 s poll closes (v11.4)."""
+    """Native-quiz-bot style reveal right after the 30 s poll closes (v11.4) — English (v11.4.6)."""
     right = [u for u, v in aq.items() if v is not None and int(v) == int(q["key"])]
     wrong = [u for u, v in aq.items() if v is not None and int(v) != int(q["key"])]
     lines = [tr.t("reveal_correct", n=i + 1, total=plan["n"],
@@ -1376,9 +1395,28 @@ def run_job(job, day=None, st=None, force=False):
             topic = tr.translate_safe(topic) if tr.needs_translation(topic) else " ".join(topic.split())
             if topic and len(q_body) + len(topic) + 12 <= 292:
                 q_body = "[%s] %s" % (esc(topic[:40]), q_body)      # educational topic tag on every poll
-        poll = tg("sendPoll", chat_id=chat, question="%d/%d. %s" % (i + 1, N, q_body), options=q["o"],
-                  type="regular", is_anonymous=False, allows_multiple_answers=False,
-                  open_period=POLL_SECONDS, parse_mode="HTML")
+        # v11.4.6 (admin order): the explanation travels WITH the question. Telegram shows an
+        # in-poll explanation only on quiz polls, so the poll is a quiz poll (correct option marked)
+        # and carries the first 200 chars; the reveal message after the 30 s window still lists the
+        # full explanation + who was right/wrong.
+        expl = fit_explanation(q.get("expl") or "")
+        params = {"chat_id": chat, "question": "%d/%d. %s" % (i + 1, N, q_body), "options": q["o"],
+                  "is_anonymous": False, "allows_multiple_answers": False,
+                  "open_period": POLL_SECONDS, "parse_mode": "HTML"}
+        if POLL_MODE == "quiz":
+            params.update({"type": "quiz", "correct_option_id": int(q["key"])})
+            if expl:
+                params.update({"explanation": esc(expl), "explanation_parse_mode": "HTML"})
+        else:
+            params["type"] = "regular"
+        poll = tg("sendPoll", **params)
+        if not ((poll or {}).get("poll") or {}).get("id") and POLL_MODE == "quiz":
+            log("quiz poll rejected for Q%d -> falling back to a regular poll" % (i + 1))
+            params.pop("correct_option_id", None)
+            params.pop("explanation", None)
+            params.pop("explanation_parse_mode", None)
+            params["type"] = "regular"
+            poll = tg("sendPoll", **params)
         pid = ((poll or {}).get("poll") or {}).get("id")
         if not pid:
             fails += 1
