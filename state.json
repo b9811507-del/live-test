@@ -1,10 +1,15 @@
 {
 "afo18": {
 "ans": {},
+"done_at": "2026-09-14T13:35:00+05:30",
+"killed": true,
+"msg_ann": 29092,
 "names": {},
-"qidx": 0,
-"step": 0
+"qidx": 20,
+"step": 8
 },
+"agent_issues": [],
+"agent_last": "2026-09-15T12:18:26+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -48,6 +53,88 @@
 "sealed_by": "admin_order",
 "step": 8
 }
+}
+},
+"supply_day": "2026-09-15",
+"supply_log": {
+"2026-09-15": {
+"bad": [
+{
+"date": "2026-09-16",
+"problems": [
+"q19 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-09-18",
+"problems": [
+"q42 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-09-23",
+"problems": [
+"q46 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-09-26",
+"problems": [
+"q29 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-09-27",
+"problems": [
+"q1 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-09-30",
+"problems": [
+"q29 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-10-04",
+"problems": [
+"q41 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-10-16",
+"problems": [
+"q37 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-10-23",
+"problems": [
+"q40 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-10-24",
+"problems": [
+"q31 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-10-25",
+"problems": [
+"q9 option >100 chars (truncation needed)"
+]
+},
+{
+"date": "2026-10-29",
+"problems": [
+"q34 option >100 chars (truncation needed)"
+]
+}
+],
+"checked": 50,
+"filled": [],
+"missing": []
 }
 },
 "version": "v11"
