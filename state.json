@@ -1037,12 +1037,14 @@
 "cd": 0,
 "congrats_sent": 29162,
 "cta_sent": 29164,
+"done_at": "2026-09-15T15:04:01+05:30",
+"elapsed_s": 2254,
 "file_msg": 29163,
 "file_sent": "IARI_BOOK_MCQ_2026_2026-09-15_results.html",
 "last_off": 210508796,
 "lb_sent": true,
 "lock_ts": 1789464827.1955125,
-"locked_by": "34949702899",
+"locked_by": "",
 "msg_ann": 29102,
 "names": {
 "1027390571": "Sns",
@@ -1086,6 +1088,8 @@
 "991560184": "Kurmi18fitness",
 "998749755": "Aspirant.20"
 },
+"paid_msg": 29165,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 56,
@@ -2125,7 +2129,7 @@
 "sent_i": 55,
 "skips": [],
 "started_at": "2026-09-15T14:30:20+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 29161,
 "tmr_note_text": "\ud83d\udcd6 Tomorrow (16 September 2026): <b>IARI BOOK MCQ 2026</b> \u2014 book pages 9, 10, 11, 13, 14",
 "unpinned": [
