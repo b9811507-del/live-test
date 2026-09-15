@@ -106,6 +106,9 @@ DEFER_SECS = int(os.environ.get("DEFER_SECS", "240"))         # run earlier than
 WINDOW_BEFORE = 50 * 60          # start allowed from go-50min
 WINDOW_AFTER = 4 * 3600          # after go+4h a missed slot stays missed
 POLL_SECONDS = 30                # open_period + drain window
+PAPER_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "paper_template.html")
+PAPER_BRAND = os.environ.get("PAPER_BRAND", "Agri Learning Point")      # matches the IARI group files
+PAPER_AUTHOR = os.environ.get("PAPER_AUTHOR", "By SatyamSir")
 LB_ROWS = 48                     # leaderboard rows per message
 TEST_BUDGET = 55 * 60            # hard budget for announce+countdown+polls
 CD_MAX = 55 * 60                 # max time spent waiting for go with announce already pinned
@@ -1137,6 +1140,84 @@ def leaderboard_text(day, job, plan, rows, part=0):
     return "\n".join(out)
 
 
+def paper_data(job, day, plan):
+    """The group's file format: var DB = {meta:{book,pages,pageLabel,pagesPer,count,spb,total,
+    timerText,key,built,author,brand}, Q:[{s,p,t,q,o,k,a,e}]} — same shape as the live book files."""
+    cfg = JOBS[job]
+    Q, pages = [], []
+    for i, q in enumerate(plan["questions"]):
+        pg = _page_num(q.get("page") or "")
+        if pg and pg not in pages:
+            pages.append(pg)
+        opts = [str(o) for o in q["o"]]
+        Q.append({"s": str(q.get("serial") or (i + 1)), "p": pg, "t": (q.get("topic") or "").strip() or "General",
+                  "q": q["q"], "o": opts, "k": [chr(65 + j) for j in range(len(opts))],
+                  "a": int(q["key"]), "e": " ".join(str(q.get("expl") or "").split())})
+    pages = sorted(pages)
+    ranged = any(_page_max(q.get("page") or "") > _page_num(q.get("page") or "")
+                 for q in plan["questions"] if q.get("page"))
+    pmin = min([_page_num(q.get("page") or "") for q in plan["questions"] if q.get("page")] or [0])
+    pmax = max([_page_max(q.get("page") or "") for q in plan["questions"] if q.get("page")] or [0])
+    if ranged and pmin and pmax:
+        # sheet labels like "1-2" (malwa): the paper covers that whole span -> "1-6"
+        ptext, plabel = "%d-%d" % (pmin, pmax), "Page %d to %d" % (pmin, pmax)
+    elif pages and pages == list(range(pages[0], pages[-1] + 1)):
+        ptext, plabel = "%s-%s" % (pages[0], pages[-1]), "Page %d to %d" % (pages[0], pages[-1])
+    elif pages:
+        ptext, plabel = ", ".join(str(p) for p in pages), "Pages %s" % ", ".join(str(p) for p in pages)
+    else:                                            # AFO: mongo set, no book pages
+        ptext = plabel = "Full-length set %s" % (plan.get("set_no") or "")
+        ptext, plabel = ptext.strip(), ptext.strip()
+    label = plan.get("label") or job.upper()
+    book = "%s — Pages %s" % (label, ptext) if pages else "%s — %s" % (label, plabel)
+    per = {}
+    for q in Q:
+        per[str(q["p"])] = per.get(str(q["p"]), 0) + 1
+    total = len(Q)
+    if job in ("malwa", "iari"):
+        try:
+            total = len(sheet_rows(JOBS[job]["sid"] if job == "iari" else plan.get("src"))) or len(Q)
+        except Exception:
+            total = len(Q)
+    spb = int(POLL_SECONDS)
+    secs = len(Q) * spb
+    pslug = re.sub(r"[^A-Za-z0-9]+", "-", ptext).strip("-") or "all"
+    return {"meta": {"book": book, "author": PAPER_AUTHOR, "brand": PAPER_BRAND, "pages": pages,
+                     "pageLabel": plabel, "count": len(Q), "pagesPer": per, "spb": spb, "total": total,
+                     "timerText": "%02d:%02d" % (secs // 60, secs % 60),
+                     "key": "daily_%s_%s_p%s" % (job, day, pslug), "built": day},
+            "Q": Q}, ptext
+
+
+def paper_html(job, day, plan, out_dir=None, path=None):
+    """Render the day's paper in the group's interactive format. Returns (path, pages_text)."""
+    db, ptext = paper_data(job, day, plan)
+    meta = db["meta"]
+    title = "%s — %s · %d MCQs | %s" % (meta["book"], meta["pageLabel"], meta["count"], meta["brand"])
+    desc = title + " — textbook-style MCQ practice."
+    tpl = io.open(PAPER_TEMPLATE, encoding="utf-8").read()
+    js = json.dumps(db, ensure_ascii=False).replace("</", "<\\/")
+    out = (tpl.replace("__DB_JSON__", js).replace("__TITLE__", esc(title)).replace("__DESC__", esc(desc)))
+    if not path:
+        slug = re.sub(r"[^A-Z0-9]+", "_", (plan.get("label") or job).upper()).strip("_")
+        short = file_short(job, plan)
+        pslug = re.sub(r"[^A-Za-z0-9]+", "-", ptext).strip("-") or "all"
+        path = os.path.join(out_dir or OUTDIR, "%s_p%s_%dQ_%s.html" % (short, pslug, meta["count"], day))
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    io.open(path, "w", encoding="utf-8").write(out)
+    log("paper html %s: %d Q, pages %s, %d KB -> %s" % (job, meta["count"], ptext, len(out) // 1024,
+                                                        os.path.basename(path)))
+    return path, ptext
+
+
+def file_short(job, plan):
+    """Short book name for the file name, like the group's book files: IARI / MALWA_VOL_1 / AFO."""
+    label = re.sub(r"[^A-Z0-9]+", "_", str(plan.get("label") or job).upper()).strip("_")
+    if job == "malwa":
+        return label.replace("_BOOK_", "_") or "MALWA"
+    return {"iari": "IARI", "afo": "AFO"}.get(job) or label or job.upper()
+
+
 def short_label(label):
     """Booksend-style short name: "IARI BOOK MCQ 2026" -> "IARI", "MALWA BOOK VOL 1" -> "MALWA VOL 1"."""
     words = [w for w in re.split(r"\s+", str(label or "").strip()) if w]
@@ -1354,13 +1435,9 @@ def run_job(job, day=None, st=None, force=False):
 
     # --- result file (6065 HTML, UNPINNED) + one short CTA
     if not j.get("file_sent"):
-        slug = re.sub(r"[^A-Z0-9]+", "_", (plan.get("label") or job).upper()).strip("_")
-        pages_txt = paper_pages_text(job, plan)
-        pslug = re.sub(r"[^A-Za-z0-9]+", "-", pages_txt).strip("-") or "all"
-        # v11.4.4: book-file naming -> IARI_BOOK_MCQ_2026_2026-09-16_p2-4-5_35Q.html
-        path = os.path.join(OUTDIR, "%s_%s_p%s_%dQ.html" % (slug, day, pslug, plan["n"]))
-        builder.render_html(result_data(day, job, plan, rows, ans), 0, plan.get("label") or job.upper(),
-                            "AGRI QUIZ WORLD", "@Arunkatyanquiz_bot", LB_ROWS, True, path)
+        # v11.4.5: the group's own interactive test-file format (same app as the book files:
+        # 30 s/question timer, palette, test mode, score + explanation), named <SHORT>_p<pages>_<N>Q_<date>.html
+        path, pages_txt = paper_html(job, day, plan)
         doc = tg_file(path, chat_id=chat, caption=tr.t("rf_caption", label=plan.get("label") or job.upper(),
                                                         date=day_label(day), n=plan["n"],
                                                         pages=pages_txt))
@@ -1768,14 +1845,16 @@ def booksend(job, rng, step, chat=None):
         if tuple(chunk) in done_pages:
             continue
         qs = [r for p in chunk for r in by_page[p]]
-        DATA = {"title": "%s · BOOK MCQ" % job.upper(), "label": "%s (pages %d-%d)" % (job.upper(), chunk[0], chunk[-1]),
-                "nq": len(qs), "pages": "Pages %d-%d" % (chunk[0], chunk[-1]),
-                "rows": [], "key": [{"n": n + 1, "q": q["q"], "opts": q["opts"], "ans_idx": q["key"],
-                                     "ans": "%s. %s" % (chr(65 + q["key"]), q["opts"][q["key"]])}
-                                    for n, q in enumerate(qs)]}
-        path = os.path.join(OUTDIR, "booksend/%s_%d-%d.html" % (job, chunk[0], chunk[-1]))
-        builder.render_html(DATA, step, job.upper(), "AGRI QUIZ WORLD", "@MCQBYBOOK_bot", 48, True, path)
-        cap = "📚 %s — pages %d-%d (%d Q) · answers included 📄" % (job.upper(), chunk[0], chunk[-1], len(qs))
+        # v11.4.5: book files use the same interactive app as the group's existing 215 files
+        bplan = {"label": JOBS.get(job, {}).get("label") or job.upper(), "set_no": None,
+                 "questions": [{"serial": q.get("serial"), "page": q.get("page"), "topic": q.get("topic"),
+                                "q": q["q"], "o": q["opts"], "key": q["key"], "expl": q.get("expl")}
+                               for q in qs]}
+        path, _pt = paper_html(job, str(chunk[0]), bplan, path=os.path.join(
+            OUTDIR, "booksend/%s_p%d-%d_%dQ.html" % (job, chunk[0], chunk[-1], len(qs))))
+        cap = ("📗 %s · Pages %d-%d · %d Q · File %d/%d"
+               % (bplan["label"], chunk[0], chunk[-1], len(qs),
+                  i // step + 1, len(range(0, len(pages), step))))
         doc = tg_file(path, chat_id=chat, caption=cap)
         if not doc:
             log("booksend: send failed at pages %d-%d (resume later)" % (chunk[0], chunk[-1]))

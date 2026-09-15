@@ -715,27 +715,38 @@ def case26_series_restart(tmp):
 
 
 def case27_paper_file(tmp):
-    """27. the file posted after a test is the day's test paper in the book-file format: named with
-    pages + question count, no score board, questions + explanations inside, and only that one test."""
+    """27. the file posted after a test is the day's paper in the group's interactive format
+    (var DB app: 30 s/Q timer, palette, test mode, score + explanation) — the same shell as the
+    IARI group's book files — named <SHORT>_p<pages>_<N>Q_<date>.html and one file per test."""
+    import json as _json
+    import re as _re
     day = "2026-09-21"
     clear_log(tmp)
     p, log, st = mk(tmp, day + "T11:00:00+05:30", journal=empty_journal(day))
     od = os.path.join(tmp, "out")
-    files = sorted(os.listdir(od)) if os.path.isdir(od) else []
+    files = sorted(f for f in (os.listdir(od) if os.path.isdir(od) else []) if f.endswith(".html"))
     sent = [e for e in log if e["method"] == "sendDocument" and e.get("chat") == GROUP]
     cap = (sent[0].get("caption") if sent else "") or ""
-    doc = ""
-    if files:
-        doc = open(os.path.join(od, files[0]), encoding="utf-8").read()
+    doc = open(os.path.join(od, files[0]), encoding="utf-8").read() if files else ""
+    db = {}
+    try:
+        db = _json.loads(_re.search(r"var DB = (\{.*?\});", doc, _re.S).group(1))
+    except Exception:
+        pass
+    meta, qs = (db.get("meta") or {}), (db.get("Q") or [])
     j = day_of(st, day, "malwa")
     ok = (len(files) == 1 and len(sent) == 1
-          and "_p" in files[0] and files[0].endswith("Q.html")                 # pages + count in name
+          and _re.match(r"^[A-Z0-9_]+_p[\w,\-]+_%dQ_%s\.html$" % (20, day), files[0])   # name convention
           and j.get("file_sent") == files[0]
-          and "Score board" not in doc and "Answer key" in doc and "Question-wise" in doc
-          and "fixture explanation" in doc and "BOOK MCQ" in doc
-          and "pages" in cap.lower() and "questions" in cap.lower())
-    return ok, "file=%s caption=%r scoreboard=%s expl=%s" % (
-        (files[0] if files else None), cap[:70], ("Score board" in doc), ("fixture explanation" in doc))
+          and meta.get("count") == 20 and len(qs) == 20 and meta.get("spb") == 30
+          and meta.get("timerText") == "10:00" and meta.get("key", "").startswith("daily_malwa_")
+          and all(q.get("e") and q.get("o") and isinstance(q.get("a"), int) for q in qs)
+          and "var DB" in doc and "localStorage" in doc and "palette" in doc.lower()
+          and "Score board" not in doc
+          and "Pages" in cap and "20 Q" in cap)
+    return ok, "file=%s meta.count=%s spb=%s timer=%s key=%s expl=%d/%d caption=%r" % (
+        (files[0] if files else None), meta.get("count"), meta.get("spb"), meta.get("timerText"),
+        meta.get("key"), sum(1 for q in qs if q.get("e")), len(qs), cap[:60])
 
 
 CASES = [

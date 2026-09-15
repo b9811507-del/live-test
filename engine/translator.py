@@ -295,8 +295,8 @@ T = {
                      "<b>Invite Users</b> right, then the pending links will be issued on the next pass."),
     # ---- result file
     "rf_title": "%(label)s · DAILY TEST RESULT",
-    "rf_caption": ("📄 <b>%(label)s</b> — pages %(pages)s (%(n)s questions) · answers & explanations "
-                   "in the file · %(date)s"),
+    "rf_caption": ("📗 <b>%(label)s</b> · Pages %(pages)s · %(n)s Q · daily test %(date)s — "
+                   "open & attempt with timer, answers + explanations inside 📄"),
 }
 
 
