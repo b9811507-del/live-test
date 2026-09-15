@@ -36,8 +36,984 @@
 },
 "iari": {
 "ans": {},
+"bidx": 56,
 "names": {},
+"plan": {
+"bidx_next": 56,
+"built_at": "2026-09-15T14:26:25+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 56,
+"pages": "Pages 2-8",
+"pages_list": [
+2,
+4,
+5,
+7,
+8
+],
+"questions": [
+{
+"key": 0,
+"o": [
+"Oryza sativa",
+"Zea mays",
+"Triticum aestivum",
+"Sorghum bicolor",
+"None of these"
+],
+"page": "2",
+"q": "What is the botanical name of rice?",
+"serial": "1",
+"src_row": 0,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:1"
+},
+{
+"key": 1,
+"o": [
+"Indica",
+"Japonica",
+"Javanica",
+"Aromatic",
+"None of these"
+],
+"page": "2",
+"q": "Which varietal type of Oryza sativa is known as \"Blue rice\" and has an oval to round grain shape?",
+"serial": "2",
+"src_row": 1,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:2"
+},
+{
+"key": 0,
+"o": [
+"Japonica > Javanica > Indica",
+"Indica > Japonica > Javanica",
+"Javanica > Indica > Japonica",
+"Indica > Javanica > Japonica",
+"None of these"
+],
+"page": "2",
+"q": "Arrange the rice varietal types in order of decreasing productivity: Indica, Javanica, Japonica.",
+"serial": "3",
+"src_row": 2,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:3"
+},
+{
+"key": 0,
+"o": [
+"Dee-gee-woo",
+"sd1",
+"Rht1",
+"GA20ox2",
+"None of these"
+],
+"page": "2",
+"q": "What is the name of the dwarfing gene identified in rice?",
+"serial": "4",
+"src_row": 3,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:4"
+},
+{
+"key": 0,
+"o": [
+"Lemma and palea",
+"Pericarp",
+"Endosperm",
+"Aleurone layer",
+"None of these"
+],
+"page": "2",
+"q": "Which structures together form the hull that tightly encloses the rice caryopsis?",
+"serial": "5",
+"src_row": 4,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:5"
+},
+{
+"key": 1,
+"o": [
+"Cold and dry",
+"Hot and humid",
+"Temperate and wet",
+"Arid and sunny",
+"None of these"
+],
+"page": "2",
+"q": "Rice is a short\u2011day crop. Which climatic condition is essential for its cultivation?",
+"serial": "6",
+"src_row": 5,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:6"
+},
+{
+"key": 2,
+"o": [
+"20-25\u00b0C",
+"21-37\u00b0C",
+"26.5-29.5\u00b0C",
+"30-35\u00b0C",
+"None of these"
+],
+"page": "2",
+"q": "What is the optimal temperature range for rice during the blooming stage?",
+"serial": "7",
+"src_row": 6,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:7"
+},
+{
+"key": 1,
+"o": [
+"4-6",
+"5.5-6.5",
+"6-7",
+"7-8",
+"None of these"
+],
+"page": "2",
+"q": "What is the preferred pH range for rice cultivation?",
+"serial": "8",
+"src_row": 7,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:8"
+},
+{
+"key": 1,
+"o": [
+"Sandy",
+"Clay or clay loam",
+"Loam",
+"Silt",
+"None of these"
+],
+"page": "2",
+"q": "Which soil type is most suited for rice cultivation?",
+"serial": "9",
+"src_row": 8,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:9"
+},
+{
+"key": 1,
+"o": [
+"Increased organic matter",
+"Mechanical strength loss due to flux of particles",
+"Salt accumulation",
+"Root exudates",
+"None of these"
+],
+"page": "2",
+"q": "What causes the fluffiness of paddy soil under continuous flooding?",
+"serial": "10",
+"src_row": 9,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:10"
+},
+{
+"key": 0,
+"o": [
+"Hypogeal",
+"Epigeal",
+"Hydroponic",
+"Aerobic",
+"None of these"
+],
+"page": "2",
+"q": "Rice has which type of germination?",
+"serial": "11",
+"src_row": 10,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:11"
+},
+{
+"key": 1,
+"o": [
+"Through stomata",
+"Via aerenchymatous tissues of leaves",
+"By root absorption",
+"Through fungal hyphae",
+"None of these"
+],
+"page": "2",
+"q": "Under submerged conditions, how is atmospheric oxygen transported to rice plants?",
+"serial": "12",
+"src_row": 11,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:12"
+},
+{
+"key": 2,
+"o": [
+"Broadcasting",
+"Drilling",
+"Dapog method",
+"Hybrid rice",
+"None of these"
+],
+"page": "2",
+"q": "Which sowing method requires 60 kg seeds per hectare?",
+"serial": "13",
+"src_row": 12,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:13"
+},
+{
+"key": 2,
+"o": [
+"20 \u00d7 10 cm",
+"20 \u00d7 15 cm",
+"25 \u00d7 25 cm",
+"30 \u00d7 30 cm",
+"None of these"
+],
+"page": "2",
+"q": "What is the recommended spacing for the SRI method?",
+"serial": "14",
+"src_row": 13,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:14"
+},
+{
+"key": 0,
+"o": [
+"10-12 DAS",
+"21-25 DAS",
+"30-35 DAS",
+"11-14 DAS",
+"None of these"
+],
+"page": "2",
+"q": "At what days after sowing (DAS) is rice transplanted using the SRI method?",
+"serial": "15",
+"src_row": 14,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:15"
+},
+{
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Silicon",
+"Potassium",
+"None of these"
+],
+"page": "2",
+"q": "Which nutrient is regarded as essential in rice for forming a silica layer that protects against insect pests?",
+"serial": "16",
+"src_row": 15,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:16"
+},
+{
+"key": 1,
+"o": [
+"10-20%",
+"30-40%",
+"50-60%",
+"70-80%",
+"None of these"
+],
+"page": "2",
+"q": "What is the approximate nitrogen use efficiency (NUE) in rice?",
+"serial": "17",
+"src_row": 16,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:17"
+},
+{
+"key": 0,
+"o": [
+"Azotobacter",
+"Rhizobium",
+"Bradyrhizobium",
+"Pseudomonas",
+"None of these"
+],
+"page": "2",
+"q": "Which bacterial genus is identified as a non\u2011symbiotic nitrogen\u2011fixing bacterium in rice fields?",
+"serial": "18",
+"src_row": 17,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:18"
+},
+{
+"key": 1,
+"o": [
+"2500 L/kg",
+"5000 L/kg",
+"400\u2011500 L/kg",
+"8000 L/kg",
+"None of these"
+],
+"page": "2",
+"q": "What is the water requirement (liters per kilogram of rice) for semi\u2011aquatic rice cultivation?",
+"serial": "19",
+"src_row": 18,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:19"
+},
+{
+"key": 1,
+"o": [
+"55%",
+"66%",
+"75%",
+"80%",
+"None of these"
+],
+"page": "2",
+"q": "What is the hulling percentage of rice?",
+"serial": "20",
+"src_row": 19,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:20"
+},
+{
+"key": 2,
+"o": [
+"Urea",
+"Ammonium nitrate",
+"Ammonium sulphate",
+"Calcium nitrate",
+"None of these"
+],
+"page": "2",
+"q": "Which form of nitrogen fertilizer, when deep\u2011placed in the reduced zone, is reported as the most efficient for low\u2011land rice?",
+"serial": "21",
+"src_row": 20,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "2:21"
+},
+{
+"key": 0,
+"o": [
+"2-acetyl-1-pyroline",
+"Linalool",
+"Vanillin",
+"Eugenol",
+"None of these"
+],
+"page": "4",
+"q": "Which aroma compound gives basmati rice its characteristic pandan-like flavor?",
+"serial": "22",
+"src_row": 21,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:22"
+},
+{
+"key": 0,
+"o": [
+"12 times",
+"6 times",
+"8 times",
+"10 times",
+"None of these"
+],
+"page": "4",
+"q": "The aromatic chemical concentration in basmati rice grains is how many times higher than in non-basmati rice?",
+"serial": "23",
+"src_row": 22,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:23"
+},
+{
+"key": 0,
+"o": [
+"6,66,666 plants/ha, 15 cm x 10 cm",
+"5,00,000 plants/ha, 20 cm x 10 cm",
+"3,33,000 plants/ha, 20 cm x 15 cm",
+"4,00,000 plants/ha, 25 cm x 15 cm",
+"None of these"
+],
+"page": "4",
+"q": "For short duration rice variety, what is the recommended plant population and spacing?",
+"serial": "24",
+"src_row": 23,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:24"
+},
+{
+"key": 0,
+"o": [
+"Pretilachlor + safener",
+"Glyphosate + imidazolinone",
+"Atrazine + safener",
+"Paraquat + safener",
+"None of these"
+],
+"page": "4",
+"q": "Which pre-emergence herbicide combination is applied 3rd or 4th day after sowing in lowland nursery?",
+"serial": "25",
+"src_row": 24,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:25"
+},
+{
+"key": 0,
+"o": [
+"25 x 25 cm",
+"20 x 20 cm",
+"30 x 30 cm",
+"15 x 15 cm",
+"None of these"
+],
+"page": "4",
+"q": "In SRI square planting, what is the spacing between hills?",
+"serial": "26",
+"src_row": 25,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:26"
+},
+{
+"key": 0,
+"o": [
+"5.0 cm",
+"3.0 cm",
+"7.0 cm",
+"2.5 cm",
+"None of these"
+],
+"page": "4",
+"q": "After plant incorporation in SRI, what irrigation depth is maintained?",
+"serial": "27",
+"src_row": 26,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:27"
+},
+{
+"key": 0,
+"o": [
+"14 DAT",
+"21 DAT",
+"7 DAT",
+"30 DAT",
+"None of these"
+],
+"page": "4",
+"q": "When should observations be taken for Leaf Colour Chart based nitrogen management in transplanted rice?",
+"serial": "28",
+"src_row": 27,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "4:28"
+},
+{
+"key": 0,
+"o": [
+"3.0",
+"4.0",
+"3.5",
+"4.5",
+"None of these"
+],
+"page": "5",
+"q": "What is the critical value of LCC in low N response cultures like 'White ponni'?",
+"serial": "29",
+"src_row": 28,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:29"
+},
+{
+"key": 1,
+"o": [
+"20-30%",
+"30-40%",
+"40-50%",
+"50-60%",
+"None of these"
+],
+"page": "5",
+"q": "What is the nitrogen use efficiency of rice?",
+"serial": "30",
+"src_row": 29,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:30"
+},
+{
+"key": 1,
+"o": [
+"Tillering",
+"Booting stage",
+"Flowering",
+"Harvesting",
+"None of these"
+],
+"page": "5",
+"q": "Which stage is considered the most critical irrigation stage in rice cultivation?",
+"serial": "31",
+"src_row": 30,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:31"
+},
+{
+"key": 1,
+"o": [
+"2.62 tonnes",
+"3.62 tonnes",
+"4.62 tonnes",
+"5.62 tonnes",
+"None of these"
+],
+"page": "5",
+"q": "What is the average yield of rice per hectare in India?",
+"serial": "32",
+"src_row": 31,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:32"
+},
+{
+"key": 1,
+"o": [
+"10-15%",
+"15-18%",
+"18-20%",
+"20-25%",
+"None of these"
+],
+"page": "5",
+"q": "What is the silica content in rice husk?",
+"serial": "33",
+"src_row": 32,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:33"
+},
+{
+"key": 2,
+"o": [
+"Prof. Long Ping Yuan",
+"Dr. GS Khush",
+"Prof. E.A Siddiq",
+"Dr. M.S. Swaminathan",
+"None of these"
+],
+"page": "5",
+"q": "Who is known as the father of hybrid rice in India?",
+"serial": "34",
+"src_row": 33,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:34"
+},
+{
+"key": 0,
+"o": [
+"21 g",
+"23 g",
+"25 g",
+"27 g",
+"None of these"
+],
+"page": "5",
+"q": "What is the test weight of Basmati rice?",
+"serial": "35",
+"src_row": 34,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "5:35"
+},
+{
+"key": 0,
+"o": [
+"20 cents (800 m2)",
+"30 cents (1200 m2)",
+"10 cents (400 m2)",
+"40 cents (1600 m2)",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended nursery area for raising seedlings for one hectare of land?",
+"serial": "36",
+"src_row": 35,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:36"
+},
+{
+"key": 2,
+"o": [
+"2nd leaf stage",
+"3rd leaf stage",
+"4th leaf stage",
+"5th leaf stage",
+"None of these"
+],
+"page": "7",
+"q": "What is the optimum age for transplanting seedlings in a dry nursery?",
+"serial": "37",
+"src_row": 36,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:37"
+},
+{
+"key": 0,
+"o": [
+"20 kg",
+"30 kg",
+"40 kg",
+"60 kg",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended seed rate for hybrid varieties in a wet nursery?",
+"serial": "38",
+"src_row": 37,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:38"
+},
+{
+"key": 0,
+"o": [
+"18-22 days",
+"25-30 days",
+"35-40 days",
+"45-50 days",
+"None of these"
+],
+"page": "7",
+"q": "What is the optimum age of seedlings for short duration varieties?",
+"serial": "39",
+"src_row": 38,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:39"
+},
+{
+"key": 1,
+"o": [
+"1 cm",
+"3 cm",
+"5 cm",
+"7 cm",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended planting depth for seedlings to ensure quick establishment and more tillers?",
+"serial": "40",
+"src_row": 39,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:40"
+},
+{
+"key": 2,
+"o": [
+"10 cm",
+"15 cm",
+"20 cm",
+"25 cm",
+"None of these"
+],
+"page": "7",
+"q": "What is the minimum row spacing required to use a rotary weeder?",
+"serial": "41",
+"src_row": 40,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:41"
+},
+{
+"key": 2,
+"o": [
+"1 seedling/hill",
+"2 seedlings/hill",
+"2-3 seedlings/hill",
+"4 seedlings/hill",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended number of seedlings per hill for short duration varieties?",
+"serial": "42",
+"src_row": 41,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:42"
+},
+{
+"key": 0,
+"o": [
+"To reduce percolation losses of water",
+"To increase soil aeration",
+"To promote weed growth",
+"To decrease nutrient availability",
+"None of these"
+],
+"page": "8",
+"q": "What is the primary objective of puddling in rice cultivation?",
+"serial": "43",
+"src_row": 42,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:43"
+},
+{
+"key": 1,
+"o": [
+"60 kg/ha",
+"75 kg/ha",
+"20 kg/ha",
+"50 kg/ha",
+"None of these"
+],
+"page": "8",
+"q": "What is the seed rate for Dry Seeded Rainfed Un-Puddled Lowland Rice?",
+"serial": "44",
+"src_row": 43,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:44"
+},
+{
+"key": 1,
+"o": [
+"2000-4000 kg",
+"4000-6000 kg",
+"6000-8000 kg",
+"8000-10000 kg",
+"None of these"
+],
+"page": "8",
+"q": "What is the typical grain yield range for rice?",
+"serial": "45",
+"src_row": 44,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:45"
+},
+{
+"key": 2,
+"o": [
+"50:25:25",
+"100:50:50",
+"175:60:60",
+"200:75:75",
+"None of these"
+],
+"page": "8",
+"q": "What is the fertilizer dose for Dry Seeded Upland Hybrid rice?",
+"serial": "46",
+"src_row": 45,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:46"
+},
+{
+"key": 3,
+"o": [
+"1 cm",
+"1.5 cm",
+"2 cm",
+"2.5 cm",
+"None of these"
+],
+"page": "8",
+"q": "What is the depth of irrigation for Wet Seeded Puddled Lowland Rice?",
+"serial": "47",
+"src_row": 46,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:47"
+},
+{
+"key": 2,
+"o": [
+"10 x 10 cm",
+"15 x 15 cm",
+"20 x 10 cm",
+"25 x 25 cm",
+"None of these"
+],
+"page": "8",
+"q": "What is the spacing for Dry Seeded Upland Hybrid rice?",
+"serial": "48",
+"src_row": 47,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:48"
+},
+{
+"key": 1,
+"o": [
+"25-50%",
+"50-75%",
+"75-100%",
+"100-125%",
+"None of these"
+],
+"page": "8",
+"q": "What is the yield range for Dry Seeded Rainfed Un-Puddled Lowland Rice compared to normal rice?",
+"serial": "49",
+"src_row": 48,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:49"
+},
+{
+"key": 0,
+"o": [
+"To grow seedlings without soil contact",
+"To increase the seedling growth period",
+"To reduce the need for water",
+"To enhance the soil fertility",
+"None of these"
+],
+"page": "8",
+"q": "What is the primary purpose of the Dapog method of rice nursery?",
+"serial": "50",
+"src_row": 49,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:50"
+},
+{
+"key": 2,
+"o": [
+"Lentil",
+"Linseed",
+"Wheat",
+"Gram",
+"None of these"
+],
+"page": "8",
+"q": "Which crop is NOT typically used in Paira/Utera (Relay) cropping?",
+"serial": "51",
+"src_row": 50,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:51"
+},
+{
+"key": 0,
+"o": [
+"To control weeds and optimize crop stand",
+"To increase the seedling growth period",
+"To reduce the need for water",
+"To enhance the soil fertility",
+"None of these"
+],
+"page": "8",
+"q": "What is the main objective of Beushening in rice cultivation?",
+"serial": "52",
+"src_row": 51,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:52"
+},
+{
+"key": 0,
+"o": [
+"Zinc",
+"Iron",
+"Nitrogen",
+"Potassium",
+"None of these"
+],
+"page": "8",
+"q": "Khaira disease in rice is caused by the deficiency of which nutrient?",
+"serial": "53",
+"src_row": 52,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:53"
+},
+{
+"key": 0,
+"o": [
+"Phalguna",
+"Basmati",
+"Jasmine",
+"Arborio",
+"None of these"
+],
+"page": "8",
+"q": "Which variety of rice is tolerant to iron toxicity?",
+"serial": "54",
+"src_row": 53,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:54"
+},
+{
+"key": 0,
+"o": [
+"Hydrogen sulphide gas",
+"Iron toxicity",
+"Zinc deficiency",
+"Nitrogen deficiency",
+"None of these"
+],
+"page": "8",
+"q": "What is the primary cause of Akiochi disease in rice?",
+"serial": "55",
+"src_row": 54,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:55"
+},
+{
+"key": 0,
+"o": [
+"11-14 days after seeding",
+"20-25 days after seeding",
+"30-35 days after seeding",
+"40-45 days after seeding",
+"None of these"
+],
+"page": "8",
+"q": "When are seedlings typically ready for transplanting in the Dapog method?",
+"serial": "56",
+"src_row": 55,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:56"
+}
+],
+"row_from": 0,
+"row_to": 56,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "malwa": {
