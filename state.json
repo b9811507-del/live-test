@@ -1,12 +1,9 @@
 {
 "afo18": {
 "ans": {},
-"done_at": "2026-09-14T13:35:00+05:30",
-"killed": true,
-"msg_ann": 29092,
 "names": {},
-"qidx": 20,
-"step": 8
+"qidx": 0,
+"step": 0
 },
 "agent_issues": [],
 "agent_last": "2026-09-15T12:20:52+05:30",
