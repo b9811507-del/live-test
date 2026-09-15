@@ -26,15 +26,26 @@ import os
 import time
 
 # --------------------------------------------------------------------------- catalog
+# 7 paid batches (admin order 2026-09-15). Chat ids / prices live in GHA secrets
+# (PAID_CHAT_<KEY>, PAID_PRICE_<KEY>); only the ids that were already part of the build spec
+# keep a code fallback.
 DEFAULTS = [
-    {"key": "afo", "emoji": "🌆", "title": "AFO MAINS BATCH 2026", "price": "", "chat": "-1003687531473",
-     "perks": "Full-length AFO mains tests · subject-wise practice · PDF notes · doubt support"},
-    {"key": "pashu", "emoji": "🐄", "title": "PASHUDHAN ADHIKARI BATCH", "price": "₹151",
-     "chat": "-10033947957354",
-     "perks": "Pashudhan Adhikari syllabus classes · daily MCQ tests · structured notes"},
+    {"key": "iari", "emoji": "📘", "title": "IARI BOOK MCQ BATCH", "price": "", "chat": "",
+     "perks": "Complete IARI book (1074 pages) chapter-wise MCQs · daily 5-page test series · answer keys"},
+    {"key": "malwa", "emoji": "📚", "title": "MALWA BOOK VOL 1+2+HORTICULTURE", "price": "", "chat": "",
+     "perks": "Malwa Vol-1, Vol-2 and Horticulture books' full MCQ practice · daily 20-question tests · PDF notes"},
+    {"key": "nemraj", "emoji": "🌾", "title": "NEMRAJ SUNDA BOOK BATCH", "price": "", "chat": "",
+     "perks": "Nemraj Sunda book MCQs · topic-wise practice · full-length mock papers"},
+    {"key": "rksharma", "emoji": "📗", "title": "RK SHARMA BOOK BATCH", "price": "", "chat": "",
+     "perks": "R.K. Sharma book MCQs · subject-wise practice · revision notes"},
+    {"key": "afo", "emoji": "🌆", "title": "AFO SELECTION BATCH", "price": "", "chat": "-1003687531473",
+     "perks": "AFO mains full-length tests (new pattern) · previous-year papers · selection-focused practice"},
     {"key": "cane", "emoji": "🎋", "title": "SUGARCANE PREMIUM BATCH", "price": "₹151",
      "chat": "-1003707610763",
      "perks": "Sugarcane premium classes · daily tests · revision notes"},
+    {"key": "pashu", "emoji": "🐄", "title": "PASHUDHAN ADHIKARI BATCH", "price": "₹151",
+     "chat": "-1003947957354",
+     "perks": "Pashudhan Adhikari syllabus classes · daily MCQ tests · structured notes"},
 ]
 LINK_HOURS = int(os.environ.get("PAID_LINK_HOURS", "24"))
 PAID_VERIFY = (os.environ.get("PAID_VERIFY", "auto") or "auto").lower()

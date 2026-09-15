@@ -19,6 +19,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
+sys.path.insert(0, os.path.join(REPO, "engine"))
 GROUP = "-1003784795446"
 ADMIN = "-1009999999"
 
@@ -357,9 +358,9 @@ def case14_desk_invoice(tmp):
     json.dump(ups, open(fp, "w"))
     p, log, st = mk(tmp, day + "T12:00:00+05:30", args=("paid", "desk"), journal=empty_journal(day),
                     env={"ENGINE_FAKE_UPDATES": fp, "PAY_PROVIDER_TOKEN": "fake-provider-token",
-                         "PAID_PRICE_PASHU": "₹151"})
+                         "PAID_PRICE_PASHU": "₹151", "PAID_CHAT_PASHU": "-1003947957354"})
     inv = methods(log, "sendInvoice", "9002")
-    links = methods(log, "createChatInviteLink", "-10033947957354")
+    links = methods(log, "createChatInviteLink", "-1003947957354")
     link_dm = [e for e in methods(log, "sendMessage", "9002") if "t.me/+FAKE" in (e.get("text") or "")]
     ok = len(inv) == 1 and len(links) == 1 and bool(link_dm)
     return ok, "invoices=%d invite_links=%d link_sent=%s" % (len(inv), len(links), bool(link_dm))
@@ -392,6 +393,33 @@ def case16_single_pin(tmp):
         [x["message_id"] for x in pinz], [x["message_id"] for x in unp], i.get("unpinned"))
 
 
+def case17_paid_catalog(tmp):
+    """17. paid message lists all 7 batches with prices and one payment/deep-link button each."""
+    day = "2026-09-16"
+    env = {"PAID_CHAT_MALWA": "-1003761821341", "PAID_CHAT_IARI": "-1003922097468",
+           "PAID_CHAT_NEMRAJ": "-1003853396327", "PAID_CHAT_RKSHARMA": "-1003880198347",
+           "PAID_PRICE_IARI": "₹99", "PAID_PRICE_MALWA": "₹151", "PAID_PRICE_NEMRAJ": "₹99",
+           "PAID_PRICE_RKSHARMA": "₹99", "PAID_PRICE_AFO": "₹251"}
+    p, log, st = mk(tmp, day + "T11:30:00+05:30", args=("paid", "text"), journal=empty_journal(day), env=env)
+    txt = p.stdout or ""
+    import paid as P
+    old = os.environ.copy()
+    os.environ.update(env)
+    rows = P.group_keyboard(engine_mod).get("inline_keyboard")
+    titles = [r[0]["text"] for r in rows]
+    ok = (all(t in txt for t in ("IARI BOOK MCQ BATCH", "MALWA BOOK VOL 1+2+HORTICULTURE", "NEMRAJ SUNDA BOOK BATCH",
+                                 "RK SHARMA BOOK BATCH", "AFO SELECTION BATCH", "SUGARCANE PREMIUM BATCH",
+                                 "PASHUDHAN ADHIKARI BATCH"))
+          and "₹99" in txt and "₹151" in txt and "₹251" in txt
+          and len(rows) == 8 and any("Enrol ₹251" in t for t in titles))
+    os.environ.clear(); os.environ.update(old)
+    return ok, "batch titles=%d buttons=%d has_99/151/251=%s" % (
+        sum(1 for t in ("IARI", "MALWA", "NEMRAJ", "RK SHARMA", "AFO", "SUGARCANE", "PASHUDHAN") if t in txt),
+        len(rows), ("₹99" in txt, "₹151" in txt, "₹251" in txt))
+
+
+import engine as engine_mod
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -409,6 +437,7 @@ CASES = [
     ("14 enrolment: Telegram invoice -> auto join link", case14_desk_invoice),
     ("15 SAFETY: desk silent while a test is live", case15_desk_silent),
     ("16 single pin: new announce unpins the older one", case16_single_pin),
+    ("17 paid catalog: all 7 batches + prices + buttons", case17_paid_catalog),
 ]
 
 
