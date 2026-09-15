@@ -54,12 +54,14 @@ def afo_bank():
     sets, used = [], []
     for d, set_no, off in (("2026-09-15", 3, 0), ("2026-09-16", 4, 100)):
         qs = []
+        longs = ("A very long option text that definitely exceeds the one hundred character telegram poll "
+                 "limit and therefore has to be truncated by the engine layer")
         for i in range(50):
             k = i % 5
             qs.append({"uid": "fixture-%d" % (off + i + 1),
                        "q": "AFO fixture question %d (set %d)" % (i + 1, set_no),
-                       "o": ["Choice A %d" % i, "Choice B %d" % i, "Choice C %d" % i,
-                             "Choice D %d" % i, "None of these"],
+                       "o": [longs if i == 3 else "Choice A %d" % i, "Choice B %d" % i,
+                             "Choice C %d" % i, "Choice D %d" % i, "None of these"],
                        "key": k})
         sets.append({"date": d, "status": "ready", "set_no": set_no, "questions": qs,
                      "built_at": "2026-09-12 05:26 UTC", "picked_at": None})

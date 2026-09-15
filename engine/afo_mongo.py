@@ -111,6 +111,9 @@ def db_handle(uri=None):
 
 # --------------------------------------------------------------------------- validation / audit
 def q_problems(q, i):
+    """HARD problems only — a question with any of these can never be posted.
+    Text/option length is NOT hard: the engine truncates (option <=100 chars) and disambiguates
+    collisions, so those come back as warnings from q_warnings() instead."""
     p = []
     if not isinstance(q, dict):
         return ["q%d not a dict" % i]
@@ -126,11 +129,21 @@ def q_problems(q, i):
     k = q.get("key")
     if not isinstance(k, int) or k < 0 or k >= len(opts):
         p.append("q%d bad key=%r" % (i, k))
-    if len(str(q.get("q") or "")) > 290:
-        p.append("q%d text too long for TG poll" % i)
-    if any(len(str(o)) > 100 for o in opts):
-        p.append("q%d option >100 chars (truncation needed)" % i)
+    tr = [str(o)[:98].rstrip() + "…" if len(str(o)) > 100 else str(o) for o in opts]
+    if len(set(tr)) != len(tr):
+        # two options collide after truncation; the engine tags them, only a *keyed* collision is fatal
+        if tr[k] in [x for j, x in enumerate(tr) if j != k] if isinstance(k, int) and 0 <= k < len(tr) else False:
+            p.append("q%d keyed option collides after truncation" % i)
     return p
+
+
+def q_warnings(q, i):
+    w = []
+    if len(str(q.get("q") or "")) > 292:
+        w.append("q%d question >292 chars (truncated)" % i)
+    if any(len(str(o)) > 100 for o in (q.get("o") or [])):
+        w.append("q%d option >100 chars (truncated)" % i)
+    return w
 
 
 def uid_index(db):
@@ -145,7 +158,7 @@ def audit(date, db=None, index=None):
     """Read-only integrity audit of one date. Returns dict(ok, set_no, problems, nq, uids)."""
     db = db if db is not None else db_handle()[0]
     doc = db.afo_sets.find_one({"date": date})
-    out = {"date": date, "ok": False, "set_no": None, "nq": 0, "problems": []}
+    out = {"date": date, "ok": False, "set_no": None, "nq": 0, "problems": [], "warns": []}
     if not doc:
         out["problems"].append("no set for date")
         return out
@@ -250,11 +263,13 @@ def build(date, questions, db=None, flush=None, set_no=None):
         probs += q_problems(q, i)
     if len(questions) != NQ or probs:
         raise BankError("refusing to build %s: n=%d problems=%s" % (date, len(questions), probs[:3]))
+    warns = [w for i, q in enumerate(questions) for w in q_warnings(q, i)]
     if set_no is None:
         meta = db.afo_supply.find_one({"key": "meta"}) or {}
         set_no = int(meta.get("next_set_no", 0)) + 1
-    db.afo_sets.insert_one({"date": date, "status": "ready", "set_no": set_no,
-                            "questions": questions, "built_at": istnow().strftime("%Y-%m-%d %H:%M:%S")})
+    db.afo_sets.insert_one({"date": date, "status": "ready", "set_no": set_no, "questions": questions,
+                            "built_at": istnow().strftime("%Y-%m-%d %H:%M:%S"),
+                            **({"warns": warns[:10]} if warns else {})})
     db.afo_supply.update_one({"key": "meta"}, {"$set": {"next_set_no": set_no}}, upsert=True)
     flush()
     return "built set_no=%s" % set_no
@@ -290,6 +305,8 @@ def supply(frm=POOL_DATES_FROM, to=POOL_DATES_TO, db=None, flush=None):
                     rep["filled"].append(d)
         else:
             rep["bad"].append({"date": d, "problems": a["problems"][:3]})
+        if a.get("warns"):
+            rep.setdefault("warned", []).append({"date": d, "n": len(a["warns"]), "why": a["warns"][0]})
     meta = db.afo_supply.find_one({"key": "meta"}) or {}
     rep["next_set_no"] = meta.get("next_set_no")
     db.afo_supply.update_one({"key": "audit"}, {"$set": {

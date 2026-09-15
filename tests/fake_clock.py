@@ -241,10 +241,14 @@ def case10_next_day(tmp):
     pl = polls(log)
     bank = json.load(open(os.path.join(tmp, "tests", "fixtures", "afo_bank.json"), encoding="utf-8"))
     used = {d["date"]: d["status"] for d in bank["afo_sets"]}
+    optlens = [len(o) for e in pl for o in (e.get("options") or [])]
     ok = (int(a.get("step", 0)) == 8 and (a.get("plan") or {}).get("set_no") == 4 and len(pl) == 50
           and pl[0]["question"].startswith("1/50.") and "set 4" in pl[0]["question"]
+          and optlens and max(optlens) <= 100 and (a.get("plan") or {}).get("trunc", 0) >= 1
           and used.get("2026-09-16") == "used" and used.get("2026-09-15") == "ready")
-    return ok, "plan.set_no=%s polls=%d bank_status=%s" % ((a.get("plan") or {}).get("set_no"), len(pl), used)
+    return ok, "plan.set_no=%s polls=%d trunc=%s max_opt_len=%d bank_status=%s" % (
+        (a.get("plan") or {}).get("set_no"), len(pl), (a.get("plan") or {}).get("trunc"),
+        max(optlens) if optlens else -1, used)
 
 
 def case11_blocked(tmp):

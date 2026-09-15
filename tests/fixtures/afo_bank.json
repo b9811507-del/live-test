@@ -45,7 +45,7 @@
 "uid": "fixture-4",
 "q": "AFO fixture question 4 (set 3)",
 "o": [
-"Choice A 3",
+"A very long option text that definitely exceeds the one hundred character telegram poll limit and therefore has to be truncated by the engine layer",
 "Choice B 3",
 "Choice C 3",
 "Choice D 3",
@@ -654,7 +654,7 @@
 "uid": "fixture-104",
 "q": "AFO fixture question 4 (set 4)",
 "o": [
-"Choice A 3",
+"A very long option text that definitely exceeds the one hundred character telegram poll limit and therefore has to be truncated by the engine layer",
 "Choice B 3",
 "Choice C 3",
 "Choice D 3",

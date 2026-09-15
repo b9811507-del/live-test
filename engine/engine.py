@@ -549,7 +549,9 @@ def _page_max(v):
 
 
 def fit_options(opts, key_idx):
-    """Telegram limit: option <=100 chars. Truncate; if truncation collides with another option -> row unusable."""
+    """Telegram poll limits: option <=100 chars, 2-10 options.
+    Long options are truncated; if two options become identical they get an option-letter tag so
+    every option stays distinguishable (the exam keeps all 5 choices instead of dropping the row)."""
     out, trunc = [], 0
     for o in opts:
         o = " ".join(str(o).split())
@@ -557,11 +559,22 @@ def fit_options(opts, key_idx):
             o = o[:99].rstrip() + "…"
             trunc += 1
         out.append(o)
-    if len(set(out)) != len(out):
-        return out, trunc, False
-    if not (0 <= key_idx < len(out)):
+    seen = set()
+    for i, o in enumerate(out):
+        if o in seen:
+            tag = " [%s]" % chr(65 + i)
+            out[i] = (o[:100 - len(tag)]).rstrip() + tag
+            trunc += 1
+        seen.add(out[i])
+    if len(set(out)) != len(out) or not (0 <= key_idx < len(out)):
         return out, trunc, False
     return out, trunc, True
+
+
+def fit_question(text, limit=292):
+    """Telegram poll question limit is 300 incl. the '25/50. ' prefix -> keep 292 + ellipsis."""
+    t = " ".join(str(text or "").split())
+    return (t, 0) if len(t) <= limit else (t[:limit - 1].rstrip() + "…", 1)
 
 
 def sheet_rows(sid):
@@ -605,9 +618,10 @@ def _take_questions(rows, start, count, used_pages=None):
         if used_pages is not None and _page_num(r["page"]) not in used_pages:
             break
         opts, trunc, ok = fit_options(r["opts"], r["key"])
+        qt, qtr = fit_question(r["q"])
         if ok:
             picked.append({"uid": "%s:%s" % (r["page"], r["serial"]), "serial": r["serial"], "page": r["page"],
-                           "topic": r["topic"], "q": r["q"], "o": opts, "key": r["key"], "trunc": trunc,
+                           "topic": r["topic"], "q": qt, "o": opts, "key": r["key"], "trunc": trunc + qtr,
                            "src_row": r["src_row"]})
         else:
             skips.append({"src_row": r["src_row"], "serial": r["serial"], "why": "option-limit collision"})
@@ -681,9 +695,9 @@ def plan_afo(day, j):
         opts, trunc, ok = fit_options([str(o) for o in (q.get("o") or [])], int(q.get("key") or 0))
         if not ok:
             raise EngineError("mongo set %s has an unusable question (uid=%s)" % (day, q.get("uid")))
+        qt, qtr = fit_question(q.get("q"))
         picked.append({"uid": q.get("uid"), "serial": q.get("uid"), "page": "", "topic": "",
-                       "q": " ".join(str(q.get("q") or "").split()), "o": opts, "key": int(q["key"]),
-                       "trunc": trunc, "src_row": None})
+                       "q": qt, "o": opts, "key": int(q["key"]), "trunc": trunc + qtr, "src_row": None})
     plan = {"src": "mongo:agri.afo_sets", "kind": "mongo", "n": len(picked), "label": JOBS["afo"]["label"],
             "set_no": doc.get("set_no"), "pages": "AFO full-length set (new pattern)",
             "questions": picked, "trunc": sum(p["trunc"] for p in picked), "skip_rows": [],
