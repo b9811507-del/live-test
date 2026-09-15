@@ -115,6 +115,16 @@ def main():
                        capture_output=True, text=True, env=env, cwd=REPO)
     print("  " + (p.stdout or p.stderr).strip()[:160])
     good("ready gate reachable (offline fake)")
+    # every sheet key used by the planners must resolve to a real id, not to itself (the 404 trap)
+    snip = ("import sys;sys.path.insert(0,%r);import engine as e;"
+            "keys=['iari']+[v[0] for v in e.VOLUMES];"
+            "print('|'.join(k+'='+e.SHEETS.get(k,'MISSING')[:8] for k in keys))" % os.path.join(REPO, "engine"))
+    p = subprocess.run([sys.executable, "-c", snip], capture_output=True, text=True, cwd=REPO)
+    line = (p.stdout or p.stderr).strip().splitlines()[-1] if (p.stdout or p.stderr) else ""
+    if "MISSING" in line or "=" not in line:
+        fail("sheet key resolution: %s" % line[:160])
+    else:
+        good("sheet keys resolve -> %s" % line)
 
     section("4. fake-clock battery")
     p = subprocess.run([sys.executable, os.path.join(HERE, "fake_clock.py")], capture_output=True, text=True)

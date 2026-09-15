@@ -511,17 +511,21 @@ def sync_afo18(st, day=None):
 _CSV_CACHE = {}
 
 
-def sheet_csv(sid, tries=3):
-    if sid in _CSV_CACHE:
-        return _CSV_CACHE[sid]
+def sheet_url(key):
+    """Accept a logical key (iari / malwa_vol1 / ...) or a raw spreadsheet id."""
+    return "https://docs.google.com/spreadsheets/d/%s/gviz/tq?tqx=out:csv" % SHEETS.get(key, key)
+
+
+def sheet_csv(key, tries=3):
+    """Read-only CSV export. ALWAYS follows redirects (urllib does it for GET) — plain no-follow
+    fetches fail, which is exactly the trap this reader exists to avoid."""
+    if key in _CSV_CACHE:
+        return _CSV_CACHE[key]
     if FAKE and FAKE_SHEETS:
-        path = os.path.join(FAKE_SHEETS, sid + ".csv")
-        if not os.path.exists(path):
-            path = os.path.join(FAKE_SHEETS, sid + ".csv")
-        txt = open(path, encoding="utf-8").read()
-        _CSV_CACHE[sid] = txt
+        txt = open(os.path.join(FAKE_SHEETS, key + ".csv"), encoding="utf-8").read()
+        _CSV_CACHE[key] = txt
         return txt
-    url = "https://docs.google.com/spreadsheets/d/%s/gviz/tq?tqx=out:csv" % sid
+    url = sheet_url(key)
     last = ""
     for i in range(tries):
         try:
@@ -529,13 +533,13 @@ def sheet_csv(sid, tries=3):
             with urllib.request.urlopen(req, timeout=60) as r:   # urllib follows the 302 for us
                 txt = r.read().decode("utf-8", "replace")
             if "Serial No" in txt.split("\n")[0] or len(txt) > 200:
-                _CSV_CACHE[sid] = txt
+                _CSV_CACHE[key] = txt
                 return txt
             last = "unexpected csv head"
         except Exception as e:
             last = str(e)[:100]
         time.sleep(2 + 2 * i)
-    raise EngineError("sheet %s fetch failed: %s" % (sid, last))
+    raise EngineError("sheet %s fetch failed: %s" % (key, last))
 
 
 def _page_num(v):
