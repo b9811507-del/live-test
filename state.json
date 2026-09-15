@@ -2219,6 +2219,17 @@
 "status": "created",
 "title": "AFO SELECTION BATCH",
 "uid": "1404352962"
+},
+"plink_TcHj1xmUPvMk9x": {
+"amount": 251,
+"at": "2026-09-15T16:17:39+05:30",
+"created_ts": 1789469259,
+"key": "afo",
+"name": "Vijay",
+"short_url": "https://rzp.io/rzp/IFavgF4o",
+"status": "created",
+"title": "AFO SELECTION BATCH",
+"uid": "1404352962"
 }
 },
 "msg_2026-09-15_iari": 29165,
