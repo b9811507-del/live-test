@@ -171,6 +171,7 @@ def audit(date, db=None, index=None):
     seen = set()
     for i, q in enumerate(qs):
         out["problems"] += q_problems(q, i)
+        out["warns"].extend(q_warnings(q, i))
         u = str(q.get("uid"))
         if u in seen:
             out["problems"].append("uid repeat inside set: %s" % u)
@@ -293,6 +294,8 @@ def supply(frm=POOL_DATES_FROM, to=POOL_DATES_TO, db=None, flush=None):
     for d in datelist(frm, to):
         rep["checked"] += 1
         a = audit(d, db, index=index)
+        if a.get("warns"):
+            rep.setdefault("warned", []).append({"date": d, "n": len(a["warns"]), "why": a["warns"][0]})
         if a["ok"]:
             continue
         if a["problems"] == ["no set for date"]:
