@@ -473,6 +473,26 @@ def case19_razorpay_expired(tmp):
     return ok, "expired_dm=%s status=%s invites=%d" % (bool(exp_dm), rec.get("status"), len(inv))
 
 
+def case20_paid_single(tmp):
+    """20. two tests on the same day: the second paid message deletes the first (no duplicate data)."""
+    day = "2026-09-16"
+    jr = empty_journal(day)
+    jr["paid"] = {"msg_%s_iari" % day: 5000, "day_%s" % day: {"id": 5000, "job": "iari"},
+                  "posted_at": "2026-09-16T15:05:00+05:30"}
+    jr["days"][day]["malwa"] = {"step": 8, "msg_ann": 1, "lb_sent": True, "congrats_sent": 2,
+                                "file_sent": "x", "cta_sent": 3, "tmr_note": 4}
+    p, log, st = mk(tmp, day + "T18:00:00+05:30", journal=jr, env={"PAID_PRICE_AFO": "₹251"})
+    dels = methods(log, "deleteMessage", GROUP)
+    paid_msgs = [e for e in methods(log, "sendMessage", GROUP) if "PAID BATCHES" in (e.get("text") or "")]
+    rec = (st.get("paid") or {}).get("day_%s" % day) or {}
+    ok = (len(dels) == 1 and dels[0]["message_id"] == 5000 and len(paid_msgs) == 1
+          and rec.get("id") == paid_msgs[0]["message_id"] and rec.get("superseded") == 5000
+          and (st.get("paid") or {}).get("msg_%s_afo" % day))
+    return ok, "deleted=%s new_paid=%s journal=%s" % ([d["message_id"] for d in dels],
+                                                      [m["message_id"] for m in paid_msgs],
+                                                      {k: rec.get(k) for k in ("id", "superseded")})
+
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -493,6 +513,7 @@ CASES = [
     ("17 paid catalog: all 7 batches + prices + buttons", case17_paid_catalog),
     ("18 Razorpay: pay -> status paid -> one-time join link", case18_razorpay_pay),
     ("19 Razorpay: expired link -> fresh pay button only", case19_razorpay_expired),
+    ("20 one paid message per day (supersede + delete)", case20_paid_single),
 ]
 
 

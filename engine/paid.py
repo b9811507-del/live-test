@@ -123,23 +123,41 @@ def group_keyboard(E):
 
 
 def post_after_test(E, chat, job=None, day=None):
-    """Send the paid-batches message as the LAST message of a test day (journaled, never duplicated)."""
+    """Send the paid-batches message as the LAST message of a test (journaled, never duplicated).
+    v11.3: one paid message per IST day -> the superseded message of an earlier test is deleted first
+    (locked hygiene rule: never two copies of the same data)."""
     from translator import t
     st = E.jload()
     paid = st.setdefault("paid", {})
-    tag = "msg_%s_%s" % (day or E.daykey(), job or "test")
+    day = day or E.daykey()
+    tag = "msg_%s_%s" % (day, job or "test")
     if paid.get(tag):
         E.log("paid: already posted for %s (%s)" % (tag, paid[tag]))
         return paid[tag]
     if not batches():
         return None
+    # supersede the earlier test's paid message of the same day
+    prev = paid.get("day_%s" % day) or {}
+    prev_id = prev.get("id")
+    deleted = None
+    if prev_id:
+        try:
+            tg_res = E.tg("deleteMessage", chat_id=chat, message_id=prev_id)
+            deleted = True if tg_res is not None else None
+        except Exception as e:
+            E.log("paid: delete of superseded message failed:", str(e)[:90])
+            deleted = False
+        if deleted:
+            E.log("paid: deleted superseded message #%s (job %s)" % (prev_id, prev.get("job")))
     m = E.tg("sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
              disable_web_page_preview=True, reply_markup=group_keyboard(E))
     if m:
         paid[tag] = m["message_id"]
+        paid["day_%s" % day] = {"id": m["message_id"], "job": job, "at": E.istnow().isoformat(timespec="seconds"),
+                                "superseded": prev_id, "deleted_ok": deleted}
         paid["posted_at"] = E.istnow().isoformat(timespec="seconds")
         E.jsave(st, "paid batches message")
-        E.log("paid: batches message posted (#%s)" % m["message_id"])
+        E.log("paid: batches message posted (#%s, superseded %s)" % (m["message_id"], prev_id))
     else:
         E.log("paid: batches message failed to send")
     return (m or {}).get("message_id")
