@@ -153,6 +153,16 @@ def esc(s):
     return html.escape(str(s if s is not None else ""))
 
 
+def fmt_num(v):
+    """1.0 -> '1', 2.0 -> '2', 0.5 -> '0.5' (locked group text shows +1 / +2, not +1.0)."""
+    return "%g" % float(v)
+
+
+def fmt_pair(right, wrong):
+    """Locked scoring text: '+1 / −0.25' … '+2 / −0.5' (typographic minus, as in the spec)."""
+    return "+%s / %s" % (fmt_num(right), ("−" + fmt_num(abs(float(wrong)))) if float(wrong) < 0 else fmt_num(wrong))
+
+
 # --------------------------------------------------------------------------- fake telegram (offline battery)
 _fake_ids = [1000]
 
@@ -767,7 +777,9 @@ def announce_text(job, day, plan):
         "%s <b>%s</b>" % (cfg["emoji"], esc(plan.get("label") or cfg.get("label") or job.upper())),
         "📅 %s · ⏰ %s" % (day_label(day), cfg["time_label"]),
         "📝 %s questions · 30s each · ek answer, poll auto-close" % plan["n"],
-        "🏆 +%s right · %s wrong · end me leaderboard + result file 📄" % (cfg["right"], cfg["wrong"]),
+        "🏆 +%s right · %s wrong · end me leaderboard + result file 📄"
+        % (fmt_num(cfg["right"]), ("−" + fmt_num(abs(float(cfg["wrong"])))) if cfg["wrong"] < 0
+           else fmt_num(cfg["wrong"])),
     ])
 
 
@@ -863,7 +875,7 @@ def score_rows(day, job, plan, ans, names):
 def leaderboard_text(day, job, plan, rows, part=0):
     cfg = JOBS[job]
     label = plan.get("label") or job.upper()
-    head = ("🏆 <b>%s — LEADERBOARD</b> (%dQ · +%s/%s)" % (esc(label), plan["n"], cfg["right"], cfg["wrong"])
+    head = ("🏆 <b>%s — LEADERBOARD</b> (%dQ · %s)" % (esc(label), plan["n"], fmt_pair(cfg["right"], cfg["wrong"]))
             if part == 0 else "🏆 <b>%s</b> — leaderboard contd…" % esc(label))
     if not rows:
         return head + "\n\nAbhi koi score nahi — kal phir milte hain! 👀"
@@ -885,7 +897,9 @@ def result_data(day, job, plan, rows, ans):
                      "picked": picked})
     return {"title": "%s · DAILY TEST RESULT" % (plan.get("label") or job.upper()),
             "label": plan.get("label") or job.upper(), "date": day, "day_label": day_label(day),
-            "time": cfg["time_label"], "nq": plan["n"], "right": cfg["right"], "wrong": cfg["wrong"],
+            "time": cfg["time_label"], "nq": plan["n"],
+            "right": fmt_num(cfg["right"]), "wrong": ("−" + fmt_num(abs(float(cfg["wrong"]))))
+            if cfg["wrong"] < 0 else fmt_num(cfg["wrong"]),
             "pages": plan.get("pages") or "", "batch": ("Batch %s" % plan["batch"]) if plan.get("batch") else "",
             "rows": rows, "key": keys,
             "note": ("Source: %s · truncation applied on %d option(s) · skipped rows: %d"
