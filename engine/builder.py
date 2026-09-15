@@ -43,6 +43,7 @@ tr.gold td{background:#fff8e1}tr.silver td{background:#f5f5f5}tr.bronze td{backg
 .opt{padding:2px 0 2px 20px;position:relative}
 .opt .tick{position:absolute;left:0;font-weight:700}
 .opt.correct{color:#1c7c34;font-weight:600}
+.exp{color:#4a5b4c;font-size:13px;margin:2px 0 10px 20px;border-left:3px solid #dfe8df;padding-left:8px}
 .opt.you::after{content:" \\1F448 aapka jawab";color:#8a6d00;font-size:12px;font-weight:500}
 .skip{color:#8a8f8a;font-size:12px}
 .foot{text-align:center;color:#5c6b5e;font-size:12px;padding:6px 0 2px}
@@ -126,6 +127,8 @@ def key_detail_block(keys):
                 cls += " you"
             parts.append("<div class='%s'><span class='tick'>%s</span>%s. %s</div>" % (
                 cls, tick, chr(65 + idx), _esc(o)))
+        if k.get("expl"):
+            parts.append("<div class='exp'>&#128214; %s</div>" % _esc(k["expl"]))
     return "".join(parts)
 
 
@@ -156,9 +159,11 @@ def render_html(DATA, pages_per=0, book=None, author=None, brand=None, spb=48, k
     hdr.append("</div>")
 
     body = ["".join(hdr)]
-    body.append("<div class='card'><h3>Score board</h3>%s%s</div>" % (
-        scores_block(rows, spb),
-        ("<div class='sub'>Total players: %s</div>" % len(rows)) if rows else ""))
+    # v11.4.4: a paper file (book MCQ / daily test for late students) carries no score board at all —
+    # the leaderboard and top 3 are already in the group. Scores are shown only when rows exist.
+    if rows:
+        body.append("<div class='card'><h3>Score board</h3>%s<div class='sub'>Total players: %s</div></div>"
+                    % (scores_block(rows, spb), len(rows)))
     if key:
         body.append("<div class='card'><h3>Answer key</h3>%s</div>" % key_block(keys, spb))
         if any(k.get("opts") for k in keys):

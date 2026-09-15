@@ -1137,6 +1137,31 @@ def leaderboard_text(day, job, plan, rows, part=0):
     return "\n".join(out)
 
 
+def short_label(label):
+    """Booksend-style short name: "IARI BOOK MCQ 2026" -> "IARI", "MALWA BOOK VOL 1" -> "MALWA VOL 1"."""
+    words = [w for w in re.split(r"\s+", str(label or "").strip()) if w]
+    if not words:
+        return "BOOK MCQ"
+    out = [words[0]]
+    if len(words) > 1 and words[1].lower() in ("book", "mains", "selection"):
+        if words[1].lower() == "book" and len(words) > 2 and ("vol" in words[2].lower() or words[2].isdigit()):
+            out.append(words[2])
+        elif words[1].lower() != "book":
+            out.append(words[1])
+    return " ".join(out).upper()
+
+
+def paper_pages_text(job, plan):
+    """Pages covered by this paper, book-file style: "2, 4, 5" for iari, "1-21" for malwa."""
+    if job == "iari":
+        pl = pages_sorted(plan.get("pages_list"))
+        if pl:
+            return ", ".join(str(p) for p in pl)
+    txt = str(plan.get("pages") or "")
+    txt = re.sub(r"^\s*(book\s+)?pages\s*", "", txt, flags=re.I).strip()
+    return txt or "-"
+
+
 def result_data(day, job, plan, rows, ans):
     cfg = JOBS[job]
     keys = []
@@ -1149,14 +1174,19 @@ def result_data(day, job, plan, rows, ans):
             qt = "[%s] %s" % (tp[:40], qt)
         keys.append({"n": i + 1, "q": qt, "opts": q["o"], "ans_idx": int(q["key"]),
                      "ans": "%s. %s" % (chr(65 + int(q["key"])), q["o"][int(q["key"])]),
+                     "expl": (q.get("expl") or "").strip(), "page": q.get("page") or "",
                      "picked": picked})
-    return {"title": "%s · DAILY TEST RESULT" % (plan.get("label") or job.upper()),
-            "label": plan.get("label") or job.upper(), "date": day, "day_label": day_label(day),
+    # v11.4.4: the file is the day's TEST PAPER in the book-file format (same builder as booksend):
+    # no score board (leaderboard + top 3 are already in the group), questions + explanations inside.
+    pages_txt = paper_pages_text(job, plan)
+    return {"title": "%s · BOOK MCQ" % short_label(plan.get("label") or job.upper()),
+            "label": "%s (pages %s)" % (short_label(plan.get("label") or job.upper()), pages_txt),
+            "date": day, "day_label": day_label(day),
             "time": cfg["time_label"], "nq": plan["n"],
             "right": fmt_num(cfg["right"]), "wrong": ("−" + fmt_num(abs(float(cfg["wrong"]))))
             if cfg["wrong"] < 0 else fmt_num(cfg["wrong"]),
-            "pages": plan.get("pages") or "", "batch": ("Batch %s" % plan["batch"]) if plan.get("batch") else "",
-            "rows": rows, "key": keys,
+            "pages": ("Pages %s" % pages_txt), "batch": ("Batch %s" % plan["batch"]) if plan.get("batch") else "",
+            "rows": [], "key": keys,
             "note": ("Source: %s · %d option(s) shortened to fit the platform limit · %d row(s) skipped"
                      % (plan.get("src"), plan.get("trunc", 0), len(plan.get("skip_rows") or []))),
             "book": plan.get("label") or job.upper(), "brand": "@Arunkatyanquiz_bot", "author": "AGRI QUIZ WORLD"}
@@ -1325,11 +1355,15 @@ def run_job(job, day=None, st=None, force=False):
     # --- result file (6065 HTML, UNPINNED) + one short CTA
     if not j.get("file_sent"):
         slug = re.sub(r"[^A-Z0-9]+", "_", (plan.get("label") or job).upper()).strip("_")
-        path = os.path.join(OUTDIR, "%s_%s_results.html" % (slug, day))
+        pages_txt = paper_pages_text(job, plan)
+        pslug = re.sub(r"[^A-Za-z0-9]+", "-", pages_txt).strip("-") or "all"
+        # v11.4.4: book-file naming -> IARI_BOOK_MCQ_2026_2026-09-16_p2-4-5_35Q.html
+        path = os.path.join(OUTDIR, "%s_%s_p%s_%dQ.html" % (slug, day, pslug, plan["n"]))
         builder.render_html(result_data(day, job, plan, rows, ans), 0, plan.get("label") or job.upper(),
                             "AGRI QUIZ WORLD", "@Arunkatyanquiz_bot", LB_ROWS, True, path)
         doc = tg_file(path, chat_id=chat, caption=tr.t("rf_caption", label=plan.get("label") or job.upper(),
-                                                        date=day_label(day), n=plan["n"]))
+                                                        date=day_label(day), n=plan["n"],
+                                                        pages=pages_txt))
         if doc:
             j["file_sent"] = os.path.basename(path)
             j["file_msg"] = doc.get("message_id")

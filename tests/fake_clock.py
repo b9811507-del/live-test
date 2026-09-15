@@ -714,6 +714,30 @@ def case26_series_restart(tmp):
         (m2.get("plan") or {}).get("row_to"), (m2.get("plan") or {}).get("vol"))
 
 
+def case27_paper_file(tmp):
+    """27. the file posted after a test is the day's test paper in the book-file format: named with
+    pages + question count, no score board, questions + explanations inside, and only that one test."""
+    day = "2026-09-21"
+    clear_log(tmp)
+    p, log, st = mk(tmp, day + "T11:00:00+05:30", journal=empty_journal(day))
+    od = os.path.join(tmp, "out")
+    files = sorted(os.listdir(od)) if os.path.isdir(od) else []
+    sent = [e for e in log if e["method"] == "sendDocument" and e.get("chat") == GROUP]
+    cap = (sent[0].get("caption") if sent else "") or ""
+    doc = ""
+    if files:
+        doc = open(os.path.join(od, files[0]), encoding="utf-8").read()
+    j = day_of(st, day, "malwa")
+    ok = (len(files) == 1 and len(sent) == 1
+          and "_p" in files[0] and files[0].endswith("Q.html")                 # pages + count in name
+          and j.get("file_sent") == files[0]
+          and "Score board" not in doc and "Answer key" in doc and "Question-wise" in doc
+          and "fixture explanation" in doc and "BOOK MCQ" in doc
+          and "pages" in cap.lower() and "questions" in cap.lower())
+    return ok, "file=%s caption=%r scoreboard=%s expl=%s" % (
+        (files[0] if files else None), cap[:70], ("Score board" in doc), ("fixture explanation" in doc))
+
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -741,6 +765,7 @@ CASES = [
     ("24 tomorrow-plan scope (pages vs full day)", case24_plan_scope),
     ("25 book advances across days (no repeats)", case25_cross_day),
     ("26 fresh Day 1 restart marker (series_reset)", case26_series_restart),
+    ("27 result file = day's test paper (book-file format)", case27_paper_file),
 ]
 
 
