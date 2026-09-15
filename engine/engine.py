@@ -47,7 +47,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   # siblings: bui
 import paid                    # paid batches + enrolment + single-use join links (v11.1)
 import translator as tr        # professional English language layer (v11.1)
 
-VERSION = "v11.1"
+VERSION = "v11.4"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.path.join(ROOT, "state.json")
 OUTDIR = os.path.join(ROOT, "out")
@@ -94,13 +94,13 @@ JOBS = {
     "malwa": {"go": 11 * 3600, "time_label": "11:00 AM IST", "emoji": "☀️", "kind": "sheet-rotate",
               "right": 1.0, "wrong": -0.25, "n": 20, "batch": 150},
     "iari": {"go": 14 * 3600 + 30 * 60, "time_label": "2:30 PM IST", "emoji": "🌤", "kind": "sheet-pages",
-             "right": 1.0, "wrong": -0.25, "pages_per_day": 5, "sid": "iari", "label": "IARI BOOK MCQ 2026"},
+             "right": 1.0, "wrong": -0.25, "pages_per_day": 3, "sid": "iari", "label": "IARI BOOK MCQ 2026"},
     "afo": {"go": 18 * 3600, "time_label": "6:00 PM IST", "emoji": "🌆", "kind": "mongo", "right": 2.0,
             "wrong": -0.5, "n": 50, "last_day": "2026-11-01", "label": "AFO MAINS TEST (NEW PATTERN)"},
 }
 ORDER = ["malwa", "iari", "afo"]
 ALLOWED_UPDATES = ["message", "callback_query", "poll", "poll_answer", "chat_join_request", "my_chat_member"]
-ANNOUNCE_LEAD = int(os.environ.get("ANNOUNCE_LEAD", "120"))   # announce 2 min before start
+ANNOUNCE_LEAD = int(os.environ.get("ANNOUNCE_LEAD", "0"))     # v11.4: announce exactly at 11:00/2:30/6:00
 COUNTDOWN_SECS = int(os.environ.get("COUNTDOWN_SECS", "15"))  # v11.1: announce -> 15s countdown -> polls
 DEFER_SECS = int(os.environ.get("DEFER_SECS", "240"))         # run earlier than this only re-arms (saves runner minutes)
 WINDOW_BEFORE = 50 * 60          # start allowed from go-50min
@@ -181,6 +181,9 @@ def _fake_updates(params):
     ENGINE_FAKE_UPDATES=<json file> injects real update objects once (desk/enrolment tests);
     otherwise poll_answer updates are synthesised for the last poll (two players: one right, one wrong)."""
     if os.environ.get("ENGINE_FAKE_UPDATES"):
+        poff = params.get("offset")
+        if poff in (None, -1):
+            return []                      # offset=-1 is a peek (desk startup): never consumes the batch
         if _injected["served"]:
             return []
         _injected["served"] = True
@@ -655,7 +658,8 @@ def sheet_rows(sid):
         if ki >= len(opts):
             continue
         out.append({"serial": str(r[0]).strip(), "page": str(r[1]).strip(), "topic": str(r[2]).strip(),
-                    "q": q, "opts": opts, "key": ki, "src_row": n})
+                    "q": q, "opts": opts, "key": ki, "src_row": n,
+                    "expl": " ".join(str(r[10]).split()) if len(r) > 10 else ""})
     return out
 
 
@@ -670,9 +674,12 @@ def _take_questions(rows, start, count, used_pages=None):
         opts, trunc, ok = fit_options(r["opts"], r["key"])
         qt, qtr = fit_question(r["q"])
         if ok:
+            expl = r.get("expl") or ""
+            if expl and tr.needs_translation(expl):
+                expl = tr.translate_safe(expl)          # explanation in English (cached)
             picked.append({"uid": "%s:%s" % (r["page"], r["serial"]), "serial": r["serial"], "page": r["page"],
                            "topic": r["topic"], "q": qt, "o": opts, "key": r["key"], "trunc": trunc + qtr,
-                           "src_row": r["src_row"]})
+                           "expl": expl[:600], "src_row": r["src_row"]})
         else:
             skips.append({"src_row": r["src_row"], "serial": r["serial"], "why": "option-limit collision"})
         i += 1
@@ -746,13 +753,47 @@ def plan_afo(day, j):
         if not ok:
             raise EngineError("mongo set %s has an unusable question (uid=%s)" % (day, q.get("uid")))
         qt, qtr = fit_question(q.get("q"))
+        expl = " ".join(str(q.get("expl") or "").split())
+        if expl and tr.needs_translation(expl):
+            expl = tr.translate_safe(expl)
         picked.append({"uid": q.get("uid"), "serial": q.get("uid"), "page": "", "topic": "",
-                       "q": qt, "o": opts, "key": int(q["key"]), "trunc": trunc + qtr, "src_row": None})
+                       "q": qt, "o": opts, "key": int(q["key"]), "trunc": trunc + qtr,
+                       "expl": expl[:600], "src_row": None})
     plan = {"src": "mongo:agri.afo_sets", "kind": "mongo", "n": len(picked), "label": JOBS["afo"]["label"],
             "set_no": doc.get("set_no"), "pages": "AFO full-length set (new pattern)",
             "questions": picked, "trunc": sum(p["trunc"] for p in picked), "skip_rows": [],
             "built_at": istnow().isoformat(timespec="seconds")}
     return plan, [], None
+
+
+def prev_cursor(st, day, job):
+    """v11.4.1: a new day's job state is empty, so the book cursor is seeded from the most recent
+    previous day that actually ran this job (journal `bidx`/`vol` = where that day finished).
+    v11.4.3: `st["series_reset"] = {job: "YYYY-MM-DD"}` restarts the book at page 1 on that day
+    (admin order: fresh Day 1 from 16-Sep)."""
+    if ((st.get("series_reset") or {}).get(job) or "") == day:
+        seed = {"bidx": 0, "seeded_from": "series_reset"}
+        if job == "malwa":
+            seed["vol"] = 0
+        return seed
+    try:
+        older = sorted(k for k in (st.get("days") or {}) if k < day)
+    except Exception:
+        older = []
+    for d in reversed(older):
+        jj = ((st.get("days") or {}).get(d) or {}).get(job) or {}
+        if not isinstance(jj, dict) or jj.get("series_complete"):
+            continue
+        plan = jj.get("plan") or {}
+        cur = plan.get("bidx_next", jj.get("bidx_next", jj.get("bidx")))
+        if cur is None:
+            continue
+        seed = {"bidx": int(cur), "seeded_from": d}
+        vol = jj.get("vol", plan.get("vol"))
+        if vol is not None:
+            seed["vol"] = int(vol)
+        return seed
+    return None
 
 
 def prebuild(job, day=None, st=None):
@@ -765,6 +806,14 @@ def prebuild(job, day=None, st=None):
         return j["plan"]
     if os.environ.get("ENGINE_FAKE_FAIL") == job:
         raise EngineError("injected failure for %s (fake-clock case)" % job)
+    if job in ("malwa", "iari") and not any(j.get(k) for k in ("plan", "bidx", "vol", "seeded_from")):
+        seed = prev_cursor(st, day, job)
+        if seed:
+            j.update(seed)
+            j["plan_seed"] = dict(seed)
+            log("prebuild %s %s: cursor seeded from %s -> bidx=%d%s" % (
+                job, day, seed["seeded_from"], seed["bidx"],
+                (" vol=%d" % seed["vol"]) if "vol" in seed else ""))
     if job == "malwa":
         plan, skips, why = plan_malwa(day, j)
     elif job == "iari":
@@ -918,6 +967,82 @@ def cta_text():
     return tr.t("cta")
 
 
+def _names(uid_list, names, cap=5):
+    out = [names.get(u, "player%s" % u) for u in uid_list[:cap]]
+    extra = len(uid_list) - len(out)
+    return ", ".join(out) + (" +%d more" % extra if extra > 0 else "")
+
+
+def reveal_text(job, plan, i, q, aq, names):
+    """Native-quiz-bot style reveal right after the 30 s poll closes (v11.4)."""
+    right = [u for u, v in aq.items() if v is not None and int(v) == int(q["key"])]
+    wrong = [u for u, v in aq.items() if v is not None and int(v) != int(q["key"])]
+    lines = [tr.t("reveal_correct", n=i + 1, total=plan["n"],
+                  ans=esc("%s) %s" % (chr(65 + int(q["key"])), q["o"][int(q["key"])])))]
+    if q.get("expl"):
+        lines.append(tr.t("reveal_explain", text=esc(q["expl"])))
+    if right:
+        lines.append(tr.t("reveal_right", n=len(right), names=esc(_names(right, names))))
+    if wrong:
+        lines.append(tr.t("reveal_wrong", n=len(wrong), names=esc(_names(wrong, names))))
+    if not right and not wrong:
+        lines.append(tr.t("reveal_none"))
+    return "\n".join(lines)
+
+
+def toppers_text(job, day, plan, rows):
+    label = plan.get("label") or job.upper()
+    if not rows:
+        return tr.t("toppers_none", label=esc(label))
+    lines = [tr.t("toppers_head", label=esc(label)), ""]
+    for r in rows[:3]:
+        medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(r["rank"], "•")
+        lines.append(tr.t("toppers_row", medal=medal, name=esc(r["name"]), score="%+.1f" % r["score"],
+                          right=r["right"], wrong=r["wrong"]))
+    lines += ["", tr.t("toppers_thanks", n=plan["n"], players=len(rows))]
+    return "\n".join(lines)
+
+
+def tomorrow_plan_text(job, day, st):
+    """Tomorrow's plan (v11.4): malwa+iari pages after the 11:00 and 2:30 tests; the whole day after 6 PM."""
+    tmr = (dt.date.fromisoformat(day) + dt.timedelta(days=1)).isoformat()
+    jm = ((st.get("days") or {}).get(day) or {}).get("malwa") or {}
+    ji = ((st.get("days") or {}).get(day) or {}).get("iari") or {}
+    lines = [tr.t("schedule_head"), ""]
+    want = ("malwa", "iari") if job in ("malwa", "iari") else ("malwa", "iari", "afo")
+    try:
+        if "malwa" in want:
+            pm, _, _ = plan_malwa(day, {"vol": jm.get("vol", 0), "bidx": jm.get("bidx", 0)})
+            if pm:
+                pl = pages_sorted(pm.get("pages_list")) or []
+                pages = ", ".join(str(p) for p in pl) if pl else str(pm.get("pages") or "").replace("Book pages ", "")
+                lines.append(tr.t("schedule_malwa", label=esc(pm.get("label")), pages=esc(pages)))
+            else:
+                lines.append(tr.t("schedule_malwa", label="MALWA", pages=tr.t("schedule_pages_unknown")))
+        if "iari" in want:
+            pi, _, _ = plan_iari(day, {"bidx": ji.get("bidx", 0)})
+            if pi:
+                pl = pages_sorted(pi.get("pages_list")) or []
+                pages = ", ".join(str(p) for p in pl) if pl else str(pi.get("pages") or "")
+                lines.append(tr.t("schedule_iari", label=esc(pi.get("label")), pages=esc(pages)))
+            else:
+                lines.append(tr.t("schedule_iari", label="IARI BOOK MCQ 2026", pages=tr.t("schedule_pages_unknown")))
+        if "afo" in want:
+            set_no = "-"
+            try:
+                import afo_mongo
+                db, _ = afo_mongo.db_handle()
+                doc = db.afo_sets.find_one({"date": tmr}) or {}
+                set_no = doc.get("set_no", "-")
+            except Exception:
+                pass
+            lines.append(tr.t("schedule_afo", label=JOBS["afo"]["label"], set_no=set_no))
+    except Exception as e:
+        log("tomorrow plan skipped:", str(e)[:110])
+        return None
+    return "\n".join(lines)
+
+
 def congrats_text(job, day, plan, rows):
     label = plan.get("label") or job.upper()
     if rows:
@@ -955,7 +1080,8 @@ def drain(off, poll_id, seconds, answers_q, names, hard_deadline):
         for u in res or []:
             off = max(off, int(u.get("update_id", 0)) + 1)
             pa = u.get("poll_answer")
-            if not pa or (poll_id and pa.get("poll_id") != poll_id):
+            # "*" = battery injection that answers whichever poll is open (fake-clock only)
+            if not pa or (poll_id and pa.get("poll_id") not in (poll_id, "*")):
                 continue
             uid = str((pa.get("user") or {}).get("id"))
             names[uid] = _name_of(pa.get("user") or {})
@@ -1004,8 +1130,10 @@ def leaderboard_text(day, job, plan, rows, part=0):
     out = [head, ""]
     for r in rows:
         medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(r["rank"]) or ("#%d." % r["rank"])
-        out.append("%s <a href=\"tg://user?id=%s\">%s</a> — <b>%+.1f</b> · %d correct · %d incorrect"
+        out.append("%s <a href=\"tg://user?id=%s\"><b>%s</b></a> — <b>%+.1f</b> · %d correct · %d incorrect"
                    % (medal, esc(r["uid"]), esc(r["name"]), r["score"], r["right"], r["wrong"]))
+        if part == 0 and r["rank"] <= 3:
+            out.append("")            # breathing room under the medal rows
     return "\n".join(out)
 
 
@@ -1153,6 +1281,14 @@ def run_job(job, day=None, st=None, force=False):
         j.setdefault("poll_ids", {})[str(i)] = pid
         aq = ans.setdefault(str(i), {})
         off = drain(off, pid, POLL_SECONDS + 1.5, aq, names, hard)
+        # v11.4: native-quiz-bot style reveal (correct option + explanation + who was right)
+        try:
+            rv = tg("sendMessage", chat_id=chat, text=reveal_text(job, plan, i, q, aq, names),
+                    parse_mode="HTML", disable_web_page_preview=True)
+            if rv:
+                j["reveals"] = int(j.get("reveals", 0)) + 1
+        except Exception as e:
+            log("reveal failed for Q%d: %s" % (i + 1, str(e)[:90]))
         j["qidx"] = i + 1
         j["step"] = 2
         j["lock_ts"] = time.time()
@@ -1176,30 +1312,15 @@ def run_job(job, day=None, st=None, force=False):
         j["players"] = len(rows)
         j["answered_total"] = sum(len(v) for v in ans.values())
         jsave(st, "%s leaderboard" % job)
-        # v11.2: short note right after the leaderboard — what tomorrow's pages will be
-        if not j.get("tmr_note") and job in ("malwa", "iari"):
-            try:
-                note = tomorrow_pages_note(job, day, st)
-            except Exception as e:
-                note = None
-                log("tomorrow note failed:", str(e)[:100])
-            if note:
-                m2 = tg("sendMessage", chat_id=chat, text=note, parse_mode="HTML",
-                        disable_web_page_preview=True)
-                if m2:
-                    j["tmr_note"] = m2["message_id"]
-                    j["tmr_note_text"] = note
-                    jsave(st, "%s tomorrow note" % job)
-                    log("tomorrow note sent: %s" % note.replace("\n", " ")[:120])
 
-    # --- congrats (pinned)
+
+    # --- TOP 3 names (v11.4; replaces the old congrats message, never pinned)
     if not j.get("congrats_sent"):
-        c = tg("sendMessage", chat_id=chat, text=congrats_text(job, day, plan, rows), parse_mode="HTML",
+        c = tg("sendMessage", chat_id=chat, text=toppers_text(job, day, plan, rows), parse_mode="HTML",
                disable_web_page_preview=True)
         if c:
-            # v11.2: NOT pinned (only the announce is pinned in this group)
             j["congrats_sent"] = c["message_id"]
-            jsave(st, "%s congrats (unpinned by rule)" % job)
+            jsave(st, "%s top-3 (unpinned by rule)" % job)
 
     # --- result file (6065 HTML, UNPINNED) + one short CTA
     if not j.get("file_sent"):
@@ -1215,17 +1336,32 @@ def run_job(job, day=None, st=None, force=False):
             jsave(st, "%s result file" % job)
         else:
             log("result file send failed (will retry next cycle)")
+    # --- tomorrow's plan: AFTER the html file (11:00 / 2:30 -> tomorrow's pages; 6 PM -> the whole day)
+    if not j.get("tmr_note"):
+        try:
+            note = tomorrow_plan_text(job, day, st)
+        except Exception as e:
+            note = None
+            log("tomorrow plan failed:", str(e)[:100])
+        if note:
+            m2 = tg("sendMessage", chat_id=chat, text=note, parse_mode="HTML", disable_web_page_preview=True)
+            if m2:
+                j["tmr_note"] = m2["message_id"]
+                j["tmr_note_text"] = note
+                jsave(st, "%s tomorrow plan" % job)
+                log("tomorrow plan sent: %s" % note.replace("\n", " ")[:140])
     if not j.get("cta_sent"):
         c = tg("sendMessage", chat_id=chat, text=cta_text(), parse_mode="HTML", disable_web_page_preview=True)
         if c:
             j["cta_sent"] = c["message_id"]
-    # --- v11.1: the LAST message of every test is the paid-batches showcase (payment links in buttons)
-    if not j.get("paid_msg"):
+    # --- v11.4 (admin order): NO paid-batches message in the group any more.
+    if (os.environ.get("PAID_SHOWCASE", "off") or "off").lower() in ("on", "1", "yes") and not j.get("paid_msg"):
         try:
             j["paid_msg"] = paid.post_after_test(SELF, chat, job=job, day=day)
         except Exception as e:
             log("paid message failed:", str(e)[:120])
     j["step"] = 8
+    j["msg_order"] = ["announce", "countdown", "polls+reveals", "leaderboard", "top3", "file", "tomorrow-plan", "cta"]
     j["done_at"] = istnow().isoformat(timespec="seconds")
     j["elapsed_s"] = int(time.time() - t_start)
     j["partial"] = bool(j.get("partial"))

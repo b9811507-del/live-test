@@ -112,36 +112,39 @@ def case2_warm(tmp):
     ann = [t for t in texts(log) if "poll auto-closes" in t]
     pin_calls = pins(log)
     unpins = methods(log, "unpinChatMessage", GROUP)
-    tmr = [t for t in texts(log) if t.startswith("📖 Tomorrow")]
+    tmr = [t for t in texts(log) if t.startswith("🗓")]
+    reveals = [t for t in texts(log) if t.startswith("✅ <b>Q")]
+    toppers = [t for t in texts(log) if "TOP 3" in t]
+    paid_msgs = [t for t in texts(log) if "PAID BATCHES" in t]
     ann_id = day_of(st, day, "malwa").get("msg_ann")
     lb = [t for t in texts(log) if "LEADERBOARD" in t]
     cta = [t for t in texts(log) if t.startswith("🌾 Daily schedule")] 
     docs = methods(log, "sendDocument", GROUP)
     edits = [e.get("text") or "" for e in methods(log, "editMessageText", GROUP)]
     cd_vals = [int(m.group(1)) for t in edits for m in [re.search(r"Starting in (\d+)s", t)] if m]
-    paid_msgs = [t for t in texts(log) if "PAID BATCHES" in t]
     kb = [e for e in methods(log, "sendMessage", GROUP) if e.get("reply_markup")]
     hinglish = [t for t in texts(log) if any(w in t for w in ("sawal", "dhanyavaad", "Roz ka", "ko pin", "jawab"))]
     last_group_msg = [e for e in log if e.get("chat") == GROUP and e["method"] == "sendMessage"][-1]
     pl = polls(log)
+    idx = texts(log)
     ok = (len(ann) == 1 and len(pl) == 20 and all(e.get("open_period") == 30 for e in pl)
           and all(e["question"].startswith("%d/20." % (i + 1)) for i, e in enumerate(pl))
           and len(pin_calls) == 1 and pin_calls[0]["message_id"] == ann_id          # announce is the ONLY pin
-          and "Book pages" in ann[0] and len(tmr) == 1 and "Tomorrow" in tmr[0]      # pages line + tomorrow note
-          and lb and texts(log).index(ann[0]) < texts(log).index(lb[0]) < texts(log).index(tmr[0])
-          and len(lb) == 1 and len(docs) == 1 and len(cta) == 1
-          and cd_vals and max(cd_vals) == 15 and len(cd_vals) >= 4          # v11.1: single 15s countdown
-          and len(paid_msgs) == 1 and "PAID BATCHES" in (last_group_msg.get("text") or "")  # paid = LAST
-          and kb and len(kb[-1]["reply_markup"]["inline_keyboard"]) >= 4
+          and "Book pages" in ann[0]
+          and len(reveals) == 20 and "📖" in reveals[0]                              # reveal + explanation each Q
+          and len(lb) == 1 and len(toppers) == 1 and len(docs) == 1 and len(tmr) == 1 and len(cta) == 1
+          and idx.index(ann[0]) < idx.index(lb[0]) < idx.index(toppers[0])           # ... < top3
+          and idx.index(toppers[0]) < idx.index(cta[0]) and idx.index(tmr[0]) < idx.index(cta[0])
+          and len(paid_msgs) == 0 and not kb                                         # paid message OFF
+          and cd_vals and max(cd_vals) == 15 and len(cd_vals) >= 4
           and not hinglish and int(j.get("step", 0)) == 8
           and int(day_of(st, day, "iari").get("step", 0)) == 0)
-    return ok, ("announce=%d polls=%d ticks=%s pins=%d(only announce=%s) unpins=%d lb=%d tomorrow=%r docs=%d "
-                "cta=%d paid_last=%s buttons=%d hinglish=%d step=%s" % (
-                    len(ann), len(pl), cd_vals, len(pin_calls),
-                    bool(pin_calls) and pin_calls[0]["message_id"] == ann_id, len(unpins), len(lb),
-                    (tmr[0][:42] if tmr else None), len(docs), len(cta),
-                    "PAID BATCHES" in (last_group_msg.get("text") or ""),
-                    len(kb[-1]["reply_markup"]["inline_keyboard"]) if kb else 0, len(hinglish), j.get("step")))
+    _ = last_group_msg
+    return ok, ("announce=%d polls=%d reveals=%d ticks=%s pins=%d unpins=%d lb=%d top3=%d docs=%d plan=%r "
+                "cta=%d paid=%d hinglish=%d step=%s" % (
+                    len(ann), len(pl), len(reveals), cd_vals, len(pin_calls), len(unpins), len(lb),
+                    len(toppers), len(docs), (tmr[0][:40] if tmr else None), len(cta), len(paid_msgs),
+                    len(hinglish), j.get("step")))
 
 
 def case3_overlap(tmp):
@@ -156,9 +159,9 @@ def case3_overlap(tmp):
     p2, log2, st2 = run(tmp, ("slotchain",), day + "T14:28:30+05:30")
     pl2 = polls(log2)
     ok = (len(ann1) == 1 and len(pl1) == 20 and m1 == 8 and i1 == 0 and "defer" in (p.stdout + p.stderr)
-          and int(day_of(st2, day, "iari").get("step", 0)) == 8 and len(pl2) == 15
+          and int(day_of(st2, day, "iari").get("step", 0)) == 8 and len(pl2) == 8    # 3 pages = 3+3+2 Q
           and any("IARI BOOK MCQ 2026" in t for t in texts(log2)))
-    return ok, ("cycle1: announces=%d polls=%d malwa=%s iari=%s(deferred) | cycle2: iari polls=%d iari.step=%s"
+    return ok, ("cycle1: announces=%d polls=%d malwa=%s iari=%s(deferred) | cycle2: iari polls=%d (3 pages) iari.step=%s"
                 % (len(ann1), len(pl1), m1, i1, len(pl2), day_of(st2, day, "iari").get("step")))
 
 
@@ -244,11 +247,12 @@ def case9_boundary(tmp):
     p, log, st = mk(tmp, day + "T14:30:00+05:30", journal=empty_journal(day))
     i, m = day_of(st, day, "iari"), day_of(st, day, "malwa")   # 14:30: malwa is still inside its late window
     pl = polls(log)
-    iari_q = [e for e in pl if e["question"].startswith("1/15.")]
+    iari_q = [e for e in pl if e["question"].startswith("1/8.")]     # v11.4: 3 pages = 8 Q in fixtures
     cd = [int(mm.group(1)) for e in methods(log, "editMessageText", GROUP)
           for mm in [re.search(r"Starting in (\d+)s", e.get("text") or "")] if mm]
     iann = [t for t in texts(log) if "IARI BOOK MCQ 2026" in t and "poll auto-closes" in t]
-    tmr = [t for t in texts(log) if t.startswith("📖 Tomorrow")]
+    tmr = [t for t in texts(log) if t.startswith("🗓")]
+    reveals = [t for t in texts(log) if t.startswith("✅ <b>Q")]
     pin_calls = pins(log)
     unp = methods(log, "unpinChatMessage", GROUP)
     # malwa is still in its late window at 14:30, so malwa + iari both run in this cycle; the newer
@@ -256,15 +260,18 @@ def case9_boundary(tmp):
     ok = (int(i.get("step", 0)) == 8 and len(pin_calls) == 2
           and pin_calls[-1]["message_id"] == i.get("msg_ann")
           and [x["message_id"] for x in unp] == [m.get("msg_ann")]
-          and len(iann) == 1 and "Book pages: 2, 4, 5, 7, 8" in iann[0]      # iari pages listed exactly
-          and len(tmr) == 2 and any("9, 10" in t for t in tmr)              # iari tomorrow = pages 9, 10
-          and int(m.get("step", 0)) == 8 and len(pl) == 35
-          and iari_q and (i.get("plan") or {}).get("pages_list") == [2, 4, 5, 7, 8]
+          and len(iann) == 1 and "Book pages: 2, 4, 5" in iann[0]            # 3 pages/day (v11.4)
+          and len(tmr) == 2 and any("7, 8, 9" in t for t in tmr)             # tomorrow = next 3 pages
+          and int(m.get("step", 0)) == 8 and len(pl) == 28                   # 20 malwa + 8 iari
+          and len(reveals) == 28
+          and iari_q and (i.get("plan") or {}).get("pages_list") == [2, 4, 5]
           and cd and max(cd) == 15 and max(cd) <= 15
           and len([t for t in texts(log) if "poll auto-closes" in t]) == 2)
-    return ok, "iari.step=%s malwa.step=%s polls=%d iari_pages=%s pins=%s unpinned=%s tomorrow=%d ticks(max %s)" % (
-        i.get("step"), m.get("step"), len(pl), (i.get("plan") or {}).get("pages_list"),
-        [x["message_id"] for x in pin_calls], [x["message_id"] for x in unp], len(tmr), max(cd) if cd else None)
+    return ok, ("iari.step=%s malwa.step=%s polls=%d reveals=%d iari_pages=%s pins=%s unpinned=%s plan=%d "
+                "ticks(max %s)" % (i.get("step"), m.get("step"), len(pl), len(reveals),
+                                   (i.get("plan") or {}).get("pages_list"),
+                                   [x["message_id"] for x in pin_calls], [x["message_id"] for x in unp],
+                                   len(tmr), max(cd) if cd else None))
 
 
 def case10_next_day(tmp):
@@ -388,7 +395,8 @@ def case16_single_pin(tmp):
     unp = methods(log, "unpinChatMessage", GROUP)
     pinz = pins(log)
     ok = (len(pinz) == 1 and pinz[0]["message_id"] == i.get("msg_ann")
-          and len(unp) == 1 and unp[0]["message_id"] == 777 and i.get("unpinned") == [777])
+          and len(unp) == 1 and unp[0]["message_id"] == 777 and i.get("unpinned") == [777]
+          and not [t for t in texts(log) if "PAID BATCHES" in t])
     return ok, "pins=%s unpinned=%s journal.unpinned=%s" % (
         [x["message_id"] for x in pinz], [x["message_id"] for x in unp], i.get("unpinned"))
 
@@ -474,23 +482,236 @@ def case19_razorpay_expired(tmp):
 
 
 def case20_paid_single(tmp):
-    """20. two tests on the same day: the second paid message deletes the first (no duplicate data)."""
+    """20. paid showcase is OFF by default; when switched on, two tests on the same day: the second
+    paid message deletes the first (no duplicate data)."""
     day = "2026-09-16"
     jr = empty_journal(day)
     jr["paid"] = {"msg_%s_iari" % day: 5000, "day_%s" % day: {"id": 5000, "job": "iari"},
                   "posted_at": "2026-09-16T15:05:00+05:30"}
     jr["days"][day]["malwa"] = {"step": 8, "msg_ann": 1, "lb_sent": True, "congrats_sent": 2,
                                 "file_sent": "x", "cta_sent": 3, "tmr_note": 4}
-    p, log, st = mk(tmp, day + "T18:00:00+05:30", journal=jr, env={"PAID_PRICE_AFO": "₹251"})
+    # 20a: default (no flag) -> no paid message at all
+    _reset_afo_day(tmp, day)
+    p0, log0, st0 = mk(tmp, day + "T18:00:00+05:30", journal=json.loads(json.dumps(jr)),
+                       env={"PAID_PRICE_AFO": "₹251"})
+    off_ok = not [e for e in log0 if "PAID BATCHES" in (e.get("text") or "")]
+    if os.path.exists(os.path.join(tmp, "tg.jsonl")):
+        os.remove(os.path.join(tmp, "tg.jsonl"))
+    # 20b: flag on -> supersede + delete behaviour
+    _reset_afo_day(tmp, day)
+    p, log, st = mk(tmp, day + "T18:00:00+05:30", journal=json.loads(json.dumps(jr)),
+                    env={"PAID_PRICE_AFO": "₹251", "PAID_SHOWCASE": "on"})
     dels = methods(log, "deleteMessage", GROUP)
     paid_msgs = [e for e in methods(log, "sendMessage", GROUP) if "PAID BATCHES" in (e.get("text") or "")]
     rec = (st.get("paid") or {}).get("day_%s" % day) or {}
-    ok = (len(dels) == 1 and dels[0]["message_id"] == 5000 and len(paid_msgs) == 1
+    ok = (off_ok and len(dels) == 1 and dels[0]["message_id"] == 5000 and len(paid_msgs) == 1
           and rec.get("id") == paid_msgs[0]["message_id"] and rec.get("superseded") == 5000
           and (st.get("paid") or {}).get("msg_%s_afo" % day))
-    return ok, "deleted=%s new_paid=%s journal=%s" % ([d["message_id"] for d in dels],
-                                                      [m["message_id"] for m in paid_msgs],
-                                                      {k: rec.get(k) for k in ("id", "superseded")})
+    return ok, "off_by_default=%s deleted=%s new_paid=%s journal=%s" % (
+        off_ok, [d["message_id"] for d in dels], [m["message_id"] for m in paid_msgs],
+        {k: rec.get(k) for k in ("id", "superseded")})
+
+
+def _fixture_rows(sid):
+    import csv as _csv
+    rows = list(_csv.reader(open(os.path.join(tmp_fixtures(), sid + ".csv"), encoding="utf-8")))[1:]
+    return [r for r in rows if len(r) > 9 and r[3].strip()]
+
+
+def tmp_fixtures():
+    return os.path.join(HERE, "fixtures", "sheets")
+
+
+def _reset_afo_day(tmp, day):
+    """an earlier case consumed this AFO set in the shared tree; put it back so later cases can run
+    the 18:00 job too (their own assertions are what matter)."""
+    bp = os.path.join(tmp, "tests", "fixtures", "afo_bank.json")
+    b = json.load(open(bp, encoding="utf-8"))
+    uids = set()
+    for d in b["afo_sets"]:
+        if d["date"] == day:
+            d["status"] = "ready"
+            uids = {str(q.get("uid")) for q in (d.get("questions") or [])}
+    b["afo_used_q"] = [x for x in (b.get("afo_used_q") or []) if str(x.get("uid")) not in uids]
+    json.dump(b, open(bp, "w", encoding="utf-8"), indent=1)
+
+
+def clear_log(tmp):
+    """drop the fake-telegram log so one case never asserts on an earlier case's traffic."""
+    p = os.path.join(tmp, "tg.jsonl")
+    if os.path.exists(p):
+        os.remove(p)
+
+
+def _fixture_rows(sid):
+    import csv as _csv
+    rows = list(_csv.reader(open(os.path.join(HERE, "fixtures", "sheets", sid + ".csv"), encoding="utf-8")))[1:]
+    return [r for r in rows if len(r) > 9 and r[3].strip()]
+
+
+def case21_toppers_three(tmp):
+    """21. more than 3 players: the message after the leaderboard names exactly the top 3 (medals),
+    and each reveal lists who was right / wrong (native-quiz-bot style)."""
+    day = "2026-09-17"
+    players = [("9101", "Aarav", 0), ("9102", "Bhavna", 0), ("9103", "Chirag", 0),
+               ("9104", "Divya", 1), ("9105", "Eshan", 2)]
+    fp = os.path.join(tmp, "upd.json")
+    json.dump([{"update_id": 500001 + i, "poll_answer": {
+        "poll_id": "*", "user": {"id": int(u), "first_name": n, "username": None},
+        "option_ids": [o]}} for i, (u, n, o) in enumerate(players)], open(fp, "w"))
+    clear_log(tmp)
+    p, log, st = mk(tmp, day + "T11:00:00+05:30", journal=empty_journal(day),
+                    env={"ENGINE_FAKE_UPDATES": fp})
+    lb = [t for t in texts(log) if "LEADERBOARD" in t and t.startswith("🏆")]
+    top = [t for t in texts(log) if "TOP 3" in t]
+    rv1 = [t for t in texts(log) if t.startswith("✅ <b>Q1/")]
+    fx = _fixture_rows("malwa_vol1")
+    key = "ABCDE".index(fx[0][9].strip().upper())
+    exp = "✅ <b>Q1/20 · Correct answer: %s) %s</b>" % (chr(65 + key), fx[0][4 + key].strip())
+    ranked = [l for l in (top[0].split("\n") if top else []) if l.startswith(("🥇", "🥈", "🥉"))]
+    wrong_names = [n for _, n, o in players if o != key]
+    right_names = [n for _, n, o in players if o == key]
+    board = lb[0] if lb else ""
+    ok = (len(lb) == 1 and all(n in board for _, n, _ in players)        # all 5 on the board
+          and len(top) == 1 and len(ranked) == 3                         # exactly three toppers
+          and all(m in top[0] for m in ("🥇", "🥈", "🥉"))
+          and all(n in top[0] for n in right_names) and not any(n in top[0] for n in wrong_names)
+          and len(rv1) == 1 and rv1[0].splitlines()[0] == exp            # reveal = sheet answer
+          and "fixture explanation" in rv1[0]
+          and len([t for t in texts(log) if t.startswith("✅ <b>Q")]) == 20)
+    return ok, "players_on_board=%d toppers=%d medals=%s reveal0=%r" % (
+        sum(1 for _, n, _ in players if n in board), len(ranked), [l[:14] for l in ranked],
+        (rv1[0].splitlines()[0] if rv1 else None))
+
+
+def case22_exact_start(tmp):
+    """22. the announce never goes out early: a run that starts 30 s before the slot still announces
+    at 11:00:00 sharp, the 15 s countdown follows, and only then Q1."""
+    import datetime as dt
+    day = "2026-09-18"
+    clear_log(tmp)
+    p1, log1, st1 = mk(tmp, day + "T10:59:30+05:30", journal=empty_journal(day))
+    j = day_of(st1, day, "malwa")
+    ann_at = j.get("announced_at") or ""
+    sends = [e for e in log1 if e.get("chat") == GROUP and e["method"] == "sendMessage"]
+    first_poll = polls(log1)[0] if polls(log1) else {}
+    cd = [int(m.group(1)) for e in methods(log1, "editMessageText", GROUP)
+          for m in [re.search(r"Starting in (\d+)s", e.get("text") or "")] if m]
+    def _dt(v):
+        return dt.datetime.fromisoformat(v) if v else None
+    gap = ((_dt(first_poll.get("t")) - _dt(ann_at)).total_seconds()
+           if first_poll.get("t") and ann_at else -1)
+    ok = (int(j.get("step", 0)) == 8 and ann_at >= day + "T11:00:00"
+          and j.get("msg_ann") and sends and sends[0].get("message_id") == j["msg_ann"]
+          and len(polls(log1)) == 20 and cd and max(cd) == 15 and gap >= 15)
+    return ok, "announced_at=%s first_msg=announce=%s polls=%d countdown(max %s) announce->Q1=%ss" % (
+        ann_at, bool(sends) and sends[0].get("message_id") == j.get("msg_ann"), len(polls(log1)),
+        max(cd) if cd else None, int(gap))
+
+
+def case23_reveal_sheet(tmp):
+    """23. every reveal carries the sheet's correct option + the sheet's explanation column and the
+    names of who answered right / wrong."""
+    day = "2026-09-19"
+    clear_log(tmp)
+    p, log, st = mk(tmp, day + "T14:30:00+05:30",
+                    journal=empty_journal(day, malwa={"step": 8}))
+    fx = _fixture_rows("iari")
+    key = "ABCDE".index(fx[0][9].strip().upper())
+    rvs = [t for t in texts(log) if t.startswith("✅ <b>Q")]
+    n = len(polls(log))
+    first = [t for t in rvs if t.startswith("✅ <b>Q1/")]
+    exp = "✅ <b>Q1/%d · Correct answer: %s) %s</b>" % (n, chr(65 + key), fx[0][4 + key].strip())
+    ok = (n == 8 and len(rvs) == 8 and len(first) == 1 and first[0].splitlines()[0] == exp
+          and "fixture explanation" in first[0]
+          and ("👏" in first[0] or "❌" in first[0])                     # right/wrong player names
+          and rvs[-1].startswith("✅ <b>Q8/8"))
+    return ok, "iari_polls=%d reveals=%d first=%r tail=%r" % (
+        n, len(rvs), (first[0].splitlines()[0] if first else None),
+        (rvs[-1].splitlines()[0] if rvs else None))
+
+
+def case24_plan_scope(tmp):
+    """24. tomorrow's plan: after 11:00 / 14:30 only the next day's page numbers (malwa + iari);
+    after 18:00 the whole next-day test schedule (malwa + iari + AFO set)."""
+    day = "2026-09-15"
+    _reset_afo_day(tmp, "2026-09-15")
+    _reset_afo_day(tmp, "2026-09-16")
+    clear_log(tmp)
+    p, log, st = mk(tmp, day + "T11:00:00+05:30", journal=empty_journal(day))
+    plans = [t for t in texts(log) if t.startswith("🗓")]
+    noon_ok = (len(plans) == 1 and "11:00 AM" in plans[0] and "2:30 PM" in plans[0]
+               and "6:00 PM" not in plans[0] and "AFO" not in plans[0])
+    clear_log(tmp)
+    p2, log2, st2 = mk(tmp, day + "T18:00:00+05:30",
+                       journal=empty_journal(day, malwa={"step": 8}, iari={"step": 8}))
+    plans2 = [t for t in texts(log2) if t.startswith("🗓")]
+    eve = plans2[-1] if plans2 else ""
+    eve_ok = len(plans2) == 1 and "🌆 6:00 PM" in eve and "AFO MAINS TEST" in eve and "set" in eve
+    return noon_ok and eve_ok, "11:00 plan=%s | 18:00 plan=%s" % (
+        (plans[0].replace("\n", " | ")[:80] if plans else None), (eve.replace("\n", " | ")[:110] or None))
+
+
+def polls_set(log):
+    return {e["question"] for e in polls(log)}
+
+
+def case25_cross_day(tmp):
+    """25. the book advances across days: 16-Sep starts fresh, 17-Sep continues where 16-Sep ended
+    (iari pages + malwa rows) and no question is repeated."""
+    d1, d2 = "2026-09-16", "2026-09-17"
+    clear_log(tmp)
+    p1, log1, st1 = mk(tmp, d1 + "T11:00:00+05:30", journal=empty_journal(d1))
+    clear_log(tmp)
+    p2, log2, st2 = mk(tmp, d1 + "T14:30:00+05:30")
+    i1, m1 = day_of(st2, d1, "iari"), day_of(st2, d1, "malwa")
+    clear_log(tmp)
+    p3, log3, st3 = mk(tmp, d2 + "T11:00:00+05:30")
+    clear_log(tmp)
+    p4, log4, st4 = mk(tmp, d2 + "T14:30:00+05:30")
+    i2, m2 = day_of(st4, d2, "iari"), day_of(st4, d2, "malwa")
+    p1i, p2i = (i1.get("plan") or {}), (i2.get("plan") or {})
+    p1m, p2m = (m1.get("plan") or {}), (m2.get("plan") or {})
+    ok = (p1i.get("pages_list") == [2, 4, 5] and p1m.get("row_from") == 0          # fresh Day 1
+          and p2i.get("row_from") == p1i.get("bidx_next") and p2i.get("pages_list")
+          and p2i.get("pages_list") != p1i.get("pages_list")
+          and p2m.get("row_from") == p1m.get("bidx_next") == 20
+          and len(polls(log1)) == 20 and len(polls(log2)) == 8 and len(polls(log3)) == 20
+          and not (polls_set(log1) & polls_set(log3))                            # malwa no repeat
+          and not (polls_set(log2) & polls_set(log4)))                           # iari no repeat
+    return ok, ("d1 iari pages=%s rows=%s..%s | d1 malwa rows=%s..%s | d2 iari pages=%s rows=%s..%s "
+                "| d2 malwa rows=%s..%s | seed=%s") % (
+        p1i.get("pages_list"), p1i.get("row_from"), p1i.get("row_to"), p1m.get("row_from"),
+        p1m.get("row_to"), p2i.get("pages_list"), p2i.get("row_from"), p2i.get("row_to"),
+        p2m.get("row_from"), p2m.get("row_to"), (i2.get("plan_seed") or {}).get("seeded_from"))
+
+
+def case26_series_restart(tmp):
+    """26. admin order (fresh Day 1 from 16-Sep): with the restart marker set for that day the book
+    goes back to the very first page even though the previous day consumed earlier rows."""
+    d1, d2 = "2026-09-16", "2026-09-17"
+    clear_log(tmp)
+    p1, log1, st1 = mk(tmp, d1 + "T11:00:00+05:30", journal=empty_journal(d1))
+    clear_log(tmp)
+    p2, log2, st2 = mk(tmp, d1 + "T14:30:00+05:30")
+    sp = os.path.join(tmp, "state.json")
+    st = json.load(open(sp, encoding="utf-8"))
+    st["series_reset"] = {"iari": d2, "malwa": d2}
+    json.dump(st, open(sp, "w", encoding="utf-8"), indent=1, sort_keys=True)
+    clear_log(tmp)
+    p3, log3, st3 = mk(tmp, d2 + "T11:00:00+05:30")
+    clear_log(tmp)
+    p4, log4, st4 = mk(tmp, d2 + "T14:30:00+05:30")
+    i2, m2 = day_of(st4, d2, "iari"), day_of(st4, d2, "malwa")
+    i1 = day_of(st2, d1, "iari")
+    ok = ((i2.get("plan") or {}).get("row_from") == 0 and (m2.get("plan") or {}).get("row_from") == 0
+          and (m2.get("plan") or {}).get("vol") == 0
+          and (i2.get("plan") or {}).get("pages_list") == (i1.get("plan") or {}).get("pages_list")
+          and len(polls(log3)) == 20 and len(polls(log4)) == 8)
+    return ok, "restart d2: iari rows=%s..%s pages=%s | malwa rows=%s..%s vol=%s" % (
+        (i2.get("plan") or {}).get("row_from"), (i2.get("plan") or {}).get("row_to"),
+        (i2.get("plan") or {}).get("pages_list"), (m2.get("plan") or {}).get("row_from"),
+        (m2.get("plan") or {}).get("row_to"), (m2.get("plan") or {}).get("vol"))
 
 
 CASES = [
@@ -514,6 +735,12 @@ CASES = [
     ("18 Razorpay: pay -> status paid -> one-time join link", case18_razorpay_pay),
     ("19 Razorpay: expired link -> fresh pay button only", case19_razorpay_expired),
     ("20 one paid message per day (supersede + delete)", case20_paid_single),
+    ("21 toppers: exactly top 3 + reveal names", case21_toppers_three),
+    ("22 exact slot time (nothing before 11:00)", case22_exact_start),
+    ("23 reveal = sheet answer + explanation", case23_reveal_sheet),
+    ("24 tomorrow-plan scope (pages vs full day)", case24_plan_scope),
+    ("25 book advances across days (no repeats)", case25_cross_day),
+    ("26 fresh Day 1 restart marker (series_reset)", case26_series_restart),
 ]
 
 

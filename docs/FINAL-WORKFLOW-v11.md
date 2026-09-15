@@ -1,4 +1,15 @@
-# AGRI QUIZ DAILY EXAM SYSTEM v11.2 — COMPLETE WORKFLOW
+# AGRI QUIZ DAILY EXAM SYSTEM v11.4 — COMPLETE WORKFLOW
+
+> **v11.4 (admin order, 15-Sep evening)** — (a) **no paid-batches message or link in any group**
+> (`PAID_SHOWCASE` is off by default; the enrolment code stays in the desk/DM path only);
+> (b) after **every** 30 s question window a **reveal** is posted: correct option + the sheet's
+> explanation + the names of who was right / wrong; (c) the result file carries **only the most
+> recent test**; (d) the announce goes out at **exactly 11:00:00 / 14:30:00 / 18:00:00 IST** (no 2-min
+> lead) → 15 s countdown → test → leaderboard → **TOP 3 toppers** → result file → **tomorrow's plan**;
+> (e) the plan after 11:00 / 14:30 = next day's **page numbers**, after 18:00 = the **whole next-day
+> schedule**; (f) **fresh Day 1 from 16-Sep**: book page 1, **3 pages/day** for iari (was 5), and the
+> book now **continues across days** instead of restarting every morning (`series_reset` marker).
+> Battery: **26/26 green**.
 ### Full setup, day-cycle, group display, failure handling and final output
 
 ---
@@ -34,7 +45,7 @@
 
 | Workflow | Trigger | Cadence | Job timeout | What it does | What it NEVER does |
 |---|---|---|---|---|---|
-| **slot-chain** | self-dispatch + cron `*/10` (fallback) | self-chained, jitter **100–190 s** | 240 min | gate the 3 slots → announce → countdown → polls → leaderboard → tomorrow note → congrats → result file → schedule line → **paid batches**; then re-arms itself | never cancel-in-progress, never retro-fires a missed slot |
+| **slot-chain** | self-dispatch + cron `*/10` (fallback) | self-chained, jitter **100–190 s** | 240 min | gate the 3 slots → announce (exact time) → 15 s countdown → polls **+ a reveal after each** → leaderboard → **top 3** → result file (latest test only) → **tomorrow's plan**; then re-arms itself | never cancel-in-progress, never retro-fires a missed slot, **never posts paid-batch messages** |
 | **slot-guard** | self-dispatch + cron `*/15` | self-chained **~7 min** | 30 min | if no chain run is live and the last one is older than 25 min while a slot is still actionable → force-dispatch chain + DM admin | silent outside the daily window (no false alarms) |
 | **keepwarm-agent** | self-dispatch + cron `*/10` | self-chained, throttled **~150 s** | 25 min | Render keepwarm ping · journal/agent maintenance · **student desk**: DMs, payment claims, invoice callbacks, single-use join links, join-request approvals · relay marker | never calls getUpdates while a test is live (no 409) |
 | **afo-supply** | cron `30 23 * * *` = **05:00 IST** | daily | 45 min | AFO bank audit: coverage 13-Sep→1-Nov, no-repeat uid check, gap-fill if a pool exists | **never posts to Telegram** |
@@ -50,19 +61,19 @@
 | **05:00** | `afo-supply` audits the Mongo AFO bank (50 sets, 13-Sep → 1-Nov, zero repeated questions). Silent. |
 | 24 × 7 | `keepwarm-agent` every ~150 s: Render ping + **student desk** — students can enrol any time of day; links are issued within ~2.5 min of a claim. |
 | **10:10** | malwa window opens (go − 50 min). Chain starts running the job. |
-| **10:58** | **ANNOUNCE** posted + **pinned** (2 min before start). Previous announce of any earlier test is auto-unpinned here. |
-| 10:58–11:00 | quiet (heartbeat only, no group traffic) |
-| **11:00:00 − 15 s** | **15-second countdown** on the same pinned message: `Starting in 15s… 10s… 5s… 3s… 2s… 1s… Starting now — good luck!` |
-| **11:00** | **20 polls**, one open at a time, each **30 s auto-close**, votes counted live. |
-| ~11:11 | **Leaderboard** (≤48 rows/msg, medal + tap-able name) → **tomorrow-pages note** → **congratulations** (unpinned) → **result file** (HTML document, unpinned) → one-line schedule → **PAID BATCHES message (last)**. |
+| **10:10** | the runner waits silently (heartbeat only, **zero group traffic**) |
+| **11:00:00 sharp** | **ANNOUNCE** posted + **pinned** (v11.4: no lead). Previous announce of any earlier test is auto-unpinned here → exactly one pin. |
+| **11:00:00 + 0–15 s** | **15-second countdown** on the same pinned message: `Starting in 15s… 10s… 5s… 3s… 2s… 1s… Starting now — good luck!` |
+| **11:00:15** | **20 polls**, one open at a time, each **30 s auto-close**; votes counted live; **reveal after each poll** (correct option + explanation + right/wrong names). |
+| ~11:11 | **Leaderboard** (≤48 rows/msg, medal + tap-able name) → **TOP 3 toppers** → **result file** (HTML, latest test only) → **tomorrow's plan** (next day's page numbers) → one-line sign-off. **No paid-batches message (v11.4).** |
 | 11:15 | malwa slot sealed `step 8`. Volume rollover happens automatically when a book is exhausted (VOL 1 → VOL 2 → HORTICULTURE → series-complete message + slot closes). |
 | **13:40** | iari window opens. |
-| **14:28** | **ANNOUNCE** pinned (malwa's announce unpinned → still exactly **one** pin). |
-| **14:30** | 15 s countdown → **all questions of the next 5 book pages** (N = actual count, e.g. 56 Q ≈ 28 min), +1 / −0.25. |
+| **14:30:00 sharp** | **ANNOUNCE** pinned (malwa's announce unpinned → still exactly **one** pin). |
+| **14:30 + 15 s** | countdown → **all questions of the next 3 book pages** (v11.4, was 5; N = actual count — real book: day 1 = pages 2,4,5 = 35 Q ≈ 18 min), +1 / −0.25. |
 | **17:10** | AFO window opens. |
-| **17:58** | **ANNOUNCE** pinned. |
+| **18:00:00 sharp** | **ANNOUNCE** pinned (no lead). |
 | **18:00** | 15 s countdown → **50 Q full-length**, +2 / −0.5, from that IST day's Mongo set. |
-| ~18:27 | leaderboard → congrats → result file → schedule line → **paid batches**. Mongo set marked `used`, uids booked in the no-repeat ledger. |
+| ~18:27 | leaderboard → **top 3** → result file → **tomorrow's full schedule** (malwa pages + iari pages + AFO set). Mongo set marked `used`, uids booked in the no-repeat ledger. No paid message. |
 | 22:00 | Any slot still unfinished is **sealed missed** (+1 admin DM). After this it can never fire today. |
 | **Miss rule** | A slot that passes **go + 4 h** is sealed `missed` forever — no retro-fire, no stale announcement. |
 
@@ -176,7 +187,7 @@ state.json           (journal: 13-Sep / 14-Sep history + today, sealed 15-Sep ma
 tests/               verify_all.py · fake_clock.py · fixtures · render_preview.py · make_fixtures.py
 docs/                LOCK-V11.md · BUILD-REPORT-v11.md · BUILD-REPORT-v11.1.md (includes v11.2) · GROUP-MESSAGES-EN.md
 ```
-**Group output per test:** announce (pinned) → 15 s countdown → N polls → leaderboard → tomorrow-pages note → congrats → HTML result file → schedule line → paid-batches message.
+**Group output per test (v11.4):** announce (pinned, at the exact slot time) → 15 s countdown → N polls, each followed by a reveal → leaderboard → top 3 toppers (bold, extra spacing) → HTML result file (that test only) → tomorrow's plan (pages after 11:00/14:30, full schedule after 18:00). **No paid-batches message anywhere.**
 **Result file:** `out/<LABEL>_<DATE>_results.html` — score table (rank, name, net, correct, incorrect, skipped) + answer key + question-wise view with the correct option ticked and what the player picked. Preview: `SAMPLE-result-EN.html`.
 
 **Verification (re-runnable any time):** `python3 tests/verify_all.py` → **GATE RESULT: GREEN**, fake-clock battery **16/16**
