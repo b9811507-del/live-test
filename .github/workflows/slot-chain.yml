@@ -30,6 +30,17 @@ jobs:
       ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
       MONGO_URI: ${{ secrets.MONGO_URI }}
       IARI_CHAT: ${{ secrets.IARI_CHAT }}
+      # paid batches (last message after every test): payment links/price/chat per batch
+      PAID_LINK_AFO: ${{ secrets.PAID_LINK_AFO }}
+      PAID_LINK_PASHU: ${{ secrets.PAID_LINK_PASHU }}
+      PAID_LINK_CANE: ${{ secrets.PAID_LINK_CANE }}
+      PAID_PRICE_AFO: ${{ secrets.PAID_PRICE_AFO }}
+      PAID_PRICE_PASHU: ${{ secrets.PAID_PRICE_PASHU }}
+      PAID_PRICE_CANE: ${{ secrets.PAID_PRICE_CANE }}
+      PAID_CHAT_AFO: ${{ secrets.PAID_CHAT_AFO }}
+      PAID_CHAT_PASHU: ${{ secrets.PAID_CHAT_PASHU }}
+      PAID_CHAT_CANE: ${{ secrets.PAID_CHAT_CANE }}
+      PAID_VERIFY: ${{ secrets.PAID_VERIFY }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_REPOSITORY: ${{ github.repository }}
     steps:

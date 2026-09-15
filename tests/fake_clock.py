@@ -10,10 +10,12 @@ Run:  python3 tests/fake_clock.py            (prints PASS/FAIL per case + a summ
 """
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -102,42 +104,52 @@ def case1_idle(tmp):
 
 
 def case2_warm(tmp):
-    """2. warm window (49 min to go): announce pinned -> countdown -> 20 polls -> LB -> file -> CTA -> step8."""
+    """2. warm window: announce (2 min before) -> 15s countdown -> 20 polls -> LB -> file -> CTA -> PAID message last."""
     day = "2026-09-16"
-    p, log, st = mk(tmp, day + "T10:11:00+05:30", journal=empty_journal(day))
+    p, log, st = mk(tmp, day + "T10:57:00+05:30", journal=empty_journal(day))
     j = day_of(st, day, "malwa")
-    ann = [t for t in texts(log) if "ek answer, poll auto-close" in t]
+    ann = [t for t in texts(log) if "poll auto-closes" in t]
     lb = [t for t in texts(log) if "LEADERBOARD" in t]
-    cta = [t for t in texts(log) if "Roz ka schedule" in t]
+    cta = [t for t in texts(log) if t.startswith("🌾 Daily schedule")] 
     docs = methods(log, "sendDocument", GROUP)
-    edits = methods(log, "editMessageText", GROUP)
+    edits = [e.get("text") or "" for e in methods(log, "editMessageText", GROUP)]
+    cd_vals = [int(m.group(1)) for t in edits for m in [re.search(r"Starting in (\d+)s", t)] if m]
+    paid_msgs = [t for t in texts(log) if "PAID BATCHES" in t]
+    kb = [e for e in methods(log, "sendMessage", GROUP) if e.get("reply_markup")]
+    hinglish = [t for t in texts(log) if any(w in t for w in ("sawal", "dhanyavaad", "Roz ka", "ko pin", "jawab"))]
+    last_group_msg = [e for e in log if e.get("chat") == GROUP and e["method"] == "sendMessage"][-1]
     pl = polls(log)
     ok = (len(ann) == 1 and len(pl) == 20 and all(e.get("open_period") == 30 for e in pl)
           and all(e["question"].startswith("%d/20." % (i + 1)) for i, e in enumerate(pl))
           and len(pins(log)) == 2 and len(lb) == 1 and len(docs) == 1 and len(cta) == 1
-          and len(edits) >= 1 and int(j.get("step", 0)) == 8
-          and int(day_of(st, day, "iari").get("step", 0)) == 0
-          and int(day_of(st, day, "afo").get("step", 0)) == 0)
-    return ok, ("announce=%d polls=%d open30=%s edits=%d pins=%d lb=%d docs=%d cta=%d malwa.step=%s "
-                "iari/afo=%s/%s" % (len(ann), len(pl), all(e.get("open_period") == 30 for e in pl),
-                                    len(edits), len(pins(log)), len(lb), len(docs), len(cta),
-                                    j.get("step"), day_of(st, day, "iari").get("step"),
-                                    day_of(st, day, "afo").get("step")))
+          and cd_vals and max(cd_vals) == 15 and len(cd_vals) >= 4          # v11.1: single 15s countdown
+          and len(paid_msgs) == 1 and "PAID BATCHES" in (last_group_msg.get("text") or "")  # paid = LAST
+          and kb and len(kb[-1]["reply_markup"]["inline_keyboard"]) >= 4
+          and not hinglish and int(j.get("step", 0)) == 8
+          and int(day_of(st, day, "iari").get("step", 0)) == 0)
+    return ok, ("announce=%d polls=%d countdown_ticks=%s(max %s) pins=%d lb=%d docs=%d cta=%d paid_last=%s "
+                "buttons=%d hinglish=%d malwa.step=%s" % (
+                    len(ann), len(pl), cd_vals, max(cd_vals) if cd_vals else None, len(pins(log)), len(lb),
+                    len(docs), len(cta), "PAID BATCHES" in (last_group_msg.get("text") or ""),
+                    len(kb[-1]["reply_markup"]["inline_keyboard"]) if kb else 0, len(hinglish), j.get("step")))
 
 
 def case3_overlap(tmp):
-    """3. multi-window overlap: malwa late + iari warm in the SAME cycle -> both run, one announce each."""
+    """3. multi-window: malwa (late) runs at 14:00; iari defers (30 min to go) and runs when the chain returns."""
     day = "2026-09-16"
     p, log, st = mk(tmp, day + "T14:00:00+05:30", journal=empty_journal(day))
-    ann = [t for t in texts(log) if "ek answer, poll auto-close" in t]
-    pl = polls(log)
-    ok = (len(ann) == 2 and len(pl) == 20 + 15 and
-          int(day_of(st, day, "malwa").get("step", 0)) == 8 and
-          int(day_of(st, day, "iari").get("step", 0)) == 8 and
-          len([t for t in texts(log) if "IARI BOOK MCQ 2026" in t and "LEADERBOARD" in t]) == 1)
-    return ok, ("announces=%d polls=%d (20 malwa + 15 iari) malwa.step=%s iari.step=%s"
-                % (len(ann), len(pl), day_of(st, day, "malwa").get("step"),
-                   day_of(st, day, "iari").get("step")))
+    ann1 = [t for t in texts(log) if "poll auto-closes" in t]
+    pl1, m1, i1 = polls(log), day_of(st, day, "malwa").get("step"), day_of(st, day, "iari").get("step")
+    json.dump(st, open(os.path.join(tmp, "state.json"), "w"), indent=0, sort_keys=True)
+    if os.path.exists(os.path.join(tmp, "tg.jsonl")):
+        os.remove(os.path.join(tmp, "tg.jsonl"))
+    p2, log2, st2 = run(tmp, ("slotchain",), day + "T14:28:30+05:30")
+    pl2 = polls(log2)
+    ok = (len(ann1) == 1 and len(pl1) == 20 and m1 == 8 and i1 == 0 and "defer" in (p.stdout + p.stderr)
+          and int(day_of(st2, day, "iari").get("step", 0)) == 8 and len(pl2) == 15
+          and any("IARI BOOK MCQ 2026" in t for t in texts(log2)))
+    return ok, ("cycle1: announces=%d polls=%d malwa=%s iari=%s(deferred) | cycle2: iari polls=%d iari.step=%s"
+                % (len(ann1), len(pl1), m1, i1, len(pl2), day_of(st2, day, "iari").get("step")))
 
 
 def case4_missed(tmp):
@@ -204,13 +216,13 @@ def case7_afo_closed(tmp):
 
 
 def case8_error_isolated(tmp):
-    """8. error in one job is isolated: malwa fails, iari still runs to completion."""
+    """8. error in one job is isolated: malwa fails, iari still runs to completion (same cycle)."""
     day = "2026-09-16"
-    p, log, st = mk(tmp, day + "T14:00:00+05:30", journal=empty_journal(day),
+    p, log, st = mk(tmp, day + "T14:29:00+05:30", journal=empty_journal(day),
                     env={"ENGINE_FAKE_FAIL": "malwa"})
     m, i = day_of(st, day, "malwa"), day_of(st, day, "iari")
     ok = (m.get("last_error") and int(m.get("step", 0)) == 0 and int(i.get("step", 0)) == 8
-          and len([t for t in texts(log) if "ek answer, poll auto-close" in t]) == 1
+          and len([t for t in texts(log) if "poll auto-closes" in t]) == 1   # only iari announced
           and p.returncode == 0)
     return ok, "malwa.last_error=%s malwa.step=%s iari.step=%s rc=%d" % (
         bool(m.get("last_error")), m.get("step"), i.get("step"), p.returncode)
@@ -223,13 +235,15 @@ def case9_boundary(tmp):
     i, m = day_of(st, day, "iari"), day_of(st, day, "malwa")   # 14:30: malwa is still inside its late window
     pl = polls(log)
     iari_q = [e for e in pl if e["question"].startswith("1/15.")]
+    cd = [int(mm.group(1)) for e in methods(log, "editMessageText", GROUP)
+          for mm in [re.search(r"Starting in (\d+)s", e.get("text") or "")] if mm]
     ok = (int(i.get("step", 0)) == 8 and int(m.get("step", 0)) == 8 and len(pl) == 35
           and iari_q and (i.get("plan") or {}).get("pages_list") == [2, 4, 5, 7, 8]
-          and not methods(log, "editMessageText", GROUP)
-          and len([t for t in texts(log) if "ek answer, poll auto-close" in t]) == 2)
-    return ok, "iari.step=%s malwa.step=%s polls=%d iari_pages=%s countdown_edits=%d" % (
+          and cd and max(cd) == 15 and max(cd) <= 15
+          and len([t for t in texts(log) if "poll auto-closes" in t]) == 2)
+    return ok, "iari.step=%s malwa.step=%s polls=%d iari_pages=%s countdown_ticks(max %s)" % (
         i.get("step"), m.get("step"), len(pl), (i.get("plan") or {}).get("pages_list"),
-        len(methods(log, "editMessageText", GROUP)))
+        max(cd) if cd else None)
 
 
 def case10_next_day(tmp):
@@ -280,6 +294,66 @@ def case12_booksend(tmp):
         len(docs), len(pin_list), len(idx), len(navs), (st.get("booksend") or {}).get("done"))
 
 
+def case13_desk_enrol(tmp):
+    """13. enrolment: /start buy_afo -> batch detail -> claim -> single-use join link into the student's chat."""
+    day = "2026-09-16"
+    ups = [
+        {"update_id": 501, "message": {"chat": {"id": 9001, "type": "private"},
+                                       "from": {"id": 9001, "first_name": "Ravi"}, "text": "/start buy_afo"}},
+        {"update_id": 502, "callback_query": {"id": "cb1", "from": {"id": 9001, "first_name": "Ravi"},
+                                              "data": "claim:afo",
+                                              "message": {"chat": {"id": 9001, "type": "private"}}}},
+    ]
+    fp = os.path.join(tmp, "ups.json")
+    json.dump(ups, open(fp, "w"))
+    p, log, st = mk(tmp, day + "T12:00:00+05:30", args=("paid", "desk"), journal=empty_journal(day),
+                    env={"ENGINE_FAKE_UPDATES": fp})
+    dms = methods(log, "sendMessage", "9001")
+    links = methods(log, "createChatInviteLink", "-1003687531473")
+    paid_rec = (((st.get("paid") or {}).get("users") or {}).get("9001") or {}).get("batches", {}).get("afo", {})
+    link_dm = [e for e in dms if "t.me/+FAKE" in (e.get("text") or "")]
+    ok = (len(dms) >= 3 and len(links) == 1 and links[0].get("member_limit") == 1
+          and bool(link_dm) and paid_rec.get("link_status") == "issued")
+    return ok, "student DMs=%d invite_links=%d member_limit=%s link_sent=%s entitlement=%s" % (
+        len(dms), len(links), links[0].get("member_limit") if links else None, bool(link_dm),
+        paid_rec.get("link_status"))
+
+
+def case14_desk_invoice(tmp):
+    """14. Telegram Payments path: invoice -> successful_payment -> automatic join link (no manual step)."""
+    day = "2026-09-16"
+    ups = [
+        {"update_id": 601, "callback_query": {"id": "cb9", "from": {"id": 9002, "first_name": "Sunita"},
+                                              "data": "invoice:pashu",
+                                              "message": {"chat": {"id": 9002, "type": "private"}}}},
+        {"update_id": 602, "message": {"chat": {"id": 9002, "type": "private"},
+                                       "from": {"id": 9002, "first_name": "Sunita"},
+                                       "successful_payment": {"invoice_payload": "batch:pashu:9002",
+                                                              "total_amount": 15100, "currency": "INR"}}},
+    ]
+    fp = os.path.join(tmp, "ups2.json")
+    json.dump(ups, open(fp, "w"))
+    p, log, st = mk(tmp, day + "T12:00:00+05:30", args=("paid", "desk"), journal=empty_journal(day),
+                    env={"ENGINE_FAKE_UPDATES": fp, "PAY_PROVIDER_TOKEN": "fake-provider-token",
+                         "PAID_PRICE_PASHU": "₹151"})
+    inv = methods(log, "sendInvoice", "9002")
+    links = methods(log, "createChatInviteLink", "-10033947957354")
+    link_dm = [e for e in methods(log, "sendMessage", "9002") if "t.me/+FAKE" in (e.get("text") or "")]
+    ok = len(inv) == 1 and len(links) == 1 and bool(link_dm)
+    return ok, "invoices=%d invite_links=%d link_sent=%s" % (len(inv), len(links), bool(link_dm))
+
+
+def case15_desk_silent(tmp):
+    """15. SAFETY: the desk never polls while a test is live (no 409 with the exam poller)."""
+    day = "2026-09-16"
+    jr = empty_journal(day)
+    jr["days"][day]["malwa"] = {"step": 2, "qidx": 5, "ans": {}, "names": {}, "lock_ts": time.time()}
+    p, log, st = mk(tmp, day + "T11:05:00+05:30", args=("paid", "desk"), journal=jr)
+    ok = (not methods(log, "getUpdates") and "skipped" in (p.stdout or "") + (p.stderr or ""))
+    return ok, "getUpdates calls=%d skipped=%s" % (len(methods(log, "getUpdates")),
+                                                   "skipped" in (p.stdout or "") + (p.stderr or ""))
+
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -293,6 +367,9 @@ CASES = [
     ("10 afo next-day advance (set_no 4)", case10_next_day),
     ("11 SAFETY: bot not admin -> blocked, silent group", case11_blocked),
     ("12 SAFETY: booksend smoke (manual job)", case12_booksend),
+    ("13 enrolment: claim -> single-use join link in DM", case13_desk_enrol),
+    ("14 enrolment: Telegram invoice -> auto join link", case14_desk_invoice),
+    ("15 SAFETY: desk silent while a test is live", case15_desk_silent),
 ]
 
 

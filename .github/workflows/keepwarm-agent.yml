@@ -25,6 +25,19 @@ jobs:
       CHAT_ID: ${{ secrets.CHAT_ID }}
       ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
       MONGO_URI: ${{ secrets.MONGO_URI }}
+      ADMIN_KEY: ${{ secrets.ADMIN_KEY }}
+      # enrolment desk: same payment config as the chain + Telegram Payments (optional)
+      PAID_LINK_AFO: ${{ secrets.PAID_LINK_AFO }}
+      PAID_LINK_PASHU: ${{ secrets.PAID_LINK_PASHU }}
+      PAID_LINK_CANE: ${{ secrets.PAID_LINK_CANE }}
+      PAID_PRICE_AFO: ${{ secrets.PAID_PRICE_AFO }}
+      PAID_PRICE_PASHU: ${{ secrets.PAID_PRICE_PASHU }}
+      PAID_PRICE_CANE: ${{ secrets.PAID_PRICE_CANE }}
+      PAID_CHAT_AFO: ${{ secrets.PAID_CHAT_AFO }}
+      PAID_CHAT_PASHU: ${{ secrets.PAID_CHAT_PASHU }}
+      PAID_CHAT_CANE: ${{ secrets.PAID_CHAT_CANE }}
+      PAY_PROVIDER_TOKEN: ${{ secrets.PAY_PROVIDER_TOKEN }}
+      PAID_VERIFY: ${{ secrets.PAID_VERIFY }}
       RENDER_URL: ${{ secrets.RENDER_URL }}
       RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
       RENDER_SVC: ${{ secrets.RENDER_SVC }}

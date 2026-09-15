@@ -43,9 +43,11 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   # sibling modules (builder, afo_mongo)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   # siblings: builder, afo_mongo, translator, paid
+import paid                    # paid batches + enrolment + single-use join links (v11.1)
+import translator as tr        # professional English language layer (v11.1)
 
-VERSION = "v11"
+VERSION = "v11.1"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.path.join(ROOT, "state.json")
 OUTDIR = os.path.join(ROOT, "out")
@@ -97,6 +99,10 @@ JOBS = {
             "wrong": -0.5, "n": 50, "last_day": "2026-11-01", "label": "AFO MAINS TEST (NEW PATTERN)"},
 }
 ORDER = ["malwa", "iari", "afo"]
+ALLOWED_UPDATES = ["message", "callback_query", "poll", "poll_answer", "chat_join_request", "my_chat_member"]
+ANNOUNCE_LEAD = int(os.environ.get("ANNOUNCE_LEAD", "120"))   # announce 2 min before start
+COUNTDOWN_SECS = int(os.environ.get("COUNTDOWN_SECS", "15"))  # v11.1: announce -> 15s countdown -> polls
+DEFER_SECS = int(os.environ.get("DEFER_SECS", "240"))         # run earlier than this only re-arms (saves runner minutes)
 WINDOW_BEFORE = 50 * 60          # start allowed from go-50min
 WINDOW_AFTER = 4 * 3600          # after go+4h a missed slot stays missed
 POLL_SECONDS = 30                # open_period + drain window
@@ -167,8 +173,27 @@ def fmt_pair(right, wrong):
 _fake_ids = [1000]
 
 
+_injected = {"served": False}
+
+
 def _fake_updates(params):
-    """Synthetic poll_answer updates for the last poll (two players: one right, one wrong)."""
+    """Updates for the offline battery.
+    ENGINE_FAKE_UPDATES=<json file> injects real update objects once (desk/enrolment tests);
+    otherwise poll_answer updates are synthesised for the last poll (two players: one right, one wrong)."""
+    if os.environ.get("ENGINE_FAKE_UPDATES"):
+        if _injected["served"]:
+            return []
+        _injected["served"] = True
+        try:
+            ups = json.load(open(os.environ["ENGINE_FAKE_UPDATES"], encoding="utf-8"))
+        except Exception:
+            return []
+        off = params.get("offset") or 0
+        try:
+            off = int(off)
+        except Exception:
+            off = 0
+        return [u for u in ups if int(u.get("update_id", 0)) >= max(off, 0)]
     pid = _last_poll.get("id")
     if not pid or params.get("offset") in (None, -1):
         return []
@@ -185,7 +210,9 @@ def _fake_tg(method, params):
     entry = {"t": istnow().isoformat(timespec="seconds"), "method": method,
              "chat": str(params.get("chat_id") or ""), "message_id": params.get("message_id"),
              "text": params.get("text"), "caption": params.get("caption"), "question": params.get("question"),
-             "options": params.get("options"), "open_period": params.get("open_period")}
+             "options": params.get("options"), "open_period": params.get("open_period"),
+             "reply_markup": params.get("reply_markup"), "member_limit": params.get("member_limit"),
+             "payload": params.get("payload"), "data": params.get("data")}
     if method in ("sendMessage", "sendPoll", "sendDocument", "sendPhoto"):
         _fake_ids[0] += 1
         entry["message_id"] = _fake_ids[0]
@@ -198,8 +225,9 @@ def _fake_tg(method, params):
     if method == "getMe":
         return {"id": 8585018636, "is_bot": True, "username": "Arunkatyanquiz_bot", "first_name": "Premium batch"}
     if method == "getChatMember":
-        return {"status": FAKE_MEMBER, "can_pin_messages": FAKE_MEMBER in ("administrator", "creator"),
-                "can_delete_messages": FAKE_MEMBER in ("administrator", "creator"),
+        admin = FAKE_MEMBER in ("administrator", "creator")
+        return {"status": FAKE_MEMBER, "can_pin_messages": admin, "can_delete_messages": admin,
+                "can_invite_users": admin,
                 "user": {"id": 8585018636, "is_bot": True, "username": "Arunkatyanquiz_bot"}}
     if method == "getChat":
         return {"id": int(CHAT), "title": "AGRI QUIZ WORLD", "type": "supergroup",
@@ -210,8 +238,16 @@ def _fake_tg(method, params):
         return {"message_id": _fake_ids[0]}
     if method == "sendPoll":
         return {"message_id": _fake_ids[0], "poll": {"id": _last_poll["id"]}}
+    if method == "createChatInviteLink":
+        _fake_ids[0] += 1
+        return {"invite_link": "https://t.me/+FAKE%06d" % _fake_ids[0], "name": params.get("name"),
+                "member_limit": params.get("member_limit"), "creates_join_request": False}
+    if method == "sendInvoice":
+        _fake_ids[0] += 1
+        return {"message_id": _fake_ids[0]}
     if method in ("editMessageText", "editMessageCaption", "pinChatMessage", "unpinChatMessage",
-                  "deleteMessage", "sendChatAction"):
+                  "deleteMessage", "sendChatAction", "answerCallbackQuery", "editMessageReplyMarkup",
+                  "approveChatJoinRequest", "declineChatJoinRequest", "revokeChatInviteLink"):
         return {"message_id": params.get("message_id"), "ok_": True}
     return {"ok_": True}
 
@@ -740,9 +776,8 @@ def prebuild(job, day=None, st=None):
     if plan is None:
         if why == "series_complete" and not j.get("series_posted"):
             lab = {"malwa": "MALWA BOOK SERIES", "iari": "IARI BOOK MCQ 2026"}.get(job, job.upper())
-            m = tg("sendMessage", chat_id=CHAT, parse_mode="HTML", disable_web_page_preview=True, text=(
-                "🎊 <b>%s COMPLETE</b> — poori series khatam! Sabhi players ko shukriya 🌾\n"
-                "Aaj se ye slot band. Naya series jald hi! 🔔" % esc(lab)))
+            m = tg("sendMessage", chat_id=CHAT, parse_mode="HTML", disable_web_page_preview=True,
+                   text=tr.t("series_complete", label=esc(lab)))
             if m:
                 tg("pinChatMessage", chat_id=CHAT, message_id=m["message_id"])
                 j["series_posted"] = m["message_id"]
@@ -772,37 +807,37 @@ def prebuild(job, day=None, st=None):
 
 # --------------------------------------------------------------------------- exam flow
 def announce_text(job, day, plan):
+    """4-line announce in professional English (locked shape: title / date+time / questions / scoring)."""
     cfg = JOBS[job]
     return "\n".join([
-        "%s <b>%s</b>" % (cfg["emoji"], esc(plan.get("label") or cfg.get("label") or job.upper())),
-        "📅 %s · ⏰ %s" % (day_label(day), cfg["time_label"]),
-        "📝 %s questions · 30s each · ek answer, poll auto-close" % plan["n"],
-        "🏆 +%s right · %s wrong · end me leaderboard + result file 📄"
-        % (fmt_num(cfg["right"]), ("−" + fmt_num(abs(float(cfg["wrong"])))) if cfg["wrong"] < 0
-           else fmt_num(cfg["wrong"])),
+        tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
+        tr.t("ann_when", date=day_label(day), time=cfg["time_label"]),
+        tr.t("ann_body", n=plan["n"]),
+        tr.t("ann_score", right=fmt_num(cfg["right"]),
+             wrong=fmt_num(abs(float(cfg["wrong"]))) if cfg["wrong"] < 0 else fmt_num(cfg["wrong"])),
     ])
 
 
 def countdown_text(job, day, plan, secs):
     cfg = JOBS[job]
     return "\n".join([
-        "%s <b>%s</b>" % (cfg["emoji"], esc(plan.get("label") or cfg.get("label") or job.upper())),
-        "📅 %s · ⏰ %s" % (day_label(day), cfg["time_label"]),
-        "📝 %s questions · 30s each" % plan["n"],
-        "⏳ <b>START in %ds…</b>" % max(0, int(secs)),
+        tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
+        tr.t("ann_when", date=day_label(day), time=cfg["time_label"]),
+        tr.t("ann_body", n=plan["n"]).split(" · ")[0] + " · 30 seconds each",
+        tr.t("cd_line", n=max(0, int(secs))),
     ])
 
 
 def cta_text():
-    return "🌾 Roz ka schedule: 11:00 AM Malwa Book · 2:30 PM IARI Book · 6:00 PM AFO Mains — @agriquizworld"
+    return tr.t("cta")
 
 
 def congrats_text(job, day, plan, rows):
     label = plan.get("label") or job.upper()
-    top = ("\n🥇 Topper: <b>%s</b> — %+.1f" % (esc(rows[0]["name"]), rows[0]["score"])) if rows else ""
-    tail = "" if rows else "\nAbhi koi answer nahi aaya — kal phir milte hain! 👀"
-    return ("🎉 <b>%s complete</b> — %s sawal, sabko dhanyavaad! 🌾%s%s"
-            % (esc(label), plan["n"], top, tail))
+    if rows:
+        return tr.t("congrats", label=esc(label), n=plan["n"], name=esc(rows[0]["name"]),
+                    score="%+.1f" % rows[0]["score"])
+    return tr.t("congrats_nobody", label=esc(label))
 
 
 def _name_of(u):
@@ -811,7 +846,7 @@ def _name_of(u):
 
 def base_offset():
     """Start cursor for the drain. offset=-1 does NOT consume updates (verified), so use it to peek."""
-    r = tg("getUpdates", offset=-1, timeout=0)
+    r = tg("getUpdates", offset=-1, timeout=0, allowed_updates=ALLOWED_UPDATES)
     try:
         if isinstance(r, list) and r:
             return int(r[-1]["update_id"]) + 1
@@ -829,7 +864,7 @@ def drain(off, poll_id, seconds, answers_q, names, hard_deadline):
     while True:
         if not FAKE and (time.time() >= end or time.time() >= hard_deadline):
             break
-        r = tg("getUpdates", offset=off, timeout=1)
+        r = tg("getUpdates", offset=off, timeout=1, allowed_updates=ALLOWED_UPDATES)
         res = r if isinstance(r, list) else (r or {}).get("result")
         for u in res or []:
             off = max(off, int(u.get("update_id", 0)) + 1)
@@ -875,14 +910,15 @@ def score_rows(day, job, plan, ans, names):
 def leaderboard_text(day, job, plan, rows, part=0):
     cfg = JOBS[job]
     label = plan.get("label") or job.upper()
-    head = ("🏆 <b>%s — LEADERBOARD</b> (%dQ · %s)" % (esc(label), plan["n"], fmt_pair(cfg["right"], cfg["wrong"]))
-            if part == 0 else "🏆 <b>%s</b> — leaderboard contd…" % esc(label))
+    head = (tr.t("lb_head", label=esc(label), n=plan["n"], right=fmt_num(cfg["right"]),
+                 wrong=fmt_num(abs(float(cfg["wrong"]))))
+            if part == 0 else tr.t("lb_head_contd", label=esc(label)))
     if not rows:
-        return head + "\n\nAbhi koi score nahi — kal phir milte hain! 👀"
+        return head + "\n\n" + tr.t("lb_empty")
     out = [head, ""]
     for r in rows:
         medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(r["rank"]) or ("#%d." % r["rank"])
-        out.append("%s <a href=\"tg://user?id=%s\">%s</a> — <b>%+.1f</b> (%d✓ %d✗)"
+        out.append("%s <a href=\"tg://user?id=%s\">%s</a> — <b>%+.1f</b> · %d correct · %d incorrect"
                    % (medal, esc(r["uid"]), esc(r["name"]), r["score"], r["right"], r["wrong"]))
     return "\n".join(out)
 
@@ -892,7 +928,12 @@ def result_data(day, job, plan, rows, ans):
     keys = []
     for i, q in enumerate(plan["questions"]):
         picked = sorted({int(v) for v in ((ans.get(str(i)) or {})).values() if v is not None})
-        keys.append({"n": i + 1, "q": q["q"], "opts": q["o"], "ans_idx": int(q["key"]),
+        qt = q["q"]
+        tp = (q.get("topic") or "").strip()
+        if tp:
+            tp = tr.translate_safe(tp) if tr.needs_translation(tp) else " ".join(tp.split())
+            qt = "[%s] %s" % (tp[:40], qt)
+        keys.append({"n": i + 1, "q": qt, "opts": q["o"], "ans_idx": int(q["key"]),
                      "ans": "%s. %s" % (chr(65 + int(q["key"])), q["o"][int(q["key"])]),
                      "picked": picked})
     return {"title": "%s · DAILY TEST RESULT" % (plan.get("label") or job.upper()),
@@ -902,7 +943,7 @@ def result_data(day, job, plan, rows, ans):
             if cfg["wrong"] < 0 else fmt_num(cfg["wrong"]),
             "pages": plan.get("pages") or "", "batch": ("Batch %s" % plan["batch"]) if plan.get("batch") else "",
             "rows": rows, "key": keys,
-            "note": ("Source: %s · truncation applied on %d option(s) · skipped rows: %d"
+            "note": ("Source: %s · %d option(s) shortened to fit the platform limit · %d row(s) skipped"
                      % (plan.get("src"), plan.get("trunc", 0), len(plan.get("skip_rows") or []))),
             "book": plan.get("label") or job.upper(), "brand": "@Arunkatyanquiz_bot", "author": "AGRI QUIZ WORLD"}
 
@@ -929,46 +970,54 @@ def run_job(job, day=None, st=None, force=False):
     jsave(st, "%s lock" % job)
     log("run_job %s %s n=%d step=%s qidx=%s" % (job, day, plan["n"], j.get("step"), j.get("qidx")))
 
-    # --- step 1: announce once (pinned)
-    if int(j.get("step", 0)) < 1:
-        m = tg("sendMessage", chat_id=chat, text=announce_text(job, day, plan), parse_mode="HTML",
-               disable_web_page_preview=True)
-        if not m:
-            raise EngineError("announce failed for %s (check bot admin rights)" % job)
-        j["msg_ann"] = m["message_id"]
-        j["announced_at"] = istnow().isoformat(timespec="seconds")
-        j["step"] = 1
-        p = tg("pinChatMessage", chat_id=chat, message_id=m["message_id"])
-        j["pinned_ann"] = bool(p)
-        if not p:
-            dm_admin("⚠️ %s announce pin nahi ho paya (bot ko pin rights do)." % job, "pin:" + job, 6 * 3600)
-        jsave(st, "%s announce #%s" % (job, j["msg_ann"]))
-        log("announce %s msg=%s pinned=%s" % (job, j["msg_ann"], bool(p)))
-
-    # --- countdown to go (only when polls have not started and we are early)
+    SELF = sys.modules[__name__]
+    # --- step 1: announce (pinned) ANNOUNCE_LEAD before start, then a COUNTDOWN_SECS countdown, then polls
+    go = go_dt(day, job)
     if int(j.get("step", 0)) < 2:
-        go = go_dt(day, job)
-        last_edit, last_push = 0.0, time.time()
-        while True:
-            d2g = (go - istnow()).total_seconds()
-            if d2g <= 0:
-                break
-            if time.time() - t_start > CD_MAX:
-                log("countdown %s: budget out, starting now" % job)
-                break
-            if j.get("msg_ann") and d2g <= 61 and (time.time() - last_edit) >= 10:
+        announce_at = go - dt.timedelta(seconds=ANNOUNCE_LEAD)
+        # wait silently (heartbeating) until the announce moment
+        while istnow() < announce_at and time.time() - t_start < CD_MAX:
+            j["lock_ts"] = time.time()
+            j["locked_by"] = RUN_ID
+            jsave(st, "%s pre-announce heartbeat" % job)
+            sleep(min((announce_at - istnow()).total_seconds(), 30))
+        if int(j.get("step", 0)) < 1:
+            m = tg("sendMessage", chat_id=chat, text=announce_text(job, day, plan), parse_mode="HTML",
+                   disable_web_page_preview=True)
+            if not m:
+                raise EngineError("announce failed for %s (check bot admin rights)" % job)
+            j["msg_ann"] = m["message_id"]
+            j["announced_at"] = istnow().isoformat(timespec="seconds")
+            j["step"] = 1
+            p = tg("pinChatMessage", chat_id=chat, message_id=m["message_id"])
+            j["pinned_ann"] = bool(p)
+            if not p:
+                dm_admin(tr.t("adm_pin", job=job.upper()), "pin:" + job, 6 * 3600)
+            jsave(st, "%s announce #%s" % (job, j["msg_ann"]))
+            log("announce %s msg=%s pinned=%s" % (job, j["msg_ann"], bool(p)))
+        # wait until the exact start time (zero group traffic in between)
+        while istnow() < go and time.time() - t_start < CD_MAX + ANNOUNCE_LEAD:
+            j["lock_ts"] = time.time()
+            j["locked_by"] = RUN_ID
+            jsave(st, "%s countdown heartbeat" % job)
+            sleep(min((go - istnow()).total_seconds(), 30))
+        # v11.1: a single 15-second countdown, then the first poll
+        anchor = max(go, istnow() + dt.timedelta(seconds=COUNTDOWN_SECS))
+        ticks = sorted({x for x in (COUNTDOWN_SECS, 10, 5, 4, 3, 2, 1) if 0 < x <= COUNTDOWN_SECS}, reverse=True)
+        for val in ticks + [0]:
+            target = anchor - dt.timedelta(seconds=val)
+            if istnow() < target:
+                sleep((target - istnow()).total_seconds())
+            if j.get("msg_ann"):
                 tg("editMessageText", chat_id=chat, message_id=j["msg_ann"], parse_mode="HTML",
-                   text=countdown_text(job, day, plan, int(d2g)))
-                last_edit = time.time()
-            if time.time() - last_push > 100:
+                   text=countdown_text(job, day, plan, val))
+                j["cd"] = val
                 j["lock_ts"] = time.time()
-                j["locked_by"] = RUN_ID
-                jsave(st, "%s heartbeat" % job)
-                last_push = time.time()
-            sleep(min(d2g, 8 if d2g > 61 else 2))
+                jsave(st, "%s countdown %ds" % (job, val))
         j["step"] = 2
         j["started_at"] = istnow().isoformat(timespec="seconds")
         jsave(st, "%s polls start" % job)
+        log("countdown %ss done -> polls start" % COUNTDOWN_SECS)
 
     # --- polls (one open at a time, live scoring, journal every 5Q / 100s)
     N = plan["n"]
@@ -991,7 +1040,13 @@ def run_job(job, day=None, st=None, force=False):
         j["lock_ts"] = time.time()
         j["locked_by"] = RUN_ID
         jsave(st, "%s poll %d claim" % (job, i + 1))
-        poll = tg("sendPoll", chat_id=chat, question="%d/%d. %s" % (i + 1, N, esc(q["q"])), options=q["o"],
+        q_body = esc(q["q"])
+        topic = (q.get("topic") or "").strip()
+        if topic:
+            topic = tr.translate_safe(topic) if tr.needs_translation(topic) else " ".join(topic.split())
+            if topic and len(q_body) + len(topic) + 12 <= 292:
+                q_body = "[%s] %s" % (esc(topic[:40]), q_body)      # educational topic tag on every poll
+        poll = tg("sendPoll", chat_id=chat, question="%d/%d. %s" % (i + 1, N, q_body), options=q["o"],
                   type="regular", is_anonymous=False, allows_multiple_answers=False,
                   open_period=POLL_SECONDS, parse_mode="HTML")
         pid = ((poll or {}).get("poll") or {}).get("id")
@@ -1015,6 +1070,8 @@ def run_job(job, day=None, st=None, force=False):
             last_push = time.time()
     j["step"] = max(int(j.get("step", 0)), 3)
     j["polled"] = int(j.get("qidx", 0))
+    j["last_off"] = off
+    st.setdefault("desk", {})["offset"] = max(int((st.get("desk") or {}).get("offset") or 0), int(off))
     jsave(st, "%s polls done" % job)
 
     # --- leaderboard (48 rows/msg)
@@ -1044,8 +1101,8 @@ def run_job(job, day=None, st=None, force=False):
         path = os.path.join(OUTDIR, "%s_%s_results.html" % (slug, day))
         builder.render_html(result_data(day, job, plan, rows, ans), 0, plan.get("label") or job.upper(),
                             "AGRI QUIZ WORLD", "@Arunkatyanquiz_bot", LB_ROWS, True, path)
-        doc = tg_file(path, chat_id=chat, caption="📄 %s — %s · %dQ scores + answer key"
-                      % (plan.get("label") or job.upper(), day_label(day), plan["n"]))
+        doc = tg_file(path, chat_id=chat, caption=tr.t("rf_caption", label=plan.get("label") or job.upper(),
+                                                        date=day_label(day), n=plan["n"]))
         if doc:
             j["file_sent"] = os.path.basename(path)
             j["file_msg"] = doc.get("message_id")
@@ -1056,6 +1113,12 @@ def run_job(job, day=None, st=None, force=False):
         c = tg("sendMessage", chat_id=chat, text=cta_text(), parse_mode="HTML", disable_web_page_preview=True)
         if c:
             j["cta_sent"] = c["message_id"]
+    # --- v11.1: the LAST message of every test is the paid-batches showcase (payment links in buttons)
+    if not j.get("paid_msg"):
+        try:
+            j["paid_msg"] = paid.post_after_test(SELF, chat, job=job, day=day)
+        except Exception as e:
+            log("paid message failed:", str(e)[:120])
     j["step"] = 8
     j["done_at"] = istnow().isoformat(timespec="seconds")
     j["elapsed_s"] = int(time.time() - t_start)
@@ -1144,18 +1207,20 @@ def cycle_job(st, day, job):
                         log("mongo: %s released back to ready (unused)" % day)
                 except Exception as e:
                     log("mongo release failed:", str(e)[:80])
-            dm_admin("⚠️ %s slot %s IST miss ho gaya (go+4h cross) — seal kar diya, retro-fire nahi hoga."
-                     % (job.upper(), JOBS[job]["time_label"]), "missed:" + job, 6 * 3600)
+            dm_admin(tr.t("adm_missed", job=job.upper(), time=JOBS[job]["time_label"]), "missed:" + job, 6 * 3600)
         return "missed"
     if ph == "idle":
         return "wait"
+    if ph == "warm" and (go_dt(day, job) - istnow()).total_seconds() > DEFER_SECS:
+        log("cycle %s: %.0fs to start -> defer (this run only re-arms)" % (
+            job, (go_dt(day, job) - istnow()).total_seconds()))
+        return "defer"
     # in window: rights gate first — never announce if the bot cannot post
     ok, can_pin, why = can_post(CHAT)
     if not ok:
         j["blocked"] = {"reason": why, "ts": istnow().isoformat(timespec="seconds")}
         jsave(st, "%s blocked (no rights)" % job)
-        dm_admin("⛔ %s start nahi ho paya: %s\nFix: @agriquizworld → Administrators → @Arunkatyanquiz_bot "
-                 "ko Post+Pin rights do." % (job.upper(), why), "blocked:" + job, 1800)
+        dm_admin(tr.t("adm_blocked", job=job.upper(), why=why), "blocked:" + job, 1800)
         return "blocked"
     if not j.get("plan"):
         prebuild(job, day, st)
@@ -1183,7 +1248,7 @@ def slotchain():
                 jsave(st, "%s error" % job)
             except Exception:
                 pass
-            dm_admin("❗️%s cycle error: %s" % (job.upper(), str(e)[:200]), "error:" + job, 3600)
+            dm_admin(tr.t("adm_error", job=job.upper(), msg=esc(str(e)[:200])), "error:" + job, 3600)
     sync_afo18(st, day)
     jsave(st, "cycle %s" % ",".join("%s=%s" % (k, v) for k, v in results.items()))
     log("cycle done:", results)
@@ -1269,8 +1334,7 @@ def guard():
     log("guard: no live chain, last run %.1f min ago, actionable=%s" % (stale_min, todo))
     if todo and stale_min > 25:
         rearm(force=True)
-        dm_admin("🛡 slot-guard: slot-chain %.0f min se stale tha -> revive kar diya (%s)."
-                 % (stale_min, ",".join(todo)), "guard", 3600)
+        dm_admin(tr.t("adm_guard", mins="%.0f" % stale_min, jobs=", ".join(todo)), "guard", 3600)
         return "revived"
     if todo:
         rearm(force=True)
@@ -1305,8 +1369,21 @@ def agent():
             log("agent: supply audit %s" % {k: rep.get(k) for k in ("checked", "missing", "bad", "next_set_no")})
         except Exception as e:
             issues.append("supply audit failed: %s" % str(e)[:100])
+    # v11.1 front desk: student DMs, payments, join requests (never during a live test -> no 409)
+    desk = {}
+    try:
+        SELF = sys.modules[__name__]
+        desk = paid.desk_pass(SELF)
+        fixed = paid.pending_links(SELF)
+        if fixed:
+            log("desk: %d pending join link(s) issued" % fixed)
+    except Exception as e:
+        issues.append("desk pass failed: %s" % str(e)[:120])
+        log("desk pass failed:", str(e)[:140])
+    st = jload(force=True)
     st["agent_last"] = istnow().isoformat(timespec="seconds")
     st["agent_issues"] = issues[-10:]
+    st["desk_last"] = desk
     jsave(st, "agent pass")
     if issues:
         log("agent issues:", " | ".join(issues[-5:]))
@@ -1368,6 +1445,15 @@ def ready():
     ok, can_pin, why = can_post(CHAT)
     b = tg("getMe") or {}
     print("GATE0 chat=%s bot=@%s can_post=%s can_pin=%s reason=%s" % (CHAT, b.get("username"), ok, can_pin, why))
+    SELF = sys.modules[__name__]
+    bad = 0
+    for bt in paid.batches():
+        iok, status = paid.invite_ok(SELF, bt["chat"])
+        if not iok:
+            bad += 1
+        print("  batch %-6s chat=%s invite_rights=%-5s (bot status=%s)" % (bt["key"], bt["chat"], iok, status))
+    if bad:
+        print("  NOTE: %d batch group(s) need @Arunkatyanquiz_bot as admin with the Invite Users right" % bad)
     return 0 if ok else 3
 
 
@@ -1481,6 +1567,25 @@ def main(argv):
         keepwarm()
     elif cmd == "supply":
         supply()
+    elif cmd == "translate":
+        txt = " ".join(args)
+        print("in :", txt)
+        print("out:", tr.translate(txt))
+        print("stats:", tr.stats())
+    elif cmd == "paid":
+        sub = args[0] if args else "desk"
+        SELF = sys.modules[__name__]
+        if sub == "post":
+            print("posted message id:", paid.post_after_test(SELF, args[1] if len(args) > 1 else CHAT))
+        elif sub == "desk":
+            print(json.dumps(paid.desk_pass(SELF), indent=1, default=str))
+        elif sub == "pending":
+            print("pending links issued:", paid.pending_links(SELF))
+        elif sub == "text":
+            print(paid.group_text())
+        elif sub == "stats":
+            st = jload(force=True)
+            print(json.dumps(st.get("paid", {}), indent=1, default=str)[:2000])
     elif cmd == "booksend":
         booksend(args[0], args[1], args[2], args[3] if len(args) > 3 else None)
     else:
