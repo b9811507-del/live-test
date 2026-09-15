@@ -109,6 +109,10 @@ def case2_warm(tmp):
     p, log, st = mk(tmp, day + "T10:57:00+05:30", journal=empty_journal(day))
     j = day_of(st, day, "malwa")
     ann = [t for t in texts(log) if "poll auto-closes" in t]
+    pin_calls = pins(log)
+    unpins = methods(log, "unpinChatMessage", GROUP)
+    tmr = [t for t in texts(log) if t.startswith("📖 Tomorrow")]
+    ann_id = day_of(st, day, "malwa").get("msg_ann")
     lb = [t for t in texts(log) if "LEADERBOARD" in t]
     cta = [t for t in texts(log) if t.startswith("🌾 Daily schedule")] 
     docs = methods(log, "sendDocument", GROUP)
@@ -121,16 +125,21 @@ def case2_warm(tmp):
     pl = polls(log)
     ok = (len(ann) == 1 and len(pl) == 20 and all(e.get("open_period") == 30 for e in pl)
           and all(e["question"].startswith("%d/20." % (i + 1)) for i, e in enumerate(pl))
-          and len(pins(log)) == 2 and len(lb) == 1 and len(docs) == 1 and len(cta) == 1
+          and len(pin_calls) == 1 and pin_calls[0]["message_id"] == ann_id          # announce is the ONLY pin
+          and "Book pages" in ann[0] and len(tmr) == 1 and "Tomorrow" in tmr[0]      # pages line + tomorrow note
+          and lb and texts(log).index(ann[0]) < texts(log).index(lb[0]) < texts(log).index(tmr[0])
+          and len(lb) == 1 and len(docs) == 1 and len(cta) == 1
           and cd_vals and max(cd_vals) == 15 and len(cd_vals) >= 4          # v11.1: single 15s countdown
           and len(paid_msgs) == 1 and "PAID BATCHES" in (last_group_msg.get("text") or "")  # paid = LAST
           and kb and len(kb[-1]["reply_markup"]["inline_keyboard"]) >= 4
           and not hinglish and int(j.get("step", 0)) == 8
           and int(day_of(st, day, "iari").get("step", 0)) == 0)
-    return ok, ("announce=%d polls=%d countdown_ticks=%s(max %s) pins=%d lb=%d docs=%d cta=%d paid_last=%s "
-                "buttons=%d hinglish=%d malwa.step=%s" % (
-                    len(ann), len(pl), cd_vals, max(cd_vals) if cd_vals else None, len(pins(log)), len(lb),
-                    len(docs), len(cta), "PAID BATCHES" in (last_group_msg.get("text") or ""),
+    return ok, ("announce=%d polls=%d ticks=%s pins=%d(only announce=%s) unpins=%d lb=%d tomorrow=%r docs=%d "
+                "cta=%d paid_last=%s buttons=%d hinglish=%d step=%s" % (
+                    len(ann), len(pl), cd_vals, len(pin_calls),
+                    bool(pin_calls) and pin_calls[0]["message_id"] == ann_id, len(unpins), len(lb),
+                    (tmr[0][:42] if tmr else None), len(docs), len(cta),
+                    "PAID BATCHES" in (last_group_msg.get("text") or ""),
                     len(kb[-1]["reply_markup"]["inline_keyboard"]) if kb else 0, len(hinglish), j.get("step")))
 
 
@@ -237,13 +246,24 @@ def case9_boundary(tmp):
     iari_q = [e for e in pl if e["question"].startswith("1/15.")]
     cd = [int(mm.group(1)) for e in methods(log, "editMessageText", GROUP)
           for mm in [re.search(r"Starting in (\d+)s", e.get("text") or "")] if mm]
-    ok = (int(i.get("step", 0)) == 8 and int(m.get("step", 0)) == 8 and len(pl) == 35
+    iann = [t for t in texts(log) if "IARI BOOK MCQ 2026" in t and "poll auto-closes" in t]
+    tmr = [t for t in texts(log) if t.startswith("📖 Tomorrow")]
+    pin_calls = pins(log)
+    unp = methods(log, "unpinChatMessage", GROUP)
+    # malwa is still in its late window at 14:30, so malwa + iari both run in this cycle; the newer
+    # announce (iari) must end up as the ONLY pinned message -> malwa's announce gets unpinned.
+    ok = (int(i.get("step", 0)) == 8 and len(pin_calls) == 2
+          and pin_calls[-1]["message_id"] == i.get("msg_ann")
+          and [x["message_id"] for x in unp] == [m.get("msg_ann")]
+          and len(iann) == 1 and "Book pages: 2, 4, 5, 7, 8" in iann[0]      # iari pages listed exactly
+          and len(tmr) == 2 and any("9, 10" in t for t in tmr)              # iari tomorrow = pages 9, 10
+          and int(m.get("step", 0)) == 8 and len(pl) == 35
           and iari_q and (i.get("plan") or {}).get("pages_list") == [2, 4, 5, 7, 8]
           and cd and max(cd) == 15 and max(cd) <= 15
           and len([t for t in texts(log) if "poll auto-closes" in t]) == 2)
-    return ok, "iari.step=%s malwa.step=%s polls=%d iari_pages=%s countdown_ticks(max %s)" % (
+    return ok, "iari.step=%s malwa.step=%s polls=%d iari_pages=%s pins=%s unpinned=%s tomorrow=%d ticks(max %s)" % (
         i.get("step"), m.get("step"), len(pl), (i.get("plan") or {}).get("pages_list"),
-        max(cd) if cd else None)
+        [x["message_id"] for x in pin_calls], [x["message_id"] for x in unp], len(tmr), max(cd) if cd else None)
 
 
 def case10_next_day(tmp):
@@ -256,13 +276,15 @@ def case10_next_day(tmp):
     bank = json.load(open(os.path.join(tmp, "tests", "fixtures", "afo_bank.json"), encoding="utf-8"))
     used = {d["date"]: d["status"] for d in bank["afo_sets"]}
     optlens = [len(o) for e in pl for o in (e.get("options") or [])]
+    aann = [t for t in texts(log) if "AFO MAINS TEST" in t and "poll auto-closes" in t]
+    a_pins = pins(log)
     ok = (int(a.get("step", 0)) == 8 and (a.get("plan") or {}).get("set_no") == 4 and len(pl) == 50
           and pl[0]["question"].startswith("1/50.") and "set 4" in pl[0]["question"]
           and optlens and max(optlens) <= 100 and (a.get("plan") or {}).get("trunc", 0) >= 1
           and used.get("2026-09-16") == "used" and used.get("2026-09-15") == "ready")
-    return ok, "plan.set_no=%s polls=%d trunc=%s max_opt_len=%d bank_status=%s" % (
+    return ok, "plan.set_no=%s polls=%d trunc=%s max_opt_len=%d pins=%d bank_status=%s" % (
         (a.get("plan") or {}).get("set_no"), len(pl), (a.get("plan") or {}).get("trunc"),
-        max(optlens) if optlens else -1, used)
+        max(optlens) if optlens else -1, len(a_pins), used)
 
 
 def case11_blocked(tmp):
@@ -354,6 +376,22 @@ def case15_desk_silent(tmp):
                                                    "skipped" in (p.stdout or "") + (p.stderr or ""))
 
 
+def case16_single_pin(tmp):
+    """16. new announce unpins the older one -> exactly ONE pinned message (the current announce)."""
+    day = "2026-09-16"
+    jr = empty_journal(day)
+    jr["days"][day]["malwa"] = {"step": 8, "qidx": 20, "msg_ann": 777, "lb_sent": True,
+                                "congrats_sent": 778, "file_sent": "x", "cta_sent": 779}
+    p, log, st = mk(tmp, day + "T14:29:00+05:30", journal=jr)          # iari announces
+    i = day_of(st, day, "iari")
+    unp = methods(log, "unpinChatMessage", GROUP)
+    pinz = pins(log)
+    ok = (len(pinz) == 1 and pinz[0]["message_id"] == i.get("msg_ann")
+          and len(unp) == 1 and unp[0]["message_id"] == 777 and i.get("unpinned") == [777])
+    return ok, "pins=%s unpinned=%s journal.unpinned=%s" % (
+        [x["message_id"] for x in pinz], [x["message_id"] for x in unp], i.get("unpinned"))
+
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -370,6 +408,7 @@ CASES = [
     ("13 enrolment: claim -> single-use join link in DM", case13_desk_enrol),
     ("14 enrolment: Telegram invoice -> auto join link", case14_desk_invoice),
     ("15 SAFETY: desk silent while a test is live", case15_desk_silent),
+    ("16 single pin: new announce unpins the older one", case16_single_pin),
 ]
 
 

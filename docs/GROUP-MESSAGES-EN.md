@@ -3,10 +3,11 @@ _Rendered by the real engine functions (offline Telegram). English only — no H
 
 ## A. MALWA BOOK VOL 1 — 11:00 AM (20 Q)
 
-### 1) Announce (pinned, 2 min before start)
+### 1) Announce (pinned — the ONLY pinned message)
 ```
 ☀️ MALWA BOOK VOL 1
 📅 16 September 2026 · ⏰ 11:00 AM IST
+📖 Book pages 1-6
 📝 20 questions · 30 seconds each · one answer, poll auto-closes
 🏆 +1 correct · −0.25 incorrect · leaderboard & result file at the end 📄
 ```
@@ -16,6 +17,7 @@ _Rendered by the real engine functions (offline Telegram). English only — no H
 ```
 ☀️ MALWA BOOK VOL 1
 📅 16 September 2026 · ⏰ 11:00 AM IST
+📖 Book pages 1-6
 📝 20 questions · 30 seconds each
 ⏳ <b>Starting in 15s…</b>
 ```
@@ -29,11 +31,11 @@ Starting in 15s…  ·  Starting in 10s…  ·  Starting in 5s…  ·  Starting 
 
 ### 4) Poll #1 (topic tag + 30s auto-close)
 ```
-1/20. [General Agriculture] Q21 General Agriculture me kya sahi hai? (fixture)
-   A) Option A for 21
-   B) Option B for 21
-   C) Option C for 21
-   D) Option D for 21
+1/20. [General Agriculture] The word "agriculture" is derived from the combination of which Latin words?
+   A) Ager + Cultura
+   B) Agro + Cultus
+   C) Agric + Utura
+   D) Agro + Cultura
    E) None of these
 ```
 
@@ -46,6 +48,12 @@ Starting in 15s…  ·  Starting in 10s…  ·  Starting in 5s…  ·  Starting 
 🥈 <a href="tg://user?id=5391000002">Sunita Devi</a> — <b>+16.5</b> · 18 correct · 6 incorrect
 🥉 <a href="tg://user?id=5391000003">Mohan Lal</a> — <b>+14.2</b> · 15 correct · 3 incorrect
 #12. <a href="tg://user?id=5391000012">Pooja Sharma</a> — <b>+6.0</b> · 7 correct · 4 incorrect
+```
+
+
+### 5b) RIGHT AFTER the leaderboard — tomorrow's pages note (short)
+```
+📖 Tomorrow (17 September 2026): <b>MALWA BOOK VOL 1</b> — book pages 5-14
 ```
 
 
@@ -82,31 +90,38 @@ Payment is verified instantly and your personal one-time join link arrives in th
  · 📋 All batches & enrolment
 ```
 
-## B. IARI BOOK MCQ 2026 — 2:30 PM (15 Q, pages Pages 2-8)
+## B. IARI BOOK MCQ 2026 — 2:30 PM (56 Q, pages Pages 2-8)
 
-### 1) Announce (pinned)
+### 1) Announce (pinned — the ONLY pinned message)
 ```
 🌤 IARI BOOK MCQ 2026
 📅 16 September 2026 · ⏰ 2:30 PM IST
-📝 15 questions · 30 seconds each · one answer, poll auto-closes
+📖 Book pages: 2, 4, 5, 7, 8
+📝 56 questions · 30 seconds each · one answer, poll auto-closes
 🏆 +1 correct · −0.25 incorrect · leaderboard & result file at the end 📄
 ```
 
 
 ### 2) Poll #1
 ```
-1/15. [Agronomy] Q1 Agronomy me kya sahi hai? (fixture)
-   A) Option A for 1
-   B) Option B for 1
-   C) Option C for 1
-   D) Option D for 1
+1/56. [Agronomy] What is the botanical name of rice?
+   A) Oryza sativa
+   B) Zea mays
+   C) Triticum aestivum
+   D) Sorghum bicolor
    E) None of these
 ```
 
 
 ### 3) Leaderboard header
 ```
-🏆 <b>IARI BOOK MCQ 2026 — LEADERBOARD</b> (15 questions · +1 / −0.25)
+🏆 <b>IARI BOOK MCQ 2026 — LEADERBOARD</b> (56 questions · +1 / −0.25)
+```
+
+
+### 4) After the leaderboard — tomorrow's pages note
+```
+📖 Tomorrow (17 September 2026): <b>IARI BOOK MCQ 2026</b> — book pages 9, 10, 11, 13, 14
 ```
 
 ## C. AFO MAINS TEST (NEW PATTERN) — 6:00 PM (50 Q, set_no 4)
@@ -171,7 +186,24 @@ Your join link will be sent to this chat shortly by the batch team.
 • <b>AFO MAINS BATCH 2026</b> — joined 2026-09-16
 ```
 
-## E. ADMIN DMs (private, English)
+## E. PIN POLICY (v11.2)
+
+### what is pinned in @agriquizworld
+```
+1) the announce of the current test  -> PINNED
+2) countdown (same message, edited)  -> not re-pinned
+3) leaderboard / tomorrow note       -> not pinned
+4) congratulations                   -> NOT pinned (was pinned in v11.1)
+5) result file (document)            -> not pinned
+6) daily schedule line               -> not pinned
+7) paid batches                      -> not pinned
+
+When the next test announces, the previous announce is unpinned automatically, so the group
+always has exactly ONE pinned message (the live/current announce). Stale pins from earlier
+runs that this engine posted (e.g. the cancelled 14-Sep announce 29092) are unpinned too.
+```
+
+## F. ADMIN DMs (private, English)
 
 ### slot missed
 ```

@@ -67,7 +67,7 @@ def needs_translation(text):
                      " pashu", " kisan", " kheti", " krishi", " beej", " khad")
     low = " " + t.lower() + " "
     hits = sum(1 for m in hindi_markers if m in low)
-    return hits >= 2
+    return hits >= 3          # English exam text must never be rewritten by a false positive
 
 
 # --------------------------------------------------------------------------- cache
@@ -203,6 +203,9 @@ T = {
     "ann_title": "%(emoji)s %(label)s",
     "ann_when": "📅 %(date)s · ⏰ %(time)s",
     "ann_body": "📝 %(n)s questions · 30 seconds each · one answer, poll auto-closes",
+    "ann_pages": "📖 Book pages: %(pages)s",
+    "ann_pages_range": "📖 %(pages)s",
+    "tomorrow_note": "📖 Tomorrow (%(date)s): <b>%(label)s</b> — book pages %(pages)s",
     "ann_score": "🏆 +%(right)s correct · −%(wrong)s incorrect · leaderboard & result file at the end 📄",
     "cd_line": "⏳ <b>Starting in %(n)ds…</b>",
     "cd_go": "⏳ <b>Starting now — good luck!</b>",

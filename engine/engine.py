@@ -779,7 +779,7 @@ def prebuild(job, day=None, st=None):
             m = tg("sendMessage", chat_id=CHAT, parse_mode="HTML", disable_web_page_preview=True,
                    text=tr.t("series_complete", label=esc(lab)))
             if m:
-                tg("pinChatMessage", chat_id=CHAT, message_id=m["message_id"])
+                # v11.2: not pinned (only the announce is pinned)
                 j["series_posted"] = m["message_id"]
         j["step"] = 8
         j["closed"] = why or "no_plan"
@@ -806,26 +806,112 @@ def prebuild(job, day=None, st=None):
 
 
 # --------------------------------------------------------------------------- exam flow
+def pages_sorted(plist):
+    """Display order: ascending, de-duplicated (the sheet's row order is not numeric page order)."""
+    out, seen = [], set()
+    for p in plist or []:
+        try:
+            v = int(p)
+        except Exception:
+            continue
+        if v not in seen:
+            seen.add(v)
+            out.append(v)
+    return sorted(out)
+
+
+def pages_text(job, plan):
+    """Page numbers for the announce (v11.2): iari lists the exact pages, malwa the covered range."""
+    if job == "iari" and plan.get("pages_list"):
+        return tr.t("ann_pages", pages=", ".join(str(p) for p in pages_sorted(plan["pages_list"])))
+    if job in ("malwa", "iari") and plan.get("pages"):
+        return tr.t("ann_pages_range", pages=str(plan["pages"]).replace("Book pages", "Book pages"))
+    return ""
+
+
 def announce_text(job, day, plan):
-    """4-line announce in professional English (locked shape: title / date+time / questions / scoring)."""
+    """Announce in professional English: title / date+time / pages (malwa+iari) / questions / scoring."""
     cfg = JOBS[job]
-    return "\n".join([
-        tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
-        tr.t("ann_when", date=day_label(day), time=cfg["time_label"]),
-        tr.t("ann_body", n=plan["n"]),
-        tr.t("ann_score", right=fmt_num(cfg["right"]),
-             wrong=fmt_num(abs(float(cfg["wrong"]))) if cfg["wrong"] < 0 else fmt_num(cfg["wrong"])),
-    ])
+    lines = [tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
+             tr.t("ann_when", date=day_label(day), time=cfg["time_label"])]
+    pg = pages_text(job, plan)
+    if pg:
+        lines.append(pg)
+    lines += [tr.t("ann_body", n=plan["n"]),
+              tr.t("ann_score", right=fmt_num(cfg["right"]),
+                   wrong=fmt_num(abs(float(cfg["wrong"]))) if cfg["wrong"] < 0 else fmt_num(cfg["wrong"]))]
+    return "\n".join(lines)
 
 
 def countdown_text(job, day, plan, secs):
     cfg = JOBS[job]
-    return "\n".join([
-        tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
-        tr.t("ann_when", date=day_label(day), time=cfg["time_label"]),
-        tr.t("ann_body", n=plan["n"]).split(" · ")[0] + " · 30 seconds each",
-        tr.t("cd_line", n=max(0, int(secs))),
-    ])
+    lines = [tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
+             tr.t("ann_when", date=day_label(day), time=cfg["time_label"])]
+    pg = pages_text(job, plan)
+    if pg:
+        lines.append(pg)
+    lines += [tr.t("ann_body", n=plan["n"]).split(" · ")[0] + " · 30 seconds each",
+              tr.t("cd_line", n=max(0, int(secs)))]
+    return "\n".join(lines)
+
+
+def tomorrow_pages_note(job, day, st):
+    """Short note after the leaderboard: which pages the next test covers (malwa + iari only).
+    Read-only preview of the next batch — it never touches the journal, Mongo or the group."""
+    if job not in ("malwa", "iari"):
+        return None
+    j = job_j(st, day, job)
+    try:
+        if job == "malwa":
+            nxt, _, why = plan_malwa(day, {"vol": j.get("vol", 0), "bidx": j.get("bidx", 0)})
+            if not nxt:
+                return None
+            plist = pages_sorted(nxt.get("pages_list"))
+            ptext = ", ".join(str(p) for p in plist) if plist else str(nxt.get("pages") or "").replace("Book pages ", "")
+        else:
+            nxt, _, why = plan_iari(day, {"bidx": j.get("bidx", 0)})
+            if not nxt:
+                return None
+            plist = pages_sorted(nxt.get("pages_list"))
+            ptext = ", ".join(str(p) for p in plist) if plist else str(nxt.get("pages") or "")
+        if not ptext:
+            return None
+        label = nxt.get("label")
+    except Exception as e:
+        log("tomorrow note skipped:", str(e)[:110])
+        return None
+    tmr = (dt.date.fromisoformat(day) + dt.timedelta(days=1)).isoformat()
+    return tr.t("tomorrow_note", date=day_label(tmr), label=label, pages=ptext)
+
+
+def unpin_other_announces(chat, keep_id, st=None):
+    """Admin order v11.2: ONLY the announce message stays pinned. When a new announce is pinned,
+    every other announce this engine ever posted (journaled msg_ann ids, incl. the stale 14-Sep
+    announce 29092) is unpinned. Nothing else is ever pinned by the engine."""
+    st = st if st is not None else jload()
+    ids = set()
+    for d, jobs in (st.get("days") or {}).items():
+        for jb, jj in (jobs or {}).items():
+            if isinstance(jj, dict) and jj.get("msg_ann"):
+                try:
+                    ids.add(int(jj["msg_ann"]))
+                except Exception:
+                    pass
+    a = st.get("afo18") or {}
+    if isinstance(a, dict) and a.get("msg_ann"):
+        try:
+            ids.add(int(a["msg_ann"]))
+        except Exception:
+            pass
+    unpinned = []
+    for mid in sorted(ids):
+        if keep_id and mid == int(keep_id):
+            continue
+        tg("unpinChatMessage", chat_id=chat, message_id=mid)
+        unpinned.append(mid)
+    if unpinned:
+        log("unpinned older announce(s): %s (kept %s)" % (unpinned, keep_id))
+    return unpinned
 
 
 def cta_text():
@@ -993,6 +1079,11 @@ def run_job(job, day=None, st=None, force=False):
             j["pinned_ann"] = bool(p)
             if not p:
                 dm_admin(tr.t("adm_pin", job=job.upper()), "pin:" + job, 6 * 3600)
+            # v11.2: keep exactly one pinned message in the group -> the current announce
+            try:
+                j["unpinned"] = unpin_other_announces(chat, m["message_id"], st)
+            except Exception as e:
+                log("unpin pass failed:", str(e)[:100])
             jsave(st, "%s announce #%s" % (job, j["msg_ann"]))
             log("announce %s msg=%s pinned=%s" % (job, j["msg_ann"], bool(p)))
         # wait until the exact start time (zero group traffic in between)
@@ -1085,15 +1176,30 @@ def run_job(job, day=None, st=None, force=False):
         j["players"] = len(rows)
         j["answered_total"] = sum(len(v) for v in ans.values())
         jsave(st, "%s leaderboard" % job)
+        # v11.2: short note right after the leaderboard — what tomorrow's pages will be
+        if not j.get("tmr_note") and job in ("malwa", "iari"):
+            try:
+                note = tomorrow_pages_note(job, day, st)
+            except Exception as e:
+                note = None
+                log("tomorrow note failed:", str(e)[:100])
+            if note:
+                m2 = tg("sendMessage", chat_id=chat, text=note, parse_mode="HTML",
+                        disable_web_page_preview=True)
+                if m2:
+                    j["tmr_note"] = m2["message_id"]
+                    j["tmr_note_text"] = note
+                    jsave(st, "%s tomorrow note" % job)
+                    log("tomorrow note sent: %s" % note.replace("\n", " ")[:120])
 
     # --- congrats (pinned)
     if not j.get("congrats_sent"):
         c = tg("sendMessage", chat_id=chat, text=congrats_text(job, day, plan, rows), parse_mode="HTML",
                disable_web_page_preview=True)
         if c:
-            tg("pinChatMessage", chat_id=chat, message_id=c["message_id"])
+            # v11.2: NOT pinned (only the announce is pinned in this group)
             j["congrats_sent"] = c["message_id"]
-            jsave(st, "%s congrats" % job)
+            jsave(st, "%s congrats (unpinned by rule)" % job)
 
     # --- result file (6065 HTML, UNPINNED) + one short CTA
     if not j.get("file_sent"):
