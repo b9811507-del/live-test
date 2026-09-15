@@ -38,6 +38,9 @@ jobs:
       PAID_CHAT_CANE: ${{ secrets.PAID_CHAT_CANE }}
       PAY_PROVIDER_TOKEN: ${{ secrets.PAY_PROVIDER_TOKEN }}
       PAID_VERIFY: ${{ secrets.PAID_VERIFY }}
+      # Razorpay payment links (v11.3)
+      RAZORPAY_KEY_ID: ${{ secrets.RAZORPAY_KEY_ID }}
+      RAZORPAY_KEY_SECRET: ${{ secrets.RAZORPAY_KEY_SECRET }}
       RENDER_URL: ${{ secrets.RENDER_URL }}
       RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
       RENDER_SVC: ${{ secrets.RENDER_SVC }}

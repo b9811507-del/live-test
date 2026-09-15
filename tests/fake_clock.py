@@ -420,6 +420,59 @@ def case17_paid_catalog(tmp):
 
 import engine as engine_mod
 
+def case18_razorpay_pay(tmp):
+    """18. Razorpay: student taps Pay -> bot creates a payment link -> status=paid -> single-use join link in DM."""
+    day = "2026-09-16"
+    env = {"RAZORPAY_KEY_ID": "rzp_test_fixture", "RAZORPAY_KEY_SECRET": "fixture_secret",
+           "PAID_PRICE_CANE": "₹151", "PAID_CHAT_CANE": "-1003707610763"}
+    ups = [{"update_id": 701, "callback_query": {"id": "cb7", "from": {"id": 9007, "first_name": "Kisan"},
+                                                 "data": "rzp:cane",
+                                                 "message": {"chat": {"id": 9007, "type": "private"}}}}]
+    fp = os.path.join(tmp, "upsa.json")
+    json.dump(ups, open(fp, "w"))
+    p1, log1, st1 = mk(tmp, day + "T10:00:00+05:30", args=("paid", "desk"), journal=empty_journal(day),
+                       env=dict(env, ENGINE_FAKE_UPDATES=fp, ENGINE_FAKE_RZP_STATUS="created"))
+    links1 = (st1.get("paid") or {}).get("links") or {}
+    open_dm = [e for e in methods(log1, "sendMessage", "9007") if "Payment link ready" in (e.get("text") or "")]
+    if os.path.exists(os.path.join(tmp, "tg.jsonl")):
+        os.remove(os.path.join(tmp, "tg.jsonl"))
+    # next desk pass: Razorpay now reports "paid"
+    p2, log2, st2 = mk(tmp, day + "T10:03:00+05:30", args=("paid", "desk"),
+                       env=dict(env, ENGINE_FAKE_RZP_STATUS="paid"))
+    inv2 = methods(log2, "createChatInviteLink", "-1003707610763")
+    dm_link = [e for e in methods(log2, "sendMessage", "9007") if "t.me/+FAKE" in (e.get("text") or "")]
+    rec = ((st2.get("paid") or {}).get("links") or {}).get("plink_FAKE0001") or {}
+    ok = (len(links1) == 1 and bool(open_dm) and rec.get("status") == "paid"
+          and len(inv2) == 1 and inv2[0].get("member_limit") == 1 and bool(dm_link)
+          and ((st2.get("desk") or {}).get("payments") or {}).get("issued") == 1)
+    return ok, "links=%d pay_dm=%s status=%s invite=%d member_limit=%s join_dm=%s" % (
+        len(links1), bool(open_dm), rec.get("status"), len(inv2),
+        inv2[0].get("member_limit") if inv2 else None, bool(dm_link))
+
+
+def case19_razorpay_expired(tmp):
+    """19. Expired payment link -> student gets a fresh 'pay again' button, nothing else is issued."""
+    day = "2026-09-16"
+    env = {"RAZORPAY_KEY_ID": "rzp_test_fixture", "RAZORPAY_KEY_SECRET": "fixture_secret",
+           "PAID_PRICE_IARI": "₹99", "PAID_CHAT_IARI": "-1003922097468"}
+    ups = [{"update_id": 801, "callback_query": {"id": "cb8", "from": {"id": 9008, "first_name": "Sita"},
+                                                 "data": "rzp:iari",
+                                                 "message": {"chat": {"id": 9008, "type": "private"}}}}]
+    fp = os.path.join(tmp, "upsb.json")
+    json.dump(ups, open(fp, "w"))
+    mk(tmp, day + "T10:00:00+05:30", args=("paid", "desk"), journal=empty_journal(day),
+       env=dict(env, ENGINE_FAKE_UPDATES=fp, ENGINE_FAKE_RZP_STATUS="created"))
+    if os.path.exists(os.path.join(tmp, "tg.jsonl")):
+        os.remove(os.path.join(tmp, "tg.jsonl"))
+    p2, log2, st2 = mk(tmp, day + "T10:05:00+05:30", args=("paid", "desk"),
+                       env=dict(env, ENGINE_FAKE_RZP_STATUS="expired"))
+    exp_dm = [e for e in methods(log2, "sendMessage", "9008") if "expired" in (e.get("text") or "")]
+    inv = methods(log2, "createChatInviteLink", "-1003922097468")
+    rec = ((st2.get("paid") or {}).get("links") or {}).get("plink_FAKE0001") or {}
+    ok = bool(exp_dm) and rec.get("status") == "expired" and len(inv) == 0
+    return ok, "expired_dm=%s status=%s invites=%d" % (bool(exp_dm), rec.get("status"), len(inv))
+
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -438,6 +491,8 @@ CASES = [
     ("15 SAFETY: desk silent while a test is live", case15_desk_silent),
     ("16 single pin: new announce unpins the older one", case16_single_pin),
     ("17 paid catalog: all 7 batches + prices + buttons", case17_paid_catalog),
+    ("18 Razorpay: pay -> status paid -> one-time join link", case18_razorpay_pay),
+    ("19 Razorpay: expired link -> fresh pay button only", case19_razorpay_expired),
 ]
 
 

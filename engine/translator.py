@@ -249,6 +249,14 @@ T = {
                         "Your join link will be sent to this chat shortly by the batch team."),
     "dm_nobatch": "Please choose a batch from /start.",
     "dm_mybatches": "📚 <b>Your enrolments</b>\n%(rows)s",
+    "dm_rzp_created": ("🧾 <b>Payment link ready — %(title)s</b>\n"
+                       "Amount: <b>%(price)s</b> · this link is personal to you and expires in %(mins)s minutes.\n\n"
+                       "1) Tap <b>Pay now</b> and complete the payment.\n"
+                       "2) Your one-time join link will arrive in this chat automatically (usually within 3 minutes).\n"
+                       "If you have already paid, you can also tap <b>I have paid</b>."),
+    "dm_payment_received": "✅ <b>Payment received — %(title)s</b>\nThank you! Your join link is being prepared…",
+    "dm_rzp_expired": ("⌛ <b>Payment link expired — %(title)s</b>\n"
+                       "No problem — tap below to get a fresh payment link."),
     "dm_mybatches_none": "You have no enrolments yet. Send /start to see the available batches.",
     "dm_reissue_btn": "🔁 New join link — %(title)s",
     "dm_help": ("ℹ️ <b>How this works</b>\n"

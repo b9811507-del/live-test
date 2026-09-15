@@ -25,6 +25,8 @@ Keys: afo, pashu, cane.
 import os
 import time
 
+import razorpay
+
 # --------------------------------------------------------------------------- catalog
 # 7 paid batches (admin order 2026-09-15). Chat ids / prices live in GHA secrets
 # (PAID_CHAT_<KEY>, PAID_PRICE_<KEY>); only the ids that were already part of the build spec
@@ -49,6 +51,8 @@ DEFAULTS = [
 ]
 LINK_HOURS = int(os.environ.get("PAID_LINK_HOURS", "24"))
 PAID_VERIFY = (os.environ.get("PAID_VERIFY", "auto") or "auto").lower()
+RAZORPAY_LINK_MINUTES = int(os.environ.get("RAZORPAY_LINK_MINUTES", "1440"))   # payment link expiry (24h)
+RZP_POLL_MAX_AGE_H = int(os.environ.get("RZP_POLL_MAX_AGE_H", "24"))           # stop polling after this
 
 
 def batches():
@@ -171,6 +175,9 @@ def send_batch_detail(E, uid, key):
     rows = []
     if b["payment_link"]:
         rows.append([{"text": t("dm_pay_btn", price=b["price"] or "")[:64], "url": b["payment_link"]}])
+    elif razorpay.enabled() and price_amount(b["price"]):
+        # v11.3: the bot creates a personal Razorpay payment link for this student
+        rows.append([{"text": ("💳 Pay %s — Razorpay" % b["price"])[:64], "callback_data": "rzp:" + key}])
     elif provider_token() and price_amount(b["price"]):
         rows.append([{"text": t("dm_pay_btn", price=b["price"])[:64], "callback_data": "invoice:" + key}])
     else:
@@ -187,6 +194,85 @@ def send_invoice(E, uid, key):
     return E.tg("sendInvoice", chat_id=str(uid), title=b["title"][:32], description=b["perks"][:255],
                 payload="batch:%s:%s" % (key, uid), provider_token=provider_token(), currency="INR",
                 prices=[{"label": b["title"][:32], "amount": amt * 100}])
+
+
+def create_razorpay_link(E, st, key, uid, name=""):
+    """Create a personal Razorpay payment link for this student, journal it and DM the button."""
+    from translator import t
+    b = batch(key)
+    if not (b and razorpay.enabled()):
+        return None
+    amt = price_amount(b["price"])
+    if amt <= 0:
+        return None
+    cb = deep_link(E, "paid_" + key)
+    d = razorpay.create_payment_link(key, b["title"], amt, uid, name=name, callback_url=cb,
+                                     description="%s — enrolment" % b["title"],
+                                     expire_minutes=RAZORPAY_LINK_MINUTES)
+    if not isinstance(d, dict) or not d.get("id"):
+        E.log("razorpay link failed:", str(d)[:120])
+        E.dm_admin("⚠️ Razorpay payment link creation failed for <b>%s</b> (student <code>%s</code>): %s"
+                   % (b["title"], uid, str(d.get("description") or d.get("error"))[:120]), "rzp:fail", 1800)
+        return None
+    links = st.setdefault("paid", {}).setdefault("links", {})
+    links[d["id"]] = {"uid": str(uid), "key": key, "amount": amt, "title": b["title"], "name": name,
+                      "short_url": d.get("short_url"), "status": "created",
+                      "at": E.istnow().isoformat(timespec="seconds"), "created_ts": int(time.time())}
+    E.jsave(st, "razorpay link created (%s)" % d["id"])
+    paid_msg = t("dm_rzp_created", title=b["title"], price=b["price"],
+                 mins=max(5, RAZORPAY_LINK_MINUTES))
+    _send(E, str(uid), paid_msg,
+          {"inline_keyboard": [[{"text": ("💳 Pay %s now" % b["price"])[:64], "url": d["short_url"]}],
+                               [{"text": t("dm_paid_btn"), "callback_data": "claim:" + key}]]})
+    E.log("razorpay link %s created for %s/%s" % (d["id"], key, uid))
+    return d["id"]
+
+
+def verify_payments(E, st=None, limit=25):
+    """Desk pass step: check every open payment link; on 'paid' issue the one-time join link."""
+    from translator import t
+    st = st if st is not None else E.jload(force=True)
+    links = ((st.get("paid") or {}).get("links") or {})
+    now = time.time()
+    checked = issued = expired = 0
+    for lid, rec in list(links.items()):
+        if rec.get("status") == "paid" or rec.get("link_issued"):
+            continue
+        age_h = (now - float(rec.get("created_ts") or now)) / 3600.0
+        if age_h > RZP_POLL_MAX_AGE_H:
+            rec["status"] = rec.get("status") or "stale"
+            continue
+        if checked >= limit:
+            break
+        r = razorpay.payment_status(lid)
+        checked += 1
+        stt = r.get("status")
+        if stt == "paid":
+            rec["status"] = "paid"
+            rec["paid_at"] = E.istnow().isoformat(timespec="seconds")
+            rec["payment_id"] = (r.get("payments") or [{}])[0].get("id")
+            E.jsave(st, "payment confirmed %s" % lid)
+            _send(E, rec["uid"], t("dm_payment_received", title=rec["title"],
+                                   amount=rec["amount"] // 100 if rec.get("amount") else ""))
+            url = issue_link(E, st, rec["key"], rec["uid"], name=rec.get("name", ""), mode="razorpay")
+            rec["link_issued"] = bool(url)
+            E.jsave(st, "razorpay enrolment completed %s" % lid)
+            issued += 1
+        elif stt in ("expired", "cancelled"):
+            rec["status"] = stt
+            E.jsave(st, "payment link %s %s" % (lid, stt))
+            _send(E, rec["uid"], t("dm_rzp_expired", title=rec["title"]),
+                  {"inline_keyboard": [[{"text": ("💳 Pay %s again" % b_price(rec["key"]))[:64],
+                                        "callback_data": "rzp:" + rec["key"]}]]})
+            expired += 1
+    if checked or issued or expired:
+        E.log("desk payments: checked=%d paid=%d expired=%d" % (checked, issued, expired))
+    return {"checked": checked, "issued": issued, "expired": expired}
+
+
+def b_price(key):
+    b = batch(key) or {}
+    return b.get("price") or ""
 
 
 def _entitle(st, uid, key, **kw):
@@ -258,8 +344,13 @@ def send_mybatches(E, uid):
     from translator import t
     st = E.jload()
     got = entitlements(st, uid)
-    if not got:
+    open_links = [(lid, r) for lid, r in ((st.get("paid") or {}).get("links") or {}).items()
+                  if str(r.get("uid")) == str(uid) and r.get("status") not in ("paid", "expired", "cancelled")]
+    if not got and not open_links:
         return _send(E, uid, t("dm_mybatches_none"))
+    if open_links:
+        lid, r = open_links[-1]
+        _send(E, uid, "⏳ Pending payment for <b>%s</b> — %s" % (r.get("title"), r.get("short_url") or ""), None)
     rows, kb = [], []
     for key, rec in got.items():
         b = batch(key) or {"title": key.upper(), "chat": ""}
@@ -288,6 +379,11 @@ def handle_message(E, st, msg):
     low = text.lower()
     if low.startswith("/start"):
         payload = text[6:].strip().lower()
+        if payload.startswith("paid_"):
+            # returned from the Razorpay page: verify immediately (and DM the link if already paid)
+            key = payload.replace("paid_", "")
+            verify_payments(E, st, limit=25)
+            return send_batch_detail(E, uid, key)
         if payload.startswith("buy_") or payload in [b["key"] for b in batches()]:
             key = payload.replace("buy_", "")
             return send_batch_detail(E, uid, key)
@@ -329,6 +425,13 @@ def handle_callback(E, st, cb):
             send_batch_detail(E, uid, data.split(":", 1)[1])
         else:
             E.tg("answerCallbackQuery", callback_query_id=cb.get("id"), url=deep_link(E, "buy_" + data.split(":", 1)[1]))
+        return
+    if data.startswith("rzp:"):
+        if is_private:
+            create_razorpay_link(E, st, data.split(":", 1)[1], uid, name=name)
+        else:
+            E.tg("answerCallbackQuery", callback_query_id=cb.get("id"),
+                 url=deep_link(E, "buy_" + data.split(":", 1)[1]))
         return
     if data.startswith("invoice:"):
         if is_private:
@@ -479,11 +582,14 @@ def desk_pass(E, budget_s=8):
                 E.log("desk handler error:", str(e)[:140])
         if E.FAKE:
             break
+    pay = verify_payments(E, st)
+    st = E.jload(force=True)
     st["desk"] = {"offset": off, "last": E.istnow().isoformat(timespec="seconds"),
                   "handled": int((st.get("desk") or {}).get("handled", 0)) + handled,
+                  "payments": pay,
                   "seen": sorted(seen)[-200:]}
-    E.jsave(st, "desk pass (%d handled)" % handled)
-    return {"handled": handled, "offset": off}
+    E.jsave(st, "desk pass (%d handled, %s payments)" % (handled, pay))
+    return {"handled": handled, "offset": off, "payments": pay}
 
 
 def pending_links(E):

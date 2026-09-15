@@ -41,6 +41,9 @@ jobs:
       PAID_CHAT_PASHU: ${{ secrets.PAID_CHAT_PASHU }}
       PAID_CHAT_CANE: ${{ secrets.PAID_CHAT_CANE }}
       PAID_VERIFY: ${{ secrets.PAID_VERIFY }}
+      # Razorpay payment links (v11.3)
+      RAZORPAY_KEY_ID: ${{ secrets.RAZORPAY_KEY_ID }}
+      RAZORPAY_KEY_SECRET: ${{ secrets.RAZORPAY_KEY_SECRET }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_REPOSITORY: ${{ github.repository }}
     steps:
