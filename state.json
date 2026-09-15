@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-15T14:15:29+05:30",
+"agent_last": "2026-09-15T14:18:39+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -62,7 +62,7 @@
 },
 "desk_last": {
 "handled": 0,
-"offset": 0
+"offset": 210507801
 },
 "dm": {
 "guard": 1789460218.2034469
