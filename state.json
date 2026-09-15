@@ -2197,6 +2197,19 @@
 "guard": 1789460218.2034469
 },
 "paid": {
+"links": {
+"plink_TcHiU66tDPmW11": {
+"amount": 251,
+"at": "2026-09-15T16:17:08+05:30",
+"created_ts": 1789469228,
+"key": "afo",
+"name": "Vijay",
+"short_url": "https://rzp.io/rzp/VtlaYkp",
+"status": "created",
+"title": "AFO SELECTION BATCH",
+"uid": "1404352962"
+}
+},
 "msg_2026-09-15_iari": 29165,
 "posted_at": "2026-09-15T15:04:00+05:30"
 },
