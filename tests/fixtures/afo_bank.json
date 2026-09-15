@@ -1,0 +1,1229 @@
+{
+"afo_sets": [
+{
+"date": "2026-09-15",
+"status": "ready",
+"set_no": 3,
+"questions": [
+{
+"uid": "fixture-1",
+"q": "AFO fixture question 1 (set 3)",
+"o": [
+"Choice A 0",
+"Choice B 0",
+"Choice C 0",
+"Choice D 0",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-2",
+"q": "AFO fixture question 2 (set 3)",
+"o": [
+"Choice A 1",
+"Choice B 1",
+"Choice C 1",
+"Choice D 1",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-3",
+"q": "AFO fixture question 3 (set 3)",
+"o": [
+"Choice A 2",
+"Choice B 2",
+"Choice C 2",
+"Choice D 2",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-4",
+"q": "AFO fixture question 4 (set 3)",
+"o": [
+"Choice A 3",
+"Choice B 3",
+"Choice C 3",
+"Choice D 3",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-5",
+"q": "AFO fixture question 5 (set 3)",
+"o": [
+"Choice A 4",
+"Choice B 4",
+"Choice C 4",
+"Choice D 4",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-6",
+"q": "AFO fixture question 6 (set 3)",
+"o": [
+"Choice A 5",
+"Choice B 5",
+"Choice C 5",
+"Choice D 5",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-7",
+"q": "AFO fixture question 7 (set 3)",
+"o": [
+"Choice A 6",
+"Choice B 6",
+"Choice C 6",
+"Choice D 6",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-8",
+"q": "AFO fixture question 8 (set 3)",
+"o": [
+"Choice A 7",
+"Choice B 7",
+"Choice C 7",
+"Choice D 7",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-9",
+"q": "AFO fixture question 9 (set 3)",
+"o": [
+"Choice A 8",
+"Choice B 8",
+"Choice C 8",
+"Choice D 8",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-10",
+"q": "AFO fixture question 10 (set 3)",
+"o": [
+"Choice A 9",
+"Choice B 9",
+"Choice C 9",
+"Choice D 9",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-11",
+"q": "AFO fixture question 11 (set 3)",
+"o": [
+"Choice A 10",
+"Choice B 10",
+"Choice C 10",
+"Choice D 10",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-12",
+"q": "AFO fixture question 12 (set 3)",
+"o": [
+"Choice A 11",
+"Choice B 11",
+"Choice C 11",
+"Choice D 11",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-13",
+"q": "AFO fixture question 13 (set 3)",
+"o": [
+"Choice A 12",
+"Choice B 12",
+"Choice C 12",
+"Choice D 12",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-14",
+"q": "AFO fixture question 14 (set 3)",
+"o": [
+"Choice A 13",
+"Choice B 13",
+"Choice C 13",
+"Choice D 13",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-15",
+"q": "AFO fixture question 15 (set 3)",
+"o": [
+"Choice A 14",
+"Choice B 14",
+"Choice C 14",
+"Choice D 14",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-16",
+"q": "AFO fixture question 16 (set 3)",
+"o": [
+"Choice A 15",
+"Choice B 15",
+"Choice C 15",
+"Choice D 15",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-17",
+"q": "AFO fixture question 17 (set 3)",
+"o": [
+"Choice A 16",
+"Choice B 16",
+"Choice C 16",
+"Choice D 16",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-18",
+"q": "AFO fixture question 18 (set 3)",
+"o": [
+"Choice A 17",
+"Choice B 17",
+"Choice C 17",
+"Choice D 17",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-19",
+"q": "AFO fixture question 19 (set 3)",
+"o": [
+"Choice A 18",
+"Choice B 18",
+"Choice C 18",
+"Choice D 18",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-20",
+"q": "AFO fixture question 20 (set 3)",
+"o": [
+"Choice A 19",
+"Choice B 19",
+"Choice C 19",
+"Choice D 19",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-21",
+"q": "AFO fixture question 21 (set 3)",
+"o": [
+"Choice A 20",
+"Choice B 20",
+"Choice C 20",
+"Choice D 20",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-22",
+"q": "AFO fixture question 22 (set 3)",
+"o": [
+"Choice A 21",
+"Choice B 21",
+"Choice C 21",
+"Choice D 21",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-23",
+"q": "AFO fixture question 23 (set 3)",
+"o": [
+"Choice A 22",
+"Choice B 22",
+"Choice C 22",
+"Choice D 22",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-24",
+"q": "AFO fixture question 24 (set 3)",
+"o": [
+"Choice A 23",
+"Choice B 23",
+"Choice C 23",
+"Choice D 23",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-25",
+"q": "AFO fixture question 25 (set 3)",
+"o": [
+"Choice A 24",
+"Choice B 24",
+"Choice C 24",
+"Choice D 24",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-26",
+"q": "AFO fixture question 26 (set 3)",
+"o": [
+"Choice A 25",
+"Choice B 25",
+"Choice C 25",
+"Choice D 25",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-27",
+"q": "AFO fixture question 27 (set 3)",
+"o": [
+"Choice A 26",
+"Choice B 26",
+"Choice C 26",
+"Choice D 26",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-28",
+"q": "AFO fixture question 28 (set 3)",
+"o": [
+"Choice A 27",
+"Choice B 27",
+"Choice C 27",
+"Choice D 27",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-29",
+"q": "AFO fixture question 29 (set 3)",
+"o": [
+"Choice A 28",
+"Choice B 28",
+"Choice C 28",
+"Choice D 28",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-30",
+"q": "AFO fixture question 30 (set 3)",
+"o": [
+"Choice A 29",
+"Choice B 29",
+"Choice C 29",
+"Choice D 29",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-31",
+"q": "AFO fixture question 31 (set 3)",
+"o": [
+"Choice A 30",
+"Choice B 30",
+"Choice C 30",
+"Choice D 30",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-32",
+"q": "AFO fixture question 32 (set 3)",
+"o": [
+"Choice A 31",
+"Choice B 31",
+"Choice C 31",
+"Choice D 31",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-33",
+"q": "AFO fixture question 33 (set 3)",
+"o": [
+"Choice A 32",
+"Choice B 32",
+"Choice C 32",
+"Choice D 32",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-34",
+"q": "AFO fixture question 34 (set 3)",
+"o": [
+"Choice A 33",
+"Choice B 33",
+"Choice C 33",
+"Choice D 33",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-35",
+"q": "AFO fixture question 35 (set 3)",
+"o": [
+"Choice A 34",
+"Choice B 34",
+"Choice C 34",
+"Choice D 34",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-36",
+"q": "AFO fixture question 36 (set 3)",
+"o": [
+"Choice A 35",
+"Choice B 35",
+"Choice C 35",
+"Choice D 35",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-37",
+"q": "AFO fixture question 37 (set 3)",
+"o": [
+"Choice A 36",
+"Choice B 36",
+"Choice C 36",
+"Choice D 36",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-38",
+"q": "AFO fixture question 38 (set 3)",
+"o": [
+"Choice A 37",
+"Choice B 37",
+"Choice C 37",
+"Choice D 37",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-39",
+"q": "AFO fixture question 39 (set 3)",
+"o": [
+"Choice A 38",
+"Choice B 38",
+"Choice C 38",
+"Choice D 38",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-40",
+"q": "AFO fixture question 40 (set 3)",
+"o": [
+"Choice A 39",
+"Choice B 39",
+"Choice C 39",
+"Choice D 39",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-41",
+"q": "AFO fixture question 41 (set 3)",
+"o": [
+"Choice A 40",
+"Choice B 40",
+"Choice C 40",
+"Choice D 40",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-42",
+"q": "AFO fixture question 42 (set 3)",
+"o": [
+"Choice A 41",
+"Choice B 41",
+"Choice C 41",
+"Choice D 41",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-43",
+"q": "AFO fixture question 43 (set 3)",
+"o": [
+"Choice A 42",
+"Choice B 42",
+"Choice C 42",
+"Choice D 42",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-44",
+"q": "AFO fixture question 44 (set 3)",
+"o": [
+"Choice A 43",
+"Choice B 43",
+"Choice C 43",
+"Choice D 43",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-45",
+"q": "AFO fixture question 45 (set 3)",
+"o": [
+"Choice A 44",
+"Choice B 44",
+"Choice C 44",
+"Choice D 44",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-46",
+"q": "AFO fixture question 46 (set 3)",
+"o": [
+"Choice A 45",
+"Choice B 45",
+"Choice C 45",
+"Choice D 45",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-47",
+"q": "AFO fixture question 47 (set 3)",
+"o": [
+"Choice A 46",
+"Choice B 46",
+"Choice C 46",
+"Choice D 46",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-48",
+"q": "AFO fixture question 48 (set 3)",
+"o": [
+"Choice A 47",
+"Choice B 47",
+"Choice C 47",
+"Choice D 47",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-49",
+"q": "AFO fixture question 49 (set 3)",
+"o": [
+"Choice A 48",
+"Choice B 48",
+"Choice C 48",
+"Choice D 48",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-50",
+"q": "AFO fixture question 50 (set 3)",
+"o": [
+"Choice A 49",
+"Choice B 49",
+"Choice C 49",
+"Choice D 49",
+"None of these"
+],
+"key": 4
+}
+],
+"built_at": "2026-09-12 05:26 UTC",
+"picked_at": null
+},
+{
+"date": "2026-09-16",
+"status": "ready",
+"set_no": 4,
+"questions": [
+{
+"uid": "fixture-101",
+"q": "AFO fixture question 1 (set 4)",
+"o": [
+"Choice A 0",
+"Choice B 0",
+"Choice C 0",
+"Choice D 0",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-102",
+"q": "AFO fixture question 2 (set 4)",
+"o": [
+"Choice A 1",
+"Choice B 1",
+"Choice C 1",
+"Choice D 1",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-103",
+"q": "AFO fixture question 3 (set 4)",
+"o": [
+"Choice A 2",
+"Choice B 2",
+"Choice C 2",
+"Choice D 2",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-104",
+"q": "AFO fixture question 4 (set 4)",
+"o": [
+"Choice A 3",
+"Choice B 3",
+"Choice C 3",
+"Choice D 3",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-105",
+"q": "AFO fixture question 5 (set 4)",
+"o": [
+"Choice A 4",
+"Choice B 4",
+"Choice C 4",
+"Choice D 4",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-106",
+"q": "AFO fixture question 6 (set 4)",
+"o": [
+"Choice A 5",
+"Choice B 5",
+"Choice C 5",
+"Choice D 5",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-107",
+"q": "AFO fixture question 7 (set 4)",
+"o": [
+"Choice A 6",
+"Choice B 6",
+"Choice C 6",
+"Choice D 6",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-108",
+"q": "AFO fixture question 8 (set 4)",
+"o": [
+"Choice A 7",
+"Choice B 7",
+"Choice C 7",
+"Choice D 7",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-109",
+"q": "AFO fixture question 9 (set 4)",
+"o": [
+"Choice A 8",
+"Choice B 8",
+"Choice C 8",
+"Choice D 8",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-110",
+"q": "AFO fixture question 10 (set 4)",
+"o": [
+"Choice A 9",
+"Choice B 9",
+"Choice C 9",
+"Choice D 9",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-111",
+"q": "AFO fixture question 11 (set 4)",
+"o": [
+"Choice A 10",
+"Choice B 10",
+"Choice C 10",
+"Choice D 10",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-112",
+"q": "AFO fixture question 12 (set 4)",
+"o": [
+"Choice A 11",
+"Choice B 11",
+"Choice C 11",
+"Choice D 11",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-113",
+"q": "AFO fixture question 13 (set 4)",
+"o": [
+"Choice A 12",
+"Choice B 12",
+"Choice C 12",
+"Choice D 12",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-114",
+"q": "AFO fixture question 14 (set 4)",
+"o": [
+"Choice A 13",
+"Choice B 13",
+"Choice C 13",
+"Choice D 13",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-115",
+"q": "AFO fixture question 15 (set 4)",
+"o": [
+"Choice A 14",
+"Choice B 14",
+"Choice C 14",
+"Choice D 14",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-116",
+"q": "AFO fixture question 16 (set 4)",
+"o": [
+"Choice A 15",
+"Choice B 15",
+"Choice C 15",
+"Choice D 15",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-117",
+"q": "AFO fixture question 17 (set 4)",
+"o": [
+"Choice A 16",
+"Choice B 16",
+"Choice C 16",
+"Choice D 16",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-118",
+"q": "AFO fixture question 18 (set 4)",
+"o": [
+"Choice A 17",
+"Choice B 17",
+"Choice C 17",
+"Choice D 17",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-119",
+"q": "AFO fixture question 19 (set 4)",
+"o": [
+"Choice A 18",
+"Choice B 18",
+"Choice C 18",
+"Choice D 18",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-120",
+"q": "AFO fixture question 20 (set 4)",
+"o": [
+"Choice A 19",
+"Choice B 19",
+"Choice C 19",
+"Choice D 19",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-121",
+"q": "AFO fixture question 21 (set 4)",
+"o": [
+"Choice A 20",
+"Choice B 20",
+"Choice C 20",
+"Choice D 20",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-122",
+"q": "AFO fixture question 22 (set 4)",
+"o": [
+"Choice A 21",
+"Choice B 21",
+"Choice C 21",
+"Choice D 21",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-123",
+"q": "AFO fixture question 23 (set 4)",
+"o": [
+"Choice A 22",
+"Choice B 22",
+"Choice C 22",
+"Choice D 22",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-124",
+"q": "AFO fixture question 24 (set 4)",
+"o": [
+"Choice A 23",
+"Choice B 23",
+"Choice C 23",
+"Choice D 23",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-125",
+"q": "AFO fixture question 25 (set 4)",
+"o": [
+"Choice A 24",
+"Choice B 24",
+"Choice C 24",
+"Choice D 24",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-126",
+"q": "AFO fixture question 26 (set 4)",
+"o": [
+"Choice A 25",
+"Choice B 25",
+"Choice C 25",
+"Choice D 25",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-127",
+"q": "AFO fixture question 27 (set 4)",
+"o": [
+"Choice A 26",
+"Choice B 26",
+"Choice C 26",
+"Choice D 26",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-128",
+"q": "AFO fixture question 28 (set 4)",
+"o": [
+"Choice A 27",
+"Choice B 27",
+"Choice C 27",
+"Choice D 27",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-129",
+"q": "AFO fixture question 29 (set 4)",
+"o": [
+"Choice A 28",
+"Choice B 28",
+"Choice C 28",
+"Choice D 28",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-130",
+"q": "AFO fixture question 30 (set 4)",
+"o": [
+"Choice A 29",
+"Choice B 29",
+"Choice C 29",
+"Choice D 29",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-131",
+"q": "AFO fixture question 31 (set 4)",
+"o": [
+"Choice A 30",
+"Choice B 30",
+"Choice C 30",
+"Choice D 30",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-132",
+"q": "AFO fixture question 32 (set 4)",
+"o": [
+"Choice A 31",
+"Choice B 31",
+"Choice C 31",
+"Choice D 31",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-133",
+"q": "AFO fixture question 33 (set 4)",
+"o": [
+"Choice A 32",
+"Choice B 32",
+"Choice C 32",
+"Choice D 32",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-134",
+"q": "AFO fixture question 34 (set 4)",
+"o": [
+"Choice A 33",
+"Choice B 33",
+"Choice C 33",
+"Choice D 33",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-135",
+"q": "AFO fixture question 35 (set 4)",
+"o": [
+"Choice A 34",
+"Choice B 34",
+"Choice C 34",
+"Choice D 34",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-136",
+"q": "AFO fixture question 36 (set 4)",
+"o": [
+"Choice A 35",
+"Choice B 35",
+"Choice C 35",
+"Choice D 35",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-137",
+"q": "AFO fixture question 37 (set 4)",
+"o": [
+"Choice A 36",
+"Choice B 36",
+"Choice C 36",
+"Choice D 36",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-138",
+"q": "AFO fixture question 38 (set 4)",
+"o": [
+"Choice A 37",
+"Choice B 37",
+"Choice C 37",
+"Choice D 37",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-139",
+"q": "AFO fixture question 39 (set 4)",
+"o": [
+"Choice A 38",
+"Choice B 38",
+"Choice C 38",
+"Choice D 38",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-140",
+"q": "AFO fixture question 40 (set 4)",
+"o": [
+"Choice A 39",
+"Choice B 39",
+"Choice C 39",
+"Choice D 39",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-141",
+"q": "AFO fixture question 41 (set 4)",
+"o": [
+"Choice A 40",
+"Choice B 40",
+"Choice C 40",
+"Choice D 40",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-142",
+"q": "AFO fixture question 42 (set 4)",
+"o": [
+"Choice A 41",
+"Choice B 41",
+"Choice C 41",
+"Choice D 41",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-143",
+"q": "AFO fixture question 43 (set 4)",
+"o": [
+"Choice A 42",
+"Choice B 42",
+"Choice C 42",
+"Choice D 42",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-144",
+"q": "AFO fixture question 44 (set 4)",
+"o": [
+"Choice A 43",
+"Choice B 43",
+"Choice C 43",
+"Choice D 43",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-145",
+"q": "AFO fixture question 45 (set 4)",
+"o": [
+"Choice A 44",
+"Choice B 44",
+"Choice C 44",
+"Choice D 44",
+"None of these"
+],
+"key": 4
+},
+{
+"uid": "fixture-146",
+"q": "AFO fixture question 46 (set 4)",
+"o": [
+"Choice A 45",
+"Choice B 45",
+"Choice C 45",
+"Choice D 45",
+"None of these"
+],
+"key": 0
+},
+{
+"uid": "fixture-147",
+"q": "AFO fixture question 47 (set 4)",
+"o": [
+"Choice A 46",
+"Choice B 46",
+"Choice C 46",
+"Choice D 46",
+"None of these"
+],
+"key": 1
+},
+{
+"uid": "fixture-148",
+"q": "AFO fixture question 48 (set 4)",
+"o": [
+"Choice A 47",
+"Choice B 47",
+"Choice C 47",
+"Choice D 47",
+"None of these"
+],
+"key": 2
+},
+{
+"uid": "fixture-149",
+"q": "AFO fixture question 49 (set 4)",
+"o": [
+"Choice A 48",
+"Choice B 48",
+"Choice C 48",
+"Choice D 48",
+"None of these"
+],
+"key": 3
+},
+{
+"uid": "fixture-150",
+"q": "AFO fixture question 50 (set 4)",
+"o": [
+"Choice A 49",
+"Choice B 49",
+"Choice C 49",
+"Choice D 49",
+"None of these"
+],
+"key": 4
+}
+],
+"built_at": "2026-09-12 05:26 UTC",
+"picked_at": null
+}
+],
+"afo_used_q": [],
+"afo_supply": [
+{
+"key": "meta",
+"next_set_no": 4
+}
+]
+}

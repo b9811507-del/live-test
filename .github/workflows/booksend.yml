@@ -1,0 +1,56 @@
+name: booksend
+# ONE-OFF book-file delivery (SPEC v11 §7) — MANUAL DISPATCH ONLY, never auto-fires.
+# Sends book MCQ files (range of book pages, N pages per file) to a chat, pins every file, then an
+# INDEX message with tap-jump t.me/c/<chatnum>/<msgid> links and ◀️Prev / 📚Index / Next▶️ nav on
+# every file. Resumable through state.json -> booksend. dispatch-only: the push trigger registers
+# the file on main and skips the job.
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "source key: iari | malwa_vol1 | malwa_vol2 | malwa_horti"
+        required: true
+        default: "iari"
+      range:
+        description: "book page range, e.g. 1-1074"
+        required: true
+        default: "1-1074"
+      step:
+        description: "pages per file (e.g. 5)"
+        required: true
+        default: "5"
+      chat:
+        description: "target chat id (default = IARI book group)"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths: [".github/workflows/booksend.yml", "engine/engine.py"]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: booksend
+  cancel-in-progress: false
+jobs:
+  send:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      TZ: Asia/Kolkata
+      EXAM_TG_TOKEN: ${{ secrets.EXAM_TG_TOKEN }}
+      IARI_CHAT: ${{ secrets.IARI_CHAT }}
+      CHAT_ID: ${{ secrets.CHAT_ID }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: send book files
+        run: |
+          CHAT="${{ github.event.inputs.chat }}"
+          [ -z "$CHAT" ] && CHAT="${IARI_CHAT}"
+          python3 engine/engine.py booksend "${{ github.event.inputs.job }}" "${{ github.event.inputs.range }}" "${{ github.event.inputs.step }}" "$CHAT" || true
+      - name: resume note
+        if: always()
+        run: echo "booksend journal keeps progress — re-dispatch manually (range/step) to continue; no inline python by rule."

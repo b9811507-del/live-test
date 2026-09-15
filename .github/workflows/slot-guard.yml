@@ -1,0 +1,40 @@
+name: slot-guard
+# WATCHDOG (SPEC v11 §7): self-chained ~7 min. If slot-chain has no live run and its last run is
+# older than 25 min while some slot is still actionable today -> force-dispatch it and DM the admin
+# "🛡 slot-guard … revived". Outside the daily window it stays silent (no false alarms, spec §9).
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "*/15 * * * *"        # backstop only
+  push:
+    branches: [main]
+    paths: [".github/workflows/slot-guard.yml", "engine/engine.py"]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: slot-guard
+  cancel-in-progress: false
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Kolkata
+      EXAM_TG_TOKEN: ${{ secrets.EXAM_TG_TOKEN }}
+      CHAT_ID: ${{ secrets.CHAT_ID }}
+      ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: pip install -q pymongo
+      - name: guard pass
+        run: python3 engine/engine.py guard || true
+      - name: rechain (~7 min)
+        if: always()
+        run: |
+          python3 engine/engine.py dispatch slot-guard.yml || true
+          sleep $(( (RANDOM % 61) + 390 ))

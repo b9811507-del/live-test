@@ -1,0 +1,7 @@
+# generated / local only — the repo stays clean
+__pycache__/
+*.pyc
+out/
+.KILLTEST
+tmp/
+*.jsonl

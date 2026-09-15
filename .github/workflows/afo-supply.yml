@@ -1,0 +1,33 @@
+name: afo-supply
+# AFO bank top-up / audit, daily 05:00 IST (SPEC v11 §4/§7). 05:00 IST = 23:30 UTC (cron is UTC only,
+# TZ env does not move cron). Idempotent, audit-first, NEVER posts to Telegram.
+# dispatch + cron only; the push trigger just registers the file on main.
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "30 23 * * *"         # 05:00 IST next day
+  push:
+    branches: [main]
+    paths: [".github/workflows/afo-supply.yml", "engine/afo_mongo.py"]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: afo-supply
+  cancel-in-progress: false
+jobs:
+  supply:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      TZ: Asia/Kolkata
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: pip install -q pymongo
+      - name: supply audit
+        run: python3 engine/engine.py supply || true

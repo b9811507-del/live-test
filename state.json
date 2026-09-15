@@ -1,9 +1,52 @@
 {
-"afo18": {
-"lock_ts": 1789393736.8270857,
-"locked_by": "34850160897",
-"msg_ann": 29092,
-"qidx": 20,
-"step": 8
-}
+ "version": "v11",
+ "days": {
+  "2026-09-13": {
+   "afo": {
+    "step": 8,
+    "missed": true,
+    "done_at": "2026-09-13T18:05:00+05:30",
+    "note": "engine not live that day — bank set_no 1 left ready/unused, never retro-fired"
+   }
+  },
+  "2026-09-14": {
+   "afo": {
+    "step": 8,
+    "killed": true,
+    "qidx": 20,
+    "msg_ann": 29092,
+    "done_at": "2026-09-14T13:35:00+05:30",
+    "note": "cancelled by admin order after announce #29092 + a few polls; old group messages left untouched; workflow afo-today disabled (replaced by v11 slot-chain)"
+   }
+  },
+  "2026-09-15": {
+   "malwa": {
+    "step": 8,
+    "missed": true,
+    "sealed_by": "admin_order",
+    "done_at": "2026-09-15T12:05:00+05:30",
+    "note": "admin order: aaj (15-Sep) ka malwa slot seal — 16-Sep 11:00 IST se MALWA VOL 1 continue (bidx 0 = Serial 21)"
+   },
+   "iari": {
+    "step": 0,
+    "qidx": 0,
+    "ans": {},
+    "names": {}
+   },
+   "afo": {
+    "step": 0,
+    "qidx": 0,
+    "ans": {},
+    "names": {}
+   }
+  }
+ },
+ "afo18": {
+  "step": 8,
+  "killed": true,
+  "qidx": 20,
+  "msg_ann": 29092,
+  "done_at": "2026-09-14T13:35:00+05:30"
+ },
+ "booksend": {}
 }

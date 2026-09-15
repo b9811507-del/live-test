@@ -1,0 +1,45 @@
+name: slot-chain
+# MAIN DISPATCHER (SPEC v11 §7): one short cycle for all three jobs, then it re-arms itself.
+#  * schedule() cron on this account is unreliable -> cron is a BACKSTOP only; the chain self-chains
+#    via workflow_dispatch with the runner token.
+#  * concurrency NEVER cancels: a live 30s-per-question test must not be killed mid-poll.
+#  * brand-new workflow files 404 on dispatch until they exist on the default branch -> push trigger
+#    on this file (+ engine) self-registers it.
+#  * NO inline python here on purpose (multi-line YAML run: | + heredoc traps) — engine/engine.py only.
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "*/10 * * * *"        # backstop only (UTC; job times are computed in IST inside the engine)
+  push:
+    branches: [main]
+    paths: [".github/workflows/slot-chain.yml", "engine/engine.py"]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: slot-chain
+  cancel-in-progress: false
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      TZ: Asia/Kolkata
+      EXAM_TG_TOKEN: ${{ secrets.EXAM_TG_TOKEN }}
+      CHAT_ID: ${{ secrets.CHAT_ID }}
+      ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+      IARI_CHAT: ${{ secrets.IARI_CHAT }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: pip install -q pymongo
+      - name: cycle
+        run: python3 engine/engine.py slotchain || true
+      - name: rearm (jitter 100-190s)
+        if: always()
+        run: |
+          sleep $(( (RANDOM % 91) + 100 ))
+          python3 engine/engine.py rearm || true

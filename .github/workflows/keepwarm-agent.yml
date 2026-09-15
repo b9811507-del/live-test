@@ -1,0 +1,45 @@
+name: keepwarm-agent
+# Keepwarm + maintenance (SPEC v11 §7): Render ping, engine agent pass (journal audit + daily AFO
+# supply audit), relay marker dispatch, then it re-dispatches itself and throttles ~150s.
+# DISPATCH FIRST, then sleep (so a queued sibling can never cancel this runner before its steps ran).
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "*/10 * * * *"        # backstop only
+  push:
+    branches: [main]
+    paths: [".github/workflows/keepwarm-agent.yml", "engine/engine.py", "agents/relay.py"]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: keepwarm-agent
+  cancel-in-progress: false
+jobs:
+  keepwarm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      TZ: Asia/Kolkata
+      EXAM_TG_TOKEN: ${{ secrets.EXAM_TG_TOKEN }}
+      CHAT_ID: ${{ secrets.CHAT_ID }}
+      ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
+      MONGO_URI: ${{ secrets.MONGO_URI }}
+      RENDER_URL: ${{ secrets.RENDER_URL }}
+      RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+      RENDER_SVC: ${{ secrets.RENDER_SVC }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: pip install -q pymongo
+      - name: keepwarm + agent maintenance
+        run: python3 engine/engine.py keepwarm || true
+      - name: relay (.GHA_DISPATCH.json)
+        run: python3 agents/relay.py || true
+      - name: rechain (dispatch first, then throttle 150s)
+        if: always()
+        run: |
+          python3 engine/engine.py dispatch keepwarm-agent.yml || true
+          sleep $(( (RANDOM % 45) + 130 ))
