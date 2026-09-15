@@ -2205,6 +2205,7 @@
 "claims": [
 {
 "at": "2026-09-15T16:21:20+05:30",
+"issued": true,
 "key": "afo",
 "mode": "claim",
 "ref_state": "awaiting",
