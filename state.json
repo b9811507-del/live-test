@@ -1036,6 +1036,7 @@
 "bidx": 56,
 "cd": 0,
 "congrats_sent": 29162,
+"cta_sent": 29164,
 "file_msg": 29163,
 "file_sent": "IARI_BOOK_MCQ_2026_2026-09-15_results.html",
 "last_off": 210508796,
@@ -2157,6 +2158,10 @@
 },
 "dm": {
 "guard": 1789460218.2034469
+},
+"paid": {
+"msg_2026-09-15_iari": 29165,
+"posted_at": "2026-09-15T15:04:00+05:30"
 },
 "supply_day": "2026-09-15",
 "supply_log": {
