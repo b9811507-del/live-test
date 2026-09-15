@@ -31,7 +31,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-15T17:58:11+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increases it",
+"Decreases it",
+"No change",
+"First increases then decreases",
+"None of these"
+],
+"page": "",
+"q": "How does adding organic matter affect particle density of soil?",
+"serial": "17U0MEc-:1071",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1071"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ep = APP / MPP",
+"Ep = MPP / APP",
+"Ep = TPP / MPP",
+"Ep = MPP / TPP",
+"None of these"
+],
+"page": "",
+"q": "What is the formula for the elasticity of production (Ep)?",
+"serial": "128DIQLj:2586",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2586"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Transduction",
+"Back cross",
+"Parthenocapry",
+"Serology",
+"None of these"
+],
+"page": "",
+"q": "Which process involves the transfer of genetic material from one cell to another cell by means of a viral vector?",
+"serial": "17U0MEc-:2397",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2397"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Endosperm",
+"Tegmen",
+"Cotyledon",
+"Testa",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a living part of a seed?",
+"serial": "1UgnIe-g:774",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:774"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sclerospora graminicola",
+"Helminthosporium spp.",
+"Heterodera avenae",
+"Alternaria triticina",
+"None of these"
+],
+"page": "",
+"q": "Which pathogen is responsible for downy mildew (green ear disease) in wheat?",
+"serial": "1sUgWsko:3715",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3715"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A genome",
+"B genome",
+"D genome",
+"C genome",
+"None of these"
+],
+"page": "",
+"q": "Which genome in bread wheat has an unknown diploid progenitor?",
+"serial": "1UgnIe-g:372",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:372"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Macros",
+"Auto Filter",
+"Color schemes",
+"Clip art",
+"None of these"
+],
+"page": "",
+"q": "Which feature in Excel helps to display only specific rows that meet certain criteria?",
+"serial": "1bxM1Q-4:3841",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3841"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20\u201140 %",
+"30\u201160 %",
+"40\u201160 %",
+"50\u201170 %",
+"None of these"
+],
+"page": "",
+"q": "For soybean, the reported reduction in grain yield caused by weeds is",
+"serial": "1bxM1Q-4:1209",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1209"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Citric acid",
+"Acetic acid",
+"Lactic acid",
+"Phosphoric acid",
+"None of these"
+],
+"page": "",
+"q": "Which acidifying agent is most commonly used in a vase solution?",
+"serial": "1YcJWVgW:1109",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1109"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1st Five Year Plan",
+"2nd Five Year Plan",
+"3rd Five Year Plan",
+"All had the same growth rate",
+"None of these"
+],
+"page": "",
+"q": "Which Five Year Plan had the lowest GDP growth rate?",
+"serial": "1bxM1Q-4:2252",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2252"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Solanaceae",
+"Cucurbitaceae",
+"Fabaceae",
+"Poaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the cluster bean belong to?",
+"serial": "1bxM1Q-4:3198",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3198"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It expands",
+"It dehydrates",
+"It grows",
+"It remains unchanged",
+"None of these"
+],
+"page": "",
+"q": "During freezing injury, what happens to the protoplasm of plant cells?",
+"serial": "1sUgWsko:5676",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5676"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Iron",
+"Manganese",
+"Magnesium",
+"Sulphur",
+"None of these"
+],
+"page": "",
+"q": "In which nutrient deficiency do the major veins of leaves remain green while the rest of the leaf turns pale?",
+"serial": "1sUgWsko:7303",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7303"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Amylase",
+"Phenoloxidase",
+"Catalase",
+"Lipase",
+"None of these"
+],
+"page": "",
+"q": "Which enzyme is inactivated by blanching to prevent browning in fruits like banana and apple?",
+"serial": "1bxM1Q-4:3439",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3439"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"50 x 75 cm",
+"30 x 50 cm",
+"75 x 100 cm",
+"25 x 30 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended size for a poster used in agricultural extension?",
+"serial": "1bxM1Q-4:2173",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2173"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sib mating",
+"Half sib mating",
+"Mating between brother and sister",
+"Mating between individuals related by descent or ancestry",
+"None of these"
+],
+"page": "",
+"q": "What is the closest form of inbreeding after selfing?",
+"serial": "1UgnIe-g:231",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:231"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Proxemics",
+"Chronemics",
+"Kinesics",
+"Paralanguage",
+"None of these"
+],
+"page": "",
+"q": "Which form of non-verbal communication involves the use of gestures and facial expressions?",
+"serial": "128DIQLj:2266",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2266"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wheat",
+"Sugarcane",
+"Tobacco",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which crop is most sensitive to waterlogging or low soil aeration?",
+"serial": "128DIQLj:836",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:836"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Pusa Sheetal",
+"RD 2552",
+"BL 2 (Bilada 2)",
+"Kedar",
+"None of these"
+],
+"page": "",
+"q": "Which barley variety is known for salt tolerance?",
+"serial": "128DIQLj:344",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:344"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Okra",
+"Chilli",
+"Brinjal",
+"Tomato",
+"None of these"
+],
+"page": "",
+"q": "Which often cross-pollinated vegetable crop has the highest Foundation Seed quantity in the table?",
+"serial": "1sUgWsko:4958",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4958"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Green",
+"Red",
+"Blue",
+"UV",
+"None of these"
+],
+"page": "",
+"q": "Which light wavelength results in the lowest photosynthetic rate due to reflection by chlorophyll?",
+"serial": "1UgnIe-g:1575",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1575"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"4 years onwards",
+"8-10 years onwards",
+"10-12 months after planting",
+"3-5 months after planting",
+"None of these"
+],
+"page": "",
+"q": "What is the fruiting period for a budded Citrus plant?",
+"serial": "1bxM1Q-4:2925",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2925"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Maize and Lucerne",
+"Cereals and Lucerne",
+"Tomato and Maize",
+"Rapeseed and Mustard",
+"None of these"
+],
+"page": "",
+"q": "Which group of crops serves as indicator plants for both Phosphorus and Sulphur deficiencies?",
+"serial": "1sUgWsko:7298",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7298"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It has 4 stamens",
+"It has 5 stamens",
+"It has 6 stamens",
+"It has 7 stamens",
+"None of these"
+],
+"page": "",
+"q": "Which statement about rice inflorescence is true?",
+"serial": "1bxM1Q-4:622",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:622"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Linoleic acid",
+"Linolenic acid",
+"Stearic acid",
+"Arachidonic acid",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a non-essential fatty acid?",
+"serial": "17U0MEc-:3087",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:3087"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Type-I error",
+"Type-II error",
+"Power of test",
+"Sampling error",
+"None of these"
+],
+"page": "",
+"q": "What is the correct decision when the null hypothesis is false and we reject it?",
+"serial": "128DIQLj:2796",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2796"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Oxyfluorfen",
+"Pendimethalin (Stomp-Extra)",
+"Imazethapyr",
+"Oxadiazon",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is applied at -10 to +2 DAS?",
+"serial": "1bxM1Q-4:1286",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1286"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Blaney and Criddle",
+"Modified Penmann",
+"Thornthwaite",
+"Penman\u2013Monteith",
+"None of these"
+],
+"page": "",
+"q": "Which method is best and extensively used for more than one month to estimate ET?",
+"serial": "1bxM1Q-4:1474",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1474"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Flood irrigation",
+"Check\u2011basin",
+"Ring basin",
+"Furrow method",
+"None of these"
+],
+"page": "",
+"q": "Which irrigation method is specifically recommended for fruit crops?",
+"serial": "17U0MEc-:419",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:419"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Total variable cost (TVC)",
+"Total fixed cost (TFC)",
+"Average total cost (ATC)",
+"Marginal cost (MC)",
+"None of these"
+],
+"page": "",
+"q": "According to the cost principle, what must the selling price cover to ensure viability in the long run?",
+"serial": "128DIQLj:2505",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2505"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Spliced approach grafting",
+"Tongued approach grafting",
+"Whole-root grafting",
+"Inlay approach grafting",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a type of approach grafting?",
+"serial": "1sUgWsko:633",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:633"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Root",
+"Leaf",
+"Stem",
+"Flower",
+"None of these"
+],
+"page": "",
+"q": "In chip budding, the chip of bud wood is typically taken from which part of the plant?",
+"serial": "1sUgWsko:604",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:604"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase timber production",
+"To involve local communities in forest conservation",
+"To promote monoculture plantations",
+"To reduce biodiversity",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of Joint Forest Management (JFM)?",
+"serial": "1UgnIe-g:2796",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2796"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Fishbone diagram",
+"Gantt chart",
+"Pareto chart",
+"Flowchart",
+"None of these"
+],
+"page": "",
+"q": "The cause\u2011and\u2011effect diagram used in PRA is also known as which of the following?",
+"serial": "128DIQLj:2164",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2164"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Chewing",
+"Piercing\u2011sucking",
+"Sponging",
+"Siphoning",
+"None of these"
+],
+"page": "",
+"q": "Which insect mouthpart type lacks mandibles?",
+"serial": "1UgnIe-g:1885",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1885"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-20 mM",
+"2 mM",
+"500 ppm",
+"30-60 ppm",
+"None of these"
+],
+"page": "",
+"q": "At what concentration is Salicylic acid used to induce disease resistance in sweet cherries?",
+"serial": "1bxM1Q-4:3637",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3637"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Region > Basin > Catchment > Watershed",
+"Region > Watershed > Basin > Catchment",
+"Basin > Region > Catchment > Watershed",
+"Catchment > Basin > Region > Watershed",
+"None of these"
+],
+"page": "",
+"q": "Which of the following represents the correct hierarchical sequence of watershed units from largest to smallest?",
+"serial": "128DIQLj:881",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:881"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pendimethalin",
+"Isoproturon",
+"Clodinafop\u2011propargyl",
+"Sulfosulfuron",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is applied at 25\u201130 DAS POE for controlling grasses (NLWs) in wheat?",
+"serial": "128DIQLj:1051",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1051"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"50 cm",
+"60 cm",
+"70 cm",
+"80 cm",
+"None of these"
+],
+"page": "",
+"q": "During the first year of the Bush system, the plant is cut to a height of ___ cm.",
+"serial": "1sUgWsko:740",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:740"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cocus nucifera L.",
+"Areca catechu",
+"Cocos nucifera",
+"Cocos indica",
+"None of these"
+],
+"page": "",
+"q": "What is the botanical name of coconut?",
+"serial": "1bxM1Q-4:3075",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3075"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It remains constant throughout life",
+"It decreases with age and size",
+"It increases with age and size",
+"It fluctuates randomly",
+"None of these"
+],
+"page": "",
+"q": "How does fecundity in fish typically change as they grow older and larger?",
+"serial": "1sUgWsko:2179",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2179"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"PMRY",
+"TPDS",
+"NREP",
+"NAEP",
+"None of these"
+],
+"page": "",
+"q": "Which scheme was launched to benefit about 6 crore poor families?",
+"serial": "128DIQLj:2101",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2101"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Conks",
+"Cankers",
+"Galls",
+"Sclerotia",
+"None of these"
+],
+"page": "",
+"q": "Shelf\u2011 or bracket\u2011shaped fungal fruiting bodies that appear on rotting woody plants are called:",
+"serial": "1sUgWsko:3623",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3623"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Spheroidal",
+"Rod-shaped",
+"Spiral",
+"Polyhedral",
+"None of these"
+],
+"page": "",
+"q": "What is the shape of the cauliflower mosaic virus?",
+"serial": "1UgnIe-g:1207",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1207"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bacteria > actinomycetes > fungi > algae",
+"Fungi > bacteria > actinomycetes > algae",
+"Actinomycetes > bacteria > fungi > algae",
+"Algae > fungi > bacteria > actinomycetes",
+"None of these"
+],
+"page": "",
+"q": "What is the correct order of microflora presence in general soil, from most to least abundant?",
+"serial": "17U0MEc-:1265",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1265"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"EC < 4 dS/m and pH < 8.5",
+"EC > 4 dS/m and pH 8.5",
+"EC < 4 dS/m and ESP > 15%",
+"EC 4 dS/m and ESP 15%",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a characteristic of saline-alkali soil?",
+"serial": "1sUgWsko:4325",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4325"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It receives the least solar radiation",
+"Temperature decreases with height, reaching about \u201395 \u00b0C at the mesopause (80 km)",
+"High concentration of greenhouse gases",
+"Presence of ionised particles",
+"None of these"
+],
+"page": "",
+"q": "Why is the mesosphere regarded as the coldest region of the atmosphere?",
+"serial": "1sUgWsko:5617",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5617"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Primary trisomy",
+"Secondary trisomy",
+"Tertiary trisomy",
+"Tetrasomy",
+"None of these"
+],
+"page": "",
+"q": "Which type of trisomy involves an additional isochromosome?",
+"serial": "1UgnIe-g:395",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:395"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lemon",
+"Grapefruit",
+"Sweet orange",
+"Kumquat",
+"None of these"
+],
+"page": "",
+"q": "Which citrus fruit is primarily used for making dry and fortified wines?",
+"serial": "1YcJWVgW:223",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:223"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Colletotrichum capsici",
+"Alternaria porri",
+"Fusarium oxysporum",
+"Erysiphe polygoni",
+"None of these"
+],
+"page": "",
+"q": "Which pathogen causes anthracnose in chilli?",
+"serial": "1sUgWsko:3866",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3866"
+}
+],
+"set_no": 3,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
