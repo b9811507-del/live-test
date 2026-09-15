@@ -2201,6 +2201,15 @@
 "guard": 1789460218.2034469
 },
 "paid": {
+"claims": [
+{
+"at": "2026-09-15T16:21:20+05:30",
+"key": "afo",
+"mode": "claim",
+"ref_state": "awaiting",
+"uid": "1404352962"
+}
+],
 "links": {
 "plink_TcHiU66tDPmW11": {
 "amount": 251,
