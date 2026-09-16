@@ -16,7 +16,9 @@ stream) and a slow test can never be started twice.
 
 Endpoints
     GET /                 status JSON (version, cycles, last runs, next slots)
-    GET /ping             "ok" — self-pinged every 4 min; any external pinger may use it too
+    GET /ping             "ok" (3 bytes) — point any uptime/cron pinger here
+    GET /wake             204, empty body (0 bytes) — for monitors with a tiny response limit
+    GET /t                one-line status (~150 bytes) for size-capped monitors
     GET /run/<cmd>?key=…  manual trigger (protected by ADMIN_KEY); cmd in slotchain|keepwarm|guard|supply|status
 
 Run locally:   PORT=8080 python3 engine/web.py
@@ -224,12 +226,38 @@ class Handler(BaseHTTPRequestHandler):
             if key == "external":
                 print("inbound ping from %s (%s)" % (ua[:60], ip[:40]), flush=True)
             return self._send(200, "ok\n")
+        if path == "/wake":                          # 0-byte keep-awake: 204 No Content
+            with _LOCK:
+                rec = STATE.setdefault("ping_in", {"external": 0, "self": 0})
+                rec["wake"] = (rec.get("wake") or 0) + 1
+            return self._send(204, "")
+        if path in ("/t", "/tiny"):                  # ultra-compact one-line status
+            with _LOCK:
+                snap = json.loads(json.dumps(STATE))
+            last = snap.get("last") or {}
+            bits = []
+            for nm in ("slotchain", "keepwarm"):
+                if last.get(nm):
+                    bits.append("%s@%s/rc%s" % (nm, (last[nm].get("at") or "")[11:19], last[nm].get("rc")))
+            nxt = ""
+            for sl in next_slots():
+                if sl["slot"].startswith("IARI"):
+                    nxt = "iari+%dm" % sl["in_minutes"]
+            cyc = snap.get("cycles") or {}
+            line = "ok started=%s cyc=sc%s/kw%s err=%s %s next=%s\n" % (
+                (snap.get("started") or "")[11:19], cyc.get("slotchain", 0), cyc.get("keepwarm", 0),
+                len(snap.get("last_error") or {}), " ".join(bits), nxt)
+            return self._send(200, line)
         if path == "/":
             with _LOCK:
                 snap = json.loads(json.dumps(STATE))
             snap["now_ist"] = istnow().isoformat(timespec="seconds")
-            snap["window"] = "10:00-19:30 IST (tests)"
             snap["next_slots"] = next_slots()
+            for k in ("window", "host", "logs", "log"):
+                snap.pop(k, None)                     # keep the body tiny: some free monitors reject large responses
+            for k, v in list((snap.get("ping_in") or {}).items()):
+                if isinstance(v, dict):
+                    v.pop("ua", None); v.pop("ip", None)
             return self._send(200, json.dumps(snap, indent=1, default=str), "application/json")
         if path.startswith("/run/"):
             cmd = path.split("/")[-1]

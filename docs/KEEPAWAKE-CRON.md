@@ -61,3 +61,12 @@ curl -X POST -H "Authorization: Bearer $RENDER_KEY" -H "Content-Type: applicatio
 ```
 Rules: (1) test ke ±10 min me deploy/push mat karo (14:30 IARI, 18:00 AFO) — restart cycle ko beech me kaat deta hai;
 (2) journal commits ab bilkul harmless hain, wo test ke beech me bhi aate rahenge.
+
+## Response-size safe endpoints (kuch monitors bade response reject karte hain)
+| Endpoint | Size | Kab use karein |
+|---|---|---|
+| `/ping` | **3 bytes** (`ok`) | **default — yahi use karo** |
+| `/wake` | **0 bytes** (HTTP 204) | agar monitor "response too large" ya khaali body maange |
+| `/t` | ~150 bytes one-line | chhota status: `ok started=13:33 cyc=sc12/kw5 err=0 slotchain@13:45:02/rc0 next=iari+56m` |
+| `/` | ~0.4 KB JSON | detailed status (machines) |
+Repo/ dashboard / GitHub API URLs **mat** de dena monitor ko — wo bade HTML/JSON dete hain aur wahi "output too large" wali error aati hai.
