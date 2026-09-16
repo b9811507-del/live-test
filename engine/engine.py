@@ -106,6 +106,7 @@ COUNTDOWN_SECS = int(os.environ.get("COUNTDOWN_SECS", "15"))  # v11.1: announce 
 DEFER_SECS = int(os.environ.get("DEFER_SECS", "240"))         # run earlier than this only re-arms (saves runner minutes)
 WINDOW_BEFORE = 50 * 60          # start allowed from go-50min
 WINDOW_AFTER = 4 * 3600          # after go+4h a missed slot stays missed
+LATE_MAX_MIN = int(os.environ.get("LATE_MAX_MIN", "15"))   # v11.4.10: never *start* a test this late
 POLL_SECONDS = 30                # open_period + drain window
 PAPER_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "paper_template.html")
 POLL_MODE = (os.environ.get("POLL_MODE", "quiz") or "quiz").strip().lower()   # quiz = explanation in the poll
@@ -1428,6 +1429,20 @@ def run_job(job, day=None, st=None, force=False):
     fails = 0
     last_push = time.time()
     for i in range(resume_at, N):
+        if i % 5 == 0:                            # v11.4.10: pick up an owner STOP mid-test
+            _rf = read_stop_flag()
+            if _rf:
+                st["stop"] = _rf
+            if stop_requested(st, job, day):
+                j["killed"] = {"at": istnow().isoformat(timespec="seconds"), "why": "owner stop mid-test",
+                               "q": i + 1}
+                j["step"] = 8
+                j["done_at"] = j["killed"]["at"]
+                jsave(st, "%s killed mid-test at Q%d (owner stop)" % (job, i + 1))
+                log("STOP flag honoured: %s killed at Q%d" % (job, i + 1))
+                dm_admin(tr.t("adm_missed", job=job.upper(), time=JOBS[job]["time_label"])
+                         + " (owner stop at Q%d)" % (i + 1), "killed-mid:" + job, 6 * 3600)
+                return "killed"
         if time.time() > hard:
             j["partial"] = True
             log("poll budget exhausted at Q%d" % (i + 1))
@@ -1615,6 +1630,31 @@ def is_closed(job, day):
     return None
 
 
+
+def stop_requested(st, job, day):
+    """v11.4.10 owner kill switch: journal key "stop". None -> no stop."""
+    stop = (st or {}).get("stop") or None
+    if not stop:
+        return None
+    if stop.get("day") and stop.get("day") != day:
+        return None
+    jobs = stop.get("jobs")
+    if jobs in (None, "all") or job in jobs or (isinstance(jobs, str) and jobs == job):
+        return stop
+    return None
+
+
+def read_stop_flag():
+    """Read the journal's "stop" key from GitHub WITHOUT disturbing in-memory state."""
+    keep = _S.get("st")
+    try:
+        st2 = jload(force=True) or {}
+        return st2.get("stop")
+    except Exception:
+        return None
+    finally:
+        _S["st"] = keep
+
 def slot_phase(job, day, j):
     """idle | wait | warm | late | missed | done | closed"""
     if int(j.get("step", 0)) >= 8:
@@ -1678,6 +1718,42 @@ def cycle_job(st, day, job):
         return "missed"
     if ph == "idle":
         return "wait"
+    # v11.4.10 owner kill switch (journal key "stop")
+    _stop = stop_requested(st, job, day)
+    if _stop:
+        j["step"] = 8
+        j["killed"] = {"at": istnow().isoformat(timespec="seconds"), "why": _stop.get("why") or "owner stop",
+                       "by": _stop.get("by") or "admin"}
+        j["done_at"] = j["killed"]["at"]
+        jsave(st, "%s killed by owner stop" % job)
+        dm_admin(tr.t("adm_missed", job=job.upper(), time=JOBS[job]["time_label"]) + " (owner stop)",
+                 "killed:" + job, 6 * 3600)
+        return "killed"
+    # v11.4.10 late guard: a test that never began must not start this long after its slot time
+    if ph == "late" and not j.get("started_at"):
+        late_min = int((istnow() - go_dt(day, job)).total_seconds() // 60)
+        if late_min > LATE_MAX_MIN:
+            j["step"] = 8
+            j["missed"] = True
+            j["late_sealed"] = {"go": go_dt(day, job).isoformat(timespec="seconds"),
+                                "sealed_at": istnow().isoformat(timespec="seconds"), "late_min": late_min}
+            j["done_at"] = j["late_sealed"]["sealed_at"]
+            jsave(st, "%s late-sealed (%d min past slot, polls never began)" % (job, late_min))
+            log("late guard: %s sealed (no polls started, %d min late)" % (job, late_min))
+            if job == "afo":
+                try:
+                    import afo_mongo
+                    db, flush = afo_mongo.db_handle()
+                    doc = db.afo_sets.find_one({"date": day}) or {}
+                    if doc.get("status") == "running":
+                        db.afo_sets.update_one({"date": day}, {"$set": {
+                            "status": "ready", "note": "late-sealed — set unused"}})
+                        flush()
+                except Exception as e:
+                    log("mongo release failed:", str(e)[:80])
+            dm_admin(tr.t("adm_missed", job=job.upper(), time=JOBS[job]["time_label"])
+                     + " (late guard: %d min, polls never began)" % late_min, "late-seal:" + job, 6 * 3600)
+            return "missed"
     if ph == "warm" and (go_dt(day, job) - istnow()).total_seconds() > DEFER_SECS:
         log("cycle %s: %.0fs to start -> defer (this run only re-arms)" % (
             job, (go_dt(day, job) - istnow()).total_seconds()))
