@@ -1,0 +1,13 @@
+name: ping
+# tiny diagnostic workflow (16-Sep): confirms whether GitHub is allowed to start our jobs at all.
+on:
+  workflow_dispatch: {}
+  push:
+    paths: [".github/workflows/ping.yml"]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: hello
+        run: echo "runner started OK at $(date -u)"
