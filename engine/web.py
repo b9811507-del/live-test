@@ -240,9 +240,10 @@ class Handler(BaseHTTPRequestHandler):
                 if last.get(nm):
                     bits.append("%s@%s/rc%s" % (nm, (last[nm].get("at") or "")[11:19], last[nm].get("rc")))
             nxt = ""
-            for sl in next_slots():
-                if sl["slot"].startswith("IARI"):
-                    nxt = "iari+%dm" % sl["in_minutes"]
+            _slots = sorted(next_slots(), key=lambda x: x.get("in_minutes", 99999))   # soonest slot first
+            if _slots:
+                nm = _slots[0]["slot"].split()[0].lower()                             # malwa / iari / afo
+                nxt = "%s+%dm" % (nm, _slots[0]["in_minutes"])
             cyc = snap.get("cycles") or {}
             line = "ok started=%s cyc=sc%s/kw%s err=%s %s next=%s\n" % (
                 (snap.get("started") or "")[11:19], cyc.get("slotchain", 0), cyc.get("keepwarm", 0),
