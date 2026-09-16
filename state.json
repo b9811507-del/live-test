@@ -5244,13 +5244,36 @@
 },
 "iari": {
 "announced_at": "2026-09-16T14:30:00+05:30",
-"ans": {},
+"ans": {
+"0": {
+"5261055239": 0,
+"5663965932": 0,
+"6738965893": 0,
+"722547957": 0,
+"769645691": 0,
+"8260868348": 0,
+"8292389515": 0,
+"8501796920": 0,
+"8567101693": 0
+}
+},
 "bidx": 35,
 "cd": 0,
-"lock_ts": 1789554008.0221984,
+"expl_in_poll": 1,
+"lock_ts": 1789554043.5214415,
 "locked_by": "local-46",
 "msg_ann": 29275,
-"names": {},
+"names": {
+"5261055239": "Saurabh_Giri_BaBa_ji",
+"5663965932": "nith070ish",
+"6738965893": "Golu",
+"722547957": "EkNath",
+"769645691": "PD_Panchal357",
+"8260868348": "Pallu",
+"8292389515": "AMRESH_SAHU_09",
+"8501796920": "Sei123",
+"8567101693": "Tushar"
+},
 "pinned_ann": true,
 "plan": {
 "bidx_next": 35,
@@ -5906,10 +5929,13 @@
 "bidx": 0,
 "seeded_from": "series_reset"
 },
-"qidx": 0,
+"poll_ids": {
+"0": "6147817471689622488"
+},
+"qidx": 1,
 "reset_note": "fake-clock artifacts removed 16-Sep 12:45 IST (web.py smoke run)",
 "seeded_from": "series_reset",
-"sent_i": 0,
+"sent_i": 1,
 "skips": [],
 "started_at": "2026-09-16T15:50:06+05:30",
 "step": 2,
