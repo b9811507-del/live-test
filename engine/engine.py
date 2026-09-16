@@ -108,6 +108,9 @@ WINDOW_AFTER = 4 * 3600          # after go+4h a missed slot stays missed
 POLL_SECONDS = 30                # open_period + drain window
 PAPER_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "paper_template.html")
 POLL_MODE = (os.environ.get("POLL_MODE", "quiz") or "quiz").strip().lower()   # quiz = explanation in the poll
+REVEAL_AFTER_Q = (os.environ.get("REVEAL_AFTER_Q", "off") or "off").strip().lower() in ("on", "1", "yes")
+CTA_SHOW = (os.environ.get("CTA_SHOW", "off") or "off").strip().lower() in ("on", "1", "yes")
+LB_MSG_LIMIT = int(os.environ.get("LB_MSG_LIMIT", "3900"))       # Telegram message limit is 4096
 POLL_EXPL_LIMIT = int(os.environ.get("POLL_EXPL_LIMIT", "200"))            # Telegram quiz explanation limit
 PAPER_BRAND = os.environ.get("PAPER_BRAND", "Agri Learning Point")      # matches the IARI group files
 PAPER_AUTHOR = os.environ.get("PAPER_AUTHOR", "By SatyamSir")
@@ -1141,22 +1144,55 @@ def score_rows(day, job, plan, ans, names):
     return rows
 
 
-def leaderboard_text(day, job, plan, rows, part=0):
+def lb_head_text(day, job, plan, part=0):
     cfg = JOBS[job]
     label = plan.get("label") or job.upper()
-    head = (tr.t("lb_head", label=esc(label), n=plan["n"], right=fmt_num(cfg["right"]),
+    return (tr.t("lb_head", label=esc(label), n=plan["n"], right=fmt_num(cfg["right"]),
                  wrong=fmt_num(abs(float(cfg["wrong"]))))
             if part == 0 else tr.t("lb_head_contd", label=esc(label)))
+
+
+def leaderboard_row(r):
+    """One student's line: medal/rank + tap-able name + score + correct/incorrect."""
+    medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(r["rank"]) or ("#%d." % r["rank"])
+    return ("%s <a href=\"tg://user?id=%s\"><b>%s</b></a> — <b>%+.1f</b> · %d correct · %d incorrect"
+            % (medal, esc(r["uid"]), esc(r["name"]), r["score"], r["right"], r["wrong"]))
+
+
+def leaderboard_text(day, job, plan, rows, part=0):
+    head = lb_head_text(day, job, plan, part)
     if not rows:
         return head + "\n\n" + tr.t("lb_empty")
     out = [head, ""]
     for r in rows:
-        medal = {1: "🥇", 2: "🥈", 3: "🥉"}.get(r["rank"]) or ("#%d." % r["rank"])
-        out.append("%s <a href=\"tg://user?id=%s\"><b>%s</b></a> — <b>%+.1f</b> · %d correct · %d incorrect"
-                   % (medal, esc(r["uid"]), esc(r["name"]), r["score"], r["right"], r["wrong"]))
+        out.append(leaderboard_row(r))
         if part == 0 and r["rank"] <= 3:
             out.append("")            # breathing room under the medal rows
     return "\n".join(out)
+
+
+def leaderboard_parts(day, job, plan, rows):
+    """v11.4.7: split the leaderboard so EVERY student is listed exactly once and no message is ever
+    truncated. Packing is by rendered length (<= LB_MSG_LIMIT), not by a fixed row count."""
+    if not rows:
+        return [leaderboard_text(day, job, plan, [], part=0)]
+    head0 = lb_head_text(day, job, plan, part=0)
+    cont = lb_head_text(day, job, plan, part=1)
+    parts, cur, size, first = [], [head0, ""], len(head0) + 1, True
+    for r in rows:
+        line = leaderboard_row(r)
+        add = len(line) + 1 + (1 if r["rank"] <= 3 else 0)
+        if size + add > LB_MSG_LIMIT and len(cur) > 2:
+            parts.append("\n".join(cur))
+            cur, size, first = [cont, ""], len(cont) + 1, False
+        cur.append(line)
+        if r["rank"] <= 3:
+            cur.append("")
+        size += add
+    parts.append("\n".join(cur))
+    for p in parts:
+        assert len(p) <= 4096, "leaderboard part too long (%d)" % len(p)
+    return parts
 
 
 def paper_data(job, day, plan):
@@ -1430,14 +1466,19 @@ def run_job(job, day=None, st=None, force=False):
         j.setdefault("poll_ids", {})[str(i)] = pid
         aq = ans.setdefault(str(i), {})
         off = drain(off, pid, POLL_SECONDS + 1.5, aq, names, hard)
-        # v11.4: native-quiz-bot style reveal (correct option + explanation + who was right)
-        try:
-            rv = tg("sendMessage", chat_id=chat, text=reveal_text(job, plan, i, q, aq, names),
-                    parse_mode="HTML", disable_web_page_preview=True)
-            if rv:
-                j["reveals"] = int(j.get("reveals", 0)) + 1
-        except Exception as e:
-            log("reveal failed for Q%d: %s" % (i + 1, str(e)[:90]))
+        # v11.4.7 (admin order): NO reveal message after each question — the explanation is already
+        # inside the quiz poll, so students see correct/wrong + explanation instantly. REVEAL_AFTER_Q=on
+        # brings the separate message back if ever needed.
+        if REVEAL_AFTER_Q:
+            try:
+                rv = tg("sendMessage", chat_id=chat, text=reveal_text(job, plan, i, q, aq, names),
+                        parse_mode="HTML", disable_web_page_preview=True)
+                if rv:
+                    j["reveals"] = int(j.get("reveals", 0)) + 1
+            except Exception as e:
+                log("reveal failed for Q%d: %s" % (i + 1, str(e)[:90]))
+        else:
+            j["expl_in_poll"] = int(j.get("expl_in_poll", 0)) + (1 if (q.get("expl") and POLL_MODE == "quiz") else 0)
         j["qidx"] = i + 1
         j["step"] = 2
         j["lock_ts"] = time.time()
@@ -1453,14 +1494,33 @@ def run_job(job, day=None, st=None, force=False):
     # --- leaderboard (48 rows/msg)
     rows = score_rows(day, job, plan, ans, names)
     if not j.get("lb_sent"):
-        for part, i in enumerate(range(0, max(len(rows), 1), LB_ROWS)):
-            txt = leaderboard_text(day, job, plan, rows[i:i + LB_ROWS], part)
-            tg("sendMessage", chat_id=chat, text=txt[:4000], parse_mode="HTML", disable_web_page_preview=True)
+        parts = leaderboard_parts(day, job, plan, rows)
+        done = int(j.get("lb_parts_sent") or 0)
+        if done >= len(parts):
+            done = 0                                  # journal from an older run -> re-send everything once
+        for k in range(done, len(parts)):
+            m = tg("sendMessage", chat_id=chat, text=parts[k], parse_mode="HTML",
+                   disable_web_page_preview=True)
+            if not m:
+                log("leaderboard part %d/%d FAILED -> the rest of the flow waits, next cycle resumes here"
+                    % (k + 1, len(parts)))
+                break
+            j["lb_parts_sent"] = k + 1
+            jsave(st, "%s leaderboard %d/%d" % (job, k + 1, len(parts)))
+            log("leaderboard part %d/%d sent (players listed so far: %s)"
+                % (k + 1, len(parts), min(len(rows), k * 40 + 40)))
+            time.sleep(1.1)                           # gentle pacing (group flood limits)
+        if int(j.get("lb_parts_sent") or 0) < len(parts):
+            j["locked_by"] = ""
+            jsave(st, "%s leaderboard incomplete (will resume)" % job)
+            return "leaderboard-partial"
         j["lb_sent"] = True
+        j["lb_parts"] = len(parts)
+        j["lb_rows"] = len(rows)
         j["step"] = 4
         j["players"] = len(rows)
         j["answered_total"] = sum(len(v) for v in ans.values())
-        jsave(st, "%s leaderboard" % job)
+        jsave(st, "%s leaderboard complete (%d part(s))" % (job, len(parts)))
 
 
     # --- TOP 3 names (v11.4; replaces the old congrats message, never pinned)
@@ -1499,10 +1559,13 @@ def run_job(job, day=None, st=None, force=False):
                 j["tmr_note_text"] = note
                 jsave(st, "%s tomorrow plan" % job)
                 log("tomorrow plan sent: %s" % note.replace("\n", " ")[:140])
-    if not j.get("cta_sent"):
+    # v11.4.7 (admin order): the daily-schedule sign-off line is not posted any more.
+    if CTA_SHOW and not j.get("cta_sent"):
         c = tg("sendMessage", chat_id=chat, text=cta_text(), parse_mode="HTML", disable_web_page_preview=True)
         if c:
             j["cta_sent"] = c["message_id"]
+    elif not CTA_SHOW and not j.get("cta_sent"):
+        j["cta_sent"] = "off"
     # --- v11.4 (admin order): NO paid-batches message in the group any more.
     if (os.environ.get("PAID_SHOWCASE", "off") or "off").lower() in ("on", "1", "yes") and not j.get("paid_msg"):
         try:
@@ -1510,7 +1573,8 @@ def run_job(job, day=None, st=None, force=False):
         except Exception as e:
             log("paid message failed:", str(e)[:120])
     j["step"] = 8
-    j["msg_order"] = ["announce", "countdown", "polls+reveals", "leaderboard", "top3", "file", "tomorrow-plan", "cta"]
+    j["msg_order"] = ["announce", "countdown", "quiz-polls(+in-poll explanation)", "leaderboard(all parts)",
+                      "top3", "file", "tomorrow-plan"]
     j["done_at"] = istnow().isoformat(timespec="seconds")
     j["elapsed_s"] = int(time.time() - t_start)
     j["partial"] = bool(j.get("partial"))
