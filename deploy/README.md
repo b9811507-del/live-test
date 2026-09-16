@@ -19,7 +19,24 @@ GitHub Actions: saare workflows DISABLED (fallback ke liye code wahin pada hai, 
 
 ---
 
-## 1. VM banao (Oracle Cloud Always Free — hamesha free, no charge)
+## 0. CARD-FREE ROUTE (recommended — Render free web service)
+
+Agar card nahi hai (Oracle/AWS/GCP sab card maangte hain) to **Render free Web Service + free pinger**
+use karo — poora guide: **`docs/FREE-NO-CARD-HOSTING.md`**. Short me:
+
+1. render.com → New Web Service → is repo ko connect → Runtime **Python 3**,
+   Build `pip install -r requirements.txt`, Start `python3 engine/web.py`, Instance **Free**.
+2. Dashboard → Environment me secrets daalo (`EXAM_TG_TOKEN`, `MONGO_URI`, `GITHUB_TOKEN`, `ADMIN_CHAT`,
+   `RAZORPAY_*`, `PAID_CHAT_*`, `TZ=Asia/Kolkata`).
+3. cron-job.org (free, no card) se `https://<service>.onrender.com/ping` har **5 min** ping karo —
+   free instance 15 min traffic ke bina sota hai, pinger use jagaye rakhta hai.
+
+`engine/web.py` khud hi wahi schedule chalata hai jo neeche cron file karti hai (tests 11:00/14:30/18:00,
+desk har 3 min, supply 05:00, guard 22:00, code update 09:45). GitHub Actions saare **disabled** hain.
+
+---
+
+## 1. VM banao (agar card wala free VM available ho, e.g. Oracle Cloud Always Free)
 
 1. **signup**: https://www.oracle.com/cloud/free/ → *Start for free* (card sirf verification ke liye,
    Always Free resources par charge nahi lagta; kabhi-kabhi card verify hota hai ~$1 hold ke saath).

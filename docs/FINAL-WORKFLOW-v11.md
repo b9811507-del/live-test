@@ -63,6 +63,10 @@ private repo are paid; the old 24×7 self-chains burned ~3,000 min/day). Full gu
 | `0 22` | `deploy/run_cycle.sh guard` | safety net: seal open slots, journal tidy-up |
 | `45 9` | `deploy/update.sh` | pull the latest engine before the window |
 
+**Card-free alternative (no VM):** the same schedule runs inside `engine/web.py` on a **Render free
+Web Service** (no card needed) kept awake by a free pinger — see `docs/FREE-NO-CARD-HOSTING.md`.
+Both routes use **zero GitHub Actions minutes** (all workflows disabled).
+
 `state.json` still lives in the repo and the engine pushes it after every step (git push is free —
 only *workflow runs* cost minutes). Every GitHub Actions workflow is **disabled**; their code stays in
 `.github/workflows/` as a fallback and they no longer self-chain 24×7.

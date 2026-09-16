@@ -1,0 +1,2 @@
+# runtime deps for the free always-on runner (engine/web.py) and the engine itself
+pymongo>=4.6
