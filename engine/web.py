@@ -58,7 +58,7 @@ _LOCK = threading.Lock()
 
 
 # --------------------------------------------------------------------------- one engine cycle
-def run_cycle(name, args, timeout=1500):
+def run_cycle(name, args, timeout=2700):
     """Run `engine.py <args…>` in a subprocess under a lock. Returns (rc, seconds) or (-1, 0) if busy."""
     os.makedirs(LOGDIR, exist_ok=True)
     lock_path = os.path.join(LOCKDIR, "agri-runner-%s.lock" % name)
@@ -90,6 +90,13 @@ def run_cycle(name, args, timeout=1500):
         with _LOCK:
             STATE["last_error"][name] = str(e)[:200]
     secs = round(time.time() - t0, 1)
+    try:                                       # surface the engine's own output in the host log
+        tail = open(os.path.join(LOGDIR, "%s.log" % name), encoding="utf-8", errors="replace").read().splitlines()[-12:]
+        for line in tail:
+            print("[%s] %s" % (name, line[:220]), flush=True)
+    except Exception:
+        pass
+    print("[%s] cycle finished rc=%s in %ss" % (name, rc, secs), flush=True)
     with _LOCK:
         STATE["running"].pop(name, None)
         STATE["cycles"][name] = STATE["cycles"].get(name, 0) + 1
