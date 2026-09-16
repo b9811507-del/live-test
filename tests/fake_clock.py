@@ -125,13 +125,13 @@ def case2_warm(tmp):
     kb = [e for e in methods(log, "sendMessage", GROUP) if e.get("reply_markup")]
     hinglish = [t for t in texts(log) if any(w in t for w in ("sawal", "dhanyavaad", "Roz ka", "ko pin", "jawab"))]
     last_group_msg = [e for e in log if e.get("chat") == GROUP and e["method"] == "sendMessage"][-1]
-    pl = [e for e in polls(log) if re.match(r"^\d+/20\.", e.get("question") or "")]   # malwa only
+    pl = [e for e in polls(log) if re.match(r"^\d+/21\.", e.get("question") or "")]   # malwa only
     idx = texts(log)
-    ok = (len(ann) == 1 and len(pl) == 20 and all(e.get("open_period") == 30 for e in pl)
+    ok = (len(ann) == 1 and len(pl) == 21 and all(e.get("open_period") == 30 for e in pl)
           and all(e.get("type") == "quiz" and isinstance(e.get("correct_option_id"), int) for e in pl)
           and all(e.get("explanation") for e in pl) and all(e.get("is_anonymous") is False for e in pl)
           and all(e.get("correct_option_id") is not None for e in pl)
-          and all(e["question"].startswith("%d/20." % (i + 1)) for i, e in enumerate(pl))
+          and all(e["question"].startswith("%d/21." % (i + 1)) for i, e in enumerate(pl))
           and len(pin_calls) == 1 and pin_calls[0]["message_id"] == ann_id          # announce is the ONLY pin
           and "Book pages" in ann[0]
           and len(reveals) == 0                                                      # v11.4.7: no reveal msg
@@ -165,7 +165,7 @@ def case3_overlap(tmp):
         os.remove(os.path.join(tmp, "tg.jsonl"))
     p2, log2, st2 = run(tmp, ("slotchain",), day + "T14:28:30+05:30")
     pl2 = polls(log2)
-    ok = (len(ann1) == 1 and len(pl1) == 20 and m1 == 8 and i1 == 0 and "defer" in (p.stdout + p.stderr)
+    ok = (len(ann1) == 1 and len(pl1) == 21 and m1 == 8 and i1 == 0 and "defer" in (p.stdout + p.stderr)
           and int(day_of(st2, day, "iari").get("step", 0)) == 8 and len(pl2) == 8    # 3 pages = 3+3+2 Q
           and any("IARI BOOK MCQ 2026" in t for t in texts(log2)))
     return ok, ("cycle1: announces=%d polls=%d malwa=%s iari=%s(deferred) | cycle2: iari polls=%d (3 pages) iari.step=%s"
@@ -203,7 +203,7 @@ def case5_resume(tmp):
     ann = [t for t in texts(log) if "ek answer, poll auto-close" in t]
     pl = polls(log)
     j2 = day_of(st2, day, "malwa")
-    ok = (len(ann) == 0 and len(pl) == 10 and pl and pl[0]["question"].startswith("11/20.")
+    ok = (len(ann) == 0 and len(pl) == 11 and pl and pl[0]["question"].startswith("11/21.")
           and (j2.get("plan") or {}).get("built_at") == pre_built_at and int(j2.get("step", 0)) == 8
           and len(methods(log, "sendDocument", GROUP)) == 1)
     return ok, ("re-announce=%d polls=%d first_q=%r plan_rebuilt=%s step=%s"
@@ -269,7 +269,7 @@ def case9_boundary(tmp):
           and [x["message_id"] for x in unp] == [m.get("msg_ann")]
           and len(iann) == 1 and "Book pages: 2, 4, 5" in iann[0]            # 3 pages/day (v11.4)
           and len(tmr) == 2 and any("7, 8, 9" in t for t in tmr)             # tomorrow = next 3 pages
-          and int(m.get("step", 0)) == 8 and len(pl) == 28                   # 20 malwa + 8 iari
+          and int(m.get("step", 0)) == 8 and len(pl) == 29                   # 21 malwa + 8 iari
           and len(reveals) == 0
           and iari_q and (i.get("plan") or {}).get("pages_list") == [2, 4, 5]
           and cd and max(cd) == 15 and max(cd) <= 15
@@ -571,10 +571,10 @@ def case21_toppers_three(tmp):
                     env={"ENGINE_FAKE_UPDATES": fp})
     lb = [t for t in texts(log) if "LEADERBOARD" in t and t.startswith("🏆")]
     top = [t for t in texts(log) if "TOP 3" in t]
-    q1poll = [e for e in polls(log) if (e.get("question") or "").startswith("1/20.")]
+    q1poll = [e for e in polls(log) if (e.get("question") or "").startswith("1/21.")]
     fx = _fixture_rows("malwa_vol1")
     key = "ABCDE".index(fx[0][9].strip().upper())
-    exp = "✅ <b>Q1/20 · Correct answer: %s) %s</b>" % (chr(65 + key), fx[0][4 + key].strip())   # (unused here)
+    exp = "✅ <b>Q1/21 · Correct answer: %s) %s</b>" % (chr(65 + key), fx[0][4 + key].strip())   # (unused here)
     ranked = [l for l in (top[0].split("\n") if top else []) if l.startswith(("🥇", "🥈", "🥉"))]
     wrong_names = [n for _, n, o in players if o != key]
     right_names = [n for _, n, o in players if o == key]
@@ -612,7 +612,7 @@ def case22_exact_start(tmp):
            if first_poll.get("t") and ann_at else -1)
     ok = (int(j.get("step", 0)) == 8 and ann_at >= day + "T11:00:00"
           and j.get("msg_ann") and sends and sends[0].get("message_id") == j["msg_ann"]
-          and len(polls(log1)) == 20 and cd and max(cd) == 15 and gap >= 15)
+          and len(polls(log1)) == 21 and cd and max(cd) == 15 and gap >= 15)
     return ok, "announced_at=%s first_msg=announce=%s polls=%d countdown(max %s) announce->Q1=%ss" % (
         ann_at, bool(sends) and sends[0].get("message_id") == j.get("msg_ann"), len(polls(log1)),
         max(cd) if cd else None, int(gap))
@@ -684,8 +684,8 @@ def case25_cross_day(tmp):
     ok = (p1i.get("pages_list") == [2, 4, 5] and p1m.get("row_from") == 0          # fresh Day 1
           and p2i.get("row_from") == p1i.get("bidx_next") and p2i.get("pages_list")
           and p2i.get("pages_list") != p1i.get("pages_list")
-          and p2m.get("row_from") == p1m.get("bidx_next") == 20
-          and len(polls(log1)) == 20 and len(polls(log2)) == 8 and len(polls(log3)) == 20
+          and p2m.get("row_from") == p1m.get("bidx_next") == 21
+          and len(polls(log1)) == 21 and len(polls(log2)) == 8 and len(polls(log3)) == 21
           and not (polls_set(log1) & polls_set(log3))                            # malwa no repeat
           and not (polls_set(log2) & polls_set(log4)))                           # iari no repeat
     return ok, ("d1 iari pages=%s rows=%s..%s | d1 malwa rows=%s..%s | d2 iari pages=%s rows=%s..%s "
@@ -716,7 +716,7 @@ def case26_series_restart(tmp):
     ok = ((i2.get("plan") or {}).get("row_from") == 0 and (m2.get("plan") or {}).get("row_from") == 0
           and (m2.get("plan") or {}).get("vol") == 0
           and (i2.get("plan") or {}).get("pages_list") == (i1.get("plan") or {}).get("pages_list")
-          and len(polls(log3)) == 20 and len(polls(log4)) == 8)
+          and len(polls(log3)) == 21 and len(polls(log4)) == 8)
     return ok, "restart d2: iari rows=%s..%s pages=%s | malwa rows=%s..%s vol=%s" % (
         (i2.get("plan") or {}).get("row_from"), (i2.get("plan") or {}).get("row_to"),
         (i2.get("plan") or {}).get("pages_list"), (m2.get("plan") or {}).get("row_from"),
@@ -745,14 +745,14 @@ def case27_paper_file(tmp):
     meta, qs = (db.get("meta") or {}), (db.get("Q") or [])
     j = day_of(st, day, "malwa")
     ok = (len(files) == 1 and len(sent) == 1
-          and _re.match(r"^[A-Z0-9_]+_p[\w,\-]+_%dQ_%s\.html$" % (20, day), files[0])   # name convention
+          and _re.match(r"^[A-Z0-9_]+_p[\w,\-]+_%dQ_%s\.html$" % (21, day), files[0])   # name convention
           and j.get("file_sent") == files[0]
-          and meta.get("count") == 20 and len(qs) == 20 and meta.get("spb") == 30
-          and meta.get("timerText") == "10:00" and meta.get("key", "").startswith("daily_malwa_")
+          and meta.get("count") == 21 and len(qs) == 21 and meta.get("spb") == 30
+          and meta.get("timerText") == "10:30" and meta.get("key", "").startswith("daily_malwa_")
           and all(q.get("e") and q.get("o") and isinstance(q.get("a"), int) for q in qs)
           and "var DB" in doc and "localStorage" in doc and "palette" in doc.lower()
           and "Score board" not in doc
-          and "Pages" in cap and "20 Q" in cap)
+          and "Pages" in cap and "21 Q" in cap)
     return ok, "file=%s meta.count=%s spb=%s timer=%s key=%s expl=%d/%d caption=%r" % (
         (files[0] if files else None), meta.get("count"), meta.get("spb"), meta.get("timerText"),
         meta.get("key"), sum(1 for q in qs if q.get("e")), len(qs), cap[:60])

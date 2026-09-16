@@ -36,7 +36,9 @@ def malwa_rows(count, topic, page_pairs=True):
     rows = []
     for i in range(count):
         serial = 21 + i
-        page = "%d-%d" % (1 + i, 2 + i) if page_pairs else str(1 + i)
+        # real MALWA sheet: ~7 questions per 2-page block -> "1-2", "1-2", …, "3-4", …
+        b = i // 7
+        page = ("%d-%d" % (2 * b + 1, 2 * b + 2)) if page_pairs else str(1 + i)
         rows.append(q_row(serial, page, topic, serial, KEYS[i % len(KEYS)]))
     return rows
 

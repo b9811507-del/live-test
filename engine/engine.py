@@ -92,7 +92,8 @@ VOLUMES = [("malwa_vol1", "MALWA BOOK VOL 1"), ("malwa_vol2", "MALWA BOOK VOL 2"
 
 JOBS = {
     "malwa": {"go": 11 * 3600, "time_label": "11:00 AM IST", "emoji": "☀️", "kind": "sheet-rotate",
-              "right": 1.0, "wrong": -0.25, "n": 20, "batch": 150},
+              "right": 1.0, "wrong": -0.25, "n": 20, "batch": 150,
+              "pages_per_day": 3},        # v11.4.8: 3 page-blocks per test (admin order)
     "iari": {"go": 14 * 3600 + 30 * 60, "time_label": "2:30 PM IST", "emoji": "🌤", "kind": "sheet-pages",
              "right": 1.0, "wrong": -0.25, "pages_per_day": 3, "sid": "iari", "label": "IARI BOOK MCQ 2026"},
     "afo": {"go": 18 * 3600, "time_label": "6:00 PM IST", "emoji": "🌆", "kind": "mongo", "right": 2.0,
@@ -714,7 +715,8 @@ def _take_questions(rows, start, count, used_pages=None):
 
 
 def plan_malwa(day, j):
-    """20 Q/day from the current volume; batch bookkeeping = 150 rows; volume exhausted -> next volume next day."""
+    """v11.4.8 (admin order): exactly 3 book page-blocks per test — every question of those blocks
+    (never a half block), the rest of the day's slot closes. Volume rollover + cursor as before."""
     vol = int(j.get("vol", 0))
     bidx = int(j.get("bidx", 0))
     skips, rolled = [], False
@@ -726,14 +728,24 @@ def plan_malwa(day, j):
         if bidx < len(rows):
             break
         vol, bidx, rolled = vol + 1, 0, True
-    picked, nxt, skips = _take_questions(rows, bidx, JOBS["malwa"]["n"])
+    # the sheet's page column holds a block label ("1-2"); take the next 3 distinct labels
+    labels, i = [], bidx
+    while i < len(rows) and len(labels) < int(JOBS["malwa"].get("pages_per_day") or 3):
+        lab = (rows[i].get("page") or "").strip() or str(_page_num(rows[i].get("page")))
+        if lab not in labels:
+            labels.append(lab)
+        i += 1
+    if not labels:
+        labels = [(rows[bidx].get("page") or "").strip()]
+    picked, nxt, skips = _take_questions(rows, bidx, len(rows) - bidx,
+                                         used_pages={_page_num(x) for x in labels})
     if not picked:
         return None, skips, "empty_source"
     pr = [_page_num(p["page"]) for p in picked if _page_num(p["page"])]
     pmax = max([_page_max(p["page"]) for p in picked] or [0])
     plan = {"src": sid, "kind": "sheet", "n": len(picked), "label": name, "vol": vol, "vol_index": vol,
             "batch": bidx // JOBS["malwa"]["batch"] + 1, "row_from": bidx, "row_to": nxt,
-            "bidx_next": nxt, "rolled": rolled,
+            "bidx_next": nxt, "rolled": rolled, "pages_blocks": labels,
             "pages": ("Book pages %d-%d" % (min(pr), pmax)) if pr else "",
             "questions": picked, "trunc": sum(p["trunc"] for p in picked), "skip_rows": skips,
             "built_at": istnow().isoformat(timespec="seconds")}

@@ -1,4 +1,4 @@
-# AGRI QUIZ DAILY EXAM SYSTEM v11.4 — COMPLETE WORKFLOW
+# AGRI QUIZ DAILY EXAM SYSTEM v11.4.8 — COMPLETE WORKFLOW
 
 > **v11.4 (admin order, 15-Sep evening)** — (a) **no paid-batches message or link in any group**
 > (`PAID_SHOWCASE` is off by default; the enrolment code stays in the desk/DM path only);
@@ -9,7 +9,16 @@
 > (e) the plan after 11:00 / 14:30 = next day's **page numbers**, after 18:00 = the **whole next-day
 > schedule**; (f) **fresh Day 1 from 16-Sep**: book page 1, **3 pages/day** for iari (was 5), and the
 > book now **continues across days** instead of restarting every morning (`series_reset` marker).
-> Battery: **26/26 green**.
+> **v11.4.5–v11.4.8 (16-Sep)** — the daily HTML is now the **group's own interactive test-file app**
+> (template taken live from IARI BOOK msg 709: 30 s/question timer, palette, test mode, score +
+> explanation); the explanation also rides **inside the quiz poll** (v11.4.6) so the separate reveal
+> message per question is **gone** (v11.4.7); the leaderboard is always sent **complete** (split by
+> length into as many messages as needed, every student exactly once, resumes if a part fails);
+> the daily-schedule sign-off line is **gone**; the translator now covers question + options + topic +
+> explanation (translate first, then platform limits); **every book-wise test covers exactly 3 book
+> pages/blocks per attempt** (iari 3 pages, malwa 3 sheet blocks = pages 1-6 on Day 1, 21 Q) and the
+> cursor continues across days; the 24/7 self-chains were replaced by crons (Actions minutes).
+> Battery: **28/28 green**.
 ### Full setup, day-cycle, group display, failure handling and final output
 
 ---
@@ -187,7 +196,7 @@ state.json           (journal: 13-Sep / 14-Sep history + today, sealed 15-Sep ma
 tests/               verify_all.py · fake_clock.py · fixtures · render_preview.py · make_fixtures.py
 docs/                LOCK-V11.md · BUILD-REPORT-v11.md · BUILD-REPORT-v11.1.md (includes v11.2) · GROUP-MESSAGES-EN.md
 ```
-**Group output per test (v11.4):** announce (pinned, at the exact slot time) → 15 s countdown → N polls, each followed by a reveal → leaderboard → top 3 toppers (bold, extra spacing) → HTML result file (that test only) → tomorrow's plan (pages after 11:00/14:30, full schedule after 18:00). **No paid-batches message anywhere.**
+**Group output per test (v11.4.8):** announce (pinned, at the exact slot time) → 15 s countdown → N quiz polls (correct option + explanation inside the poll; **no separate reveal message**) → leaderboard (**all messages needed, complete**) → top 3 toppers → HTML test file (that test only, group's app format) → tomorrow's plan (pages after 11:00/14:30, full schedule after 18:00). **No daily-schedule line, no paid-batches message.**
 **Result file:** `out/<LABEL>_<DATE>_results.html` — score table (rank, name, net, correct, incorrect, skipped) + answer key + question-wise view with the correct option ticked and what the player picked. Preview: `SAMPLE-result-EN.html`.
 
 **Verification (re-runnable any time):** `python3 tests/verify_all.py` → **GATE RESULT: GREEN**, fake-clock battery **16/16**
