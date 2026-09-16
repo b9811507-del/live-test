@@ -28,6 +28,7 @@ import json
 import os
 import subprocess
 import sys
+import tempfile
 import threading
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -80,6 +81,8 @@ def run_cycle(name, args, timeout=2700):
             lf.flush()
             env = os.environ.copy()
             env.setdefault("TZ", "Asia/Kolkata")
+            if env.get("ENGINE_FAKE") == "1":        # smoke-test mode must never write the real journal
+                env.setdefault("ENGINE_STATE", os.path.join(tempfile.gettempdir(), "agri_fake_state.json"))
             p = subprocess.run([PY, os.path.join("engine", "engine.py")] + list(args), cwd=HERE,
                                stdout=lf, stderr=subprocess.STDOUT, timeout=timeout, env=env)
             rc = p.returncode

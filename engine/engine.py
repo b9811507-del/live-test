@@ -49,7 +49,7 @@ import translator as tr        # professional English language layer (v11.1)
 
 VERSION = "v11.4"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATE = os.path.join(ROOT, "state.json")
+STATE = os.environ.get("ENGINE_STATE") or os.path.join(ROOT, "state.json")   # ENGINE_STATE -> isolated journal (smoke tests / previews)
 OUTDIR = os.path.join(ROOT, "out")
 REPO = os.environ.get("GITHUB_REPOSITORY", "b9811507-del/live-test")
 GH_TOKEN = os.environ.get("GITHUB_TOKEN", "") or os.environ.get("GH_TOKEN", "")
