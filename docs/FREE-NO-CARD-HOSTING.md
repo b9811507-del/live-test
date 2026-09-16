@@ -1,5 +1,32 @@
 # FREE + NO-CARD RUNNER — Render web service + free pinger (0 GitHub minutes, ₹0)
 
+## ✅ LIVE SETUP (16-Sep, verified working)
+
+| Piece | Value |
+|---|---|
+| Runner service | Render **`live-test`** (free, singapore) → **https://live-test-8wu1.onrender.com** |
+| Code | `engine/web.py` from this repo (Render auto-deploys on every push to main) |
+| Keep-awake pinger | **https://github.com/b9811507-del/agri-quiz-keepawake** (public) → workflow `keepawake` pings `/ping` every ~2.5 min (two interleaved schedules). Public repo ⇒ **Actions minutes free/unlimited** |
+| Uptime/status page | the pinger's Actions log prints the runner status JSON every run — or open `/` |
+| Journal | engine pushes `state.json` to this repo after every step (git push = free) |
+| GitHub Actions (this repo) | **all workflows disabled** — kept only as a fallback |
+| Env vars on Render | `TZ, EXAM_TG_TOKEN, MONGO_URI, CHAT_ID, IARI_CHAT, ADMIN_CHAT, GITHUB_TOKEN, GITHUB_REPOSITORY, RAZORPAY_KEY_ID/SECRET, ADMIN_KEY, PAID_VERIFY, PAID_CHAT_*×7, PAID_PRICE_*×7` (26 values) |
+| Verified | `/ping` → ok · cycles `slotchain`/`keepwarm` rc=0 · desk `payments checked` · supply audit 50 sets · bot = administrator in AGRI QUIZ WORLD / IARI BOOK / AFO (can_post) · journal commits landing on main |
+| Render hours | only this service runs (the other 3 services are suspended) ⇒ inside the free 750 h/month |
+
+### Daily behaviour of the live runner
+* tests: every 60 s check inside 10:00–19:30 IST → announce at **11:00:00 / 14:30:00 / 18:00:00**, 15 s countdown, quiz polls (explanation inside), leaderboard (complete), TOP 3, HTML file, tomorrow's plan
+* student desk: every 3 min, 24×7 (silent while a test is live)
+* AFO audit 05:00 IST · safety guard 22:00 IST · code = auto-deploy on push
+
+### Watch it
+* status JSON — `https://live-test-8wu1.onrender.com/`
+* manual trigger — `https://live-test-8wu1.onrender.com/run/status?key=<ADMIN_KEY>`
+* health script — `bash deploy/check_runner.sh https://live-test-8wu1.onrender.com <ADMIN_KEY>`
+* host log — Render dashboard → live-test → Logs (engine output is mirrored there now)
+
+---
+
 Oracle machine `cat > /dev/null` (card nahi chahiye nahi milta) — isliye ye plan:
 
 ```
