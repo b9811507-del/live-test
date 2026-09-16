@@ -5910,7 +5910,8 @@
 "reset_note": "fake-clock artifacts removed 16-Sep 12:45 IST (web.py smoke run)",
 "seeded_from": "series_reset",
 "skips": [],
-"step": 1,
+"started_at": "2026-09-16T15:50:06+05:30",
+"step": 2,
 "unpinned": [
 29092,
 29102,
