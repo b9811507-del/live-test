@@ -5861,6 +5861,7 @@
 "bidx": 35,
 "cd": 0,
 "expl_in_poll": 35,
+"last_off": 210511603,
 "lock_ts": 1789555289.3495088,
 "locked_by": "local-46",
 "msg_ann": 29275,
@@ -6590,13 +6591,14 @@
 "8": "6147817471689622496",
 "9": "6147817471689622497"
 },
+"polled": 35,
 "qidx": 35,
 "reset_note": "fake-clock artifacts removed 16-Sep 12:45 IST (web.py smoke run)",
 "seeded_from": "series_reset",
 "sent_i": 34,
 "skips": [],
 "started_at": "2026-09-16T15:50:06+05:30",
-"step": 2,
+"step": 3,
 "unpinned": [
 29092,
 29102,
@@ -6617,7 +6619,7 @@
 "desk": {
 "handled": 18,
 "last": "2026-09-16T14:23:24+05:30",
-"offset": 210510980,
+"offset": 210511603,
 "payments": {
 "checked": 3,
 "expired": 0,
