@@ -157,9 +157,16 @@ def scheduler():
 
 
 def _update():
-    """git pull + compile check (same as the VM cron's 09:45 update)."""
+    """Code refresh. On Render/Northflank-style hosts the platform redeploys automatically on every
+    push, so this is OFF by default (set RUNNER_GIT_UPDATE=on for the VM/cron route)."""
     with _LOCK:
         STATE["running"]["update"] = istnow().isoformat(timespec="seconds")
+    if (os.environ.get("RUNNER_GIT_UPDATE", "off") or "off").lower() not in ("on", "1", "yes"):
+        with _LOCK:
+            STATE["running"].pop("update", None)
+            STATE["last"]["update"] = {"at": istnow().isoformat(timespec="seconds"), "rc": 0, "secs": 0,
+                                       "note": "skipped (host auto-deploys on push; RUNNER_GIT_UPDATE=on to force)"}
+        return
     try:
         os.makedirs(LOGDIR, exist_ok=True)
         with open(os.path.join(LOGDIR, "update.log"), "a", encoding="utf-8") as lf:
