@@ -41,13 +41,16 @@ for i in (0, 1):
         print("      %s) %s" % (chr(65 + j), o))
     print()
 print("... isi tarah saare %d questions\n" % N)
-print(">>> REVEAL after every question's 30 s window (v11.4) — sample with 3 students")
+print(">>> REVEAL after each question: REMOVED by admin order (v11.4.7) — the correct option +")
+print("    explanation are already inside the quiz poll, students see them the moment they answer.")
+print("    (kept behind REVEAL_AFTER_Q=on if ever needed)\n")
 q = plan["questions"][0]
 aq = {"9001": int(q["key"]), "9002": int(q["key"]), "9003": (int(q["key"]) + 1) % len(q["o"])}
 names = {"9001": "Ravi Verma", "9002": "Anjali Meena", "9003": "Sunil Yadav"}
 print(engine.reveal_text(job, plan, 0, q, aq, names))
 print()
-print(">>> LEADERBOARD (bold, extra spacing; 48 rows per message) — sample naming")
+print(">>> LEADERBOARD — COMPLETE: every student exactly once; split into as many messages as needed")
+print("    (each < 4096 chars, whole rows only, ~1.1 s apart, resumes if a part fails) — sample naming")
 rows = [{"uid": "9001", "name": "Ravi Verma", "score": 17.75, "right": 18, "wrong": 1, "skip": 1, "rank": 1},
         {"uid": "9002", "name": "Anjali Meena", "score": 15.5, "right": 16, "wrong": 2, "skip": 2, "rank": 2},
         {"uid": "9003", "name": "Sunil Yadav", "score": 12.25, "right": 13, "wrong": 3, "skip": 4, "rank": 3},
@@ -67,5 +70,5 @@ st = {"days": {day: {"malwa": {"vol": 0, "bidx": plan.get("bidx_next", 0)},
                      "iari": {"bidx": plan.get("bidx_next", 0) if job == "iari" else 0}}}}
 print(engine.tomorrow_plan_text(job, day, st))
 print()
-print(">>> SIGN-OFF (last message — NO paid-batch message any more, admin order v11.4)")
-print(engine.cta_text())
+print(">>> SIGN-OFF (daily-schedule line): REMOVED by admin order (v11.4.7) — nothing after the plan.")
+print(">>> PAID-BATCHES message: removed by admin order (v11.4) — never posted in any group.")
