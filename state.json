@@ -5709,7 +5709,7 @@
 "bidx": 35,
 "cd": 0,
 "expl_in_poll": 28,
-"lock_ts": 1789555032.4589927,
+"lock_ts": 1789555034.6162899,
 "locked_by": "local-46",
 "msg_ann": 29275,
 "names": {
@@ -6432,7 +6432,7 @@
 "qidx": 28,
 "reset_note": "fake-clock artifacts removed 16-Sep 12:45 IST (web.py smoke run)",
 "seeded_from": "series_reset",
-"sent_i": 27,
+"sent_i": 28,
 "skips": [],
 "started_at": "2026-09-16T15:50:06+05:30",
 "step": 2,
