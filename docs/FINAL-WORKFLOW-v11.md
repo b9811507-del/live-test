@@ -50,6 +50,25 @@
 
 ---
 
+## 0.5 WHERE IT RUNS (v11.4.9 — free setup)
+
+Scheduling was moved off GitHub Actions to **an always-on VM with cron** (Actions minutes on a
+private repo are paid; the old 24×7 self-chains burned ~3,000 min/day). Full guide: `deploy/README.md`.
+
+| Cron (VM, IST) | Command | What it does |
+|---|---|---|
+| `*/1 10-19` | `deploy/run_cycle.sh slotchain` | the daily dispatcher: waits, announces at exactly 11:00:00 / 14:30:00 / 18:00:00, runs the polls, posts leaderboard (all parts) → top 3 → HTML file → tomorrow's plan |
+| `*/3` 24×7 | `deploy/run_cycle.sh keepwarm` | student desk: DMs, batch buttons, Razorpay links, payment verification, join links, admin alerts (silent while a test is live) |
+| `30 5` | `deploy/run_cycle.sh supply` | AFO bank audit (never posts) |
+| `0 22` | `deploy/run_cycle.sh guard` | safety net: seal open slots, journal tidy-up |
+| `45 9` | `deploy/update.sh` | pull the latest engine before the window |
+
+`state.json` still lives in the repo and the engine pushes it after every step (git push is free —
+only *workflow runs* cost minutes). Every GitHub Actions workflow is **disabled**; their code stays in
+`.github/workflows/` as a fallback and they no longer self-chain 24×7.
+
+---
+
 ## 1. WHAT RUNS WHEN (heartbeat of the system)
 
 | Workflow | Trigger | Cadence | Job timeout | What it does | What it NEVER does |
