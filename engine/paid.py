@@ -82,8 +82,61 @@ def price_amount(price):
     return int(digits) if digits else 0
 
 
+# --------------------------------------------------------------------------- paid-desk bot (separate
+# from the exam bot on purpose: payment/DM traffic never shares fate with the live-test bot)
+PAID_TOKEN = (os.environ.get("PAID_BOT_TOKEN") or os.environ.get("PAID_TOKEN") or "").strip()
+PAID_API = "https://api.telegram.org/bot" + PAID_TOKEN
+
+
+def ptg(E, method, tries=5, **params):
+    """Telegram call for the paid-desk bot. Falls back to the exam bot (E.tg) automatically when
+    PAID_BOT_TOKEN/PAID_TOKEN is not configured, so this is a no-op change until the secret is set."""
+    if not PAID_TOKEN:
+        return E.tg(method, tries=tries, **params)
+    params = {k: v for k, v in params.items() if v is not None}
+    if E.FAKE:
+        return E._fake_tg(method, params)
+    import json as _json
+    import time as _time
+    import urllib.error as _ue
+    import urllib.request as _ur
+    last = ""
+    for _ in range(tries):
+        try:
+            data = _json.dumps(params).encode()
+            req = _ur.Request(PAID_API + "/" + method, data=data,
+                              headers={"Content-Type": "application/json", "User-Agent": "agri-quiz-v11-paid"})
+            r = _json.loads(_ur.urlopen(req, timeout=30).read().decode())
+            if r.get("ok"):
+                return r["result"]
+            desc = str(r.get("description", ""))
+            last = desc
+            if r.get("error_code") == 429:
+                wait = int((r.get("parameters") or {}).get("retry_after", 3)) + 1
+                E.log("ptg 429 %s -> sleep %ss" % (method, wait))
+                _time.sleep(wait)
+                continue
+            E.log("ptg err %s: %s" % (method, desc[:140]))
+            if any(x in desc.lower() for x in ("not enough rights", "chat not found", "bot was kicked")):
+                return None
+            _time.sleep(1.5)
+        except _ue.HTTPError as e:
+            last = "HTTP %s" % e.code
+            _time.sleep(2)
+        except Exception as e:
+            last = str(e)[:120]
+            E.log("ptg exc %s: %s" % (method, last))
+            _time.sleep(3)
+    E.log("ptg give-up %s (%s)" % (method, last[:80]))
+    return None
+
+
 # --------------------------------------------------------------------------- links / deep links
 def bot_username(E):
+    if PAID_TOKEN:
+        me = ptg(E, "getMe")
+        if me and me.get("username"):
+            return me["username"]
     E.bot_id()
     return E._bot.get("username") or "Arunkatyanquiz_bot"
 
@@ -142,14 +195,14 @@ def post_after_test(E, chat, job=None, day=None):
     deleted = None
     if prev_id:
         try:
-            tg_res = E.tg("deleteMessage", chat_id=chat, message_id=prev_id)
+            tg_res = ptg(E, "deleteMessage", chat_id=chat, message_id=prev_id)
             deleted = True if tg_res is not None else None
         except Exception as e:
             E.log("paid: delete of superseded message failed:", str(e)[:90])
             deleted = False
         if deleted:
             E.log("paid: deleted superseded message #%s (job %s)" % (prev_id, prev.get("job")))
-    m = E.tg("sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
+    m = ptg(E, "sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
              disable_web_page_preview=True, reply_markup=group_keyboard(E))
     if m:
         paid[tag] = m["message_id"]
@@ -165,7 +218,7 @@ def post_after_test(E, chat, job=None, day=None):
 
 # --------------------------------------------------------------------------- student DM flows
 def _send(E, uid, text, keyboard=None):
-    return E.tg("sendMessage", chat_id=str(uid), text=text, parse_mode="HTML",
+    return ptg(E, "sendMessage", chat_id=str(uid), text=text, parse_mode="HTML",
                 disable_web_page_preview=True, reply_markup=keyboard)
 
 
@@ -209,7 +262,7 @@ def send_invoice(E, uid, key):
     amt = price_amount(b["price"]) if b else 0
     if not (b and amt and provider_token()):
         return None
-    return E.tg("sendInvoice", chat_id=str(uid), title=b["title"][:32], description=b["perks"][:255],
+    return ptg(E, "sendInvoice", chat_id=str(uid), title=b["title"][:32], description=b["perks"][:255],
                 payload="batch:%s:%s" % (key, uid), provider_token=provider_token(), currency="INR",
                 prices=[{"label": b["title"][:32], "amount": amt * 100}])
 
@@ -303,9 +356,21 @@ def _entitle(st, uid, key, **kw):
     return rec
 
 
+_PAID_BOT_ID = {}
+
+
+def paid_bot_id(E):
+    """The paid-desk bot's own numeric id (cached). Falls back to the exam bot's id when
+    PAID_BOT_TOKEN/PAID_TOKEN is not configured (ptg() itself falls back to E.tg in that case too)."""
+    if "id" not in _PAID_BOT_ID:
+        me = ptg(E, "getMe") or {}
+        _PAID_BOT_ID["id"] = me.get("id") or E.bot_id()
+    return _PAID_BOT_ID["id"]
+
+
 def invite_ok(E, chat):
-    """The bot needs to be an administrator with the Invite Users right in the batch group."""
-    m = E.tg("getChatMember", chat_id=str(chat), user_id=E.bot_id()) or {}
+    """The paid-desk bot needs to be an administrator with the Invite Users right in the batch group."""
+    m = ptg(E, "getChatMember", chat_id=str(chat), user_id=paid_bot_id(E)) or {}
     st = m.get("status")
     if st in ("administrator", "creator"):
         return bool(m.get("can_invite_users", True) or st == "creator"), st
@@ -328,13 +393,13 @@ def issue_link(E, st, key, uid, name="", mode="claim", ref=""):
         return None
     link = None
     try:
-        link = E.tg("createChatInviteLink", chat_id=b["chat"], member_limit=1,
+        link = ptg(E, "createChatInviteLink", chat_id=b["chat"], member_limit=1,
                     expire_date=int(time.time()) + LINK_HOURS * 3600,
                     name=("%s-%s" % (key, str(uid)[-6:]))[:32])
     except Exception:
         link = None
     if not link:
-        link = E.tg("createChatInviteLink", chat_id=b["chat"], member_limit=1,
+        link = ptg(E, "createChatInviteLink", chat_id=b["chat"], member_limit=1,
                     name=("%s-%s" % (key, str(uid)[-6:]))[:32])
     if not link or not link.get("invite_link"):
         rec["link_status"] = "create_failed"
@@ -437,18 +502,18 @@ def handle_callback(E, st, cb):
     name = (user.get("first_name") or "")[:32]
     dm_chat = ((msg.get("chat") or {}).get("id"))
     is_private = (msg.get("chat") or {}).get("type") == "private"
-    E.tg("answerCallbackQuery", callback_query_id=cb.get("id"), text="")
+    ptg(E, "answerCallbackQuery", callback_query_id=cb.get("id"), text="")
     if data.startswith("batch:"):
         if is_private:
             send_batch_detail(E, uid, data.split(":", 1)[1])
         else:
-            E.tg("answerCallbackQuery", callback_query_id=cb.get("id"), url=deep_link(E, "buy_" + data.split(":", 1)[1]))
+            ptg(E, "answerCallbackQuery", callback_query_id=cb.get("id"), url=deep_link(E, "buy_" + data.split(":", 1)[1]))
         return
     if data.startswith("rzp:"):
         if is_private:
             create_razorpay_link(E, st, data.split(":", 1)[1], uid, name=name)
         else:
-            E.tg("answerCallbackQuery", callback_query_id=cb.get("id"),
+            ptg(E, "answerCallbackQuery", callback_query_id=cb.get("id"),
                  url=deep_link(E, "buy_" + data.split(":", 1)[1]))
         return
     if data.startswith("invoice:"):
@@ -497,7 +562,7 @@ def handle_join_request(E, st, jr):
     chat = str((jr.get("chat") or {}).get("id"))
     for b in batches():
         if b["chat"] == chat and entitlements(st, uid).get(b["key"]):
-            E.tg("approveChatJoinRequest", chat_id=chat, user_id=int(uid))
+            ptg(E, "approveChatJoinRequest", chat_id=chat, user_id=int(uid))
             E.log("paid: approved join request for %s in %s" % (uid, b["key"]))
             return
     E.dm_admin("❓ Join request from <code>%s</code> in chat <code>%s</code> — no enrolment found. "
@@ -574,7 +639,7 @@ def desk_pass(E, budget_s=8):
     while True:
         if not E.FAKE and time.time() - started > budget_s:
             break
-        r = E.tg("getUpdates", offset=off, timeout=1, allowed_updates=ALLOWED_UPDATES)
+        r = ptg(E, "getUpdates", offset=off, timeout=1, allowed_updates=ALLOWED_UPDATES)
         res = r if isinstance(r, list) else (r or {}).get("result")
         if not res:
             if E.FAKE:
