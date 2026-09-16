@@ -127,7 +127,8 @@ def main():
         log("removed .KILLTEST")
     if not DRY:
         sh("git add -A state.json .KILLTEST")
-        rc = sh("git commit -m 'EMERGENCY STOP: sealed step8+killed, %d run(s) cancelled' || true")
+        rc = sh("git commit -m 'EMERGENCY STOP: sealed step8+killed, %d run(s) cancelled' || true"
+                % len(killed))
         if sh("git push origin HEAD:main --quiet") != 0:
             log("push rejected -> rebase retry")
             sh("git pull --rebase origin main || true")

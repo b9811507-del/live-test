@@ -308,8 +308,6 @@ def supply(frm=POOL_DATES_FROM, to=POOL_DATES_TO, db=None, flush=None):
                     rep["filled"].append(d)
         else:
             rep["bad"].append({"date": d, "problems": a["problems"][:3]})
-        if a.get("warns"):
-            rep.setdefault("warned", []).append({"date": d, "n": len(a["warns"]), "why": a["warns"][0]})
     meta = db.afo_supply.find_one({"key": "meta"}) or {}
     rep["next_set_no"] = meta.get("next_set_no")
     db.afo_supply.update_one({"key": "audit"}, {"$set": {
