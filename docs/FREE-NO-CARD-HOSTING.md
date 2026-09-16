@@ -5,7 +5,7 @@
 | Piece | Value |
 |---|---|
 | Runner service | Render **`live-test`** (free, singapore) → **https://live-test-8wu1.onrender.com** |
-| Code | `engine/web.py` from this repo (Render auto-deploys on every push to main) |
+| Code | `engine/web.py` from this repo — **autoDeploy OFF** (journal commits were restarting it every ~7 min); deploy manually via the Render API after a code push |
 | Keep-awake pinger | **https://github.com/b9811507-del/agri-quiz-keepawake** (public) → workflow `keepawake` pings `/ping` every ~2.5 min (two interleaved schedules). Public repo ⇒ **Actions minutes free/unlimited** |
 | Uptime/status page | the pinger's Actions log prints the runner status JSON every run — or open `/` |
 | Journal | engine pushes `state.json` to this repo after every step (git push = free) |

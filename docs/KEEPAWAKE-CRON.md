@@ -43,3 +43,21 @@ Render dashboard → live-test → Logs me engine output bhi mirror hota hai.
 * Sirf **ek** hi Render service ko ping karo (`live-test`) — free plan 750 instance-hours/month account-wide deta hai; baaki 3 services suspended hain, unhe chhedna nahi.
 * Pinger se instance-hour **kharch nahi badhta** (jagta to pura month hi tha) — 24x7 = 744 h/month, budget ke andar.
 * Ye pinger sirf awaking karta hai; test ka time, announce, polls — sab runner ke andar ka scheduler karta hai.
+
+## IMPORTANT — Render auto-deploy OFF (16-Sep fix)
+Engine har cycle ke baad `state.json` journal ko main par push karta hai (~1-3 min me ek commit).
+Render ka **autoDeploy** un commits par bhi build chalu kar deta tha → instance har ~7 min restart
+(observed starts: 12:36, 12:44, 12:51, 12:58). Pending deploys cancel/niptane ke baad:
+
+```bash
+# autoDeploy off (ek hi baar)
+curl -X PATCH -H "Authorization: Bearer $RENDER_KEY" -H "Content-Type: application/json" \
+  -d '{"autoDeploy":"no"}' https://api.render.com/v1/services/srv-dal3nhn40ujc739eevng
+```
+Ab **code push karne par runner apne aap update nahi hoga** — deploy manually:
+```bash
+curl -X POST -H "Authorization: Bearer $RENDER_KEY" -H "Content-Type: application/json" -d '{}' \
+  https://api.render.com/v1/services/srv-dal3nhn40ujc739eevng/deploys
+```
+Rules: (1) test ke ±10 min me deploy/push mat karo (14:30 IARI, 18:00 AFO) — restart cycle ko beech me kaat deta hai;
+(2) journal commits ab bilkul harmless hain, wo test ke beech me bhi aate rahenge.
