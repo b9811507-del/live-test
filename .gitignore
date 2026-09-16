@@ -1,7 +1,9 @@
 # generated / local only — the repo stays clean
-__pycache__/
-*.pyc
-out/
-.KILLTEST
-tmp/
 *.jsonl
+*.pyc
+.KILLTEST
+__pycache__/
+deploy/.env
+deploy/logs/
+out/
+tmp/

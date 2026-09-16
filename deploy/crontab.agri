@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# AGRI QUIZ DAILY EXAM SYSTEM — cron for the FREE VM (VM timezone = Asia/Kolkata)
+# Install:  sudo cp deploy/crontab.agri /etc/cron.d/agri-quiz
+#           sudo sed -i "s#__USER__#$(whoami)#; s#__REPO__#$PWD#g" /etc/cron.d/agri-quiz
+# Every line runs on YOUR VM -> GitHub Actions minutes stay at ZERO.
+#
+# SHELL/PATH: cron has a minimal environment, so PATH is set explicitly.
+# ─────────────────────────────────────────────────────────────────────────────
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+MAILTO=""
+
+# 1) THE TESTS — every minute inside the daily window (10:00–19:30 IST).
+#    The engine decides what to do: wait for the slot, announce at 11:00:00 / 14:30:00 / 18:00:00,
+#    run the polls, post the leaderboard + top 3 + file + tomorrow's plan. Outside the window it
+#    does nothing (the line below never fires).
+*/1 10-19 * * *   __USER__  cd __REPO__ && deploy/run_cycle.sh slotchain
+
+# 2) STUDENT DESK — every 3 minutes, 24×7: /start, batch buttons, Razorpay link creation,
+#    payment verification (desk pass), single-use join links, admin alerts. Engine stays silent
+#    while a test is live, so it can never steal the bot's getUpdates stream.
+*/3 * * * *       __USER__  cd __REPO__ && deploy/run_cycle.sh keepwarm
+
+# 3) AFO BANK AUDIT — daily 05:00 IST (never posts to Telegram)
+30 5 * * *        __USER__  cd __REPO__ && deploy/run_cycle.sh supply
+
+# 4) POST-TEST SAFETY NET (optional) — 22:00 IST: seal anything still open, journal tidy-up.
+0 22 * * *        __USER__  cd __REPO__ && deploy/run_cycle.sh guard
+
+# 5) CODE UPDATE — 09:45 IST daily: pull the latest engine before the test window.
+45 9 * * *        __USER__  cd __REPO__ && deploy/update.sh
