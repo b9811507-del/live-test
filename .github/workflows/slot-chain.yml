@@ -52,8 +52,19 @@ jobs:
         run: pip install -q pymongo
       - name: cycle
         run: python3 engine/engine.py slotchain || true
-      - name: rearm (jitter 100-190s)
+      - name: rearm (jitter 100-190s, window only)
+        env:
+          TZ: Asia/Kolkata
+        run: |
+          # Low-burn (16-Sep): outside 10:00-19:15 IST the chain does NOT re-arm itself; the */10 cron
+          # backstop wakes it. Inside the window the tight self-chain is kept (punctual slots).
         if: always()
         run: |
-          sleep $(( (RANDOM % 91) + 100 ))
+          H=$(date +%H); M=$(date +%M); NOW=$((10#$H * 60 + 10#$M))
+          if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then
+            python3 engine/engine.py dispatch slot-chain.yml || true
+            sleep $(( (RANDOM % 91) + 100 ))
+          else
+            echo "outside the test window ($H:$M IST) -> not re-arming (saving Actions minutes)"
+          fi
           python3 engine/engine.py rearm || true

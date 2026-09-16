@@ -5,7 +5,7 @@ name: keepwarm-agent
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "*/10 * * * *"        # backstop only
+    - cron: "*/5 * * * *"         # low-burn (16-Sep): cron is now the only trigger
   push:
     branches: [main]
     paths: [".github/workflows/keepwarm-agent.yml", "engine/engine.py", "agents/relay.py"]
@@ -57,5 +57,5 @@ jobs:
       - name: rechain (dispatch first, then throttle 150s)
         if: always()
         run: |
-          python3 engine/engine.py dispatch keepwarm-agent.yml || true
-          sleep $(( (RANDOM % 45) + 130 ))
+          # Low-burn (16-Sep): self-chain removed (it burned ~1,025 min/day). The */5 cron runs the desk.
+          echo "keepwarm cycle done (self-chain disabled to save Actions minutes)"

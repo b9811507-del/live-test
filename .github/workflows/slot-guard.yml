@@ -36,5 +36,6 @@ jobs:
       - name: rechain (~7 min)
         if: always()
         run: |
-          python3 engine/engine.py dispatch slot-guard.yml || true
-          sleep $(( (RANDOM % 61) + 390 ))
+          # Low-burn (16-Sep): the guard no longer re-arms itself 24/7 (it was ~1,080 min/day on its own).
+          # The cron backstop every 15 min is enough for a watchdog.
+          echo "guard cycle done (self-chain disabled to save Actions minutes)"
