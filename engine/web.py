@@ -214,6 +214,15 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         path = self.path.split("?")[0].rstrip("/") or "/"
         if path == "/ping":                          # keep-awake
+            ua = self.headers.get("User-Agent", "") or ""
+            ip = self.headers.get("X-Forwarded-For") or self.client_address[0]
+            with _LOCK:
+                rec = STATE.setdefault("ping_in", {"external": 0, "self": 0})
+                key = "self" if ua.startswith("agri-selfping") else "external"
+                rec[key] = (rec.get(key) or 0) + 1
+                rec["last_" + key] = {"at": istnow().isoformat(timespec="seconds"), "ua": ua[:70], "ip": ip[:60]}
+            if key == "external":
+                print("inbound ping from %s (%s)" % (ua[:60], ip[:40]), flush=True)
             return self._send(200, "ok\n")
         if path == "/":
             with _LOCK:
