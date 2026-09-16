@@ -155,21 +155,27 @@ def case2_warm(tmp):
 
 
 def case3_overlap(tmp):
-    """3. multi-window: malwa (late) runs at 14:00; iari defers (30 min to go) and runs when the chain returns."""
+    """3. v11.4.10: a slot that never began is sealed MISSED once it is >15 min late (no catch-up);
+    iari (still warm) defers, then runs when the chain returns."""
     day = "2026-09-16"
     p, log, st = mk(tmp, day + "T14:00:00+05:30", journal=empty_journal(day))
-    ann1 = [t for t in texts(log) if "poll auto-closes" in t]
-    pl1, m1, i1 = polls(log), day_of(st, day, "malwa").get("step"), day_of(st, day, "iari").get("step")
+    mal = day_of(st, day, "malwa")
+    gp1 = [e for e in log if e.get("chat") == GROUP and e["method"] in ("sendMessage", "sendPoll")]
+    ad1 = methods(log, "sendMessage", ADMIN)
     json.dump(st, open(os.path.join(tmp, "state.json"), "w"), indent=0, sort_keys=True)
     if os.path.exists(os.path.join(tmp, "tg.jsonl")):
         os.remove(os.path.join(tmp, "tg.jsonl"))
     p2, log2, st2 = run(tmp, ("slotchain",), day + "T14:28:30+05:30")
     pl2 = polls(log2)
-    ok = (len(ann1) == 1 and len(pl1) == 21 and m1 == 8 and i1 == 0 and "defer" in (p.stdout + p.stderr)
-          and int(day_of(st2, day, "iari").get("step", 0)) == 8 and len(pl2) == 8    # 3 pages = 3+3+2 Q
+    i2 = day_of(st2, day, "iari")
+    ls = mal.get("late_sealed") or {}
+    ok = (int(mal.get("step", 0)) == 8 and bool(mal.get("missed")) and ls.get("late_min") == 180
+          and len(gp1) == 0 and len(ad1) == 1 and "defer" in (p.stdout + p.stderr)
+          and int(i2.get("step", 0)) == 8 and len(pl2) == 8
           and any("IARI BOOK MCQ 2026" in t for t in texts(log2)))
-    return ok, ("cycle1: announces=%d polls=%d malwa=%s iari=%s(deferred) | cycle2: iari polls=%d (3 pages) iari.step=%s"
-                % (len(ann1), len(pl1), m1, i1, len(pl2), day_of(st2, day, "iari").get("step")))
+    return ok, ("cycle1: malwa step=%s missed=%s late=%smin group_posts=%d admin_dms=%d | cycle2: iari polls=%d step=%s"
+                % (mal.get("step"), bool(mal.get("missed")), ls.get("late_min"), len(gp1), len(ad1),
+                   len(pl2), i2.get("step")))
 
 
 def case4_missed(tmp):
@@ -236,49 +242,52 @@ def case7_afo_closed(tmp):
 
 
 def case8_error_isolated(tmp):
-    """8. error in one job is isolated: malwa fails, iari still runs to completion (same cycle)."""
+    """8. v11.4.10: a failing job is isolated — malwa errors at its own 11:00 slot (recorded, nothing
+    posted) and iari still runs to completion later the same day."""
     day = "2026-09-16"
-    p, log, st = mk(tmp, day + "T14:29:00+05:30", journal=empty_journal(day),
+    p, log, st = mk(tmp, day + "T11:00:00+05:30", journal=empty_journal(day),
                     env={"ENGINE_FAKE_FAIL": "malwa"})
-    m, i = day_of(st, day, "malwa"), day_of(st, day, "iari")
-    ok = (m.get("last_error") and int(m.get("step", 0)) == 0 and int(i.get("step", 0)) == 8
-          and len([t for t in texts(log) if "poll auto-closes" in t]) == 1   # only iari announced
-          and p.returncode == 0)
-    return ok, "malwa.last_error=%s malwa.step=%s iari.step=%s rc=%d" % (
-        bool(m.get("last_error")), m.get("step"), i.get("step"), p.returncode)
+    m = day_of(st, day, "malwa")
+    gp1 = [e for e in log if e.get("chat") == GROUP and e["method"] in ("sendMessage", "sendPoll")]
+    json.dump(st, open(os.path.join(tmp, "state.json"), "w"), indent=0, sort_keys=True)
+    if os.path.exists(os.path.join(tmp, "tg.jsonl")):
+        os.remove(os.path.join(tmp, "tg.jsonl"))
+    p2, log2, st2 = run(tmp, ("slotchain",), day + "T14:30:00+05:30")
+    i = day_of(st2, day, "iari")
+    ok = (bool(m.get("last_error")) and int(m.get("step", 0)) == 0 and len(gp1) == 0
+          and int(i.get("step", 0)) == 8 and p.returncode == 0
+          and len([t for t in texts(log2) if "poll auto-closes" in t]) == 1)
+    return ok, "malwa.last_error=%s step=%s group_posts=%d | iari.step=%s rc=%d" % (
+        bool(m.get("last_error")), m.get("step"), len(gp1), i.get("step"), p.returncode)
 
 
 def case9_boundary(tmp):
-    """9. exact 14:30:00 IST boundary: iari starts immediately, no countdown edit."""
+    """9. exact 14:30:00 IST boundary: iari starts immediately (no countdown edit) while the malwa slot
+    (3.5 h late, never began) is sealed MISSED by the v11.4.10 late guard instead of firing."""
     day = "2026-09-16"
     p, log, st = mk(tmp, day + "T14:30:00+05:30", journal=empty_journal(day))
-    i, m = day_of(st, day, "iari"), day_of(st, day, "malwa")   # 14:30: malwa is still inside its late window
+    i, m = day_of(st, day, "iari"), day_of(st, day, "malwa")
     pl = polls(log)
-    iari_q = [e for e in pl if e["question"].startswith("1/8.")]     # v11.4: 3 pages = 8 Q in fixtures
+    iari_q = [e for e in pl if e["question"].startswith("1/8.")]
     cd = [int(mm.group(1)) for e in methods(log, "editMessageText", GROUP)
           for mm in [re.search(r"Starting in (\d+)s", e.get("text") or "")] if mm]
     iann = [t for t in texts(log) if "IARI BOOK MCQ 2026" in t and "poll auto-closes" in t]
     tmr = [t for t in texts(log) if t.startswith("🗓")]
-    reveals = [t for t in texts(log) if t.startswith("✅ <b>Q")]      # v11.4.7: must stay 0
+    reveals = [t for t in texts(log) if t.startswith("✅ <b>Q")]
     pin_calls = pins(log)
     unp = methods(log, "unpinChatMessage", GROUP)
-    # malwa is still in its late window at 14:30, so malwa + iari both run in this cycle; the newer
-    # announce (iari) must end up as the ONLY pinned message -> malwa's announce gets unpinned.
-    ok = (int(i.get("step", 0)) == 8 and len(pin_calls) == 2
-          and pin_calls[-1]["message_id"] == i.get("msg_ann")
-          and [x["message_id"] for x in unp] == [m.get("msg_ann")]
-          and len(iann) == 1 and "Book pages: 2, 4, 5" in iann[0]            # 3 pages/day (v11.4)
-          and len(tmr) == 2 and any("7, 8, 9" in t for t in tmr)             # tomorrow = next 3 pages
-          and int(m.get("step", 0)) == 8 and len(pl) == 29                   # 21 malwa + 8 iari
-          and len(reveals) == 0
+    ok = (int(i.get("step", 0)) == 8 and int(m.get("step", 0)) == 8 and bool(m.get("missed"))
+          and len(pin_calls) == 1 and pin_calls[-1]["message_id"] == i.get("msg_ann") and len(unp) == 0
+          and len(iann) == 1 and "Book pages: 2, 4, 5" in iann[0]
+          and len(tmr) == 1 and any("7, 8, 9" in t for t in tmr)   # only iari ran -> one tomorrow-plan msg
+          and len(pl) == 8 and len(reveals) == 0
           and iari_q and (i.get("plan") or {}).get("pages_list") == [2, 4, 5]
           and cd and max(cd) == 15 and max(cd) <= 15
-          and len([t for t in texts(log) if "poll auto-closes" in t]) == 2)
-    return ok, ("iari.step=%s malwa.step=%s polls=%d reveals=%d iari_pages=%s pins=%s unpinned=%s plan=%d "
-                "ticks(max %s)" % (i.get("step"), m.get("step"), len(pl), len(reveals),
-                                   (i.get("plan") or {}).get("pages_list"),
-                                   [x["message_id"] for x in pin_calls], [x["message_id"] for x in unp],
-                                   len(tmr), max(cd) if cd else None))
+          and len([t for t in texts(log) if "poll auto-closes" in t]) == 1)
+    return ok, ("iari.step=%s malwa.step=%s(missed=%s) polls=%d reveals=%d iari_pages=%s pins=%s unpinned=%s plan=%d ticks(max %s)"
+                % (i.get("step"), m.get("step"), bool(m.get("missed")), len(pl), len(reveals),
+                   (i.get("plan") or {}).get("pages_list"), [x["message_id"] for x in pin_calls],
+                   [x["message_id"] for x in unp], len(tmr), max(cd) if cd else None))
 
 
 def case10_next_day(tmp):
@@ -307,13 +316,13 @@ def case11_blocked(tmp):
     day = "2026-09-16"
     p, log, st = mk(tmp, day + "T14:30:00+05:30", journal=empty_journal(day),
                     env={"ENGINE_FAKE_MEMBER": "member"})
-    i, m = day_of(st, day, "iari"), day_of(st, day, "malwa")   # 14:30 -> malwa is in its late window too
+    i, m = day_of(st, day, "iari"), day_of(st, day, "malwa")
     gp = [e for e in log if e.get("chat") == GROUP and e["method"] in ("sendMessage", "sendPoll")]
     ad = methods(log, "sendMessage", ADMIN)
-    ok = (len(gp) == 0 and i.get("blocked") and m.get("blocked") and int(i.get("step", 0)) == 0
+    ok = (len(gp) == 0 and bool(i.get("blocked")) and bool(m.get("missed")) and int(i.get("step", 0)) == 0
           and len(ad) == 2 and all("bot ko pin" not in (e.get("text") or "") for e in ad))
-    return ok, "group_msgs=%d blocked(iari,malwa)=%s/%s admin_dms=%d" % (
-        len(gp), bool(i.get("blocked")), bool(m.get("blocked")), len(ad))
+    return ok, "group_msgs=%d blocked(iari)=%s malwa_sealed=%s admin_dms=%d" % (
+        len(gp), bool(i.get("blocked")), bool(m.get("missed")), len(ad))
 
 
 def case12_booksend(tmp):
@@ -788,6 +797,33 @@ def case28_leaderboard_complete(tmp):
         j.get("lb_parts"), j.get("lb_sent"))
 
 
+
+def case29_late_guard(tmp):
+    """29. v11.4.10 late guard: at 13:00 the 11:00 malwa slot never began -> sealed MISSED, zero group posts."""
+    day = "2026-09-16"
+    p, log, st = mk(tmp, day + "T13:00:00+05:30", journal=empty_journal(day))
+    m = day_of(st, day, "malwa")
+    gp = [e for e in log if e.get("chat") == GROUP and e["method"] in ("sendMessage", "sendPoll", "sendDocument")]
+    ls = m.get("late_sealed") or {}
+    ok = (int(m.get("step", 0)) == 8 and bool(m.get("missed")) and ls.get("late_min") == 120 and len(gp) == 0)
+    return ok, "step=%s missed=%s late_min=%s group_posts=%d" % (
+        m.get("step"), bool(m.get("missed")), ls.get("late_min"), len(gp))
+
+
+def case30_stop_flag(tmp):
+    """30. v11.4.10 owner STOP: journal stop=all -> the cycle seals/kills and posts nothing."""
+    day = "2026-09-16"
+    jj = empty_journal(day)
+    jj["stop"] = {"jobs": "all", "day": day, "at": day + "T10:59:00+05:30",
+                  "why": "owner stop (test)", "by": "admin"}
+    p, log, st = mk(tmp, day + "T11:00:00+05:30", journal=jj)
+    m, i = day_of(st, day, "malwa"), day_of(st, day, "iari")
+    gp = [e for e in log if e.get("chat") == GROUP and e["method"] in ("sendMessage", "sendPoll")]
+    k = m.get("killed") or {}
+    ok = (int(m.get("step", 0)) == 8 and bool(k) and len(gp) == 0 and int(i.get("step", 0)) == 0)
+    return ok, "malwa.step=%s killed=%s why=%s group_posts=%d" % (m.get("step"), bool(k), k.get("why"), len(gp))
+
+
 CASES = [
     ("1  idle pre-window", case1_idle),
     ("2  warm window (announce+countdown+20Q)", case2_warm),
@@ -817,6 +853,8 @@ CASES = [
     ("26 fresh Day 1 restart marker (series_reset)", case26_series_restart),
     ("27 result file = day's test paper (book-file format)", case27_paper_file),
     ("28 leaderboard complete (many players, no row lost)", case28_leaderboard_complete),
+    ("29 late guard: never-began slot seals at >15 min", case29_late_guard),
+    ("30 owner STOP flag kills the slot, group silent", case30_stop_flag),
 ]
 
 
