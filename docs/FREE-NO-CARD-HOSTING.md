@@ -10,6 +10,7 @@
 | Uptime/status page | the pinger's Actions log prints the runner status JSON every run — or open `/` |
 | Journal | engine pushes `state.json` to this repo after every step (git push = free) |
 | GitHub Actions (this repo) | **all workflows disabled** — kept only as a fallback |
+| Keep-awake | **self-ping every 4 min** inside `web.py` (no external pinger needed) + public pinger repo as backup |
 | Env vars on Render | `TZ, EXAM_TG_TOKEN, MONGO_URI, CHAT_ID, IARI_CHAT, ADMIN_CHAT, GITHUB_TOKEN, GITHUB_REPOSITORY, RAZORPAY_KEY_ID/SECRET, ADMIN_KEY, PAID_VERIFY, PAID_CHAT_*×7, PAID_PRICE_*×7` (26 values) |
 | Verified | `/ping` → ok · cycles `slotchain`/`keepwarm` rc=0 · desk `payments checked` · supply audit 50 sets · bot = administrator in AGRI QUIZ WORLD / IARI BOOK / AFO (can_post) · journal commits landing on main |
 | Render hours | only this service runs (the other 3 services are suspended) ⇒ inside the free 750 h/month |

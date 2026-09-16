@@ -3,6 +3,15 @@
 Render free web service **15 minute** bina traffic ke sone jati hai. Isliye ek **bahar wala pinger** chahiye.
 Runner: `https://live-test-8wu1.onrender.com` — `/ping` pe koi response parse karne ki zaroorat nahi, sirf hit hona chahiye (HTTP 200 = ok).
 
+## Layer 0 (PRIMARY, built into the runner) — self-ping
+`engine/web.py` khud ko har **4 minute** me apne public URL `…/ping` par request karta hai (thread `self_ping`).
+Free host ki "15 min bina traffic = so jao" condition isse kabhi poori nahi hoti — **koi bahar ka pinger,
+koi GitHub minute, koi account ki zaroorat nahi**. Status page `/` me `self_ping` field live rehta hai:
+```json
+"self_ping": {"at": "2026-09-16T12:46:27+05:30", "http": 200, "secs": 0.7}
+```
+Band karna ho to Render env var `SELF_PING_URL=` (empty) set kar dena. Interval badalna ho to `SELF_PING_SECS`.
+
 ## Layer 1 — GitHub cron (lagaya hua hai, par is account par fire nahi ho raha)
 Repo: https://github.com/b9811507-del/agri-quiz-keepawake — workflow `keepawake` (cron `*/5` + offset list ≈ 2.5 min).
 Public repo = free unlimited Actions minutes. Push-event runs **success** hote hain, lekin **scheduled runs aa hi nahi rahe**

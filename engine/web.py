@@ -3,7 +3,7 @@
 
 One tiny HTTP app does two jobs:
 
-  1) keep-awake endpoint            GET /ping        -> "ok"   (free hosts sleep without traffic)
+  1) keep-awake: self-ping thread (4 min) + GET /ping for any external uptime pinger
   2) the scheduler, in-process      every cycle = subprocess `python3 engine/engine.py <cmd>`
         slotchain  every 60 s  during 10:00–19:30 IST   → 11:00 / 14:30 / 18:00 tests
         keepwarm   every 3 min, 24×7                     → student desk: DMs, payments, join links
@@ -16,7 +16,7 @@ stream) and a slow test can never be started twice.
 
 Endpoints
     GET /                 status JSON (version, cycles, last runs, next slots)
-    GET /ping             "ok" — point any free uptime pinger here
+    GET /ping             "ok" — self-pinged every 4 min; any external pinger may use it too
     GET /run/<cmd>?key=…  manual trigger (protected by ADMIN_KEY); cmd in slotchain|keepwarm|guard|supply|status
 
 Run locally:   PORT=8080 python3 engine/web.py
@@ -31,6 +31,7 @@ import sys
 import tempfile
 import threading
 import time
+import urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from socketserver import ThreadingMixIn
 
@@ -41,6 +42,11 @@ IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 LOCKDIR = os.environ.get("RUNNER_LOCKDIR", "/tmp")
 LOGDIR = os.path.join(HERE, "logs")
 ADMIN_KEY = (os.environ.get("ADMIN_KEY") or "").strip()
+# self keep-awake: free hosts spin the service down after ~15 min WITHOUT inbound HTTP traffic.
+# Asking our own public URL from the inside counts as inbound traffic, so the instance never sleeps —
+# no external pinger and no GitHub minutes needed. Set SELF_PING_URL="" to switch it off.
+SELF_PING_URL = (os.environ.get("SELF_PING_URL") or "https://live-test-8wu1.onrender.com/ping").strip()
+SELF_PING_SECS = int(os.environ.get("SELF_PING_SECS") or "240")      # 4 min < 15 min idle limit
 
 try:
     import fcntl                                    # Linux/macOS (all free hosts above)
@@ -244,8 +250,32 @@ def next_slots():
     return out
 
 
+def self_ping():
+    """Keep the free instance awake by requesting our own /ping through the public URL.
+    Harmless while we are asleep-proof: the request just hits the /ping handler and returns."""
+    if not SELF_PING_URL:
+        return
+    time.sleep(40)                              # let the HTTP server bind first
+    while True:
+        rec = {"at": istnow().isoformat(timespec="seconds")}
+        try:
+            t0 = time.time()
+            req = urllib.request.Request(SELF_PING_URL, headers={"User-Agent": "agri-selfping/1.0"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                code = r.status
+                r.read(16)
+            rec.update({"http": code, "secs": round(time.time() - t0, 2)})
+        except Exception as e:
+            rec["error"] = str(e)[:160]
+        with _LOCK:
+            STATE["self_ping"] = rec
+        time.sleep(SELF_PING_SECS)
+
+
 def main():
     threading.Thread(target=scheduler, daemon=True).start()
+    if SELF_PING_URL:
+        threading.Thread(target=self_ping, daemon=True).start()
     srv = ThreadingHTTPServer(("0.0.0.0", PORT), Handler)
     print("agri-quiz runner on 0.0.0.0:%d | host=%s | IST %s" % (
         PORT, STATE["host"], istnow().isoformat(timespec="seconds")), flush=True)
