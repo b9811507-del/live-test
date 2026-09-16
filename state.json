@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-16T17:55:37+05:30",
+"agent_last": "2026-09-16T18:07:23+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -8136,13 +8136,8 @@
 ]
 },
 "desk_last": {
-"handled": 0,
-"offset": 210511605,
-"payments": {
-"checked": 0,
-"expired": 0,
-"issued": 0
-}
+"live": "2026-09-16/afo",
+"skipped": "test_live"
 },
 "dm": {
 "guard": 1789460218.2034469,
