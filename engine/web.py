@@ -59,7 +59,7 @@ _LOCK = threading.Lock()
 
 
 # --------------------------------------------------------------------------- one engine cycle
-def run_cycle(name, args, timeout=2700):
+def run_cycle(name, args, timeout=5400):   # 90 min: warm-wait + a 50-Q AFO test + report
     """Run `engine.py <args…>` in a subprocess under a lock. Returns (rc, seconds) or (-1, 0) if busy."""
     os.makedirs(LOGDIR, exist_ok=True)
     lock_path = os.path.join(LOCKDIR, "agri-runner-%s.lock" % name)
