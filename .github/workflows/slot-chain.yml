@@ -52,13 +52,12 @@ jobs:
         run: pip install -q pymongo
       - name: cycle
         run: python3 engine/engine.py slotchain || true
+      # Low-burn (16-Sep): outside 10:00-19:15 IST the chain does NOT re-arm itself; the */10 cron
+      # backstop wakes it. Inside the window the tight self-chain is kept (punctual slots).
       - name: rearm (jitter 100-190s, window only)
+        if: always()
         env:
           TZ: Asia/Kolkata
-        run: |
-          # Low-burn (16-Sep): outside 10:00-19:15 IST the chain does NOT re-arm itself; the */10 cron
-          # backstop wakes it. Inside the window the tight self-chain is kept (punctual slots).
-        if: always()
         run: |
           H=$(date +%H); M=$(date +%M); NOW=$((10#$H * 60 + 10#$M))
           if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then
