@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-17T10:55:11+05:30",
+"agent_last": "2026-09-17T11:06:58+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -10133,7 +10133,7 @@
 "bidx": 21,
 "cd": 0,
 "expl_in_poll": 10,
-"lock_ts": 1789623419.432129,
+"lock_ts": 1789623417.0310714,
 "locked_by": "local-7899",
 "msg_ann": 29377,
 "names": {
@@ -10585,7 +10585,7 @@
 "9": "6150069271503307474"
 },
 "qidx": 10,
-"sent_i": 10,
+"sent_i": 9,
 "skips": [],
 "started_at": "2026-09-17T11:00:45+05:30",
 "step": 2,
@@ -10662,13 +10662,8 @@
 ]
 },
 "desk_last": {
-"handled": 0,
-"offset": 210513904,
-"payments": {
-"checked": 0,
-"expired": 0,
-"issued": 0
-}
+"live": "2026-09-17/malwa",
+"skipped": "test_live"
 },
 "dm": {
 "guard": 1789460218.2034469,
