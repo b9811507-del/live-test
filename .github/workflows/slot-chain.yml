@@ -31,15 +31,25 @@ jobs:
       MONGO_URI: ${{ secrets.MONGO_URI }}
       IARI_CHAT: ${{ secrets.IARI_CHAT }}
       # paid batches (last message after every test): payment links/price/chat per batch
+      PAID_SHOWCASE: "on"
+      PAID_BOT_TOKEN: ${{ secrets.PAID_BOT_TOKEN }}
       PAID_LINK_AFO: ${{ secrets.PAID_LINK_AFO }}
       PAID_LINK_PASHU: ${{ secrets.PAID_LINK_PASHU }}
       PAID_LINK_CANE: ${{ secrets.PAID_LINK_CANE }}
       PAID_PRICE_AFO: ${{ secrets.PAID_PRICE_AFO }}
       PAID_PRICE_PASHU: ${{ secrets.PAID_PRICE_PASHU }}
       PAID_PRICE_CANE: ${{ secrets.PAID_PRICE_CANE }}
+      PAID_PRICE_MALWA: ${{ secrets.PAID_PRICE_MALWA }}
+      PAID_PRICE_IARI: ${{ secrets.PAID_PRICE_IARI }}
+      PAID_PRICE_NEMRAJ: ${{ secrets.PAID_PRICE_NEMRAJ }}
+      PAID_PRICE_RKSHARMA: ${{ secrets.PAID_PRICE_RKSHARMA }}
       PAID_CHAT_AFO: ${{ secrets.PAID_CHAT_AFO }}
       PAID_CHAT_PASHU: ${{ secrets.PAID_CHAT_PASHU }}
       PAID_CHAT_CANE: ${{ secrets.PAID_CHAT_CANE }}
+      PAID_CHAT_MALWA: ${{ secrets.PAID_CHAT_MALWA }}
+      PAID_CHAT_IARI: ${{ secrets.PAID_CHAT_IARI }}
+      PAID_CHAT_NEMRAJ: ${{ secrets.PAID_CHAT_NEMRAJ }}
+      PAID_CHAT_RKSHARMA: ${{ secrets.PAID_CHAT_RKSHARMA }}
       PAID_VERIFY: ${{ secrets.PAID_VERIFY }}
       # Razorpay payment links (v11.3)
       RAZORPAY_KEY_ID: ${{ secrets.RAZORPAY_KEY_ID }}

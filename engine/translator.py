@@ -238,8 +238,8 @@ T = {
     "cta": "🌾 Daily schedule: 11:00 AM Malwa Book · 2:30 PM IARI Book · 6:00 PM AFO Mains — @agriquizworld",
     # ---- paid batches (last message after every test)
     "paid_title": "🎓 <b>PAID BATCHES — ENROLMENT OPEN</b>",
-    "paid_intro": ("Structured courses with recorded classes, daily tests, PDF notes and full-length "
-                   "mock papers. Tap a batch below to enrol."),
+    "paid_intro": ("Structured courses covering the complete book, page by page, with PDF notes and "
+                   "full-length mock papers. Tap a batch below to enrol."),
     "paid_row": "%(emoji)s <b>%(title)s</b> — %(price)s\n    %(perks)s",
     "paid_footer": "Payment is verified instantly and your personal one-time join link arrives in this chat.",
     "paid_btn_batch": "%(emoji)s %(title)s — Enrol %(price)s",
