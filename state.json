@@ -9901,6 +9901,8 @@
 "malwa": {
 "ans": {},
 "bidx": 21,
+"lock_ts": 1789622780.7526984,
+"locked_by": "local-7899",
 "names": {},
 "plan": {
 "batch": 1,
