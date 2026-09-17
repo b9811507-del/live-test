@@ -9900,9 +9900,414 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 21,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 21,
+"built_at": "2026-09-17T10:56:18+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 1-6",
+"pages_blocks": [
+"1-2",
+"3-4",
+"5-6"
+],
+"questions": [
+{
+"expl": "The term comes from Latin \u2018ager\u2019 (field) and \u2018cultura\u2019 (cultivation).",
+"key": 0,
+"o": [
+"Ager + Cultura",
+"Agro + Cultus",
+"Agric + Utura",
+"Agro + Cultura",
+"None of these"
+],
+"page": "1-2",
+"q": "The word \"agriculture\" is derived from the combination of which Latin words?",
+"serial": "21",
+"src_row": 0,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:21"
+},
+{
+"expl": "The source states India\u2019s latitude is 8\u00b04\u2032N to 37\u00b06\u2032N and longitude 68\u00b07\u2032E to 97\u00b025\u2032E.",
+"key": 0,
+"o": [
+"8\u00b04\u2032N to 37\u00b06\u2032N and 68\u00b07\u2032E to 97\u00b025\u2032E",
+"10\u00b0N to 40\u00b0N and 70\u00b0E to 100\u00b0E",
+"5\u00b0N to 35\u00b0N and 65\u00b0E to 95\u00b0E",
+"12\u00b0N to 38\u00b0N and 70\u00b0E to 98\u00b0E",
+"None of these"
+],
+"page": "1-2",
+"q": "India lies primarily between which latitudinal and longitudinal ranges?",
+"serial": "22",
+"src_row": 1,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:22"
+},
+{
+"expl": "The text specifies India occupies 2.4% of global landmass.",
+"key": 0,
+"o": [
+"2.4%",
+"4.2%",
+"8%",
+"17.8%",
+"None of these"
+],
+"page": "1-2",
+"q": "India covers about what percentage of the world\u2019s landmass?",
+"serial": "23",
+"src_row": 2,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:23"
+},
+{
+"expl": "Suffixes ending in -culture are of Latin origin, e.g., agriculture, horticulture.",
+"key": 0,
+"o": [
+"Latin",
+"Greek",
+"Sanskrit",
+"Arabic",
+"None of these"
+],
+"page": "1-2",
+"q": "The suffix \"-culture\" is associated with words of which language origin?",
+"serial": "24",
+"src_row": 3,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:24"
+},
+{
+"expl": "Pomology combines Latin and Greek roots, unlike the others which are purely Greek or Latin.",
+"key": 1,
+"o": [
+"Entomology",
+"Pomology",
+"Pedology",
+"Pathology",
+"None of these"
+],
+"page": "1-2",
+"q": "Which of the following terms is derived from both Latin and Greek roots?",
+"serial": "25",
+"src_row": 4,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:25"
+},
+{
+"expl": "The table lists the use of iron as a milestone in 1400 B.C.",
+"key": 1,
+"o": [
+"10,000 B.C.",
+"1400 B.C.",
+"2000 B.C.",
+"500 B.C.",
+"None of these"
+],
+"page": "1-2",
+"q": "According to the historical timeline, the use of iron in agriculture began around which year?",
+"serial": "26",
+"src_row": 5,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:26"
+},
+{
+"expl": "Entomology is a Greek word meaning the study of insects, a branch of agricultural science.",
+"key": 2,
+"o": [
+"Horticulture",
+"Olericulture",
+"Entomology",
+"Floriculture",
+"None of these"
+],
+"page": "1-2",
+"q": "Which of the following is a Greek-derived term related to agriculture?",
+"serial": "27",
+"src_row": 6,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "1-2:27"
+},
+{
+"expl": "NDRI was founded in 1923, which is earlier than the other institutes mentioned.",
+"key": 1,
+"o": [
+"Central Research Institute for Jute and Allied Fibres (CRIJAF)",
+"National Dairy Research Institute (NDRI)",
+"Central Institute of Research on Cotton Technology (CIRCOT)",
+"Central Sheep and Wool Research Institute (CSWRI)",
+"None of these"
+],
+"page": "3-4",
+"q": "Which institute listed was established earliest in India\u2019s agricultural research network?",
+"serial": "31",
+"src_row": 7,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:31"
+},
+{
+"expl": "CIPHET\u2019s full name explicitly states its focus on post\u2011harvest engineering and technology.",
+"key": 1,
+"o": [
+"Central Institute for Arid Horticulture (CIAH)",
+"Central Institute on Post harvest Engineering and Technology (CIPHET)",
+"Central Institute of Sub Tropical Horticulture (CISH)",
+"Central Institute of Potato Research (CPRI)",
+"None of these"
+],
+"page": "3-4",
+"q": "Which institute specializes in post\u2011harvest engineering and technology?",
+"serial": "32",
+"src_row": 8,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:32"
+},
+{
+"expl": "The table lists CIRC\u2019s location as Meerut, Uttar Pradesh.",
+"key": 0,
+"o": [
+"Uttar Pradesh",
+"Madhya Pradesh",
+"Karnal",
+"Bihar",
+"None of these"
+],
+"page": "3-4",
+"q": "The Central Institute for Research on Cattle (CIRC) is located in which Indian state?",
+"serial": "33",
+"src_row": 9,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:33"
+},
+{
+"expl": "The Indian Institute of Sugarcane Research (IISR) is located in Lucknow, Uttar Pradesh.",
+"key": 2,
+"o": [
+"Indian Institute of Soybean Research",
+"Indian Institute of Spices Research",
+"Indian Institute of Sugarcane Research",
+"Indian Institute of Soil Sciences",
+"None of these"
+],
+"page": "3-4",
+"q": "Which IISR is situated in Lucknow, Uttar Pradesh?",
+"serial": "34",
+"src_row": 10,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:34"
+},
+{
+"expl": "IIHR is situated in Hesaraghatta, Bengaluru, while the other institutes are in different cities.",
+"key": 0,
+"o": [
+"Indian Institute of Horticultural Research (IIHR)",
+"National Institute of Animal Nutrition and Physiology (NIANP)",
+"National Institute of Veterinary Epidemiology and Disease Informatics (NIVEAI)",
+"Indian Institute of Agricultural Biotechnology (IIAB)",
+"None of these"
+],
+"page": "3-4",
+"q": "Which institute is located in Bengaluru, Karnataka?",
+"serial": "35",
+"src_row": 11,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:35"
+},
+{
+"expl": "NIASM\u2019s establishment year is listed as 2009 in the table.",
+"key": 0,
+"o": [
+"2009",
+"2012",
+"2000",
+"2014",
+"None of these"
+],
+"page": "3-4",
+"q": "The National Institute of Abiotic Stress Management (NIASM) was established in which year?",
+"serial": "36",
+"src_row": 12,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:36"
+},
+{
+"expl": "NIHSAD\u2019s name indicates its focus on high\u2011security animal disease research.",
+"key": 0,
+"o": [
+"National Institute of High Security Animal Diseases (NIHSAD)",
+"National Institute of Animal Nutrition and Physiology (NIANP)",
+"National Institute of Biotic Stress Management (NIBSM)",
+"National Dairy Research Institute (NDRI)",
+"None of these"
+],
+"page": "3-4",
+"q": "Which institute is dedicated to research on animal diseases with high security?",
+"serial": "37",
+"src_row": 13,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "3-4:37"
+},
+{
+"expl": "IARI was founded in 1905, earlier than any other institute listed.",
+"key": 0,
+"o": [
+"Indian Agricultural Research Institute (IARI)",
+"Indian Institute of Millets Research (IIMR)",
+"Central Inland Fisheries Research Institute (CIFRI)",
+"Indian Institute of Rice Research (IIRR)",
+"None of these"
+],
+"page": "5-6",
+"q": "Which institute was established first among the listed Indian agricultural research institutes?",
+"serial": "41",
+"src_row": 14,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:41"
+},
+{
+"expl": "The NRC for Groundnut was set up in 1979, making it the earliest NRC.",
+"key": 0,
+"o": [
+"Groundnut",
+"Banana",
+"Grapes",
+"Litchi",
+"None of these"
+],
+"page": "5-6",
+"q": "The first National Research Centre (NRC) established in India was for which crop?",
+"serial": "42",
+"src_row": 15,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:42"
+},
+{
+"expl": "IIOR is dedicated to research on oilseed crops.",
+"key": 0,
+"o": [
+"Indian Institute of Oilseeds Research (IIOR)",
+"Indian Institute of Maize Research (IIMR)",
+"Indian Institute of Oil Palm Research (IIOPR)",
+"Indian Institute of Rice Research (IIRR)",
+"None of these"
+],
+"page": "5-6",
+"q": "Which institute focuses on oilseed crops?",
+"serial": "43",
+"src_row": 16,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:43"
+},
+{
+"expl": "The Camel NRC is headquartered in Jodbeed, Bikaner, Rajasthan.",
+"key": 0,
+"o": [
+"National Research Centre on Camel",
+"National Research Centre on Equines",
+"National Research Centre on Meat",
+"National Research Centre on Yak",
+"None of these"
+],
+"page": "5-6",
+"q": "Which National Research Centre is located in Jodbeed, Rajasthan?",
+"serial": "44",
+"src_row": 17,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:44"
+},
+{
+"expl": "IIWM is based in Bhubaneshwar; CIWA is also there but IIWM is the water\u2011management institute.",
+"key": 0,
+"o": [
+"Indian Institute of Water Management (IIWM)",
+"Central Institute for Women in Agriculture (CIWA)",
+"Central Inland Fisheries Research Institute (CIFRI)",
+"Central Institute on Fisheries Education (CIFE)",
+"None of these"
+],
+"page": "5-6",
+"q": "Which institute is headquartered in Bhubaneshwar, Odisha?",
+"serial": "45",
+"src_row": 18,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:45"
+},
+{
+"expl": "IARI was founded in 1905, the earliest among the listed institutes.",
+"key": 0,
+"o": [
+"Indian Agricultural Research Institute (IARI)",
+"National Bureau of Plant Genetics Resources (NBPGR)",
+"National Institute for Plant Biotechnology (NIPB)",
+"Indian Institute of Maize Research (IIMR)",
+"None of these"
+],
+"page": "5-6",
+"q": "Which institute was established in 1905?",
+"serial": "46",
+"src_row": 19,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:46"
+},
+{
+"expl": "IIMR is dedicated to research on millets.",
+"key": 0,
+"o": [
+"Indian Institute of Millets Research (IIMR)",
+"Indian Institute of Oilseeds Research (IIOR)",
+"Indian Institute of Oil Palm Research (IIOPR)",
+"Indian Institute of Rice Research (IIRR)",
+"None of these"
+],
+"page": "5-6",
+"q": "Which institute specializes in millet research?",
+"serial": "47",
+"src_row": 20,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-6:47"
+}
+],
+"rolled": false,
+"row_from": 0,
+"row_to": 21,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
 "qidx": 0,
-"step": 0
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
