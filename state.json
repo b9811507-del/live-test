@@ -10400,6 +10400,9 @@
 "bidx": 63,
 "cd": 0,
 "congrats_sent": 29435,
+"cta_sent": "off",
+"done_at": "2026-09-17T14:48:37+05:30",
+"elapsed_s": 1335,
 "expl_in_poll": 28,
 "file_msg": 29436,
 "file_sent": "IARI_p7-9_28Q_2026-09-17.html",
@@ -10409,8 +10412,17 @@
 "lb_rows": 32,
 "lb_sent": true,
 "lock_ts": 1789636695.980042,
-"locked_by": "local-11458",
+"locked_by": "",
 "msg_ann": 29404,
+"msg_order": [
+"announce",
+"countdown",
+"quiz-polls(+in-poll explanation)",
+"leaderboard(all parts)",
+"top3",
+"file",
+"tomorrow-plan"
+],
 "names": {
 "1135818874": "PrNayak009",
 "1377071763": "ArunaPillaiyar",
@@ -10445,6 +10457,7 @@
 "978174619": "Kuldeep758",
 "991560184": "Kurmi18fitness"
 },
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 63,
@@ -11011,7 +11024,7 @@
 "sent_i": 27,
 "skips": [],
 "started_at": "2026-09-17T14:30:47+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 29437,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 7-12\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 10, 11, 14",
 "unpinned": [
