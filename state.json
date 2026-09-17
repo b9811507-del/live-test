@@ -9893,11 +9893,14 @@
 "step": 0
 },
 "iari": {
+"announced_at": "2026-09-17T14:30:00+05:30",
 "ans": {},
 "bidx": 63,
 "lock_ts": 1789635580.3233361,
 "locked_by": "local-11458",
+"msg_ann": 29404,
 "names": {},
+"pinned_ann": true,
 "plan": {
 "bidx_next": 63,
 "built_at": "2026-09-17T14:26:19+05:30",
@@ -10429,7 +10432,15 @@
 "qidx": 0,
 "seeded_from": "2026-09-16",
 "skips": [],
-"step": 0
+"step": 1,
+"unpinned": [
+29092,
+29102,
+29168,
+29275,
+29318,
+29377
+]
 },
 "malwa": {
 "announced_at": "2026-09-17T11:00:00+05:30",
