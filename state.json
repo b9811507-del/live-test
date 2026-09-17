@@ -9889,7 +9889,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-17T17:56:20+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"C.D. Mayee",
+"Norman Borlaug",
+"M.S. Swaminathan",
+"Vergese Kurien",
+"None of these"
+],
+"page": "",
+"q": "Who is known as the father of Bt cotton in India?",
+"serial": "1sUgWsko:215",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:215"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Harvest Diversity Index (HDI)",
+"Relative Cropping Intensity Index (RCII)",
+"Crop Equivalent Yield (CEY)",
+"Diversity Index (DI)",
+"None of these"
+],
+"page": "",
+"q": "Which index measures the multiplicity of crops based on the share of gross revenue from each farm enterprise in a single year?",
+"serial": "1sUgWsko:4551",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4551"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"West Bengal",
+"Tamil Nadu",
+"Karnataka",
+"Bihar",
+"None of these"
+],
+"page": "",
+"q": "Which state leads both in cut flowers and horticulture products?",
+"serial": "1bxM1Q-4:380",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:380"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Walnut",
+"Avocado",
+"Banana",
+"Fig",
+"None of these"
+],
+"page": "",
+"q": "In which plant is Protogynous diurnally synchronous dichogamy (PDSD) observed?",
+"serial": "1sUgWsko:941",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:941"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1956",
+"1957",
+"1962",
+"1955",
+"None of these"
+],
+"page": "",
+"q": "The Agricultural Produce (Development and Warehousing) Corporation Act was enacted in which year?",
+"serial": "128DIQLj:2661",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2661"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mazdoor Manzil",
+"Community Development",
+"Intensive Agricultural District Programme",
+"Panchayat Raj System",
+"None of these"
+],
+"page": "",
+"q": "Which programme was launched in 1948 under the leadership of S.K. Dey?",
+"serial": "1sUgWsko:6483",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6483"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1990",
+"1995",
+"2000",
+"2005",
+"None of these"
+],
+"page": "",
+"q": "Dr. Hans R. Herren received the World Food Prize for biological control in which year?",
+"serial": "1UgnIe-g:2021",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2021"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cultivation of green manure crops",
+"Application of manures",
+"Terrace farming",
+"Removal of excess water (drainage)",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a method to control soil erosion?",
+"serial": "1bxM1Q-4:1667",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1667"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Sun scald",
+"Split pit",
+"Gumming",
+"No specific disorder mentioned",
+"None of these"
+],
+"page": "",
+"q": "Which disorder in pear is associated with 'Hard end' and 'Pink Calyx'?",
+"serial": "1sUgWsko:1602",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1602"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"305 days",
+"270 days",
+"330 days",
+"365 days",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum lactation period for dairy cattle as mentioned in the source?",
+"serial": "1sUgWsko:3151",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3151"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"National Research Centre on Camel",
+"National Research Centre on Equines",
+"National Research Centre on Meat",
+"National Research Centre on Yak",
+"None of these"
+],
+"page": "",
+"q": "Which National Research Centre is located in Jodbeed, Rajasthan?",
+"serial": "128DIQLj:44",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:44"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Exosmosis",
+"Diffusion",
+"Osmosis",
+"Transpiration",
+"None of these"
+],
+"page": "",
+"q": "Endosmosis is the diffusion of solvent particles into a living cell. What is its opposite?",
+"serial": "1bxM1Q-4:2651",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2651"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1,000\u20112,000 Kg/ha",
+"3,000\u20114,000 Kg/ha",
+"5,000\u201110,000 Kg/ha",
+"12,000\u201115,000 Kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What amount of cow dung can be applied to a fish pond per hectare in installments?",
+"serial": "1sUgWsko:3539",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3539"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sinigrin",
+"Myrosinase",
+"Allyl isothiocyanate",
+"Glucosinolate",
+"None of these"
+],
+"page": "",
+"q": "The pungency of mustard is mainly due to the compound formed when sinigrin is hydrolysed by myrosinase. What is this compound?",
+"serial": "128DIQLj:473",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:473"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cytoplasm",
+"Matrix",
+"Nucleus",
+"Cell membrane",
+"None of these"
+],
+"page": "",
+"q": "Where are the enzymes associated with the Krebs cycle present?",
+"serial": "17U0MEc-:2392",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2392"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Purple discoloration of ears, lower abdomen and legs",
+"High body temperature",
+"Haemorrhages in the skin",
+"Yellowish diarrhea",
+"None of these"
+],
+"page": "",
+"q": "Which clinical sign is NOT typical of Classical Swine Fever (Hog Cholera)?",
+"serial": "1sUgWsko:3586",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3586"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Job",
+"Food",
+"Power",
+"Group membership",
+"None of these"
+],
+"page": "",
+"q": "According to Maslow's hierarchy of needs, which of the following is a Physiological need?",
+"serial": "128DIQLj:2222",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2222"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Powdery Mildew",
+"Anthracnose",
+"Rust",
+"Diplodia Stem\u2011end Rot",
+"None of these"
+],
+"page": "",
+"q": "Which fruit crop disease is caused by an algae?",
+"serial": "1YcJWVgW:438",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:438"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carrot",
+"Beet Leaves",
+"Turnip Leaves",
+"Muskmelon",
+"None of these"
+],
+"page": "",
+"q": "Which vegetable source provides the highest amount of Vitamin A (in IU) per unit area?",
+"serial": "1sUgWsko:896",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:896"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Melilotus alba",
+"Argemone mexicana",
+"Cuscuta",
+"Chicory",
+"None of these"
+],
+"page": "",
+"q": "Which weed is objectionable in mustard cultivation?",
+"serial": "1sUgWsko:5132",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5132"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Fresh consumption",
+"Preservation as candy",
+"Juice extraction",
+"Seed production",
+"None of these"
+],
+"page": "",
+"q": "What is the primary use of large-sized Aonla fruits?",
+"serial": "17U0MEc-:1512",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1512"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"The number of levels of the first factor",
+"The number of levels of the second factor",
+"The product of the levels of the first and second factors",
+"The number of replications",
+"None of these"
+],
+"page": "",
+"q": "In the procedure of splitting a split\u2011plot design, the number of main plots per block equals:",
+"serial": "1bxM1Q-4:3705",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3705"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Transpiration",
+"Guttation",
+"Evaporation",
+"Respiration",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the exudation of water with salts and minerals through hydathodes?",
+"serial": "17U0MEc-:2609",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2609"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10\u201320%",
+"20\u201330%",
+"32\u201340%",
+"50\u201360%",
+"None of these"
+],
+"page": "",
+"q": "Post\u2011harvest losses due to rain amount to what percentage range?",
+"serial": "1YcJWVgW:364",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:364"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Phosphorus",
+"Potassium",
+"Nitrogen",
+"Sulphur",
+"None of these"
+],
+"page": "",
+"q": "Chile saltpeter (NaNO3) is a source of which nutrient in fertilizers?",
+"serial": "1sUgWsko:7188",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7188"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Power tiller has pneumatic wheels",
+"Power tiller is operated by walking behind it",
+"Crawler tractor is a walking type",
+"Power tiller uses endless chains",
+"None of these"
+],
+"page": "",
+"q": "What distinguishes a Power tiller from a Crawler tractor?",
+"serial": "1sUgWsko:6026",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6026"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Harrows",
+"Rotary tillers",
+"Ploughs",
+"Rollers",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a secondary tillage implement?",
+"serial": "1sUgWsko:6434",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6434"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ammonium sulphate",
+"Urea",
+"Ammonium nitrate",
+"Potassium chloride",
+"None of these"
+],
+"page": "",
+"q": "Which fertilizer is most beneficial in submerged soil or rice fields?",
+"serial": "1bxM1Q-4:1849",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1849"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C\u2083 Plants",
+"C\u2084 Plants",
+"CAM Plants",
+"Both C\u2083 and CAM Plants",
+"None of these"
+],
+"page": "",
+"q": "Which type of plants have the highest photosynthetic rate?",
+"serial": "17U0MEc-:2637",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2637"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Central Rice Research Institute (CRRI), Cuttack",
+"Indian Central Oil Seeds Committee",
+"Arecanut Committee",
+"National Seed Corporation (NSC)",
+"None of these"
+],
+"page": "",
+"q": "Which institution was established in 1946 for rice research?",
+"serial": "17U0MEc-:64",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:64"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1-1.5 m",
+"1.5-2.0 m",
+"2-2.5 m",
+"2.5-3.0 m",
+"None of these"
+],
+"page": "",
+"q": "What is the depth range of water in a rearing pond?",
+"serial": "1bxM1Q-4:4301",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4301"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pulpwood",
+"Irrigation",
+"Soil conservation",
+"Biodiversity monitoring",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of utilization of forest produce mentioned in the source?",
+"serial": "1sUgWsko:5397",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5397"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Equal roof widths",
+"Roofs of unequal width",
+"Flat roof design",
+"Underground construction",
+"None of these"
+],
+"page": "",
+"q": "What is the defining feature of an uneven-span greenhouse?",
+"serial": "1sUgWsko:1640",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1640"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1",
+"2",
+"3",
+"4",
+"None of these"
+],
+"page": "",
+"q": "How many KVKs are there in the state of Goa under ATARI, Zone VIII, Pune?",
+"serial": "1bxM1Q-4:2187",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2187"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Air rising over mountains",
+"Convection over heated land",
+"Collision of air masses",
+"Low\u2011pressure cyclonic circulation",
+"None of these"
+],
+"page": "",
+"q": "Orographic precipitation mainly occurs because of:",
+"serial": "1sUgWsko:5647",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5647"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mean",
+"Median",
+"Mode",
+"Range",
+"None of these"
+],
+"page": "",
+"q": "Which measure of central tendency can have more than one value?",
+"serial": "128DIQLj:2751",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2751"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sum(G1:G12)",
+"Filter the list in place",
+"Max(G1:G12)",
+"Min(G1:G12)",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a step in the 'Advance File Action' process?",
+"serial": "1bxM1Q-4:3829",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3829"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To remove excess leaves",
+"To cut open latex vessels or remove coagulum blocking them",
+"To fertilize the tree",
+"To prune branches for better growth",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of tapping in rubber trees?",
+"serial": "1sUgWsko:1248",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1248"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Eureka",
+"Kagaji-nibu",
+"Star ruby",
+"Chakotra",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a variety of Acid Lime?",
+"serial": "1bxM1Q-4:2993",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2993"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"6 ATP",
+"12 ATP",
+"24 ATP",
+"30 ATP",
+"None of these"
+],
+"page": "",
+"q": "According to the source, how many ATP are produced directly in the Krebs cycle (excluding the electron transport system)?",
+"serial": "1UgnIe-g:1601",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1601"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"6",
+"10-11",
+"12",
+"8-9",
+"None of these"
+],
+"page": "",
+"q": "How many abdominal segments do Protura insects have?",
+"serial": "17U0MEc-:1711",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1711"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Float method",
+"Water meter",
+"Orifice",
+"Flume",
+"None of these"
+],
+"page": "",
+"q": "In the velocity\u2011area method, which device is used to measure flow by creating a known velocity profile?",
+"serial": "1bxM1Q-4:977",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:977"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Guar gum",
+"Methyl Jasmonate",
+"MH",
+"N-Benzyladanine",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is used to check sprouting in onion and potato?",
+"serial": "1bxM1Q-4:3606",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3606"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1970",
+"1987",
+"2009",
+"2014",
+"None of these"
+],
+"page": "",
+"q": "In which year was the National Research Centre for Sorghum (NRCS) established?",
+"serial": "17U0MEc-:191",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:191"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Spring wheat",
+"Durum wheat",
+"Winter wheat",
+"Shot wheat",
+"None of these"
+],
+"page": "",
+"q": "Which type of wheat needs about 170 to 250 days to mature?",
+"serial": "1sUgWsko:80",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:80"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Arithmetic Mean",
+"Median",
+"Mode",
+"Range",
+"None of these"
+],
+"page": "",
+"q": "Which statistical measure is defined as the middle most item of all values?",
+"serial": "1bxM1Q-4:3657",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3657"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Secondary Gene Pool (GP2)",
+"Tertiary Gene Pool (GP3)",
+"Primary Gene Pool (GP1)",
+"Germplasm Collection",
+"None of these"
+],
+"page": "",
+"q": "Which gene pool includes plants of the same species or closely related species that produce completely fertile offspring on inter-mating?",
+"serial": "1UgnIe-g:124",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:124"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Trichogramma japonicum",
+"Platygaster oryzae",
+"Isotima javensis",
+"Bracon sp.",
+"None of these"
+],
+"page": "",
+"q": "Which parasitoid is effective against the yellow stem borer in rice?",
+"serial": "1UgnIe-g:2032",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2032"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10-20 DAS",
+"20-30 DAS",
+"30-40 DAS",
+"40-50 DAS",
+"None of these"
+],
+"page": "",
+"q": "The critical period of weed competition in wheat occurs at what days after sowing?",
+"serial": "1sUgWsko:112",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:112"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Discovery of the nematicidal properties of DD mixture",
+"Publication of the first book on nematodes",
+"Reporting the transmission of grapevine fanleaf virus by nematodes",
+"Starting the first journal for plant parasitic nematodes",
+"None of these"
+],
+"page": "",
+"q": "What was the significant discovery made by Hewitt et al. in 1958?",
+"serial": "1UgnIe-g:2408",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2408"
+}
+],
+"set_no": 5,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
