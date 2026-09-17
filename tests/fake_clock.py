@@ -418,7 +418,7 @@ def case16_single_pin(tmp):
 
 
 def case17_paid_catalog(tmp):
-    """17. paid message lists all 7 batches with prices and one payment/deep-link button each."""
+    """17. group message is a short teaser (1 button); DM catalog lists all 7 batches with correct prices."""
     day = "2026-09-16"
     env = {"PAID_CHAT_MALWA": "-1003761821341", "PAID_CHAT_IARI": "-1003922097468",
            "PAID_CHAT_NEMRAJ": "-1003853396327", "PAID_CHAT_RKSHARMA": "-1003880198347",
@@ -429,17 +429,20 @@ def case17_paid_catalog(tmp):
     import paid as P
     old = os.environ.copy()
     os.environ.update(env)
-    rows = P.group_keyboard(engine_mod).get("inline_keyboard")
-    titles = [r[0]["text"] for r in rows]
-    ok = (all(t in txt for t in ("IARI BOOK MCQ BATCH", "MALWA BOOK VOL 1+2+HORTICULTURE", "NEMRAJ SUNDA BOOK BATCH",
-                                 "RK SHARMA BOOK BATCH", "AFO SELECTION BATCH", "SUGARCANE PREMIUM BATCH",
-                                 "PASHUDHAN ADHIKARI BATCH"))
-          and "₹99" in txt and "₹151" in txt and "₹251" in txt
-          and len(rows) == 8 and any("Enrol ₹251" in t for t in titles))
+    group_rows = P.group_keyboard(engine_mod).get("inline_keyboard")
+    cat_rows = P.catalog_keyboard(engine_mod).get("inline_keyboard")
+    cat_titles = [r[0]["text"] for r in cat_rows]
+    prices = {b["key"]: b["price"] for b in P.batches()}
     os.environ.clear(); os.environ.update(old)
-    return ok, "batch titles=%d buttons=%d has_99/151/251=%s" % (
-        sum(1 for t in ("IARI", "MALWA", "NEMRAJ", "RK SHARMA", "AFO", "SUGARCANE", "PASHUDHAN") if t in txt),
-        len(rows), ("₹99" in txt, "₹151" in txt, "₹251" in txt))
+    ok = (len(group_rows) == 1 and "Touch and join" in group_rows[0][0]["text"]
+          and len(cat_rows) == 7
+          and all(any(name in t for t in cat_titles) for name in
+                  ("IARI BOOK MCQ BATCH", "MALWA BOOK VOL 1+2+HORTICULTURE", "NEMRAJ SUNDA BOOK BATCH",
+                   "RK SHARMA BOOK BATCH", "AFO SELECTION BATCH", "SUGARCANE PREMIUM BATCH",
+                   "PASHUDHAN ADHIKARI BATCH"))
+          and prices == {"iari": "₹99", "malwa": "₹151", "nemraj": "₹99", "rksharma": "₹99",
+                          "afo": "₹251", "cane": "₹151", "pashu": "₹151"})
+    return ok, "group_buttons=%d catalog_batches=%d prices=%s" % (len(group_rows), len(cat_rows), prices)
 
 
 import engine as engine_mod

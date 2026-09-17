@@ -159,27 +159,14 @@ def line(pairs):
 # --------------------------------------------------------------------------- group message (last message after every test)
 def group_text():
     from translator import t
-    live = batches()
-    if not live:
+    if not batches():
         return t("paid_empty")
-    parts = [t("paid_title"), t("paid_intro"), ""]
-    for b in live:
-        parts.append(t("paid_row", emoji=b["emoji"], title=b["title"],
-                       price=(b["price"] or "Fee on enquiry"), perks=b["perks"]))
-    parts += ["", t("paid_footer")]
-    return "\n".join(parts)
+    return "\n".join([t("paid_title"), "", t("paid_teaser")])
 
 
 def group_keyboard(E):
     from translator import t
-    rows = []
-    for b in batches():
-        label = t("paid_btn_batch", emoji=b["emoji"], title=b["title"],
-                  price=b["price"]) if b["price"] else "%s %s — Enrol" % (b["emoji"], b["title"])
-        url = b["payment_link"] or deep_link(E, "buy_" + b["key"])
-        rows.append([{"text": label[:64], "url": url}])
-    rows.append([{"text": t("paid_btn_all")[:64], "url": deep_link(E, "catalog")}])
-    return {"inline_keyboard": rows}
+    return {"inline_keyboard": [[{"text": t("paid_btn_touch")[:64], "url": deep_link(E, "catalog")}]]}
 
 
 def post_after_test(E, chat, job=None, day=None):
