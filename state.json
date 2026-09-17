@@ -9894,8 +9894,539 @@
 },
 "iari": {
 "ans": {},
+"bidx": 63,
 "names": {},
+"plan": {
+"bidx_next": 63,
+"built_at": "2026-09-17T14:26:19+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 28,
+"pages": "Pages 7-9",
+"pages_list": [
+7,
+8,
+9
+],
+"questions": [
+{
+"expl": "The recommended nursery area for raising seedlings for one hectare of land is 20 cents (800 m2), as specified in the source for a wet nursery.",
+"key": 0,
+"o": [
+"20 cents (800 m2)",
+"30 cents (1200 m2)",
+"10 cents (400 m2)",
+"40 cents (1600 m2)",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended nursery area for raising seedlings for one hectare of land?",
+"serial": "36",
+"src_row": 35,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:36"
+},
+{
+"expl": "The optimum age for transplanting seedlings in a dry nursery is at the 4th leaf stage, as mentioned in the source.",
+"key": 2,
+"o": [
+"2nd leaf stage",
+"3rd leaf stage",
+"4th leaf stage",
+"5th leaf stage",
+"None of these"
+],
+"page": "7",
+"q": "What is the optimum age for transplanting seedlings in a dry nursery?",
+"serial": "37",
+"src_row": 36,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:37"
+},
+{
+"expl": "The recommended seed rate for hybrid varieties in a wet nursery is 20 kg, as specified in the source.",
+"key": 0,
+"o": [
+"20 kg",
+"30 kg",
+"40 kg",
+"60 kg",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended seed rate for hybrid varieties in a wet nursery?",
+"serial": "38",
+"src_row": 37,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:38"
+},
+{
+"expl": "The optimum age of seedlings for short duration varieties is 18-22 days, as mentioned in the source.",
+"key": 0,
+"o": [
+"18-22 days",
+"25-30 days",
+"35-40 days",
+"45-50 days",
+"None of these"
+],
+"page": "7",
+"q": "What is the optimum age of seedlings for short duration varieties?",
+"serial": "39",
+"src_row": 38,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:39"
+},
+{
+"expl": "The recommended planting depth for seedlings to ensure quick establishment and more tillers is 3 cm, as specified in the source.",
+"key": 1,
+"o": [
+"1 cm",
+"3 cm",
+"5 cm",
+"7 cm",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended planting depth for seedlings to ensure quick establishment and more tillers?",
+"serial": "40",
+"src_row": 39,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:40"
+},
+{
+"expl": "The minimum row spacing required to use a rotary weeder is 20 cm, as mentioned in the source.",
+"key": 2,
+"o": [
+"10 cm",
+"15 cm",
+"20 cm",
+"25 cm",
+"None of these"
+],
+"page": "7",
+"q": "What is the minimum row spacing required to use a rotary weeder?",
+"serial": "41",
+"src_row": 40,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:41"
+},
+{
+"expl": "The recommended number of seedlings per hill for short duration varieties is 2-3 seedlings/hill, as specified in the source.",
+"key": 2,
+"o": [
+"1 seedling/hill",
+"2 seedlings/hill",
+"2-3 seedlings/hill",
+"4 seedlings/hill",
+"None of these"
+],
+"page": "7",
+"q": "What is the recommended number of seedlings per hill for short duration varieties?",
+"serial": "42",
+"src_row": 41,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "7:42"
+},
+{
+"expl": "The main objective of puddling is to reduce percolation losses of water by creating an impervious layer below the water.",
+"key": 0,
+"o": [
+"To reduce percolation losses of water",
+"To increase soil aeration",
+"To promote weed growth",
+"To decrease nutrient availability",
+"None of these"
+],
+"page": "8",
+"q": "What is the primary objective of puddling in rice cultivation?",
+"serial": "43",
+"src_row": 42,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:43"
+},
+{
+"expl": "The seed rate for Dry Seeded Rainfed Un-Puddled Lowland Rice is 75 kg/ha.",
+"key": 1,
+"o": [
+"60 kg/ha",
+"75 kg/ha",
+"20 kg/ha",
+"50 kg/ha",
+"None of these"
+],
+"page": "8",
+"q": "What is the seed rate for Dry Seeded Rainfed Un-Puddled Lowland Rice?",
+"serial": "44",
+"src_row": 43,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:44"
+},
+{
+"expl": "The typical grain yield range for rice is 4000-6000 kg.",
+"key": 1,
+"o": [
+"2000-4000 kg",
+"4000-6000 kg",
+"6000-8000 kg",
+"8000-10000 kg",
+"None of these"
+],
+"page": "8",
+"q": "What is the typical grain yield range for rice?",
+"serial": "45",
+"src_row": 44,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:45"
+},
+{
+"expl": "The fertilizer dose for Dry Seeded Upland Hybrid rice is 175:60:60.",
+"key": 2,
+"o": [
+"50:25:25",
+"100:50:50",
+"175:60:60",
+"200:75:75",
+"None of these"
+],
+"page": "8",
+"q": "What is the fertilizer dose for Dry Seeded Upland Hybrid rice?",
+"serial": "46",
+"src_row": 45,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:46"
+},
+{
+"expl": "The depth of irrigation for Wet Seeded Puddled Lowland Rice may be increased to 2.5 cm.",
+"key": 3,
+"o": [
+"1 cm",
+"1.5 cm",
+"2 cm",
+"2.5 cm",
+"None of these"
+],
+"page": "8",
+"q": "What is the depth of irrigation for Wet Seeded Puddled Lowland Rice?",
+"serial": "47",
+"src_row": 46,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:47"
+},
+{
+"expl": "The spacing for Dry Seeded Upland Hybrid rice is 20 x 10 cm.",
+"key": 2,
+"o": [
+"10 x 10 cm",
+"15 x 15 cm",
+"20 x 10 cm",
+"25 x 25 cm",
+"None of these"
+],
+"page": "8",
+"q": "What is the spacing for Dry Seeded Upland Hybrid rice?",
+"serial": "48",
+"src_row": 47,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:48"
+},
+{
+"expl": "The yield range for Dry Seeded Rainfed Un-Puddled Lowland Rice is 50-75% of normal rice.",
+"key": 1,
+"o": [
+"25-50%",
+"50-75%",
+"75-100%",
+"100-125%",
+"None of these"
+],
+"page": "8",
+"q": "What is the yield range for Dry Seeded Rainfed Un-Puddled Lowland Rice compared to normal rice?",
+"serial": "49",
+"src_row": 48,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:49"
+},
+{
+"expl": "The Dapog method involves raising a dense stand of seedlings without contact with soil, using wooden planks, trays, or concrete floors covered with polythene sheets.",
+"key": 0,
+"o": [
+"To grow seedlings without soil contact",
+"To increase the seedling growth period",
+"To reduce the need for water",
+"To enhance the soil fertility",
+"None of these"
+],
+"page": "8",
+"q": "What is the primary purpose of the Dapog method of rice nursery?",
+"serial": "50",
+"src_row": 49,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:50"
+},
+{
+"expl": "Paira/Utera cropping typically involves crops like lentil, linseed, moong, and gram, but not wheat.",
+"key": 2,
+"o": [
+"Lentil",
+"Linseed",
+"Wheat",
+"Gram",
+"None of these"
+],
+"page": "8",
+"q": "Which crop is NOT typically used in Paira/Utera (Relay) cropping?",
+"serial": "51",
+"src_row": 50,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:51"
+},
+{
+"expl": "Beushening involves cross ploughing to control weeds, optimize crop stand, and provide soil aeration.",
+"key": 0,
+"o": [
+"To control weeds and optimize crop stand",
+"To increase the seedling growth period",
+"To reduce the need for water",
+"To enhance the soil fertility",
+"None of these"
+],
+"page": "8",
+"q": "What is the main objective of Beushening in rice cultivation?",
+"serial": "52",
+"src_row": 51,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:52"
+},
+{
+"expl": "Khaira disease is caused by zinc deficiency, leading to yellowing and drying of leaf tips and stunted plant growth.",
+"key": 0,
+"o": [
+"Zinc",
+"Iron",
+"Nitrogen",
+"Potassium",
+"None of these"
+],
+"page": "8",
+"q": "Khaira disease in rice is caused by the deficiency of which nutrient?",
+"serial": "53",
+"src_row": 52,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:53"
+},
+{
+"expl": "The Phalguna variety of rice is known to be tolerant to iron toxicity.",
+"key": 0,
+"o": [
+"Phalguna",
+"Basmati",
+"Jasmine",
+"Arborio",
+"None of these"
+],
+"page": "8",
+"q": "Which variety of rice is tolerant to iron toxicity?",
+"serial": "54",
+"src_row": 53,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:54"
+},
+{
+"expl": "Akiochi disease in rice is caused by hydrogen sulphide gas, leading to sulphide toxicity and nutrient absorption issues.",
+"key": 0,
+"o": [
+"Hydrogen sulphide gas",
+"Iron toxicity",
+"Zinc deficiency",
+"Nitrogen deficiency",
+"None of these"
+],
+"page": "8",
+"q": "What is the primary cause of Akiochi disease in rice?",
+"serial": "55",
+"src_row": 54,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:55"
+},
+{
+"expl": "In the Dapog method, seedlings become ready for transplanting on the 12th day, typically within 11-14 days after seeding.",
+"key": 0,
+"o": [
+"11-14 days after seeding",
+"20-25 days after seeding",
+"30-35 days after seeding",
+"40-45 days after seeding",
+"None of these"
+],
+"page": "8",
+"q": "When are seedlings typically ready for transplanting in the Dapog method?",
+"serial": "56",
+"src_row": 55,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "8:56"
+},
+{
+"expl": "The primary objective of rice milling is to remove the husk and bran layers to produce an edible, white rice kernel.",
+"key": 0,
+"o": [
+"To remove the husk and bran layers",
+"To increase the rice kernel size",
+"To add nutrients to the rice",
+"To change the color of the rice",
+"None of these"
+],
+"page": "9",
+"q": "What is the primary objective of the rice milling process?",
+"serial": "57",
+"src_row": 56,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:57"
+},
+{
+"expl": "Polishing rice involves removing very fine bran clinging to milled rice and smoothening the surface.",
+"key": 0,
+"o": [
+"To remove fine bran and smoothen the surface",
+"To add a shiny coating",
+"To increase the nutritional value",
+"To change the taste of the rice",
+"None of these"
+],
+"page": "9",
+"q": "What is the purpose of polishing rice?",
+"serial": "58",
+"src_row": 57,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:58"
+},
+{
+"expl": "Parboiling is a hydrothermal treatment applied to rice before milling.",
+"key": 0,
+"o": [
+"Pre-milling hydrothermal treatment",
+"Post-milling drying process",
+"A method to add flavor to rice",
+"A technique to change rice color",
+"None of these"
+],
+"page": "9",
+"q": "What is parboiling in the context of rice processing?",
+"serial": "59",
+"src_row": 58,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:59"
+},
+{
+"expl": "Brown rice is defined as unhusked rice.",
+"key": 0,
+"o": [
+"Unhusked rice",
+"Polished rice",
+"Parboiled rice",
+"Broken rice",
+"None of these"
+],
+"page": "9",
+"q": "What is brown rice?",
+"serial": "60",
+"src_row": 59,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:60"
+},
+{
+"expl": "The starchy endosperm, also known as the total milled rice, constitutes approximately 69% of most rice varieties.",
+"key": 0,
+"o": [
+"69%",
+"20%",
+"11%",
+"8%",
+"None of these"
+],
+"page": "9",
+"q": "What is the approximate composition of the starchy endosperm in most rice varieties?",
+"serial": "61",
+"src_row": 60,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:61"
+},
+{
+"expl": "The by-products in rice milling are rice hull, rice germ, and bran layers.",
+"key": 0,
+"o": [
+"Rice hull, rice germ, and bran layers",
+"Polished rice, husk, and water",
+"Broken rice, bran, and starch",
+"Husk, endosperm, and nutrients",
+"None of these"
+],
+"page": "9",
+"q": "What are the by-products of the rice milling process?",
+"serial": "62",
+"src_row": 61,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:62"
+},
+{
+"expl": "In an ideal milling process, 68-72% of the rice kernel results in milled rice or white rice, depending on the variety.",
+"key": 0,
+"o": [
+"68-72%",
+"20%",
+"11%",
+"8-12%",
+"None of these"
+],
+"page": "9",
+"q": "In an ideal milling process, what percentage of the rice kernel is milled rice or white rice?",
+"serial": "63",
+"src_row": 62,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "9:63"
+}
+],
+"row_from": 35,
+"row_to": 63,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 35,
+"seeded_from": "2026-09-16"
+},
 "qidx": 0,
+"seeded_from": "2026-09-16",
+"skips": [],
 "step": 0
 },
 "malwa": {
