@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-18T13:18:49+05:30",
+"agent_last": "2026-09-18T13:15:31+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -16460,7 +16460,7 @@
 },
 "desk": {
 "handled": 45,
-"last": "2026-09-18T13:18:45+05:30",
+"last": "2026-09-18T13:18:41+05:30",
 "offset": 210517955,
 "payments": {
 "checked": 1,
@@ -16545,7 +16545,7 @@
 },
 "desk_last": {
 "handled": 0,
-"offset": 210517955,
+"offset": 210517953,
 "payments": {
 "checked": 1,
 "expired": 0,
@@ -16699,6 +16699,17 @@
 "short_url": "https://rzp.io/rzp/IzuoGT5",
 "status": "created",
 "title": "IARI BOOK MCQ BATCH",
+"uid": "1138783169"
+},
+"plink_TdQHf2FPKeBUPl": {
+"amount": 99,
+"at": "2026-09-18T13:18:59+05:30",
+"created_ts": 1789717739,
+"key": "nemraj",
+"name": "Krishna",
+"short_url": "https://rzp.io/rzp/b0KQqwU",
+"status": "created",
+"title": "NEMRAJ SUNDA BOOK BATCH",
 "uid": "1138783169"
 }
 },
