@@ -19653,8 +19653,10 @@
 "created_ts": 1789739466,
 "key": "iari",
 "name": "Baji",
+"paid_at": "2026-09-18T19:22:48+05:30",
+"payment_id": "pay_TdWT3aNC1saeUa",
 "short_url": "https://rzp.io/rzp/AuL7KPOP",
-"status": "created",
+"status": "paid",
 "title": "IARI BOOK MCQ BATCH",
 "uid": "1922665327"
 }
