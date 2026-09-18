@@ -16599,6 +16599,17 @@
 "status": "created",
 "title": "AFO SELECTION BATCH",
 "uid": "1404352962"
+},
+"plink_TdPCMiegHI8Wja": {
+"amount": 99,
+"at": "2026-09-18T12:15:17+05:30",
+"created_ts": 1789713917,
+"key": "iari",
+"name": "Krishna",
+"short_url": "https://rzp.io/rzp/IzuoGT5",
+"status": "created",
+"title": "IARI BOOK MCQ BATCH",
+"uid": "1138783169"
 }
 },
 "msg_2026-09-15_iari": 29165,
