@@ -15441,6 +15441,8 @@
 "iari": {
 "ans": {},
 "bidx": 84,
+"lock_ts": 1789721774.7454183,
+"locked_by": "local-1660",
 "names": {},
 "plan": {
 "bidx_next": 84,
