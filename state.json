@@ -16623,6 +16623,19 @@
 "msg_2026-09-15_iari": 29165,
 "posted_at": "2026-09-15T15:04:00+05:30",
 "users": {
+"1138783169": {
+"batches": {
+"iari": {
+"at": "2026-09-18T12:18:18+05:30",
+"issued_at": "2026-09-18T12:18:20+05:30",
+"link_name": "iari-783169",
+"link_status": "issued",
+"mode": "claim_auto",
+"ref": ""
+}
+},
+"name": "Krishna"
+},
 "1404352962": {
 "batches": {
 "afo": {
