@@ -19464,10 +19464,10 @@
 },
 "desk": {
 "handled": 67,
-"last": "2026-09-18T19:22:08+05:30",
+"last": "2026-09-18T19:23:32+05:30",
 "offset": 210518338,
 "payments": {
-"checked": 3,
+"checked": 2,
 "expired": 0,
 "issued": 0
 },
@@ -19652,7 +19652,6 @@
 "at": "2026-09-18T19:21:06+05:30",
 "created_ts": 1789739466,
 "key": "iari",
-"link_issued": true,
 "name": "Baji",
 "paid_at": "2026-09-18T19:22:51+05:30",
 "payment_id": "pay_TdWT3aNC1saeUa",
