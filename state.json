@@ -15440,8 +15440,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 84,
 "names": {},
+"plan": {
+"bidx_next": 84,
+"built_at": "2026-09-18T14:26:12+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 10-14",
+"pages_list": [
+10,
+11,
+14
+],
+"questions": [
+{
+"expl": "The botanical family of wheat is Gramineae/Poaceae, as mentioned in the source.",
+"key": 0,
+"o": [
+"Gramineae/Poaceae",
+"Fabaceae",
+"Solanaceae",
+"Brassicaceae",
+"None of these"
+],
+"page": "10",
+"q": "What is the botanical family of wheat?",
+"serial": "64",
+"src_row": 63,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:64"
+},
+{
+"expl": "The chromosome number of wheat is 2n = 42, as stated in the source.",
+"key": 1,
+"o": [
+"2n = 28",
+"2n = 42",
+"2n = 14",
+"2n = 56",
+"None of these"
+],
+"page": "10",
+"q": "Which of the following is the chromosome number of wheat?",
+"serial": "65",
+"src_row": 64,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:65"
+},
+{
+"expl": "The origin of wheat is South-West Asia (Turkey), as mentioned in the source.",
+"key": 1,
+"o": [
+"South America",
+"South-West Asia (Turkey)",
+"Africa",
+"Australia",
+"None of these"
+],
+"page": "10",
+"q": "What is the origin of wheat?",
+"serial": "66",
+"src_row": 65,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:66"
+},
+{
+"expl": "Triticale is the first man-made cereal, created by an intergeneric cross made by Rimpu in 1890.",
+"key": 0,
+"o": [
+"Triticale",
+"Rye",
+"Barley",
+"Oats",
+"None of these"
+],
+"page": "10",
+"q": "Which of the following is the first man-made cereal?",
+"serial": "67",
+"src_row": 66,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:67"
+},
+{
+"expl": "The gene responsible for dwarfness in wheat is Norin-10, as mentioned in the source.",
+"key": 2,
+"o": [
+"Rht 1",
+"Rht 2",
+"Norin-10",
+"All of the above",
+"None of these"
+],
+"page": "10",
+"q": "What is the gene responsible for dwarfness in wheat?",
+"serial": "68",
+"src_row": 67,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:68"
+},
+{
+"expl": "Azotobacter is the biofertilizer commonly used for wheat, as stated in the source.",
+"key": 1,
+"o": [
+"Rhizobium",
+"Azotobacter",
+"Blue-green algae",
+"Mycorrhiza",
+"None of these"
+],
+"page": "10",
+"q": "Which biofertilizer is commonly used for wheat?",
+"serial": "69",
+"src_row": 68,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:69"
+},
+{
+"expl": "The fruit type of wheat is Caryopsis, as mentioned in the source.",
+"key": 2,
+"o": [
+"Drupe",
+"Berry",
+"Caryopsis",
+"Legume",
+"None of these"
+],
+"page": "10",
+"q": "What is the fruit type of wheat?",
+"serial": "70",
+"src_row": 69,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "10:70"
+},
+{
+"expl": "Common wheat (T. vulgare / aestivum) is mentioned as most suited for chapati and bakery products in the source.",
+"key": 2,
+"o": [
+"Durum wheat",
+"Emmer wheat",
+"Common wheat",
+"White wheat",
+"None of these"
+],
+"page": "11",
+"q": "Which type of wheat is best suited for making chapati and bakery products?",
+"serial": "71",
+"src_row": 70,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:71"
+},
+{
+"expl": "The source states that Common wheat is also known as Mexican Dwarf Wheat and was introduced in India by N.E. Borlaug.",
+"key": 2,
+"o": [
+"Durum wheat",
+"Emmer wheat",
+"Common wheat",
+"Hard red winter wheat",
+"None of these"
+],
+"page": "11",
+"q": "Which wheat variety is known as Mexican Dwarf Wheat and was introduced in India by N.E. Borlaug?",
+"serial": "72",
+"src_row": 71,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:72"
+},
+{
+"expl": "The source explicitly mentions that Durum wheat is best suited for drought conditions.",
+"key": 1,
+"o": [
+"Common wheat",
+"Durum wheat",
+"Emmer wheat",
+"White wheat",
+"None of these"
+],
+"page": "11",
+"q": "Which wheat type is best suited for drought conditions?",
+"serial": "73",
+"src_row": 72,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:73"
+},
+{
+"expl": "The source indicates that Durum wheat has 14 pairs of chromosomes (Zn: 28).",
+"key": 1,
+"o": [
+"21",
+"14",
+"7",
+"28",
+"None of these"
+],
+"page": "11",
+"q": "How many pairs of chromosomes does Durum wheat have?",
+"serial": "74",
+"src_row": 73,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:74"
+},
+{
+"expl": "The source states that Durum wheat is best suited for making noodles, vermicelli, Suji, rawa, and semya.",
+"key": 1,
+"o": [
+"Common wheat",
+"Durum wheat",
+"Emmer wheat",
+"White wheat",
+"None of these"
+],
+"page": "11",
+"q": "Which wheat type is primarily used for making noodles, vermicelli, Suji, rawa, and semya?",
+"serial": "75",
+"src_row": 74,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:75"
+},
+{
+"expl": "The source mentions that Soft red winter wheat is grown in humid conditions and is suitable for cakes and cookies.",
+"key": 1,
+"o": [
+"Hard red winter wheat",
+"Soft red winter wheat",
+"Hard red spring wheat",
+"White wheat",
+"None of these"
+],
+"page": "11",
+"q": "Which type of wheat is grown in humid conditions and is suitable for cakes and cookies?",
+"serial": "76",
+"src_row": 75,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:76"
+},
+{
+"expl": "The source indicates that Emmer wheat has a chromosome number (Zn) of 28.",
+"key": 1,
+"o": [
+"42",
+"28",
+"14",
+"7",
+"None of these"
+],
+"page": "11",
+"q": "What is the chromosome number (Zn) for Emmer wheat?",
+"serial": "77",
+"src_row": 76,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "11:77"
+},
+{
+"expl": "Shot wheat (T. sphaerococcum) is mentioned as suitable for the preparation of the South Indian dish Uppumav.",
+"key": 0,
+"o": [
+"Shot wheat (T. sphaerococcum)",
+"Winter wheat",
+"Spring wheat",
+"Durum wheat",
+"None of these"
+],
+"page": "14",
+"q": "Which type of wheat is suitable for the preparation of the South Indian dish Uppumav?",
+"serial": "78",
+"src_row": 77,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:78"
+},
+{
+"expl": "The source states that the minimum daily temperature for measurable growth in both winter and spring wheat is about 5\u00b0C.",
+"key": 1,
+"o": [
+"3\u00b0C",
+"5\u00b0C",
+"7\u00b0C",
+"10\u00b0C",
+"None of these"
+],
+"page": "14",
+"q": "What is the minimum daily temperature required for measurable growth in both winter and spring wheat?",
+"serial": "79",
+"src_row": 78,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:79"
+},
+{
+"expl": "Winter wheat is stated to need about 170 to 250 days to mature.",
+"key": 2,
+"o": [
+"Spring wheat",
+"Durum wheat",
+"Winter wheat",
+"Shot wheat",
+"None of these"
+],
+"page": "14",
+"q": "Which type of wheat needs about 170 to 250 days to mature?",
+"serial": "80",
+"src_row": 79,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:80"
+},
+{
+"expl": "The source mentions that 5 cm depth is ideal for wheat sowing.",
+"key": 1,
+"o": [
+"3 cm",
+"5 cm",
+"7 cm",
+"10 cm",
+"None of these"
+],
+"page": "14",
+"q": "What is the ideal sowing depth for wheat?",
+"serial": "81",
+"src_row": 80,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:81"
+},
+{
+"expl": "The source states that wheat is a long day plant.",
+"key": 1,
+"o": [
+"Short day plant",
+"Long day plant",
+"Day-neutral plant",
+"C4 plant",
+"None of these"
+],
+"page": "14",
+"q": "What type of plant is wheat in terms of its response to photoperiod?",
+"serial": "82",
+"src_row": 81,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:82"
+},
+{
+"expl": "The mean daily temperature for optimum growth and tillering in wheat is between 15 and 20\u00b0C.",
+"key": 1,
+"o": [
+"10-15\u00b0C",
+"15-20\u00b0C",
+"20-25\u00b0C",
+"25-30\u00b0C",
+"None of these"
+],
+"page": "14",
+"q": "What is the mean daily temperature range for optimum growth and tillering in wheat?",
+"serial": "83",
+"src_row": 82,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:83"
+},
+{
+"expl": "Winter wheat is mentioned to withstand freezing temperatures as low as -31.6\u00b0C after germination.",
+"key": 1,
+"o": [
+"Spring wheat",
+"Winter wheat",
+"Durum wheat",
+"Shot wheat",
+"None of these"
+],
+"page": "14",
+"q": "Which type of wheat can withstand freezing temperatures as low as -31.6\u00b0C after germination?",
+"serial": "84",
+"src_row": 83,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:84"
+}
+],
+"row_from": 63,
+"row_to": 84,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 63,
+"seeded_from": "2026-09-17"
+},
 "qidx": 0,
+"seeded_from": "2026-09-17",
+"skips": [],
 "step": 0
 },
 "malwa": {
