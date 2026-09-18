@@ -1071,7 +1071,7 @@
 ]
 },
 "agent_issues": [],
-"agent_last": "2026-09-18T19:23:40+05:30",
+"agent_last": "2026-09-18T19:20:35+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -19463,15 +19463,18 @@
 }
 },
 "desk": {
-"handled": 67,
-"last": "2026-09-18T19:23:32+05:30",
+"handled": 68,
+"last": "2026-09-18T19:22:08+05:30",
 "offset": 210518338,
 "payments": {
 "checked": 2,
 "expired": 0,
 "issued": 0
 },
-"seen": []
+"seen": [
+"210518345"
+],
+"webhook_last": "2026-09-18T19:23:36+05:30"
 },
 "desk_last": {
 "handled": 0,
@@ -19652,6 +19655,7 @@
 "at": "2026-09-18T19:21:06+05:30",
 "created_ts": 1789739466,
 "key": "iari",
+"link_issued": true,
 "name": "Baji",
 "paid_at": "2026-09-18T19:22:51+05:30",
 "payment_id": "pay_TdWT3aNC1saeUa",
