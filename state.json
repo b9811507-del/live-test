@@ -19463,19 +19463,15 @@
 }
 },
 "desk": {
-"handled": 69,
+"handled": 67,
 "last": "2026-09-18T19:22:08+05:30",
 "offset": 210518338,
 "payments": {
-"checked": 2,
+"checked": 3,
 "expired": 0,
 "issued": 0
 },
-"seen": [
-"210518345",
-"210518346"
-],
-"webhook_last": "2026-09-18T19:23:54+05:30"
+"seen": []
 },
 "desk_last": {
 "handled": 0,
@@ -19488,7 +19484,7 @@
 },
 "dm": {
 "guard": 1789460218.2034469,
-"paid:claim": 1789739607.8463597,
+"paid:claim": 1789714102.8698704,
 "paid:ref": 1789714529.9954345
 },
 "paid": {
@@ -19656,7 +19652,6 @@
 "at": "2026-09-18T19:21:06+05:30",
 "created_ts": 1789739466,
 "key": "iari",
-"link_issued": true,
 "name": "Baji",
 "paid_at": "2026-09-18T19:22:51+05:30",
 "payment_id": "pay_TdWT3aNC1saeUa",
