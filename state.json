@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-18T14:24:48+05:30",
+"agent_last": "2026-09-18T14:33:10+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -15488,7 +15488,7 @@
 "bidx": 84,
 "cd": 0,
 "expl_in_poll": 3,
-"lock_ts": 1789722188.8400915,
+"lock_ts": 1789722186.3716059,
 "locked_by": "local-1660",
 "msg_ann": 29524,
 "names": {
@@ -15917,7 +15917,7 @@
 },
 "qidx": 3,
 "seeded_from": "2026-09-17",
-"sent_i": 3,
+"sent_i": 2,
 "skips": [],
 "started_at": "2026-09-18T14:31:08+05:30",
 "step": 2,
@@ -17034,13 +17034,8 @@
 ]
 },
 "desk_last": {
-"handled": 0,
-"offset": 210517956,
-"payments": {
-"checked": 2,
-"expired": 0,
-"issued": 0
-}
+"live": "2026-09-18/iari",
+"skipped": "test_live"
 },
 "dm": {
 "guard": 1789460218.2034469,
