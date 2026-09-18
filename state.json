@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-18T17:56:36+05:30",
+"agent_last": "2026-09-18T17:50:34+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -15435,7 +15435,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-18T17:56:34+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"40-45 gm",
+"30-35 gm",
+"50-55 gm",
+"60-65 gm",
+"None of these"
+],
+"page": "",
+"q": "How much True Potato Seed (TPS) is required to plant one hectare of potato crop?",
+"serial": "1bxM1Q-4:897",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:897"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Barren nuts",
+"Sunscald",
+"Freckles",
+"Splitting of fruits",
+"None of these"
+],
+"page": "",
+"q": "What symptom indicates poor pollination or fertilization in coconut trees?",
+"serial": "1sUgWsko:1595",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1595"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tomato Mosaic Virus (TMV)",
+"Tomato Mottle Virus (ToMoV)",
+"Tomato Spotted Wilt Virus (TSWV)",
+"Cucumber Mosaic Virus (CMV)",
+"None of these"
+],
+"page": "",
+"q": "Which virus in tomatoes is transmitted by whiteflies?",
+"serial": "1YcJWVgW:535",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:535"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"121\u00b0C and 15 Psi",
+"160-180\u00b0C and 15 Psi",
+"121\u00b0C and 10 Psi",
+"160-180\u00b0C and 10 Psi",
+"None of these"
+],
+"page": "",
+"q": "What is the temperature and pressure used in autoclaving?",
+"serial": "1UgnIe-g:1328",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1328"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mollisols",
+"Andisols",
+"Gelisols",
+"Alfisols",
+"None of these"
+],
+"page": "",
+"q": "Which soil order is formed in volcanic ash and contains high proportions of glass and amorphous colloidal materials?",
+"serial": "17U0MEc-:1122",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1122"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Kutchi",
+"Bikaneri",
+"Jaisalmeri",
+"Marwari",
+"None of these"
+],
+"page": "",
+"q": "Which camel breed is known as the best milch breed?",
+"serial": "128DIQLj:1781",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1781"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Parent material, climate, organisms",
+"Climate, organisms, time",
+"Parent material, climate, organisms (biosphere)",
+"Parent material, relief, time",
+"None of these"
+],
+"page": "",
+"q": "According to Dokuchaiev (1889), soil development is a function of which factors?",
+"serial": "1sUgWsko:6761",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6761"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1958",
+"1986",
+"1989",
+"2004",
+"None of these"
+],
+"page": "",
+"q": "The establishment year of NAFED is:",
+"serial": "1sUgWsko:804",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:804"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pineapple",
+"Banana",
+"Chilli",
+"Sweet potato",
+"None of these"
+],
+"page": "",
+"q": "Which intercropped plant is the most profitable in coconut plantations?",
+"serial": "1YcJWVgW:972",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:972"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"World Earth Day",
+"World Water Day",
+"World Meteorological Day",
+"World Wildlife Day",
+"None of these"
+],
+"page": "",
+"q": "Which day falls on 22 April?",
+"serial": "1sUgWsko:4197",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4197"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sylvia",
+"Arkel",
+"Hortense",
+"Arvense",
+"None of these"
+],
+"page": "",
+"q": "Which variety of pea has sickle-shaped pods?",
+"serial": "1sUgWsko:319",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:319"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Palade",
+"De Duve",
+"T. Boveri",
+"Camilo Golgi",
+"None of these"
+],
+"page": "",
+"q": "Who is credited with the discovery of lysosomes?",
+"serial": "17U0MEc-:2406",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2406"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1961",
+"1970",
+"1991",
+"2002",
+"None of these"
+],
+"page": "",
+"q": "In which year was the first hybrid variety of pigeon pea released in India?",
+"serial": "1UgnIe-g:291",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:291"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gluten",
+"Albumin",
+"Globulin",
+"Gliadin",
+"None of these"
+],
+"page": "",
+"q": "Which protein in wheat is essential for good bread quality and chapatti making?",
+"serial": "17U0MEc-:582",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:582"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sodium and potassium",
+"Calcium and phosphorus",
+"Iron and zinc",
+"Magnesium and copper",
+"None of these"
+],
+"page": "",
+"q": "Which minerals are emphasized to prevent milk fever in high\u2011yielding cows during the post\u2011parturient period?",
+"serial": "1bxM1Q-4:4165",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4165"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lava",
+"Magma",
+"Basalt",
+"Gabbro",
+"None of these"
+],
+"page": "",
+"q": "When magma reaches the Earth's surface, it is called:",
+"serial": "1sUgWsko:6813",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6813"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ash gourd (white pumpkin)",
+"Carrot",
+"Beet root",
+"Bottle gourd",
+"None of these"
+],
+"page": "",
+"q": "Agra ka Petha, a famous Indian candy, is prepared from which vegetable?",
+"serial": "1YcJWVgW:1247",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1247"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Silicon",
+"Chlorine",
+"Calcium",
+"Molybdenum",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient deficiency leads to a weeping willow habit of growth?",
+"serial": "128DIQLj:1347",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1347"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ginger",
+"Clove",
+"Garlic",
+"Black Pepper",
+"None of these"
+],
+"page": "",
+"q": "Which spice is primarily used for its flavour rather than taste?",
+"serial": "1YcJWVgW:844",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:844"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Natural fruit pigments",
+"Charring of sugar",
+"Addition of food color",
+"Pectin reaction",
+"None of these"
+],
+"page": "",
+"q": "What causes the red color in jelly?",
+"serial": "1sUgWsko:1560",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1560"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"High single\u2011birth rate",
+"High twin and triplet birth rates",
+"Low fertility",
+"Strict seasonal breeding",
+"None of these"
+],
+"page": "",
+"q": "Garole sheep are especially noted for which reproductive characteristic?",
+"serial": "1sUgWsko:3223",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3223"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"5.2-8.0",
+"6.5-7.5",
+"5.5-8",
+"6.5-8",
+"None of these"
+],
+"page": "",
+"q": "What is the pH range for Coconut cultivation as per the SOURCE?",
+"serial": "1sUgWsko:881",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:881"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It can be done year-round.",
+"It is most effective in summer.",
+"It requires no equipment.",
+"It is the cheapest.",
+"None of these"
+],
+"page": "",
+"q": "Why is dewatering considered the best method for removing predatory and weed fishes?",
+"serial": "1sUgWsko:2338",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2338"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To provide clinical services for animal health",
+"To offer guidance on cropping practices and technology dissemination",
+"To supply farm equipment for hire",
+"To publish agricultural journals",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of Agri-clinics in India?",
+"serial": "128DIQLj:2311",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2311"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mencozeb",
+"NAA (Planofix)",
+"Paclobutrazol (Cultar)",
+"Borax",
+"None of these"
+],
+"page": "",
+"q": "Which growth regulator is applied to mitigate alternate bearing in mango?",
+"serial": "17U0MEc-:1456",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1456"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Possess utility",
+"Abundant",
+"Transferable/Exchangeable",
+"External to person",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an attribute of wealth as per RPSC AO 2014?",
+"serial": "128DIQLj:2371",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2371"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.10 ha/h",
+"0.15 ha/h",
+"0.20 ha/h",
+"0.25 ha/h",
+"None of these"
+],
+"page": "",
+"q": "What is the field capacity of a Tractor Mounted Potato Digger Elevator with a 600 mm width of cut?",
+"serial": "1sUgWsko:6415",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6415"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tropical rainforest",
+"Tropical dry deciduous forest",
+"Montane temperate forest",
+"Alpine scrub",
+"None of these"
+],
+"page": "",
+"q": "Which type of forest is the most dominant in India?",
+"serial": "1UgnIe-g:2629",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2629"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"dominance",
+"codominance",
+"incomplete dominance",
+"epistasis",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an example of allelic gene interaction?",
+"serial": "1UgnIe-g:529",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:529"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Breaking clods after ploughing",
+"Collecting trash from ploughed land",
+"Cutting weeds",
+"Forming ridges and furrows",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a function of a disc harrow?",
+"serial": "128DIQLj:2976",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2976"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wind break farming",
+"Slash-and-Burn agriculture",
+"Shelterbelt farming",
+"Aqua forestry",
+"None of these"
+],
+"page": "",
+"q": "What is another name for shifting cultivation?",
+"serial": "1UgnIe-g:2695",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2695"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1.0 mg/day",
+"1.2 mg/day",
+"1.5 mg/day",
+"2.0 mg/day",
+"None of these"
+],
+"page": "",
+"q": "What is the daily requirement of Vitamin B1 (Thiamine) for humans?",
+"serial": "1sUgWsko:898",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:898"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tongue grafting",
+"T-budding",
+"Ground layering",
+"Hard wood cutting",
+"None of these"
+],
+"page": "",
+"q": "What is the method of propagation for *Psidium guajava* (Guava)?",
+"serial": "1bxM1Q-4:2881",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2881"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Pepper",
+"Cardamom",
+"Saffron",
+"Nutmeg",
+"None of these"
+],
+"page": "",
+"q": "Which of the following spices is an annual spice according to the classification?",
+"serial": "1sUgWsko:1488",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1488"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sugarcane",
+"Wheat",
+"Rice",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a host plant of the leaf hopper Pyrilla perpusilla?",
+"serial": "1sUgWsko:1901",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1901"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dental pad",
+"Incisor",
+"Canine",
+"Molar",
+"None of these"
+],
+"page": "",
+"q": "What structure replaces the upper incisors in ruminants?",
+"serial": "128DIQLj:1903",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1903"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Egg",
+"Larva",
+"Pupa",
+"Adult",
+"None of these"
+],
+"page": "",
+"q": "In lepidopteran storage pests, which life stage is responsible for damage?",
+"serial": "1UgnIe-g:2300",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2300"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"100",
+"200",
+"300",
+"400",
+"None of these"
+],
+"page": "",
+"q": "For 1000 hectares of cultivated land, how many power tillers are generally required?",
+"serial": "1sUgWsko:6088",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6088"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tile drainage",
+"Mole drainage",
+"Vertical drainage",
+"Well drainage",
+"None of these"
+],
+"page": "",
+"q": "Which type of subsurface drainage involves unlined circular earthen channels formed by a mole plough?",
+"serial": "1sUgWsko:4672",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4672"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Rose (Pink)",
+"Zinnia (Magenta)",
+"Tulip (Variegated)",
+"Sweet pea",
+"None of these"
+],
+"page": "",
+"q": "Which of the following flowers symbolizes 'Lasting affection'?",
+"serial": "1bxM1Q-4:3498",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3498"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Collembola",
+"Protura",
+"Diplura",
+"Thysanura",
+"None of these"
+],
+"page": "",
+"q": "Which order under Apterygota has insects with a median caudal filament and many long-segmented cerci?",
+"serial": "1UgnIe-g:1844",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1844"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"It is held at field capacity",
+"It moves in liquid form",
+"It is biologically active",
+"It is held mostly by soil colloids",
+"None of these"
+],
+"page": "",
+"q": "What is the primary characteristic of hygroscopic water in soil?",
+"serial": "17U0MEc-:1181",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1181"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Increase in barometric pressure over northern India shifting winds to the southeast and bringing no\u2026",
+"Decrease in sea\u2011surface temperature in the Bay of Bengal",
+"Arrival of tropical cyclones in the Indian Ocean",
+"Strengthening of the westerly jet stream",
+"None of these"
+],
+"page": "",
+"q": "The North East Monsoon is primarily caused by which atmospheric change?",
+"serial": "1sUgWsko:5626",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1sUgWsko:5626"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Q = CLH^m",
+"Q = CLH^2",
+"Q = CLH^1/2",
+"Q = CLH^3",
+"None of these"
+],
+"page": "",
+"q": "What is the basic equation for discharge through a weir?",
+"serial": "17U0MEc-:439",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:439"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bargur",
+"Umblachery",
+"Sahiwal",
+"Red Sindhi",
+"None of these"
+],
+"page": "",
+"q": "Which cattle breed is described as having a brown\u2011and\u2011white speckled coat and a small hump?",
+"serial": "1sUgWsko:2982",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2982"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Captan",
+"Thiram",
+"Maneb",
+"Benomyl",
+"None of these"
+],
+"page": "",
+"q": "Which fungicide belongs to the class of Phthalimides?",
+"serial": "17U0MEc-:2163",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2163"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Uneven span type greenhouse",
+"Interlocking ridges and furrow type Quonset greenhouse",
+"Plastic film greenhouse",
+"Saw tooth type greenhouse",
+"None of these"
+],
+"page": "",
+"q": "Which of the following greenhouse types is NOT listed under 'shape' in the SOURCE?",
+"serial": "1sUgWsko:1631",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1631"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increased fertility",
+"Reduced fertility",
+"Increased lambing rate",
+"Decreased lambing rate",
+"None of these"
+],
+"page": "",
+"q": "Over\u2011fattening of ewes leads to what effect?",
+"serial": "1sUgWsko:3282",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3282"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wheat rust",
+"Smut of bajra",
+"Fusarium wilt",
+"Karnal bunt of wheat",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a simple interest disease?",
+"serial": "1UgnIe-g:937",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:937"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"ICAR-Directorate of Medicinal and Aromatic Plants Research",
+"ICAR-Directorate of Floricultural Research",
+"ICAR-Directorate of Cashew Research",
+"ICAR-Directorate of Mushroom Research",
+"None of these"
+],
+"page": "",
+"q": "Which directorate is associated with the study of aromatic plants?",
+"serial": "1sUgWsko:4163",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4163"
+}
+],
+"set_no": 6,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
@@ -17334,7 +18248,7 @@
 },
 "desk": {
 "handled": 65,
-"last": "2026-09-18T17:56:31+05:30",
+"last": "2026-09-18T17:56:08+05:30",
 "offset": 210518338,
 "payments": {
 "checked": 2,
