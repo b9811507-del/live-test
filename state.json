@@ -15489,6 +15489,9 @@
 "answered_total": 0,
 "cd": 0,
 "congrats_sent": 29605,
+"cta_sent": "off",
+"done_at": "2026-09-18T18:40:05+05:30",
+"elapsed_s": 2598,
 "expl_in_poll": 0,
 "file_msg": 29606,
 "file_sent": "AFO_pFull-length-set-6_50Q_2026-09-18.html",
@@ -15498,9 +15501,20 @@
 "lb_rows": 0,
 "lb_sent": true,
 "lock_ts": 1789736980.0741963,
-"locked_by": "local-1702",
+"locked_by": "",
 "msg_ann": 29552,
+"msg_order": [
+"announce",
+"countdown",
+"quiz-polls(+in-poll explanation)",
+"leaderboard(all parts)",
+"top3",
+"file",
+"tomorrow-plan"
+],
 "names": {},
+"paid_msg": 29551,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "built_at": "2026-09-18T17:56:34+05:30",
@@ -16473,7 +16487,7 @@
 "sent_i": 49,
 "skips": [],
 "started_at": "2026-09-18T18:01:02+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 29607,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 13-18\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 13, 14, 15\n\ud83c\udf06 6:00 PM \u00b7 <b>AFO MAINS TEST (NEW PATTERN)</b> \u2014 full-length set 7 (50 questions, +2 / \u22120.5)",
 "unpinned": [
@@ -18570,6 +18584,7 @@
 }
 },
 "msg_2026-09-15_iari": 29165,
+"msg_2026-09-18_afo": 29551,
 "msg_2026-09-18_iari": 29551,
 "posted_at": "2026-09-18T14:44:52+05:30",
 "users": {
