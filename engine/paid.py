@@ -5,7 +5,7 @@ FLOW (as ordered by the admin):
   1. after every test, the LAST group message is the paid-batches message (all batches, prices,
      perks, each with its own payment button — the payment link is embedded in the button);
   2. a student taps a batch -> the bot opens a private chat (their own chat box) with the batch
-     detail, the payment link and an "I have paid" button;
+     detail and the personal payment link (claims retired v11.4.12);
   3. the moment payment is confirmed (Telegram native invoice -> successful_payment, or the
      verified claim flow) the bot creates a SINGLE-USE invite link (member_limit=1) for that batch
      group and sends it into that student's chat box.
@@ -270,9 +270,9 @@ def send_batch_detail(E, uid, key):
         rows.append([{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % b["price"])[:64], "callback_data": "rzp:" + key}])
     elif provider_token() and price_amount(b["price"]):
         rows.append([{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % b["price"])[:64], "callback_data": "invoice:" + key}])
-    else:
-        rows.append([{"text": "\U0001F4B0 I have paid (manual claim)", "callback_data": "claim:" + key}])
-    return _send(E, uid, body, {"inline_keyboard": rows})
+    # v11.4.12 (admin order 18-Sep): "I have paid / manual claim" removed everywhere —
+    # access only via the personal payment link; no button can enrol a student unprompted.
+    return _send(E, uid, body, {"inline_keyboard": rows} if rows else None)
 
 
 def send_invoice(E, uid, key):
@@ -311,8 +311,7 @@ def create_razorpay_link(E, st, key, uid, name=""):
     paid_msg = t("dm_rzp_created", title=b["title"], price=b["price"],
                  mins=max(5, RAZORPAY_LINK_MINUTES))
     _send(E, str(uid), paid_msg,
-          {"inline_keyboard": [[{"text": ("💳 Pay %s now" % b["price"])[:64], "url": d["short_url"]}],
-                               [{"text": t("dm_paid_btn"), "callback_data": "claim:" + key}]]})
+          {"inline_keyboard": [[{"text": ("💳 Pay %s now" % b["price"])[:64], "url": d["short_url"]}]]})
     E.log("razorpay link %s created for %s/%s" % (d["id"], key, uid))
     return d["id"]
 
@@ -539,10 +538,13 @@ def handle_callback(E, st, cb):
             send_invoice(E, uid, data.split(":", 1)[1])
         return
     if data.startswith("claim:"):
+        # v11.4.12: manual claims are retired (admin order) — payment auto-unlocks access.
         key = data.split(":", 1)[1]
         b = batch(key)
         if not b:
             return
+        _send(E, uid, "ℹ️ Ab claim karne ki zaroorat nahi — apna <b>personal payment link</b> se pay kijiye; \u23F3 payment verify hote hi join link <b>apne aap</b> isi chat me aa jayega.\n\nNaya link chahiye to batch ka <b>Pay &amp; Join</b> button dobara dabaiye.")
+        return
         claim = {"uid": uid, "key": key, "at": E.istnow().isoformat(timespec="seconds"), "mode": "claim",
                  "ref_state": "awaiting"}
         st.setdefault("paid", {}).setdefault("claims", []).append(claim)
