@@ -19464,10 +19464,10 @@
 },
 "desk": {
 "handled": 67,
-"last": "2026-09-18T19:22:08+05:30",
+"last": "2026-09-18T19:24:48+05:30",
 "offset": 210518338,
 "payments": {
-"checked": 3,
+"checked": 2,
 "expired": 0,
 "issued": 0
 },
