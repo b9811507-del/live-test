@@ -19652,6 +19652,7 @@
 "at": "2026-09-18T19:21:06+05:30",
 "created_ts": 1789739466,
 "key": "iari",
+"link_issued": true,
 "name": "Baji",
 "paid_at": "2026-09-18T19:22:48+05:30",
 "payment_id": "pay_TdWT3aNC1saeUa",
