@@ -220,15 +220,38 @@ def catalog_keyboard(E):
 
 
 def send_catalog(E, uid, greeting=True):
-    lines = []
+    """v11.4.11 (admin order 18-Sep): ONE message per batch — batch name + price + validity
+    with its OWN 'Pay & Join' button directly underneath. No wall of buttons at the bottom."""
+    if not batches():
+        return _send(E, uid, "No batches are open right now \u2014 please check back soon.")
+    intro = ("\U0001F44B <b>AGRI QUIZ WORLD \u2014 Paid Batches</b>\n\n"
+             "Har batch me: \u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> "
+             "\u00b7 pay once, yours for life.\n"
+             "Neeche apne batch ke button \u2014 <b>Pay &amp; Join</b> \u2014 dabaiye; turant aapka personal "
+             "Razorpay link khulega, payment verify hote hi <b>one-time join link</b> yahin aayega.") if greeting \
+            else "Pick your batch \u2014 tap <b>Pay &amp; Join</b> below it:"
+    _send(E, uid, intro)
+    last = None
     for b in batches():
-        lines.append("%s <b>%s</b> \u2014 <b>%s</b>\n\u267E\uFE0F Unlimited attempts \u00b7 \u23F3 Lifetime validity \u00b7 instant join after payment"
-                     % (b["emoji"], b["title"], b["price"] or "Fee on enquiry"))
-    body = ("\U0001F44B Welcome to <b>AGRI QUIZ WORLD</b> paid batches.\n\n" if greeting
-            else "Pick your batch \u2014 tap <b>Pay &amp; Join</b>, pay on Razorpay, and your one-time join link lands here in seconds.\n\n")
-    body += "\n\n".join(lines) if lines else "No batches are open right now \u2014 please check back soon."
-    body += "\n\n\U0001F4A1 <i>One payment = lifetime access. Any help: reply here, the team is one message away.</i>"
-    return _send(E, uid, body, catalog_keyboard(E))
+        body = ("%s <b>%s</b>\n\nFee: <b>%s</b>\n\u267E\uFE0F Unlimited attempts \u00b7 \u23F3 Lifetime validity \u00b7 instant join after payment"
+                % (b["emoji"], b["title"], b["price"] or "Fee on enquiry"))
+        if b.get("perks"):
+            body += "\n\n" + b["perks"]
+        amt = price_amount(b["price"])
+        if b["payment_link"]:
+            kb = {"inline_keyboard": [[{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % (b["price"] or ""))[:64],
+                                        "url": b["payment_link"]}]]}
+        elif amt and razorpay.enabled():
+            kb = {"inline_keyboard": [[{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % b["price"])[:64],
+                                        "callback_data": "rzp:" + b["key"]}]]}
+        elif amt and provider_token():
+            kb = {"inline_keyboard": [[{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % b["price"])[:64],
+                                        "callback_data": "invoice:" + b["key"]}]]}
+        else:
+            kb = {"inline_keyboard": [[{"text": "\u2139\uFE0F View & manual enrol", "callback_data": "batch:" + b["key"]}]]}
+        last = _send(E, uid, body, kb)
+    _send(E, uid, "\u2753 Koi sawal ho to yahin reply kariye \u2014 team ek message door hai. Apne batches dekhne ke liye: /mybatches")
+    return last
 
 
 def send_batch_detail(E, uid, key):

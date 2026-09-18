@@ -1048,6 +1048,14 @@ def tomorrow_plan_text(job, day, st):
     ji = ((st.get("days") or {}).get(day) or {}).get("iari") or {}
     lines = [tr.t("schedule_head"), ""]
     want = ("malwa", "iari") if job in ("malwa", "iari") else ("malwa", "iari", "afo")
+    # v11.4.11 (admin order 18-Sep): preview must match prebuild reality — if today's entry has
+    # no cursor (skipped/sealed day), seed via prev_cursor, else IARI shows stale page list.
+    def _eff(j, jb):
+        if j.get("bidx") is not None or j.get("plan") or j.get("bidx_next") is not None:
+            return j
+        seed = prev_cursor(st, day, jb) or {}
+        return {**j, **seed}
+    jm, ji = _eff(jm, "malwa"), _eff(ji, "iari")
     try:
         if "malwa" in want:
             pm, _, _ = plan_malwa(day, {"vol": jm.get("vol", 0), "bidx": jm.get("bidx", 0)})
@@ -1933,6 +1941,26 @@ def agent():
     return {"issues": issues, "supply": rep}
 
 
+def inbox():
+    """v11.4.11 fast front desk (admin speed order 18-Sep): drain student DMs/buttons/join-requests
+    every ~40 s instead of waiting for the 3-min keepwarm cycle. Reuses desk_pass single-poller
+    guard (skips while a test is live -> no 409, no test disturbance)."""
+    SELF = sys.modules[__name__]
+    out = {}
+    try:
+        out = paid.desk_pass(SELF, budget_s=30) or {}
+    except Exception as e:
+        log("inbox err:", str(e)[:130])
+        return {"err": str(e)[:130]}
+    try:
+        fixed = paid.pending_links(SELF)
+        if fixed:
+            out["pending_issued"] = fixed
+    except Exception:
+        pass
+    return out
+
+
 def keepwarm():
     lines = []
     if RENDER_URL and not FAKE:
@@ -2110,6 +2138,8 @@ def main(argv):
         print(json.dumps(agent(), indent=1, default=str))
     elif cmd == "keepwarm":
         keepwarm()
+    elif cmd == "inbox":
+        print(json.dumps(inbox(), default=str)[:500])
     elif cmd == "supply":
         supply()
     elif cmd == "translate":
