@@ -15446,9 +15446,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 39,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 39,
+"built_at": "2026-09-18T10:56:20+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 7-12",
+"pages_blocks": [
+"7-8",
+"9-10",
+"11-12"
+],
+"questions": [
+{
+"expl": "The list includes Groundnut, Soybean and Mushroom directorates, but no Wheat Research Directorate.",
+"key": 2,
+"o": [
+"Groundnut Research",
+"Soybean Research",
+"Wheat Research",
+"Mushroom Research",
+"None of these"
+],
+"page": "7-8",
+"q": "Which of the following is NOT an ICAR Directorate mentioned in the source?",
+"serial": "51",
+"src_row": 21,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "7-8:51"
+},
+{
+"expl": "AICRP on Maize was the inaugural project, set up in 1957.",
+"key": 0,
+"o": [
+"Maize",
+"Rice",
+"Wheat",
+"Cotton",
+"None of these"
+],
+"page": "7-8",
+"q": "The first All India Coordinated Research Project (AICRP) in India was established for which crop?",
+"serial": "52",
+"src_row": 22,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "7-8:52"
+},
+{
+"expl": "The Pesticide Residues AICRP is based in New Delhi.",
+"key": 0,
+"o": [
+"New Delhi",
+"Hyderabad",
+"Bangalore",
+"Coimbatore",
+"None of these"
+],
+"page": "7-8",
+"q": "In which city is the AICRP on Pesticide Residues located?",
+"serial": "53",
+"src_row": 23,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "7-8:53"
+},
+{
+"expl": "The source enumerates 60 AICRPs.",
+"key": 2,
+"o": [
+"50",
+"55",
+"60",
+"65",
+"None of these"
+],
+"page": "7-8",
+"q": "How many All India Coordinated Research Projects (AICRPs) are listed in the source?",
+"serial": "54",
+"src_row": 24,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "7-8:54"
+},
+{
+"expl": "This project is based in Karnal, Haryana.",
+"key": 0,
+"o": [
+"Haryana",
+"Rajasthan",
+"Karnataka",
+"Kerala",
+"None of these"
+],
+"page": "7-8",
+"q": "The AICRP on Salt Affected Soils & Use of Saline Water in Agriculture is headquartered in which state?",
+"serial": "55",
+"src_row": 25,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "7-8:55"
+},
+{
+"expl": "NBAGR (Karnal) was established in 1984, while the others were founded earlier or later.",
+"key": 0,
+"o": [
+"NBAGR",
+"NBAIR",
+"NBFGR",
+"NBSS",
+"None of these"
+],
+"page": "7-8",
+"q": "Which ICAR bureau was established in 1984?",
+"serial": "56",
+"src_row": 26,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "7-8:56"
+},
+{
+"expl": "ICRISAT\u2019s mandate crops are chickpea, groundnut, sorghum, pigeon pea, pearl millet, finger millet and small millets; maize is not listed.",
+"key": 2,
+"o": [
+"Chickpea",
+"Groundnut",
+"Maize",
+"Sorghum",
+"None of these"
+],
+"page": "9-10",
+"q": "Which of the following is NOT a mandate crop of ICRISAT?",
+"serial": "61",
+"src_row": 27,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "9-10:61"
+},
+{
+"expl": "ICAR\u2011NARP originally identified 126 zones and later added three more, making a total of 131.",
+"key": 2,
+"o": [
+"126",
+"129",
+"131",
+"134",
+"None of these"
+],
+"page": "9-10",
+"q": "According to ICAR\u2011NARP, how many agro\u2011climatic zones are there in India?",
+"serial": "62",
+"src_row": 28,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "9-10:62"
+},
+{
+"expl": "The AICRP on Ergonomics and Safety in Agriculture was held in Bhopal, MP.",
+"key": 2,
+"o": [
+"AICRP on Farm Implements & Machinery",
+"AICRP on Energy in Agriculture",
+"AICRP on Ergonomics and Safety in Agriculture",
+"AICRP on Plasticulture Engineering",
+"None of these"
+],
+"page": "9-10",
+"q": "Which AICRP was conducted in Bhopal, Madhya Pradesh, focusing on ergonomics and safety in agriculture?",
+"serial": "63",
+"src_row": 29,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "9-10:63"
+},
+{
+"expl": "The Indian Agricultural Research Institute in New Delhi is a Deemed University under ICAR.",
+"key": 1,
+"o": [
+"Central Agricultural University, Imphal",
+"Indian Agricultural Research Institute, New Delhi",
+"Rani Laxmi Bai Central Agricultural University",
+"Central Institute on Fisheries Education, Mumbai",
+"None of these"
+],
+"page": "9-10",
+"q": "Which of the following institutions is a Deemed University under ICAR?",
+"serial": "64",
+"src_row": 30,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "9-10:64"
+},
+{
+"expl": "CGIAR stands for Consultative Group on International Agricultural Research.",
+"key": 1,
+"o": [
+"Center for Global Innovation in Agriculture Research",
+"Consultative Group on International Agricultural Research",
+"Cooperative Group for Integrated Agricultural Research",
+"Council for Global Agricultural Innovation",
+"None of these"
+],
+"page": "9-10",
+"q": "Full form of CGIAR is:",
+"serial": "65",
+"src_row": 31,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "9-10:65"
+},
+{
+"expl": "The AICRP on Agrometeorology was conducted in Hyderabad in 1983.",
+"key": 1,
+"o": [
+"AICRP on Dryland Agriculture",
+"AICRP on Agrometeorology",
+"AICRP on Integrated Farming System Research",
+"AICRP on Goat Improvement",
+"None of these"
+],
+"page": "9-10",
+"q": "Which AICRP was held in Hyderabad, Telangana in 1983?",
+"serial": "66",
+"src_row": 32,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "9-10:66"
+},
+{
+"expl": "The approach was started by the Planning Commission in 1988.",
+"key": 1,
+"o": [
+"1985",
+"1988",
+"1990",
+"1995",
+"None of these"
+],
+"page": "11-12",
+"q": "In which year was the Agroclimatic Regional Planning approach initiated by the Planning Commission?",
+"serial": "71",
+"src_row": 33,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "11-12:71"
+},
+{
+"expl": "NITI Aayog divided the country into 15 agroclimatic zones.",
+"key": 1,
+"o": [
+"12",
+"15",
+"18",
+"20",
+"None of these"
+],
+"page": "11-12",
+"q": "How many agroclimatic zones does India have according to NITI Aayog's 1989 division?",
+"serial": "72",
+"src_row": 34,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "11-12:72"
+},
+{
+"expl": "Zones are based on climate, soil, water resources, growing period, topography, cropping pattern and system, not political boundaries.",
+"key": 3,
+"o": [
+"Climate (temperature & rainfall)",
+"Soil type",
+"Topography",
+"Political boundaries",
+"None of these"
+],
+"page": "11-12",
+"q": "Which factor is NOT used to delineate agroclimatic zones?",
+"serial": "73",
+"src_row": 35,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "11-12:73"
+},
+{
+"expl": "The 15 zones are further divided into 72 agroclimatic sub\u2011zones.",
+"key": 2,
+"o": [
+"48",
+"60",
+"72",
+"84",
+"None of these"
+],
+"page": "11-12",
+"q": "How many agroclimatic sub\u2011zones are there under the 15 zones?",
+"serial": "74",
+"src_row": 36,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "11-12:74"
+},
+{
+"expl": "NBSS & LUP divided the country into 20 agro\u2011ecological zones in 1999.",
+"key": 1,
+"o": [
+"18",
+"20",
+"21",
+"25",
+"None of these"
+],
+"page": "11-12",
+"q": "In 1999, NBSS & LUP classified India into how many agro\u2011ecological zones?",
+"serial": "75",
+"src_row": 37,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "11-12:75"
+},
+{
+"expl": "Western Himalayas is the first of the 20 agro\u2011ecological regions mentioned.",
+"key": 0,
+"o": [
+"Western Himalayas",
+"Eastern Plains",
+"Southern Plateau",
+"Central Desert",
+"None of these"
+],
+"page": "11-12",
+"q": "Which of the following is an agro\u2011ecological region listed by NBSS & LUP?",
+"serial": "76",
+"src_row": 38,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "11-12:76"
+}
+],
+"rolled": false,
+"row_from": 21,
+"row_to": 39,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 21,
+"seeded_from": "2026-09-17",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-17",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
