@@ -15489,6 +15489,7 @@
 "cd": 0,
 "expl_in_poll": 0,
 "last_off": 0,
+"lb_parts_sent": 1,
 "lock_ts": 1789736980.0741963,
 "locked_by": "local-1702",
 "msg_ann": 29552,
