@@ -158,15 +158,17 @@ def line(pairs):
 
 # --------------------------------------------------------------------------- group message (last message after every test)
 def group_text():
-    from translator import t
-    if not batches():
-        return t("paid_empty")
-    return "\n".join([t("paid_title"), "", t("paid_teaser")])
+    return (
+        "\U0001F393 <b>ALL PAID BATCHES</b> \u2014 AGRI QUIZ WORLD\n\n"
+        "Complete book-wise courses \u00b7 full test series \u00b7 expert-vetted MCQ banks \u00b7 PDF library access.\n"
+        "\u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> \u2014 pay once, the batch is yours for life.\n\n"
+        "\U0001F449 <i>Touch the button below for the full batch list, fees and instant join.</i>"
+    )
+
 
 
 def group_keyboard(E):
-    from translator import t
-    return {"inline_keyboard": [[{"text": t("paid_btn_touch")[:64], "url": deep_link(E, "catalog")}]]}
+    return {"inline_keyboard": [[{"text": "\U0001F4F2 Touch for more information", "url": deep_link(E, "catalog")}]]}
 
 
 def post_after_test(E, chat, job=None, day=None):
@@ -177,31 +179,22 @@ def post_after_test(E, chat, job=None, day=None):
     st = E.jload()
     paid = st.setdefault("paid", {})
     day = day or E.daykey()
-    tag = "msg_%s_%s" % (day, job or "test")
-    if paid.get(tag):
-        E.log("paid: already posted for %s (%s)" % (tag, paid[tag]))
-        return paid[tag]
     if not batches():
         return None
-    # supersede the earlier test's paid message of the same day
+    # ONE stable "All Paid Batches" message per day: if today's is already up, leave it
+    # (admin order 2026-09-18: single professional group message, never duplicates/flicker)
     prev = paid.get("day_%s" % day) or {}
     prev_id = prev.get("id")
-    deleted = None
     if prev_id:
-        try:
-            tg_res = ptg(E, "deleteMessage", chat_id=chat, message_id=prev_id)
-            deleted = True if tg_res is not None else None
-        except Exception as e:
-            E.log("paid: delete of superseded message failed:", str(e)[:90])
-            deleted = False
-        if deleted:
-            E.log("paid: deleted superseded message #%s (job %s)" % (prev_id, prev.get("job")))
+        paid["msg_%s_%s" % (day, job or "test")] = prev_id
+        E.log("paid: reusing today's message #%s" % prev_id)
+        return prev_id
+    tag = "msg_%s_%s" % (day, job or "test")
     m = ptg(E, "sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
              disable_web_page_preview=True, reply_markup=group_keyboard(E))
     if m:
         paid[tag] = m["message_id"]
-        paid["day_%s" % day] = {"id": m["message_id"], "job": job, "at": E.istnow().isoformat(timespec="seconds"),
-                                "superseded": prev_id, "deleted_ok": deleted}
+        paid["day_%s" % day] = {"id": m["message_id"], "job": job, "at": E.istnow().isoformat(timespec="seconds")}
         paid["posted_at"] = E.istnow().isoformat(timespec="seconds")
         E.jsave(st, "paid batches message")
         E.log("paid: batches message posted (#%s, superseded %s)" % (m["message_id"], prev_id))
@@ -219,35 +212,43 @@ def _send(E, uid, text, keyboard=None):
 def catalog_keyboard(E):
     rows = []
     for b in batches():
-        rows.append([{"text": ("%s %s — view" % (b["emoji"], b["title"]))[:64],
-                      "callback_data": "batch:" + b["key"]}])
+        amt = price_amount(b["price"])
+        label = ("\U0001F4B3 Pay & Join \u2014 %s" % (b["price"] or "enquire"))[:64]
+        cb = "rzp:" + b["key"] if (amt and razorpay.enabled()) else "batch:" + b["key"]
+        rows.append([{"text": label, "callback_data": cb}])
     return {"inline_keyboard": rows}
 
 
 def send_catalog(E, uid, greeting=True):
-    from translator import t
-    body = (t("dm_welcome") if greeting else t("dm_help")) + "\n\n" + group_text()
+    lines = []
+    for b in batches():
+        lines.append("%s <b>%s</b> \u2014 <b>%s</b>\n\u267E\uFE0F Unlimited attempts \u00b7 \u23F3 Lifetime validity \u00b7 instant join after payment"
+                     % (b["emoji"], b["title"], b["price"] or "Fee on enquiry"))
+    body = ("\U0001F44B Welcome to <b>AGRI QUIZ WORLD</b> paid batches.\n\n" if greeting
+            else "Pick your batch \u2014 tap <b>Pay &amp; Join</b>, pay on Razorpay, and your one-time join link lands here in seconds.\n\n")
+    body += "\n\n".join(lines) if lines else "No batches are open right now \u2014 please check back soon."
+    body += "\n\n\U0001F4A1 <i>One payment = lifetime access. Any help: reply here, the team is one message away.</i>"
     return _send(E, uid, body, catalog_keyboard(E))
 
 
 def send_batch_detail(E, uid, key):
-    from translator import t
     b = batch(key)
     if not b:
-        return _send(E, uid, t("dm_nobatch"))
-    body = t("dm_batch", emoji=b["emoji"], title=b["title"], price=(b["price"] or "Fee on enquiry"),
-             perks=b["perks"])
+        return _send(E, uid, "This batch is not open right now \u2014 tap a batch from /start to see what\u2019s available.")
+    body = ("%s <b>%s</b>\n\nFee: <b>%s</b> \u00b7 \u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b>"
+            % (b["emoji"], b["title"], b["price"] or "Fee on enquiry"))
+    if b.get("perks"):
+        body += "\n\n" + b["perks"]
+    body += "\n\n\U0001F449 Tap <b>Pay &amp; Join</b> \u2014 you get a personal Razorpay link instantly; the moment payment is verified your one-time join link arrives in this chat."
     rows = []
     if b["payment_link"]:
-        rows.append([{"text": t("dm_pay_btn", price=b["price"] or "")[:64], "url": b["payment_link"]}])
+        rows.append([{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % (b["price"] or ""))[:64], "url": b["payment_link"]}])
     elif razorpay.enabled() and price_amount(b["price"]):
-        # v11.3: the bot creates a personal Razorpay payment link for this student
-        rows.append([{"text": ("💳 Pay %s — Razorpay" % b["price"])[:64], "callback_data": "rzp:" + key}])
+        rows.append([{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % b["price"])[:64], "callback_data": "rzp:" + key}])
     elif provider_token() and price_amount(b["price"]):
-        rows.append([{"text": t("dm_pay_btn", price=b["price"])[:64], "callback_data": "invoice:" + key}])
+        rows.append([{"text": ("\U0001F4B3 Pay & Join \u2014 %s" % b["price"])[:64], "callback_data": "invoice:" + key}])
     else:
-        body += "\n\n" + "Payment link will be shared by the batch team. After paying, tap <b>I have paid</b>."
-    rows.append([{"text": t("dm_paid_btn"), "callback_data": "claim:" + key}])
+        rows.append([{"text": "\U0001F4B0 I have paid (manual claim)", "callback_data": "claim:" + key}])
     return _send(E, uid, body, {"inline_keyboard": rows})
 
 
