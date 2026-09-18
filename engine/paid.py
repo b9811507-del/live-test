@@ -58,6 +58,11 @@ DEFAULTS = [
 ]
 LINK_HOURS = int(os.environ.get("PAID_LINK_HOURS", "24"))
 PAID_VERIFY = (os.environ.get("PAID_VERIFY", "auto") or "auto").lower()
+
+# v11.4.13 (admin speed order 18-Sep): webhook mode -> Telegram pushes updates to web.py /ph route,
+# which spools them here; spool_drain answers instantly. getUpdates polling is switched off then.
+WEBHOOK_MODE = (os.environ.get("PAID_WEBHOOK", "off") or "off").lower() in ("on", "1", "yes")
+SPOOL = os.environ.get("PAID_SPOOL") or "/tmp/agri_paid_spool.jsonl"
 RAZORPAY_LINK_MINUTES = int(os.environ.get("RAZORPAY_LINK_MINUTES", "1440"))   # payment link expiry (24h)
 RZP_POLL_MAX_AGE_H = int(os.environ.get("RZP_POLL_MAX_AGE_H", "24"))           # stop polling after this
 
@@ -656,7 +661,10 @@ def desk_pass(E, budget_s=8):
     off = int((st.get("desk") or {}).get("offset") or 0)
     seen = set((st.get("desk") or {}).get("seen") or [])
     handled, started = 0, time.time()
-    while True:
+    if WEBHOOK_MODE:
+        E.log("desk: webhook live -> getUpdates skipped (spool drain answers students)")
+        seen = set()
+    while not WEBHOOK_MODE:
         if not E.FAKE and time.time() - started > budget_s:
             break
         r = ptg(E, "getUpdates", offset=off, timeout=1, allowed_updates=ALLOWED_UPDATES)
@@ -693,6 +701,82 @@ def desk_pass(E, budget_s=8):
                   "seen": sorted(seen)[-200:]}
     E.jsave(st, "desk pass (%d handled, %s payments)" % (handled, pay))
     return {"handled": handled, "offset": off, "payments": pay}
+
+
+def spool_drain(E, limit=80):
+    """v11.4.13: consume updates that the Telegram webhook pushed into the spool file (web.py
+    /ph route). Reuses the exact desk handlers, dedupes by update_id through the same seen-set,
+    verifies payments right away so 'Pay & Join' feels instant. Single-flight flock: two drainers
+    can never double-answer the same student."""
+    import json as _json
+    try:
+        import fcntl as _fc
+    except Exception:
+        _fc = None
+    lk = None
+    if _fc:
+        try:
+            lk = os.open(SPOOL + ".lk", os.O_CREAT | os.O_RDWR, 0o600)
+            _fc.flock(lk, _fc.LOCK_EX | _fc.LOCK_NB)
+        except OSError:
+            if lk is not None:
+                os.close(lk)
+            return {"skipped": "busy"}
+    try:
+        try:
+            with open(SPOOL, "r", encoding="utf-8") as f:
+                data = f.read()
+        except FileNotFoundError:
+            return {"drained": 0}
+        lines = [x for x in data.splitlines() if x.strip()]
+        if not lines:
+            return {"drained": 0}
+        take = lines[:limit]
+        st = E.jload(force=True)
+        seen = set(str(x) for x in ((st.get("desk") or {}).get("seen") or []))
+        handled = 0
+        for l in take:
+            try:
+                u = _json.loads(l)
+            except Exception:
+                continue
+            uix = str(u.get("update_id", ""))
+            if not uix or uix in seen:
+                continue
+            seen.add(uix)
+            try:
+                if u.get("message"):
+                    handle_message(E, st, u["message"]); handled += 1
+                elif u.get("callback_query"):
+                    handle_callback(E, st, u["callback_query"]); handled += 1
+                elif u.get("chat_join_request"):
+                    handle_join_request(E, st, u["chat_join_request"]); handled += 1
+            except Exception as e:
+                E.log("webhook drain err:", str(e)[:140])
+        pay = verify_payments(E, st)
+        try:
+            with open(SPOOL, "r", encoding="utf-8") as f:
+                now = f.read().splitlines()
+            keep = now[len(take):] if len(now) >= len(take) else []
+            with open(SPOOL, "w", encoding="utf-8") as f:
+                if keep:
+                    f.write("\n".join(keep) + "\n")
+        except Exception:
+            pass
+        st = E.jload(force=True)
+        d = st.setdefault("desk", {})
+        d["seen"] = sorted(seen | set(str(x) for x in (d.get("seen") or [])))[-200:]
+        d["handled"] = int(d.get("handled", 0)) + handled
+        d["webhook_last"] = E.istnow().isoformat(timespec="seconds")
+        d["payments"] = pay
+        E.jsave(st, "webhook drain (%d handled)" % handled)
+        return {"drained": len(take), "handled": handled, "payments": pay}
+    finally:
+        if lk is not None:
+            try:
+                os.close(lk)
+            except Exception:
+                pass
 
 
 def pending_links(E):

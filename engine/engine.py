@@ -1948,7 +1948,12 @@ def inbox():
     SELF = sys.modules[__name__]
     out = {}
     try:
+        try:
+            w = paid.spool_drain(SELF) or {}
+        except Exception as we:
+            w = {"err": str(we)[:100]}
         out = paid.desk_pass(SELF, budget_s=30) or {}
+        out["webhook"] = w
     except Exception as e:
         log("inbox err:", str(e)[:130])
         return {"err": str(e)[:130]}
@@ -2140,6 +2145,8 @@ def main(argv):
         keepwarm()
     elif cmd == "inbox":
         print(json.dumps(inbox(), default=str)[:500])
+    elif cmd == "ph":
+        print(json.dumps(paid.spool_drain(sys.modules[__name__]), default=str)[:300])
     elif cmd == "supply":
         supply()
     elif cmd == "translate":

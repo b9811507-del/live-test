@@ -45,6 +45,9 @@ IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 LOCKDIR = os.environ.get("RUNNER_LOCKDIR", "/tmp")
 LOGDIR = os.path.join(HERE, "logs")
 ADMIN_KEY = (os.environ.get("ADMIN_KEY") or "").strip()
+# v11.4.13: Telegram webhook endpoint for the paid bot -> /ph/<ADMIN_KEY>; updates are appended
+# to this spool file and drained by `engine.py ph` within ~1 s (instant student replies).
+PAID_SPOOL = os.environ.get("PAID_SPOOL") or "/tmp/agri_paid_spool.jsonl"
 # self keep-awake: free hosts spin the service down after ~15 min WITHOUT inbound HTTP traffic.
 # Asking our own public URL from the inside counts as inbound traffic, so the instance never sleeps —
 # no external pinger and no GitHub minutes needed. Set SELF_PING_URL="" to switch it off.
@@ -204,6 +207,23 @@ def _update():
 
 
 # --------------------------------------------------------------------------- http
+def _paid_wake():
+    """Drain the webhook spool immediately after a tap lands (no waiting for the 40 s tick)."""
+    def _loop():
+        for _ in range(8):
+            try:
+                run_cycle("ph", ["ph"], timeout=120)
+            except Exception:
+                return
+            try:
+                if not os.path.exists(PAID_SPOOL) or os.path.getsize(PAID_SPOOL) == 0:
+                    return
+            except Exception:
+                return
+            time.sleep(0.7)
+    threading.Thread(target=_loop, daemon=True).start()
+
+
 class Handler(BaseHTTPRequestHandler):
     server_version = "agri-quiz-runner"
 
@@ -217,6 +237,37 @@ class Handler(BaseHTTPRequestHandler):
 
     def log_message(self, fmt, *args):               # keep the host's log clean
         return
+
+    def do_POST(self):
+        # v11.4.13: Telegram bot webhook — POST /ph/<ADMIN_KEY>. Validates secret header,
+        # appends the raw update to the spool, kicks the drainer, ACKs fast.
+        path = self.path.split("?")[0].rstrip("/")
+        if not path.startswith("/ph/"):
+            return self._send(404, "no endpoint\n")
+        key = path[len("/ph/"):]
+        if not ADMIN_KEY or key != ADMIN_KEY:
+            return self._send(403, "denied\n")
+        expected = (os.environ.get("PAID_WEBHOOK_SECRET") or "").strip()
+        got = (self.headers.get("X-Telegram-Bot-Api-Secret-Token") or "").strip()
+        if expected and got != expected:
+            return self._send(401, "bad secret\n")
+        try:
+            ln = int(self.headers.get("Content-Length") or 0)
+            if ln <= 0 or ln > 65536:
+                raise ValueError("size")
+            upd = json.loads(self.rfile.read(ln).decode("utf-8"))
+            if not isinstance(upd, dict) or "update_id" not in upd:
+                raise ValueError("shape")
+            line = json.dumps(upd, separators=(",", ":"))
+            if "\n" in line:
+                raise ValueError("nl")
+            with open(PAID_SPOOL, "a", encoding="utf-8") as f:
+                f.write(line + "\n")
+                f.flush()
+        except Exception:
+            return self._send(400, "bad update\n")
+        _paid_wake()
+        return self._send(200, "ok\n")
 
     def do_GET(self):
         path = self.path.split("?")[0].rstrip("/") or "/"
