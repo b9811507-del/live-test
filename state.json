@@ -19649,6 +19649,17 @@
 "status": "created",
 "title": "NEMRAJ SUNDA BOOK BATCH",
 "uid": "1138783169"
+},
+"plink_TdWSBRxm9tEvHr": {
+"amount": 99,
+"at": "2026-09-18T19:21:06+05:30",
+"created_ts": 1789739466,
+"key": "iari",
+"name": "Baji",
+"short_url": "https://rzp.io/rzp/AuL7KPOP",
+"status": "created",
+"title": "IARI BOOK MCQ BATCH",
+"uid": "1922665327"
 }
 },
 "msg_2026-09-15_iari": 29165,
