@@ -19464,12 +19464,12 @@
 },
 "desk": {
 "handled": 67,
-"last": "2026-09-18T19:23:05+05:30",
+"last": "2026-09-18T19:22:08+05:30",
 "offset": 210518338,
 "payments": {
 "checked": 3,
 "expired": 0,
-"issued": 1
+"issued": 0
 },
 "seen": []
 },
@@ -19484,7 +19484,7 @@
 },
 "dm": {
 "guard": 1789460218.2034469,
-"paid:claim": 1789739578.0516648,
+"paid:claim": 1789714102.8698704,
 "paid:ref": 1789714529.9954345
 },
 "paid": {
@@ -19652,9 +19652,8 @@
 "at": "2026-09-18T19:21:06+05:30",
 "created_ts": 1789739466,
 "key": "iari",
-"link_issued": true,
 "name": "Baji",
-"paid_at": "2026-09-18T19:22:48+05:30",
+"paid_at": "2026-09-18T19:22:51+05:30",
 "payment_id": "pay_TdWT3aNC1saeUa",
 "short_url": "https://rzp.io/rzp/AuL7KPOP",
 "status": "paid",
@@ -19692,19 +19691,6 @@
 }
 },
 "name": "Vijay"
-},
-"1922665327": {
-"batches": {
-"iari": {
-"at": "2026-09-18T19:22:52+05:30",
-"issued_at": "2026-09-18T19:22:54+05:30",
-"link_name": "iari-665327",
-"link_status": "issued",
-"mode": "razorpay",
-"ref": ""
-}
-},
-"name": "Baji"
 }
 }
 },
