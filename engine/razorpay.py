@@ -120,6 +120,11 @@ def payment_status(link_id):
             "raw_status": d.get("status")}
 
 
+def revoke_link(link_id):
+    """v11.4.14: hard rule ek payment = ek link — physically kill superseded/duplicate links."""
+    return _call("POST", "/payment_links/%s/revoke" % link_id, {})
+
+
 def is_paid(link_id):
     return payment_status(link_id).get("status") == "paid"
 

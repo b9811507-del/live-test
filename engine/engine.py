@@ -1530,6 +1530,16 @@ def run_job(job, day=None, st=None, force=False):
     rows = score_rows(day, job, plan, ans, names)
     if not j.get("lb_sent"):
         parts = leaderboard_parts(day, job, plan, rows)
+        # v11.4.14 (admin order 19-Sep): 0 players must not look like a silent miss — post the reason.
+        if not parts:
+            tg("sendMessage", chat_id=chat, parse_mode="HTML", disable_web_page_preview=True,
+               text="📊 <b>%s — Leaderboard</b>\n\nAaj koi valid answer submit nahi hua (0 players), isliye leaderboard khaali tha. Kal test ke baad phir milte hai — last moment tak answers count honge ✅" % job.upper())
+            j["lb_sent"] = True
+            j["lb_parts"] = 0
+            j["lb_rows"] = 0
+            j["players"] = 0
+            log("leaderboard: 0 players -> transparency note sent")
+            jsave(st, "%s leaderboard empty-note" % job)
         done = int(j.get("lb_parts_sent") or 0)
         if done >= len(parts):
             done = 0                                  # journal from an older run -> re-send everything once

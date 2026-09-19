@@ -186,20 +186,22 @@ def post_after_test(E, chat, job=None, day=None):
     day = day or E.daykey()
     if not batches():
         return None
-    # ONE stable "All Paid Batches" message per day: if today's is already up, leave it
-    # (admin order 2026-09-18: single professional group message, never duplicates/flicker)
-    prev = paid.get("day_%s" % day) or {}
+    # v11.4.14 (admin order 19-Sep): one message per day PER GROUP — every batch group that
+    # runs a test that day gets its own paid message as the test's last message (the old global
+    # day-key let only the first group of the day post; AFO never got theirs).
+    dkey = "day_%s_%s" % (day, chat)
+    prev = paid.get(dkey) or {}
     prev_id = prev.get("id")
     if prev_id:
         paid["msg_%s_%s" % (day, job or "test")] = prev_id
-        E.log("paid: reusing today's message #%s" % prev_id)
+        E.log("paid: reusing today's message #%s in %s" % (prev_id, chat))
         return prev_id
     tag = "msg_%s_%s" % (day, job or "test")
     m = ptg(E, "sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
              disable_web_page_preview=True, reply_markup=group_keyboard(E))
     if m:
         paid[tag] = m["message_id"]
-        paid["day_%s" % day] = {"id": m["message_id"], "job": job, "at": E.istnow().isoformat(timespec="seconds")}
+        paid[dkey] = {"id": m["message_id"], "job": job, "at": E.istnow().isoformat(timespec="seconds")}
         paid["posted_at"] = E.istnow().isoformat(timespec="seconds")
         E.jsave(st, "paid batches message")
         E.log("paid: batches message posted (#%s, superseded %s)" % (m["message_id"], prev_id))
@@ -294,10 +296,49 @@ def create_razorpay_link(E, st, key, uid, name=""):
     """Create a personal Razorpay payment link for this student, journal it and DM the button."""
     from translator import t
     b = batch(key)
-    if not (b and razorpay.enabled()):
+    if not b:
         return None
     amt = price_amount(b["price"])
     if amt <= 0:
+        return None
+    # v11.4.14 (admin order 19-Sep): HARD RULE "ek payment = ek link". Never mint a second live
+    # link: already-entitled students are refused, an active link is RESENT, paid-but-unverified
+    # is queued, and any legacy duplicates get revoked at Razorpay while we create a fresh one.
+    st0 = E.jload(force=True)
+    urec = ((st0.get("paid") or {}).get("users") or {}).get(str(uid)) or {}
+    brec = (urec.get("batches") or {}).get(key) or {}
+    if str(brec.get("link_status") or "").startswith("issued"):
+        _send(E, str(uid), "✅ Aapko <b>%s</b> ka access already mil chuka hai — dobara pay karne ki zaroorat nahi.\nJoin link kho gaya ho? <b>/mybatches</b> se dobara mangwa lijiye." % b["title"])
+        return None
+    nowts = int(time.time())
+    live = None
+    dupes = []
+    for lid0, r0 in ((st0.get("paid") or {}).get("links") or {}).items():
+        if r0.get("uid") != str(uid) or r0.get("key") != key:
+            continue
+        if r0.get("status") == "paid":
+            _send(E, str(uid), "⏳ Aapki payment already record ho chuki hai — verify hote hi join link isi chat me aa jayega (1-2 min). Naya link zaroorat nahi.")
+            return None
+        if r0.get("status") == "created" and not r0.get("link_issued"):
+            age = nowts - int(r0.get("created_ts") or 0)
+            if age < max(600, RAZORPAY_LINK_MINUTES * 60 - 120):
+                if not live:
+                    live = (lid0, r0)
+                else:
+                    dupes.append(lid0)
+    if live:
+        for dead in dupes:
+            try:
+                razorpay.revoke_link(dead)
+                st0["paid"]["links"][dead]["status"] = "revoked"
+                E.jsave(st0, "revoked duplicate link %s" % dead)
+            except Exception as e:
+                E.log("revoke dup failed:", str(e)[:90])
+        _send(E, str(uid), "🔗 Aapka <b>pehle wala payment link abhi ACTIVE</b> hai — isi se pay kijiye (ek batch = ek hi link):",
+              {"inline_keyboard": [[{"text": ("💳 Pay %s now" % b["price"])[:64], "url": (live[1].get("short_url") or "")}]]})
+        E.log("paid: reusing live link %s for %s/%s (dupes revoked: %d)" % (live[0], key, uid, len(dupes)))
+        return live[0]
+    if not razorpay.enabled():
         return None
     cb = deep_link(E, "paid_" + key)
     d = razorpay.create_payment_link(key, b["title"], amt, uid, name=name, callback_url=cb,
@@ -309,6 +350,13 @@ def create_razorpay_link(E, st, key, uid, name=""):
                    % (b["title"], uid, str(d.get("description") or d.get("error"))[:120]), "rzp:fail", 1800)
         return None
     links = st.setdefault("paid", {}).setdefault("links", {})
+    for lid0, r0 in list(links.items()):
+        if r0.get("uid") == str(uid) and r0.get("key") == key and r0.get("status") == "created":
+            r0["status"] = "superseded"
+            try:
+                razorpay.revoke_link(lid0)
+            except Exception as e:
+                E.log("revoke stale failed:", str(e)[:90])
     links[d["id"]] = {"uid": str(uid), "key": key, "amount": amt, "title": b["title"], "name": name,
                       "short_url": d.get("short_url"), "status": "created",
                       "at": E.istnow().isoformat(timespec="seconds"), "created_ts": int(time.time())}
@@ -341,6 +389,16 @@ def verify_payments(E, st=None, limit=25):
         checked += 1
         stt = r.get("status")
         if stt == "paid":
+            urec14 = (((st.get("paid") or {}).get("users") or {}).get(str(rec.get("uid"))) or {}).get("batches", {}).get(rec.get("key")) or {}
+            if str(urec14.get("link_status") or "").startswith("issued"):
+                # v11.4.14: second payment on an already-entitled batch -> NEVER issue a second time
+                rec["dup_payment"] = True
+                rec["payment_id"] = (r.get("payments") or [{}])[0].get("id")
+                E.jsave(st, "duplicate payment %s (not issued)" % lid)
+                E.dm_admin("⚠️ <b>Duplicate payment</b>: student <code>%s</code> ne <b>%s</b> ka dobara pay kiya (access pehle se issued). Payment <code>%s</code> — refund decision admin ka." % (rec.get("uid"), rec.get("title"), rec.get("payment_id")), "paid:dup", 3600)
+                _send(E, str(rec.get("uid")), "ℹ️ Aapka <b>%s</b> pehle se active hai — ye doosri payment duplicate detect hui. Join link dobara nahi banega; refund chahiye to yahin reply kar dijiye." % rec.get("title"))
+                checked += 1
+                continue
             rec["status"] = "paid"
             rec["paid_at"] = E.istnow().isoformat(timespec="seconds")
             rec["payment_id"] = (r.get("payments") or [{}])[0].get("id")
