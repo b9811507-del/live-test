@@ -3519,7 +3519,7 @@
 ]
 },
 "agent_issues": [],
-"agent_last": "2026-09-19T19:31:38+05:30",
+"agent_last": "2026-09-19T19:37:39+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -26929,7 +26929,7 @@
 }
 },
 "desk": {
-"handled": 119,
+"handled": 118,
 "last": "2026-09-19T19:37:30+05:30",
 "offset": 210521462,
 "payments": {
@@ -26937,16 +26937,13 @@
 "expired": 0,
 "issued": 0
 },
-"seen": [
-"620530621"
-],
-"webhook_last": "2026-09-19T19:37:38+05:30"
+"seen": []
 },
 "desk_last": {
 "handled": 0,
 "offset": 210521462,
 "payments": {
-"checked": 8,
+"checked": 10,
 "expired": 0,
 "issued": 0
 }
