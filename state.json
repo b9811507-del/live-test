@@ -18411,9 +18411,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 59,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 59,
+"built_at": "2026-09-19T10:56:23+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 13-18",
+"pages_blocks": [
+"13-14",
+"15-16",
+"17-18"
+],
+"questions": [
+{
+"expl": "ICAR classifies India into eight agro-ecological zones.",
+"key": 2,
+"o": [
+"6",
+"7",
+"8",
+"9",
+"None of these"
+],
+"page": "13-14",
+"q": "According to ICAR, how many agro-ecological zones are defined for India?",
+"serial": "81",
+"src_row": 39,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:81"
+},
+{
+"expl": "The Eastern Plateau and Hills cover the greatest area among all zones.",
+"key": 0,
+"o": [
+"Eastern Plateau and Hills",
+"Western Himalayas",
+"Northern Plain",
+"Islands region",
+"None of these"
+],
+"page": "13-14",
+"q": "Which zone is the largest agroclimatic zone in India?",
+"serial": "82",
+"src_row": 40,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:82"
+},
+{
+"expl": "The Islands region (Andaman, Nicobar, Lakshadweep) is the smallest zone.",
+"key": 1,
+"o": [
+"Western Ghats",
+"Islands region",
+"Eastern Plains",
+"Central Highlands",
+"None of these"
+],
+"page": "13-14",
+"q": "Which region is the smallest agroclimatic zone in India?",
+"serial": "83",
+"src_row": 41,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:83"
+},
+{
+"expl": "The state is divided into ten distinct agroclimatic zones.",
+"key": 2,
+"o": [
+"8",
+"9",
+"10",
+"11",
+"None of these"
+],
+"page": "13-14",
+"q": "Rajasthan is classified into how many agroclimatic zones?",
+"serial": "84",
+"src_row": 42,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:84"
+},
+{
+"expl": "ICAR was founded on 16 July 1929 as a registered society.",
+"key": 1,
+"o": [
+"1925",
+"1929",
+"1935",
+"1940",
+"None of these"
+],
+"page": "13-14",
+"q": "In which year was the Indian Council of Agricultural Research (ICAR) established?",
+"serial": "85",
+"src_row": 43,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:85"
+},
+{
+"expl": "Dr. B.P. Pal served as the inaugural DG of ICAR.",
+"key": 1,
+"o": [
+"Dr. Himanshu Pathak",
+"Dr. B.P. Pal",
+"Dr. Jogendra Singh",
+"M. Habibullah",
+"None of these"
+],
+"page": "13-14",
+"q": "Who was the first Director General of ICAR?",
+"serial": "86",
+"src_row": 44,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:86"
+},
+{
+"expl": "IARI was established on 1 April 1905 in Darbhanga district.",
+"key": 0,
+"o": [
+"1 April 1905",
+"15 March 1905",
+"1 April 1911",
+"1 May 1905",
+"None of these"
+],
+"page": "13-14",
+"q": "On which date was the Indian Agricultural Research Institute (IARI) originally founded?",
+"serial": "87",
+"src_row": 45,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "13-14:87"
+},
+{
+"expl": "The institute was renamed in 1946 after India\u2019s independence.",
+"key": 2,
+"o": [
+"1919",
+"1934",
+"1946",
+"1958",
+"None of these"
+],
+"page": "15-16",
+"q": "In what year was the Indian Agricultural Research Institute (IARI) renamed from \u201cImperial\u201d to \u201cIndian\u201d Agricultural Research Institute?",
+"serial": "91",
+"src_row": 46,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:91"
+},
+{
+"expl": "The primary resources mentioned are land, water, and air; soil is not listed.",
+"key": 3,
+"o": [
+"Land",
+"Water",
+"Air",
+"Soil",
+"None of these"
+],
+"page": "15-16",
+"q": "Which of the following is NOT listed as a primary resource for agriculture?",
+"serial": "92",
+"src_row": 47,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:92"
+},
+{
+"expl": "Devine, the first commercial mycoherbicide, was launched in 1981.",
+"key": 1,
+"o": [
+"1975",
+"1981",
+"1990",
+"2000",
+"None of these"
+],
+"page": "15-16",
+"q": "The first commercial mycoherbicide was introduced in which year?",
+"serial": "93",
+"src_row": 48,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:93"
+},
+{
+"expl": "Madhya Pradesh produces more pulses than Rajasthan.",
+"key": 2,
+"o": [
+"Uttar Pradesh",
+"Rajasthan",
+"Madhya Pradesh",
+"Karnataka",
+"None of these"
+],
+"page": "15-16",
+"q": "Which state is the highest pulse producing state in India?",
+"serial": "94",
+"src_row": 49,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:94"
+},
+{
+"expl": "In India, insecticides are used most, followed by fungicides and then herbicides.",
+"key": 1,
+"o": [
+"Herbicide > Insecticide > Fungicide",
+"Insecticides > Fungicides > Herbicides",
+"Fungicides > Herbicides > Insecticides",
+"Herbicides > Fungicides > Insecticides",
+"None of these"
+],
+"page": "15-16",
+"q": "What is the correct order of pesticide consumption in India?",
+"serial": "95",
+"src_row": 50,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:95"
+},
+{
+"expl": "Dr. M.S. Swaminathan developed semi\u2011dwarf wheat and rice varieties for India.",
+"key": 1,
+"o": [
+"Norman E. Borlaug",
+"Dr. M.S. Swaminathan",
+"Dr. A.K. Singh",
+"Rafi Ahmed Kidwai",
+"None of these"
+],
+"page": "15-16",
+"q": "Who is known as the Father of Green Revolution in India?",
+"serial": "96",
+"src_row": 51,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:96"
+},
+{
+"expl": "Tube wells are the primary irrigation source in India.",
+"key": 1,
+"o": [
+"Canal",
+"Tube wells",
+"River",
+"Monsoon",
+"None of these"
+],
+"page": "15-16",
+"q": "Which is the major source of irrigation in India?",
+"serial": "97",
+"src_row": 52,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "15-16:97"
+},
+{
+"expl": "HD-2329 was the most significant wheat variety developed during the Green Revolution, widely adopted for its high yield.",
+"key": 0,
+"o": [
+"HD-2329",
+"HD-2967",
+"HD-2783",
+"HD-3000",
+"None of these"
+],
+"page": "17-18",
+"q": "Which wheat variety contributed the most to the Green Revolution?",
+"serial": "101",
+"src_row": 53,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "17-18:101"
+},
+{
+"expl": "William Gaud introduced the phrase 'Green Revolution' in 1968 to describe the rapid agricultural advances.",
+"key": 0,
+"o": [
+"William Gaud",
+"C. Subramaniam",
+"Dr. M.S. Swaminathan",
+"R. K. Shyam",
+"None of these"
+],
+"page": "17-18",
+"q": "Who first coined the term 'Green Revolution' in 1968?",
+"serial": "102",
+"src_row": 54,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "17-18:102"
+},
+{
+"expl": "The listed concerns were about neglect, overuse of chemicals, and water depletion; increased diversification was not a concern.",
+"key": 3,
+"o": [
+"Neglected pulse crops & millets",
+"Indiscriminate use of fertilizers & pesticides",
+"Depletion of groundwater resources",
+"Increase in crop diversification",
+"None of these"
+],
+"page": "17-18",
+"q": "Which of the following was NOT a major concern of the Green Revolution?",
+"serial": "103",
+"src_row": 55,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "17-18:103"
+},
+{
+"expl": "Dr. M.S. Swaminathan was awarded the inaugural World Food Prize in 1987 for his contributions to agriculture.",
+"key": 2,
+"o": [
+"Verghese Kurien",
+"S.K. Vasal",
+"Dr. M.S. Swaminathan",
+"Sanjaya Rajaram",
+"None of these"
+],
+"page": "17-18",
+"q": "Who received the first World Food Prize in 1987?",
+"serial": "104",
+"src_row": 56,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "17-18:104"
+},
+{
+"expl": "The MSP for wheat for 2024-25 is set at 2275 rupees per quintal.",
+"key": 1,
+"o": [
+"2000/quintal",
+"2275/quintal",
+"2500/quintal",
+"3000/quintal",
+"None of these"
+],
+"page": "17-18",
+"q": "What is the Minimum Support Price for wheat for the 2024-25 season?",
+"serial": "105",
+"src_row": 57,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "17-18:105"
+},
+{
+"expl": "The Indian Central Cotton Committee, the first commodity committee, was founded in 1921.",
+"key": 1,
+"o": [
+"1919",
+"1921",
+"1925",
+"1930",
+"None of these"
+],
+"page": "17-18",
+"q": "In which year was the Indian Central Cotton Committee established?",
+"serial": "106",
+"src_row": 58,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "17-18:106"
+}
+],
+"rolled": false,
+"row_from": 39,
+"row_to": 59,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 39,
+"seeded_from": "2026-09-18",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-18",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
