@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-19T16:25:37+05:30",
+"agent_last": "2026-09-19T16:28:32+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -20191,6 +20191,17 @@
 "status": "created",
 "title": "NEMRAJ SUNDA BOOK BATCH",
 "uid": "6582250764"
+},
+"plink_Tds3DKUFwNqKwl": {
+"amount": 251,
+"at": "2026-09-19T16:28:43+05:30",
+"created_ts": 1789815523,
+"key": "afo",
+"name": "GMG",
+"short_url": "https://rzp.io/rzp/qIqNSQbb",
+"status": "created",
+"title": "AFO SELECTION BATCH",
+"uid": "1143441820"
 }
 },
 "msg_2026-09-15_iari": 29165,
