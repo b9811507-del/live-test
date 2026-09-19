@@ -18400,7 +18400,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-19T17:56:33+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Maximize production",
+"Minimize loss by producing where MR = MC",
+"Discontinue production",
+"Increase the selling price",
+"None of these"
+],
+"page": "",
+"q": "In the short run, if the selling price is less than the average total cost (ATC) but greater than the average variable cost (AVC), what should a producer do?",
+"serial": "128DIQLj:2502",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2502"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sugarcane",
+"Apple",
+"Coconut",
+"Guava",
+"None of these"
+],
+"page": "",
+"q": "Identify the commodity for which Uttar Pradesh is listed as the largest producer.",
+"serial": "1bxM1Q-4:385",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:385"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Friction clutch",
+"Dog clutch",
+"Fluid clutch",
+"Hydraulic clutch",
+"None of these"
+],
+"page": "",
+"q": "Which type of clutch is most popular in four-wheel tractors?",
+"serial": "128DIQLj:2951",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2951"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Jalore Seedless",
+"Dholka",
+"Bhagwa",
+"Mridula",
+"None of these"
+],
+"page": "",
+"q": "Which pomegranate variety is tolerant to fruit cracking?",
+"serial": "1YcJWVgW:332",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:332"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sikkim",
+"West Bengal",
+"Both A and B",
+"Kerala",
+"None of these"
+],
+"page": "",
+"q": "Which state is known for growing Large Cardamom?",
+"serial": "1bxM1Q-4:3309",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3309"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Apple",
+"Lemon",
+"Date palm",
+"Strawberry",
+"None of these"
+],
+"page": "",
+"q": "Which of the following fruit crops is highly tolerant to salt?",
+"serial": "17U0MEc-:1183",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1183"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Phalaris minor in wheat",
+"Kalyan Sona variety growing in HD 2329 wheat",
+"Wild oat in mustard",
+"Lantana in wheat",
+"None of these"
+],
+"page": "",
+"q": "Which example best illustrates a rogue weed?",
+"serial": "128DIQLj:982",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:982"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Shoot and fruit borer",
+"Hadda beetle",
+"Stem borer",
+"Whitefly",
+"None of these"
+],
+"page": "",
+"q": "Which pest of brinjal causes top shoots of young plants to droop and wither, leading to stunted growth in older plants?",
+"serial": "1sUgWsko:2107",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2107"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Population standard deviation unknown and n < 30",
+"Population standard deviation known and n > 30",
+"Population variance unknown and n > 30",
+"Samples are paired",
+"None of these"
+],
+"page": "",
+"q": "Which condition must be satisfied to use a Z\u2011test?",
+"serial": "128DIQLj:2807",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2807"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ethylene dibromide",
+"1,2-dichloropropane",
+"Oxamyl",
+"1,3-dichloropropene",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a non-fumigant chemical used for nematode control?",
+"serial": "1UgnIe-g:2528",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2528"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Aus",
+"Boro",
+"Aman",
+"Kharif",
+"None of these"
+],
+"page": "",
+"q": "Which rice cultivation cycle is known as 'Aman' and accounts for 84% of India's rice area?",
+"serial": "128DIQLj:201",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:201"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"<0.1 ha",
+"0.2\u20110.5 ha",
+"1 ha",
+">2 ha",
+"None of these"
+],
+"page": "",
+"q": "What is the typical size of pond suitable for integrated cattle\u2011fish farming?",
+"serial": "1sUgWsko:2367",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2367"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Competition",
+"Allelopathy",
+"Symbiosis",
+"Mutualism",
+"None of these"
+],
+"page": "",
+"q": "In the text, the term \"Allelospoly\" is used to refer to which phenomenon?",
+"serial": "1sUgWsko:5537",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5537"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Troposphere",
+"Stratosphere",
+"Mesosphere",
+"Thermosphere",
+"None of these"
+],
+"page": "",
+"q": "Which atmospheric layer is termed the \"seat of photochemical reactions\"?",
+"serial": "1sUgWsko:5611",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5611"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"R.H. Painter",
+"Rachel Carson",
+"Paul de Bach",
+"M. Vaeck",
+"None of these"
+],
+"page": "",
+"q": "Who is known as the 'father of host plant resistance'?",
+"serial": "17U0MEc-:1863",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1863"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wheat",
+"Maize",
+"Rice",
+"Barley",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is mentioned as unsuitable for sprinkler irrigation?",
+"serial": "1bxM1Q-4:1018",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1018"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Paraquat",
+"Metoxuron",
+"Glyphosate",
+"Atrazine",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is an example of a narrow-spectrum herbicide?",
+"serial": "1sUgWsko:5204",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5204"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Calcium",
+"Potassium",
+"Magnesium",
+"Sulphur",
+"None of these"
+],
+"page": "",
+"q": "Which element is known to contribute to disease and drought resistance in plants?",
+"serial": "17U0MEc-:245",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:245"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Bark",
+"Leaves",
+"Heart Wood",
+"Roots",
+"None of these"
+],
+"page": "",
+"q": "Which part of the Khair tree (Acacia catechu) is used to produce Katha and Cutch?",
+"serial": "1UgnIe-g:2788",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2788"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To create a new species",
+"To improve one or two specific defects of a high-yielding variety",
+"To develop a completely new genotype",
+"To increase genetic diversity",
+"None of these"
+],
+"page": "",
+"q": "What is the primary objective of the backcross method in plant breeding?",
+"serial": "1sUgWsko:5919",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5919"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"DNA polymerase",
+"Terminal transferase",
+"Reverse transcriptase",
+"DNase",
+"None of these"
+],
+"page": "",
+"q": "Which enzyme degrades DNA?",
+"serial": "1UgnIe-g:1387",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1387"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1:1",
+"1:1.5",
+"1:2",
+"1:2.5",
+"None of these"
+],
+"page": "",
+"q": "What is the grain and straw ratio in Mexican dwarf wheat?",
+"serial": "1bxM1Q-4:691",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:691"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lesser Grain Borer",
+"Angoumois Grain Moth",
+"Rice Weevil",
+"Pulse Beetle",
+"None of these"
+],
+"page": "",
+"q": "Which stored grain pest pupates inside the grain and emerges by making an irregular hole?",
+"serial": "1sUgWsko:2131",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2131"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Aonla",
+"Guava",
+"Mango",
+"Pear",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a host plant of the Anar butterfly (fruit borer)?",
+"serial": "1sUgWsko:2081",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2081"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Highest concentration of organic matter",
+"Highest accumulation of clay and Fe/Al oxides",
+"Presence of calcium carbonate deposits",
+"Thick layer of parent material fragments",
+"None of these"
+],
+"page": "",
+"q": "The A1 sub\u2011horizon is distinguished mainly by:",
+"serial": "17U0MEc-:1032",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1032"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Soil Type",
+"Soil Texture",
+"Soil Series",
+"Topsoil",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a finer subdivision of a soil series, including all soils similar in characteristics including surface texture?",
+"serial": "1sUgWsko:4763",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4763"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Alkaline soils",
+"Saline soils",
+"Well-drained loamy soils",
+"Clay soils",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a suitable soil type for banana cultivation?",
+"serial": "1bxM1Q-4:2999",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2999"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"By dissolving minerals through organic acids",
+"By exerting physical pressure on rocks",
+"By absorbing water from rocks",
+"Both A and B",
+"None of these"
+],
+"page": "",
+"q": "How do plant roots contribute to biological weathering?",
+"serial": "1sUgWsko:6752",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6752"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Citrus sinensis",
+"C. reticulata",
+"C. aurantifolia",
+"C. paradise",
+"None of these"
+],
+"page": "",
+"q": "Which citrus species is known as the 'Fancy fruit'?",
+"serial": "1bxM1Q-4:2983",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2983"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"+91-9694095242",
+"+91-9876543210",
+"+91-1122334455",
+"+91-9988776655",
+"None of these"
+],
+"page": "",
+"q": "What is the WhatsApp contact number listed on the page?",
+"serial": "1sUgWsko:5589",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5589"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Roots",
+"Leaves",
+"Fruit (Capsule)",
+"Stem",
+"None of these"
+],
+"page": "",
+"q": "Morphine and codeine are extracted from which part of the Opium plant?",
+"serial": "1sUgWsko:1508",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1508"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Ploughing",
+"Liming",
+"Drainage",
+"Heavy machinery use",
+"None of these"
+],
+"page": "",
+"q": "Which practice is specifically mentioned as causing compaction on clayey soils leading to plate-like structure?",
+"serial": "1sUgWsko:6955",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6955"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"50-80 Q/ha",
+"80-120 Q/ha",
+"150-200 Q/ha",
+"250-300 Q/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the average yield range for early varieties of cauliflower?",
+"serial": "1sUgWsko:1364",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1364"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.1 \u2013 0.2",
+"0.2 \u2013 0.3",
+"0.3 \u2013 0.4",
+"0.4 \u2013 0.5",
+"None of these"
+],
+"page": "",
+"q": "What is the typical range of the soil erodibility factor (K) for stable soils?",
+"serial": "128DIQLj:1471",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1471"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"pH",
+"Temperature",
+"Dissolved oxygen",
+"Salinity",
+"None of these"
+],
+"page": "",
+"q": "Which water quality parameter must be above 5 ppm?",
+"serial": "1sUgWsko:2302",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2302"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Reconsideration and revision of the programme",
+"Collection of facts",
+"Analysis of situation",
+"Identification of problems",
+"None of these"
+],
+"page": "",
+"q": "What is the final step in the programme planning process?",
+"serial": "1bxM1Q-4:2142",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2142"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Vitamin C",
+"Vitamin E or selenium",
+"Vitamin A",
+"Phosphorus",
+"None of these"
+],
+"page": "",
+"q": "Mulberry heart disease is linked to deficiency of which nutrients?",
+"serial": "1sUgWsko:3596",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3596"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1.4-1.75 g/cc",
+"1.1-1.4 g/cc",
+"0.5 g/cc",
+"2.0 g/cc",
+"None of these"
+],
+"page": "",
+"q": "Which bulk density range corresponds to fine\u2011textured (clay) soils?",
+"serial": "17U0MEc-:1072",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1072"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"They can absorb many times their own weight of water",
+"They are used exclusively in food preservation",
+"They are toxic to bacteria",
+"They are only used in paper manufacturing",
+"None of these"
+],
+"page": "",
+"q": "Why are alginates from brown seaweeds commercially valuable?",
+"serial": "1sUgWsko:2700",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2700"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Aphids secreted by cornicles",
+"Bark beetles",
+"Cephalic glands in ants",
+"Cotton boll weevil",
+"None of these"
+],
+"page": "",
+"q": "What is an example of an alarm pheromone?",
+"serial": "17U0MEc-:1792",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1792"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Malathion",
+"Acephate",
+"Carbaryl",
+"Chlorpyrifos",
+"None of these"
+],
+"page": "",
+"q": "Which insecticide is recommended for managing white flies and aphids in papaya?",
+"serial": "17U0MEc-:1482",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1482"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"High relative humidity and high temperature during fruit development",
+"Deficiency of Boron and Calcium",
+"Heavy pruning",
+"High Nitrogen content",
+"None of these"
+],
+"page": "",
+"q": "What is the cause of 'Granulation' in citrus fruits?",
+"serial": "1sUgWsko:1580",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1580"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"35.5%",
+"40.8%",
+"30.2%",
+"45.1%",
+"None of these"
+],
+"page": "",
+"q": "What is the approximate percentage of the total sodic soil area in India covered by Uttar Pradesh?",
+"serial": "1sUgWsko:7077",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7077"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Leucarena leucocephela (Subabul)",
+"Mustard",
+"Sweet clover",
+"Lathyrus",
+"None of these"
+],
+"page": "",
+"q": "Mimosine is a toxic compound found in which plant?",
+"serial": "1bxM1Q-4:571",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:571"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Only one price point is available",
+"Demand is perfectly elastic",
+"Elasticity changes over a range of prices",
+"Revenue is constant",
+"None of these"
+],
+"page": "",
+"q": "The arc method of elasticity measurement is used when:",
+"serial": "1sUgWsko:3941",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3941"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5 ppm",
+"10 ppm",
+"15 ppm",
+"20 ppm",
+"None of these"
+],
+"page": "",
+"q": "Soil is considered sulphur deficient when available sulphur is less than:",
+"serial": "128DIQLj:1406",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1406"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1% Thiourea with 1 ppm of GA\u2083",
+"3% Boric acid",
+"KCl",
+"N-fertilizer",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is used as a dormancy breaker in potatoes?",
+"serial": "17U0MEc-:721",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:721"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It has been aerated to remove all dissolved gases",
+"It has reduced nutrient load and particulate matter due to biological treatment",
+"It has been chemically treated to neutralize pH",
+"It has been filtered to remove all suspended solids",
+"None of these"
+],
+"page": "",
+"q": "Why is farm discharge treated in settlement and bio-ponds suitable for recirculation to ponds?",
+"serial": "1sUgWsko:2597",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2597"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lambing/kidding shed",
+"Milch doe shed",
+"Shearing shed",
+"Isolation/sick animal shed",
+"None of these"
+],
+"page": "",
+"q": "Which shed has dimensions 1.2 x 0.8 x 3 according to the table?",
+"serial": "1sUgWsko:3269",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3269"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Flood irrigation",
+"Drip irrigation",
+"Double ring method",
+"Sprinkler irrigation",
+"None of these"
+],
+"page": "",
+"q": "Which irrigation method is best suited for Sweet orange cultivation?",
+"serial": "1sUgWsko:1024",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1024"
+}
+],
+"set_no": 7,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
@@ -19904,7 +20818,7 @@
 },
 "desk": {
 "handled": 110,
-"last": "2026-09-19T17:56:28+05:30",
+"last": "2026-09-19T17:56:06+05:30",
 "offset": 210518894,
 "payments": {
 "checked": 8,
