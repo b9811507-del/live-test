@@ -18437,6 +18437,7 @@
 "cd": 0,
 "expl_in_poll": 20,
 "last_off": 0,
+"lb_parts_sent": 1,
 "lock_ts": 1789796799.2309353,
 "locked_by": "local-1137",
 "msg_ann": 29609,
