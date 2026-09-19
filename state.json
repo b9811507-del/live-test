@@ -18405,8 +18405,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 105,
 "names": {},
+"plan": {
+"bidx_next": 105,
+"built_at": "2026-09-19T14:26:25+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 13-15",
+"pages_list": [
+13,
+14,
+15
+],
+"questions": [
+{
+"expl": "The optimum temperature range for the vegetative growth of wheat is 20-22\u00b0C as it supports the best growth conditions.",
+"key": 1,
+"o": [
+"16-20\u00b0C",
+"20-22\u00b0C",
+"22-34\u00b0C",
+"Above 34\u00b0C",
+"None of these"
+],
+"page": "13",
+"q": "What is the optimum temperature range for the vegetative growth of wheat?",
+"serial": "85",
+"src_row": 84,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:85"
+},
+{
+"expl": "Clay loam or loam soils are ideal for wheat cultivation due to their good structure and moderate water holding capacity.",
+"key": 1,
+"o": [
+"Peaty soils",
+"Clay loam or loam soils",
+"Soils with high sodium content",
+"Soils with high magnesium content",
+"None of these"
+],
+"page": "13",
+"q": "Which soil type is ideal for wheat cultivation?",
+"serial": "86",
+"src_row": 85,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:86"
+},
+{
+"expl": "The optimum pH range for wheat cultivation is 6-8, as it provides the best conditions for nutrient availability and plant growth.",
+"key": 1,
+"o": [
+"4-6",
+"6-8",
+"8-10",
+"10-12",
+"None of these"
+],
+"page": "13",
+"q": "What is the optimum pH range for wheat cultivation?",
+"serial": "87",
+"src_row": 86,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:87"
+},
+{
+"expl": "The EC should not exceed 4 mmhos/cm in the upper soil layer during wheat germination to avoid yield decrease due to salinity.",
+"key": 0,
+"o": [
+"4",
+"6",
+"8",
+"10",
+"None of these"
+],
+"page": "13",
+"q": "What is the maximum EC (mmhos/cm) that soil salinity should not exceed during wheat germination?",
+"serial": "88",
+"src_row": 87,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:88"
+},
+{
+"expl": "Under timely sown conditions, zero tillage can save field preparation costs of around Rs. 2,000-2,500/- per hectare.",
+"key": 2,
+"o": [
+"Rs. 1,000-1,500/- per hectare",
+"Rs. 1,500-2,000/- per hectare",
+"Rs. 2,000-2,500/- per hectare",
+"Rs. 2,500-3,000/- per hectare",
+"None of these"
+],
+"page": "13",
+"q": "What is the cost-saving benefit of zero tillage under timely sown conditions?",
+"serial": "89",
+"src_row": 88,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:89"
+},
+{
+"expl": "The ideal sowing period for irrigated long duration wheat varieties (135-140 days) is Nov 10-30.",
+"key": 2,
+"o": [
+"Oct 1-15",
+"Nov 1-15",
+"Nov 10-30",
+"Dec 1-15",
+"None of these"
+],
+"page": "13",
+"q": "What is the ideal sowing period for irrigated long duration wheat varieties?",
+"serial": "90",
+"src_row": 89,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:90"
+},
+{
+"expl": "At an EC of 9.5 mmhos/cm, the yield decrease due to soil salinity is approximately 25%.",
+"key": 2,
+"o": [
+"0%",
+"10%",
+"25%",
+"50%",
+"None of these"
+],
+"page": "13",
+"q": "What percentage yield decrease can be expected at an EC of 9.5 mmhos/cm due to soil salinity?",
+"serial": "91",
+"src_row": 90,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "13:91"
+},
+{
+"expl": "The source states that the first fortnight of November is the best time for wheat sowing, while rain\u2011fed wheat is sown in the second fortnight of October.",
+"key": 0,
+"o": [
+"First fortnight of November",
+"Second fortnight of October",
+"Mid December",
+"Early September",
+"None of these"
+],
+"page": "14",
+"q": "When is the optimal period for wheat sowing in rain\u2011fed conditions?",
+"serial": "92",
+"src_row": 91,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:92"
+},
+{
+"expl": "Dibbling is described as a method that requires less seed compared to other methods.",
+"key": 1,
+"o": [
+"Broadcasting",
+"Dibbling",
+"Drilling",
+"Zero/No\u2011tillage sowing",
+"None of these"
+],
+"page": "14",
+"q": "Which sowing method is noted for requiring the least amount of seed?",
+"serial": "93",
+"src_row": 92,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:93"
+},
+{
+"expl": "The source lists the spacing for irrigated wheat as 22.5 cm between rows and 8-10 cm between plants within a row.",
+"key": 0,
+"o": [
+"22.5 x 8-10 cm",
+"25-30 x 5-6 cm",
+"15-16 cm",
+"30 x 12 cm",
+"None of these"
+],
+"page": "14",
+"q": "What is the recommended spacing for irrigated wheat?",
+"serial": "94",
+"src_row": 93,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:94"
+},
+{
+"expl": "Triple dwarf varieties are sown at a depth of 3-4 cm, as specified in the depth guidelines.",
+"key": 2,
+"o": [
+"5-6 cm",
+"4-5 cm",
+"3-4 cm",
+"2-3 cm",
+"None of these"
+],
+"page": "14",
+"q": "At what sowing depth are triple dwarf wheat varieties planted?",
+"serial": "95",
+"src_row": 94,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:95"
+},
+{
+"expl": "The FIRB system uses a seed rate of 75 kg per hectare according to the source table.",
+"key": 2,
+"o": [
+"100 kg/ha",
+"125 kg/ha",
+"75 kg/ha",
+"25-30 kg/ha",
+"None of these"
+],
+"page": "14",
+"q": "What seed rate is recommended for the FIRB (Furrow Irrigated Raised Bed) system?",
+"serial": "96",
+"src_row": 95,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:96"
+},
+{
+"expl": "The text notes that in dry soils seeds are drilled 5 to 8 cm deep, deeper than the 2\u20114 cm used in moist conditions.",
+"key": 1,
+"o": [
+"2-4 cm",
+"5-8 cm",
+"1-2 cm",
+"8-10 cm",
+"None of these"
+],
+"page": "14",
+"q": "In dry soils, seeds are typically drilled to what depth range?",
+"serial": "97",
+"src_row": 96,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:97"
+},
+{
+"expl": "The Kera method is defined as hand\u2011dropping seeds into furrows created by a country plough.",
+"key": 0,
+"o": [
+"Kera method",
+"Pora method",
+"Drilling",
+"Broadcasting",
+"None of these"
+],
+"page": "14",
+"q": "Which method involves dropping seeds by hand into furrows made by a country plough?",
+"serial": "98",
+"src_row": 97,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "14:98"
+},
+{
+"expl": "The recommended increase in seed rate for late sowing of wheat is 25% to compensate for the delayed planting.",
+"key": 0,
+"o": [
+"25%",
+"20%",
+"30%",
+"15%",
+"None of these"
+],
+"page": "15",
+"q": "What is the recommended increase in seed rate for late sowing of wheat?",
+"serial": "99",
+"src_row": 98,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:99"
+},
+{
+"expl": "The yield of wheat decreases by about 30 kg/ha/day if sowing is delayed beyond 25th November.",
+"key": 0,
+"o": [
+"30 kg/ha/day",
+"25 kg/ha/day",
+"35 kg/ha/day",
+"20 kg/ha/day",
+"None of these"
+],
+"page": "15",
+"q": "What is the yield decrease rate of wheat per day if sowing is delayed beyond 25th November?",
+"serial": "100",
+"src_row": 99,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:100"
+},
+{
+"expl": "Wheat exhibits hypogeal germination, where the cotyledons remain underground.",
+"key": 0,
+"o": [
+"Hypogeal",
+"Epigeal",
+"Vivipary",
+"Pre-germination",
+"None of these"
+],
+"page": "15",
+"q": "Which type of germination does wheat exhibit?",
+"serial": "101",
+"src_row": 100,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:101"
+},
+{
+"expl": "The optimum seed rate for zero tillage wheat sowing is 140-150 kg/ha, which is 20-25% higher than conventional practices.",
+"key": 0,
+"o": [
+"140-150 kg/ha",
+"120-130 kg/ha",
+"160-170 kg/ha",
+"100-110 kg/ha",
+"None of these"
+],
+"page": "15",
+"q": "What is the optimum seed rate for zero tillage wheat sowing?",
+"serial": "102",
+"src_row": 101,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:102"
+},
+{
+"expl": "The recommended maximum height of rice stubble for zero tillage is 15 cm to facilitate proper sowing.",
+"key": 0,
+"o": [
+"15 cm",
+"10 cm",
+"20 cm",
+"5 cm",
+"None of these"
+],
+"page": "15",
+"q": "What is the maximum height of rice stubble recommended for zero tillage?",
+"serial": "103",
+"src_row": 102,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:103"
+},
+{
+"expl": "Zero tillage can save field preparation costs of around Rs. 2,000-2,500 per hectare under timely sown conditions.",
+"key": 0,
+"o": [
+"Rs. 2,000-2,500 per hectare",
+"Rs. 1,000-1,500 per hectare",
+"Rs. 3,000-3,500 per hectare",
+"Rs. 500-1,000 per hectare",
+"None of these"
+],
+"page": "15",
+"q": "What is the cost-saving benefit of zero tillage under timely sown conditions?",
+"serial": "104",
+"src_row": 103,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:104"
+},
+{
+"expl": "The critical leaf nitrogen concentration for wheat is 2.5%, which is essential for optimal growth and yield.",
+"key": 0,
+"o": [
+"2.5%",
+"2.0%",
+"3.0%",
+"1.5%",
+"None of these"
+],
+"page": "15",
+"q": "What is the critical leaf nitrogen concentration for wheat?",
+"serial": "105",
+"src_row": 104,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "15:105"
+}
+],
+"row_from": 84,
+"row_to": 105,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 84,
+"seeded_from": "2026-09-18"
+},
 "qidx": 0,
+"seeded_from": "2026-09-18",
+"skips": [],
 "step": 0
 },
 "malwa": {
@@ -18904,7 +19309,7 @@
 },
 "desk": {
 "handled": 106,
-"last": "2026-09-19T14:26:24+05:30",
+"last": "2026-09-19T14:26:02+05:30",
 "offset": 210518391,
 "payments": {
 "checked": 7,
