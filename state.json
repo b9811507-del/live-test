@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-19T10:54:30+05:30",
+"agent_last": "2026-09-19T11:15:23+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -18883,13 +18883,8 @@
 "seen": []
 },
 "desk_last": {
-"handled": 0,
-"offset": 210518338,
-"payments": {
-"checked": 9,
-"expired": 0,
-"issued": 0
-}
+"live": "2026-09-19/malwa",
+"skipped": "test_live"
 },
 "dm": {
 "guard": 1789460218.2034469,
