@@ -18897,6 +18897,9 @@
 "bidx": 105,
 "cd": 0,
 "congrats_sent": 29660,
+"cta_sent": "off",
+"done_at": "2026-09-19T14:44:56+05:30",
+"elapsed_s": 1104,
 "expl_in_poll": 21,
 "file_msg": 29661,
 "file_sent": "IARI_p13-15_21Q_2026-09-19.html",
@@ -18906,8 +18909,17 @@
 "lb_rows": 34,
 "lb_sent": true,
 "lock_ts": 1789809271.730311,
-"locked_by": "local-1837",
+"locked_by": "",
 "msg_ann": 29636,
+"msg_order": [
+"announce",
+"countdown",
+"quiz-polls(+in-poll explanation)",
+"leaderboard(all parts)",
+"top3",
+"file",
+"tomorrow-plan"
+],
 "names": {
 "1023152775": "iAnjali",
 "1107062740": "AADYA\ud83c\udf34\ud83e\udd9c\ud83e\uddff",
@@ -18944,6 +18956,8 @@
 "8906964276": "Uttarakhand boy\ud83d\udc7d",
 "998749755": "Aspirant.20"
 },
+"paid_msg": 29635,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 105,
@@ -19377,7 +19391,7 @@
 "sent_i": 20,
 "skips": [],
 "started_at": "2026-09-19T14:31:05+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 29662,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 19-24\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 16, 17, 18",
 "unpinned": [
@@ -20172,6 +20186,7 @@
 "msg_2026-09-15_iari": 29165,
 "msg_2026-09-18_afo": 29551,
 "msg_2026-09-18_iari": 29551,
+"msg_2026-09-19_iari": 29635,
 "msg_2026-09-19_malwa": 29635,
 "posted_at": "2026-09-19T11:17:04+05:30",
 "users": {
