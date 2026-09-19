@@ -3519,7 +3519,7 @@
 ]
 },
 "agent_issues": [],
-"agent_last": "2026-09-19T19:34:39+05:30",
+"agent_last": "2026-09-19T19:31:38+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -26929,15 +26929,18 @@
 }
 },
 "desk": {
-"handled": 110,
-"last": "2026-09-19T19:34:47+05:30",
+"handled": 111,
+"last": "2026-09-19T19:34:29+05:30",
 "offset": 210521462,
 "payments": {
-"checked": 8,
+"checked": 9,
 "expired": 0,
 "issued": 0
 },
-"seen": []
+"seen": [
+"620530613"
+],
+"webhook_last": "2026-09-19T19:34:52+05:30"
 },
 "desk_last": {
 "handled": 0,
@@ -27233,6 +27236,17 @@
 "status": "created",
 "title": "AFO SELECTION BATCH",
 "uid": "1143441820"
+},
+"plink_TdvDeqedMaxUds": {
+"amount": 151,
+"at": "2026-09-19T19:34:41+05:30",
+"created_ts": 1789826681,
+"key": "cane",
+"name": "A.",
+"short_url": "https://rzp.io/rzp/WhnzcGZ",
+"status": "created",
+"title": "SUGARCANE PREMIUM BATCH",
+"uid": "1420601420"
 }
 },
 "msg_2026-09-15_iari": 29165,
