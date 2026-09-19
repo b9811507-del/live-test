@@ -1529,16 +1529,22 @@ def run_job(job, day=None, st=None, force=False):
     # --- leaderboard (48 rows/msg)
     rows = score_rows(day, job, plan, ans, names)
     if not j.get("lb_sent"):
-        parts = leaderboard_parts(day, job, plan, rows)
-        # v11.4.14 (admin order 19-Sep): 0 players must not look like a silent miss — post the reason.
-        if not parts:
+        # v11.4.16 (19-Sep, after the malwa empty-LB complaint): leaderboard_parts([]) still returns a
+        # HEADER-ONLY part, so the v11.4.14 `if not parts` guard never fired — the group got a blank
+        # leaderboard + a separate toppers_none note. Guard on rows instead, send ONE clear note and
+        # skip both the blank LB and the blank top-3.
+        empty_lb = not rows
+        parts = [] if empty_lb else leaderboard_parts(day, job, plan, rows)
+        if empty_lb:
             tg("sendMessage", chat_id=chat, parse_mode="HTML", disable_web_page_preview=True,
-               text="📊 <b>%s — Leaderboard</b>\n\nAaj koi valid answer submit nahi hua (0 players), isliye leaderboard khaali tha. Kal test ke baad phir milte hai — last moment tak answers count honge ✅" % job.upper())
+               text="📊 <b>%s — Leaderboard</b>\n\nAaj ki leaderboard generate nahi ho paayi (0 valid submissions record hue) — aapke answers count karne me technical dikkat thi, sorry. Kal test ke baad poori leaderboard phir aayegi ✅" % job.upper())
             j["lb_sent"] = True
             j["lb_parts"] = 0
+            j["lb_parts_sent"] = 0
             j["lb_rows"] = 0
             j["players"] = 0
-            log("leaderboard: 0 players -> transparency note sent")
+            j["congrats_sent"] = "off"        # no second empty message — one honest note is enough
+            log("leaderboard: 0 players -> single transparency note sent, blank LB + top3 skipped")
             jsave(st, "%s leaderboard empty-note" % job)
         done = int(j.get("lb_parts_sent") or 0)
         if done >= len(parts):
