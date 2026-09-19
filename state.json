@@ -3519,7 +3519,7 @@
 ]
 },
 "agent_issues": [],
-"agent_last": "2026-09-19T19:34:39+05:30",
+"agent_last": "2026-09-19T19:31:38+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -27233,6 +27233,17 @@
 "status": "created",
 "title": "AFO SELECTION BATCH",
 "uid": "1143441820"
+},
+"plink_TdvDeqedMaxUds": {
+"amount": 151,
+"at": "2026-09-19T19:34:41+05:30",
+"created_ts": 1789826681,
+"key": "cane",
+"name": "A.",
+"short_url": "https://rzp.io/rzp/WhnzcGZ",
+"status": "created",
+"title": "SUGARCANE PREMIUM BATCH",
+"uid": "1420601420"
 }
 },
 "msg_2026-09-15_iari": 29165,
