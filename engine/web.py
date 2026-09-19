@@ -7,7 +7,7 @@ One tiny HTTP app does two jobs:
   2) the scheduler, in-process      every cycle = subprocess `python3 engine/engine.py <cmd>`
         slotchain  every 60 s  during 10:00–19:30 IST   → 11:00 / 14:30 / 18:00 tests
         keepwarm   every 3 min, 24×7                     → student desk: DMs, payments, join links
-        inbox      every 40 s, 24×7                     → fast student replies/buttons (skips during live tests)
+        inbox      every 10 s, 24×7                     → fast student replies/buttons (skips during live tests)
         supply     05:00 IST daily                       → AFO bank audit (never posts)
         guard      22:00 IST daily                       → safety net (seal open slots)
         update     09:45 IST daily                       → git pull the latest engine
@@ -165,8 +165,9 @@ def scheduler():
             if time.time() - slots.get("keepwarm", 0) >= 180:
                 slots["keepwarm"] = time.time()
                 threading.Thread(target=run_cycle, args=("keepwarm", ["keepwarm"]), daemon=True).start()
-            # 2b) fast inbox: student taps answered within ~40 s (admin speed order 18-Sep)
-            if time.time() - slots.get("inbox", 0) >= 40:
+            # 2b) fast inbox: student taps answered within ~10 s (v11.4.15 — webhook was unsafe
+            #     on a shared bot token: it starves quiz getUpdates. Poll fast instead.)
+            if time.time() - slots.get("inbox", 0) >= 10:
                 slots["inbox"] = time.time()
                 threading.Thread(target=run_cycle, args=("inbox", ["inbox"]), daemon=True).start()
             # 3) daily jobs
