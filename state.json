@@ -19903,19 +19903,15 @@
 }
 },
 "desk": {
-"handled": 111,
-"last": "2026-09-19T16:28:29+05:30",
+"handled": 110,
+"last": "2026-09-19T16:29:06+05:30",
 "offset": 210518894,
 "payments": {
 "checked": 8,
 "expired": 0,
 "issued": 0
 },
-"seen": [
-"620530609",
-"620530610"
-],
-"webhook_last": "2026-09-19T16:29:03+05:30"
+"seen": []
 },
 "desk_last": {
 "handled": 0,
