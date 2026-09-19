@@ -189,12 +189,16 @@ def post_after_test(E, chat, job=None, day=None):
     # v11.4.14 (admin order 19-Sep): one message per day PER GROUP — every batch group that
     # runs a test that day gets its own paid message as the test's last message (the old global
     # day-key let only the first group of the day post; AFO never got theirs).
-    dkey = "day_%s_%s" % (day, chat)
+    # v11.4.18 (19-Sep): per TEST per DAY per GROUP — MALWA/IARI/AFO all run in same
+    # AGRI QUIZ WORLD group, so day+chat alone gave only 1 paid message/day (IARI reused MALWA's).
+    # Requirement: paid batches message must be LAST message after EACH test.
+    dkey = "day_%s_%s_%s" % (day, chat, job or "test")
+    # backward compat: if old per-chat key exists, don't treat as reuse for different job
     prev = paid.get(dkey) or {}
     prev_id = prev.get("id")
     if prev_id:
         paid["msg_%s_%s" % (day, job or "test")] = prev_id
-        E.log("paid: reusing today's message #%s in %s" % (prev_id, chat))
+        E.log("paid: reusing today's message #%s for %s in %s" % (prev_id, job, chat))
         return prev_id
     tag = "msg_%s_%s" % (day, job or "test")
     m = ptg(E, "sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
