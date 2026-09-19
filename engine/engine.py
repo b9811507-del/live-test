@@ -1432,6 +1432,17 @@ def run_job(job, day=None, st=None, force=False):
     resume_at = max(int(j.get("qidx", 0)), int(j.get("sent_i", -1)) + 1)
     if resume_at > 0:
         log("resume %s at Q%d (qidx=%s sent_i=%s)" % (job, resume_at + 1, j.get("qidx"), j.get("sent_i")))
+    # --- v11.4.17 safety net (19-Sep incident): a webhook on THIS token makes Telegram stop
+    # delivering poll answers to getUpdates -> players:0 -> blank leaderboards (AFO 18-Sep, MALWA 19-Sep).
+    # Before every test, verify the update stream is ours and clear any stray webhook loudly.
+    try:
+        wi = tg("getWebhookInfo") or {}
+        if isinstance(wi, dict) and wi.get("url"):
+            tg("deleteWebhook", drop_pending_updates=False)
+            log("SAFETY: webhook was set on this token (%s) -> cleared before polls; answers/leaderboard safe now" % wi["url"])
+    except Exception as e:
+        log("webhook safety check skipped:", str(e)[:90])
+
     off = base_offset()
     hard = time.time() + TEST_BUDGET
     fails = 0
