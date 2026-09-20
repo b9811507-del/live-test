@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-20T18:01:30+05:30",
+"agent_last": "2026-09-20T17:55:39+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -23419,7 +23419,7 @@
 "announced_at": "2026-09-20T18:00:00+05:30",
 "ans": {},
 "cd": 0,
-"lock_ts": 1789907480.164654,
+"lock_ts": 1789907473.611312,
 "locked_by": "local-35880",
 "msg_ann": 29779,
 "names": {},
@@ -26255,7 +26255,7 @@
 },
 "desk": {
 "handled": 123,
-"last": "2026-09-20T17:55:48+05:30",
+"last": "2026-09-20T18:01:08+05:30",
 "offset": 210522354,
 "payments": {
 "checked": 3,
@@ -26265,8 +26265,13 @@
 "seen": []
 },
 "desk_last": {
-"live": "2026-09-20/afo",
-"skipped": "test_live"
+"handled": 0,
+"offset": 210522354,
+"payments": {
+"checked": 3,
+"expired": 0,
+"issued": 0
+}
 },
 "dm": {
 "guard": 1789460218.2034469,
