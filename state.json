@@ -25590,6 +25590,9 @@
 "answered_total": 2068,
 "cd": 0,
 "congrats_sent": 29836,
+"cta_sent": "off",
+"done_at": "2026-09-20T18:34:22+05:30",
+"elapsed_s": 2284,
 "expl_in_poll": 0,
 "file_msg": 29837,
 "file_sent": "AFO_pFull-length-set-8_50Q_2026-09-20.html",
@@ -25599,8 +25602,17 @@
 "lb_rows": 71,
 "lb_sent": true,
 "lock_ts": 1789909423.15261,
-"locked_by": "local-35880",
+"locked_by": "",
 "msg_ann": 29779,
+"msg_order": [
+"announce",
+"countdown",
+"quiz-polls(+in-poll explanation)",
+"leaderboard(all parts)",
+"top3",
+"file",
+"tomorrow-plan"
+],
 "names": {
 "1023152775": "iAnjali",
 "1027390571": "Sns",
@@ -25674,6 +25686,8 @@
 "948883251": "pragnya",
 "978174619": "Kuldeep758"
 },
+"paid_msg": 29839,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "built_at": "2026-09-20T17:56:11+05:30",
@@ -26646,7 +26660,7 @@
 "sent_i": 49,
 "skips": [],
 "started_at": "2026-09-20T18:01:15+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 29838,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 25-30\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 19, 20, 21\n\ud83c\udf06 6:00 PM \u00b7 <b>AFO MAINS TEST (NEW PATTERN)</b> \u2014 full-length set 9 (50 questions, +2 / \u22120.5)",
 "unpinned": [
