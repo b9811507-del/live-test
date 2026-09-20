@@ -31837,10 +31837,10 @@
 },
 "desk": {
 "handled": 124,
-"last": "2026-09-20T19:36:09+05:30",
+"last": "2026-09-20T19:36:28+05:30",
 "offset": 210524661,
 "payments": {
-"checked": 2,
+"checked": 1,
 "expired": 0,
 "issued": 0
 },
