@@ -28576,17 +28576,14 @@
 },
 "desk": {
 "handled": 124,
-"last": "2026-09-20T17:55:48+05:30",
+"last": "2026-09-20T18:34:32+05:30",
 "offset": 210524661,
 "payments": {
 "checked": 3,
 "expired": 0,
 "issued": 0
 },
-"seen": [
-"620530633"
-],
-"webhook_last": "2026-09-20T18:34:27+05:30"
+"seen": []
 },
 "desk_last": {
 "handled": 0,
