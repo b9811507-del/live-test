@@ -23418,7 +23418,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-20T17:56:11+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Macrobrachium malcolmsonii",
+"Macrobrachium rosenbergii",
+"Penaeus monodon",
+"Litopenaeus vannamei",
+"None of these"
+],
+"page": "",
+"q": "Which species is the most commonly cultured freshwater prawn in India?",
+"serial": "1sUgWsko:2521",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2521"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Waldfeldbau",
+"Kumri",
+"Pan Kars",
+"Shelterbelts",
+"None of these"
+],
+"page": "",
+"q": "What is the local name for the Taungya system in South India?",
+"serial": "1UgnIe-g:2699",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2699"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Net cultivated area divided by total cropping area",
+"Total cropping area divided by net cultivated area \u00d7100",
+"Number of crops per year divided by years \u00d7100",
+"Yield of intercropping divided by yield of sole cropping",
+"None of these"
+],
+"page": "",
+"q": "The Cropping Intensity of India is 142%. What does this figure represent?",
+"serial": "1sUgWsko:4273",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4273"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Jensen",
+"Swingle",
+"Lyra & Sattar",
+"Hebert",
+"None of these"
+],
+"page": "",
+"q": "Who developed the solar energy treatment for seeds?",
+"serial": "1UgnIe-g:959",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:959"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Calcium",
+"Boron",
+"Nitrogen",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient deficiency causes blossom end rot in fruits?",
+"serial": "1sUgWsko:1604",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1604"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cow",
+"Goat",
+"Mare",
+"Buffalo",
+"None of these"
+],
+"page": "",
+"q": "Which animal's milk is traditionally used to make koumiss?",
+"serial": "128DIQLj:1921",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1921"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Irrigation",
+"Ploughing",
+"Harvesting",
+"Seeding",
+"None of these"
+],
+"page": "",
+"q": "Which agronomic practice can modify soil structure?",
+"serial": "17U0MEc-:1053",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1053"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"1:10",
+"1:15",
+"1:20",
+"1:25",
+"None of these"
+],
+"page": "",
+"q": "The seed multiplication ratio for Lucerne is:",
+"serial": "1sUgWsko:4974",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4974"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Race A",
+"Race 1",
+"Both Race A and Race 1",
+"Neither Race A nor Race 1",
+"None of these"
+],
+"page": "",
+"q": "Which race of reniform nematode affects multiple crops?",
+"serial": "1UgnIe-g:2502",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2502"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"30m",
+"100m",
+"200m",
+"300m",
+"None of these"
+],
+"page": "",
+"q": "What is the suitable length of furrows for heavy soils at greater slope?",
+"serial": "17U0MEc-:421",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:421"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1901",
+"1903",
+"1905",
+"1919",
+"None of these"
+],
+"page": "",
+"q": "Which year saw the appointment of the first Irrigation Commission in India?",
+"serial": "17U0MEc-:57",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:57"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0-2.5 cm",
+"2.5-15 cm",
+"15-30 cm",
+"30-45 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the depth range for shallow tillage?",
+"serial": "1bxM1Q-4:1449",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1449"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Coupling",
+"Repulsion",
+"Mutation",
+"Crossing over",
+"None of these"
+],
+"page": "",
+"q": "Which phase of linkage involves the linkage of dominant allele with a recessive allele?",
+"serial": "17U0MEc-:2497",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2497"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Shadow method",
+"Christen\u2019s Hypsometer",
+"Abney\u2019s level",
+"Clinometer",
+"None of these"
+],
+"page": "",
+"q": "Which method is NOT an instrumental method for measuring the height of trees?",
+"serial": "1UgnIe-g:2733",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2733"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"30\u201340 days",
+"40\u201360 days",
+"20\u201330 days",
+"10\u201320 days",
+"None of these"
+],
+"page": "",
+"q": "Cabbage requires a chilling period of 4\u20138 \u00b0C for how many days to flower?",
+"serial": "1YcJWVgW:656",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:656"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Decrease in stormy weather",
+"Increase in amphibian populations",
+"Increased severity of drought",
+"Improvement in coral reefs",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an impact of global warming?",
+"serial": "1bxM1Q-4:1573",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1573"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Helianthus sp.",
+"Kochia",
+"Michaelmas daisy",
+"Petunia sp.",
+"None of these"
+],
+"page": "",
+"q": "Which plant is suited for pots and ornamental leaves, and is propagated by seeds?",
+"serial": "1bxM1Q-4:3404",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3404"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"They include water bodies",
+"They have canopy density above 70%",
+"They are always agricultural lands",
+"They must be less than 1 ha in size",
+"None of these"
+],
+"page": "",
+"q": "Which statement about Non-Forest lands is true according to the source?",
+"serial": "1sUgWsko:5579",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5579"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Azotobacter",
+"Clostridium",
+"Klebsiella",
+"Rhizobium",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a free-living aerobic nitrogen-fixing bacterium used for all crops?",
+"serial": "1sUgWsko:7246",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7246"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"2.1",
+"3.5",
+"5.8",
+"7.0",
+"None of these"
+],
+"page": "",
+"q": "What was the reported Benefit/Cost Ratio (BCR) for Site\u2011Specific Nutrient Management (SSNM) in the rice\u2011wheat system?",
+"serial": "1bxM1Q-4:355",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:355"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Germination",
+"Tillering",
+"Jointing",
+"Boot leaf",
+"None of these"
+],
+"page": "",
+"q": "During which stage does peak plant growth and internode elongation occur in wheat?",
+"serial": "1sUgWsko:114",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:114"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Memordicocite",
+"Cucurbitacin",
+"Quercetin",
+"Allyl propyl di-sulphide",
+"None of these"
+],
+"page": "",
+"q": "What compound is responsible for the bitterness in cucumber?",
+"serial": "17U0MEc-:1397",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1397"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A mutation that is always beneficial",
+"A mutation that affects multiple traits due to closely linked genes",
+"A mutation that is always dominant",
+"A mutation that occurs only once",
+"None of these"
+],
+"page": "",
+"q": "What is pleiotropy in the context of induced mutations?",
+"serial": "1UgnIe-g:614",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:614"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2n=14",
+"2n=28",
+"2n=21",
+"2n=42",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number of rose (Rosa spp.)?",
+"serial": "1sUgWsko:1462",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1462"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Actinomycetes",
+"Bacteria",
+"Fungi",
+"Algae",
+"None of these"
+],
+"page": "",
+"q": "Which microorganisms are responsible for the smell of soil after a fresh shower?",
+"serial": "1bxM1Q-4:1636",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1636"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Banana",
+"Apple",
+"Mango",
+"Pear",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is the highest ethylene producer?",
+"serial": "1YcJWVgW:1245",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1245"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1920",
+"1947",
+"1950",
+"1963",
+"None of these"
+],
+"page": "",
+"q": "In which year was the first power tiller designed?",
+"serial": "1sUgWsko:6080",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6080"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Gravel",
+"Peat",
+"Clay",
+"Vermiculite",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a substrate used in hydroponics?",
+"serial": "1sUgWsko:775",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:775"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Virus",
+"Bacteria",
+"Rickettsial parasite",
+"Fungus",
+"None of these"
+],
+"page": "",
+"q": "Anaplasmosis in cattle is caused by which type of pathogen?",
+"serial": "1sUgWsko:2851",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2851"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cyamopsis tetragonoloba",
+"Dolichos lablab",
+"Phaseolus lunatus",
+"Psophocarpus tetragonolobus",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is the scientific name of Cluster bean?",
+"serial": "1sUgWsko:1268",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1268"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Yellowing of leaves",
+"Dead hearts",
+"Wilting",
+"Stunted growth",
+"None of these"
+],
+"page": "",
+"q": "What is a typical symptom of sorghum shoot fly infestation in young plants?",
+"serial": "17U0MEc-:2011",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2011"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"5\u20117%",
+"8\u201110%",
+"10\u201112%",
+"15\u201118%",
+"None of these"
+],
+"page": "",
+"q": "What moisture content range is considered normal equilibrium for dried grains?",
+"serial": "1bxM1Q-4:4031",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4031"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Assam",
+"Telangana",
+"Gujarat",
+"Maharashtra",
+"None of these"
+],
+"page": "",
+"q": "Which state was the first to ratify the GST bill in India?",
+"serial": "128DIQLj:2427",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2427"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Exceptional growth and vigour seen in interspecific hybrids",
+"Increased fertility",
+"Superiority of hybrids over their parents",
+"Masking of harmful effects of recessive alleles",
+"None of these"
+],
+"page": "",
+"q": "What is the primary characteristic of luxuriance in hybrids?",
+"serial": "1UgnIe-g:232",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:232"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To provide nutrients to seeds",
+"To protect young roots from fungal and soil-borne diseases",
+"To increase seed germination rate",
+"To enhance seed color",
+"None of these"
+],
+"page": "",
+"q": "What is the main purpose of Bijamrita?",
+"serial": "1sUgWsko:4862",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4862"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1-10 ha",
+"10-100 ha",
+"100-1000 ha",
+"1000-10,000 ha",
+"None of these"
+],
+"page": "",
+"q": "What is the area range for a mini watershed?",
+"serial": "1bxM1Q-4:1098",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1098"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mahyco",
+"Monsanto",
+"Pro-Agro Seed Company Ltd.",
+"Punjab Agricultural University",
+"None of these"
+],
+"page": "",
+"q": "Which company developed the glyphosate-resistant mustard variety Dhara Mustard Hybrid-11 (DMH-11)?",
+"serial": "17U0MEc-:132",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:132"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Avikalin",
+"Bharat Merino",
+"Chokla",
+"Bonpala",
+"None of these"
+],
+"page": "",
+"q": "Which Indian sheep breed is found in southern Sikkim?",
+"serial": "1sUgWsko:3218",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3218"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Inceptisols",
+"Entisols",
+"Vertisols",
+"Oxisols",
+"None of these"
+],
+"page": "",
+"q": "Which soil order is named from the Latin word meaning 'beginning' and is the largest soil order worldwide?",
+"serial": "17U0MEc-:1107",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1107"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"The total cost of inputs.",
+"The price ratio of inputs.",
+"The Marginal Rate of Substitution (MRS).",
+"The level of output.",
+"None of these"
+],
+"page": "",
+"q": "What does the slope of an Isoquant represent?",
+"serial": "1bxM1Q-4:2298",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2298"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It is the primary host where the fungus completes its entire life cycle.",
+"It is a host where the fungus survives during off-seasons.",
+"It is a secondary host required to complete the rust cycle on more than one host.",
+"It is a host that the fungus does not infect.",
+"None of these"
+],
+"page": "",
+"q": "What is the role of an alternate host in the life cycle of a heteroecious fungus?",
+"serial": "1UgnIe-g:922",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:922"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.3%",
+"0.5%",
+"0.7%",
+"1.0%",
+"None of these"
+],
+"page": "",
+"q": "What is the minimum pectin content required for good quality jelly?",
+"serial": "1bxM1Q-4:3452",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3452"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pratylenchus colfeae",
+"Radopholus similis",
+"Meloidogyne javanica",
+"Heterodera cajani",
+"None of these"
+],
+"page": "",
+"q": "Which nematode is a pest of coffee in Karnataka, with robusta varieties showing resistance?",
+"serial": "1UgnIe-g:2513",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2513"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Punjab",
+"Rajasthan",
+"Uttar Pradesh",
+"Maharashtra",
+"None of these"
+],
+"page": "",
+"q": "Which state has the highest number of e-NAM markets?",
+"serial": "128DIQLj:2714",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2714"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Magur",
+"Koi",
+"Salmon",
+"Tilapia",
+"None of these"
+],
+"page": "",
+"q": "Which fish species listed is commonly found in both fresh and brackish water?",
+"serial": "1sUgWsko:2493",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2493"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bands of green tissue along the veins while the tissue between the veins become chlorotic.",
+"Yellowing and stunting of the host plant.",
+"Loss of rigidity and drooping of plant parts.",
+"Production of toxic compounds by microorganisms.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a characteristic feature of vein banding in plants?",
+"serial": "1bxM1Q-4:2563",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2563"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Formal upright",
+"Informal upright",
+"Spiral upright",
+"Clasped-to-stone",
+"None of these"
+],
+"page": "",
+"q": "Which style is NOT a recognized style of Bonsai?",
+"serial": "1bxM1Q-4:3376",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3376"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cryptoxanthin",
+"Chlorophyll",
+"Carotene",
+"Xanthophyll",
+"None of these"
+],
+"page": "",
+"q": "Which pigment is responsible for the yellow color in maize?",
+"serial": "17U0MEc-:592",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:592"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increase in seed rate",
+"Using mulching/mulches",
+"Spraying of urea solution",
+"Weeding and intercultural operations",
+"None of these"
+],
+"page": "",
+"q": "What practice helps in reducing the impact of early cessation of rains?",
+"serial": "1bxM1Q-4:1140",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1140"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Apple",
+"Banana",
+"Pomegranate",
+"Mango",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is typically cultivated in sub\u2011tropical regions?",
+"serial": "1YcJWVgW:126",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:126"
+}
+],
+"set_no": 8,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
@@ -25315,7 +26229,7 @@
 },
 "desk": {
 "handled": 123,
-"last": "2026-09-20T17:56:09+05:30",
+"last": "2026-09-20T17:55:48+05:30",
 "offset": 210522354,
 "payments": {
 "checked": 3,
