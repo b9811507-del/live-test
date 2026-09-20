@@ -23506,7 +23506,7 @@
 "bidx": 126,
 "cd": 0,
 "expl_in_poll": 5,
-"lock_ts": 1789895068.2037456,
+"lock_ts": 1789895071.6631699,
 "locked_by": "local-31059",
 "msg_ann": 29751,
 "names": {
@@ -23941,7 +23941,7 @@
 },
 "qidx": 5,
 "seeded_from": "2026-09-19",
-"sent_i": 4,
+"sent_i": 5,
 "skips": [],
 "started_at": "2026-09-20T14:31:17+05:30",
 "step": 2,
