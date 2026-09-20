@@ -23429,9 +23429,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 78,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 78,
+"built_at": "2026-09-20T10:56:09+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 19-24",
+"pages_blocks": [
+"19-20",
+"21-22",
+"23-24"
+],
+"questions": [
+{
+"expl": "World Water Day is celebrated on 22 March annually.",
+"key": 0,
+"o": [
+"World Water Day",
+"World Meteorological Day",
+"World Health Day",
+"Earth Day",
+"None of these"
+],
+"page": "19-20",
+"q": "Which observance falls on 22 March each year?",
+"serial": "111",
+"src_row": 59,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:111"
+},
+{
+"expl": "The International Year of Biodiversity was observed in 2010.",
+"key": 0,
+"o": [
+"Biodiversity",
+"Quinoa",
+"Soils",
+"Pulses",
+"None of these"
+],
+"page": "19-20",
+"q": "In 2010, the UN declared the International Year of ________?",
+"serial": "112",
+"src_row": 60,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:112"
+},
+{
+"expl": "By definition, 1 hectare equals 10,000 m\u00b2.",
+"key": 0,
+"o": [
+"10,000",
+"1,000",
+"100",
+"100,000",
+"None of these"
+],
+"page": "19-20",
+"q": "1 hectare is equal to how many square metres?",
+"serial": "113",
+"src_row": 61,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:113"
+},
+{
+"expl": "1 tonne (metric ton) equals 1000 kilograms.",
+"key": 0,
+"o": [
+"1000 kg",
+"907 kg",
+"454 g",
+"1016 kg",
+"None of these"
+],
+"page": "19-20",
+"q": "Which of the following is the metric equivalent of 1 tonne?",
+"serial": "114",
+"src_row": 62,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:114"
+},
+{
+"expl": "Standard conversion: 1 inch = 2.54 cm.",
+"key": 0,
+"o": [
+"2.54",
+"1.27",
+"3.28",
+"0.254",
+"None of these"
+],
+"page": "19-20",
+"q": "1 inch is equal to how many centimetres?",
+"serial": "115",
+"src_row": 63,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:115"
+},
+{
+"expl": "2023 was declared the International Year of Millets.",
+"key": 0,
+"o": [
+"International Year of Millets",
+"International Year of Camelids",
+"International Year of Fruits & Vegetables",
+"International Year of Plant Health",
+"None of these"
+],
+"page": "19-20",
+"q": "Which International Year was celebrated in 2023?",
+"serial": "116",
+"src_row": 64,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:116"
+},
+{
+"expl": "1 bar equals 100 kPa by definition.",
+"key": 1,
+"o": [
+"10 kPa",
+"100 kPa",
+"1000 kPa",
+"1 kPa",
+"None of these"
+],
+"page": "19-20",
+"q": "1 bar of pressure is equivalent to how many kilopascals?",
+"serial": "117",
+"src_row": 65,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "19-20:117"
+},
+{
+"expl": "1 ppm equals 0.0001%; thus 80 ppm = 80 \u00d7 0.0001% = 0.008%.",
+"key": 1,
+"o": [
+"0.08%",
+"0.008%",
+"0.0008%",
+"8%",
+"None of these"
+],
+"page": "21-22",
+"q": "A concentration of 80 ppm in water corresponds to what percentage?",
+"serial": "121",
+"src_row": 66,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "21-22:121"
+},
+{
+"expl": "Milk has a specific Jones factor of 6.38 as per the source.",
+"key": 3,
+"o": [
+"6.25",
+"5.83",
+"5.95",
+"6.38",
+"None of these"
+],
+"page": "21-22",
+"q": "Which Jones factor is used for converting nitrogen content to protein in milk?",
+"serial": "122",
+"src_row": 67,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "21-22:122"
+},
+{
+"expl": "Agronomic bio\u2011fortification involves soil and fertilisation techniques, e.g., applying micronutrient rich fertilizers.",
+"key": 1,
+"o": [
+"Genetic breeding of golden rice",
+"Application of micronutrient rich fertilizers",
+"Using high\u2011yield varieties of wheat",
+"Selective breeding for disease resistance",
+"None of these"
+],
+"page": "21-22",
+"q": "Which of the following is an agronomic approach to bio\u2011fortification?",
+"serial": "123",
+"src_row": 68,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "21-22:123"
+},
+{
+"expl": "The table lists milk availability as 459 g/day.",
+"key": 2,
+"o": [
+"Cereals",
+"Pulses",
+"Milk",
+"Eggs",
+"None of these"
+],
+"page": "21-22",
+"q": "According to ICMR\u2011NIN, which food group has an availability of 459 g/day in India?",
+"serial": "124",
+"src_row": 69,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "21-22:124"
+},
+{
+"expl": "Pusa Kiran is listed under newly released wheat varieties.",
+"key": 3,
+"o": [
+"Pusa Bahar",
+"Pusa Malvi",
+"Pusa Composite 701",
+"Pusa Kiran",
+"None of these"
+],
+"page": "21-22",
+"q": "Which of the following is a newly released wheat variety?",
+"serial": "125",
+"src_row": 70,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "21-22:125"
+},
+{
+"expl": "V.V. Dokuchaev is credited as the father of soil science & pedology.",
+"key": 1,
+"o": [
+"Pietro De Crescenzi",
+"V.V. Dokuchaev",
+"Justus Von Liebig",
+"K.L. Chadha",
+"None of these"
+],
+"page": "21-22",
+"q": "Who is regarded as the father of soil science (pedology)?",
+"serial": "126",
+"src_row": 71,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "21-22:126"
+},
+{
+"expl": "Zero tillage was introduced by Garber and Glubler, who advocated minimal soil disturbance.",
+"key": 0,
+"o": [
+"Garber/Glubler B. Triplets",
+"Jethro Tull",
+"E.H. Faulkner",
+"Subhash Palekar",
+"None of these"
+],
+"page": "23-24",
+"q": "Which pioneer is credited with the concept of \"Zero tillage\"?",
+"serial": "131",
+"src_row": 72,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "23-24:131"
+},
+{
+"expl": "Gericke is credited with introducing the term hydroponics for soil\u2011free cultivation.",
+"key": 0,
+"o": [
+"Gericke",
+"Jean Baptiste Boussingault",
+"C.T. Patel",
+"C.D. Mayee",
+"None of these"
+],
+"page": "23-24",
+"q": "Who is the scientist that coined the term \"Hydroponics\"?",
+"serial": "132",
+"src_row": 73,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "23-24:132"
+},
+{
+"expl": "Yuan Longping pioneered hybrid rice varieties, earning him the title \"Father of Hybrid Rice.\"",
+"key": 0,
+"o": [
+"Yuan Longping",
+"Dr. Gurdev Singh Khush",
+"E.A. Siddiq",
+"Subrahmaniam Nagarajan",
+"None of these"
+],
+"page": "23-24",
+"q": "Which individual is known worldwide for developing \"Hybrid rice\"?",
+"serial": "133",
+"src_row": 74,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "23-24:133"
+},
+{
+"expl": "Albert Howard developed the Indore method of composting, a cornerstone of organic farming.",
+"key": 0,
+"o": [
+"Albert Howard",
+"Rudolf Steiner",
+"Masanobu Fukuoka",
+"P.R. Pisharoty",
+"None of these"
+],
+"page": "23-24",
+"q": "The \"Modern Composting (Indore Method)\" is attributed to which scientist?",
+"serial": "134",
+"src_row": 75,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "23-24:134"
+},
+{
+"expl": "Winogradsky discovered the role of microorganisms in fixing atmospheric nitrogen into soil.",
+"key": 0,
+"o": [
+"Winogradsky",
+"Karl Landsteiner",
+"R.A. Fisher",
+"G.D. Smith",
+"None of these"
+],
+"page": "23-24",
+"q": "Nitrogen fixation is a process first described by which scientist?",
+"serial": "135",
+"src_row": 76,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "23-24:135"
+},
+{
+"expl": "E.J. Butler is recognized for contributions to plant pathology in India.",
+"key": 0,
+"o": [
+"E.J. Butler",
+"Robert Harting",
+"Anton De Barry",
+"P.A. Micheli",
+"None of these"
+],
+"page": "23-24",
+"q": "\"Plant Pathology (India)\" is associated with which individual?",
+"serial": "136",
+"src_row": 77,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "23-24:136"
+}
+],
+"rolled": false,
+"row_from": 59,
+"row_to": 78,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 59,
+"seeded_from": "2026-09-19",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-19",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
