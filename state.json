@@ -6,7 +6,7 @@
 "step": 0
 },
 "agent_issues": [],
-"agent_last": "2026-09-20T10:55:37+05:30",
+"agent_last": "2026-09-20T11:14:08+05:30",
 "booksend": {},
 "days": {
 "2026-09-13": {
@@ -24418,7 +24418,7 @@
 },
 "desk_last": {
 "handled": 0,
-"offset": 210521462,
+"offset": 210521960,
 "payments": {
 "checked": 3,
 "expired": 0,
