@@ -24407,14 +24407,17 @@
 },
 "desk": {
 "handled": 123,
-"last": "2026-09-20T12:24:10+05:30",
+"last": "2026-09-20T12:23:27+05:30",
 "offset": 210521960,
 "payments": {
 "checked": 3,
 "expired": 0,
 "issued": 0
 },
-"seen": []
+"seen": [
+"620530627"
+],
+"webhook_last": "2026-09-20T12:23:55+05:30"
 },
 "desk_last": {
 "handled": 0,
@@ -24611,7 +24614,7 @@
 "key": "nemraj",
 "name": "Krishna",
 "short_url": "https://rzp.io/rzp/b0KQqwU",
-"status": "created",
+"status": "superseded",
 "title": "NEMRAJ SUNDA BOOK BATCH",
 "uid": "1138783169"
 },
@@ -24737,6 +24740,17 @@
 "status": "created",
 "title": "RK SHARMA BOOK BATCH",
 "uid": "1420601420"
+},
+"plink_TeCPsZdjbIxqXl": {
+"amount": 99,
+"at": "2026-09-20T12:24:03+05:30",
+"created_ts": 1789887243,
+"key": "nemraj",
+"name": "Krishna",
+"short_url": "https://rzp.io/rzp/fU9IpXn",
+"status": "created",
+"title": "NEMRAJ SUNDA BOOK BATCH",
+"uid": "1138783169"
 }
 },
 "msg_2026-09-15_iari": 29165,
