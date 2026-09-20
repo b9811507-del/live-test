@@ -23818,11 +23818,15 @@
 "978174619": 3
 }
 },
+"answered_total": 351,
 "bidx": 126,
 "cd": 0,
 "expl_in_poll": 21,
 "last_off": 210522354,
+"lb_parts": 1,
 "lb_parts_sent": 1,
+"lb_rows": 32,
+"lb_sent": true,
 "lock_ts": 1789895685.8938622,
 "locked_by": "local-31059",
 "msg_ann": 29751,
@@ -24263,6 +24267,7 @@
 "bidx": 105,
 "seeded_from": "2026-09-19"
 },
+"players": 32,
 "poll_ids": {
 "0": "6159099955639223464",
 "1": "6159099955639223465",
@@ -24292,7 +24297,7 @@
 "sent_i": 20,
 "skips": [],
 "started_at": "2026-09-20T14:31:17+05:30",
-"step": 3,
+"step": 4,
 "unpinned": [
 29092,
 29102,
