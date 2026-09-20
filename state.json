@@ -23423,8 +23423,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 126,
 "names": {},
+"plan": {
+"bidx_next": 126,
+"built_at": "2026-09-20T14:26:10+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 16-18",
+"pages_list": [
+16,
+17,
+18
+],
+"questions": [
+{
+"expl": "Water soluble SSP/OAP placed close to the root zone provides immediate availability of nutrients, making it more efficient than broadcasting.",
+"key": 0,
+"o": [
+"more efficient than broadcasting",
+"less efficient than broadcasting",
+"equally efficient as broadcasting",
+"only efficient when combined with rock phosphate",
+"None of these"
+],
+"page": "16",
+"q": "Placement of water soluble SSP/OAP near the root zone is",
+"serial": "106",
+"src_row": 105,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:106"
+},
+{
+"expl": "Rock phosphate\u2019s efficiency is lower in acid soils, but combining it with pyrites can enhance its effectiveness.",
+"key": 1,
+"o": [
+"Rock phosphate is highly efficient in acid soils",
+"Using rock phosphate with pyrites can improve its efficiency",
+"Rock phosphate should be avoided in all soils",
+"Rock phosphate is most efficient in alkaline soils",
+"None of these"
+],
+"page": "16",
+"q": "Which statement about rock phosphate in acid soils is correct?",
+"serial": "107",
+"src_row": 106,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:107"
+},
+{
+"expl": "Irrigated wheat requires a higher nitrogen input of 120-150 kg/ha to meet its growth demands.",
+"key": 1,
+"o": [
+"40-60 kg/ha",
+"120-150 kg/ha",
+"200-250 kg/ha",
+"80-100 kg/ha",
+"None of these"
+],
+"page": "16",
+"q": "What is the recommended nitrogen rate for irrigated wheat?",
+"serial": "108",
+"src_row": 107,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:108"
+},
+{
+"expl": "Ammonium sulfate is more suitable than urea in calcareous or alkaline soils due to its lower pH impact.",
+"key": 1,
+"o": [
+"Urea",
+"Ammonium sulfate",
+"Ammonium nitrate",
+"Urea + ammonium sulfate",
+"None of these"
+],
+"page": "16",
+"q": "In calcareous or highly alkaline soils, which nitrogen source is preferable?",
+"serial": "109",
+"src_row": 108,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:109"
+},
+{
+"expl": "For acute Zn deficiency, 25 kg/ha of ZnSO4 is applied, often with a 0.5% foliar spray.",
+"key": 2,
+"o": [
+"5 kg/ha",
+"15 kg/ha",
+"25 kg/ha",
+"35 kg/ha",
+"None of these"
+],
+"page": "16",
+"q": "A leaf zinc concentration below 10 ppm indicates acute deficiency. What is the recommended application rate of ZnSO4?",
+"serial": "110",
+"src_row": 109,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:110"
+},
+{
+"expl": "Excess phosphorus competes with zinc for absorption sites, thereby interfering with zinc uptake.",
+"key": 2,
+"o": [
+"Increase zinc uptake",
+"No effect on zinc uptake",
+"Interfere with zinc uptake",
+"Reduce phosphorus uptake",
+"None of these"
+],
+"page": "16",
+"q": "High phosphorus levels in soil have what effect on zinc uptake?",
+"serial": "111",
+"src_row": 110,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:111"
+},
+{
+"expl": "Weed competition is most intense between 30-40 days after sowing, guiding weeding schedules.",
+"key": 2,
+"o": [
+"10-20 DAS",
+"20-30 DAS",
+"30-40 DAS",
+"40-50 DAS",
+"None of these"
+],
+"page": "16",
+"q": "The critical period of weed competition in wheat occurs at what days after sowing?",
+"serial": "112",
+"src_row": 111,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "16:112"
+},
+{
+"expl": "Tillering in wheat occurs at 40-45 DAS, which is a crucial vegetative stage where the plant produces additional stems.",
+"key": 1,
+"o": [
+"Germination",
+"Tillering",
+"Jointing",
+"CRI",
+"None of these"
+],
+"page": "17",
+"q": "Which growth stage of wheat occurs at 40-45 DAS?",
+"serial": "113",
+"src_row": 112,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:113"
+},
+{
+"expl": "Jointing is the stage where peak plant growth and internode elongation occur, typically between 45-60 DAS.",
+"key": 2,
+"o": [
+"Germination",
+"Tillering",
+"Jointing",
+"Boot leaf",
+"None of these"
+],
+"page": "17",
+"q": "During which stage does peak plant growth and internode elongation occur in wheat?",
+"serial": "114",
+"src_row": 113,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:114"
+},
+{
+"expl": "Flowering in wheat occurs at 85-90 DAS, marking the beginning of the reproductive stages.",
+"key": 1,
+"o": [
+"70-75 DAS",
+"85-90 DAS",
+"100-105 DAS",
+"105-110 DAS",
+"None of these"
+],
+"page": "17",
+"q": "At what stage does flowering occur in wheat?",
+"serial": "115",
+"src_row": 114,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:115"
+},
+{
+"expl": "The North Western Plains Zone is identified as the zone with the highest area for wheat improvement and coordination.",
+"key": 1,
+"o": [
+"Northern Hills Zone",
+"North Western Plains Zone",
+"North Eastern Plains Zone",
+"Southern Plains Zone",
+"None of these"
+],
+"page": "17",
+"q": "Which zone in India has the highest area for wheat improvement and coordination?",
+"serial": "116",
+"src_row": 115,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:116"
+},
+{
+"expl": "The germination stage in wheat lasts for 5-7 days, which is the initial stage of growth.",
+"key": 0,
+"o": [
+"5-7 days",
+"10-15 days",
+"20-25 days",
+"30-35 days",
+"None of these"
+],
+"page": "17",
+"q": "What is the duration for the germination stage in wheat?",
+"serial": "117",
+"src_row": 116,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:117"
+},
+{
+"expl": "The boot leaf stage in wheat occurs at 70-75 DAS, indicating the transition to reproductive stages.",
+"key": 0,
+"o": [
+"70-75 DAS",
+"85-90 DAS",
+"100-105 DAS",
+"105-110 DAS",
+"None of these"
+],
+"page": "17",
+"q": "Which stage of wheat growth is characterized by the development of the boot leaf?",
+"serial": "118",
+"src_row": 117,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:118"
+},
+{
+"expl": "Wheat reaches maturity at 115-120 DAS, which is the final stage of its growth cycle.",
+"key": 3,
+"o": [
+"100-105 DAS",
+"105-110 DAS",
+"110-115 DAS",
+"115-120 DAS",
+"None of these"
+],
+"page": "17",
+"q": "At what stage does wheat reach maturity?",
+"serial": "119",
+"src_row": 118,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "17:119"
+},
+{
+"expl": "The most critical stage for irrigation in wheat cultivation is the Crown Root Initiation (CRI) stage, which occurs 20-25 days after sowing (DAS).",
+"key": 1,
+"o": [
+"Flowering",
+"Crown Root Initiation (CRI)",
+"Jointing",
+"Milk stage",
+"None of these"
+],
+"page": "18",
+"q": "Which stage is the most critical for irrigation in wheat cultivation?",
+"serial": "120",
+"src_row": 119,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:120"
+},
+{
+"expl": "The appropriate IW:CPE ratio for wheat is 0.7-0.9, which ensures optimal water usage for wheat cultivation.",
+"key": 1,
+"o": [
+"0.5-0.7",
+"0.7-0.9",
+"0.9-1.1",
+"1.1-1.3",
+"None of these"
+],
+"page": "18",
+"q": "What is the appropriate Irrigation Water (IW) to Cumulative Pan Evaporation (CPE) ratio for wheat?",
+"serial": "121",
+"src_row": 120,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:121"
+},
+{
+"expl": "Gluten is essential for baking as it provides the necessary structure and texture to baked goods.",
+"key": 1,
+"o": [
+"Enhancing nutritional value",
+"Essential for baking",
+"Increasing protein content",
+"Improving storage life",
+"None of these"
+],
+"page": "18",
+"q": "What is the primary function of gluten in wheat?",
+"serial": "122",
+"src_row": 121,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:122"
+},
+{
+"expl": "For safe storage, the moisture content of wheat grains should range from 10-12% to prevent spoilage and maintain quality.",
+"key": 2,
+"o": [
+"5-7%",
+"8-10%",
+"10-12%",
+"13-15%",
+"None of these"
+],
+"page": "18",
+"q": "What is the safe moisture content range for storing wheat grains?",
+"serial": "123",
+"src_row": 122,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:123"
+},
+{
+"expl": "A higher Pearl Index (P.I.) value indicates lower kernel hardness in wheat.",
+"key": 1,
+"o": [
+"Higher protein content",
+"Lower kernel hardness",
+"Better baking quality",
+"Higher moisture content",
+"None of these"
+],
+"page": "18",
+"q": "What does a higher Pearl Index (P.I.) value indicate in wheat?",
+"serial": "124",
+"src_row": 123,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:124"
+},
+{
+"expl": "The spike in wheat is held by the flag leaf, which is the last leaf to emerge.",
+"key": 2,
+"o": [
+"First leaf",
+"Second leaf",
+"Flag leaf",
+"Last leaf",
+"None of these"
+],
+"page": "18",
+"q": "Which leaf holds the spike in wheat?",
+"serial": "125",
+"src_row": 124,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:125"
+},
+{
+"expl": "The water requirement for wheat cultivation ranges from 550-650 mm to ensure proper growth and development.",
+"key": 2,
+"o": [
+"350-450 mm",
+"450-550 mm",
+"550-650 mm",
+"650-750 mm",
+"None of these"
+],
+"page": "18",
+"q": "What is the water requirement for wheat cultivation?",
+"serial": "126",
+"src_row": 125,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "18:126"
+}
+],
+"row_from": 105,
+"row_to": 126,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 105,
+"seeded_from": "2026-09-19"
+},
 "qidx": 0,
+"seeded_from": "2026-09-19",
+"skips": [],
 "step": 0
 },
 "malwa": {
@@ -24407,7 +24812,7 @@
 },
 "desk": {
 "handled": 123,
-"last": "2026-09-20T14:26:09+05:30",
+"last": "2026-09-20T14:25:48+05:30",
 "offset": 210521960,
 "payments": {
 "checked": 4,
