@@ -25314,18 +25314,15 @@
 }
 },
 "desk": {
-"handled": 124,
-"last": "2026-09-20T16:31:30+05:30",
+"handled": 123,
+"last": "2026-09-20T16:31:48+05:30",
 "offset": 210522354,
 "payments": {
 "checked": 3,
 "expired": 0,
 "issued": 0
 },
-"seen": [
-"620530629"
-],
-"webhook_last": "2026-09-20T16:31:48+05:30"
+"seen": []
 },
 "desk_last": {
 "handled": 0,
