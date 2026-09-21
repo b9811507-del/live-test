@@ -32369,6 +32369,7 @@
 "bidx": 98,
 "cd": 0,
 "congrats_sent": 29868,
+"cta_sent": "off",
 "expl_in_poll": 20,
 "file_msg": 29869,
 "file_sent": "MALWA_VOL_1_p25-30_20Q_2026-09-21.html",
@@ -33009,6 +33010,11 @@
 "id": 29750,
 "job": "malwa"
 },
+"day_2026-09-21_-1003784795446_malwa": {
+"at": "2026-09-21T11:14:53+05:30",
+"id": 29871,
+"job": "malwa"
+},
 "links": {
 "plink_TcHiU66tDPmW11": {
 "amount": 251,
@@ -33222,7 +33228,8 @@
 "msg_2026-09-19_malwa": 29663,
 "msg_2026-09-20_afo": 29839,
 "msg_2026-09-20_malwa": 29750,
-"posted_at": "2026-09-20T18:34:19+05:30",
+"msg_2026-09-21_malwa": 29871,
+"posted_at": "2026-09-21T11:14:53+05:30",
 "users": {
 "1138783169": {
 "batches": {
