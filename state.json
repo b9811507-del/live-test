@@ -30789,7 +30789,7 @@
 }
 },
 "desk": {
-"handled": 130,
+"handled": 129,
 "last": "2026-09-21T14:46:51+05:30",
 "offset": 210525874,
 "payments": {
@@ -30797,10 +30797,7 @@
 "expired": 0,
 "issued": 0
 },
-"seen": [
-"620530643"
-],
-"webhook_last": "2026-09-21T14:47:11+05:30"
+"seen": []
 },
 "desk_last": {
 "handled": 0,
