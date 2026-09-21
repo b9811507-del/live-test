@@ -32491,11 +32491,15 @@
 "991560184": 1
 }
 },
+"answered_total": 604,
 "bidx": 147,
 "cd": 0,
 "expl_in_poll": 21,
 "last_off": 210525874,
+"lb_parts": 2,
 "lb_parts_sent": 2,
+"lb_rows": 39,
+"lb_sent": true,
 "lock_ts": 1789982119.1851616,
 "locked_by": "local-62474",
 "msg_ann": 29873,
@@ -32943,6 +32947,7 @@
 "bidx": 126,
 "seeded_from": "2026-09-20"
 },
+"players": 39,
 "poll_ids": {
 "0": "6163603555266593531",
 "1": "6163603555266593532",
@@ -32972,7 +32977,7 @@
 "sent_i": 20,
 "skips": [],
 "started_at": "2026-09-21T14:31:33+05:30",
-"step": 3,
+"step": 4,
 "unpinned": [
 29092,
 29102,
