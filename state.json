@@ -29628,8 +29628,8 @@
 },
 "cd": 0,
 "expl_in_poll": 0,
-"lock_ts": 0,
-"locked_by": "",
+"lock_ts": 1789995272.7680159,
+"locked_by": "local-3318",
 "msg_ann": 29904,
 "names": {
 "1027390571": "Sns",
