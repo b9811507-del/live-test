@@ -30790,7 +30790,7 @@
 },
 "desk": {
 "handled": 129,
-"last": "2026-09-21T17:22:13+05:30",
+"last": "2026-09-21T17:21:51+05:30",
 "offset": 210525874,
 "payments": {
 "checked": 0,
@@ -31146,6 +31146,17 @@
 "status": "created",
 "title": "NEMRAJ SUNDA BOOK BATCH",
 "uid": "1138783169"
+},
+"plink_Teg22z5S0JsEU2": {
+"amount": 99,
+"at": "2026-09-21T17:22:18+05:30",
+"created_ts": 1789991538,
+"key": "nemraj",
+"name": "Harsh",
+"short_url": "https://rzp.io/rzp/6Ze34UGS",
+"status": "created",
+"title": "NEMRAJ SUNDA BOOK BATCH",
+"uid": "5669857616"
 }
 },
 "msg_2026-09-15_iari": 29165,
