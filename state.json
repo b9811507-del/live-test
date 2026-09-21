@@ -31849,15 +31849,408 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 98,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 98,
+"built_at": "2026-09-21T10:56:13+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 25-30",
+"pages_blocks": [
+"25-26",
+"27",
+"29-30"
+],
+"questions": [
+{
+"expl": "Alec Jeffrey is listed in the source as the contributor associated with DNA fingerprinting.",
+"key": 0,
+"o": [
+"Alec Jeffrey",
+"Louis Pasteur",
+"Paul Berg",
+"Carl Correns",
+"None of these"
+],
+"page": "25-26",
+"q": "Which scientist is credited with the development of DNA fingerprinting?",
+"serial": "141",
+"src_row": 78,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:141"
+},
+{
+"expl": "The source defines epiphytes as plants growing on another plant for support but not obtaining nutrition from it.",
+"key": 0,
+"o": [
+"Epiphytes",
+"Halophytes",
+"Lithophytes",
+"Pterophytes",
+"None of these"
+],
+"page": "25-26",
+"q": "Plants that grow on another plant for physical support without extracting nutrients are called:",
+"serial": "142",
+"src_row": 79,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:142"
+},
+{
+"expl": "Active remote sensing is described as the sensor emitting its own radiation and measuring the reflected energy.",
+"key": 0,
+"o": [
+"Emits its own radiation and measures backscatter",
+"Relies on sunlight reflected from the target",
+"Measures soil pH directly",
+"Uses only thermal infrared radiation",
+"None of these"
+],
+"page": "25-26",
+"q": "In active remote sensing, the sensor:",
+"serial": "143",
+"src_row": 80,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:143"
+},
+{
+"expl": "The source lists basophiles as plants preferring alkali soil.",
+"key": 0,
+"o": [
+"Basophiles",
+"Acidophiles",
+"Halophytes",
+"Cryophytes",
+"None of these"
+],
+"page": "25-26",
+"q": "Plants that prefer alkaline (basic) soils are termed:",
+"serial": "144",
+"src_row": 81,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:144"
+},
+{
+"expl": "According to the source, Hoagland and Arnon formulated the Hoagland solution in 1950.",
+"key": 1,
+"o": [
+"1930",
+"1950",
+"1965",
+"1972",
+"None of these"
+],
+"page": "25-26",
+"q": "The \"Hoagland solution\" used in hydroponics was formulated in which year?",
+"serial": "145",
+"src_row": 82,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:145"
+},
+{
+"expl": "Lithophytes are defined in the source as plants growing on rock surfaces.",
+"key": 0,
+"o": [
+"Lithophytes",
+"Psammophytes",
+"Phreatophytes",
+"Chasmophytes",
+"None of these"
+],
+"page": "25-26",
+"q": "Which classification refers to plants that grow directly on rock surfaces?",
+"serial": "146",
+"src_row": 83,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:146"
+},
+{
+"expl": "Aeroponics involves roots suspended in air and periodically misted, unlike hydroponics where roots are immersed in water.",
+"key": 0,
+"o": [
+"Roots are suspended in air and misted with nutrient solution",
+"Roots are immersed in a nutrient\u2011rich water solution",
+"It requires a soil medium for support",
+"It uses only natural rainfall for irrigation",
+"None of these"
+],
+"page": "25-26",
+"q": "Aeroponics primarily differs from hydroponics because:",
+"serial": "147",
+"src_row": 84,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "25-26:147"
+},
+{
+"expl": "Pest and disease detection is listed as a specific remote sensing application that uses hyperspectral imaging for early identification.",
+"key": 1,
+"o": [
+"Crop health monitoring",
+"Pest and disease detection",
+"Yield prediction",
+"Water management",
+"None of these"
+],
+"page": "27",
+"q": "Which remote sensing application is primarily used for early detection of pest and disease?",
+"serial": "151",
+"src_row": 85,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:151"
+},
+{
+"expl": "Passive remote sensing relies on natural energy, with infrared radiation being the main source of EMR for such sensors.",
+"key": 1,
+"o": [
+"Sun",
+"Infrared radiation",
+"Visible light",
+"Microwave",
+"None of these"
+],
+"page": "27",
+"q": "What is the primary source of electromagnetic radiation used in passive remote sensing?",
+"serial": "152",
+"src_row": 86,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:152"
+},
+{
+"expl": "Precision agriculture uses technology like GPS, VRT, and smart farming; manual labor is not a technological component.",
+"key": 2,
+"o": [
+"GPS based farming",
+"Variable rate technology",
+"Manual labor",
+"Smart farming",
+"None of these"
+],
+"page": "27",
+"q": "Which of the following is NOT a component of precision agriculture?",
+"serial": "153",
+"src_row": 87,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:153"
+},
+{
+"expl": "\"Agros\" means field and \"Nomos\" means to manage, describing field management in agriculture.",
+"key": 1,
+"o": [
+"Field and law",
+"Field and manage",
+"Plant and soil",
+"Water and crops",
+"None of these"
+],
+"page": "27",
+"q": "The term \"Agronomy\" originates from Greek words meaning what?",
+"serial": "154",
+"src_row": 88,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:154"
+},
+{
+"expl": "Russia launched Sputnik 1 in 1957, the first satellite into space.",
+"key": 1,
+"o": [
+"USA",
+"Russia",
+"India",
+"China",
+"None of these"
+],
+"page": "27",
+"q": "Which country first launched a satellite into space?",
+"serial": "155",
+"src_row": 89,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:155"
+},
+{
+"expl": "Intra-row spacing is defined as the distance between plants within the same row.",
+"key": 1,
+"o": [
+"Rows of crops",
+"Plants within a row",
+"Plants between rows",
+"Soil layers",
+"None of these"
+],
+"page": "27",
+"q": "In crop geometry, intra-row spacing refers to the distance between?",
+"serial": "156",
+"src_row": 90,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:156"
+},
+{
+"expl": "The National Remote Sensing Centre (NRSC) is located in Hyderabad.",
+"key": 1,
+"o": [
+"ISRO",
+"NRSC",
+"Indian Institute of Remote Sensing",
+"Indian Space Program",
+"None of these"
+],
+"page": "27",
+"q": "Which organization is situated in Hyderabad?",
+"serial": "157",
+"src_row": 91,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "27:157"
+},
+{
+"expl": "The ranking lists Wheat > Barley > Bajra > Sorghum > Maize > Rice, making Wheat the top protein\u2011rich cereal.",
+"key": 0,
+"o": [
+"Wheat",
+"Barley",
+"Bajra",
+"Sorghum",
+"None of these"
+],
+"page": "29-30",
+"q": "Which cereal ranks highest in protein content according to the given ranking?",
+"serial": "161",
+"src_row": 92,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29-30:161"
+},
+{
+"expl": "The source states that lysine is the first limiting amino acid in cereals.",
+"key": 0,
+"o": [
+"Lysine",
+"Methionine",
+"Threonine",
+"Tryptophan",
+"None of these"
+],
+"page": "29-30",
+"q": "What is the first limiting amino acid in cereals?",
+"serial": "162",
+"src_row": 93,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29-30:162"
+},
+{
+"expl": "Pulses are noted as good sources of lysine but are deficient in methionine, the opposite of cereals.",
+"key": 0,
+"o": [
+"Methionine",
+"Lysine",
+"Phenylalanine",
+"Isoleucine",
+"None of these"
+],
+"page": "29-30",
+"q": "Pulses are relatively deficient in which essential amino acid compared to cereals?",
+"serial": "163",
+"src_row": 94,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29-30:163"
+},
+{
+"expl": "The rule recommends sowing depth 3\u20114 times the seed diameter; 2 mm \u00d73\u20114 = 6\u20118 mm.",
+"key": 1,
+"o": [
+"4\u20116 mm",
+"6\u20118 mm",
+"8\u201110 mm",
+"10\u201112 mm",
+"None of these"
+],
+"page": "29-30",
+"q": "A seed with a diameter of 2 mm should be sown at approximately what depth, following the thumb rule?",
+"serial": "164",
+"src_row": 95,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29-30:164"
+},
+{
+"expl": "Seeds with higher reserves can support seedling growth longer, allowing deeper sowing.",
+"key": 2,
+"o": [
+"Small seed size",
+"Low seed reserves",
+"High seed reserves",
+"Low moisture availability",
+"None of these"
+],
+"page": "29-30",
+"q": "Which factor enables a seed to be sown deeper than usual?",
+"serial": "165",
+"src_row": 96,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29-30:165"
+},
+{
+"expl": "Cereal comes from the Roman word Ceres, the goddess of grain.",
+"key": 1,
+"o": [
+"Venus",
+"Ceres",
+"Juno",
+"Minerva",
+"None of these"
+],
+"page": "29-30",
+"q": "The word \"cereal\" is derived from the name of which Roman goddess?",
+"serial": "166",
+"src_row": 97,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29-30:166"
+}
+],
+"rolled": false,
+"row_from": 78,
+"row_to": 98,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 78,
+"seeded_from": "2026-09-20",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-20",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
 "desk": {
 "handled": 124,
-"last": "2026-09-21T10:56:12+05:30",
+"last": "2026-09-21T10:55:50+05:30",
 "offset": 210524661,
 "payments": {
 "checked": 1,
