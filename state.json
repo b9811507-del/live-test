@@ -31843,8 +31843,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 147,
 "names": {},
+"plan": {
+"bidx_next": 147,
+"built_at": "2026-09-21T14:26:14+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 19-21",
+"pages_list": [
+19,
+20,
+21
+],
+"questions": [
+{
+"expl": "The average yield of wheat in India is 30 q/ha as stated in the source.",
+"key": 0,
+"o": [
+"30 q/ha",
+"40 q/ha",
+"25 q/ha",
+"35 q/ha",
+"None of these"
+],
+"page": "19",
+"q": "What is the average yield of wheat in India?",
+"serial": "127",
+"src_row": 126,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:127"
+},
+{
+"expl": "Yellow and dry straw is mentioned as the visual indicator of ripening in wheat.",
+"key": 1,
+"o": [
+"Green and moist straw",
+"Yellow and dry straw",
+"Brown and wet straw",
+"Black and dry straw",
+"None of these"
+],
+"page": "19",
+"q": "What is the visual indicator of ripening in wheat?",
+"serial": "128",
+"src_row": 127,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:128"
+},
+{
+"expl": "The moisture content at the harvesting stage in wheat is 25-30% as per the source.",
+"key": 2,
+"o": [
+"15-20%",
+"20-25%",
+"25-30%",
+"30-35%",
+"None of these"
+],
+"page": "19",
+"q": "What is the moisture content at the harvesting stage in wheat?",
+"serial": "129",
+"src_row": 128,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:129"
+},
+{
+"expl": "The grain to straw ratio in Mexican dwarf wheat is 1 : 1.5.",
+"key": 1,
+"o": [
+"1 : 1",
+"1 : 1.5",
+"1 : 2",
+"1 : 2.5",
+"None of these"
+],
+"page": "19",
+"q": "What is the grain to straw ratio in Mexican dwarf wheat?",
+"serial": "130",
+"src_row": 129,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:130"
+},
+{
+"expl": "The harvest index of wheat is 40-45% as mentioned in the source.",
+"key": 2,
+"o": [
+"30-35%",
+"35-40%",
+"40-45%",
+"45-50%",
+"None of these"
+],
+"page": "19",
+"q": "What is the harvest index of wheat?",
+"serial": "131",
+"src_row": 130,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:131"
+},
+{
+"expl": "The yield of wheat under rainfed conditions is 20-25 q/ha.",
+"key": 1,
+"o": [
+"15-20 q/ha",
+"20-25 q/ha",
+"25-30 q/ha",
+"30-35 q/ha",
+"None of these"
+],
+"page": "19",
+"q": "What is the yield of wheat under rainfed conditions?",
+"serial": "132",
+"src_row": 131,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:132"
+},
+{
+"expl": "The yield of wheat in irrigated areas is 40-45 q/ha as per the source.",
+"key": 1,
+"o": [
+"35-40 q/ha",
+"40-45 q/ha",
+"45-50 q/ha",
+"50-55 q/ha",
+"None of these"
+],
+"page": "19",
+"q": "What is the yield of wheat in irrigated areas?",
+"serial": "133",
+"src_row": 132,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "19:133"
+},
+{
+"expl": "The botanical name of maize is Zea mays, as explicitly stated in the source.",
+"key": 0,
+"o": [
+"Zea mays",
+"Oryza sativa",
+"Triticum aestivum",
+"Sorghum bicolor",
+"None of these"
+],
+"page": "20",
+"q": "What is the botanical name of maize?",
+"serial": "134",
+"src_row": 133,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:134"
+},
+{
+"expl": "The source explicitly mentions that Bihar is the state where rabi maize is extensively grown.",
+"key": 1,
+"o": [
+"Punjab",
+"Bihar",
+"Haryana",
+"Uttar Pradesh",
+"None of these"
+],
+"page": "20",
+"q": "Which state in India is known for extensively growing rabi maize?",
+"serial": "135",
+"src_row": 134,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:135"
+},
+{
+"expl": "The source states that the protein found in maize is called zein.",
+"key": 1,
+"o": [
+"Gluten",
+"Zein",
+"Casein",
+"Albumin",
+"None of these"
+],
+"page": "20",
+"q": "What is the primary protein found in maize?",
+"serial": "136",
+"src_row": 135,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:136"
+},
+{
+"expl": "The source explicitly mentions that the chromosome number of maize is 2n=20.",
+"key": 1,
+"o": [
+"2n=10",
+"2n=20",
+"2n=30",
+"2n=40",
+"None of these"
+],
+"page": "20",
+"q": "What is the chromosome number of maize?",
+"serial": "137",
+"src_row": 136,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:137"
+},
+{
+"expl": "The source states that White Bud in maize is caused by Zinc deficiency.",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Zinc",
+"Potassium",
+"None of these"
+],
+"page": "20",
+"q": "Which nutrient deficiency in maize causes White Bud?",
+"serial": "138",
+"src_row": 137,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:138"
+},
+{
+"expl": "The source explicitly mentions that the water requirement for maize is 600-800mm during its 100-day crop cycle.",
+"key": 2,
+"o": [
+"400-500mm",
+"500-600mm",
+"600-800mm",
+"800-1000mm",
+"None of these"
+],
+"page": "20",
+"q": "What is the water requirement for maize during its 100-day crop cycle?",
+"serial": "139",
+"src_row": 138,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:139"
+},
+{
+"expl": "The source mentions that maize is known as the Queen of cereals.",
+"key": 2,
+"o": [
+"King of cereals",
+"Prince of cereals",
+"Queen of cereals",
+"Emperor of cereals",
+"None of these"
+],
+"page": "20",
+"q": "What is maize commonly known as in the context of cereals?",
+"serial": "140",
+"src_row": 139,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "20:140"
+},
+{
+"expl": "Dent corn accounts for about 95% of production in the USA.",
+"key": 1,
+"o": [
+"Flint corn",
+"Dent corn",
+"Sweet corn",
+"Flour corn",
+"None of these"
+],
+"page": "21",
+"q": "Which type of corn is predominantly cultivated in the USA?",
+"serial": "141",
+"src_row": 140,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:141"
+},
+{
+"expl": "Sweet corn is the sweetest among all and is harvested at about 70% moisture with 20% of dry matter being sugar.",
+"key": 2,
+"o": [
+"Flint corn",
+"Dent corn",
+"Sweet corn",
+"Flour corn",
+"None of these"
+],
+"page": "21",
+"q": "Which corn variety is known for its high sugar content and is harvested at about 70% moisture?",
+"serial": "142",
+"src_row": 141,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:142"
+},
+{
+"expl": "Flour corn is characterized by a kernel that is largely composed of soft starch with little or no hard starch.",
+"key": 3,
+"o": [
+"Flint corn",
+"Dent corn",
+"Sweet corn",
+"Flour corn",
+"None of these"
+],
+"page": "21",
+"q": "Which type of corn is characterized by a kernel that is largely composed of soft starch?",
+"serial": "143",
+"src_row": 142,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:143"
+},
+{
+"expl": "Waxy corn is primarily used in textile and paper sizing due to its waxy appearance and unique starch composition.",
+"key": 1,
+"o": [
+"Food products like corn flakes",
+"Textile and paper sizing",
+"Preparing popcorn",
+"Animal feed",
+"None of these"
+],
+"page": "21",
+"q": "What is the primary use of waxy corn?",
+"serial": "144",
+"src_row": 143,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:144"
+},
+{
+"expl": "Popcorn swells and bursts when heated to 170\u00b0C.",
+"key": 2,
+"o": [
+"150\u00b0C",
+"160\u00b0C",
+"170\u00b0C",
+"180\u00b0C",
+"None of these"
+],
+"page": "21",
+"q": "At what temperature does popcorn swell and burst?",
+"serial": "145",
+"src_row": 144,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:145"
+},
+{
+"expl": "Sweet corn is rich in vitamin C and A, making it a nutritious choice.",
+"key": 2,
+"o": [
+"Flint corn",
+"Dent corn",
+"Sweet corn",
+"Flour corn",
+"None of these"
+],
+"page": "21",
+"q": "Which corn variety is rich in vitamin C and A?",
+"serial": "146",
+"src_row": 145,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:146"
+},
+{
+"expl": "Maize requires a temperature range of 9-30\u00b0C from planting to emergence.",
+"key": 1,
+"o": [
+"5-20\u00b0C",
+"9-30\u00b0C",
+"15-25\u00b0C",
+"10-20\u00b0C",
+"None of these"
+],
+"page": "21",
+"q": "What is the ideal temperature range for maize from planting to emergence?",
+"serial": "147",
+"src_row": 146,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "21:147"
+}
+],
+"row_from": 126,
+"row_to": 147,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 126,
+"seeded_from": "2026-09-20"
+},
 "qidx": 0,
+"seeded_from": "2026-09-20",
+"skips": [],
 "step": 0
 },
 "malwa": {
@@ -32880,7 +33285,7 @@
 },
 "desk": {
 "handled": 128,
-"last": "2026-09-21T14:26:12+05:30",
+"last": "2026-09-21T14:25:52+05:30",
 "offset": 210525197,
 "payments": {
 "checked": 0,
