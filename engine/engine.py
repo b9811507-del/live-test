@@ -1511,7 +1511,7 @@ def run_job(job, day=None, st=None, force=False):
         fails = 0
         j.setdefault("poll_ids", {})[str(i)] = pid
         aq = ans.setdefault(str(i), {})
-        off = drain(off, pid, POLL_SECONDS + 1.5, aq, names, hard)
+        off = drain(off, pid, POLL_SECONDS + 0.5, aq, names, hard)  # v11.4.19: 1.5s->0.5s gap fix (poll end to next poll instant)
         # v11.4.7 (admin order): NO reveal message after each question — the explanation is already
         # inside the quiz poll, so students see correct/wrong + explanation instantly. REVEAL_AFTER_Q=on
         # brings the separate message back if ever needed.
