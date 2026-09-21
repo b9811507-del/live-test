@@ -1,9 +1,949 @@
 {
 "afo18": {
+"announced_at": "2026-09-21T18:11:27+05:30",
 "ans": {},
+"lock_ts": 1789994485.3445628,
+"locked_by": "local-1430",
+"msg_ann": 29904,
 "names": {},
+"pinned_ann": true,
+"plan": {
+"built_at": "2026-09-21T18:11:23+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Apis mellifera",
+"Apis cerana",
+"Apis dorsata",
+"Apis florea",
+"None of these"
+],
+"page": "",
+"q": "Which honey bee species yields the highest amount of honey per colony annually?",
+"serial": "1UgnIe-g:2325",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2325"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Zineb",
+"Captan",
+"Pentachloronitrobenzene",
+"Mancozeb",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended chemical for soil treatment to reduce Black scurf incidence, though it is expensive?",
+"serial": "1sUgWsko:3854",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3854"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Muller",
+"Weismann",
+"Sir Francis Galton",
+"Swammerdam",
+"None of these"
+],
+"page": "",
+"q": "Who is known as the father of radiation genetics?",
+"serial": "1UgnIe-g:439",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:439"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"60 x 30 cm",
+"45 x 20 cm",
+"90 x 30 cm",
+"45 x 30 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spacing for short duration pigeon pea?",
+"serial": "1sUgWsko:311",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:311"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"6",
+"4",
+"2",
+"8",
+"None of these"
+],
+"page": "",
+"q": "How many molecules of NADH are produced through two turns of the Krebs cycle?",
+"serial": "1UgnIe-g:1595",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1595"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1\u00b0C per 32 feet",
+"1\u00b0F per 64 feet",
+"1\u00b0C per 100 meters",
+"1\u00b0F per 100 feet",
+"None of these"
+],
+"page": "",
+"q": "What is the average rate of temperature increase with depth in the Earth's crust?",
+"serial": "1sUgWsko:6791",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6791"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1 kg",
+"5 kg",
+"10 kg",
+"20 kg",
+"None of these"
+],
+"page": "",
+"q": "How much rose essential oil is obtained from 4000 kg of rose petals?",
+"serial": "1sUgWsko:1460",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1460"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Light trap",
+"Pheromone trap",
+"Sticky trap",
+"Pitfall trap",
+"None of these"
+],
+"page": "",
+"q": "Which type of trap uses light to attract insects and captures them in a mechanical device?",
+"serial": "1sUgWsko:1779",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1779"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1906-1910",
+"1911-1914",
+"1915-1919",
+"1920-1925",
+"None of these"
+],
+"page": "",
+"q": "When was the power take-off (PTO) introduced in tractors?",
+"serial": "1sUgWsko:6010",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6010"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Occurs at very irregular intervals and locations",
+"Prevalent throughout the country, continent, or the world",
+"Occurs widely in severe but periodically",
+"Constantly present from year to year in a particular area",
+"None of these"
+],
+"page": "",
+"q": "What is the characteristic feature of a pandemic disease?",
+"serial": "17U0MEc-:2123",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2123"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1:1 type",
+"2:1 type",
+"2:2 type",
+"2:1:1 type",
+"None of these"
+],
+"page": "",
+"q": "Which silicate clay type has one tetrahedral and one octahedral sheet?",
+"serial": "17U0MEc-:1093",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1093"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"H2PO4-2",
+"OH-",
+"SO4-2",
+"NO3-",
+"None of these"
+],
+"page": "",
+"q": "Which anion is less tightly held by soil and thus easily available to plants or subjected to leaching?",
+"serial": "17U0MEc-:1168",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1168"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Sulphuric acid",
+"Smoke cover",
+"Windbreaks",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "Which of the following measures is used to minimise frost damage in fennel cultivation?",
+"serial": "1YcJWVgW:860",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:860"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"85%",
+"80%",
+"70%",
+"75%",
+"None of these"
+],
+"page": "",
+"q": "What is the minimum germination percentage required for certified seeds of wheat?",
+"serial": "1UgnIe-g:837",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:837"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Bursaphelenchus xylophilus",
+"Radopholus similis",
+"Rhadinaphelenchus cocophilus",
+"Anguina tritici",
+"None of these"
+],
+"page": "",
+"q": "Which nematode causes lesions in bananas?",
+"serial": "1UgnIe-g:2450",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2450"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Zinc",
+"Manganese",
+"Magnesium",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient deficiency causes leaves to develop dark spots on the leaves and edges, along with pale and narrow leaves?",
+"serial": "1sUgWsko:7306",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7306"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"39%",
+"49%",
+"59%",
+"69%",
+"None of these"
+],
+"page": "",
+"q": "What is the shelling percentage of chickpea?",
+"serial": "1bxM1Q-4:716",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:716"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"pH",
+"EC",
+"ESP",
+"Infiltration rate",
+"None of these"
+],
+"page": "",
+"q": "Which parameter is used to measure soil salinity?",
+"serial": "1sUgWsko:7094",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7094"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pyruvic acid",
+"Acetyl CoA",
+"NADH\u2082",
+"ATP",
+"None of these"
+],
+"page": "",
+"q": "Which molecule acts as a link between glycolysis and the Krebs cycle?",
+"serial": "17U0MEc-:2645",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2645"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Constituent of cell wall",
+"Chlorophyll formation",
+"Stomata regulation",
+"Sugar translocation",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a primary function of calcium in plants?",
+"serial": "17U0MEc-:1295",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1295"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mysore, Karnataka",
+"Titabar, Assam",
+"Ranchi",
+"Bangalore",
+"None of these"
+],
+"page": "",
+"q": "Where is the Central Sericulture Research and Training Institute located?",
+"serial": "1UgnIe-g:2357",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2357"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cauliflower",
+"Wheat",
+"Rye",
+"Potato",
+"None of these"
+],
+"page": "",
+"q": "Which crop is listed as low acidity tolerant?",
+"serial": "1sUgWsko:7113",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7113"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Seed",
+"Bulb division",
+"Cloves",
+"Tissue culture",
+"None of these"
+],
+"page": "",
+"q": "What is the primary commercial propagation method for garlic?",
+"serial": "1YcJWVgW:755",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:755"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"6,000",
+"7,500",
+"9,000",
+"10,500",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended number of fish seed (nos.) per hectare?",
+"serial": "1sUgWsko:2386",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2386"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"UP",
+"MP",
+"AP",
+"TN",
+"None of these"
+],
+"page": "",
+"q": "In the state with maximum production of tomato, which state is it?",
+"serial": "1YcJWVgW:469",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:469"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lower nutrient content",
+"Higher moisture content",
+"Higher nutrient content",
+"Slower decomposition rate",
+"None of these"
+],
+"page": "",
+"q": "What is the primary distinguishing feature of concentrated organic manures compared to bulky organic manures?",
+"serial": "1sUgWsko:7175",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7175"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pigeon pea",
+"Cowpea",
+"Beans",
+"Soybean",
+"None of these"
+],
+"page": "",
+"q": "Which of the following pulses belongs to the genus Vigna?",
+"serial": "1sUgWsko:4355",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4355"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"60-70%",
+"30-40%",
+"80-90%",
+"10-20%",
+"None of these"
+],
+"page": "",
+"q": "Approximately what proportion of rainfall is lost through evaporation in dry land agriculture?",
+"serial": "1sUgWsko:4282",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4282"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"One",
+"Two",
+"Three",
+"Four",
+"None of these"
+],
+"page": "",
+"q": "During megasporogenesis, how many megaspores become functional in each ovule?",
+"serial": "1UgnIe-g:45",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:45"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gravitational water",
+"Capillary water",
+"Hygroscopic water",
+"Available water",
+"None of these"
+],
+"page": "",
+"q": "Which type of water is characterized by a potential of < -1/3 bar?",
+"serial": "1bxM1Q-4:1479",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1479"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"30-35\u00b0C",
+"35-38\u00b0C",
+"21-33\u00b0C",
+"10-15\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for papaya cultivation?",
+"serial": "1sUgWsko:1065",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1065"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Deblossoming with NAA (200 ppm)",
+"Spraying borax solution (0.6%)",
+"Soil application of Paclobutrazol",
+"Foliar spray of GA\u2083",
+"None of these"
+],
+"page": "",
+"q": "Mango malformation can be prevented by which of the following treatments?",
+"serial": "1YcJWVgW:194",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:194"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Trichogramma chilonis",
+"Trichogramma japonicum",
+"Encarsia Formosa",
+"Epiricania melanoleuca",
+"None of these"
+],
+"page": "",
+"q": "Which parasitoid is used for controlling bollworms in cotton?",
+"serial": "17U0MEc-:1893",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1893"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase water absorption by roots",
+"To hasten flowering and fruiting",
+"To prevent pest infestation",
+"To improve soil fertility",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of ringing or girdling in horticulture?",
+"serial": "1sUgWsko:708",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:708"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"India",
+"China",
+"Iran",
+"Turkey",
+"None of these"
+],
+"page": "",
+"q": "Which country holds the first position worldwide in area and production of pomegranate?",
+"serial": "17U0MEc-:1485",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1485"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Erysiphe cichoracearum",
+"Pseudoperonospora cubensis",
+"Plasmodiophora brassicae",
+"Fusarium cucurbitae",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of the pathogen causing Club rot?",
+"serial": "1bxM1Q-4:2631",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2631"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"6\u20117 months",
+"8\u20119 months",
+"10\u201111 months",
+"12\u201113 months",
+"None of these"
+],
+"page": "",
+"q": "How many months does fruit development take in Coffea robusta?",
+"serial": "1sUgWsko:1234",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1234"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Mean",
+"Variance",
+"Skewness",
+"Kurtosis",
+"None of these"
+],
+"page": "",
+"q": "What does the 4th central moment represent?",
+"serial": "17U0MEc-:2882",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2882"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Seed drill",
+"Plough",
+"Hoe",
+"Spade",
+"None of these"
+],
+"page": "",
+"q": "Which of the following tools is most likely used to perform the combined function of placing and covering the seed?",
+"serial": "1sUgWsko:4780",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4780"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Pusa Purvi",
+"Pusa Rasdar",
+"Pusa Vishesh",
+"Pant Karela",
+"None of these"
+],
+"page": "",
+"q": "Which variety of bitter gourd is highly resistant to red pumpkin beetle?",
+"serial": "1YcJWVgW:789",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:789"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Nearness to large water bodies",
+"Topography",
+"Soil type",
+"Latitude",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT listed as a factor influencing local climate in the source?",
+"serial": "1sUgWsko:5655",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5655"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10 to 20 cm",
+"20 to 40 cm",
+"30 to 60 cm",
+"50 to 80 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal size range for a Bonsai plant according to the source?",
+"serial": "1sUgWsko:1439",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1439"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"50% solids, 30% water, 20% air",
+"40% solids, 40% water, 20% air",
+"60% solids, 20% water, 20% air",
+"30% solids, 50% water, 20% air",
+"None of these"
+],
+"page": "",
+"q": "What is the typical composition of a silt loam soil?",
+"serial": "1bxM1Q-4:4081",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4081"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Leaves turn pale yellow and shrivel up",
+"Leaves acquire a bright green appearance",
+"Leaves develop red spots",
+"Leaves become overly rigid",
+"None of these"
+],
+"page": "",
+"q": "What is a distinctive symptom of sugarcane leaf hopper infestation?",
+"serial": "17U0MEc-:1997",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1997"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"USA",
+"Italy",
+"China",
+"Japan",
+"None of these"
+],
+"page": "",
+"q": "Which country did the San Jose scale (Quadraspidiotus perniciosus) originate from before entering India?",
+"serial": "1UgnIe-g:2294",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2294"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Synthesis and translocation of carbohydrates",
+"Maintaining ionic charge balance",
+"Inducing enzyme activation",
+"Energy storage in ATP",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a function of Group II elements (K, Ca, Mg)?",
+"serial": "1sUgWsko:7294",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7294"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increased feeding",
+"Shiny oily appearance and cessation of feeding",
+"Rapid reproduction",
+"Enhanced mobility",
+"None of these"
+],
+"page": "",
+"q": "What is the primary symptom of NPV infection in insects?",
+"serial": "1UgnIe-g:2047",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2047"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ceratocystis paradoxa",
+"Pseudomonas rubrilineans",
+"Sporisorium scitaminea",
+"Leptosphaeria sacchari",
+"None of these"
+],
+"page": "",
+"q": "What is the causal organism of Whip Smut of Sugarcane?",
+"serial": "1UgnIe-g:1102",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1102"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Square",
+"Equilateral triangle",
+"Right triangle",
+"Parallelogram",
+"None of these"
+],
+"page": "",
+"q": "In the hexagonal system, trees are planted at the corners of what geometric shape?",
+"serial": "1sUgWsko:565",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:565"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Selction-120",
+"Pusa Rubi",
+"Hisar Lalima",
+"Pusa Sadabahar",
+"None of these"
+],
+"page": "",
+"q": "Which variety was the first to show resistance to root knot nematode?",
+"serial": "1bxM1Q-4:3129",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3129"
+}
+],
+"set_no": 9,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
-"step": 0
+"skips": [],
+"step": 1,
+"unpinned": [
+29092,
+29102,
+29168,
+29275,
+29318,
+29377,
+29404,
+29442,
+29499,
+29524,
+29552,
+29609,
+29636,
+29665,
+29724,
+29751,
+29779,
+29845,
+29873
+]
 },
 "agent_issues": [],
 "agent_last": "2026-09-21T17:49:42+05:30",
