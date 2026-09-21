@@ -29517,8 +29517,8 @@
 "afo": {
 "announced_at": "2026-09-21T18:11:27+05:30",
 "ans": {},
-"lock_ts": 1789994485.3445628,
-"locked_by": "local-1430",
+"lock_ts": 0,
+"locked_by": "",
 "msg_ann": 29904,
 "names": {},
 "pinned_ann": true,
