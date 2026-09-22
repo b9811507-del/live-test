@@ -307,7 +307,8 @@ def dispatch_slot_chain():
         return False
 
 def main():
-    job, mins = time_to_next_slot()
+    job, secs = time_to_next_slot()
+    mins = secs/60 if secs else 0
     should, job2, mins2 = should_run_precheck()
     log(f"IST {istnow().strftime('%Y-%m-%d %H:%M')} next {job} in {mins/60:.1f}h ({mins:.0f} min) should_run={should}")
     if not should:
