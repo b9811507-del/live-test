@@ -46,8 +46,12 @@ import urllib.request
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   # siblings: builder, afo_mongo, translator, paid
 import paid                    # paid batches + enrolment + single-use join links (v11.1)
 import translator as tr        # professional English language layer (v11.1)
+try:
+    import precheck as precheck_mod   # 20 min pre-verification (v11.4.22)
+except Exception:
+    precheck_mod = None
 
-VERSION = "v11.4"
+VERSION = "v11.4.22"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.environ.get("ENGINE_STATE") or os.path.join(ROOT, "state.json")   # ENGINE_STATE -> isolated journal (smoke tests / previews)
 OUTDIR = os.path.join(ROOT, "out")
@@ -1810,7 +1814,23 @@ def cycle_job(st, day, job):
     return run_job(job, day, st)
 
 
+def preflight_20min():
+    """20 min before any slot — verify all systems, auto-fix. v11.4.22"""
+    try:
+        if not precheck_mod:
+            return
+        should, job, mins = precheck_mod.should_run_precheck()
+        if should:
+            log(f"PREFLIGHT 20min before {job} ({mins:.0f} min to go) — running full verification")
+            precheck_mod.run_all_checks(fix=True)
+    except Exception as e:
+        log(f"preflight check skipped: {e}")
+
 def slotchain():
+    try:
+        preflight_20min()
+    except Exception:
+        pass
     st = jload()
     day = daykey()
     results = {}
@@ -2197,6 +2217,12 @@ def main(argv):
             print(json.dumps(st.get("paid", {}), indent=1, default=str)[:2000])
     elif cmd == "booksend":
         booksend(args[0], args[1], args[2], args[3] if len(args) > 3 else None)
+    elif cmd == "precheck":
+        if precheck_mod:
+            sys.exit(precheck_mod.main())
+        else:
+            print("precheck module missing")
+            return 1
     else:
         print(__doc__)
         return 2

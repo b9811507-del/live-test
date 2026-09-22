@@ -62,18 +62,35 @@ jobs:
         run: pip install -q pymongo
       - name: cycle
         run: python3 engine/engine.py slotchain || true
-      # Low-burn (16-Sep): outside 10:00-19:15 IST the chain does NOT re-arm itself; the */10 cron
-      # backstop wakes it. Inside the window the tight self-chain is kept (punctual slots).
-      - name: rearm (jitter 100-190s, window only)
+      # v11.4.22 (22-Sep): FIX late start — chain must re-arm even outside 10:00-19:15 if next slot within 50 min
+      # Before fix, last run at 06:22 didn't re-arm, malwa 11:00 was 8 min late (needed manual dispatch)
+      # New: if within 50 min before any slot (10:10, 13:40, 17:10) -> always re-arm
+      # Plus 20-min pre-check workflow ensures verification + auto-fix
+      - name: rearm (jitter 100-190s, window + 50min pre-slot)
         if: always()
         env:
           TZ: Asia/Kolkata
         run: |
           H=$(date +%H); M=$(date +%M); NOW=$((10#$H * 60 + 10#$M))
-          if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then
+          SHOULD=0
+          for GO in 660 870 1080; do
+            DIFF=$((GO - NOW))
+            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 50 ]; then SHOULD=1; echo "Within 50 min of slot $GO (diff $DIFF) -> will re-arm"; break; fi
+            if [ "$DIFF" -lt 0 ] && [ "$DIFF" -ge -15 ]; then SHOULD=1; echo "Slot $GO overdue by $(( -DIFF )) min (<15) -> will re-arm"; break; fi
+          done
+          if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then SHOULD=1; fi
+          if [ "$SHOULD" -eq 1 ]; then
             python3 engine/engine.py dispatch slot-chain.yml || true
             sleep $(( (RANDOM % 91) + 100 ))
           else
-            echo "outside the test window ($H:$M IST) -> not re-arming (saving Actions minutes)"
+            echo "outside window and not near slot ($H:$M IST) -> not re-arming (saving minutes)"
           fi
           python3 engine/engine.py rearm || true
+          for GO in 660 870 1080; do
+            DIFF=$((GO - NOW))
+            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 25 ]; then
+              echo "Within 25 min of slot $GO -> running precheck"
+              python3 engine/precheck.py || true
+              break
+            fi
+          done
