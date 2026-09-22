@@ -33665,6 +33665,9 @@
 "bidx": 121,
 "cd": 0,
 "congrats_sent": 30004,
+"cta_sent": "off",
+"done_at": "2026-09-22T11:24:30+05:30",
+"elapsed_s": 571,
 "expl_in_poll": 22,
 "file_msg": 30005,
 "file_sent": "MALWA_VOL_1_p31-36_23Q_2026-09-22.html",
@@ -33674,8 +33677,17 @@
 "lb_rows": 41,
 "lb_sent": true,
 "lock_ts": 1790056433.6176102,
-"locked_by": "35691909396",
+"locked_by": "",
 "msg_ann": 29977,
+"msg_order": [
+"announce",
+"countdown",
+"quiz-polls(+in-poll explanation)",
+"leaderboard(all parts)",
+"top3",
+"file",
+"tomorrow-plan"
+],
 "names": {
 "1023152775": "iAnjali",
 "1087274184": "\u0936\u093f\u0935 \u092d\u0915\u094d\u0924",
@@ -33719,6 +33731,8 @@
 "8797499130": "rahulbaghel001",
 "8906964276": "Uttarakhand boy\ud83d\udc7d"
 },
+"paid_msg": null,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 1,
@@ -34194,7 +34208,7 @@
 "sent_i": 22,
 "skips": [],
 "started_at": "2026-09-22T11:08:00+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 30006,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 37-42\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 22, 23, 24",
 "unpinned": [
