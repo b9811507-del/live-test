@@ -33118,7 +33118,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-22T17:57:17+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Guggal",
+"Cinchona",
+"Glory lily",
+"Isabgol",
+"None of these"
+],
+"page": "",
+"q": "Which plant's gum resin contains guggulipids used for obesity and arthritis?",
+"serial": "1sUgWsko:4259",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4259"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potato",
+"Watermelon",
+"Banana",
+"Spinach",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a natural autotetraploid?",
+"serial": "1UgnIe-g:355",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:355"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Laterite soil",
+"Gravely soil",
+"Loamy alluvial soil",
+"Clay soil",
+"None of these"
+],
+"page": "",
+"q": "Which soil type is most suitable for jute cultivation?",
+"serial": "1sUgWsko:262",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:262"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"5-6 tonnes",
+"15-20 tonnes",
+"25-30 tonnes",
+"200-250 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the yield of fresh rhizome for Turmeric per hectare?",
+"serial": "1sUgWsko:1495",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1495"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"GDP = C + I + G + (X \u2013 M)",
+"GDP = C + I + G \u2013 M",
+"GDP = C + I \u2013 G + (X \u2013 M)",
+"GDP = C \u2013 I + G + (X \u2013 M)",
+"None of these"
+],
+"page": "",
+"q": "What is the correct formula for calculating GDP using the Expenditure Method?",
+"serial": "128DIQLj:2426",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2426"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Seeds",
+"Fertilizers",
+"Overhead cost",
+"Hired human labour",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a fixed cost?",
+"serial": "1bxM1Q-4:2330",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2330"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sandy loam to clay loam",
+"Heavy clay",
+"Pure sand",
+"Peaty soil",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal soil type for growing gram?",
+"serial": "1sUgWsko:279",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:279"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tylenchidae",
+"Criconematidae",
+"Heteroderidae",
+"Meloidogynidae",
+"None of these"
+],
+"page": "",
+"q": "Which nematode family has deep transverse striations called annuli that may have spines on the posterior margin?",
+"serial": "1UgnIe-g:2529",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2529"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Carbon (C)",
+"Iron (Fe)",
+"Zinc (Zn)",
+"Copper (Cu)",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient is listed with a concentration of 100 ppm in the data?",
+"serial": "1sUgWsko:7313",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7313"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5%",
+"10%",
+"15%",
+"20%",
+"None of these"
+],
+"page": "",
+"q": "In a dioecious papaya orchard, what minimum proportion of male plants is required?",
+"serial": "1YcJWVgW:276",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:276"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Industrial Wastelands",
+"Sands Coastal",
+"Mining Wastelands",
+"Sands Riverine",
+"None of these"
+],
+"page": "",
+"q": "Which land type has the smallest reported percentage?",
+"serial": "1sUgWsko:5569",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5569"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cellulose",
+"Lignin via sulphur\u2011adenosyl\u2011methionine",
+"Hemicellulose",
+"Pectin",
+"None of these"
+],
+"page": "",
+"q": "Sulphur application in jute cultivation primarily enhances fibre strength by promoting the synthesis of which compound?",
+"serial": "128DIQLj:583",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:583"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"New Delhi",
+"Mumbai",
+"Maunath Bhanjan, Mau, UP",
+"Bangalore",
+"None of these"
+],
+"page": "",
+"q": "Where is the Indian Institute of Seed Science (IISS) located?",
+"serial": "1UgnIe-g:768",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:768"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5%",
+"6%",
+"7%",
+"8%",
+"None of these"
+],
+"page": "",
+"q": "What is the moisture content to which copra should be dried?",
+"serial": "1sUgWsko:1229",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1229"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10% leaf emergence",
+"25% tuber formation",
+"50% tuber maturity",
+"75% tuber maturity",
+"None of these"
+],
+"page": "",
+"q": "During which stage is irrigation most critical for potato?",
+"serial": "1bxM1Q-4:901",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:901"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"n = 25",
+"n = 30",
+"n = 31",
+"n = 20",
+"None of these"
+],
+"page": "",
+"q": "Which sample size is considered \"large\" according to the given guidelines?",
+"serial": "128DIQLj:2806",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2806"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Plant Bee",
+"Honeydew secretion",
+"Closed circulatory system",
+"Synergist production",
+"None of these"
+],
+"page": "",
+"q": "What is the characteristic feature of Apis?",
+"serial": "1UgnIe-g:2378",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2378"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"W. Flemming",
+"W. Waldeyer",
+"L.F. Randolph",
+"W. Bateson",
+"None of these"
+],
+"page": "",
+"q": "Which scientist is credited with coining the term 'Chromosome'?",
+"serial": "1bxM1Q-4:1878",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1878"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"40 km",
+"1600 km",
+"8 km",
+"18 km",
+"None of these"
+],
+"page": "",
+"q": "99% of the total mass of the atmosphere lies within a height of ___ from the earth surface?",
+"serial": "17U0MEc-:342",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:342"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Drosophila melanogaster",
+"E. coli",
+"Neurospora crassa",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which organism is commonly used in genetic studies among insects?",
+"serial": "17U0MEc-:2410",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2410"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Stone, wood, or concrete",
+"Metal, plastic, or glass",
+"Brick, steel, or rubber",
+"Clay, fabric, or paper",
+"None of these"
+],
+"page": "",
+"q": "What materials are used to make garden bridges?",
+"serial": "1bxM1Q-4:3562",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3562"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Japanese beetle",
+"White grub beetle",
+"Grasshopper",
+"Aphids",
+"None of these"
+],
+"page": "",
+"q": "Steinernema glaseri is primarily used to control which pest?",
+"serial": "1UgnIe-g:2057",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2057"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1\u20132 cm long and 0.5\u20131.0 cm wide",
+"2\u20133 cm long and 0.5\u20131.0 cm wide",
+"3\u20134 cm long and 1\u20131.5 cm wide",
+"0.5\u20131.0 cm long and 2\u20133 cm wide",
+"None of these"
+],
+"page": "",
+"q": "What is the typical size of the bud used in the Forkert budding method?",
+"serial": "1sUgWsko:617",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:617"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mandarin",
+"Sweet orange",
+"Pummelo",
+"Acid lime",
+"None of these"
+],
+"page": "",
+"q": "Which of the following citrus species is NOT polyembryonic?",
+"serial": "1sUgWsko:1027",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1027"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20\u201330 %",
+"40\u201350 %",
+"50\u201370 %",
+"80\u201390 %",
+"None of these"
+],
+"page": "",
+"q": "Compared to conventional irrigation, how much water can drip irrigation save?",
+"serial": "128DIQLj:776",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:776"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Strip cropping",
+"Monocropping",
+"Mixed cropping",
+"Interplanting",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a practice included in conservation farming?",
+"serial": "1bxM1Q-4:1367",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1367"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Capillarity theory",
+"Imbibitional theory",
+"Cohesion and adhesion theory",
+"Pulsation theory",
+"None of these"
+],
+"page": "",
+"q": "Which theory states that water rises in narrow tubes due to surface tension?",
+"serial": "17U0MEc-:2603",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2603"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Glucose",
+"Fructose",
+"Sucrose",
+"Maltose",
+"None of these"
+],
+"page": "",
+"q": "What is the most important mobile organic solute in plants?",
+"serial": "1UgnIe-g:1707",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1707"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"IARI, New Delhi",
+"CSTL, Varanasi",
+"ISTA, Zurich",
+"NBP, Mumbai",
+"None of these"
+],
+"page": "",
+"q": "Where was the first seed testing laboratory in India established?",
+"serial": "1UgnIe-g:801",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:801"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The ratio of grain input to threshed grain output",
+"The percentage of threshed grain received from all outlets with respect to total grain input by mass",
+"The time taken to thresh a fixed quantity of grain",
+"The power consumption per unit of grain threshed",
+"None of these"
+],
+"page": "",
+"q": "What is the threshing efficiency defined as?",
+"serial": "1sUgWsko:6402",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6402"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Guild formation",
+"Competitive exclusion principle",
+"Biotic potential",
+"Carrying capacity",
+"None of these"
+],
+"page": "",
+"q": "What is the concept proposed by G.F. Gause regarding two species with similar ecology?",
+"serial": "1UgnIe-g:1956",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1956"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Abbott",
+"Dai Dai Maru",
+"Alfred",
+"Capri",
+"None of these"
+],
+"page": "",
+"q": "Which variety is associated with Persimmon?",
+"serial": "1bxM1Q-4:3092",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3092"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Almond",
+"Litchi",
+"Guava",
+"Pomegranate",
+"None of these"
+],
+"page": "",
+"q": "Which fruit\u2019s edible part is the seed?",
+"serial": "1sUgWsko:819",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:819"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20-30 kg/ha",
+"30-40 kg/ha",
+"40-50 kg/ha",
+"50-60 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended seed rate for Fodder Sorghum?",
+"serial": "1bxM1Q-4:882",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:882"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"White grub",
+"Termite",
+"Red hairy caterpillar",
+"Shoot fly",
+"None of these"
+],
+"page": "",
+"q": "Which insect pest of pearl millet is known for cutting the central shoot of seedlings?",
+"serial": "17U0MEc-:2005",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2005"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Microsporogenesis",
+"Megasporogenesis",
+"Anthesis",
+"Fruit set",
+"None of these"
+],
+"page": "",
+"q": "Copper deficiency leads to pollen sterility during which developmental stage?",
+"serial": "1sUgWsko:7363",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7363"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1.5 MJ",
+"2.0 MJ",
+"2.8 MJ",
+"3.5 MJ",
+"None of these"
+],
+"page": "",
+"q": "The fresh cane tops provide approximately how many megajoules of energy per kilogram of dry matter?",
+"serial": "1sUgWsko:398",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:398"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"B.L. Bhardwaj",
+"Dr. S.S. Bains",
+"Parihar",
+"Donald",
+"None of these"
+],
+"page": "",
+"q": "The 'CRI Stage in Wheat' is associated with which agronomist?",
+"serial": "1sUgWsko:4228",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4228"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"0.32 hp/day",
+"0.45 hp/day",
+"0.60 hp/day",
+"0.75 hp/day",
+"None of these"
+],
+"page": "",
+"q": "What is the working efficiency of a desi plough?",
+"serial": "1bxM1Q-4:3985",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3985"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nilokheri Project",
+"Gurgaon Project",
+"Firka Development Scheme",
+"Etawah Pilot Project",
+"None of these"
+],
+"page": "",
+"q": "Which project was associated with the rehabilitation of refugees?",
+"serial": "1bxM1Q-4:2194",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2194"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Calcium hypochlorite",
+"Mercuric chloride",
+"Bromine",
+"Ethanol",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is NOT typically used for surface sterilization of explants?",
+"serial": "1UgnIe-g:1331",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1331"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"5-8 years",
+"2-4 years",
+"9-12 years",
+"1-3 years",
+"None of these"
+],
+"page": "",
+"q": "What is the optimal age range for maximum semen output in bulls?",
+"serial": "1bxM1Q-4:4182",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4182"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Alphonso",
+"Langra",
+"Rumani",
+"Neelum",
+"None of these"
+],
+"page": "",
+"q": "Which variety of mango has the highest number of perfect flowers?",
+"serial": "1bxM1Q-4:2951",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2951"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Green-yellow (720-510 nm)",
+"Blue-violet (400-440 nm)",
+"Far-red (700-920 nm)",
+"Red (610-720 nm)",
+"None of these"
+],
+"page": "",
+"q": "Which spectral region has a low photosynthetic effectiveness and weak formative activity?",
+"serial": "1sUgWsko:5694",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5694"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Dracunculus medinensis",
+"Placenta gigantissima",
+"Wucheraria bancrofti",
+"Ascaris lumbricoides",
+"None of these"
+],
+"page": "",
+"q": "Which nematode is known as the largest Animal Parasitic Nematode (APN)?",
+"serial": "17U0MEc-:2308",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2308"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tomato",
+"Brinjal",
+"Cucurbits",
+"Lettuce",
+"None of these"
+],
+"page": "",
+"q": "Which crop is listed under both 'Good Storer-2' and 'Transplanted with Case' categories?",
+"serial": "1sUgWsko:1300",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1300"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"27-33\u00b0C",
+"30-35\u00b0C",
+"33.3-34.4\u00b0C",
+"36\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for sugarcane germination?",
+"serial": "1sUgWsko:400",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:400"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"TC equals total variable cost",
+"TC equals total fixed cost",
+"TC equals zero",
+"TC equals the sum of fixed and variable cost",
+"None of these"
+],
+"page": "",
+"q": "If production is zero, which statement about total cost (TC) is correct?",
+"serial": "128DIQLj:2522",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2522"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Turnip Yellow Mosaic Virus",
+"Turnip Crinkle",
+"Phyllody disease",
+"Clubroot",
+"None of these"
+],
+"page": "",
+"q": "Which disease in turnips is transmitted by the jassid Orosius albicinctus?",
+"serial": "1YcJWVgW:711",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:711"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Pratylenchus",
+"Haplolaimus",
+"Meloidogyne",
+"Tylenchorhynchus",
+"None of these"
+],
+"page": "",
+"q": "Which nematode genus is an example of a sedentary endoparasite?",
+"serial": "17U0MEc-:2315",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2315"
+}
+],
+"set_no": 10,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
