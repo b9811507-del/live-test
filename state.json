@@ -33129,9 +33129,456 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 121,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 121,
+"built_at": "2026-09-22T11:06:40+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 23,
+"pages": "Book pages 31-36",
+"pages_blocks": [
+"31-32",
+"33-34",
+"35-36"
+],
+"questions": [
+{
+"expl": "China produced more rice than any other country in 2023.",
+"key": 0,
+"o": [
+"China",
+"India",
+"Bangladesh",
+"Indonesia",
+"None of these"
+],
+"page": "31-32",
+"q": "Which country was the largest producer of rice in 2023?",
+"serial": "171",
+"src_row": 98,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:171"
+},
+{
+"expl": "The source states Telangana has recently overtaken West Bengal as India\u2019s top rice producer.",
+"key": 2,
+"o": [
+"Andhra Pradesh",
+"West Bengal",
+"Telangana",
+"Punjab",
+"None of these"
+],
+"page": "31-32",
+"q": "Which Indian state has recently become the largest rice producer, surpassing West Bengal?",
+"serial": "172",
+"src_row": 99,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:172"
+},
+{
+"expl": "Unlike most cereals that have three stamens, rice uniquely has six.",
+"key": 3,
+"o": [
+"3",
+"4",
+"5",
+"6",
+"None of these"
+],
+"page": "31-32",
+"q": "Rice grains have how many stamens?",
+"serial": "173",
+"src_row": 100,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:173"
+},
+{
+"expl": "Punjab achieves a rice productivity of 64 quintals per hectare, the highest in India.",
+"key": 2,
+"o": [
+"Uttar Pradesh",
+"West Bengal",
+"Punjab",
+"Tamil Nadu",
+"None of these"
+],
+"page": "31-32",
+"q": "Which Indian state records the highest rice productivity per hectare?",
+"serial": "174",
+"src_row": 101,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:174"
+},
+{
+"expl": "India\u2019s top five cereals are rice, wheat, maize, pearl millet, and sorghum; barley is not in the list.",
+"key": 3,
+"o": [
+"Rice",
+"Wheat",
+"Maize",
+"Barley",
+"None of these"
+],
+"page": "31-32",
+"q": "Which of the following is NOT among India\u2019s top five cereal crops?",
+"serial": "175",
+"src_row": 102,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:175"
+},
+{
+"expl": "White rice contains about 6\u20137% protein, as stated in the source.",
+"key": 1,
+"o": [
+"4\u20135%",
+"6\u20137%",
+"8\u20139%",
+"10\u201311%",
+"None of these"
+],
+"page": "31-32",
+"q": "What is the approximate protein content of white rice?",
+"serial": "176",
+"src_row": 103,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:176"
+},
+{
+"expl": "Globally, wheat is cultivated on 220 million ha, more than any other cereal.",
+"key": 0,
+"o": [
+"Wheat",
+"Maize",
+"Rice",
+"Sorghum",
+"None of these"
+],
+"page": "31-32",
+"q": "Which cereal occupies the largest cultivated area worldwide?",
+"serial": "177",
+"src_row": 104,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:177"
+},
+{
+"expl": "Rice grain contains about 4% lysine of its total protein fraction.",
+"key": 1,
+"o": [
+"2%",
+"4%",
+"6%",
+"8%",
+"None of these"
+],
+"page": "31-32",
+"q": "What percentage of the total protein in rice is lysine?",
+"serial": "178",
+"src_row": 105,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31-32:178"
+},
+{
+"expl": "Rice bran is the nutrient\u2011rich aleurone layer that contains roughly 20% oil and 12\u201115% protein.",
+"key": 0,
+"o": [
+"Rice bran",
+"Endosperm",
+"Germ",
+"Husk",
+"None of these"
+],
+"page": "33-34",
+"q": "Which part of the rice grain contains about 20% oil and 12\u201115% protein?",
+"serial": "181",
+"src_row": 106,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:181"
+},
+{
+"expl": "This period is known as the vegetative lag phase, occurring before panicle initiation.",
+"key": 1,
+"o": [
+"Booting",
+"Vegetative lag phase",
+"Heading",
+"Flag leaf stage",
+"None of these"
+],
+"page": "33-34",
+"q": "The interval between maximum tillering and panicle initiation in rice is called the ________?",
+"serial": "182",
+"src_row": 107,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:182"
+},
+{
+"expl": "The japonica race is adapted to temperate climates and performs well in regions with seasonal temperature changes.",
+"key": 1,
+"o": [
+"Indica",
+"Japonica",
+"Javanica",
+"All of the above",
+"None of these"
+],
+"page": "33-34",
+"q": "Which rice ecotype thrives in both tropical and temperate regions, especially with seasonal temperature fluctuations?",
+"serial": "183",
+"src_row": 108,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:183"
+},
+{
+"expl": "O. glaberrima is prone to lodging and panicle shattering, limiting its cultivation to West Africa.",
+"key": 1,
+"o": [
+"High yield and drought tolerance",
+"Prone to lodging and panicle shattering",
+"Low protein content",
+"Early flowering",
+"None of these"
+],
+"page": "33-34",
+"q": "Oryza glaberrima, the African rice, is particularly known for which agronomic traits?",
+"serial": "184",
+"src_row": 109,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:184"
+},
+{
+"expl": "Rice effectively uses a root zone depth of about 60 cm, compared to 120 cm for sorghum, pearl millet and maize.",
+"key": 1,
+"o": [
+"30 cm",
+"60 cm",
+"90 cm",
+"120 cm",
+"None of these"
+],
+"page": "33-34",
+"q": "What is the effective root zone depth for rice cultivation?",
+"serial": "185",
+"src_row": 110,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:185"
+},
+{
+"expl": "Taichung Native 1 (TN\u20111) was the first semi\u2011dwarf rice variety developed in Taiwan in 1949.",
+"key": 2,
+"o": [
+"IR8",
+"ADT 27",
+"Taichung Native 1",
+"Malinga",
+"None of these"
+],
+"page": "33-34",
+"q": "Which rice variety is recognized as the world\u2019s first semi\u2011dwarf variety?",
+"serial": "186",
+"src_row": 111,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:186"
+},
+{
+"expl": "Weedy rice species such as O. spontanea and O. fatua have a red endosperm, hence the name red rice.",
+"key": 1,
+"o": [
+"Brown rice",
+"Red rice",
+"Black rice",
+"White rice",
+"None of these"
+],
+"page": "33-34",
+"q": "Weedy rice is commonly referred to as ________ because of the color of its endosperm.",
+"serial": "187",
+"src_row": 112,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:187"
+},
+{
+"expl": "NERICA combines traits of Asian rice (O. sativa) and African rice (O. glaberrima) for improved performance in Africa.",
+"key": 2,
+"o": [
+"Oryza sativa \u00d7 Oryza rufipogon",
+"Oryza sativa \u00d7 Oryza nivara",
+"Oryza sativa \u00d7 Oryza glaberrima",
+"Oryza glaberrima \u00d7 Oryza rufipogon",
+"None of these"
+],
+"page": "33-34",
+"q": "NERICA is a hybrid developed by crossing which two rice species?",
+"serial": "188",
+"src_row": 113,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33-34:188"
+},
+{
+"expl": "Jaya, developed by Dr. Shastri in 1968, was the first high\u2011yielding semi\u2011dwarf rice variety introduced in India, surpassing earlier varieties like IR 8.",
+"key": 1,
+"o": [
+"IR 8",
+"Jaya",
+"IR 36",
+"Pusa Basmati\u20111",
+"None of these"
+],
+"page": "35-36",
+"q": "Which rice variety was the first high\u2011yielding semi\u2011dwarf variety developed in India?",
+"serial": "191",
+"src_row": 114,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:191"
+},
+{
+"expl": "DRR Dhan 45 (IET 23832) was the first biofortified rice variety, providing 22.3 mg Zn kg\u207b\u00b9.",
+"key": 0,
+"o": [
+"DRR Dhan 45",
+"Pusa Basmati 1509",
+"CRR Dhan\u2011310",
+"Pusa Basmati\u20111",
+"None of these"
+],
+"page": "35-36",
+"q": "Which variety is known as the first biofortified rice variety rich in zinc?",
+"serial": "192",
+"src_row": 115,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:192"
+},
+{
+"expl": "Swarna\u2011Sub 1 is specifically bred for submergence tolerance, unlike the other listed varieties.",
+"key": 0,
+"o": [
+"Swarna\u2011Sub 1",
+"Jaya",
+"Pusa Basmati 1121",
+"CR Dhan 801",
+"None of these"
+],
+"page": "35-36",
+"q": "Which of the following varieties is submergence tolerant?",
+"serial": "193",
+"src_row": 116,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:193"
+},
+{
+"expl": "PRH\u201110 was the first hybrid basmati variety developed for aromatic rice.",
+"key": 1,
+"o": [
+"Pusa Basmati\u20111",
+"PRH\u201110",
+"Pusa Basmati 1979",
+"Pusa Basmati 1985",
+"None of these"
+],
+"page": "35-36",
+"q": "Which variety is the first hybrid basmati (aromatic) rice?",
+"serial": "194",
+"src_row": 117,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:194"
+},
+{
+"expl": "Rice seeds germinate best at about 27 \u00b0C, as stated in the climate section.",
+"key": 2,
+"o": [
+"20\u00b0C",
+"25\u00b0C",
+"27\u00b0C",
+"30\u00b0C",
+"None of these"
+],
+"page": "35-36",
+"q": "What is the optimum temperature for rice germination?",
+"serial": "195",
+"src_row": 118,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:195"
+},
+{
+"expl": "Rice grows best in acidic soils with a pH between 4 and 6.",
+"key": 1,
+"o": [
+"3\u20134",
+"4\u20136",
+"6\u20137",
+"7\u20138",
+"None of these"
+],
+"page": "35-36",
+"q": "Which soil pH range is most ideal for rice cultivation?",
+"serial": "196",
+"src_row": 119,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:196"
+},
+{
+"expl": "CRR Dhan\u2011310 was introduced as the first protein\u2011rich rice variety.",
+"key": 0,
+"o": [
+"CRR Dhan\u2011310",
+"Pusa Basmati 1509",
+"Pusa Basmati\u20111",
+"Pusa Basmati 1121",
+"None of these"
+],
+"page": "35-36",
+"q": "Which variety is the first protein\u2011rich rice variety?",
+"serial": "197",
+"src_row": 120,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35-36:197"
+}
+],
+"rolled": false,
+"row_from": 98,
+"row_to": 121,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 98,
+"seeded_from": "2026-09-21",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-21",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
