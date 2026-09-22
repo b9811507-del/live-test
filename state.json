@@ -33123,8 +33123,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 168,
 "names": {},
+"plan": {
+"bidx_next": 168,
+"built_at": "2026-09-22T14:28:25+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 22-24",
+"pages_list": [
+22,
+23,
+24
+],
+"questions": [
+{
+"expl": "The optimum temperature range for maize germination is 21-22\u00b0C, as stated in the source.",
+"key": 1,
+"o": [
+"15-16\u00b0C",
+"21-22\u00b0C",
+"25-26\u00b0C",
+"30-32\u00b0C",
+"None of these"
+],
+"page": "22",
+"q": "What is the optimum temperature range for maize germination?",
+"serial": "148",
+"src_row": 147,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:148"
+},
+{
+"expl": "Maize is best adapted to well-drained sandy loam to silty loam soil.",
+"key": 1,
+"o": [
+"Clay soil",
+"Sandy loam to silty loam soil",
+"Peaty soil",
+"Saline soil",
+"None of these"
+],
+"page": "22",
+"q": "Which soil type is best adapted for maize cultivation?",
+"serial": "149",
+"src_row": 148,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:149"
+},
+{
+"expl": "The critical stage of water for maize is between tasseling and 50% silking stage for moisture and nutrients.",
+"key": 2,
+"o": [
+"Seedling stage",
+"Vegetative stage",
+"Between tasseling and 50% silking stage",
+"Maturity stage",
+"None of these"
+],
+"page": "22",
+"q": "What is the critical stage of water for maize in terms of moisture and nutrients?",
+"serial": "150",
+"src_row": 149,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:150"
+},
+{
+"expl": "The ideal soil pH range for maize cultivation is 6.5 to 7.5.",
+"key": 1,
+"o": [
+"5.5 to 6.5",
+"6.5 to 7.5",
+"7.5 to 8.5",
+"4.5 to 5.5",
+"None of these"
+],
+"page": "22",
+"q": "What is the ideal soil pH range for maize cultivation?",
+"serial": "151",
+"src_row": 150,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:151"
+},
+{
+"expl": "Maize can tolerate water logging for a maximum of 4-5 hours.",
+"key": 3,
+"o": [
+"1-2 hours",
+"2-3 hours",
+"3-4 hours",
+"4-5 hours",
+"None of these"
+],
+"page": "22",
+"q": "What is the maximum duration maize can tolerate water logging?",
+"serial": "152",
+"src_row": 151,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:152"
+},
+{
+"expl": "The water requirement for maize in a 100-day crop cycle is 500-800 mm.",
+"key": 1,
+"o": [
+"300-500 mm",
+"500-800 mm",
+"800-1000 mm",
+"1000-1200 mm",
+"None of these"
+],
+"page": "22",
+"q": "What is the water requirement for maize in a 100-day crop cycle?",
+"serial": "153",
+"src_row": 152,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:153"
+},
+{
+"expl": "Maize seeds should be dibbled at a depth of 4 cm along the furrow.",
+"key": 2,
+"o": [
+"2 cm",
+"3 cm",
+"4 cm",
+"5 cm",
+"None of these"
+],
+"page": "22",
+"q": "At what depth should maize seeds be dibbled along the furrow?",
+"serial": "154",
+"src_row": 153,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "22:154"
+},
+{
+"expl": "The tassel is the terminal male flower cluster of the maize plant, located at the top.",
+"key": 0,
+"o": [
+"Tassel",
+"Silk",
+"Husk",
+"Stalk",
+"None of these"
+],
+"page": "23",
+"q": "Which part of the maize plant is responsible for bearing the male flower clusters?",
+"serial": "155",
+"src_row": 154,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:155"
+},
+{
+"expl": "The silk is a very long silky filament that bears the female hairy cluster in a maize plant.",
+"key": 0,
+"o": [
+"To bear the female flower clusters",
+"To support the stalk",
+"To produce seeds",
+"To absorb nutrients",
+"None of these"
+],
+"page": "23",
+"q": "What is the primary function of the silk in a maize plant?",
+"serial": "156",
+"src_row": 155,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:156"
+},
+{
+"expl": "The recommended sowing depth for maize seeds is 4 cm when using a dibbler.",
+"key": 1,
+"o": [
+"2 cm",
+"4 cm",
+"6 cm",
+"8 cm",
+"None of these"
+],
+"page": "23",
+"q": "What is the recommended sowing depth for maize seeds?",
+"serial": "157",
+"src_row": 156,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:157"
+},
+{
+"expl": "Winter maize requires a seed rate of 25-30 kg/ha.",
+"key": 2,
+"o": [
+"Grain Maize",
+"Kharif crops",
+"Winter maize",
+"Fodder purpose",
+"None of these"
+],
+"page": "23",
+"q": "Which type of maize requires a seed rate of 25-30 kg/ha?",
+"serial": "158",
+"src_row": 157,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:158"
+},
+{
+"expl": "The seed rate for maize used for fodder purposes is 40-50 kg/ha.",
+"key": 2,
+"o": [
+"15-20 kg/ha",
+"20-25 kg/ha",
+"40-50 kg/ha",
+"25-30 kg/ha",
+"None of these"
+],
+"page": "23",
+"q": "What is the seed rate for maize used for fodder purposes?",
+"serial": "159",
+"src_row": 158,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:159"
+},
+{
+"expl": "The ear is the female inflorescence of the maize plant and is located at the leaf axils.",
+"key": 1,
+"o": [
+"Tassel",
+"Ear",
+"Stalk",
+"Prop roots",
+"None of these"
+],
+"page": "23",
+"q": "Which part of the maize plant is located at the leaf axils and bears the female inflorescence?",
+"serial": "160",
+"src_row": 159,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:160"
+},
+{
+"expl": "The recommended spacing for maize planted for green cob purposes at 83,333 plants per hectare is 60 x 20 cm.",
+"key": 1,
+"o": [
+"75 x 20 cm",
+"60 x 20 cm",
+"30 x 10 cm",
+"45 x 15 cm",
+"None of these"
+],
+"page": "23",
+"q": "What is the recommended spacing for maize planted for green cob purposes at 83,333 plants per hectare?",
+"serial": "161",
+"src_row": 160,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "23:161"
+},
+{
+"expl": "For rainfed maize, the recommended spacing is 45 cm between rows and 20 cm between plants in the row.",
+"key": 2,
+"o": [
+"25 cm between plants, 60 cm between rows",
+"45 cm between plants, 20 cm between rows",
+"20 cm between plants, 45 cm between rows",
+"30 cm between plants, 75 cm between rows",
+"None of these"
+],
+"page": "24",
+"q": "What is the recommended plant spacing for rainfed maize?",
+"serial": "162",
+"src_row": 161,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:162"
+},
+{
+"expl": "Maize is deficient in the proteins tryptophane and lysine.",
+"key": 1,
+"o": [
+"Leucine and isoleucine",
+"Tryptophane and lysine",
+"Valine and threonine",
+"Phenylalanine and methionine",
+"None of these"
+],
+"page": "24",
+"q": "What is the protein deficient in maize?",
+"serial": "163",
+"src_row": 162,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:163"
+},
+{
+"expl": "A salinity level of 3.8 mmhos/cm results in a 25% loss in maize production.",
+"key": 1,
+"o": [
+"2.5",
+"3.8",
+"5.9",
+"10",
+"None of these"
+],
+"page": "24",
+"q": "What is the salinity level (mmhos/cm) at which there is a 25% loss in maize production?",
+"serial": "164",
+"src_row": 163,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:164"
+},
+{
+"expl": "Simazine is the common herbicide used for maize.",
+"key": 1,
+"o": [
+"Atrazine",
+"Simazine",
+"Glyphosate",
+"2,4-D",
+"None of these"
+],
+"page": "24",
+"q": "Which herbicide is commonly used for maize?",
+"serial": "165",
+"src_row": 164,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:165"
+},
+{
+"expl": "The recommended plant population for Rabi maize is 85,000 - 90,000 plants per hectare.",
+"key": 2,
+"o": [
+"65,000 - 70,000 plants/ha",
+"75,000 - 80,000 plants/ha",
+"85,000 - 90,000 plants/ha",
+"95,000 - 100,000 plants/ha",
+"None of these"
+],
+"page": "24",
+"q": "What is the recommended plant population per hectare for Rabi maize?",
+"serial": "166",
+"src_row": 165,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:166"
+},
+{
+"expl": "The yellow color in maize is due to the presence of Cryptoxanthin.",
+"key": 2,
+"o": [
+"Beta-carotene",
+"Lutein",
+"Cryptoxanthin",
+"Zeaxanthin",
+"None of these"
+],
+"page": "24",
+"q": "What is the yellow color in maize attributed to?",
+"serial": "167",
+"src_row": 166,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:167"
+},
+{
+"expl": "The production of Rabi maize is 15-25% higher than that of Kharif maize.",
+"key": 2,
+"o": [
+"5-10%",
+"10-15%",
+"15-25%",
+"25-35%",
+"None of these"
+],
+"page": "24",
+"q": "What is the percentage increase in the production of Rabi maize compared to Kharif maize?",
+"serial": "168",
+"src_row": 167,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "24:168"
+}
+],
+"row_from": 147,
+"row_to": 168,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 147,
+"seeded_from": "2026-09-21"
+},
 "qidx": 0,
+"seeded_from": "2026-09-21",
+"skips": [],
 "step": 0
 },
 "malwa": {
