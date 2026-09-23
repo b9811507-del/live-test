@@ -38544,9 +38544,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 141,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 141,
+"built_at": "2026-09-23T11:15:14+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 37-42",
+"pages_blocks": [
+"37-38",
+"39-40",
+"41-42"
+],
+"questions": [
+{
+"expl": "Aman is the main rice cycle in India, covering 84% of the area.",
+"key": 2,
+"o": [
+"Aus",
+"Boro",
+"Aman",
+"Kharif",
+"None of these"
+],
+"page": "37-38",
+"q": "Which rice cultivation cycle is known as 'Aman' and accounts for 84% of India's rice area?",
+"serial": "201",
+"src_row": 121,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37-38:201"
+},
+{
+"expl": "Hybrid rice requires only about 15 kg/ha when directly seeded.",
+"key": 0,
+"o": [
+"15 kg/ha",
+"60 kg/ha",
+"100 kg/ha",
+"30-35 kg/ha",
+"None of these"
+],
+"page": "37-38",
+"q": "What is the seed rate for hybrid rice under direct seeding?",
+"serial": "202",
+"src_row": 122,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37-38:202"
+},
+{
+"expl": "SRI promotes a low density of 16 seedlings per square metre (square planting 25x25 cm).",
+"key": 0,
+"o": [
+"16 seedlings/m\u00b2",
+"25 seedlings/m\u00b2",
+"30 seedlings/m\u00b2",
+"40 seedlings/m\u00b2",
+"None of these"
+],
+"page": "37-38",
+"q": "In the System of Rice Intensification (SRI), what is the recommended planting density?",
+"serial": "203",
+"src_row": 123,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37-38:203"
+},
+{
+"expl": "The Dapog or Mat method is a soil\u2011less nursery using banana leaves, plastic, or cemented floors.",
+"key": 0,
+"o": [
+"Dapog nursery",
+"Wet bed nursery",
+"Aerobic rice system",
+"SRI system",
+"None of these"
+],
+"page": "37-38",
+"q": "Which nursery method uses a soil\u2011less bed with materials such as banana leaves or plastic sheets?",
+"serial": "204",
+"src_row": 124,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37-38:204"
+},
+{
+"expl": "In SRI, a leaf colour chart value of 3\u20134 indicates the right time for nitrogen application.",
+"key": 1,
+"o": [
+"1-2",
+"3-4",
+"5-6",
+"7-8",
+"None of these"
+],
+"page": "37-38",
+"q": "What is the critical Leaf Colour Chart (LCC) value for nitrogen application in SRI?",
+"serial": "205",
+"src_row": 125,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37-38:205"
+},
+{
+"expl": "Boro rice is harvested in March\u2011April and is referred to as spring/summer rice.",
+"key": 2,
+"o": [
+"Aus",
+"Aman",
+"Boro",
+"Kharif",
+"None of these"
+],
+"page": "37-38",
+"q": "Which rice season harvests in March\u2011April and is called 'spring/summer rice'?",
+"serial": "206",
+"src_row": 126,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37-38:206"
+},
+{
+"expl": "SRI yields 6-7 t/ha whereas conventional methods give 2-3 t/ha.",
+"key": 0,
+"o": [
+"6-7 t/ha vs 2-3 t/ha conventional",
+"2-3 t/ha vs 6-7 t/ha conventional",
+"10-12 t/ha vs 5-6 t/ha conventional",
+"4-5 t/ha vs 1-2 t/ha conventional",
+"None of these"
+],
+"page": "39-40",
+"q": "Average yield of rice under SRI compared to conventional methods is:",
+"serial": "211",
+"src_row": 127,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:211"
+},
+{
+"expl": "DSR reduces methane emissions by up to 50% compared to transplanted rice.",
+"key": 2,
+"o": [
+"20%",
+"30%",
+"50%",
+"70%",
+"None of these"
+],
+"page": "39-40",
+"q": "Direct Seeded Rice (DSR) can reduce methane emissions by up to:",
+"serial": "212",
+"src_row": 128,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:212"
+},
+{
+"expl": "Higher labour cost is a drawback of SRI, not of DSR.",
+"key": 3,
+"o": [
+"Higher seed rate",
+"Fe and Mn deficiency",
+"Nematode infestation",
+"Higher labour cost",
+"None of these"
+],
+"page": "39-40",
+"q": "Which of the following is NOT a challenge of DSR?",
+"serial": "213",
+"src_row": 129,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:213"
+},
+{
+"expl": "5 cm submergence is sufficient during transplanting, reproductive and grain formation stages for Rabi rice.",
+"key": 3,
+"o": [
+"Pre\u2011planting only",
+"Transplanting only",
+"Reproductive only",
+"Transplanting, reproductive and grain formation stages",
+"None of these"
+],
+"page": "39-40",
+"q": "Submergence of 5 cm water during which stages is adequate for Rabi rice?",
+"serial": "214",
+"src_row": 130,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:214"
+},
+{
+"expl": "Submergence causes pH changes, denitrification, and sulphate reduction, but not an increase in soil salinity.",
+"key": 2,
+"o": [
+"Increase in pH of acidic soils",
+"Reduction of nitrates to N\u2082O or N\u2082",
+"Increase of soil salinity",
+"Reduction of sulphate to sulphide",
+"None of these"
+],
+"page": "39-40",
+"q": "Which chemical reaction is NOT triggered by submergence?",
+"serial": "215",
+"src_row": 131,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:215"
+},
+{
+"expl": "Approximately 50\u201160% of applied water to rice is lost through deep percolation.",
+"key": 2,
+"o": [
+"20-30%",
+"30-40%",
+"50-60%",
+"70-80%",
+"None of these"
+],
+"page": "39-40",
+"q": "What percentage of applied water to rice is lost by deep percolation in India?",
+"serial": "216",
+"src_row": 132,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:216"
+},
+{
+"expl": "Booting or late panicle initiation is the most critical irrigation stage for rice.",
+"key": 2,
+"o": [
+"Germination",
+"Tillering",
+"Booting or late panicle initiation",
+"Grain filling",
+"None of these"
+],
+"page": "39-40",
+"q": "Which stage is most critical for irrigation in rice cultivation?",
+"serial": "217",
+"src_row": 133,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39-40:217"
+},
+{
+"expl": "Beushening improves weed control, spacing and harvest index; it does not directly reduce soil erosion.",
+"key": 3,
+"o": [
+"Control of weeds",
+"Optimization of plant spacing",
+"Increase in grain to straw ratio",
+"Reduction of soil erosion",
+"None of these"
+],
+"page": "41-42",
+"q": "Which of the following is NOT a primary benefit of beushening in direct\u2011seeded lowland rice?",
+"serial": "221",
+"src_row": 134,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:221"
+},
+{
+"expl": "The source states 20 kg N per ton of rice.",
+"key": 1,
+"o": [
+"10 kg",
+"20 kg",
+"30 kg",
+"40 kg",
+"None of these"
+],
+"page": "41-42",
+"q": "According to the thumb rule, how much nitrogen is required to produce one ton of rice?",
+"serial": "222",
+"src_row": 135,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:222"
+},
+{
+"expl": "The oxidized zone is a thin surface layer (10 mm) with oxygen.",
+"key": 0,
+"o": [
+"Oxidized Zone",
+"Reduced Zone",
+"Aerated Layer",
+"Subsurface Layer",
+"None of these"
+],
+"page": "41-42",
+"q": "In a water\u2011logged paddy field, the layer that contains oxygen is known as the?",
+"serial": "223",
+"src_row": 136,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:223"
+},
+{
+"expl": "Denitrification causes about 60% of nitrogen loss, the highest among listed mechanisms.",
+"key": 2,
+"o": [
+"Leaching",
+"Volatilization",
+"Denitrification",
+"Root uptake",
+"None of these"
+],
+"page": "41-42",
+"q": "Which mechanism accounts for the largest proportion of nitrogen loss in rice paddies?",
+"serial": "224",
+"src_row": 137,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:224"
+},
+{
+"expl": "The disease is specifically linked to zinc deficiency.",
+"key": 2,
+"o": [
+"Iron",
+"Manganese",
+"Zinc",
+"Copper",
+"None of these"
+],
+"page": "41-42",
+"q": "Khaira disease in rice is caused by deficiency of which micronutrient?",
+"serial": "225",
+"src_row": 138,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:225"
+},
+{
+"expl": "Browning occurs when leaf iron reaches 300 ppm.",
+"key": 2,
+"o": [
+"100 ppm",
+"200 ppm",
+"300 ppm",
+"400 ppm",
+"None of these"
+],
+"page": "41-42",
+"q": "What is the critical iron concentration in rice leaves that leads to browning?",
+"serial": "226",
+"src_row": 139,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:226"
+},
+{
+"expl": "The disease results from H2S produced by sulphate\u2011reducing bacteria.",
+"key": 2,
+"o": [
+"Oxygen",
+"Nitrous oxide",
+"Hydrogen sulfide",
+"Carbon dioxide",
+"None of these"
+],
+"page": "41-42",
+"q": "Akiochi disease is caused by accumulation of which gas in waterlogged rice fields?",
+"serial": "227",
+"src_row": 140,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41-42:227"
+}
+],
+"rolled": false,
+"row_from": 121,
+"row_to": 141,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 121,
+"seeded_from": "2026-09-22",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-22",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
