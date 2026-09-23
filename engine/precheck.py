@@ -86,13 +86,46 @@ def tg_call(token, method, **params):
         log(f"tg {method} err {e}")
         return None
 
-def fetch_url(url, timeout=15):
+def fetch_url(url, timeout=15, full=False):
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "precheck-v11.4.22"})
+        req = urllib.request.Request(url, headers={"User-Agent": "precheck-v12-simple"})
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return r.read().decode()[:2000], r.status
+            body = r.read().decode()
+            if not full and len(body) > 2000 and "state.json" not in url:
+                return body[:2000], r.status
+            return body, r.status
     except Exception as e:
         return f"err {e}", 0
+
+def fetch_state_full():
+    """Fetch state.json full, handling >1MB via GitHub API like engine.py"""
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY", "b9811507-del/live-test")
+    if token:
+        try:
+            import base64
+            req = urllib.request.Request(f"https://api.github.com/repos/{repo}/contents/state.json",
+                                         headers={"Authorization": f"Bearer {token}",
+                                                  "User-Agent": "precheck-v12",
+                                                  "Accept": "application/vnd.github+json"})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                d = json.loads(r.read().decode())
+                if d.get("content"):
+                    return base64.b64decode(d["content"]).decode()
+                sha = d.get("sha")
+                if sha:
+                    req2 = urllib.request.Request(f"https://api.github.com/repos/{repo}/git/blobs/{sha}",
+                                                  headers={"Authorization": f"Bearer {token}",
+                                                           "User-Agent": "precheck-v12",
+                                                           "Accept": "application/vnd.github+json"})
+                    with urllib.request.urlopen(req2, timeout=30) as r2:
+                        b = json.loads(r2.read().decode())
+                        return base64.b64decode(b["content"]).decode()
+        except Exception as e:
+            log(f"state via API failed {e}, falling back to raw")
+    # fallback raw full
+    body, status = fetch_url(f"https://raw.githubusercontent.com/{repo}/main/state.json?t={int(time.time())}", timeout=20, full=True)
+    return body if status==200 else None
 
 def check_exam_webhook():
     token = os.environ.get("EXAM_TG_TOKEN", "")
@@ -166,8 +199,9 @@ def check_paid_batches():
         return False, "PAID token missing for batch check"
     me = tg_call(token, "getMe") or {}
     bot_id = me.get("id")
+    bot_user = me.get("username", "?")
     if not bot_id:
-        return False, "PAID getMe failed"
+        return False, f"PAID getMe failed token={token[:10]}..."
     bad = []
     ok = []
     for b in BATCHES:
@@ -177,6 +211,11 @@ def check_paid_batches():
             continue
         try:
             mem = tg_call(token, "getChatMember", chat_id=chat, user_id=bot_id) or {}
+            if not mem or "status" not in mem:
+                # API returned error object
+                err_desc = mem.get("description", str(mem)[:80]) if isinstance(mem, dict) else str(mem)[:80]
+                bad.append(f"{b['key']} api_err={err_desc}")
+                continue
             st = mem.get("status", "?")
             can_inv = mem.get("can_invite_users", False) or st=="creator"
             if st in ("administrator","creator") and can_inv:
@@ -186,8 +225,9 @@ def check_paid_batches():
         except Exception as e:
             bad.append(f"{b['key']} err {e}")
     if bad:
-        return False, f"Batches BAD: {', '.join(bad)} | OK: {', '.join(ok)}"
-    return True, f"All {len(ok)} batches OK: {', '.join(ok)}"
+        # v12: log bot username to debug token mismatch (PAID_BOT_TOKEN vs PAID_TOKEN)
+        return False, f"Batches BAD (bot @{bot_user}): {', '.join(bad)} | OK: {', '.join(ok)}"
+    return True, f"All {len(ok)} batches OK (bot @{bot_user}): {', '.join(ok)}"
 
 def check_razorpay_webhook():
     key_id = os.environ.get("RAZORPAY_KEY_ID", "")
@@ -216,10 +256,9 @@ def check_razorpay_webhook():
 
 def check_state_locks():
     try:
-        raw_url = "https://raw.githubusercontent.com/b9811507-del/live-test/main/state.json?t=" + str(int(time.time()))
-        body, status = fetch_url(raw_url, timeout=15)
-        if status != 200:
-            return False, f"state.json fetch fail {status}"
+        body = fetch_state_full()
+        if not body:
+            return False, f"state.json fetch fail (empty)"
         st = json.loads(body)
         day = daykey()
         issues = []
