@@ -38538,8 +38538,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 189,
 "names": {},
+"plan": {
+"bidx_next": 189,
+"built_at": "2026-09-23T14:30:15+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 25-27",
+"pages_list": [
+25,
+26,
+27
+],
+"questions": [
+{
+"expl": "Seminal roots are specifically mentioned as the roots that nourish seedling plants.",
+"key": 0,
+"o": [
+"Seminal roots",
+"Crown roots",
+"Brace roots",
+"Lateral roots",
+"None of these"
+],
+"page": "25",
+"q": "Which type of roots are responsible for nourishing seedling plants?",
+"serial": "169",
+"src_row": 168,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:169"
+},
+{
+"expl": "The ideal moisture content in maize kernels for harvesting is around 15%. Initially, it might be 25-30%, but it is better to wait for it to come down to around 15%.",
+"key": 3,
+"o": [
+"25-30%",
+"20-25%",
+"15-20%",
+"15%",
+"None of these"
+],
+"page": "25",
+"q": "What is the ideal moisture content in maize kernels for harvesting?",
+"serial": "170",
+"src_row": 169,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:170"
+},
+{
+"expl": "Crown roots are located at the base of the stem in a young plant, as illustrated in the diagram.",
+"key": 1,
+"o": [
+"Seminal roots",
+"Crown roots",
+"Brace roots",
+"Primary roots",
+"None of these"
+],
+"page": "25",
+"q": "Which type of roots are found at the base of the stem in a young plant?",
+"serial": "171",
+"src_row": 170,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:171"
+},
+{
+"expl": "The average yield of maize in India is 2.75 tonnes per hectare.",
+"key": 0,
+"o": [
+"2.75 tonnes/ha",
+"3 tonnes/ha",
+"4 tonnes/ha",
+"5 tonnes/ha",
+"None of these"
+],
+"page": "25",
+"q": "What is the average yield of maize in India?",
+"serial": "172",
+"src_row": 171,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:172"
+},
+{
+"expl": "Brace roots grow out from the lower nodes of a mature maize plant, as shown in the diagram.",
+"key": 2,
+"o": [
+"Seminal roots",
+"Crown roots",
+"Brace roots",
+"Lateral roots",
+"None of these"
+],
+"page": "25",
+"q": "Which type of roots grow out from the lower nodes of a mature maize plant?",
+"serial": "173",
+"src_row": 172,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:173"
+},
+{
+"expl": "The yield range for hybrid maize is 50-60 quintals per hectare.",
+"key": 2,
+"o": [
+"30-40 q/ha",
+"40-50 q/ha",
+"50-60 q/ha",
+"60-70 q/ha",
+"None of these"
+],
+"page": "25",
+"q": "What is the yield range for hybrid maize?",
+"serial": "174",
+"src_row": 173,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:174"
+},
+{
+"expl": "The scientific name of Sorghum is Sorghum bicolor.",
+"key": 1,
+"o": [
+"Sorghum vulgare",
+"Sorghum bicolor",
+"Sorghum halepense",
+"Sorghum sudanense",
+"None of these"
+],
+"page": "25",
+"q": "What is the scientific name of Sorghum?",
+"serial": "175",
+"src_row": 174,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "25:175"
+},
+{
+"expl": "The optimum temperature range for sorghum cultivation is 32-35\u00b0C, as it thrives in warm climates.",
+"key": 2,
+"o": [
+"8-10\u00b0C",
+"25-30\u00b0C",
+"32-35\u00b0C",
+"36-38\u00b0C",
+"None of these"
+],
+"page": "26",
+"q": "What is the optimum temperature range for sorghum cultivation?",
+"serial": "176",
+"src_row": 175,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:176"
+},
+{
+"expl": "Sorghum is known as the 'Camel crop' because it has the capacity to withstand drought conditions.",
+"key": 1,
+"o": [
+"It can tolerate high salinity",
+"It can withstand drought conditions",
+"It requires minimal rainfall",
+"It grows well in clay loam soil",
+"None of these"
+],
+"page": "26",
+"q": "Why is sorghum known as the 'Camel crop'?",
+"serial": "177",
+"src_row": 176,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:177"
+},
+{
+"expl": "The optimum rainfall for rainfed sorghum is 250-300 mm.",
+"key": 3,
+"o": [
+"100-150 mm",
+"150-200 mm",
+"200-250 mm",
+"250-300 mm",
+"None of these"
+],
+"page": "26",
+"q": "What is the optimum rainfall for rainfed sorghum?",
+"serial": "178",
+"src_row": 177,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:178"
+},
+{
+"expl": "Sorghum leaves at the knee stage are poisonous to animals due to the high amount of Hydrocyanic acid (HCN), also known as Dhurin or Prussic acid.",
+"key": 3,
+"o": [
+"High amount of Dhurin",
+"High amount of Hydrocyanic acid (HCN)",
+"High amount of Prussic acid",
+"All of the above",
+"None of these"
+],
+"page": "26",
+"q": "What is the primary reason sorghum leaves at the knee stage are poisonous to animals?",
+"serial": "179",
+"src_row": 178,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:179"
+},
+{
+"expl": "The recommended seed rate for sorghum when used for fodder purposes is 40-50 kg/ha.",
+"key": 3,
+"o": [
+"10-15 kg/ha",
+"15-20 kg/ha",
+"20-30 kg/ha",
+"40-50 kg/ha",
+"None of these"
+],
+"page": "26",
+"q": "What is the recommended seed rate for sorghum when used for fodder purposes?",
+"serial": "180",
+"src_row": 179,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:180"
+},
+{
+"expl": "The ideal pH range for sorghum cultivation is 6.0-8.5, as it tolerates considerable salinity and alkalinity.",
+"key": 2,
+"o": [
+"4.5-6.0",
+"5.0-7.0",
+"6.0-8.5",
+"7.0-9.0",
+"None of these"
+],
+"page": "26",
+"q": "What is the ideal pH range for sorghum cultivation?",
+"serial": "181",
+"src_row": 180,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:181"
+},
+{
+"expl": "The recommended spacing for sorghum cultivation is 45 x 15 cm or 45 x 10 cm.",
+"key": 3,
+"o": [
+"30 x 10 cm",
+"30 x 15 cm",
+"45 x 10 cm",
+"45 x 15 cm",
+"None of these"
+],
+"page": "26",
+"q": "What is the recommended spacing for sorghum cultivation?",
+"serial": "182",
+"src_row": 181,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "26:182"
+},
+{
+"expl": "Immobilization occurs when the C:N ratio exceeds 30, so a ratio of 40 triggers it.",
+"key": 2,
+"o": [
+"20",
+"30",
+"40",
+"50",
+"None of these"
+],
+"page": "27",
+"q": "What C:N ratio threshold in crop residues causes nitrogen immobilization?",
+"serial": "183",
+"src_row": 182,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:183"
+},
+{
+"expl": "The recommendation is to apply 25% more nitrogen at the first dose to speed decomposition and supply the immobilized N.",
+"key": 2,
+"o": [
+"10% more",
+"15% more",
+"25% more",
+"35% more",
+"None of these"
+],
+"page": "27",
+"q": "To counteract the sorghum effect, how much extra nitrogen should be applied with the first fertilizer dose of the succeeding crop?",
+"serial": "184",
+"src_row": 183,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:184"
+},
+{
+"expl": "CSH-1 is identified as the drought\u2011 and salinity\u2011tolerant sorghum variety.",
+"key": 1,
+"o": [
+"M 35-1",
+"CSH-1",
+"Combine kafir-60",
+"H. Vulgare",
+"None of these"
+],
+"page": "27",
+"q": "Which sorghum variety is noted for drought and salinity tolerance?",
+"serial": "185",
+"src_row": 184,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:185"
+},
+{
+"expl": "Sorghum is a C4 plant, enabling efficient photosynthesis under high light and temperature.",
+"key": 1,
+"o": [
+"C3",
+"C4",
+"CAM",
+"C2",
+"None of these"
+],
+"page": "27",
+"q": "Sorghum follows which photosynthetic pathway?",
+"serial": "186",
+"src_row": 185,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:186"
+},
+{
+"expl": "The right harvest stage is when grains are hard and moisture is less than 25%.",
+"key": 2,
+"o": [
+"<15%",
+"<20%",
+"<25%",
+"<30%",
+"None of these"
+],
+"page": "27",
+"q": "At what maximum grain moisture percentage should sorghum be harvested for optimal yield?",
+"serial": "187",
+"src_row": 186,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:187"
+},
+{
+"expl": "H. Vulgare is the six\u2011rowed barley where all three spikelets are fertile and is widely grown in India.",
+"key": 0,
+"o": [
+"H. Vulgare",
+"H. spontaneum",
+"H. distichum",
+"H. flexuosum",
+"None of these"
+],
+"page": "27",
+"q": "Which barley group is six\u2011rowed with all three spikelets fertile and is most commonly cultivated in India?",
+"serial": "188",
+"src_row": 187,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:188"
+},
+{
+"expl": "Barley contains about 11.5% protein, primarily in the form of albuminoids.",
+"key": 2,
+"o": [
+"9.5%",
+"10.5%",
+"11.5%",
+"12.5%",
+"None of these"
+],
+"page": "27",
+"q": "What is the approximate protein content of barley grains?",
+"serial": "189",
+"src_row": 188,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "27:189"
+}
+],
+"row_from": 168,
+"row_to": 189,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 168,
+"seeded_from": "2026-09-22"
+},
 "qidx": 0,
+"seeded_from": "2026-09-22",
+"skips": [],
 "step": 0
 },
 "malwa": {
