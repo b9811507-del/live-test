@@ -38533,7 +38533,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-23T18:00:40+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"4600",
+"5000",
+"3086",
+"4444",
+"None of these"
+],
+"page": "",
+"q": "High\u2011density planting for Cavendish varieties uses spacing of 1.8 m \u00d7 3.6 m. Approximately how many plants per hectare does this correspond to?",
+"serial": "1sUgWsko:998",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:998"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Oxyfluorfen",
+"Pendimethalin",
+"Imazethapyr",
+"Quizalofop-ethyl",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is specifically NOT recommended for Pigeonpea?",
+"serial": "1bxM1Q-4:1282",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1282"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"India",
+"USA",
+"China",
+"Japan",
+"None of these"
+],
+"page": "",
+"q": "Which country has the highest consumption of herbicides per hectare in the world?",
+"serial": "17U0MEc-:832",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:832"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Edging",
+"Hanging baskets",
+"Trellis work",
+"Indoor furniture",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a use of annual flowers?",
+"serial": "1bxM1Q-4:3378",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3378"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Star type weeder",
+"Wheel hoe",
+"Peg type weeder",
+"Hand hoe",
+"None of these"
+],
+"page": "",
+"q": "Which weeder is suitable for clayey soils?",
+"serial": "1sUgWsko:6228",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6228"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2-10 per cent",
+"Less than 2 per cent",
+"More than 10 per cent",
+"Up to 6 per cent",
+"None of these"
+],
+"page": "",
+"q": "At what land slope percentage is graded bunding typically adopted?",
+"serial": "1bxM1Q-4:1388",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1388"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Regulates stomatal opening",
+"Biosynthesis of chlorophyll",
+"Storage of starch",
+"Production of auxins",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of iron in plants related to photosynthesis?",
+"serial": "1sUgWsko:7354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7354"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Temperate",
+"Tropical",
+"Arid",
+"Mediterranean",
+"None of these"
+],
+"page": "",
+"q": "Which climate is suitable for coconut cultivation?",
+"serial": "1bxM1Q-4:3076",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3076"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nilaparvata lugens (Brown plant hopper)",
+"Aphis gossypii",
+"Bemisia tabaci",
+"Rhizoctonia solani",
+"None of these"
+],
+"page": "",
+"q": "Grassy stunt disease in rice is transmitted by which insect?",
+"serial": "17U0MEc-:2200",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2200"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A small drawing at the end of a story",
+"An editorial page box giving information about the publication",
+"The main headline of the newspaper",
+"A series of illustrated cards telling a complete story",
+"None of these"
+],
+"page": "",
+"q": "What does the masthead in a newspaper refer to?",
+"serial": "128DIQLj:2313",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2313"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"It encourages more rooting at depth",
+"It increases soil erosion",
+"It reduces soil porosity",
+"It promotes surface rooting",
+"None of these"
+],
+"page": "",
+"q": "What is one of the benefits of deep placement of fertilizer?",
+"serial": "1bxM1Q-4:1370",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1370"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase the number of crops per year",
+"To escape the attack of Fruit Fly",
+"To enhance flower color",
+"To reduce water usage",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of 'crop regulation' in guava cultivation as mentioned in the source?",
+"serial": "1sUgWsko:1089",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1089"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Hookah",
+"Chewing",
+"Snuff",
+"Pharmaceutical analgesic",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT listed as a use of tobacco in the source?",
+"serial": "1sUgWsko:483",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:483"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Panama Wilt",
+"Sigatoka",
+"Cigar-end disease",
+"Black finger",
+"None of these"
+],
+"page": "",
+"q": "Which disease of Banana is controlled by removing pestil and stamens?",
+"serial": "1bxM1Q-4:2635",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2635"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Greenhouses for active heating",
+"Greenhouses for active cooling",
+"Rigid panel greenhouses",
+"Ground to ground greenhouse",
+"None of these"
+],
+"page": "",
+"q": "Which greenhouse type is associated with active cooling as per the SOURCE?",
+"serial": "1sUgWsko:1630",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1630"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Length of the spillway",
+"Watershed area",
+"Rainfall intensity",
+"Run-off in cubic metres per second",
+"None of these"
+],
+"page": "",
+"q": "What does the formula Q = 1.70 LH^(3/2) determine?",
+"serial": "1bxM1Q-4:1422",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1422"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A farm that combines crop production with livestock rearing",
+"A farm that derives 50% or more income from a single enterprise",
+"A farm that has several sources of income with no single source exceeding 49%",
+"A farm that operates in areas with average annual rainfall of \u2264 50 cm",
+"None of these"
+],
+"page": "",
+"q": "What defines a specialized farm?",
+"serial": "1bxM1Q-4:2348",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2348"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"-10 to 30\u00b0C",
+"0 to 48\u00b0C",
+"10 to 40\u00b0C",
+"20 to 60\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What temperature range can Eucalyptus tereticornis tolerate?",
+"serial": "1sUgWsko:5431",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5431"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"15-17\u00b0C",
+"18-20\u00b0C",
+"20-22\u00b0C",
+"24-26\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "For maximum productivity of beet, the optimum ambient temperature is:",
+"serial": "1YcJWVgW:703",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:703"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2006",
+"2005",
+"2002",
+"1988",
+"None of these"
+],
+"page": "",
+"q": "When was the Schedule Tribes (Recognition of Forest Rights) Bill passed?",
+"serial": "1UgnIe-g:2772",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2772"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Deep furrows for water flow",
+"Small and shallow furrows for close-growing crops",
+"Overhead sprinkling of water",
+"Subsurface water delivery",
+"None of these"
+],
+"page": "",
+"q": "Corrugation irrigation is best described as:",
+"serial": "1sUgWsko:4602",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4602"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Promotes ethylene action",
+"Inhibits ethylene action",
+"Enhances stem elongation",
+"Induces flower formation",
+"None of these"
+],
+"page": "",
+"q": "What effect does a high concentration of CO2 have on ethylene action?",
+"serial": "1UgnIe-g:1671",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1671"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Systemic poison",
+"Contact poison",
+"Stomach poison",
+"Fumigant",
+"None of these"
+],
+"page": "",
+"q": "Which type of insecticide enters the insect's body in gaseous form?",
+"serial": "1bxM1Q-4:2406",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2406"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Trichoderma viride",
+"Pseudomonas fluorescens",
+"Carbendazim",
+"Azospirillum brasilense",
+"None of these"
+],
+"page": "",
+"q": "Which of the following seed treatments is NOT mentioned for snake gourd?",
+"serial": "1bxM1Q-4:3166",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3166"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Soil\u2011borne fungus",
+"Bacterial wilt pathogen",
+"Virus",
+"Nematode infestation",
+"None of these"
+],
+"page": "",
+"q": "The disease characterized by shredding of root bark and disintegration of the root system is most likely caused by which type of organism?",
+"serial": "1sUgWsko:3744",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3744"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sun hemp",
+"Sugarcane",
+"Wheat",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a green manure crop?",
+"serial": "1sUgWsko:4411",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4411"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Fat content",
+"Lactose",
+"Protein",
+"Minerals",
+"None of these"
+],
+"page": "",
+"q": "What is the primary reason for the sweetness of milk?",
+"serial": "1sUgWsko:2727",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2727"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Applied 2\u20134 days before sowing",
+"Applied 1\u20134 days after sowing",
+"Applied more than 10 days before sowing",
+"Applied 30\u201340 days after sowing",
+"None of these"
+],
+"page": "",
+"q": "Which application timing is used for problematic weeds with a higher dose?",
+"serial": "1bxM1Q-4:1225",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1225"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Milk production",
+"Meat production",
+"Controlled experiments to improve milk yield",
+"Wool production",
+"None of these"
+],
+"page": "",
+"q": "The Anglo\u2011Nubian goat is primarily used for ___?",
+"serial": "128DIQLj:1765",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1765"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Initiate DNA replication.",
+"Enhance mRNA stability and facilitate translation initiation.",
+"Signal termination of transcription.",
+"Promote splicing of introns.",
+"None of these"
+],
+"page": "",
+"q": "The addition of a 5' guanosine cap to a nascent mRNA molecule primarily serves to:",
+"serial": "1UgnIe-g:593",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:593"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Erosion hazard",
+"Severe climate",
+"High organic content",
+"Salinity",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a factor that contributes to the limitations of Class VIII soils?",
+"serial": "1bxM1Q-4:1354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1354"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"60%",
+"70%",
+"75%",
+"80%",
+"None of these"
+],
+"page": "",
+"q": "Meteorological drought is declared when annual rainfall is below what percentage of the normal climatological amount?",
+"serial": "1sUgWsko:5777",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5777"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To convert reciprocating motion into rotary motion",
+"To operate the inlet and exhaust valves",
+"To connect the piston to the connecting rod",
+"To ignite the fuel in the cylinder",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of the camshaft in an engine?",
+"serial": "128DIQLj:2932",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2932"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Numerical aberration",
+"Structural intra\u2011chromosomal aberration",
+"Deletion",
+"Duplication",
+"None of these"
+],
+"page": "",
+"q": "Polyploidy exemplifies which category of chromosomal aberration?",
+"serial": "1UgnIe-g:630",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:630"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Arka Vikas",
+"Pusa Red",
+"Pant Samrat",
+"Pusa Komal",
+"None of these"
+],
+"page": "",
+"q": "Which variety is specifically developed for Tomato cultivation?",
+"serial": "1YcJWVgW:74",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:74"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.08%",
+"0.008%",
+"0.0008%",
+"8%",
+"None of these"
+],
+"page": "",
+"q": "A concentration of 80 ppm in water corresponds to what percentage?",
+"serial": "128DIQLj:121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:121"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"9",
+"10",
+"11",
+"12",
+"None of these"
+],
+"page": "",
+"q": "What is the total number of ATARI Zones in India?",
+"serial": "128DIQLj:2156",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2156"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"3% N, 2% P, 2% K",
+"2% N, 3% P, 2% K",
+"2% N, 2% P, 3% K",
+"4% N, 2% P, 1% K",
+"None of these"
+],
+"page": "",
+"q": "What are the percentages of nitrogen, phosphate and potash in the fully built\u2011up deep litter?",
+"serial": "1sUgWsko:2393",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2393"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Wheat",
+"Rice",
+"Maize",
+"Coconut",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an example of an annual crop?",
+"serial": "1sUgWsko:4301",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4301"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Shield budding",
+"Patch budding",
+"Chip budding",
+"Ring budding",
+"None of these"
+],
+"page": "",
+"q": "Which budding technique is practiced when there is lack of sap flow?",
+"serial": "1sUgWsko:601",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:601"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mechanical manipulation of the soil to create conditions ideal for seed germination and crop growth",
+"Application of chemical fertilizers to enhance soil nutrients",
+"Irrigation of fields to maintain moisture levels",
+"Removal of weeds by manual hand\u2011pulling",
+"None of these"
+],
+"page": "",
+"q": "How does the source define \"tillage\"?",
+"serial": "1bxM1Q-4:578",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:578"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rice followed by pulse in fallow",
+"Wheat planted between rows of black walnut trees",
+"Maize + Green gram + Pigeon pea",
+"Safflower around wheat",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of mixed cropping?",
+"serial": "1sUgWsko:4533",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4533"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Soil degradation",
+"Soil erosion",
+"Soil compaction",
+"Soil salinization",
+"None of these"
+],
+"page": "",
+"q": "What term describes the detachment and transport of soil by water or wind?",
+"serial": "128DIQLj:1461",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1461"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"High temperature during fruit set",
+"Rains or mists with cooler nights during flowering",
+"Prolonged drought after flowering",
+"Excessive soil salinity",
+"None of these"
+],
+"page": "",
+"q": "Which environmental condition most favors powdery mildew development in mango?",
+"serial": "1sUgWsko:3783",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3783"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pusa Vasuda",
+"Pusa Asita",
+"Pusa Vrishti",
+"Pusa Meghali",
+"None of these"
+],
+"page": "",
+"q": "Which carrot variety is known for its heat and humidity tolerance and is suitable for Thari sowing?",
+"serial": "1YcJWVgW:679",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:679"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Khadar",
+"Bhangar",
+"Tarai",
+"Bhabar",
+"None of these"
+],
+"page": "",
+"q": "Which soil type is found in low valley bottoms that are flooded annually?",
+"serial": "17U0MEc-:1142",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1142"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Supply is the total quantity available at any time; stock is the quantity offered at a given price",
+"Supply is the quantity offered for sale within a specific time frame at a given price; stock is the\u2026",
+"Supply and stock are identical for all commodities",
+"Stock only applies to perishable goods",
+"None of these"
+],
+"page": "",
+"q": "How does supply differ from stock?",
+"serial": "128DIQLj:2406",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "128DIQLj:2406"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pusa Sheetal",
+"Arka Vikash",
+"Hissar Lalit",
+"Pusa Gaurav",
+"None of these"
+],
+"page": "",
+"q": "Which variety of tomato is suitable for winter season?",
+"serial": "17U0MEc-:1556",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1556"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C.F. Nasse",
+"G.J. Mendel",
+"F. Meischer",
+"E. Strausberger",
+"None of these"
+],
+"page": "",
+"q": "Which scientist began studies on hybridization in peas in 1856?",
+"serial": "1bxM1Q-4:1866",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1866"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Distance between the two rows in a pair",
+"Distance between the two rows in a pair and the next pair",
+"Distance between plants within a row",
+"Distance between rows in a single row",
+"None of these"
+],
+"page": "",
+"q": "In a paired row planting with 30/60 cm spacing, what does the 60 cm refer to?",
+"serial": "128DIQLj:752",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:752"
+}
+],
+"set_no": 11,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
