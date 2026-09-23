@@ -1,0 +1,17 @@
+name = "live-test-free"
+main = "worker.js"
+compatibility_date = "2024-09-01"
+
+# Free tier - no need for paid features
+[triggers]
+crons = ["*/2 * * * *"]  # every 2 min, like keepwarm (optional)
+
+# For status page, no KV needed, but you can add KV for spool if you want
+# [[kv_namespaces]]
+# binding = "PAID_SPOOL"
+# id = "your-kv-id"
+
+[vars]
+# Public vars (secrets should be set via `wrangler secret put`)
+GITHUB_REPO = "b9811507-del/live-test"
+account_id = "1787b53636499fe83ad54b82072173d3"

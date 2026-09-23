@@ -1,18 +1,17 @@
 name: slot-chain
-# MAIN DISPATCHER (SPEC v11 §7): one short cycle for all three jobs, then it re-arms itself.
-#  * schedule() cron on this account is unreliable -> cron is a BACKSTOP only; the chain self-chains
-#    via workflow_dispatch with the runner token.
-#  * concurrency NEVER cancels: a live 30s-per-question test must not be killed mid-poll.
-#  * brand-new workflow files 404 on dispatch until they exist on the default branch -> push trigger
-#    on this file (+ engine) self-registers it.
-#  * NO inline python here on purpose (multi-line YAML run: | + heredoc traps) — engine/engine.py only.
+# v12 SIMPLE — One main workflow only (user order: simple rakho, bina kaam ka delete)
+# - Cron every 5 min + self-chain every 60 sec inside 10:00-19:15 + 180 min pre-slot (3h) to prevent 08:01 gap
+# - 20 min before slot: verify EXAM webhook empty, PAID webhook set, Worker alive, can_post, batch admin — auto-fix
+# - Exact time: announce pinned at 11:00/14:30/18:00, then timer message 15 sec countdown (separate), then polls 25 sec gap 0.5 sec
+# - Last message after every test = paid batches (most important)
+# - LATE_MAX 5 min hard (max 3-5 min late only, user order)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "*/10 * * * *"        # backstop only (UTC; job times are computed in IST inside the engine)
+    - cron: "*/5 * * * *"        # every 5 min — backstop, tight for on-time
   push:
     branches: [main]
-    paths: [".github/workflows/slot-chain.yml", "engine/engine.py"]
+    paths: [".github/workflows/slot-chain.yml", "engine/engine.py", "engine/precheck.py", "engine/paid.py"]
 permissions:
   contents: write
   actions: write
@@ -22,7 +21,7 @@ concurrency:
 jobs:
   cycle:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 60
     env:
       TZ: Asia/Kolkata
       EXAM_TG_TOKEN: ${{ secrets.EXAM_TG_TOKEN }}
@@ -30,12 +29,8 @@ jobs:
       ADMIN_CHAT: ${{ secrets.ADMIN_CHAT }}
       MONGO_URI: ${{ secrets.MONGO_URI }}
       IARI_CHAT: ${{ secrets.IARI_CHAT }}
-      # paid batches (last message after every test): payment links/price/chat per batch
-      PAID_SHOWCASE: "on"
+      PAID_SHOWCASE: "on"          # v12: paid batch LAST message must come after every test (user order)
       PAID_BOT_TOKEN: ${{ secrets.PAID_BOT_TOKEN }}
-      PAID_LINK_AFO: ${{ secrets.PAID_LINK_AFO }}
-      PAID_LINK_PASHU: ${{ secrets.PAID_LINK_PASHU }}
-      PAID_LINK_CANE: ${{ secrets.PAID_LINK_CANE }}
       PAID_PRICE_AFO: ${{ secrets.PAID_PRICE_AFO }}
       PAID_PRICE_PASHU: ${{ secrets.PAID_PRICE_PASHU }}
       PAID_PRICE_CANE: ${{ secrets.PAID_PRICE_CANE }}
@@ -50,47 +45,58 @@ jobs:
       PAID_CHAT_IARI: ${{ secrets.PAID_CHAT_IARI }}
       PAID_CHAT_NEMRAJ: ${{ secrets.PAID_CHAT_NEMRAJ }}
       PAID_CHAT_RKSHARMA: ${{ secrets.PAID_CHAT_RKSHARMA }}
-      PAID_VERIFY: ${{ secrets.PAID_VERIFY }}
-      # Razorpay payment links (v11.3)
+      PAID_VERIFY: "auto"
+      PAID_WEBHOOK_SECRET: ${{ secrets.PAID_WEBHOOK_SECRET }}
       RAZORPAY_KEY_ID: ${{ secrets.RAZORPAY_KEY_ID }}
       RAZORPAY_KEY_SECRET: ${{ secrets.RAZORPAY_KEY_SECRET }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       GITHUB_REPOSITORY: ${{ github.repository }}
+      # v12 simple timing
+      POLL_SECONDS: "25"
+      LATE_MAX_MIN: "5"
+      DEFER_SECS: "0"
+      COUNTDOWN_SECS: "15"
+      ANNOUNCE_LEAD: "0"
     steps:
       - uses: actions/checkout@v4
       - name: deps
-        run: pip install -q pymongo
-      - name: cycle
+        run: pip install -q pymongo requests
+      - name: pre-check 20 min before (verify + auto-fix)
+        run: |
+          H=$(date +%H); M=$(date +%M); NOW=$((10#$H * 60 + 10#$M))
+          for GO in 660 870 1080; do
+            DIFF=$((GO - NOW))
+            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 25 ]; then
+              echo "=== 20 MIN BEFORE SLOT $GO (diff $DIFF min) — running full verification ==="
+              python3 engine/precheck.py || true
+              break
+            fi
+            if [ "$DIFF" -lt 0 ] && [ "$DIFF" -ge -5 ]; then
+              echo "=== SLOT $GO OVERDUE by $(( -DIFF )) min (within 5) — verify ==="
+              python3 engine/precheck.py || true
+              break
+            fi
+          done
+      - name: cycle (announce → timer 15s → polls 25s gap 0.5s → LB → paid LAST)
         run: python3 engine/engine.py slotchain || true
-      # v11.4.22 (22-Sep): FIX late start — chain must re-arm even outside 10:00-19:15 if next slot within 50 min
-      # Before fix, last run at 06:22 didn't re-arm, malwa 11:00 was 8 min late (needed manual dispatch)
-      # New: if within 50 min before any slot (10:10, 13:40, 17:10) -> always re-arm
-      # Plus 20-min pre-check workflow ensures verification + auto-fix
-      - name: rearm (jitter 100-190s, window + 50min pre-slot)
+      - name: rearm (simple, 60 sec, 180 min pre-slot to prevent gap)
         if: always()
         env:
           TZ: Asia/Kolkata
         run: |
           H=$(date +%H); M=$(date +%M); NOW=$((10#$H * 60 + 10#$M))
           SHOULD=0
+          # Always re-arm if within 180 min (3h) before any slot — prevents 08:01 gap that caused malwa late
           for GO in 660 870 1080; do
             DIFF=$((GO - NOW))
-            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 50 ]; then SHOULD=1; echo "Within 50 min of slot $GO (diff $DIFF) -> will re-arm"; break; fi
-            if [ "$DIFF" -lt 0 ] && [ "$DIFF" -ge -15 ]; then SHOULD=1; echo "Slot $GO overdue by $(( -DIFF )) min (<15) -> will re-arm"; break; fi
+            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 180 ]; then SHOULD=1; echo "Within 180 min of slot $GO (diff $DIFF) -> will re-arm (prevent gap)"; break; fi
+            if [ "$DIFF" -lt 0 ] && [ "$DIFF" -ge -10 ]; then SHOULD=1; echo "Slot $GO overdue by $(( -DIFF )) min (<10) -> will re-arm (hard fix)"; break; fi
           done
           if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then SHOULD=1; fi
           if [ "$SHOULD" -eq 1 ]; then
+            echo "Re-arming slot-chain in 60 sec (simple, no 100-190 jitter)"
+            sleep 60
             python3 engine/engine.py dispatch slot-chain.yml || true
-            sleep $(( (RANDOM % 91) + 100 ))
           else
-            echo "outside window and not near slot ($H:$M IST) -> not re-arming (saving minutes)"
+            echo "Outside window and not near slot ($H:$M IST) -> not re-arming (save minutes)"
           fi
-          python3 engine/engine.py rearm || true
-          for GO in 660 870 1080; do
-            DIFF=$((GO - NOW))
-            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 25 ]; then
-              echo "Within 25 min of slot $GO -> running precheck"
-              python3 engine/precheck.py || true
-              break
-            fi
-          done

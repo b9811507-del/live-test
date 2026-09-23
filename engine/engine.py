@@ -51,7 +51,7 @@ try:
 except Exception:
     precheck_mod = None
 
-VERSION = "v11.4.22"
+VERSION = "v12.0-simple"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE = os.environ.get("ENGINE_STATE") or os.path.join(ROOT, "state.json")   # ENGINE_STATE -> isolated journal (smoke tests / previews)
 OUTDIR = os.path.join(ROOT, "out")
@@ -105,13 +105,13 @@ JOBS = {
 }
 ORDER = ["malwa", "iari", "afo"]
 ALLOWED_UPDATES = ["message", "callback_query", "poll", "poll_answer", "chat_join_request", "my_chat_member"]
-ANNOUNCE_LEAD = int(os.environ.get("ANNOUNCE_LEAD", "0"))     # v11.4: announce exactly at 11:00/2:30/6:00
-COUNTDOWN_SECS = int(os.environ.get("COUNTDOWN_SECS", "15"))  # v11.1: announce -> 15s countdown -> polls
-DEFER_SECS = int(os.environ.get("DEFER_SECS", "240"))         # run earlier than this only re-arms (saves runner minutes)
+ANNOUNCE_LEAD = int(os.environ.get("ANNOUNCE_LEAD", "0"))     # v12 simple: announce exactly at 11:00/2:30/6:00
+COUNTDOWN_SECS = int(os.environ.get("COUNTDOWN_SECS", "15"))  # v12: 15s countdown timer message after announce
+DEFER_SECS = int(os.environ.get("DEFER_SECS", "0"))         # v12 simple: 0 = no defer, start exactly on time (fix time)
 WINDOW_BEFORE = 50 * 60          # start allowed from go-50min
 WINDOW_AFTER = 4 * 3600          # after go+4h a missed slot stays missed
-LATE_MAX_MIN = int(os.environ.get("LATE_MAX_MIN", "15"))   # v11.4.10: never *start* a test this late
-POLL_SECONDS = 30                # open_period + drain window
+LATE_MAX_MIN = int(os.environ.get("LATE_MAX_MIN", "5"))   # v12 hard: max 3-5 min late only (user order)
+POLL_SECONDS = 25                # v12: 25 sec per question (was 30) + 0.5s gap = instant next poll
 PAPER_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "paper_template.html")
 POLL_MODE = (os.environ.get("POLL_MODE", "quiz") or "quiz").strip().lower()   # quiz = explanation in the poll
 REVEAL_AFTER_Q = (os.environ.get("REVEAL_AFTER_Q", "off") or "off").strip().lower() in ("on", "1", "yes")
@@ -941,7 +941,7 @@ def countdown_text(job, day, plan, secs):
     pg = pages_text(job, plan)
     if pg:
         lines.append(pg)
-    lines += [tr.t("ann_body", n=plan["n"]).split(" · ")[0] + " · 30 seconds each",
+    lines += [tr.t("ann_body", n=plan["n"]).split(" · ")[0] + " · %s seconds each" % POLL_SECONDS,
               tr.t("cd_line", n=max(0, int(secs)))]
     return "\n".join(lines)
 
@@ -1411,23 +1411,37 @@ def run_job(job, day=None, st=None, force=False):
             j["locked_by"] = RUN_ID
             jsave(st, "%s countdown heartbeat" % job)
             sleep(min((go - istnow()).total_seconds(), 30))
-        # v11.1: a single 15-second countdown, then the first poll
+        # v12 simple: announce done, now separate timer message with 15 sec countdown
+        # User order: announce time pr aaye uske turant bd ek timer message aaye jo 15 sec ka countdown wala uske bd test start
+        if int(j.get("step", 0)) < 1:
+            # already handled announce above, but keep for resume
+            pass
+        # Timer message (separate from announce) — 15 sec countdown
+        if not j.get("msg_timer"):
+            tm = tg("sendMessage", chat_id=chat, text=countdown_text(job, day, plan, COUNTDOWN_SECS), parse_mode="HTML", disable_web_page_preview=True)
+            if tm:
+                j["msg_timer"] = tm["message_id"]
+                jsave(st, "%s timer msg #%s" % (job, j["msg_timer"]))
         anchor = max(go, istnow() + dt.timedelta(seconds=COUNTDOWN_SECS))
         ticks = sorted({x for x in (COUNTDOWN_SECS, 10, 5, 4, 3, 2, 1) if 0 < x <= COUNTDOWN_SECS}, reverse=True)
         for val in ticks + [0]:
             target = anchor - dt.timedelta(seconds=val)
             if istnow() < target:
                 sleep((target - istnow()).total_seconds())
-            if j.get("msg_ann"):
-                tg("editMessageText", chat_id=chat, message_id=j["msg_ann"], parse_mode="HTML",
+            # Edit timer message (not announce) for countdown
+            if j.get("msg_timer"):
+                tg("editMessageText", chat_id=chat, message_id=j["msg_timer"], parse_mode="HTML",
                    text=countdown_text(job, day, plan, val))
-                j["cd"] = val
-                j["lock_ts"] = time.time()
-                jsave(st, "%s countdown %ds" % (job, val))
+            # Also keep announce pinned, no edit
+            j["cd"] = val
+            j["lock_ts"] = time.time()
+            jsave(st, "%s countdown %ds (timer msg)" % (job, val))
+        # Delete timer message after countdown? Keep it or delete? User wants timer then test start — we keep it then delete after polls start to keep clean
+        # Optionally delete timer message after countdown to keep group clean, but keep for now as per user: timer then test
         j["step"] = 2
         j["started_at"] = istnow().isoformat(timespec="seconds")
-        jsave(st, "%s polls start" % job)
-        log("countdown %ss done -> polls start" % COUNTDOWN_SECS)
+        jsave(st, "%s polls start (25s each, 0.5s gap)" % job)
+        log("countdown %ss done -> polls start (25s)" % COUNTDOWN_SECS)
 
     # --- polls (one open at a time, live scoring, journal every 5Q / 100s)
     N = plan["n"]
@@ -1632,15 +1646,14 @@ def run_job(job, day=None, st=None, force=False):
             j["cta_sent"] = c["message_id"]
     elif not CTA_SHOW and not j.get("cta_sent"):
         j["cta_sent"] = "off"
-    # --- v11.4 (admin order): NO paid-batches message in the group any more.
-    if (os.environ.get("PAID_SHOWCASE", "off") or "off").lower() in ("on", "1", "yes") and not j.get("paid_msg"):
+    # --- v12 simple: paid batch message MUST be last message after every test (user order: sabse important)
+    if (os.environ.get("PAID_SHOWCASE", "on") or "on").lower() in ("on", "1", "yes") and not j.get("paid_msg"):
         try:
             j["paid_msg"] = paid.post_after_test(SELF, chat, job=job, day=day)
         except Exception as e:
             log("paid message failed:", str(e)[:120])
     j["step"] = 8
-    j["msg_order"] = ["announce", "countdown", "quiz-polls(+in-poll explanation)", "leaderboard(all parts)",
-                      "top3", "file", "tomorrow-plan"]
+    j["msg_order"] = ["announce pinned", "timer 15s countdown", "quiz-polls 25s 0.5s gap", "leaderboard", "top3", "file", "tomorrow-plan", "paid batches LAST"]
     j["done_at"] = istnow().isoformat(timespec="seconds")
     j["elapsed_s"] = int(time.time() - t_start)
     j["partial"] = bool(j.get("partial"))
