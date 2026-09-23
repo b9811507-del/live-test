@@ -38543,6 +38543,7 @@
 "lock_ts": 1790154018.8418493,
 "locked_by": "35840336451",
 "msg_ann": 30123,
+"msg_timer": 30125,
 "names": {},
 "pinned_ann": true,
 "plan": {
