@@ -38985,6 +38985,8 @@
 "cd": 0,
 "congrats_sent": 30148,
 "cta_sent": "off",
+"done_at": "2026-09-23T14:43:48+05:30",
+"elapsed_s": 810,
 "expl_in_poll": 21,
 "file_msg": 30149,
 "file_sent": "IARI_p25-27_21Q_2026-09-23.html",
@@ -38994,8 +38996,18 @@
 "lb_rows": 33,
 "lb_sent": true,
 "lock_ts": 1790154799.2727563,
-"locked_by": "35840336451",
+"locked_by": "",
 "msg_ann": 30123,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 30125,
 "names": {
 "1018630900": "Janaki",
@@ -39032,6 +39044,8 @@
 "926052800": "Sumanth",
 "978174619": "Kuldeep758"
 },
+"paid_msg": 30151,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 189,
@@ -39465,7 +39479,7 @@
 "sent_i": 20,
 "skips": [],
 "started_at": "2026-09-23T14:32:12+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 30150,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 43-48\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 28, 29, 30",
 "unpinned": [
