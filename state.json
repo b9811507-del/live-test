@@ -38872,6 +38872,9 @@
 "bidx": 141,
 "cd": 0,
 "congrats_sent": 30119,
+"cta_sent": "off",
+"done_at": "2026-09-23T11:33:54+05:30",
+"elapsed_s": 678,
 "expl_in_poll": 19,
 "file_msg": 30120,
 "file_sent": "MALWA_VOL_1_p37-42_20Q_2026-09-23.html",
@@ -38881,8 +38884,17 @@
 "lb_rows": 27,
 "lb_sent": true,
 "lock_ts": 1790143392.7767773,
-"locked_by": "35824218049",
+"locked_by": "",
 "msg_ann": 30096,
+"msg_order": [
+"announce",
+"countdown",
+"quiz-polls(+in-poll explanation)",
+"leaderboard(all parts)",
+"top3",
+"file",
+"tomorrow-plan"
+],
 "names": {
 "1023152775": "iAnjali",
 "1043226490": "Ragricos",
@@ -38912,6 +38924,8 @@
 "8824694648": "WAR",
 "894896548": "Bhavani1405"
 },
+"paid_msg": null,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 1,
@@ -39330,7 +39344,7 @@
 "sent_i": 19,
 "skips": [],
 "started_at": "2026-09-23T11:17:34+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 30121,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 43-48\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 25, 26, 27",
 "unpinned": [
