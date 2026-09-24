@@ -43455,8 +43455,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 210,
 "names": {},
+"plan": {
+"bidx_next": 210,
+"built_at": "2026-09-24T14:30:51+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 28-30",
+"pages_list": [
+28,
+29,
+30
+],
+"questions": [
+{
+"expl": "The lemma of H. Irregulare is described as not bearing awns or hoods.",
+"key": 2,
+"o": [
+"It bears awns.",
+"It bears hoods.",
+"It bears neither awns nor hoods.",
+"It bears both awns and hoods.",
+"None of these"
+],
+"page": "28",
+"q": "Which of the following statements is true about the lemma of H. Irregulare?",
+"serial": "190",
+"src_row": 189,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:190"
+},
+{
+"expl": "H. Distichon is noted to have only the central spikelet fertile.",
+"key": 1,
+"o": [
+"All spikelets are fertile.",
+"Only the central spikelet is fertile.",
+"Only the lateral spikelets are fertile.",
+"No spikelet is fertile.",
+"None of these"
+],
+"page": "28",
+"q": "In H. Distichon, which spikelet is fertile?",
+"serial": "191",
+"src_row": 190,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:191"
+},
+{
+"expl": "The source states a seed rate of 100 kg/ha for barley.",
+"key": 1,
+"o": [
+"50 kg/ha",
+"100 kg/ha",
+"150 kg/ha",
+"200 kg/ha",
+"None of these"
+],
+"page": "28",
+"q": "What is the recommended seed rate for barley cultivation?",
+"serial": "192",
+"src_row": 191,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:192"
+},
+{
+"expl": "P. purpureum, also called Elephant grass, is used for fodder.",
+"key": 1,
+"o": [
+"P. glaucum",
+"P. purpureum",
+"Both P. glaucum and P. purpureum",
+"Neither species",
+"None of these"
+],
+"page": "28",
+"q": "Which pearl millet species is primarily used as fodder?",
+"serial": "193",
+"src_row": 192,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:193"
+},
+{
+"expl": "Pearl millet has a chromosome number of 2n=14.",
+"key": 1,
+"o": [
+"2n=12",
+"2n=14",
+"2n=16",
+"2n=18",
+"None of these"
+],
+"page": "28",
+"q": "What is the chromosome number of pearl millet?",
+"serial": "194",
+"src_row": 193,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:194"
+},
+{
+"expl": "The source lists pearl millet protein content as 10.5 to 14.5%.",
+"key": 1,
+"o": [
+"5\u20138%",
+"10.5\u201314.5%",
+"15\u201318%",
+"20\u201322%",
+"None of these"
+],
+"page": "28",
+"q": "The protein content of pearl millet ranges between which values?",
+"serial": "195",
+"src_row": 194,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:195"
+},
+{
+"expl": "Pearl millet thrives with rainfall of 250\u2013350 mm.",
+"key": 1,
+"o": [
+"100\u2013200 mm",
+"250\u2013350 mm",
+"400\u2013500 mm",
+"600\u2013700 mm",
+"None of these"
+],
+"page": "28",
+"q": "What is the ideal rainfall range for pearl millet cultivation?",
+"serial": "196",
+"src_row": 195,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "28:196"
+},
+{
+"expl": "Ergot disease is caused by high humidity and low temperature, which are conditions present during rain at grain maturity.",
+"key": 0,
+"o": [
+"Ergot disease",
+"Rust disease",
+"Blight disease",
+"Mosaic disease",
+"None of these"
+],
+"page": "29",
+"q": "Which disease is likely to affect bajra if there is rain during grain maturity?",
+"serial": "197",
+"src_row": 196,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:197"
+},
+{
+"expl": "Rainfall at flowering time washes off the pollen, leading to poor seed setting.",
+"key": 0,
+"o": [
+"Washing off of pollen",
+"Increased humidity",
+"Low temperature",
+"Soil erosion",
+"None of these"
+],
+"page": "29",
+"q": "What is the primary reason for poor seed setting in bajra when it rains during flowering?",
+"serial": "198",
+"src_row": 197,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:198"
+},
+{
+"expl": "Bajra does best on well-drained sandy loams and is sensitive to water-logging and acidic soils.",
+"key": 0,
+"o": [
+"Well-drained sandy loams",
+"Clay soils",
+"Water-logged soils",
+"Acidic soils",
+"None of these"
+],
+"page": "29",
+"q": "Which type of soil is best suited for bajra cultivation?",
+"serial": "199",
+"src_row": 198,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:199"
+},
+{
+"expl": "The common seed rate for bajra cultivation is 4-5 kg/ha.",
+"key": 0,
+"o": [
+"4-5 kg/ha",
+"10-12 kg/ha",
+"3.75 kg/ha",
+"15-18 kg/ha",
+"None of these"
+],
+"page": "29",
+"q": "What is the common seed rate for bajra cultivation?",
+"serial": "200",
+"src_row": 199,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:200"
+},
+{
+"expl": "Atrazine is recommended for pre-emergence weed management in bajra.",
+"key": 0,
+"o": [
+"Atrazine",
+"Glyphosate",
+"2,4-D",
+"Paraquat",
+"None of these"
+],
+"page": "29",
+"q": "Which herbicide is recommended for pre-emergence weed management in bajra?",
+"serial": "201",
+"src_row": 200,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:201"
+},
+{
+"expl": "The ideal sowing time for bajra in most states is June-July.",
+"key": 0,
+"o": [
+"June-July",
+"March-April",
+"September-October",
+"November-December",
+"None of these"
+],
+"page": "29",
+"q": "What is the ideal sowing time for bajra in most states?",
+"serial": "202",
+"src_row": 201,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:202"
+},
+{
+"expl": "Bajra grains contain about 67% carbohydrates.",
+"key": 0,
+"o": [
+"67%",
+"12.4%",
+"10.5-14.5%",
+"5%",
+"None of these"
+],
+"page": "29",
+"q": "What is the primary carbohydrate content in bajra grains?",
+"serial": "203",
+"src_row": 202,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "29:203"
+},
+{
+"expl": "The recommended ratio of NPK for areas with low rainfall is explicitly stated as 40:30:30.",
+"key": 0,
+"o": [
+"40:30:30",
+"60:40:40",
+"80:40:40",
+"50:30:20",
+"None of these"
+],
+"page": "30",
+"q": "What is the recommended ratio of NPK for areas with low rainfall?",
+"serial": "204",
+"src_row": 203,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:204"
+},
+{
+"expl": "The crop should be harvested when the grains have a moisture content of about 15-20%.",
+"key": 1,
+"o": [
+"10-15%",
+"15-20%",
+"20-25%",
+"25-30%",
+"None of these"
+],
+"page": "30",
+"q": "When should the crop be harvested based on grain moisture content?",
+"serial": "205",
+"src_row": 204,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:205"
+},
+{
+"expl": "The recommended application rate for FYM is explicitly stated as 5 tonnes per hectare.",
+"key": 1,
+"o": [
+"3 t/ha",
+"5 t/ha",
+"7 t/ha",
+"9 t/ha",
+"None of these"
+],
+"page": "30",
+"q": "What is the recommended application rate for FYM per hectare?",
+"serial": "206",
+"src_row": 205,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:206"
+},
+{
+"expl": "The recommended bio-fertilizers for seed and main field application are Azospirillum and Azotobacter.",
+"key": 1,
+"o": [
+"Rhizobium and Phosphate-solubilizing bacteria",
+"Azospirillum and Azotobacter",
+"Mycorrhiza and Blue-green algae",
+"Pseudomonas and Bacillus",
+"None of these"
+],
+"page": "30",
+"q": "Which bio-fertilizers are recommended for seed and main field application?",
+"serial": "207",
+"src_row": 206,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:207"
+},
+{
+"expl": "The recommended amount of Zn for micro-nutrient application is explicitly stated as 25 kg.",
+"key": 3,
+"o": [
+"10 kg",
+"15 kg",
+"20 kg",
+"25 kg",
+"None of these"
+],
+"page": "30",
+"q": "What is the recommended amount of Zn for micro-nutrient application?",
+"serial": "208",
+"src_row": 207,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:208"
+},
+{
+"expl": "The expected grain yield for irrigated conditions is explicitly stated as 3.0 to 3.5 tonnes per hectare.",
+"key": 2,
+"o": [
+"1.2 to 1.5 t/ha",
+"2.0 to 2.5 t/ha",
+"3.0 to 3.5 t/ha",
+"4.0 to 4.5 t/ha",
+"None of these"
+],
+"page": "30",
+"q": "What is the expected grain yield for irrigated conditions?",
+"serial": "209",
+"src_row": 208,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:209"
+},
+{
+"expl": "The expected fodder yield per hectare is explicitly stated as 300-400 quintals per hectare.",
+"key": 1,
+"o": [
+"200-300 q/ha",
+"300-400 q/ha",
+"400-500 q/ha",
+"500-600 q/ha",
+"None of these"
+],
+"page": "30",
+"q": "What is the expected fodder yield per hectare?",
+"serial": "210",
+"src_row": 209,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "30:210"
+}
+],
+"row_from": 189,
+"row_to": 210,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 189,
+"seeded_from": "2026-09-23"
+},
 "qidx": 0,
+"seeded_from": "2026-09-23",
+"skips": [],
 "step": 0
 },
 "malwa": {
