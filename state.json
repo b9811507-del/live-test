@@ -43453,6 +43453,7 @@
 "lock_ts": 1790253010.4313498,
 "locked_by": "35999410380",
 "msg_ann": 30274,
+"msg_timer": 30276,
 "names": {},
 "pinned_ann": true,
 "plan": {
