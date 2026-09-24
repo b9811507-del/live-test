@@ -43461,9 +43461,438 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 163,
 "names": {},
+"plan": {
+"batch": 1,
+"bidx_next": 163,
+"built_at": "2026-09-24T11:00:42+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 22,
+"pages": "Book pages 43-48",
+"pages_blocks": [
+"43-44",
+"45-46",
+"47-48"
+],
+"questions": [
+{
+"expl": "The source states that boron deficiency is higher in Odisha.",
+"key": 0,
+"o": [
+"Boron deficiency",
+"Iron deficiency",
+"Molybdenum deficiency",
+"Calcium deficiency",
+"None of these"
+],
+"page": "43-44",
+"q": "Which micronutrient deficiency is most prevalent in Odisha according to the source?",
+"serial": "231",
+"src_row": 141,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:231"
+},
+{
+"expl": "The chart recommends 30 kg N/ha when the leaf matches shade 3 or 4.",
+"key": 1,
+"o": [
+"20 kg N/ha",
+"30 kg N/ha",
+"40 kg N/ha",
+"50 kg N/ha",
+"None of these"
+],
+"page": "43-44",
+"q": "When using the Leaf Colour Chart, at what nitrogen application rate should a farmer apply N if the youngest fully expanded leaf matches shade 3 or 4?",
+"serial": "232",
+"src_row": 142,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:232"
+},
+{
+"expl": "SPAD meter is described as a portable chlorophyll meter.",
+"key": 1,
+"o": [
+"Green Seeker",
+"SPAD meter",
+"Leaf Colour Chart",
+"NDVI scanner",
+"None of these"
+],
+"page": "43-44",
+"q": "Which device measures leaf chlorophyll content non\u2011destructively to indicate plant nitrogen status?",
+"serial": "233",
+"src_row": 143,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:233"
+},
+{
+"expl": "The source states BGA fixes 20\u201330 kg N/ha.",
+"key": 2,
+"o": [
+"5\u201310 kg N/ha",
+"10\u201315 kg N/ha",
+"20\u201330 kg N/ha",
+"35\u201340 kg N/ha",
+"None of these"
+],
+"page": "43-44",
+"q": "What is the approximate amount of nitrogen fixed per hectare by blue\u2011green algae (BGA) in rice fields?",
+"serial": "234",
+"src_row": 144,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:234"
+},
+{
+"expl": "Sesbania is broadcast as a cover crop and provides ~35 kg N/ha.",
+"key": 1,
+"o": [
+"Azolla",
+"Sesbania/Dhaincha",
+"Azotobacter",
+"Azospirillum",
+"None of these"
+],
+"page": "43-44",
+"q": "In brown manuring, which cover crop is commonly used to enrich the soil with about 35 kg N/ha?",
+"serial": "235",
+"src_row": 145,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:235"
+},
+{
+"expl": "Basmati aroma is attributed to 2-acetyl-1-pyrroline.",
+"key": 0,
+"o": [
+"2-acetyl-1-pyrroline",
+"Diacetyl-1-pyrroline",
+"3-acetyl-1-pyrroline",
+"4-acetyl-1-pyrroline",
+"None of these"
+],
+"page": "43-44",
+"q": "The aroma of Basmati rice is mainly due to which compound?",
+"serial": "236",
+"src_row": 146,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:236"
+},
+{
+"expl": "GI tag states listed are Punjab, Haryana, Himachal Pradesh, Uttarakhand, etc.; Rajasthan is not included.",
+"key": 2,
+"o": [
+"Punjab",
+"Haryana",
+"Rajasthan",
+"Uttarakhand",
+"None of these"
+],
+"page": "43-44",
+"q": "Which of the following states does NOT have a geographical indication (GI) tag for Basmati rice?",
+"serial": "237",
+"src_row": 147,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:237"
+},
+{
+"expl": "The table states a total of 7 genes were inserted into Golden Rice.",
+"key": 2,
+"o": [
+"5",
+"6",
+"7",
+"8",
+"None of these"
+],
+"page": "43-44",
+"q": "How many genes were inserted into Golden Rice during its development?",
+"serial": "238",
+"src_row": 148,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43-44:238"
+},
+{
+"expl": "Harvesting at 21-23% moisture ensures the grain is neither too dry nor too moist for processing.",
+"key": 0,
+"o": [
+"21-23 %",
+"14 %",
+"15.5 %",
+"18 %",
+"None of these"
+],
+"page": "45-46",
+"q": "At what grain moisture content should a paddy crop be harvested to achieve optimal quality?",
+"serial": "241",
+"src_row": 149,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:241"
+},
+{
+"expl": "Hulling removes about two\u2011thirds (\u224866%) of the paddy, converting it to brown rice.",
+"key": 1,
+"o": [
+"50 %",
+"66 %",
+"75 %",
+"90 %",
+"None of these"
+],
+"page": "45-46",
+"q": "What is the approximate percentage of paddy that is removed during hulling?",
+"serial": "242",
+"src_row": 150,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:242"
+},
+{
+"expl": "Polishing removes the aleurone layer and embryo, where thiamine is concentrated, leading to its loss.",
+"key": 0,
+"o": [
+"Vitamin B1 (thiamine)",
+"Vitamin B12",
+"Vitamin C",
+"Vitamin D",
+"None of these"
+],
+"page": "45-46",
+"q": "Which vitamin is most significantly lost when rice is polished?",
+"serial": "243",
+"src_row": 151,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:243"
+},
+{
+"expl": "Rice starch gelatinizes between 70 and 74 \u00b0C, influenced by its amylose/amylopectin ratio.",
+"key": 1,
+"o": [
+"60-65 \u00b0C",
+"70-74 \u00b0C",
+"80-85 \u00b0C",
+"90-95 \u00b0C",
+"None of these"
+],
+"page": "45-46",
+"q": "The average gelatinization temperature of rice starch lies in which range?",
+"serial": "244",
+"src_row": 152,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:244"
+},
+{
+"expl": "Tip burn results from insufficient oxygen availability to the plant.",
+"key": 0,
+"o": [
+"Oxygen (O\u2082)",
+"Nitrogen (N)",
+"Phosphorus (P)",
+"Potassium (K)",
+"None of these"
+],
+"page": "45-46",
+"q": "Tip burn in paddy is primarily caused by a deficiency of which element?",
+"serial": "245",
+"src_row": 153,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:245"
+},
+{
+"expl": "ARS originated in China, promoting oxygen\u2011rich cultivation methods.",
+"key": 1,
+"o": [
+"India",
+"China",
+"Japan",
+"United States",
+"None of these"
+],
+"page": "45-46",
+"q": "The aerobic rice system (ARS) was first developed in which country?",
+"serial": "246",
+"src_row": 154,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:246"
+},
+{
+"expl": "Wheat grain contains about 8\u201315 % protein, with the rest mainly starch and minor fat.",
+"key": 1,
+"o": [
+"60-68 %",
+"8-15 %",
+"1.5-2 %",
+"30-40 %",
+"None of these"
+],
+"page": "45-46",
+"q": "What is the typical protein content range in wheat grain?",
+"serial": "247",
+"src_row": 155,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45-46:247"
+},
+{
+"expl": "Hexaploid wheat, with 42 chromosomes, originates from Asia as stated in the source.",
+"key": 0,
+"o": [
+"Asia",
+"Africa",
+"Asia Minor",
+"Europe",
+"None of these"
+],
+"page": "47-48",
+"q": "Which region is the origin of hexaploid wheat (2n=42)?",
+"serial": "251",
+"src_row": 156,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:251"
+},
+{
+"expl": "The source lists 12 cultivated wheat species globally.",
+"key": 0,
+"o": [
+"12",
+"18",
+"14",
+"10",
+"None of these"
+],
+"page": "47-48",
+"q": "How many cultivated wheat species are there worldwide?",
+"serial": "252",
+"src_row": 157,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:252"
+},
+{
+"expl": "Common bread wheat germplasm is held at CIMMYT in Mexico according to the source.",
+"key": 0,
+"o": [
+"CIMMYT, Mexico",
+"ICARDA, Beirut, Lebanon",
+"Syria, early 20th century",
+"India, Punjab",
+"None of these"
+],
+"page": "47-48",
+"q": "Where is the germplasm collection for common bread wheat maintained?",
+"serial": "253",
+"src_row": 158,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:253"
+},
+{
+"expl": "The stem (culm) is hollow except at the solid nodes, as described in the source.",
+"key": 1,
+"o": [
+"It is solid throughout the stem.",
+"It is hollow except at nodes.",
+"Nodes are hollow while the rest is solid.",
+"It has no nodes.",
+"None of these"
+],
+"page": "47-48",
+"q": "What is true about the wheat stem?",
+"serial": "254",
+"src_row": 159,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:254"
+},
+{
+"expl": "Tillering starts at 15 days after sowing (DAS) and continues up to 45 DAS.",
+"key": 1,
+"o": [
+"5-7 days",
+"15-45 days",
+"45-60 days",
+"70-85 days",
+"None of these"
+],
+"page": "47-48",
+"q": "At what days after sowing does tillering begin in wheat?",
+"serial": "255",
+"src_row": 160,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:255"
+},
+{
+"expl": "Auricles are present in wheat but absent in Phalaris minor and oats, as noted in the source.",
+"key": 0,
+"o": [
+"Auricles",
+"Leaf sheath",
+"Root crown",
+"Spikelets",
+"None of these"
+],
+"page": "47-48",
+"q": "Which feature is present in wheat spikes but absent in weeds like Phalaris minor and oats?",
+"serial": "256",
+"src_row": 161,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:256"
+},
+{
+"expl": "Each spike has 15-20 spikelets, each consisting of 1-5 florets, according to the source.",
+"key": 0,
+"o": [
+"15-20",
+"1-5",
+"30-40",
+"50-60",
+"None of these"
+],
+"page": "47-48",
+"q": "A typical wheat spike contains how many spikelets?",
+"serial": "257",
+"src_row": 162,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47-48:257"
+}
+],
+"rolled": false,
+"row_from": 141,
+"row_to": 163,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 141,
+"seeded_from": "2026-09-23",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-23",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
