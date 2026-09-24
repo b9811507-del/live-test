@@ -45907,6 +45907,8 @@
 "cd": 0,
 "congrats_sent": 30330,
 "cta_sent": "off",
+"done_at": "2026-09-24T18:29:14+05:30",
+"elapsed_s": 1743,
 "expl_in_poll": 0,
 "file_msg": 30331,
 "file_sent": "AFO_pFull-length-set-12_50Q_2026-09-24.html",
@@ -45916,8 +45918,18 @@
 "lb_rows": 77,
 "lb_sent": true,
 "lock_ts": 1790254715.8373888,
-"locked_by": "35999410380",
+"locked_by": "",
 "msg_ann": 30274,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 30276,
 "names": {
 "1018630900": "Janaki",
@@ -45998,6 +46010,8 @@
 "904220981": "Bhardwaj jii \ud83d\udd25\ud83d\udd25",
 "978174619": "Kuldeep758"
 },
+"paid_msg": 30333,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "built_at": "2026-09-24T18:00:07+05:30",
@@ -46970,7 +46984,7 @@
 "sent_i": 49,
 "skips": [],
 "started_at": "2026-09-24T18:02:18+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 30332,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 49-54\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 31, 32, 33\n\ud83c\udf06 6:00 PM \u00b7 <b>AFO MAINS TEST (NEW PATTERN)</b> \u2014 full-length set 13 (50 questions, +2 / \u22120.5)",
 "unpinned": [
