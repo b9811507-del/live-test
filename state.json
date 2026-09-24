@@ -43450,7 +43450,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-24T18:00:07+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Kranz anatomy",
+"Mesophyll cells only",
+"Single vascular bundle",
+"No bundle\u2011sheath cells",
+"None of these"
+],
+"page": "",
+"q": "Which anatomical feature is characteristic of C4 plant leaves?",
+"serial": "17U0MEc-:2628",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2628"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Monoecious and protandrous",
+"Dioecious and protogynous",
+"Monoecious and protogynous",
+"Dioecious and protandrous",
+"None of these"
+],
+"page": "",
+"q": "Maize is a plant that is:",
+"serial": "128DIQLj:286",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:286"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Water soaked, straw colour to yellow stripes on leaves",
+"Brown spots on leaves",
+"Wilting of the plant",
+"Root rot",
+"None of these"
+],
+"page": "",
+"q": "What is the initial symptom of Bacterial Leaf Blight (BLB) in rice?",
+"serial": "1UgnIe-g:994",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:994"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"China's Miracle Fruit",
+"Bio-energy Plant",
+"Food of God",
+"Glory of East",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a nickname for Kiwi fruit?",
+"serial": "1YcJWVgW:73",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:73"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sugarcane",
+"Corn",
+"Sugar beet",
+"Sweet sorghum",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a sugar feedstock for ethanol production?",
+"serial": "128DIQLj:2921",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2921"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rhizoctonia solani",
+"Ustilaginoidea virens",
+"Claviceps oryzae",
+"Ephelis oryzae",
+"None of these"
+],
+"page": "",
+"q": "Sheath blight of rice is caused by which pathogen?",
+"serial": "1UgnIe-g:1005",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1005"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Leagans Model",
+"Shannon-Weaver Model",
+"Berlo Model",
+"Rogers and Shoemaker Model",
+"None of these"
+],
+"page": "",
+"q": "Which model of communication includes the component 'Audience response'?",
+"serial": "1bxM1Q-4:2149",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2149"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Guava, Lemon, Grape",
+"Mango, Jack Fruit, Banana",
+"Apple, Orange, Pomegranate",
+"Papaya, Pineapple, Coconut",
+"None of these"
+],
+"page": "",
+"q": "Which fruit group has an ESP threshold of 20 for sensitivity classification?",
+"serial": "1sUgWsko:7112",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7112"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Nitrogen",
+"Sulphur",
+"Magnesium",
+"Iron",
+"None of these"
+],
+"page": "",
+"q": "Uniform yellowing on younger leaves is a symptom of deficiency of which immobile nutrient?",
+"serial": "128DIQLj:1336",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1336"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"One cycle is completed in one revolution of the crankshaft",
+"One cycle is completed in two strokes of the piston",
+"One cycle is completed in two revolutions of the crankshaft and four strokes of the piston",
+"One cycle is completed in four revolutions of the crankshaft",
+"None of these"
+],
+"page": "",
+"q": "What is the main characteristic of a four-stroke engine?",
+"serial": "128DIQLj:2934",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2934"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"King mandarin",
+"Willow leaf Mandarin",
+"Kinnow mandarin",
+"Sour orange",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a variety of Mandarin/Tangerine?",
+"serial": "1sUgWsko:1020",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1020"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1-3 meters",
+"3-4 meters",
+"About 1 meter",
+"Less than 0.5 meters",
+"None of these"
+],
+"page": "",
+"q": "What is the typical height range for dwarf protective hedges?",
+"serial": "1bxM1Q-4:3351",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3351"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dusting quinolphos 1.5 % @ 20 kg/ha in early stages",
+"Applying neem oil",
+"Using biological control agents",
+"Spraying water",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended method for managing pests in castor crops?",
+"serial": "17U0MEc-:765",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:765"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Honey bee",
+"Butterfly",
+"Wind",
+"Birds",
+"None of these"
+],
+"page": "",
+"q": "What is the chief pollinator of pumpkin?",
+"serial": "1bxM1Q-4:3164",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3164"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Providing timber",
+"Protecting water sheds",
+"Supplying fuel",
+"Producing charcoal",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a productive function of forests?",
+"serial": "1bxM1Q-4:3858",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3858"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Altimeter",
+"Anemometer",
+"Aneroid Barometer",
+"Atmometer",
+"None of these"
+],
+"page": "",
+"q": "Which instrument is used to measure atmospheric pressure?",
+"serial": "1bxM1Q-4:1525",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1525"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ice cover on soil surface",
+"High soil moisture",
+"Excess nitrogen",
+"Low light intensity",
+"None of these"
+],
+"page": "",
+"q": "What prevents the respiratory activities of roots during winter in temperate regions?",
+"serial": "1sUgWsko:5677",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5677"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2,4-D",
+"2,4-DB",
+"Glyphosate",
+"Atrazine",
+"None of these"
+],
+"page": "",
+"q": "What was the first selective organic herbicide introduced worldwide?",
+"serial": "128DIQLj:985",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:985"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It has a curved roof",
+"It is attached to a house",
+"It has two roof slopes of equal pitch and width",
+"It is the smallest type of greenhouse",
+"None of these"
+],
+"page": "",
+"q": "Why is the even-span greenhouse considered a standard type?",
+"serial": "1sUgWsko:1638",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1638"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10 to 20",
+"20 to 55",
+"55 to 80",
+"80 to 100",
+"None of these"
+],
+"page": "",
+"q": "What is the maximum pressure range (in kg/cm\u00b2) at which a power sprayer can be operated?",
+"serial": "1sUgWsko:6252",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6252"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sea breeze",
+"Land breeze",
+"Both equal",
+"None",
+"None of these"
+],
+"page": "",
+"q": "Which breeze is generally stronger?",
+"serial": "1sUgWsko:5705",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5705"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Selectivity",
+"Spectrum of weed control",
+"Residual action in soil",
+"Site of application",
+"None of these"
+],
+"page": "",
+"q": "Which classification criterion refers to how long a herbicide remains active in soil?",
+"serial": "128DIQLj:992",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:992"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Manometer",
+"Potometer",
+"Porometer",
+"Hygrometer",
+"None of these"
+],
+"page": "",
+"q": "What instrument is used to measure root pressure in plants?",
+"serial": "1UgnIe-g:1502",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1502"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To ban harmful insecticides",
+"To develop strategies to manage insecticide resistance",
+"To promote the use of insecticides",
+"To regulate the sale of insecticides",
+"None of these"
+],
+"page": "",
+"q": "What is the primary role of the Insecticide Resistance Action Committee (IRAC)?",
+"serial": "1UgnIe-g:2143",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2143"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Maize",
+"Wheat",
+"Cow pea",
+"Rice",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is an example of an erosion-resistant crop?",
+"serial": "17U0MEc-:250",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:250"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To produce enzymes for digestion.",
+"To induce the production of specific antibodies.",
+"To synthesize vitamins in the blood.",
+"To regulate body temperature.",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of an antigen in vertebrate animals?",
+"serial": "1sUgWsko:5966",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5966"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Calcium gluconate",
+"Trocar canula",
+"Vitamin E injection",
+"Selenium supplement",
+"None of these"
+],
+"page": "",
+"q": "The primary treatment for tympanites (bloat) includes which of the following?",
+"serial": "128DIQLj:2002",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2002"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Punjab",
+"Haryana",
+"Uttar Pradesh",
+"Rajasthan",
+"None of these"
+],
+"page": "",
+"q": "Which state has the highest utilizable groundwater resource?",
+"serial": "1sUgWsko:7144",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7144"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Segregation",
+"Crossing over",
+"Photosynthesis",
+"Mutation",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a cause of genetic variation in a population?",
+"serial": "1UgnIe-g:432",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:432"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Henry Fayol",
+"Max Weber",
+"F.W. Taylor",
+"Thorndike",
+"None of these"
+],
+"page": "",
+"q": "Who is considered the father of scientific management?",
+"serial": "128DIQLj:2223",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2223"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"June\u2013July",
+"November\u2013December",
+"March\u2013April",
+"August\u2013September",
+"None of these"
+],
+"page": "",
+"q": "Kharif crops are typically sown during which period?",
+"serial": "1bxM1Q-4:436",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:436"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"31%",
+"60%",
+"5%",
+"3.2%",
+"None of these"
+],
+"page": "",
+"q": "What is the percent share of vegetables in total horticultural production for 2023\u201124?",
+"serial": "1YcJWVgW:12",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:12"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Light only",
+"Darkness only",
+"Both light and darkness",
+"High humidity",
+"None of these"
+],
+"page": "",
+"q": "In which condition does photorespiration occur in C\u2083 plants?",
+"serial": "17U0MEc-:2586",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2586"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Red rot",
+"Smut",
+"Red stripe",
+"Grassy shoot",
+"None of these"
+],
+"page": "",
+"q": "Which disease is caused by the pathogen *Colletotrichum falcatum* in sugarcane?",
+"serial": "17U0MEc-:2248",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2248"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Microvilli",
+"Spicules and gubernaculums",
+"Mesentron",
+"Intestine",
+"None of these"
+],
+"page": "",
+"q": "Which structure is used by male nematodes to transfer sperm?",
+"serial": "17U0MEc-:2370",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2370"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Tsiology",
+"Theology",
+"Botany",
+"Phytology",
+"None of these"
+],
+"page": "",
+"q": "The study of tea is known as?",
+"serial": "1sUgWsko:1204",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1204"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.1 to 0.3 m",
+"0.3 to 0.9 m",
+"1.0 to 1.5 m",
+"2.0 to 3.0 m",
+"None of these"
+],
+"page": "",
+"q": "How fast does a bamboo culm grow per day?",
+"serial": "1sUgWsko:5441",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5441"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"20,000 ha",
+"55,000 ha",
+"8,000 ha",
+"5,000 ha",
+"None of these"
+],
+"page": "",
+"q": "What is the total area under cultivation for Opium poppy in India?",
+"serial": "1bxM1Q-4:3568",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3568"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Affected by change in origin but not by change in scale.",
+"Affected by change in scale but not by change in origin.",
+"Affected by both change in scale and origin.",
+"Not affected by either change in scale or origin.",
+"None of these"
+],
+"page": "",
+"q": "How are regression coefficients affected by changes in scale and origin?",
+"serial": "128DIQLj:2832",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2832"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Leaf curl of Cotton and Tobacco",
+"Banana streak",
+"Citrus Tristeza virus",
+"Papaya Ringspot virus",
+"None of these"
+],
+"page": "",
+"q": "Which disease is associated with the insect vector White fly (Bemisia tabaci)?",
+"serial": "1UgnIe-g:1187",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1187"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cover crops",
+"Arable crops",
+"Cash crops",
+"Alley crops",
+"None of these"
+],
+"page": "",
+"q": "Which crop is grown primarily to improve and protect the soil from erosion through ground covering foliage between periods of regular crop production?",
+"serial": "1bxM1Q-4:469",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:469"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Triacontanol",
+"Acephate",
+"NAA",
+"Calcium nitrate",
+"None of these"
+],
+"page": "",
+"q": "Which insecticide is recommended for managing chilli thrips and whiteflies?",
+"serial": "17U0MEc-:1574",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1574"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Israel",
+"USA",
+"France",
+"China",
+"None of these"
+],
+"page": "",
+"q": "Meadow Orcharding system originated in which country?",
+"serial": "1sUgWsko:582",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:582"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Between 0 and 1",
+"Between -1 and 0",
+"Between 1 and 10",
+"Between -1 and 1",
+"None of these"
+],
+"page": "",
+"q": "What is the range of values for the Marginal Propensity to Consume (MPC) and Marginal Propensity to Save (MPS)?",
+"serial": "128DIQLj:2428",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2428"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Mechanical Power",
+"Human Power",
+"Draught Power",
+"Fertilizers",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an indirect source of energy in crop production according to the SOURCE?",
+"serial": "1sUgWsko:6089",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6089"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Fabaceae",
+"Malvaceae",
+"Solanaceae",
+"Cucurbitaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the tomato belong to?",
+"serial": "1YcJWVgW:499",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:499"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Meloidogyne graminicola",
+"Radopholus similis",
+"Ditylenchus angustus",
+"Heterodera avenae",
+"None of these"
+],
+"page": "",
+"q": "Which nematode is known to cause banana decline and reduce yields in banana plants?",
+"serial": "1UgnIe-g:2409",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2409"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mud Kothi",
+"Pusa Bin",
+"Brick and Cement Bin",
+"Bag Storage",
+"None of these"
+],
+"page": "",
+"q": "Which storage structure is raised 60 cm above the ground and has a capacity of 1.5 to 60 tonnes?",
+"serial": "1sUgWsko:6457",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6457"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Upper ()",
+"Lower ()",
+"Proper ()",
+"Text ()",
+"None of these"
+],
+"page": "",
+"q": "Which function converts text to uppercase in Excel?",
+"serial": "1bxM1Q-4:3831",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3831"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Codeine",
+"Papaverine",
+"Heroine",
+"Steviol",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a semi-synthetic derivative of morphine?",
+"serial": "1YcJWVgW:936",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:936"
+}
+],
+"set_no": 12,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
