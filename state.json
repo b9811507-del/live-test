@@ -49241,8 +49241,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 231,
 "names": {},
+"plan": {
+"bidx_next": 231,
+"built_at": "2026-09-25T14:30:12+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 31-33",
+"pages_list": [
+31,
+32,
+33
+],
+"questions": [
+{
+"expl": "Cotton belongs to the family Malvaceae, as explicitly stated in the source.",
+"key": 0,
+"o": [
+"Malvaceae",
+"Fabaceae",
+"Poaceae",
+"Solanaceae",
+"None of these"
+],
+"page": "31",
+"q": "Which family does cotton belong to?",
+"serial": "211",
+"src_row": 210,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:211"
+},
+{
+"expl": "American cotton is tetraploid and has 52 chromosomes, as mentioned in the source.",
+"key": 1,
+"o": [
+"26",
+"52",
+"39",
+"13",
+"None of these"
+],
+"page": "31",
+"q": "What is the chromosome number in American cotton?",
+"serial": "212",
+"src_row": 211,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:212"
+},
+{
+"expl": "The toxic pigment/phenol compound present in cotton seeds is gossypol, as stated in the source.",
+"key": 0,
+"o": [
+"Gossypol",
+"Glyphosate",
+"2,4-D",
+"Zinc",
+"None of these"
+],
+"page": "31",
+"q": "Which toxic compound is present in cotton seeds?",
+"serial": "213",
+"src_row": 212,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:213"
+},
+{
+"expl": "Little leaf of cotton is due to zinc deficiency, as explicitly mentioned in the source.",
+"key": 0,
+"o": [
+"Zinc deficiency",
+"Manganese toxicity",
+"Water stress",
+"Alkaline soils",
+"None of these"
+],
+"page": "31",
+"q": "What is the cause of little leaf in cotton?",
+"serial": "214",
+"src_row": 213,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:214"
+},
+{
+"expl": "C.D. Mayee is known as the father of Bt cotton in India, as stated in the source.",
+"key": 0,
+"o": [
+"C.D. Mayee",
+"Norman Borlaug",
+"M.S. Swaminathan",
+"Vergese Kurien",
+"None of these"
+],
+"page": "31",
+"q": "Who is known as the father of Bt cotton in India?",
+"serial": "215",
+"src_row": 214,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:215"
+},
+{
+"expl": "One bale of cotton weighs 170 kg, as mentioned in the source.",
+"key": 0,
+"o": [
+"170 kg",
+"180 kg",
+"160 kg",
+"190 kg",
+"None of these"
+],
+"page": "31",
+"q": "What is the weight of one bale of cotton?",
+"serial": "216",
+"src_row": 215,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:216"
+},
+{
+"expl": "Fibre length in cotton is measured by a Fibrograph, as stated in the source.",
+"key": 0,
+"o": [
+"Fibrograph",
+"Hydrometer",
+"Spectrophotometer",
+"Chromatograph",
+"None of these"
+],
+"page": "31",
+"q": "Which instrument is used to measure fibre length in cotton?",
+"serial": "217",
+"src_row": 216,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "31:217"
+},
+{
+"expl": "Gossypium hirsutum has a seed index of 8.0\u201311.0 g, which is the highest among the given options.",
+"key": 2,
+"o": [
+"Gossypium arborium",
+"Gossypium herbaceum",
+"Gossypium hirsutum",
+"Gossypium barbadense",
+"None of these"
+],
+"page": "32",
+"q": "Which type of cotton has the highest seed index?",
+"serial": "218",
+"src_row": 217,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:218"
+},
+{
+"expl": "Gossypium barbadense is known as Egyptian cotton and is native to South America.",
+"key": 3,
+"o": [
+"Gossypium arborium",
+"Gossypium herbaceum",
+"Gossypium hirsutum",
+"Gossypium barbadense",
+"None of these"
+],
+"page": "32",
+"q": "Which cotton species is known as Egyptian cotton?",
+"serial": "219",
+"src_row": 218,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:219"
+},
+{
+"expl": "Both Gossypium herbaceum and Gossypium arborium present genome A.",
+"key": 2,
+"o": [
+"Genome B",
+"Genome C",
+"Genome A",
+"Genome D",
+"None of these"
+],
+"page": "32",
+"q": "Which genome is present in Gossypium herbaceum and Gossypium arborium?",
+"serial": "220",
+"src_row": 219,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:220"
+},
+{
+"expl": "Gossypium barbadense has the longest fiber length, ranging from 3.6 to 5.0 cm.",
+"key": 3,
+"o": [
+"Gossypium arborium",
+"Gossypium herbaceum",
+"Gossypium hirsutum",
+"Gossypium barbadense",
+"None of these"
+],
+"page": "32",
+"q": "Which cotton species has the longest fiber length?",
+"serial": "221",
+"src_row": 220,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:221"
+},
+{
+"expl": "Both Gossypium hirsutum and Gossypium arboreum are primarily found in Northern India.",
+"key": 3,
+"o": [
+"Gossypium herbaceum",
+"Gossypium hirsutum",
+"Gossypium barbadense",
+"Both A and B",
+"None of these"
+],
+"page": "32",
+"q": "Which cotton species is primarily found in Northern India?",
+"serial": "222",
+"src_row": 221,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:222"
+},
+{
+"expl": "Gossypium arborium is diploid with 2n: 26 chromosomes.",
+"key": 0,
+"o": [
+"Gossypium arborium",
+"Gossypium hirsutum",
+"Gossypium barbadense",
+"Both B and C",
+"None of these"
+],
+"page": "32",
+"q": "Which cotton species is diploid?",
+"serial": "223",
+"src_row": 222,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:223"
+},
+{
+"expl": "Gossypium hirsutum is known as Upland cotton and is native to Central America.",
+"key": 2,
+"o": [
+"Gossypium arborium",
+"Gossypium herbaceum",
+"Gossypium hirsutum",
+"Gossypium barbadense",
+"None of these"
+],
+"page": "32",
+"q": "Which cotton species is known as Upland cotton?",
+"serial": "224",
+"src_row": 223,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "32:224"
+},
+{
+"expl": "Sympodial branches in cotton plants are responsible for reproductive growth, which includes the development of flowers and fruits.",
+"key": 0,
+"o": [
+"Reproductive growth",
+"Vegetative growth",
+"Water absorption",
+"Photosynthesis",
+"None of these"
+],
+"page": "33",
+"q": "What is the primary function of sympodial branches in cotton plants?",
+"serial": "225",
+"src_row": 224,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:225"
+},
+{
+"expl": "Cotton fibre contains approximately 94% cellulose, which is the primary component providing strength and structure to the fibre.",
+"key": 0,
+"o": [
+"94%",
+"85%",
+"75%",
+"65%",
+"None of these"
+],
+"page": "33",
+"q": "What is the approximate percentage of cellulose in cotton fibre?",
+"serial": "226",
+"src_row": 225,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:226"
+},
+{
+"expl": "An Arealometer is specifically used to measure the length of cotton fibres, which is an important quality parameter.",
+"key": 0,
+"o": [
+"Arealometer",
+"Hydrometer",
+"Spectrophotometer",
+"Micrometer",
+"None of these"
+],
+"page": "33",
+"q": "Which instrument is used to measure the length of cotton fibres?",
+"serial": "227",
+"src_row": 226,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:227"
+},
+{
+"expl": "The appearance of flower buds in cotton plants is known as 'square.' This is a specific term used in cotton cultivation.",
+"key": 0,
+"o": [
+"Square",
+"Boll",
+"Capsule",
+"Flower",
+"None of these"
+],
+"page": "33",
+"q": "What is the term used for the appearance of flower buds in cotton plants?",
+"serial": "228",
+"src_row": 227,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:228"
+},
+{
+"expl": "Cotton plants have the highest water requirement during the flowering period, which is when the leaf area is at its maximum.",
+"key": 0,
+"o": [
+"Flowering period",
+"Early vegetative period",
+"Late growing period",
+"Germination period",
+"None of these"
+],
+"page": "33",
+"q": "During which period do cotton plants have the highest water requirement?",
+"serial": "229",
+"src_row": 228,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:229"
+},
+{
+"expl": "Nipping in cotton cultivation is primarily done to enhance flowering, which occurs around 80-90 days after sowing.",
+"key": 1,
+"o": [
+"To control plant height",
+"To enhance flowering",
+"To improve fibre quality",
+"To remove excess leaves",
+"None of these"
+],
+"page": "33",
+"q": "What is the primary purpose of nipping in cotton cultivation?",
+"serial": "230",
+"src_row": 229,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:230"
+},
+{
+"expl": "Cotton exhibits epigeal germination, where the cotyledons emerge above the soil surface during germination.",
+"key": 0,
+"o": [
+"Epigeal",
+"Hypogeal",
+"Vivipary",
+"Pseudogamy",
+"None of these"
+],
+"page": "33",
+"q": "What type of germination does cotton exhibit?",
+"serial": "231",
+"src_row": 230,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "33:231"
+}
+],
+"row_from": 210,
+"row_to": 231,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 210,
+"seeded_from": "2026-09-24"
+},
 "qidx": 0,
+"seeded_from": "2026-09-24",
+"skips": [],
 "step": 0
 },
 "malwa": {
