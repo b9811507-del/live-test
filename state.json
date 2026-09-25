@@ -49236,7 +49236,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-25T18:00:09+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Podzolization",
+"Laterization",
+"Decalcification",
+"Salinization",
+"None of these"
+],
+"page": "",
+"q": "Which process is the reverse of Calcification and involves the removal of CaCO3 or Calcium ions from the soil?",
+"serial": "1sUgWsko:6790",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6790"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2 sub-classes (4 in Apterygota, 25 in Pterygota)",
+"2 sub-classes (5 in Apterygota, 24 in Pterygota)",
+"3 sub-classes (4, 20, 5)",
+"1 sub-class (29 orders)",
+"None of these"
+],
+"page": "",
+"q": "How many sub-classes does the class Insecta have, and how are they distributed between Apterygota and Pterygota?",
+"serial": "1sUgWsko:1708",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1708"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Spores",
+"Sclerotia",
+"Hyphae",
+"Conidia",
+"None of these"
+],
+"page": "",
+"q": "What is the name of the mycelia form of Ergot?",
+"serial": "17U0MEc-:2097",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2097"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Magnesium",
+"Sulphur",
+"None of these"
+],
+"page": "",
+"q": "The condition 'Sand drown disease' is associated with the deficiency of which nutrient?",
+"serial": "1sUgWsko:7347",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7347"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To compress the air-fuel mixture",
+"To remove burnt gases from the cylinder",
+"To ignite the fuel and produce thermal power",
+"To draw in fresh air-fuel mixture",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of the power stroke in a four-stroke engine?",
+"serial": "1sUgWsko:6302",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6302"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"30 cm \u00d7 30 cm",
+"45 cm \u00d7 45 cm",
+"60 cm \u00d7 45 cm",
+"75 cm \u00d7 60 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spacing for tomato cultivation?",
+"serial": "1bxM1Q-4:3135",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3135"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"First juvenile stage (J\u2081)",
+"Second juvenile stage (J\u2082)",
+"Third juvenile stage (J\u2083)",
+"Fourth juvenile stage (J\u2084)",
+"None of these"
+],
+"page": "",
+"q": "Which stage of Meloidogyne is the only infective stage?",
+"serial": "17U0MEc-:2336",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2336"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"30-40 days",
+"45-55 days",
+"60-70 days",
+"75-85 days",
+"None of these"
+],
+"page": "",
+"q": "After how many days should rooted shoots be severed from the mother plant before planting in the nursery or field?",
+"serial": "1sUgWsko:673",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:673"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potassium",
+"Nitrogen",
+"Phosphorus",
+"Calcium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient is relatively abundant in Indian alluvial soils?",
+"serial": "128DIQLj:1554",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1554"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ruminants possess four stomach compartments, whereas true\u2011stomach animals have a single chamber",
+"Ruminants lack a rumen, unlike true\u2011stomach animals",
+"True\u2011stomach animals are exclusively herbivores, while ruminants are omnivores",
+"Ruminants have a simple stomach similar to pigs",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly distinguishes ruminants from true\u2011stomach animals?",
+"serial": "1sUgWsko:4753",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4753"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Suicidal germination",
+"Allelopathy",
+"Stale seed bed",
+"Blind hoeing",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the phenomenon where one plant has a detrimental effect on another through chemical compounds?",
+"serial": "17U0MEc-:942",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:942"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"30-40%",
+"50-70%",
+"70-90%",
+"90-100%",
+"None of these"
+],
+"page": "",
+"q": "What is the typical survival rate range for prawns under good management?",
+"serial": "1sUgWsko:2539",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2539"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Herbigation",
+"Fumigation",
+"Directed spray",
+"Spot treatment",
+"None of these"
+],
+"page": "",
+"q": "Which method involves applying volatile chemicals to soil or confined spaces to produce gas that destroys weed seeds?",
+"serial": "1sUgWsko:5232",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5232"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"100 m\u00b3",
+"1,000 m\u00b3",
+"10,000 m\u00b3",
+"100,000 m\u00b3",
+"None of these"
+],
+"page": "",
+"q": "One hectare\u2011meter equals how many cubic meters?",
+"serial": "1bxM1Q-4:1470",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1470"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Trisomy",
+"Double monosomy",
+"Monosomy",
+"Hyperploidy",
+"None of these"
+],
+"page": "",
+"q": "Which type of aneuploidy involves missing one chromosome?",
+"serial": "1UgnIe-g:392",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:392"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Possible with sieves",
+"Possible with rotating graders",
+"Impossible",
+"Possible with magnetic separator",
+"None of these"
+],
+"page": "",
+"q": "Grading a mixture of different grain varieties that share identical length and thickness is:",
+"serial": "1bxM1Q-4:4029",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4029"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"India",
+"Philippines",
+"Thailand",
+"Indonesia",
+"None of these"
+],
+"page": "",
+"q": "The International Rice Research Institute (IRRI) is headquartered in which country?",
+"serial": "1sUgWsko:4153",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4153"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"IRDP",
+"SGSY",
+"ITDA",
+"SFDA",
+"None of these"
+],
+"page": "",
+"q": "Which programme is primarily aimed at socio-economic development of tribal communities through income-generating schemes?",
+"serial": "1sUgWsko:6501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6501"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mortar cells",
+"Sorgoleone exudation",
+"Protogyny",
+"High protein content",
+"None of these"
+],
+"page": "",
+"q": "Which feature in sorghum leaf epidermis contributes to its drought tolerance?",
+"serial": "128DIQLj:316",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:316"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wider genetic base for adaptability",
+"Annual seed replacement required",
+"Lower seed cost than hybrids",
+"Less skilled seed production",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT listed as a merit of synthetic varieties?",
+"serial": "1UgnIe-g:299",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:299"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Guttation",
+"Honeydew",
+"Resin",
+"Pollen",
+"None of these"
+],
+"page": "",
+"q": "What secretion is produced by these insects?",
+"serial": "1sUgWsko:1906",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1906"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1 tablet per ton",
+"2 tablets per ton",
+"3 tablets per ton",
+"5 tablets per ton",
+"None of these"
+],
+"page": "",
+"q": "Recommended dosage of Celphos tablets for grain storage is:",
+"serial": "1UgnIe-g:2155",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2155"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"CRIDA-Drill-plough",
+"Ridge seeder",
+"Fepsoplough",
+"Rayala Gorru",
+"None of these"
+],
+"page": "",
+"q": "Which dryland implement is a bullock drawn seeder developed by AICRPDA, Hisa?",
+"serial": "1bxM1Q-4:1144",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1144"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"100-150",
+"200-250",
+"300-400",
+"500-600",
+"None of these"
+],
+"page": "",
+"q": "How many chicks can one electrical brooder accommodate?",
+"serial": "1sUgWsko:3473",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3473"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Diuron",
+"Monuron",
+"Pendimethalin",
+"Fluchloralin",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is specifically described as a cotton herbicide with the chemical name Dichlorophenyl dimethyl urea (DCMU)?",
+"serial": "128DIQLj:1062",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1062"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Azadirachtins",
+"Nicotine",
+"Limonoids",
+"Sabadilla",
+"None of these"
+],
+"page": "",
+"q": "Which insecticidal compound is derived from tobacco and is effective against soft-bodied sucking insects?",
+"serial": "1UgnIe-g:2061",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2061"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"A moth",
+"An insect",
+"A fungus",
+"A beetle",
+"None of these"
+],
+"page": "",
+"q": "What type of bio-agent is used to control the weed Eichornia crassipes?",
+"serial": "1bxM1Q-4:1250",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1250"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"G. hirsutum",
+"G. barbadense",
+"G. arboreum",
+"G. herbaceum",
+"None of these"
+],
+"page": "",
+"q": "Which cotton species is a diploid (2n=26) and is commonly called tree cotton?",
+"serial": "128DIQLj:551",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:551"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To provide goods and services for local communities",
+"To integrate forestry with other farm operations",
+"To increase the area under tree growth in non-forest areas",
+"To raise flowering trees and shrubs for recreation",
+"None of these"
+],
+"page": "",
+"q": "What is the main objective of Extension Forestry?",
+"serial": "1bxM1Q-4:3895",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3895"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Early blight of tomato",
+"Late blight of potato",
+"Powdery mildew of grapes",
+"Anthracnose of apples",
+"None of these"
+],
+"page": "",
+"q": "The \"bull eye appearance\" symptom is characteristic of which disease?",
+"serial": "1UgnIe-g:1181",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1181"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Separate grains by thickness",
+"Separate small broken grains from short\u2011medium rounded grains",
+"Remove moisture from grains",
+"Separate grains by colour",
+"None of these"
+],
+"page": "",
+"q": "The main purpose of sieves in grain processing is to:",
+"serial": "1bxM1Q-4:4030",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4030"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mulberry",
+"Kusum",
+"Eucalyptus globulus",
+"Pandanus tectorius",
+"None of these"
+],
+"page": "",
+"q": "Which tree is a host plant for the lac insect?",
+"serial": "1UgnIe-g:2790",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2790"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1.0 kg/ha",
+"1.5 kg/ha",
+"0.5 kg/ha",
+"0.75 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the application rate of Alachlor in soyabean?",
+"serial": "17U0MEc-:923",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:923"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cubic foot",
+"Cubic inch",
+"Cubic meter",
+"Cubic centimeter",
+"None of these"
+],
+"page": "",
+"q": "What is the basic unit for tree volume in forest mensuration?",
+"serial": "1UgnIe-g:2736",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2736"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"500",
+"1000",
+"2000",
+"3000",
+"None of these"
+],
+"page": "",
+"q": "What is the average number of Teak fruits in one kilogram?",
+"serial": "1sUgWsko:5422",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5422"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ascomycetes",
+"Basidiomycetes",
+"Zygomycetes",
+"Deuteromycetes",
+"None of these"
+],
+"page": "",
+"q": "Which class do mushrooms and puffballs belong to?",
+"serial": "1UgnIe-g:1194",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1194"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1:2:1",
+"3:1",
+"9:3:3:1",
+"1:1:1:1",
+"None of these"
+],
+"page": "",
+"q": "What is the phenotypic ratio observed in the F2 generation of a dihybrid cross?",
+"serial": "1UgnIe-g:465",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:465"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Alliaceae",
+"Cruciferae /Brassicaceae",
+"Chenopodiaceae",
+"Cucurbitaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the vegetable *Brassica rapa* belong to?",
+"serial": "17U0MEc-:1539",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1539"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Main line",
+"Laterals",
+"Emitters",
+"Sprinkler heads",
+"None of these"
+],
+"page": "",
+"q": "Which component is NOT part of a drip irrigation system?",
+"serial": "1bxM1Q-4:1022",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1022"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Maharashtra, Gujarat & AP",
+"UP, Bihar, Rajasthan, MP & Punjab",
+"Karnataka, AP & Tamilnadu",
+"Gujarat, Karnataka, AP & Tamilnadu",
+"None of these"
+],
+"page": "",
+"q": "Which of the following states are primarily associated with cotton based cropping patterns?",
+"serial": "1bxM1Q-4:927",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:927"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"The production function",
+"The market price mechanism",
+"The soil nutrient cycle",
+"The harvest index",
+"None of these"
+],
+"page": "",
+"q": "The term \u201cInput\u2011Output relation\u201d in agricultural economics refers to",
+"serial": "1bxM1Q-4:2267",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2267"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Apple",
+"Pineapple",
+"Mango",
+"Orange",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a monocarpic plant?",
+"serial": "1UgnIe-g:1636",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1636"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase milk production",
+"To prevent breeding in unwanted males",
+"To enhance meat quality",
+"To reduce feed consumption",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of castration in ruminants?",
+"serial": "1sUgWsko:3067",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3067"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Spray 1% Bordeaux mixture",
+"Crop rotation",
+"Dust with fine sulphur @17 kg/ha",
+"Hot water treatment @ 50\u00b0C for 30 min",
+"None of these"
+],
+"page": "",
+"q": "Which treatment is recommended for controlling Powdery mildew in cucurbits?",
+"serial": "1bxM1Q-4:2628",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2628"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Plodia interpunctella",
+"Ephestia cautella",
+"Corcyra cephalonica",
+"Sitotroga cerealella",
+"None of these"
+],
+"page": "",
+"q": "Which moth is known for converting an entire stock of grains into a webbed mass?",
+"serial": "1UgnIe-g:2309",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2309"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wheat",
+"Rice",
+"Potato",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "What is a common crop of natural auto-tetraploids grown in India?",
+"serial": "17U0MEc-:2394",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2394"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pusa Asita",
+"Pusa Rudhira",
+"Pusa Vrishti",
+"Pusa Nayanjyoti",
+"None of these"
+],
+"page": "",
+"q": "Which carrot variety is suitable for seed production in plains and has a self-coloured core?",
+"serial": "1YcJWVgW:675",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:675"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cassava",
+"Alfalfa",
+"Banana",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is classified under the 'High' water sensitivity category?",
+"serial": "1sUgWsko:4677",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4677"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Immature",
+"Matured",
+"Overripe",
+"Ready for planting",
+"None of these"
+],
+"page": "",
+"q": "According to maturity criteria, when the juice TSS exceeds 16% and purity reaches 85%, the cane is considered:",
+"serial": "1sUgWsko:439",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:439"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Autogamy",
+"Geitonogamy",
+"Allogamy",
+"Selfing",
+"None of these"
+],
+"page": "",
+"q": "Pollination that involves transfer of pollen between different plants is called:",
+"serial": "1UgnIe-g:69",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:69"
+}
+],
+"set_no": 13,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
