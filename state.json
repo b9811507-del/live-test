@@ -49247,9 +49247,438 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 185,
 "names": {},
+"plan": {
+"batch": 2,
+"bidx_next": 185,
+"built_at": "2026-09-25T11:00:12+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 22,
+"pages": "Book pages 49-54",
+"pages_blocks": [
+"49-50",
+"51-52",
+"53-54"
+],
+"questions": [
+{
+"expl": "The Peninsular Zone is described as favoring short\u2011duration, thermo\u2011insensitive varieties such as T. aestivum, T. durum and T. diococcum.",
+"key": 0,
+"o": [
+"Peninsular Zone",
+"Southern Hill Zone",
+"Central Zone",
+"Northern Zone",
+"None of these"
+],
+"page": "49-50",
+"q": "Which zone prefers short\u2011duration, thermo\u2011insensitive wheat varieties?",
+"serial": "261",
+"src_row": 163,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:261"
+},
+{
+"expl": "The source states that these semi\u2011dwarf varieties yield about 2.5 times more than traditional tall wheat.",
+"key": 2,
+"o": [
+"1.5 times",
+"2.0 times",
+"2.5 times",
+"3.0 times",
+"None of these"
+],
+"page": "49-50",
+"q": "Semi\u2011dwarf wheat varieties developed with the Japanese line Norin 10 yield about how many times more than traditional tall varieties?",
+"serial": "262",
+"src_row": 164,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:262"
+},
+{
+"expl": "Sharbati Sonara is the mutant variety developed from Sonora 64 through gamma irradiation.",
+"key": 2,
+"o": [
+"Kalyan Sona",
+"Safed Lerma",
+"Sharbati Sonara",
+"UP 301",
+"None of these"
+],
+"page": "49-50",
+"q": "Which wheat variety was obtained by gamma\u2011irradiation of Sonora 64?",
+"serial": "263",
+"src_row": 165,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:263"
+},
+{
+"expl": "The source lists the threshold salinity level for wheat as 6 dS/m.",
+"key": 2,
+"o": [
+"4 dS/m",
+"5 dS/m",
+"6 dS/m",
+"8 dS/m",
+"None of these"
+],
+"page": "49-50",
+"q": "What is the threshold salinity level (dS/m) for wheat tolerance?",
+"serial": "264",
+"src_row": 166,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:264"
+},
+{
+"expl": "Spring wheat does not require vernalization; that requirement applies to winter wheat.",
+"key": 1,
+"o": [
+"It is a quantitative LDP",
+"It requires vernalization",
+"It matures in 100\u2011130 days",
+"It is the predominant wheat type in India",
+"None of these"
+],
+"page": "49-50",
+"q": "Which statement about spring wheat grown in India is FALSE?",
+"serial": "265",
+"src_row": 167,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:265"
+},
+{
+"expl": "HD denotes Hybrid Delhi, although the varieties are not actual hybrids.",
+"key": 1,
+"o": [
+"High Development",
+"Hybrid Delhi",
+"Heavy Drought",
+"Harvest Duration",
+"None of these"
+],
+"page": "49-50",
+"q": "In the HD series of wheat varieties, \"HD\" stands for:",
+"serial": "266",
+"src_row": 168,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:266"
+},
+{
+"expl": "The source specifies that the ideal sowing depth for dwarf wheat is 5 \u00b1 2 cm.",
+"key": 1,
+"o": [
+"2\u20113 cm",
+"5 \u00b1 2 cm",
+"8\u201110 cm",
+"12\u201115 cm",
+"None of these"
+],
+"page": "49-50",
+"q": "What is the ideal seeding depth for dwarf wheat varieties?",
+"serial": "267",
+"src_row": 169,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49-50:267"
+},
+{
+"expl": "Triple gene dwarf varieties are sown at 3-4 cm depth as per the sowing depth table.",
+"key": 2,
+"o": [
+"6-7 cm",
+"5-6 cm",
+"3-4 cm",
+"1-2 cm",
+"None of these"
+],
+"page": "51-52",
+"q": "Which sowing depth is appropriate for a triple gene dwarf wheat variety?",
+"serial": "271",
+"src_row": 170,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:271"
+},
+{
+"expl": "Broadcasting requires a 25% higher seed rate compared to other sowing techniques.",
+"key": 2,
+"o": [
+"25% lower than other methods",
+"Same as other methods",
+"25% higher than other methods",
+"50% higher than other methods",
+"None of these"
+],
+"page": "51-52",
+"q": "What is the seed rate implication of the broadcasting sowing method?",
+"serial": "272",
+"src_row": 171,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:272"
+},
+{
+"expl": "Sources suggest CRI and Flowering as the critical stages for two\u2011irrigation schedules.",
+"key": 0,
+"o": [
+"Crown Root Initiation and Flowering",
+"Late tillering and Milking",
+"Late jointing and Dough",
+"Crown Root Initiation and Late jointing",
+"None of these"
+],
+"page": "51-52",
+"q": "When only two irrigations are available, which two critical stages are recommended for wheat irrigation?",
+"serial": "273",
+"src_row": 172,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:273"
+},
+{
+"expl": "Stem melanosis is caused by copper deficiency in wheat.",
+"key": 1,
+"o": [
+"Iron",
+"Copper",
+"Manganese",
+"Zinc",
+"None of these"
+],
+"page": "51-52",
+"q": "Which nutrient deficiency causes stem melanosis in wheat?",
+"serial": "274",
+"src_row": 173,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:274"
+},
+{
+"expl": "Grain should be stored at 12% moisture to prevent spoilage.",
+"key": 1,
+"o": [
+"20-25 %",
+"12 %",
+"14.6 %",
+"18-20 %",
+"None of these"
+],
+"page": "51-52",
+"q": "What is the optimum grain moisture content for safe storage of wheat?",
+"serial": "275",
+"src_row": 174,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:275"
+},
+{
+"expl": "SWI recommends 15 x 15 cm spacing for optimal yield.",
+"key": 1,
+"o": [
+"10 x 10 cm",
+"15 x 15 cm",
+"25 x 25 cm",
+"30 x 30 cm",
+"None of these"
+],
+"page": "51-52",
+"q": "In the System of Wheat Intensification (SWI), what is the typical seed spacing used?",
+"serial": "276",
+"src_row": 175,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:276"
+},
+{
+"expl": "The border strip method is the most widely used for wheat irrigation.",
+"key": 0,
+"o": [
+"Border strip method",
+"Check basin method",
+"Sprinkler irrigation",
+"Drip irrigation",
+"None of these"
+],
+"page": "51-52",
+"q": "Which irrigation method is most commonly adopted for wheat cultivation?",
+"serial": "277",
+"src_row": 176,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51-52:277"
+},
+{
+"expl": "Pearling Index represents the percentage of kernel weight lost due to removal of outer layers after a fixed pearling time.",
+"key": 1,
+"o": [
+"A higher Pearling Index indicates harder kernels",
+"It measures the percentage weight loss after removal of outer layers",
+"It is calculated as (Final weight - Initial weight)/Initial weight * 100",
+"It is used to assess gluten content in wheat",
+"None of these"
+],
+"page": "53-54",
+"q": "Which statement correctly describes the Pearling Index?",
+"serial": "281",
+"src_row": 177,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:281"
+},
+{
+"expl": "Bleaching removes the xanthophyll pigment using benzoyl peroxide or nitrogen trichloride.",
+"key": 1,
+"o": [
+"Chlorophyll",
+"Xanthophyll",
+"Anthocyanin",
+"Carotene",
+"None of these"
+],
+"page": "53-54",
+"q": "Which pigment is removed during wheat bleaching?",
+"serial": "282",
+"src_row": 178,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:282"
+},
+{
+"expl": "Teosinte (Euchlaena mexicana) is the progenitor of Zea mays.",
+"key": 1,
+"o": [
+"Sorghum",
+"Teosinte",
+"Wheat",
+"Oats",
+"None of these"
+],
+"page": "53-54",
+"q": "The closest wild relative of cultivated maize is:",
+"serial": "283",
+"src_row": 179,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:283"
+},
+{
+"expl": "Kerala is the only state in India where maize cultivation is not prevalent.",
+"key": 1,
+"o": [
+"Karnataka",
+"Kerala",
+"Andhra Pradesh",
+"Bihar",
+"None of these"
+],
+"page": "53-54",
+"q": "Which Indian state does NOT cultivate maize?",
+"serial": "284",
+"src_row": 180,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:284"
+},
+{
+"expl": "Zein, the protein in the endosperm, constitutes about 80% of maize protein.",
+"key": 2,
+"o": [
+"20%",
+"50%",
+"80%",
+"95%",
+"None of these"
+],
+"page": "53-54",
+"q": "In maize, what proportion of protein is found in the endosperm?",
+"serial": "285",
+"src_row": 181,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:285"
+},
+{
+"expl": "Maize is monoecious and protandrous, with tassels appearing before silks.",
+"key": 0,
+"o": [
+"Monoecious and protandrous",
+"Dioecious and protogynous",
+"Monoecious and protogynous",
+"Dioecious and protandrous",
+"None of these"
+],
+"page": "53-54",
+"q": "Maize is a plant that is:",
+"serial": "286",
+"src_row": 182,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:286"
+},
+{
+"expl": "Each ear is protected by 8-14 husk leaves, which are modified leaves.",
+"key": 1,
+"o": [
+"4-6",
+"8-14",
+"15-20",
+"No husk leaves",
+"None of these"
+],
+"page": "53-54",
+"q": "Each maize ear is covered by how many husk leaves?",
+"serial": "287",
+"src_row": 183,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:287"
+},
+{
+"expl": "Zea mays tunicata, or pod corn, is the most primitive type and is not commercially cultivated.",
+"key": 1,
+"o": [
+"Zea mays indurata",
+"Zea mays tunicata",
+"Zea mays mays",
+"Zea mays saccharata",
+"None of these"
+],
+"page": "53-54",
+"q": "Which maize group is considered the most primitive and not commercially grown?",
+"serial": "288",
+"src_row": 184,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53-54:288"
+}
+],
+"rolled": false,
+"row_from": 163,
+"row_to": 185,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 163,
+"seeded_from": "2026-09-24",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-24",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
