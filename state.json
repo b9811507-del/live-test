@@ -54849,9 +54849,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 205,
 "names": {},
+"plan": {
+"batch": 2,
+"bidx_next": 205,
+"built_at": "2026-09-26T11:00:40+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 55-60",
+"pages_blocks": [
+"55-56",
+"57-58",
+"59-60"
+],
+"questions": [
+{
+"expl": "Waxy corn contains 100% amylopectin starch, unlike normal maize which has about 70% amylopectin.",
+"key": 2,
+"o": [
+"Dent Corn",
+"Sweet Corn",
+"Waxy Corn",
+"Popcorn",
+"None of these"
+],
+"page": "55-56",
+"q": "Which maize species is composed of 100% amylopectin starch and is commonly used as a thickener in the food industry?",
+"serial": "291",
+"src_row": 185,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:291"
+},
+{
+"expl": "Prop or brace roots arise from lower nodes of the above\u2011ground stem and provide structural support against lodging.",
+"key": 2,
+"o": [
+"Seminal roots",
+"Adventitious roots",
+"Prop or brace roots",
+"Root hairs",
+"None of these"
+],
+"page": "55-56",
+"q": "Which type of maize root protects the plant from lodging?",
+"serial": "292",
+"src_row": 186,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:292"
+},
+{
+"expl": "Maize seeds germinate best at about 21 \u00b0C, while growth is optimal at 32 \u00b0C.",
+"key": 1,
+"o": [
+"18\u00b0C",
+"21\u00b0C",
+"25\u00b0C",
+"32\u00b0C",
+"None of these"
+],
+"page": "55-56",
+"q": "What is the optimum temperature for maize germination?",
+"serial": "293",
+"src_row": 187,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:293"
+},
+{
+"expl": "Pusa Composite-3 is listed under composite varieties; the others belong to hybrid or cross categories.",
+"key": 0,
+"o": [
+"Pusa Composite-3",
+"Pusa HM 4",
+"PMH 1",
+"Ganga Safed 2",
+"None of these"
+],
+"page": "55-56",
+"q": "Which of the following varieties is a composite maize variety?",
+"serial": "294",
+"src_row": 188,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:294"
+},
+{
+"expl": "The table specifies a seed rate of 20 kg/ha for grain maize.",
+"key": 1,
+"o": [
+"10",
+"20",
+"30",
+"40",
+"None of these"
+],
+"page": "55-56",
+"q": "According to Table 2, what is the seed rate for grain maize in kg per hectare?",
+"serial": "295",
+"src_row": 189,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:295"
+},
+{
+"expl": "The text states that a baby corn plant occupies 900 cm\u00b2 (111,111 plants/ha).",
+"key": 1,
+"o": [
+"2250",
+"900",
+"1500",
+"1200",
+"None of these"
+],
+"page": "55-56",
+"q": "The growing area for one baby corn plant is ___ cm\u00b2.",
+"serial": "296",
+"src_row": 190,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:296"
+},
+{
+"expl": "The most critical irrigation point is the tasseling stage, as mentioned in the water management section.",
+"key": 1,
+"o": [
+"Six\u2011leaf stage",
+"Tasseling stage",
+"Silking stage",
+"Maturity stage",
+"None of these"
+],
+"page": "55-56",
+"q": "Which stage is considered the most critical for irrigation in maize?",
+"serial": "297",
+"src_row": 191,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55-56:297"
+},
+{
+"expl": "The guideline states irrigation should be applied in furrows up to two\u2011thirds the height of the ridge.",
+"key": 1,
+"o": [
+"one-third",
+"two-thirds",
+"full height",
+"half height",
+"None of these"
+],
+"page": "57-58",
+"q": "Furrow irrigation for maize is applied up to what fraction of the ridge height?",
+"serial": "301",
+"src_row": 192,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:301"
+},
+{
+"expl": "Winter maize requires a higher NPK ratio of 175:60:30 kg/ha as per the source.",
+"key": 1,
+"o": [
+"120:60:40 kg/ha",
+"175:60:30 kg/ha",
+"120:60:20 kg/ha",
+"200:70:30 kg/ha",
+"None of these"
+],
+"page": "57-58",
+"q": "What is the recommended NPK dose for winter maize?",
+"serial": "302",
+"src_row": 193,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:302"
+},
+{
+"expl": "White bud symptom is attributed to zinc deficiency in maize.",
+"key": 1,
+"o": [
+"Iron",
+"Zinc",
+"Manganese",
+"Copper",
+"None of these"
+],
+"page": "57-58",
+"q": "White bud in maize is primarily caused by deficiency of which micronutrient?",
+"serial": "303",
+"src_row": 194,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:303"
+},
+{
+"expl": "QPM has 55% more lysine due to the opaque\u20112 gene.",
+"key": 1,
+"o": [
+"30% more",
+"55% more",
+"70% more",
+"40% more",
+"None of these"
+],
+"page": "57-58",
+"q": "Quality Protein Maize (QPM) contains how much more lysine compared to normal maize?",
+"serial": "304",
+"src_row": 195,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:304"
+},
+{
+"expl": "High\u2011oil maize has oil content >6%, whereas normal maize has 3\u20114%.",
+"key": 2,
+"o": [
+"It has less oil than normal maize",
+"It contains 6% oil",
+"It contains more than 6% oil",
+"It contains 3\u20114% oil",
+"None of these"
+],
+"page": "57-58",
+"q": "Which statement correctly describes the oil content of high\u2011oil maize?",
+"serial": "305",
+"src_row": 196,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:305"
+},
+{
+"expl": "Haloding is ploughing the standing maize crop at 20\u201125 days after sowing to control weeds.",
+"key": 2,
+"o": [
+"A harvesting method",
+"An irrigation technique",
+"Ploughing standing crop for weed control",
+"Seed treatment",
+"None of these"
+],
+"page": "57-58",
+"q": "Haloding in maize refers to:",
+"serial": "306",
+"src_row": 197,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:306"
+},
+{
+"expl": "The mesocotyl is the segment between the seed and the lowest joint of the stalk.",
+"key": 1,
+"o": [
+"Root tip",
+"Lowest joint of the stalk",
+"First leaf sheath",
+"Uppermost leaf blade",
+"None of these"
+],
+"page": "57-58",
+"q": "The mesocotyl is the part of a young maize seedling that lies between the seed and which part?",
+"serial": "307",
+"src_row": 198,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57-58:307"
+},
+{
+"expl": "Haryana has the highest productivity of bajra in India.",
+"key": 1,
+"o": [
+"Rajasthan",
+"Haryana",
+"Punjab",
+"Gujarat",
+"None of these"
+],
+"page": "59-60",
+"q": "Which Indian state leads in productivity of bajra?",
+"serial": "311",
+"src_row": 199,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59-60:311"
+},
+{
+"expl": "Pearl millet provides 361 Kcal, the highest among cereals.",
+"key": 2,
+"o": [
+"250 Kcal",
+"300 Kcal",
+"361 Kcal",
+"400 Kcal",
+"None of these"
+],
+"page": "59-60",
+"q": "What is the highest energy content among cereals?",
+"serial": "312",
+"src_row": 200,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59-60:312"
+},
+{
+"expl": "Dhanashakti was released in 2014 as the first iron\u2011 and zinc\u2011rich biofortified bajra.",
+"key": 1,
+"o": [
+"WCC 75",
+"Dhanashakti",
+"HB-1",
+"Pusa Moti",
+"None of these"
+],
+"page": "59-60",
+"q": "Which variety is the first biofortified bajra variety in India, high in iron and zinc?",
+"serial": "313",
+"src_row": 201,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59-60:313"
+},
+{
+"expl": "Pearl millet escapes drought by shortening its life cycle with early flowering.",
+"key": 1,
+"o": [
+"Sorghum",
+"Pearl millet",
+"Maize",
+"Wheat",
+"None of these"
+],
+"page": "59-60",
+"q": "Which crop is described as a drought\u2011escaping crop?",
+"serial": "314",
+"src_row": 202,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59-60:314"
+},
+{
+"expl": "Harvesting is best when grain moisture is 15\u201320%.",
+"key": 2,
+"o": [
+"10\u201312%",
+"12\u201315%",
+"15\u201320%",
+"20\u201325%",
+"None of these"
+],
+"page": "59-60",
+"q": "What is the optimum grain moisture content for harvesting bajra?",
+"serial": "315",
+"src_row": 203,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59-60:315"
+},
+{
+"expl": "Mortar cells cause leaves to roll inward, aiding drought tolerance in sorghum.",
+"key": 0,
+"o": [
+"Mortar cells",
+"Sorgoleone exudation",
+"Protogyny",
+"High protein content",
+"None of these"
+],
+"page": "59-60",
+"q": "Which feature in sorghum leaf epidermis contributes to its drought tolerance?",
+"serial": "316",
+"src_row": 204,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59-60:316"
+}
+],
+"rolled": false,
+"row_from": 185,
+"row_to": 205,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 185,
+"seeded_from": "2026-09-25",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-25",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
