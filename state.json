@@ -54843,8 +54843,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 252,
 "names": {},
+"plan": {
+"bidx_next": 252,
+"built_at": "2026-09-26T14:31:15+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 34-36",
+"pages_list": [
+34,
+35,
+36
+],
+"questions": [
+{
+"expl": "The source states that a minimum of 16\u00b0C is needed for germination.",
+"key": 0,
+"o": [
+"16\u00b0C",
+"21\u00b0C",
+"27\u00b0C",
+"43\u00b0C",
+"None of these"
+],
+"page": "34",
+"q": "What is the minimum temperature required for cotton seed germination?",
+"serial": "232",
+"src_row": 231,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:232"
+},
+{
+"expl": "Cotton grows best at pH 7-8, as mentioned in the source.",
+"key": 2,
+"o": [
+"5.5-6",
+"6-7",
+"7-8",
+"8-9",
+"None of these"
+],
+"page": "34",
+"q": "Which soil pH range is considered optimum for cotton cultivation?",
+"serial": "233",
+"src_row": 232,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:233"
+},
+{
+"expl": "The table shows a 25% yield decrease at EC 13 mmhos/cm.",
+"key": 2,
+"o": [
+"0%",
+"10%",
+"25%",
+"50%",
+"None of these"
+],
+"page": "34",
+"q": "According to the EC\u2011yield table, at an electrical conductivity of 13 mmhos/cm, the expected yield reduction is about?",
+"serial": "234",
+"src_row": 233,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:234"
+},
+{
+"expl": "The source notes that cotton provides 10% of the world's edible oil.",
+"key": 1,
+"o": [
+"45%",
+"10%",
+"25%",
+"5%",
+"None of these"
+],
+"page": "34",
+"q": "What percentage of the world's edible oil is supplied by cotton?",
+"serial": "235",
+"src_row": 234,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:235"
+},
+{
+"expl": "Bt cotton needs only 1-1.5 kg/ha, the smallest rate listed.",
+"key": 3,
+"o": [
+"Desi cotton (12-18 kg/ha)",
+"Hybrid cotton (2-3 kg/ha)",
+"American cotton (15-25 kg/ha)",
+"Bt cotton (1-1.5 kg/ha)",
+"None of these"
+],
+"page": "34",
+"q": "Which cotton variety requires the lowest seed rate per hectare?",
+"serial": "236",
+"src_row": 235,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:236"
+},
+{
+"expl": "The source specifies 60 x 30 cm spacing for American cotton.",
+"key": 0,
+"o": [
+"60 x 30 cm",
+"100 x 60 cm",
+"60 x 15-30 cm",
+"19 x 19 cm",
+"None of these"
+],
+"page": "34",
+"q": "What is the recommended spacing for American cotton?",
+"serial": "237",
+"src_row": 236,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:237"
+},
+{
+"expl": "Cotton cannot be grown on sandy, saline, or waterlogged soils; sandy soil is unsuitable.",
+"key": 2,
+"o": [
+"Black cotton soil",
+"Clay soil",
+"Sandy soil",
+"All of the above",
+"None of these"
+],
+"page": "34",
+"q": "Which soil type is NOT suitable for cotton cultivation?",
+"serial": "238",
+"src_row": 237,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "34:238"
+},
+{
+"expl": "The optimal sowing time for cotton in North India is the 1st fortnight of May, as it allows the crop to establish before the intense summer heat.",
+"key": 1,
+"o": [
+"Last week of June",
+"1st fortnight of May",
+"September to October",
+"January to February",
+"None of these"
+],
+"page": "35",
+"q": "What is the optimal sowing time for cotton in North India?",
+"serial": "239",
+"src_row": 238,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:239"
+},
+{
+"expl": "Ultra-narrow-row cotton requires the highest number of plants per hectare, with 2,77,000 plants, to maximize yield and efficiency.",
+"key": 3,
+"o": [
+"American cotton",
+"Desi cotton",
+"Hybrid cotton",
+"Ultra-narrow-row cotton",
+"None of these"
+],
+"page": "35",
+"q": "Which type of cotton requires the highest number of plants per hectare?",
+"serial": "240",
+"src_row": 239,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:240"
+},
+{
+"expl": "The recommended seed rate for Bt. Cotton is 1-1.5 kg/ha, as Bt. Cotton seeds are genetically modified and require less quantity due to their high efficiency.",
+"key": 3,
+"o": [
+"18-20 kg/ha",
+"10-18 kg/ha",
+"2-3 kg/ha",
+"1-1.5 kg/ha",
+"None of these"
+],
+"page": "35",
+"q": "What is the recommended seed rate for Bt. Cotton?",
+"serial": "241",
+"src_row": 240,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:241"
+},
+{
+"expl": "The critical stage of irrigation for cotton is during flowering and boll formation, as adequate water supply is crucial for optimal yield.",
+"key": 2,
+"o": [
+"Germination",
+"Vegetative growth",
+"Flowering",
+"Seedling stage",
+"None of these"
+],
+"page": "35",
+"q": "What is the critical stage of irrigation for cotton?",
+"serial": "242",
+"src_row": 241,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:242"
+},
+{
+"expl": "Coarse textured soil is preferred for cotton cultivation in areas with heavy rainfall because it provides better drainage and aeration.",
+"key": 2,
+"o": [
+"Clay soil",
+"Loamy soil",
+"Coarse textured soil",
+"Sandy soil",
+"None of these"
+],
+"page": "35",
+"q": "Which soil type is preferred for cotton cultivation in areas with heavy rainfall?",
+"serial": "243",
+"src_row": 242,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:243"
+},
+{
+"expl": "The recommended depth for sowing cotton seeds using a dibbler is 3 cm, as it ensures proper seed placement and optimal germination conditions.",
+"key": 2,
+"o": [
+"1 cm",
+"2 cm",
+"3 cm",
+"4 cm",
+"None of these"
+],
+"page": "35",
+"q": "What is the recommended depth for sowing cotton seeds using a dibbler?",
+"serial": "244",
+"src_row": 243,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:244"
+},
+{
+"expl": "The recommended amount of FYM for cotton cultivation is 15-20 tonnes/ha, as it provides essential nutrients and improves soil structure.",
+"key": 2,
+"o": [
+"5-10 tonnes/ha",
+"10-15 tonnes/ha",
+"15-20 tonnes/ha",
+"20-25 tonnes/ha",
+"None of these"
+],
+"page": "35",
+"q": "What is the recommended amount of FYM (Farm Yard Manure) for cotton cultivation?",
+"serial": "245",
+"src_row": 244,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "35:245"
+},
+{
+"expl": "Topping involves the removal of the terminal growing point to encourage sympodial branching and boll development by diverting the energy flow.",
+"key": 0,
+"o": [
+"To remove terminal growing point",
+"To increase plant height",
+"To reduce sympodial branching",
+"To decrease boll development",
+"None of these"
+],
+"page": "36",
+"q": "What is the primary purpose of topping in cotton plants?",
+"serial": "246",
+"src_row": 245,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:246"
+},
+{
+"expl": "Bacillus thuringensis is a soil bacterium that produces proteins lethal to insect larvae affecting the digestive system of boll worms.",
+"key": 0,
+"o": [
+"Bacillus thuringensis",
+"Escherichia coli",
+"Pseudomonas aeruginosa",
+"Staphylococcus aureus",
+"None of these"
+],
+"page": "36",
+"q": "Which bacterium is associated with Bt. Cotton?",
+"serial": "247",
+"src_row": 246,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:247"
+},
+{
+"expl": "The yield range for hybrid cotton is typically between 25-30 q/ha.",
+"key": 2,
+"o": [
+"15-20 q/ha",
+"20-25 q/ha",
+"25-30 q/ha",
+"30-35 q/ha",
+"None of these"
+],
+"page": "36",
+"q": "What is the typical yield range for hybrid cotton?",
+"serial": "248",
+"src_row": 247,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:248"
+},
+{
+"expl": "The process of separating fiber from seed cotton is known as ginning.",
+"key": 2,
+"o": [
+"Spinning",
+"Weaving",
+"Ginning",
+"Carding",
+"None of these"
+],
+"page": "36",
+"q": "What is the process of separating fiber from seed cotton called?",
+"serial": "249",
+"src_row": 248,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:249"
+},
+{
+"expl": "The typical ginning percentage range for G. hirsutum is 34-38%.",
+"key": 2,
+"o": [
+"28-30%",
+"30-35%",
+"34-38%",
+"38-40%",
+"None of these"
+],
+"page": "36",
+"q": "What is the typical ginning percentage range for G. hirsutum?",
+"serial": "250",
+"src_row": 249,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:250"
+},
+{
+"expl": "MCU is known as an extra long variety of cotton.",
+"key": 1,
+"o": [
+"LRS 5166",
+"MCU",
+"Lohit",
+"Digvijaya",
+"None of these"
+],
+"page": "36",
+"q": "Which variety of cotton is known as extra long?",
+"serial": "251",
+"src_row": 250,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:251"
+},
+{
+"expl": "GM cotton was first permitted in India in March 2002.",
+"key": 2,
+"o": [
+"March 2000",
+"March 2001",
+"March 2002",
+"March 2003",
+"None of these"
+],
+"page": "36",
+"q": "When was GM cotton first permitted in India?",
+"serial": "252",
+"src_row": 251,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "36:252"
+}
+],
+"row_from": 231,
+"row_to": 252,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 231,
+"seeded_from": "2026-09-25"
+},
 "qidx": 0,
+"seeded_from": "2026-09-25",
+"skips": [],
 "step": 0
 },
 "malwa": {
