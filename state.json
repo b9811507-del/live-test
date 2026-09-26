@@ -54838,7 +54838,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-26T18:01:01+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"To ensure calves receive enough clean, good quality colostrum early",
+"To increase the cow's milk production",
+"To reduce the cow's mineral intake",
+"To delay the parturition process",
+"None of these"
+],
+"page": "",
+"q": "Why is it important to establish a protocol for feeding colostrum to calves?",
+"serial": "1bxM1Q-4:4158",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4158"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1.0-3.0%",
+"2.0-5.0%",
+"2.0-7.0%",
+"5.0-7.0%",
+"None of these"
+],
+"page": "",
+"q": "What is the essential oil content range in turmeric?",
+"serial": "1YcJWVgW:888",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:888"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Neutron scattering",
+"Tensiometer readings",
+"Pressure plate measurements",
+"Dielectric constant of water",
+"None of these"
+],
+"page": "",
+"q": "The TDR method of soil moisture assessment is based on?",
+"serial": "128DIQLj:1227",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1227"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Collembola",
+"Thysanura",
+"Protura",
+"Diplura",
+"None of these"
+],
+"page": "",
+"q": "Silverfish belong to which order?",
+"serial": "1sUgWsko:1710",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1710"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Atazine",
+"Simazine",
+"Fluchloralin",
+"Pendimethalin",
+"None of these"
+],
+"page": "",
+"q": "Which of the following herbicides is a triazine?",
+"serial": "1bxM1Q-4:1224",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1224"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Herd",
+"Flock",
+"Drove",
+"Trip",
+"None of these"
+],
+"page": "",
+"q": "What is the term for a group of sheep?",
+"serial": "17U0MEc-:2965",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2965"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nanogel formulation",
+"Microencapsulation",
+"Emulsion",
+"Granular formulation",
+"None of these"
+],
+"page": "",
+"q": "What formulation did NBAIR develop to prolong the effectiveness of the white\u2011grub aggregation pheromone?",
+"serial": "1UgnIe-g:1981",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1981"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Alpha-rays",
+"Beta-rays",
+"Gamma-rays",
+"UV rays",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT classified as an ionizing radiation among physical mutagens?",
+"serial": "1sUgWsko:5909",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5909"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Argemone mexicana",
+"Parthenium hysterophorus",
+"Ambrosia",
+"Milk from animals fed on Mexican poppy",
+"None of these"
+],
+"page": "",
+"q": "Which weed is responsible for causing dropsy in humans?",
+"serial": "128DIQLj:925",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:925"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ultisols only",
+"Oxisols only",
+"Both Ultisols and Oxisols",
+"Aridisols",
+"None of these"
+],
+"page": "",
+"q": "Laterite soils are classified under which soil order(s)?",
+"serial": "128DIQLj:1561",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1561"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Square System",
+"Rectangular System",
+"Hexagonal System",
+"Triangular System",
+"None of these"
+],
+"page": "",
+"q": "Which system of planting is preferred where land is costly and very fertile with assured irrigation?",
+"serial": "1bxM1Q-4:2907",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2907"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chrysanthemum",
+"Orchid",
+"Ivy",
+"Gladiolus",
+"None of these"
+],
+"page": "",
+"q": "Which flower is known as the Chinese symbol for many children?",
+"serial": "1bxM1Q-4:3489",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3489"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Root-knot nematode",
+"Citrus nematode",
+"Reniform nematode",
+"Burrowing nematode",
+"None of these"
+],
+"page": "",
+"q": "Which of the following nematodes is known for causing 'slow decline and die back' of citrus?",
+"serial": "17U0MEc-:2288",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2288"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1-2 weeks",
+"3-6 weeks",
+"1-2 months",
+"6-12 months",
+"None of these"
+],
+"page": "",
+"q": "For how long do herbicides with residual activity typically remain effective in intensive crop rotations?",
+"serial": "1sUgWsko:5214",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5214"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Langra",
+"Dashehari",
+"Vellaicollumban",
+"Totapuri",
+"None of these"
+],
+"page": "",
+"q": "Which mango cultivar is classified as an allo-octaploid with 2n = 8X = 80?",
+"serial": "1sUgWsko:955",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:955"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"500 plants/ha",
+"666 plants/ha",
+"800 plants/ha",
+"1,000 plants/ha",
+"None of these"
+],
+"page": "",
+"q": "How many plants per hectare are grown in the meadow system for?",
+"serial": "1sUgWsko:1189",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1189"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Separation of all particles from each other (dispersion)",
+"Measuring the amount of each separated group",
+"Adding NaOH to disperse the sample",
+"Determining the relative distribution of particles <2 mm",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a step in mechanical (particle size) analysis?",
+"serial": "128DIQLj:1146",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1146"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"China",
+"India",
+"Japan",
+"Russia",
+"None of these"
+],
+"page": "",
+"q": "Silver Carp is native to which country?",
+"serial": "1sUgWsko:2462",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2462"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"6\u00b0C/km",
+"4\u00b0C/km",
+"8\u00b0C/km",
+"2\u00b0C/km",
+"None of these"
+],
+"page": "",
+"q": "In the troposphere, temperature decreases with altitude at a rate of ___?",
+"serial": "17U0MEc-:343",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:343"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Generalized long\u2011term atmospheric condition of a region",
+"Immediate atmospheric condition at a specific moment",
+"Short\u2011term weather forecast for a city",
+"Seasonal temperature variation only",
+"None of these"
+],
+"page": "",
+"q": "Which statement best defines climate as described in the source?",
+"serial": "1sUgWsko:5636",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5636"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Overcrowding in the house",
+"Excess protein in the diet",
+"Deficiency of arginine and methionine",
+"Haemorrhages in the external genitalia due to large eggs",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT mentioned as a reason for cannibalism in poultry?",
+"serial": "1sUgWsko:3511",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3511"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10%",
+"12%",
+"14%",
+"8%",
+"None of these"
+],
+"page": "",
+"q": "What is the Total Soluble Solids (TSS) percentage of the Fransis (Hathijhool) variety?",
+"serial": "1sUgWsko:1136",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1136"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pascal",
+"Millibar",
+"Bar",
+"Atmosphere",
+"None of these"
+],
+"page": "",
+"q": "What is the unit of atmospheric pressure mentioned in the source?",
+"serial": "1sUgWsko:5682",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5682"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The ratio of seed weight to plant height",
+"The number of seeds produced from a single seed when sown and harvested",
+"The ratio of water used to seed yield",
+"The ratio of fertilizer input to seed output",
+"None of these"
+],
+"page": "",
+"q": "What does the seed multiplication ratio represent?",
+"serial": "1sUgWsko:4976",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4976"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Date Palm",
+"Papaya",
+"Fig",
+"Pomegranate",
+"None of these"
+],
+"page": "",
+"q": "Which plant is an example of a monoecious plant?",
+"serial": "1sUgWsko:943",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:943"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1:2:1",
+"2:1:1",
+"1:1:2",
+"2:2:1",
+"None of these"
+],
+"page": "",
+"q": "In integrated pig\u2011fish farming, which species ratio is recommended for grass carp, silver carp and common carp?",
+"serial": "1sUgWsko:2381",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2381"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Higher yield",
+"Superior fruit quality",
+"Easier harvesting",
+"Resistance to pests",
+"None of these"
+],
+"page": "",
+"q": "What is the primary reason for preferring the winter crop (Mrig bahar) over the rainy season crop in guava cultivation?",
+"serial": "1sUgWsko:1087",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1087"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Anthers",
+"Stigma",
+"Pollen grains",
+"Filaments",
+"None of these"
+],
+"page": "",
+"q": "In protogyny, which part of the flower matures first?",
+"serial": "1sUgWsko:5901",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5901"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"They are cheaper to construct",
+"They can be scientifically constructed to meet specific requirements",
+"They are only suitable for hilly areas",
+"They do not require any maintenance",
+"None of these"
+],
+"page": "",
+"q": "Why are dug out ponds considered more suitable for fish farming?",
+"serial": "1bxM1Q-4:4302",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4302"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The total area cultivated in a year, counting multiple cultivations of the same land",
+"The total area cultivated during the reference year, counting each plot only once regardless of mul\u2026",
+"The area under permanent pastures",
+"The area under forest cover",
+"None of these"
+],
+"page": "",
+"q": "Net Area Sown represents:",
+"serial": "1sUgWsko:4871",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1sUgWsko:4871"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Acts as silt detention reservoir",
+"Preferable under steep sloping streams",
+"Adaptable where 20-30 groundwater wells exist",
+"Located in soils of permeable nature",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a salient feature of shallow depressions created in stream courses?",
+"serial": "1bxM1Q-4:1421",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1421"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Harrow",
+"Plough",
+"Cultivator",
+"Roller",
+"None of these"
+],
+"page": "",
+"q": "Which implement is primarily used for primary tillage?",
+"serial": "17U0MEc-:1004",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1004"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pre\u2011emergence rot",
+"Post\u2011emergence rot",
+"Crown rot",
+"Late rot",
+"None of these"
+],
+"page": "",
+"q": "The disease phase in which circular brown spots appear on cotyledons, leading to seedling collapse, is called:",
+"serial": "1sUgWsko:3771",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3771"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"26% protein, 45% oil",
+"30% protein, 40% oil",
+"20% protein, 50% oil",
+"25% protein, 35% oil",
+"None of these"
+],
+"page": "",
+"q": "Groundnut seeds contain about 26% protein and 45% oil. Which pair is correct?",
+"serial": "1bxM1Q-4:758",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:758"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Chrysanthemum morifolium",
+"Chrysanthemum sp.",
+"Dendranthema grandiflora",
+"Both B and C",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of Chrysanthemum?",
+"serial": "1YcJWVgW:1068",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1068"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"GCH-1",
+"GCH-2",
+"GCH-3",
+"GCH-4",
+"None of these"
+],
+"page": "",
+"q": "Which resistant variety is recommended for managing Bacterial Blight of Castor?",
+"serial": "1UgnIe-g:1098",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1098"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Central Arid Forest Research Institute, Jodhpur",
+"Tropical Forest Research Institute",
+"Institute of Wood Science and Technology, Bengaluru",
+"Wildlife Institute of India, Dehradun",
+"None of these"
+],
+"page": "",
+"q": "Which institute is headquartered in Jabalpur, Madhya Pradesh?",
+"serial": "1sUgWsko:5581",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5581"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pluchea spp.",
+"Phalaris minor",
+"Echinochloa spp.",
+"Ipomoea triloba",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a xerophytic weed?",
+"serial": "17U0MEc-:867",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:867"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Physical filtration by mesh",
+"Chemical precipitation of solids",
+"Microbial processes that assimilate waste nutrients",
+"Ultraviolet sterilization",
+"None of these"
+],
+"page": "",
+"q": "Biofloc acts as a water\u2011treatment remedy mainly because:",
+"serial": "1sUgWsko:2660",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2660"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Presence of inhibitors in the endosperm",
+"Presence of ABA in the pericarp",
+"Low temperature requirement",
+"High moisture content",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of dormancy in cotton seeds that can be broken using Ethrel?",
+"serial": "1sUgWsko:5018",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5018"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bunch type",
+"Spreading type",
+"Both equal",
+"None",
+"None of these"
+],
+"page": "",
+"q": "According to the comparison, which type of groundnut shows a higher shelling percentage?",
+"serial": "1bxM1Q-4:769",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:769"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carbendazim 0.1%",
+"Monocrotophos",
+"Starch solution",
+"NAA 100-200 ppm",
+"None of these"
+],
+"page": "",
+"q": "After pruning diseased mango parts, which spray is recommended?",
+"serial": "1sUgWsko:3791",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3791"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Amaryllidaceae",
+"Graminae",
+"Araceae",
+"Liliaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does Colocasia (Taro) belong to?",
+"serial": "1sUgWsko:1256",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1256"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A processing firm assembling produce from villages.",
+"A wholesaler assuming the function of retailing.",
+"A firm reducing its marketing costs.",
+"A firm taking over unrelated marketing functions.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of forward integration?",
+"serial": "128DIQLj:2672",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2672"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2n=2x=18",
+"2n=2x=20",
+"2n=2x=16",
+"2n=2x=24",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number of Brassica oleracea var. capitata (cabbage)?",
+"serial": "1YcJWVgW:652",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:652"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Crossing with the R-line",
+"Crossing with the B-line",
+"Applying chemical emasculants",
+"Inducing environmental conditions",
+"None of these"
+],
+"page": "",
+"q": "What is the first step in maintaining the A-line in the three-line system?",
+"serial": "1UgnIe-g:274",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:274"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-8%",
+"10-15%",
+"15-20%",
+"20-25%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of secreted milk typically remains in the udder as residual milk?",
+"serial": "1sUgWsko:2792",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2792"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Prosopis",
+"Pinus",
+"Quercus",
+"Eucalyptus",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a multipurpose protein\u2011rich legume tree used in silvipasture?",
+"serial": "1UgnIe-g:2707",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2707"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Remove all suppressed stems",
+"Retain dominant trees and remove less promising ones",
+"Space trees by removing every second tree",
+"Harvest lower crown class trees first",
+"None of these"
+],
+"page": "",
+"q": "Crown thinning (French thinning) is mainly intended to:",
+"serial": "1UgnIe-g:2722",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2722"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lemma and palea",
+"Pericarp",
+"Endosperm",
+"Aleurone layer",
+"None of these"
+],
+"page": "",
+"q": "Which structures together form the hull that tightly encloses the rice caryopsis?",
+"serial": "1sUgWsko:5",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5"
+}
+],
+"set_no": 14,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
