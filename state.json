@@ -55458,6 +55458,8 @@
 "cd": 0,
 "congrats_sent": 30482,
 "cta_sent": "off",
+"done_at": "2026-09-26T11:13:43+05:30",
+"elapsed_s": 781,
 "expl_in_poll": 20,
 "file_msg": 30483,
 "file_sent": "MALWA_VOL_1_p55-60_20Q_2026-09-26.html",
@@ -55467,8 +55469,18 @@
 "lb_rows": 44,
 "lb_sent": true,
 "lock_ts": 1790401396.4570413,
-"locked_by": "36220999591",
+"locked_by": "",
 "msg_ann": 30457,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 30459,
 "names": {
 "1023125412": "Utsav",
@@ -55516,6 +55528,8 @@
 "948883251": "pragnya",
 "991560184": "Kurmi18fitness"
 },
+"paid_msg": 30485,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 2,
@@ -55935,7 +55949,7 @@
 "sent_i": 19,
 "skips": [],
 "started_at": "2026-09-26T11:02:59+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 30484,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 61-66\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 34, 35, 36",
 "unpinned": [
