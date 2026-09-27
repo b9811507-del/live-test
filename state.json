@@ -60004,8 +60004,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 273,
 "names": {},
+"plan": {
+"bidx_next": 273,
+"built_at": "2026-09-27T14:30:54+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 37-39",
+"pages_list": [
+37,
+38,
+39
+],
+"questions": [
+{
+"expl": "Delinting/defuzzing with concentrated sulphuric acid is primarily done to kill hibernating insect stages, among other benefits like grading the seed and destroying diseased pathogens.",
+"key": 0,
+"o": [
+"To kill hibernating insect stages",
+"To increase the fiber length",
+"To improve the color of the fiber",
+"To enhance the strength of the fiber",
+"None of these"
+],
+"page": "37",
+"q": "What is the primary purpose of delinting/defuzzing cotton seeds with concentrated sulphuric acid?",
+"serial": "253",
+"src_row": 252,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:253"
+},
+{
+"expl": "A cotton fiber of 26 mm falls into the 'Medium long' category, which ranges from 25.0 to 27.0 mm.",
+"key": 2,
+"o": [
+"Short fiber",
+"Medium fiber",
+"Medium long",
+"Long",
+"None of these"
+],
+"page": "37",
+"q": "Which fiber length category does a cotton fiber of 26 mm fall into?",
+"serial": "254",
+"src_row": 253,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:254"
+},
+{
+"expl": "The ginning percentage range for Deshi cotton is 36-42%.",
+"key": 2,
+"o": [
+"25-30%",
+"30-35%",
+"36-42%",
+"43-48%",
+"None of these"
+],
+"page": "37",
+"q": "What is the ginning percentage range for Deshi cotton?",
+"serial": "255",
+"src_row": 254,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:255"
+},
+{
+"expl": "Little leaf in cotton is caused by Zn deficiency.",
+"key": 2,
+"o": [
+"Tirak",
+"Red leaf",
+"Little leaf",
+"Crinkle leaf",
+"None of these"
+],
+"page": "37",
+"q": "Which physiological disorder in cotton is caused by Zn deficiency?",
+"serial": "256",
+"src_row": 255,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:256"
+},
+{
+"expl": "The chromosome number of Jute (Corchorus spp.) is 2n=14.",
+"key": 2,
+"o": [
+"2n=10",
+"2n=12",
+"2n=14",
+"2n=16",
+"None of these"
+],
+"page": "37",
+"q": "What is the chromosome number of Jute (Corchorus spp.)?",
+"serial": "257",
+"src_row": 256,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:257"
+},
+{
+"expl": "Increasing fiber fineness is not mentioned as a benefit of delinting/defuzzing cotton seeds.",
+"key": 2,
+"o": [
+"Killing hibernating insect stages",
+"Grading the seed",
+"Increasing fiber fineness",
+"Destroying diseased pathogens",
+"None of these"
+],
+"page": "37",
+"q": "Which of the following is NOT a benefit of delinting/defuzzing cotton seeds?",
+"serial": "258",
+"src_row": 257,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:258"
+},
+{
+"expl": "Crinkle leaf in cotton is caused by Mn toxicity.",
+"key": 3,
+"o": [
+"N deficiency",
+"Mg deficiency",
+"Zn deficiency",
+"Mn toxicity",
+"None of these"
+],
+"page": "37",
+"q": "What is the primary cause of 'Crinkle leaf' in cotton?",
+"serial": "259",
+"src_row": 258,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "37:259"
+},
+{
+"expl": "Corchorus capsularis is known as white Jute or Tita and is bitter in taste due to the presence of Corchorin.",
+"key": 1,
+"o": [
+"Corchorus olitorius",
+"Corchorus capsularis",
+"Mitha Pat",
+"Tossa",
+"None of these"
+],
+"page": "38",
+"q": "Which type of jute is known for its bitterness due to the presence of Corchorin?",
+"serial": "260",
+"src_row": 259,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:260"
+},
+{
+"expl": "The optimum temperature for jute cultivation is around 34\u00b0C, although it can thrive in a range from 24 to 37\u00b0C.",
+"key": 2,
+"o": [
+"20\u00b0C",
+"24\u00b0C",
+"34\u00b0C",
+"37\u00b0C",
+"None of these"
+],
+"page": "38",
+"q": "What is the optimum temperature for jute cultivation?",
+"serial": "261",
+"src_row": 260,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:261"
+},
+{
+"expl": "Jute can be grown on various soil types, but loamy alluvial soil is the most suitable for its cultivation.",
+"key": 2,
+"o": [
+"Laterite soil",
+"Gravely soil",
+"Loamy alluvial soil",
+"Clay soil",
+"None of these"
+],
+"page": "38",
+"q": "Which soil type is most suitable for jute cultivation?",
+"serial": "262",
+"src_row": 261,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:262"
+},
+{
+"expl": "The seed rate for Corchorus olitorius (Tossa) is 4-5 kg per hectare.",
+"key": 1,
+"o": [
+"2-3 kg/ha",
+"4-5 kg/ha",
+"6-8 kg/ha",
+"10-12 kg/ha",
+"None of these"
+],
+"page": "38",
+"q": "What is the seed rate for Corchorus olitorius (Tossa) per hectare?",
+"serial": "263",
+"src_row": 262,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:263"
+},
+{
+"expl": "The fibre yield of jute is typically between 2.0 to 2.5 tonnes per hectare.",
+"key": 1,
+"o": [
+"1.0 to 1.5 tonnes",
+"2.0 to 2.5 tonnes",
+"3.0 to 3.5 tonnes",
+"4.0 to 4.5 tonnes",
+"None of these"
+],
+"page": "38",
+"q": "What is the fibre yield of jute per hectare?",
+"serial": "264",
+"src_row": 263,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:264"
+},
+{
+"expl": "The ideal sowing time for Corchorus capsularis (White Jute) is March-April.",
+"key": 1,
+"o": [
+"January-February",
+"March-April",
+"May-June",
+"July-August",
+"None of these"
+],
+"page": "38",
+"q": "What is the ideal sowing time for Corchorus capsularis (White Jute)?",
+"serial": "265",
+"src_row": 264,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:265"
+},
+{
+"expl": "Jute plants are typically 8 to 12 feet high at the time of harvesting.",
+"key": 2,
+"o": [
+"4 to 6 feet",
+"6 to 8 feet",
+"8 to 12 feet",
+"12 to 15 feet",
+"None of these"
+],
+"page": "38",
+"q": "What is the height range of jute plants at the time of harvesting?",
+"serial": "266",
+"src_row": 265,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "38:266"
+},
+{
+"expl": "The primary purpose of retting is to loosen the fibers by decomposing and dissolving pectin, hemicelluloses, and other cementing agents through microbial action.",
+"key": 0,
+"o": [
+"To decompose and dissolve pectin and hemicelluloses",
+"To harvest jute plants",
+"To dry the jute fibers",
+"To plant jute seeds",
+"None of these"
+],
+"page": "39",
+"q": "What is the primary purpose of the retting process in jute cultivation?",
+"serial": "267",
+"src_row": 266,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:267"
+},
+{
+"expl": "Aspergillus flavus is the specific fungus used in the retting process to help decompose the pectin and hemicelluloses in jute stalks.",
+"key": 0,
+"o": [
+"Aspergillus flavus",
+"Penicillium",
+"Rhizopus",
+"Mucor",
+"None of these"
+],
+"page": "39",
+"q": "Which fungus is used in the retting process?",
+"serial": "268",
+"src_row": 267,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:268"
+},
+{
+"expl": "The optimum temperature for retting is about 34\u00b0C, which facilitates the microbial activity necessary for the process.",
+"key": 0,
+"o": [
+"34\u00b0C",
+"25\u00b0C",
+"40\u00b0C",
+"30\u00b0C",
+"None of these"
+],
+"page": "39",
+"q": "What is the optimum temperature for the retting process?",
+"serial": "269",
+"src_row": 268,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:269"
+},
+{
+"expl": "The botanical name of Desi gram/Brown chickpea is Cicer arietinum.",
+"key": 0,
+"o": [
+"Cicer arietinum",
+"Cicer Kabulium",
+"Cicer lentil",
+"Cicer soja",
+"None of these"
+],
+"page": "39",
+"q": "What is the botanical name of Desi gram/Brown chickpea?",
+"serial": "270",
+"src_row": 269,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:270"
+},
+{
+"expl": "India is the largest producer of Gram in the world, sharing 65% of the area and 70% of the total global production.",
+"key": 0,
+"o": [
+"India",
+"China",
+"Afghanistan",
+"Taiwan",
+"None of these"
+],
+"page": "39",
+"q": "Which country is the largest producer of Gram in the world?",
+"serial": "271",
+"src_row": 270,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:271"
+},
+{
+"expl": "The term 'Cicer' is derived from 'Cicero', a well-known Roman family.",
+"key": 0,
+"o": [
+"A well-known Roman family",
+"A Greek god",
+"A type of soil",
+"A farming technique",
+"None of these"
+],
+"page": "39",
+"q": "What does the term 'Cicer' in the botanical name of chickpea derive from?",
+"serial": "272",
+"src_row": 271,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:272"
+},
+{
+"expl": "The chromosome number of chickpea is 2n = 14, 16.",
+"key": 0,
+"o": [
+"2n = 14, 16",
+"2n = 18, 20",
+"2n = 12, 14",
+"2n = 20, 22",
+"None of these"
+],
+"page": "39",
+"q": "What is the chromosome number of chickpea?",
+"serial": "273",
+"src_row": 272,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "39:273"
+}
+],
+"row_from": 252,
+"row_to": 273,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 252,
+"seeded_from": "2026-09-26"
+},
 "qidx": 0,
+"seeded_from": "2026-09-26",
+"skips": [],
 "step": 0
 },
 "malwa": {
