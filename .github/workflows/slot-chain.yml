@@ -53,7 +53,7 @@ jobs:
       GITHUB_REPOSITORY: ${{ github.repository }}
       # v12 simple timing
       POLL_SECONDS: "25"
-      LATE_MAX_MIN: "60"  # TEMP 27-Sep: owner-approved malwa late start, revert to 5 after
+      LATE_MAX_MIN: "5"
       DEFER_SECS: "0"
       COUNTDOWN_SECS: "15"
       ANNOUNCE_LEAD: "0"
