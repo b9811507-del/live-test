@@ -59999,7 +59999,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-27T18:00:26+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Earthen ponds",
+"Cement ponds",
+"Lined earthen ponds",
+"Plastic tanks",
+"None of these"
+],
+"page": "",
+"q": "Aquaculture ponds constructed using cement are classified under which category?",
+"serial": "1sUgWsko:2215",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2215"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Moderate drought: 25\u201350% deficit, 50\u201375% of normal rainfall; Severe drought: >50% deficit, <50% of\u2026",
+"Moderate drought: 10\u201325% deficit, 75\u201390% of normal rainfall; Severe drought: 25\u201350% deficit, 50\u201375%\u2026",
+"Moderate drought: 50\u201375% deficit, <25% of normal rainfall; Severe drought: >75% deficit, <10% of no\u2026",
+"Moderate drought: 0\u201310% deficit, 90\u2013100% of normal rainfall; Severe drought: 10\u201325% deficit, 75\u201390%\u2026",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly describes moderate and severe drought in terms of rainfall deficit and actual rainfall received?",
+"serial": "128DIQLj:861",
+"src_row": null,
+"topic": "",
+"trunc": 4,
+"uid": "128DIQLj:861"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Himachal Pradesh",
+"Jammu and Kashmir",
+"Rajasthan",
+"Karnataka",
+"None of these"
+],
+"page": "",
+"q": "Which state is the home tract of the 'Changthangi' sheep breed?",
+"serial": "1sUgWsko:3200",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3200"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Terraces",
+"Baradari",
+"Water fountains",
+"Running water",
+"None of these"
+],
+"page": "",
+"q": "Which element is NOT listed among the main features of Mughal gardens?",
+"serial": "1bxM1Q-4:3344",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3344"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"MnO",
+"P2O5",
+"TiO2",
+"H2O",
+"None of these"
+],
+"page": "",
+"q": "Which of the following oxides has the lowest percentage in the Earth's crust?",
+"serial": "1sUgWsko:6801",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6801"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Brake Horsepower (BHP)",
+"Drawbar Horsepower (DBHP)",
+"Indicated Horsepower (IHP)",
+"Frictional Horsepower (FHP)",
+"None of these"
+],
+"page": "",
+"q": "Which type of horsepower represents the power developed in the engine cylinder without accounting for frictional losses?",
+"serial": "1sUgWsko:6339",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6339"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bactrocera dorsalis",
+"Drosicha mangiferae",
+"Amritodus atkinsoni",
+"Idioscopus spp.",
+"None of these"
+],
+"page": "",
+"q": "Which pest causes maggots to feed on fruit pulp, leading to the fruit dropping off prematurely?",
+"serial": "1UgnIe-g:2227",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2227"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Less than 15%",
+"15-30%",
+"30-50%",
+"50-100%",
+"None of these"
+],
+"page": "",
+"q": "What is the minimum residue cover required for Reduced-till systems after planting?",
+"serial": "1sUgWsko:6124",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6124"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1250 - 3750 kg/ha",
+"4000 - 6000 kg/ha",
+"10 - 15 t/ha",
+"25 - 35 t/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the yield range for Basella?",
+"serial": "1bxM1Q-4:3243",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3243"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Urea",
+"Calcium cyanamide",
+"Ammonium nitrate",
+"Isobutylidene diurea",
+"None of these"
+],
+"page": "",
+"q": "Which fertilizer supplies both nitrate and ammonium forms of nitrogen?",
+"serial": "128DIQLj:1382",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1382"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lal sindhuri",
+"Neelam",
+"Edward",
+"Banganapalli",
+"None of these"
+],
+"page": "",
+"q": "Which mango variety is known for its resistance to powdery mildew?",
+"serial": "17U0MEc-:1436",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1436"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Geotropism",
+"Hyponasty",
+"Epinasty",
+"Phototropism",
+"None of these"
+],
+"page": "",
+"q": "Which type of tropism involves the bending of plants towards light?",
+"serial": "1sUgWsko:773",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:773"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Metarhizium anisopliae",
+"Bacillus thuringiensis",
+"Trichoderma viride",
+"Beauveria bassiana",
+"None of these"
+],
+"page": "",
+"q": "Which biological agent is effective in controlling the adult stage of white grub?",
+"serial": "17U0MEc-:2040",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2040"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Proper use of land",
+"Good tillage",
+"Control of weeds",
+"Excessive use of chemical fertilizers",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a method to increase soil fertility?",
+"serial": "1bxM1Q-4:1666",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1666"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Salvinia molesta",
+"Pistia sp.",
+"Eichhornia crassipes",
+"Azolla pinnata",
+"None of these"
+],
+"page": "",
+"q": "Which aquatic weed is known as the most troublesome?",
+"serial": "17U0MEc-:872",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:872"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Vertical straight line",
+"Horizontal straight line",
+"Upward sloping",
+"Downward sloping",
+"None of these"
+],
+"page": "",
+"q": "In a perfect competition market, the demand curve is:",
+"serial": "128DIQLj:2623",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2623"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cassava",
+"Cucurbits",
+"Sunflower",
+"Pearl millet",
+"None of these"
+],
+"page": "",
+"q": "Which plant contains cucurbitacins?",
+"serial": "1bxM1Q-4:300",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:300"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"3 mg per hectare",
+"20\u201130 mg per hectare",
+"158\u2011160 mg per hectare",
+"500 mg per hectare",
+"None of these"
+],
+"page": "",
+"q": "The PB Knot rope technique for pink bollworm control releases female sex pheromones at approximately",
+"serial": "1UgnIe-g:2261",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2261"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Carboxin",
+"Oxycarboxin",
+"Benomyl",
+"Metalaxyl M",
+"None of these"
+],
+"page": "",
+"q": "Which fungicide is effective against rusts of wheat and fungi imperfecti?",
+"serial": "17U0MEc-:2154",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2154"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rutaceae",
+"Moringaceae",
+"Lamiaceae",
+"Asteraceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the Tulsi plant belong to?",
+"serial": "1YcJWVgW:941",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:941"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Paprika",
+"Turmeric",
+"Annatto",
+"Safflower",
+"None of these"
+],
+"page": "",
+"q": "Which spice contains the coloring component Bixin?",
+"serial": "1bxM1Q-4:3332",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3332"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C.V. = Mean/S.D.",
+"C.V. = S.D./Mean",
+"C.V. = Variance/Mean",
+"C.V. = Mean/Variance",
+"None of these"
+],
+"page": "",
+"q": "What is the formula for the Coefficient of Variation (C.V.)?",
+"serial": "17U0MEc-:2872",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2872"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Paracentric inversion",
+"Pericentric inversion",
+"Reciprocal translocation",
+"Simple translocation",
+"None of these"
+],
+"page": "",
+"q": "Which chromosomal inversion includes the centromere within the inverted segment?",
+"serial": "1UgnIe-g:633",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:633"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Earthen Nursery Pond",
+"Cement tanks",
+"Rearing Pond",
+"Grow out pond",
+"None of these"
+],
+"page": "",
+"q": "Which type of pond permits the highest stocking density per square metre?",
+"serial": "1sUgWsko:2277",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2277"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rht 1",
+"Rht 2",
+"Norin-10",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "What is the gene responsible for dwarfness in wheat?",
+"serial": "1sUgWsko:68",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:68"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Jaipur",
+"Ajmer",
+"Bikaner",
+"Jodhpur",
+"None of these"
+],
+"page": "",
+"q": "Which district in Rajasthan is known as the 'Egg Basket of Rajasthan'?",
+"serial": "128DIQLj:2053",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2053"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"52,750 tons",
+"45,000 tons",
+"60,000 tons",
+"70,500 tons",
+"None of these"
+],
+"page": "",
+"q": "What is the total pesticide consumption in India for the year 2022-23?",
+"serial": "17U0MEc-:17",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:17"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pod corn",
+"Sweet corn",
+"Soft corn",
+"Waxy corn",
+"None of these"
+],
+"page": "",
+"q": "Which maize type has each kernel enclosed by a pod or husk?",
+"serial": "1bxM1Q-4:694",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:694"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ingo Potrykus",
+"Henri de Laulanie",
+"Norman Borlaug",
+"M.S. Swaminathan",
+"None of these"
+],
+"page": "",
+"q": "Who developed the System of Rice Intensification (SRI) methodology?",
+"serial": "17U0MEc-:529",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:529"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20.6%",
+"25.6%",
+"33.0%",
+"16.0%",
+"None of these"
+],
+"page": "",
+"q": "What is the nitrogen content percentage in Ammonium Sulphate Nitrate?",
+"serial": "1sUgWsko:7208",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7208"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Carbohydrate",
+"Protein",
+"Fat",
+"Lactose",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient is present in the highest percentage in human milk?",
+"serial": "17U0MEc-:2975",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2975"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Helminthosporium maydis",
+"Puccinia sorghi",
+"Sphacelotheca reiliana",
+"Macrophomina phaseolina",
+"None of these"
+],
+"page": "",
+"q": "Which pathogen causes leaf blight in maize characterized by olive\u2011green velvety masses of conidia on leaf surfaces?",
+"serial": "1sUgWsko:3732",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3732"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carbendazim",
+"Glyphosate",
+"2,4-D",
+"Atrazine",
+"None of these"
+],
+"page": "",
+"q": "Which fungicide is used to control blast disease in rice?",
+"serial": "1UgnIe-g:991",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:991"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Spherosome",
+"Glyoxysome",
+"Peroxisome",
+"Vacuole",
+"None of these"
+],
+"page": "",
+"q": "Which organelle is responsible for the conversion of lipids into carbohydrates in germinating seeds?",
+"serial": "17U0MEc-:2426",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2426"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Fertilizer",
+"Tractors",
+"Money",
+"Paddy thresher",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of fixed capital?",
+"serial": "1sUgWsko:3944",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3944"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Broadcasting",
+"Dibbling",
+"Drilling",
+"Zero/No\u2011tillage sowing",
+"None of these"
+],
+"page": "",
+"q": "Which sowing method is noted for requiring the least amount of seed?",
+"serial": "1sUgWsko:93",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:93"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Punicaceae",
+"Rosaceae",
+"Rutaceae",
+"Sapotaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the fruit 'Pomegranate' belong to?",
+"serial": "1bxM1Q-4:2852",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2852"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Whitney, 1911",
+"Whitney, 1925",
+"Smith, 1911",
+"Smith, 1925",
+"None of these"
+],
+"page": "",
+"q": "Who first developed the soil textural triangle and in what year?",
+"serial": "128DIQLj:1144",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1144"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"April-May",
+"July-August",
+"September-October",
+"November-December",
+"None of these"
+],
+"page": "",
+"q": "In tropical regions, the ideal planting period for pomegranate is:",
+"serial": "17U0MEc-:1487",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1487"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1/3",
+"2/3",
+"1/2",
+"3/4",
+"None of these"
+],
+"page": "",
+"q": "What is the conversion factor for rice from paddy to milled rice?",
+"serial": "1sUgWsko:4378",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4378"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"B. Mundkur",
+"I.E. Dastur",
+"L.R. Dastur",
+"C. V. Raman",
+"None of these"
+],
+"page": "",
+"q": "Who established the Indian Phytopathological Society (IPS) in 1947?",
+"serial": "1UgnIe-g:912",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:912"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A firm performing multiple related activities in the marketing sequence.",
+"A firm taking over unrelated marketing functions.",
+"A firm focusing solely on wholesaling.",
+"A firm reducing its marketing costs.",
+"None of these"
+],
+"page": "",
+"q": "What is conglomeration in agri-business?",
+"serial": "128DIQLj:2673",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2673"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Doubles",
+"Triples",
+"Quadruples",
+"No effect",
+"None of these"
+],
+"page": "",
+"q": "Bactofugation extends the shelf\u2011life of milk by approximately how many times?",
+"serial": "128DIQLj:1977",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1977"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"16th September",
+"18th September",
+"5th October",
+"16th October",
+"None of these"
+],
+"page": "",
+"q": "World Bamboo Day falls on:",
+"serial": "1sUgWsko:5582",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5582"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"0.7-0.8",
+"0.8-0.9",
+"0.9-1.0",
+"1.0-1.1",
+"None of these"
+],
+"page": "",
+"q": "What is the brix ratio required for the harvest of sugarcane?",
+"serial": "1bxM1Q-4:1462",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1462"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"50%",
+"60%",
+"70%",
+"80%",
+"None of these"
+],
+"page": "",
+"q": "What relative humidity should a brooder house maintain during the 4th week of chick rearing?",
+"serial": "128DIQLj:2025",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2025"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Bhitarkanika",
+"Pichavaram",
+"Sundarbans",
+"Thane Creek",
+"None of these"
+],
+"page": "",
+"q": "Which is the largest mangrove area in India?",
+"serial": "1UgnIe-g:2817",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2817"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Nucleus and cytoplasm from the same parent",
+"Nucleus from one parent and cytoplasm from another",
+"Only chloroplast DNA",
+"Only mitochondrial DNA",
+"None of these"
+],
+"page": "",
+"q": "A cybrid (cytoplasmic hybrid) retains which genetic material?",
+"serial": "1UgnIe-g:1364",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1364"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Monoecious",
+"Dioecious",
+"Gynomonoecious",
+"Andromonoecious",
+"None of these"
+],
+"page": "",
+"q": "In which classification are male and female flowers present on different individual plants?",
+"serial": "1UgnIe-g:40",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:40"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Leucaena leucocephala",
+"Azadirachta indica",
+"Tectona grandis",
+"Cocos nucifera",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a listed example of multipurpose trees and shrubs on farmlands?",
+"serial": "1sUgWsko:5474",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5474"
+}
+],
+"set_no": 15,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 4
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
