@@ -60010,8 +60010,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 224,
 "names": {},
-"step": 0
+"plan": {
+"batch": 2,
+"bidx_next": 224,
+"built_at": "2026-09-27T11:38:14+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 61-66",
+"pages_blocks": [
+"61-62",
+"63-64",
+"65-66"
+],
+"questions": [
+{
+"expl": "Leucine is the dominant amino acid in sorghum, while lysine is deficient.",
+"key": 0,
+"o": [
+"Leucine",
+"Lysine",
+"Arginine",
+"Phenylalanine",
+"None of these"
+],
+"page": "61-62",
+"q": "Which amino acid is most abundant in sorghum grains?",
+"serial": "321",
+"src_row": 205,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61-62:321"
+},
+{
+"expl": "A soil temperature of 17-18 \u00b0C is satisfactory for seedling emergence of sorghum.",
+"key": 1,
+"o": [
+"10-12 \u00b0C",
+"17-18 \u00b0C",
+"25-30 \u00b0C",
+"35-40 \u00b0C",
+"None of these"
+],
+"page": "61-62",
+"q": "What soil temperature is optimal for sorghum seedling emergence?",
+"serial": "322",
+"src_row": 206,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61-62:322"
+},
+{
+"expl": "Sorghum is most sensitive to moisture levels during 50-85 days after sowing.",
+"key": 2,
+"o": [
+"0-30 DAS",
+"30-50 DAS",
+"50-85 DAS",
+"85-120 DAS",
+"None of these"
+],
+"page": "61-62",
+"q": "During which days after sowing is sorghum most sensitive to moisture?",
+"serial": "323",
+"src_row": 207,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61-62:323"
+},
+{
+"expl": "The stalk of sweet sorghum contains 10-15 % sugar at the soft dough stage.",
+"key": 1,
+"o": [
+"5-7 %",
+"10-15 %",
+"20-25 %",
+"30-35 %",
+"None of these"
+],
+"page": "61-62",
+"q": "What is the maximum sugar content in the stalk of sweet sorghum at the soft dough stage?",
+"serial": "324",
+"src_row": 208,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61-62:324"
+},
+{
+"expl": "The optimum grain moisture content for safe storage of sorghum is 10-12 %.",
+"key": 1,
+"o": [
+"5-7 %",
+"10-12 %",
+"20-25 %",
+"30-35 %",
+"None of these"
+],
+"page": "61-62",
+"q": "What grain moisture content is considered optimum for safe storage of sorghum?",
+"serial": "325",
+"src_row": 209,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61-62:325"
+},
+{
+"expl": "Barley blooms between 9 AM and 10:30 AM.",
+"key": 1,
+"o": [
+"6-7 AM",
+"9-10:30 AM",
+"12-1 PM",
+"3-4 PM",
+"None of these"
+],
+"page": "61-62",
+"q": "At what time does barley bloom?",
+"serial": "326",
+"src_row": 210,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61-62:326"
+},
+{
+"expl": "Barley grain contains about 68\u201170% carbohydrates and 11.5\u201111.8% protein as stated in the nutritional value section.",
+"key": 0,
+"o": [
+"Carbohydrate 68-70%; Protein 11.5-11.8%",
+"Carbohydrate 55-60%; Protein 15-16%",
+"Carbohydrate 70-75%; Protein 9-10%",
+"Carbohydrate 60-65%; Protein 12-13%",
+"None of these"
+],
+"page": "63-64",
+"q": "Which of the following best describes the approximate carbohydrate and protein content of barley grain?",
+"serial": "331",
+"src_row": 211,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:331"
+},
+{
+"expl": "Tyrosinase is the enzyme responsible for the darkening of barley bread, as mentioned in the source.",
+"key": 0,
+"o": [
+"Tyrosinase",
+"Amylase",
+"Lipase",
+"Protease",
+"None of these"
+],
+"page": "63-64",
+"q": "The darkening of a barley bread loaf during baking is caused by which enzyme?",
+"serial": "332",
+"src_row": 212,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:332"
+},
+{
+"expl": "Barley\u2019s storage protein is hordein, which is the gluten component in barley.",
+"key": 0,
+"o": [
+"Hordein",
+"Gliadin",
+"Glutenin",
+"Lugol",
+"None of these"
+],
+"page": "63-64",
+"q": "The major storage protein in barley, responsible for its gluten-like properties, is known as?",
+"serial": "333",
+"src_row": 213,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:333"
+},
+{
+"expl": "Naked (hull\u2011less) two\u2011row barley is preferred for malting as the husk does not adhere to the grain.",
+"key": 0,
+"o": [
+"Naked two\u2011row barley",
+"Hulled six\u2011row barley",
+"Hooded two\u2011row barley",
+"Naked six\u2011row barley",
+"None of these"
+],
+"page": "63-64",
+"q": "Which barley type is most preferred for malting because its husk does not adhere to the grain?",
+"serial": "334",
+"src_row": 214,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:334"
+},
+{
+"expl": "Seminal (primary) roots arise from the radicle through the coleorhiza during germination.",
+"key": 0,
+"o": [
+"Seminal roots",
+"Adventitious roots",
+"Both emerge simultaneously",
+"Neither, roots form later",
+"None of these"
+],
+"page": "63-64",
+"q": "During seed germination of barley, which root type emerges first from the radicle?",
+"serial": "335",
+"src_row": 215,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:335"
+},
+{
+"expl": "Barley is characterized by long, prominent awns, while wheat awns are shorter or sometimes absent.",
+"key": 0,
+"o": [
+"Barley has long, prominent awns; wheat awns are generally shorter or absent",
+"Wheat has long, prominent awns; barley awns are generally shorter or absent",
+"Both wheat and barley have equally long awns",
+"Neither wheat nor barley has awns",
+"None of these"
+],
+"page": "63-64",
+"q": "Which statement correctly contrasts wheat and barley awns?",
+"serial": "336",
+"src_row": 216,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:336"
+},
+{
+"expl": "Barley classification is based on spikelet arrangement, seed coat, and growth habit, but not on grain color.",
+"key": 2,
+"o": [
+"Number of rows of kernels on the spike",
+"Presence or absence of seed coat (hull)",
+"Color of the grain",
+"Response to day length and temperature",
+"None of these"
+],
+"page": "63-64",
+"q": "Which of the following is NOT a basis for classifying barley varieties?",
+"serial": "337",
+"src_row": 217,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63-64:337"
+},
+{
+"expl": "Rainfed barley is sown at a depth of 6-8 cm to ensure adequate moisture retention.",
+"key": 1,
+"o": [
+"4-5 cm",
+"6-8 cm",
+"10-12 cm",
+"2-3 cm",
+"None of these"
+],
+"page": "65-66",
+"q": "Which sowing depth is recommended for rainfed barley?",
+"serial": "341",
+"src_row": 218,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65-66:341"
+},
+{
+"expl": "The active tillering phase (30-35 days after sowing) is the most critical stage for applying irrigation in barley.",
+"key": 1,
+"o": [
+"Germination",
+"Active tillering (30-35 DAS)",
+"Flag leaf/booting (60-65 DAS)",
+"Milking/grain filling (80-85 DAS)",
+"None of these"
+],
+"page": "65-66",
+"q": "During barley cultivation, which growth stage is most critical for irrigation?",
+"serial": "342",
+"src_row": 219,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65-66:342"
+},
+{
+"expl": "For malting barley, a balanced NPK dose of 50:25:25 kg/ha is used to maintain low protein levels.",
+"key": 1,
+"o": [
+"60-80 kg N + 30 kg P\u2082O\u2085",
+"50:25:25 kg/ha",
+"100 kg N",
+"75 kg N + 30 kg P\u2082O\u2085",
+"None of these"
+],
+"page": "65-66",
+"q": "What is the recommended NPK dose for malting barley to keep protein content low?",
+"serial": "343",
+"src_row": 220,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65-66:343"
+},
+{
+"expl": "BL 2 (Bilada 2) is a salt\u2011tolerant barley variety.",
+"key": 2,
+"o": [
+"Pusa Sheetal",
+"RD 2552",
+"BL 2 (Bilada 2)",
+"Kedar",
+"None of these"
+],
+"page": "65-66",
+"q": "Which barley variety is known for salt tolerance?",
+"serial": "344",
+"src_row": 221,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65-66:344"
+},
+{
+"expl": "Barley grain should be stored at a moisture content of 12% to prevent spoilage.",
+"key": 1,
+"o": [
+"18-20%",
+"12%",
+"8-15%",
+"30-35%",
+"None of these"
+],
+"page": "65-66",
+"q": "What moisture content is required for safe storage of barley grain?",
+"serial": "345",
+"src_row": 222,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65-66:345"
+},
+{
+"expl": "Pearl millet is scientifically named Pennisetum glaucum.",
+"key": 1,
+"o": [
+"Sorghum bicolor",
+"Pennisetum glaucum",
+"Zea mays",
+"Oryza sativa",
+"None of these"
+],
+"page": "65-66",
+"q": "Which scientific name corresponds to the millet commonly known as Pearl Millet?",
+"serial": "346",
+"src_row": 223,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65-66:346"
+}
+],
+"rolled": false,
+"row_from": 205,
+"row_to": 224,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 205,
+"seeded_from": "2026-09-26",
+"vol": 0
+},
+"qidx": 0,
+"seeded_from": "2026-09-26",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
