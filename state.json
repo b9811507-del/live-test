@@ -60009,6 +60009,7 @@
 "lock_ts": 1790499657.7981486,
 "locked_by": "36307999240",
 "msg_ann": 30602,
+"msg_timer": 30604,
 "names": {},
 "pinned_ann": true,
 "plan": {
