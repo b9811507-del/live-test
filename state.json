@@ -64631,8 +64631,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 294,
 "names": {},
+"plan": {
+"bidx_next": 294,
+"built_at": "2026-09-28T14:30:08+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 40-42",
+"pages_list": [
+40,
+41,
+42
+],
+"questions": [
+{
+"expl": "The sour taste in gram leaves and pods is primarily due to the presence of Malic acid (90-96%) and oxalic acid (4-10%).",
+"key": 0,
+"o": [
+"Presence of Malic acid 90-96% and oxalic acid 4-10%",
+"High protein content",
+"Presence of citric acid",
+"High moisture content",
+"None of these"
+],
+"page": "40",
+"q": "What is the primary reason for the sour taste in gram leaves and pods?",
+"serial": "274",
+"src_row": 273,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:274"
+},
+{
+"expl": "Gram is classified as a C3 plant, which is a type of plant that uses the C3 photosynthetic pathway.",
+"key": 0,
+"o": [
+"C3 plant",
+"C4 plant",
+"CAM plant",
+"C2 plant",
+"None of these"
+],
+"page": "40",
+"q": "Which type of plant is gram classified as?",
+"serial": "275",
+"src_row": 274,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:275"
+},
+{
+"expl": "The protein content in gram is 21.1%, making it a significant source of protein.",
+"key": 0,
+"o": [
+"21.1%",
+"15.5%",
+"25.3%",
+"18.7%",
+"None of these"
+],
+"page": "40",
+"q": "What is the protein content in gram?",
+"serial": "276",
+"src_row": 275,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:276"
+},
+{
+"expl": "The optimum sowing time for gram is the 2nd fortnight of October to the 1st week of November.",
+"key": 0,
+"o": [
+"2nd fortnight of October to 1st week of November",
+"1st fortnight of September to 1st week of October",
+"2nd fortnight of November to 1st week of December",
+"1st fortnight of December to 1st week of January",
+"None of these"
+],
+"page": "40",
+"q": "What is the optimum sowing time for gram?",
+"serial": "277",
+"src_row": 276,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:277"
+},
+{
+"expl": "Gram exhibits hypogeal germination, where the cotyledons remain underground.",
+"key": 0,
+"o": [
+"Hypogeal",
+"Epigeal",
+"Vivipary",
+"Pre-germination",
+"None of these"
+],
+"page": "40",
+"q": "What type of germination does gram exhibit?",
+"serial": "278",
+"src_row": 277,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:278"
+},
+{
+"expl": "The ideal soil type for growing gram is sandy loam to clay loam, which provides good drainage and aeration.",
+"key": 0,
+"o": [
+"Sandy loam to clay loam",
+"Heavy clay",
+"Pure sand",
+"Peaty soil",
+"None of these"
+],
+"page": "40",
+"q": "What is the ideal soil type for growing gram?",
+"serial": "279",
+"src_row": 278,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:279"
+},
+{
+"expl": "The plant population for gram per hectare is 3,33,333 plants, which is optimal for its growth and yield.",
+"key": 0,
+"o": [
+"3,33,333 plants",
+"2,50,000 plants",
+"4,00,000 plants",
+"1,00,000 plants",
+"None of these"
+],
+"page": "40",
+"q": "What is the plant population for gram per hectare?",
+"serial": "280",
+"src_row": 279,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "40:280"
+},
+{
+"expl": "Nipping is the process of plucking the apical buds to stop apical growth, which promotes lateral bud branching, yielding more pods and higher yields.",
+"key": 0,
+"o": [
+"To promote lateral bud branching",
+"To increase seed size",
+"To reduce the number of pods",
+"To enhance root growth",
+"None of these"
+],
+"page": "41",
+"q": "What is the primary purpose of nipping in chickpea cultivation?",
+"serial": "281",
+"src_row": 280,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:281"
+},
+{
+"expl": "TIBA (Tri-iodo-benzoic Acid) is the chemical used for nipping in chickpea cultivation.",
+"key": 0,
+"o": [
+"TIBA",
+"Basalin",
+"Rhizobium",
+"DAS",
+"None of these"
+],
+"page": "41",
+"q": "Which chemical is used for nipping in chickpea cultivation?",
+"serial": "282",
+"src_row": 281,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:282"
+},
+{
+"expl": "The critical stages for water management in chickpea cultivation are pre-flowering and pod development.",
+"key": 0,
+"o": [
+"Pre-flowering and Pod Development",
+"Seed germination",
+"Vegetative growth",
+"Harvesting",
+"None of these"
+],
+"page": "41",
+"q": "What is the critical stage for water management in chickpea cultivation?",
+"serial": "283",
+"src_row": 282,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:283"
+},
+{
+"expl": "Desi chickpea is small-seeded and covers 90% of the world's cultivation.",
+"key": 0,
+"o": [
+"Desi",
+"Kabuli",
+"CO2",
+"Pusa 391",
+"None of these"
+],
+"page": "41",
+"q": "Which type of chickpea is small-seeded and covers 90% of the world's cultivation?",
+"serial": "284",
+"src_row": 283,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:284"
+},
+{
+"expl": "The seed should be placed 8-10 cm deep because shallow-sown crops are more liable to be damaged by wilt.",
+"key": 0,
+"o": [
+"8-10 cm",
+"2-5 cm",
+"12-15 cm",
+"15-20 cm",
+"None of these"
+],
+"page": "41",
+"q": "What is the recommended depth for sowing chickpea seeds to avoid wilt damage?",
+"serial": "285",
+"src_row": 284,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:285"
+},
+{
+"expl": "Kabuli is a large-seeded variety of chickpea.",
+"key": 0,
+"o": [
+"Kabuli",
+"Desi",
+"CO1",
+"DCP 91-2",
+"None of these"
+],
+"page": "41",
+"q": "Which of the following is a large-seeded variety of chickpea?",
+"serial": "286",
+"src_row": 285,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:286"
+},
+{
+"expl": "The recommended amount of phosphorus for irrigated chickpea under normal planting time is 60 kg.",
+"key": 0,
+"o": [
+"60",
+"20",
+"40",
+"0",
+"None of these"
+],
+"page": "41",
+"q": "What is the recommended amount of phosphorus (in kg) for irrigated chickpea under normal planting time?",
+"serial": "287",
+"src_row": 286,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "41:287"
+},
+{
+"expl": "The source states Desi types yield about 1.5 to 2 t/ha.",
+"key": 0,
+"o": [
+"1.5\u20132 t/ha",
+"2.5\u20133.5 t/ha",
+"0.5\u20131 t/ha",
+"3.5\u20134.5 t/ha",
+"None of these"
+],
+"page": "42",
+"q": "What is the typical yield range for Desi type chickpea under well\u2011managed conditions?",
+"serial": "288",
+"src_row": 287,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:288"
+},
+{
+"expl": "Kabuli types yield 2.5\u20133.5 t/ha, higher than Desi's 1.5\u20132 t/ha.",
+"key": 1,
+"o": [
+"Desi",
+"Kabuli",
+"Both yield the same",
+"Neither yields appreciably",
+"None of these"
+],
+"page": "42",
+"q": "Which chickpea type generally provides a higher yield per hectare when well managed?",
+"serial": "289",
+"src_row": 288,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:289"
+},
+{
+"expl": "3 t/ha falls within Kabuli's 2.5\u20133.5 t/ha range but exceeds Desi's maximum of 2 t/ha.",
+"key": 1,
+"o": [
+"Desi",
+"Kabuli",
+"Both could give this yield",
+"Neither could give this yield",
+"None of these"
+],
+"page": "42",
+"q": "If a farmer obtains a yield of 3 t/ha, which chickpea type does this most likely correspond to?",
+"serial": "290",
+"src_row": 289,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:290"
+},
+{
+"expl": "Both Desi and Kabuli maximum yields are below 4 t/ha; the range 3.0\u20134.0 t/ha exceeds the reported limits.",
+"key": 3,
+"o": [
+"1.5\u20132 t/ha",
+"2.5\u20133.5 t/ha",
+"0.8\u20131.2 t/ha",
+"3.0\u20134.0 t/ha",
+"None of these"
+],
+"page": "42",
+"q": "Which of the following yield ranges is NOT correct for any chickpea type under well\u2011managed conditions?",
+"serial": "291",
+"src_row": 290,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:291"
+},
+{
+"expl": "Kabuli yields 2.5\u20133.5 t/ha; the midpoint is about 3 t/ha.",
+"key": 2,
+"o": [
+"1.0",
+"2.0",
+"3.0",
+"4.0",
+"None of these"
+],
+"page": "42",
+"q": "Under optimal management, the average yield of Kabuli chickpea is approximately ___ t/ha.",
+"serial": "292",
+"src_row": 291,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:292"
+},
+{
+"expl": "Kabuli (2.5\u20133.5 t/ha) exceeds Desi (1.5\u20132 t/ha) by roughly 1 t/ha.",
+"key": 1,
+"o": [
+"Desi yields are about 1 t/ha higher than Kabuli",
+"Kabuli yields are about 1 t/ha higher than Desi",
+"Both have identical yields",
+"Kabuli yields are twice Desi yields",
+"None of these"
+],
+"page": "42",
+"q": "Which statement accurately reflects the yield difference between Desi and Kabuli types?",
+"serial": "293",
+"src_row": 292,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:293"
+},
+{
+"expl": "1.8 t/ha lies within the Desi range (1.5\u20132 t/ha) and below the Kabuli minimum of 2.5 t/ha.",
+"key": 0,
+"o": [
+"Desi",
+"Kabuli",
+"Both",
+"Neither",
+"None of these"
+],
+"page": "42",
+"q": "A researcher records a yield of 1.8 t/ha. Based on the given data, which chickpea type is most consistent with this yield?",
+"serial": "294",
+"src_row": 293,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "42:294"
+}
+],
+"row_from": 273,
+"row_to": 294,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 273,
+"seeded_from": "2026-09-27"
+},
 "qidx": 0,
+"seeded_from": "2026-09-27",
+"skips": [],
 "step": 0
 },
 "malwa": {
