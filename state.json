@@ -64626,7 +64626,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-28T18:01:33+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"8\u00b04\u2032N to 37\u00b06\u2032N and 68\u00b07\u2032E to 97\u00b025\u2032E",
+"10\u00b0N to 40\u00b0N and 70\u00b0E to 100\u00b0E",
+"5\u00b0N to 35\u00b0N and 65\u00b0E to 95\u00b0E",
+"12\u00b0N to 38\u00b0N and 70\u00b0E to 98\u00b0E",
+"None of these"
+],
+"page": "",
+"q": "India lies primarily between which latitudinal and longitudinal ranges?",
+"serial": "128DIQLj:22",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:22"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"RD-2052",
+"Azad",
+"Amber",
+"Kailash",
+"None of these"
+],
+"page": "",
+"q": "Which barley variety is known to be resistant to Molya nematode?",
+"serial": "17U0MEc-:590",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:590"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2n=2x=14",
+"2n=2x=16",
+"2n=2x=12",
+"2n=2x=10",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number of cucumber (Cucumis sativus)?",
+"serial": "1YcJWVgW:768",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:768"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To remove weeds",
+"To secure grass and level the surface",
+"To apply fertilizers",
+"To aerate the soil",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of rolling in lawn maintenance?",
+"serial": "1YcJWVgW:1036",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1036"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1-2 years old",
+"Cows",
+"Pregnant cows",
+"Bulls",
+"None of these"
+],
+"page": "",
+"q": "Which animal category has a water requirement of 1.8-2.0 units as per the first table?",
+"serial": "1sUgWsko:3093",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3093"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sarvodaya movement",
+"Bhoodan movement",
+"Gram dan movement",
+"National demonstration",
+"None of these"
+],
+"page": "",
+"q": "Which movement was started by Vinoba Bhave in 1951 at Nalgonda (T.N.)?",
+"serial": "128DIQLj:2096",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2096"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Classic",
+"Kloben",
+"Both Classic and Kloben",
+"Glean",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide trade name is associated with the chemical name 'Chlorimuron-ethyl'?",
+"serial": "1bxM1Q-4:1238",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1238"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10%",
+"11%",
+"11.5%",
+"12%",
+"None of these"
+],
+"page": "",
+"q": "What is the protein content percentage of barley?",
+"serial": "1sUgWsko:4821",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4821"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cryptolestes minutus",
+"Oryzaephilus surinamensis",
+"Latheticus oryzae",
+"Tribolium castaneum",
+"None of these"
+],
+"page": "",
+"q": "Which insect pest is known for damaging grains by scarring the grain surface?",
+"serial": "1UgnIe-g:2311",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2311"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Medium texture soils",
+"Heavy texture soils",
+"Sandy soil",
+"Loamy soil",
+"None of these"
+],
+"page": "",
+"q": "The border strip method is NOT suitable for which soil type?",
+"serial": "17U0MEc-:417",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:417"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increase stem length",
+"Control plant height",
+"Promote flowering",
+"Enhance fruit color",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a primary effect of growth retardants on plants?",
+"serial": "1UgnIe-g:1675",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1675"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"DCD",
+"NBPT",
+"KN3",
+"ST",
+"None of these"
+],
+"page": "",
+"q": "Which of the following compounds acts as a urease inhibitor?",
+"serial": "128DIQLj:1398",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1398"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Entomophily",
+"Anemophily",
+"Ornithophily",
+"Zoophily",
+"None of these"
+],
+"page": "",
+"q": "Which type of cross\u2011pollination is primarily wind\u2011mediated and includes crops such as maize?",
+"serial": "1UgnIe-g:55",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:55"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Grodex test",
+"Embryo culture method",
+"Electrical conductance method",
+"Indigocarmine method",
+"None of these"
+],
+"page": "",
+"q": "Which method uses aniline dyes to stain dead seeds or their cells?",
+"serial": "1sUgWsko:4994",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4994"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Zinc",
+"Calcium",
+"Phosphorus",
+"Iron",
+"None of these"
+],
+"page": "",
+"q": "Mottled appearance in plants is associated with deficiency of which nutrient?",
+"serial": "1sUgWsko:7384",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7384"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Taenidia",
+"Tracheoles",
+"Spiracles",
+"Haemoceal",
+"None of these"
+],
+"page": "",
+"q": "What are the fine branches of tracheae called?",
+"serial": "17U0MEc-:1759",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1759"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Stunted growth",
+"Yellowing leaves",
+"Sooty mould on leaves",
+"Increased grain yield",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a damage symptom of shoot bug (Peregrinus maidis)?",
+"serial": "1sUgWsko:1832",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1832"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pollarding",
+"Vivipary",
+"Coppicing",
+"Topping",
+"None of these"
+],
+"page": "",
+"q": "Germination that occurs while the seed is still attached to the parent plant is termed:",
+"serial": "1UgnIe-g:2806",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2806"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chemical reactions of ozone",
+"Absorption of ultraviolet radiation by ozone",
+"Friction with solar wind",
+"Radioactive decay",
+"None of these"
+],
+"page": "",
+"q": "The high temperature of the ozonosphere is mainly caused by which process?",
+"serial": "1sUgWsko:5619",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5619"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Coconut",
+"Soybean",
+"Castor",
+"Rapeseed & mustard",
+"None of these"
+],
+"page": "",
+"q": "Which oilseed crop listed has the highest oil percentage?",
+"serial": "1bxM1Q-4:547",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:547"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Marble countertop",
+"Wooden table",
+"Stainless steel slab",
+"Glass shelf",
+"None of these"
+],
+"page": "",
+"q": "On which type of surface is the salad placed?",
+"serial": "1sUgWsko:523",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:523"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Osmanabadi",
+"Black Bengal",
+"Jamunapari",
+"Sirohi",
+"None of these"
+],
+"page": "",
+"q": "Which goat breed is native to Bangladesh and Bengal?",
+"serial": "1sUgWsko:3333",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3333"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Apple and Pear",
+"Mango and Guava",
+"Banana and Papaya",
+"Citrus and Lime",
+"None of these"
+],
+"page": "",
+"q": "The technique of meadow orcharding was first developed by J.P. Hudson in which crops?",
+"serial": "1YcJWVgW:66",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:66"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"CGMS (Three-line system)",
+"Hand pollination",
+"Environmentally sensitive genetic male sterility",
+"Manual hybridization",
+"None of these"
+],
+"page": "",
+"q": "What method is used for hybrid seed production in sunflower?",
+"serial": "1UgnIe-g:283",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:283"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Casein",
+"Lacto-Albumin",
+"Lacto-Globulin",
+"Albumin",
+"None of these"
+],
+"page": "",
+"q": "Which protein in milk does NOT coagulate upon heating?",
+"serial": "1sUgWsko:2737",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2737"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Breakage and Reunion theory",
+"Gene conversion theory",
+"Chromatid interference theory",
+"Homologous recombination theory",
+"None of these"
+],
+"page": "",
+"q": "Which theory best explains the mechanism of crossing over?",
+"serial": "1UgnIe-g:501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:501"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ganesh (GBG-1)",
+"Bhagwa (Sindhuri)",
+"Mridula",
+"Amlidana",
+"None of these"
+],
+"page": "",
+"q": "Which variety of pomegranate is known for its blood red aril?",
+"serial": "1YcJWVgW:329",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:329"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Hult",
+"Clements",
+"Gleason",
+"Whittaker",
+"None of these"
+],
+"page": "",
+"q": "Who first coined the term \"succession\" in 1885?",
+"serial": "1UgnIe-g:2760",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2760"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"50-80\u00b0",
+"90-120\u00b0",
+"100-150\u00b0",
+"160-180\u00b0",
+"None of these"
+],
+"page": "",
+"q": "What is the spray angle range for a hollow cone nozzle?",
+"serial": "128DIQLj:2992",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2992"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"HD-2329",
+"HD-2967",
+"HD-2783",
+"HD-3000",
+"None of these"
+],
+"page": "",
+"q": "Which wheat variety contributed the most to the Green Revolution?",
+"serial": "128DIQLj:101",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:101"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ikebana",
+"Hogarth",
+"Charbag",
+"Mandhor",
+"None of these"
+],
+"page": "",
+"q": "What is the Japanese flower arrangement known as?",
+"serial": "17U0MEc-:1645",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1645"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Taylor (Patna)",
+"Karan Swiss",
+"Frieswal",
+"Jersindh",
+"None of these"
+],
+"page": "",
+"q": "What was the first cross\u2011breed cattle developed in India?",
+"serial": "128DIQLj:1743",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1743"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It is symmetric.",
+"It gives the cause and effect of a relationship.",
+"It is independent of change of scale.",
+"It should always exceed 1.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a property of the regression coefficient?",
+"serial": "1bxM1Q-4:3670",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3670"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It enters the Krebs cycle",
+"It is converted to Acetyl-CoA",
+"It is degraded to ethyl alcohol and CO2 or lactic acid",
+"It is stored as glucose",
+"None of these"
+],
+"page": "",
+"q": "What happens to pyruvate in the absence of oxygen?",
+"serial": "1UgnIe-g:1589",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1589"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Argemone mexicana",
+"Datura alba",
+"Celosia argentea",
+"Alligator Weed",
+"None of these"
+],
+"page": "",
+"q": "The \"censor mechanism\" is exemplified by which plant?",
+"serial": "128DIQLj:943",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:943"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lutein",
+"Chlorophyll",
+"Neoxanthin",
+"Violaxanthin",
+"None of these"
+],
+"page": "",
+"q": "What is the primary coloring component in turmeric that gives it a green color?",
+"serial": "1bxM1Q-4:3327",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3327"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Saturation capacity",
+"Field capacity",
+"Wilting coefficient",
+"Hygroscopic coefficient",
+"None of these"
+],
+"page": "",
+"q": "Which soil moisture condition is characterized by water being held with a force of 1/3 atmosphere?",
+"serial": "1sUgWsko:7001",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7001"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To provide formal education to rural people.",
+"To transfer technology from urban to rural areas.",
+"The overall development of rural people and the promotion of a scientific outlook.",
+"To establish agricultural universities.",
+"None of these"
+],
+"page": "",
+"q": "What is the primary goal of extension education?",
+"serial": "128DIQLj:2064",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2064"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mango",
+"Citrus spp",
+"Guava",
+"Grape",
+"None of these"
+],
+"page": "",
+"q": "Which fruit crop requires the highest amount of Potassium (K) at maturity?",
+"serial": "1bxM1Q-4:2914",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2914"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Uttar Pradesh",
+"Maharashtra",
+"Andhra Pradesh",
+"Tamil Nadu",
+"None of these"
+],
+"page": "",
+"q": "Which state in India is the largest producer of mangoes?",
+"serial": "17U0MEc-:1430",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1430"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Hard pruning",
+"Moderate-light pruning",
+"Little or no pruning",
+"No pruning",
+"None of these"
+],
+"page": "",
+"q": "What pruning intensity is recommended for Hybrid Tea roses?",
+"serial": "1YcJWVgW:1048",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1048"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1st fortnight of October",
+"2nd fortnight of October",
+"1st fortnight of November",
+"2nd fortnight of November",
+"None of these"
+],
+"page": "",
+"q": "What is the best time for sowing wheat under normal conditions?",
+"serial": "17U0MEc-:571",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:571"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Zineb",
+"Thiram",
+"Captafol",
+"Dimethoate",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is used for seed treatment to control Anthracnose in soybean?",
+"serial": "1bxM1Q-4:2609",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2609"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Law of constant return",
+"Law of increasing return",
+"Law of diminishing return",
+"Law of negative return",
+"None of these"
+],
+"page": "",
+"q": "What does it indicate when the sum of \u03b1 and \u03b2 is greater than 1 in a production function?",
+"serial": "1bxM1Q-4:2271",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2271"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Asteraceae",
+"Poaceae",
+"Cyperaceae",
+"Fabaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family is the most important for monocotyledon weeds?",
+"serial": "1sUgWsko:5099",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5099"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Odonata",
+"Coleoptera",
+"Diptera",
+"Isoptera",
+"None of these"
+],
+"page": "",
+"q": "Which order has two pairs of wings that are equal in size and shape?",
+"serial": "1UgnIe-g:1853",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1853"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Kagzi Gonda",
+"Banarasi",
+"Kadka banarasi",
+"Gola",
+"None of these"
+],
+"page": "",
+"q": "Which variety is NOT associated with the horticulture crop mentioned?",
+"serial": "1bxM1Q-4:3040",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3040"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Pusa Purple Cluster",
+"Pusa bhiairay",
+"Pant Rituraj",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "Which resistant variety is recommended for managing Little Leaf of Brinjal?",
+"serial": "1UgnIe-g:1135",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1135"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chlorophyll",
+"Anthocyanin",
+"Carotene",
+"Betacyanin",
+"None of these"
+],
+"page": "",
+"q": "The red colour of litchi fruit is mainly due to which pigment?",
+"serial": "1bxM1Q-4:3013",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3013"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Monocropping",
+"Deforestation",
+"Crop rotation",
+"Over-irrigation",
+"None of these"
+],
+"page": "",
+"q": "What is one method to increase soil fertility?",
+"serial": "1bxM1Q-4:1663",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1663"
+}
+],
+"set_no": 16,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
