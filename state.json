@@ -68867,8 +68867,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 315,
 "names": {},
+"plan": {
+"bidx_next": 315,
+"built_at": "2026-09-29T14:28:09+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 43-45",
+"pages_list": [
+43,
+44,
+45
+],
+"questions": [
+{
+"expl": "The botanical name of Pigeon Pea is explicitly mentioned as Cajanus cajan in the source.",
+"key": 0,
+"o": [
+"Cajanus cajan",
+"Cicer arietinum",
+"Vigna radiata",
+"Phaseolus vulgaris",
+"None of these"
+],
+"page": "43",
+"q": "What is the botanical name of Pigeon Pea?",
+"serial": "295",
+"src_row": 294,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:295"
+},
+{
+"expl": "The source states that Pigeon Pea belongs to the family Leguminaceae, also known as Papilionaceae.",
+"key": 2,
+"o": [
+"Solanaceae",
+"Poaceae",
+"Leguminaceae",
+"Asteraceae",
+"None of these"
+],
+"page": "43",
+"q": "Which family does Pigeon Pea belong to?",
+"serial": "296",
+"src_row": 295,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:296"
+},
+{
+"expl": "The chromosome number of Pigeon Pea is given as 2n = 22 in the source.",
+"key": 2,
+"o": [
+"2n = 18",
+"2n = 20",
+"2n = 22",
+"2n = 24",
+"None of these"
+],
+"page": "43",
+"q": "What is the chromosome number of Pigeon Pea?",
+"serial": "297",
+"src_row": 296,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:297"
+},
+{
+"expl": "The source specifies that Pigeon Pea exhibits hypogeal germination.",
+"key": 1,
+"o": [
+"Epigeal",
+"Hypogeal",
+"Vivipary",
+"Pre-germination",
+"None of these"
+],
+"page": "43",
+"q": "Which type of germination does Pigeon Pea exhibit?",
+"serial": "298",
+"src_row": 297,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:298"
+},
+{
+"expl": "The protein content in Pigeon Pea is mentioned as 21% in the source.",
+"key": 2,
+"o": [
+"15%",
+"18%",
+"21%",
+"24%",
+"None of these"
+],
+"page": "43",
+"q": "What is the protein content in Pigeon Pea?",
+"serial": "299",
+"src_row": 298,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:299"
+},
+{
+"expl": "The source states that Cajanus cajan var. bicolor is commonly grown in North India.",
+"key": 1,
+"o": [
+"Cajanus cajan var. falvus",
+"Cajanus cajan var. bicolor",
+"Cajanus cajan var. flavus",
+"Cajanus cajan var. indicus",
+"None of these"
+],
+"page": "43",
+"q": "Which variety of Pigeon Pea is commonly grown in North India?",
+"serial": "300",
+"src_row": 299,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:300"
+},
+{
+"expl": "The critical stages of irrigation for Pigeon Pea are mentioned as Pre-flowering and Pod development in the source.",
+"key": 1,
+"o": [
+"Seedling stage",
+"Pre-flowering and Pod development",
+"Maturity stage",
+"Vegetative growth stage",
+"None of these"
+],
+"page": "43",
+"q": "At which stage is irrigation critical for Pigeon Pea?",
+"serial": "301",
+"src_row": 300,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "43:301"
+},
+{
+"expl": "The ideal temperature range for the cultivation of Pigeon Pea is 18-27\u00b0C as it prefers a fairly moist and warm climate during its vegetative growth.",
+"key": 0,
+"o": [
+"18-27\u00b0C",
+"15-20\u00b0C",
+"25-30\u00b0C",
+"10-15\u00b0C",
+"None of these"
+],
+"page": "44",
+"q": "What is the ideal temperature range for the cultivation of Pigeon Pea?",
+"serial": "302",
+"src_row": 301,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:302"
+},
+{
+"expl": "Saline-alkaline and waterlogged soils are unfit for Pigeon Pea cultivation as they hinder its growth.",
+"key": 1,
+"o": [
+"Fertile and well-drained loamy soils",
+"Saline-alkaline soils",
+"Sandy soils",
+"Clay soils",
+"None of these"
+],
+"page": "44",
+"q": "Which soil type is unfit for Pigeon Pea cultivation?",
+"serial": "303",
+"src_row": 302,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:303"
+},
+{
+"expl": "The recommended nutrient ratio for Pigeon Pea under rainfed conditions is 12.5:25:0 kg/ha.",
+"key": 0,
+"o": [
+"12.5:25:0 kg/ha",
+"25:50:0 kg/ha",
+"20:40:0 kg/ha",
+"10:20:0 kg/ha",
+"None of these"
+],
+"page": "44",
+"q": "What is the recommended nutrient ratio (N:P:K) for Pigeon Pea under rainfed conditions?",
+"serial": "304",
+"src_row": 303,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:304"
+},
+{
+"expl": "The seed rate for long-duration Pigeon Pea cultivation is 8-10 kg.",
+"key": 1,
+"o": [
+"5-7 kg",
+"8-10 kg",
+"12-15 kg",
+"3-5 kg",
+"None of these"
+],
+"page": "44",
+"q": "What is the seed rate for long-duration Pigeon Pea cultivation?",
+"serial": "305",
+"src_row": 304,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:305"
+},
+{
+"expl": "Pigeon Pea is highly susceptible to frost at the flowering stage because it is highly sensitive to cold temperatures.",
+"key": 2,
+"o": [
+"Because it prefers a moist and warm climate",
+"Because it is a deep-rooted crop",
+"Because it is highly sensitive to cold temperatures",
+"Because it requires drier conditions for flowering",
+"None of these"
+],
+"page": "44",
+"q": "Why is Pigeon Pea highly susceptible to frost at the flowering stage?",
+"serial": "306",
+"src_row": 305,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:306"
+},
+{
+"expl": "Pigeon Pea pods are characterized by being compressed and non-shattering.",
+"key": 2,
+"o": [
+"Round and shattering",
+"Compressed and shattering",
+"Compressed and non-shattering",
+"Round and non-shattering",
+"None of these"
+],
+"page": "44",
+"q": "What is the characteristic of Pigeon Pea pods?",
+"serial": "307",
+"src_row": 306,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:307"
+},
+{
+"expl": "Applied potassium (K) did not improve the yield of Pigeon Pea, as most Indian soils are richer in K and the crop is deep-rooted.",
+"key": 2,
+"o": [
+"Significant improvement",
+"Moderate improvement",
+"No improvement",
+"Negative impact",
+"None of these"
+],
+"page": "44",
+"q": "What is the response of Pigeon Pea to applied potassium (K) in terms of yield improvement?",
+"serial": "308",
+"src_row": 307,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "44:308"
+},
+{
+"expl": "The optimal seed rate for medium duration pigeon pea cultivation is 10-12 kg/ha as specified in the source.",
+"key": 0,
+"o": [
+"10-12 kg/ha",
+"12-15 kg/ha",
+"15-18 kg/ha",
+"8-10 kg/ha",
+"None of these"
+],
+"page": "45",
+"q": "What is the optimal seed rate for medium duration pigeon pea cultivation?",
+"serial": "309",
+"src_row": 308,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:309"
+},
+{
+"expl": "Pigeon pea exhibits hypogeal type of seed germination, where the cotyledons remain underground.",
+"key": 1,
+"o": [
+"Epigeal",
+"Hypogeal",
+"Vivipary",
+"Pre-germination",
+"None of these"
+],
+"page": "45",
+"q": "Which type of seed germination is observed in pigeon pea?",
+"serial": "310",
+"src_row": 309,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:310"
+},
+{
+"expl": "The recommended spacing for short duration pigeon pea is 45 x 20 cm to optimize plant population and yield.",
+"key": 1,
+"o": [
+"60 x 30 cm",
+"45 x 20 cm",
+"90 x 30 cm",
+"45 x 30 cm",
+"None of these"
+],
+"page": "45",
+"q": "What is the recommended spacing for short duration pigeon pea?",
+"serial": "311",
+"src_row": 310,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:311"
+},
+{
+"expl": "The plant population for kharif season pigeon pea is 55,000 plants per hectare.",
+"key": 0,
+"o": [
+"55,000 plants/ha",
+"3.33 lakh plants/ha",
+"4.5 lakh plants/ha",
+"2.5 lakh plants/ha",
+"None of these"
+],
+"page": "45",
+"q": "What is the plant population for kharif season pigeon pea?",
+"serial": "312",
+"src_row": 311,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:312"
+},
+{
+"expl": "Irrigation for pigeon pea should be applied at an IW/CPE ratio of 0.4 for optimal root penetration and growth.",
+"key": 1,
+"o": [
+"0.2",
+"0.4",
+"0.6",
+"0.8",
+"None of these"
+],
+"page": "45",
+"q": "At what IW/CPE ratio should irrigation be applied for pigeon pea?",
+"serial": "313",
+"src_row": 312,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:313"
+},
+{
+"expl": "Fluchloralin is recommended for pre-emergence weed management in pigeon pea at a rate of 0.75 kg/ha.",
+"key": 1,
+"o": [
+"Atrazine",
+"Fluchloralin",
+"2,4-D",
+"Glyphosate",
+"None of these"
+],
+"page": "45",
+"q": "Which herbicide is recommended for weed management in pigeon pea?",
+"serial": "314",
+"src_row": 313,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:314"
+},
+{
+"expl": "The harvesting index for pigeon pea is 19%, indicating the percentage of economic yield relative to the total biomass.",
+"key": 1,
+"o": [
+"15%",
+"19%",
+"25%",
+"30%",
+"None of these"
+],
+"page": "45",
+"q": "What is the harvesting index for pigeon pea?",
+"serial": "315",
+"src_row": 314,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "45:315"
+}
+],
+"row_from": 294,
+"row_to": 315,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 294,
+"seeded_from": "2026-09-28"
+},
 "qidx": 0,
+"seeded_from": "2026-09-28",
+"skips": [],
 "step": 0
 },
 "malwa": {
