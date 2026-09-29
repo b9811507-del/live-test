@@ -68862,7 +68862,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-29T17:58:32+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"53 kg",
+"69 kg",
+"45 kg",
+"80 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the average lactation yield of the breed mentioned?",
+"serial": "1sUgWsko:3341",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3341"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Zinc",
+"Molybdenum",
+"Chlorine",
+"Iron",
+"None of these"
+],
+"page": "",
+"q": "Which metal is immobile in plants and absorbed as Zn2+?",
+"serial": "1sUgWsko:7371",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7371"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Manganese",
+"Iron",
+"Copper",
+"Sulphur",
+"None of these"
+],
+"page": "",
+"q": "Which micronutrient deficiency causes interveinal chlorosis in younger leaves, often referred to as 'lime induced chlorosis'?",
+"serial": "1sUgWsko:7351",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7351"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Karnataka",
+"Tamil Nadu",
+"Lakshadweep",
+"Kerala",
+"None of these"
+],
+"page": "",
+"q": "Which Indian region records the highest coconut productivity per hectare?",
+"serial": "1YcJWVgW:961",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:961"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase tractor speed",
+"To assist in towing or hoisting",
+"To improve fuel efficiency",
+"To provide additional seating",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of the winch unit in the figure labeled 'Tractor with Winch Unit'?",
+"serial": "1sUgWsko:6045",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6045"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Excessive sunlight",
+"Dry condition followed by sudden irrigation",
+"High humidity",
+"Low temperature",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of fruit cracking?",
+"serial": "1YcJWVgW:1239",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1239"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Germ band formation",
+"Blastokinesis",
+"Gastrulation",
+"Segmentation",
+"None of these"
+],
+"page": "",
+"q": "Which process involves the movement of the embryo within the yolk?",
+"serial": "1UgnIe-g:1922",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1922"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sir Francis Galton",
+"R.A. Fisher",
+"Karl Pearson",
+"Charles Darwin",
+"None of these"
+],
+"page": "",
+"q": "Who first used the term 'regression'?",
+"serial": "17U0MEc-:2913",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2913"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Reduce evaporation losses",
+"Increase soil temperature",
+"Enhance weed growth",
+"Provide fertilizer",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of soil mulching as per the source?",
+"serial": "1bxM1Q-4:1143",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1143"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Genetic Male Sterility",
+"Cytoplasmic Male Sterility",
+"Environmental Male Sterility",
+"Hybrid Male Sterility",
+"None of these"
+],
+"page": "",
+"q": "Which type of male sterility is inherited maternally?",
+"serial": "1UgnIe-g:91",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:91"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Increasing protein in the diet",
+"Debeaking",
+"Providing darkness in the laying area",
+"Using a penknife for debeaking",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a recommended method to prevent egg eating in poultry?",
+"serial": "1sUgWsko:3518",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3518"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pure Market",
+"Active Market",
+"Equilibrium Market",
+"Consumer Market",
+"None of these"
+],
+"page": "",
+"q": "Which term is used by the stock exchange to describe stocks or shares with frequent and regular transactions?",
+"serial": "1bxM1Q-4:2242",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2242"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"12-14% TSS",
+"16-18% TSS",
+"20-22% TSS",
+"24-26% TSS",
+"None of these"
+],
+"page": "",
+"q": "What is the Brix reading range for the proper maturity of sugarcane?",
+"serial": "17U0MEc-:656",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:656"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Kingdom",
+"Phylum",
+"Genus",
+"Family",
+"None of these"
+],
+"page": "",
+"q": "Which taxonomic rank is represented by \"Cyprinus\" in the scientific name Cyprinus carpio?",
+"serial": "1sUgWsko:2479",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2479"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"4:2:1",
+"1:1:1",
+"3:2:2",
+"2:4:1",
+"None of these"
+],
+"page": "",
+"q": "The optimum NPK ratio of a balanced fertilizer is?",
+"serial": "128DIQLj:1606",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1606"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Government officials",
+"Farm managers",
+"Entire farm family members",
+"Capitalists",
+"None of these"
+],
+"page": "",
+"q": "Who makes decisions in peasant farming?",
+"serial": "1bxM1Q-4:2359",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2359"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Bacillus spp.",
+"Clostridium botulinum",
+"Listeria monocytogenes",
+"Staphylococcus aureus",
+"None of these"
+],
+"page": "",
+"q": "Can swelling in canned foods is most commonly caused by which microorganism?",
+"serial": "1YcJWVgW:1252",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1252"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lettuce",
+"Spinach",
+"Strawberry",
+"Potato",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is an example of a suitable fruit crop for hydroponics?",
+"serial": "1sUgWsko:780",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:780"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tractors",
+"Power tillers",
+"Combine harvesters",
+"Sprayers and dusters",
+"None of these"
+],
+"page": "",
+"q": "Which machinery has the lowest yearly production in India among the listed options?",
+"serial": "1sUgWsko:6055",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6055"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"T-test",
+"F-test",
+"Chi-square test",
+"ANOVA",
+"None of these"
+],
+"page": "",
+"q": "Which test is used for enumerated or non-parametric/qualitative data in Mendelian or population genetics?",
+"serial": "17U0MEc-:2922",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2922"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To provide an assured income support to farmers",
+"To promote the usage of alternative fertilizers",
+"To stabilize the supply of TOP crops",
+"To promote the cultivation of coarse grains",
+"None of these"
+],
+"page": "",
+"q": "What is the primary objective of the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?",
+"serial": "17U0MEc-:184",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:184"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Money",
+"Cane crusher",
+"Bridge",
+"Paddy thresher",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of floating capital?",
+"serial": "1sUgWsko:3947",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3947"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Air layering",
+"Cutting",
+"Grafting",
+"Seedling",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a commercial propagation method for pomegranate?",
+"serial": "1bxM1Q-4:2981",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2981"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Sulphur",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Molybdenum deficiency symptoms resemble those of which other nutrient deficiency?",
+"serial": "128DIQLj:1344",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1344"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Regular hexagonal lattice",
+"Irregular broken shapeless sheet",
+"Circular halo",
+"Vertical columns",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a possible appearance of Nimbostratus?",
+"serial": "1sUgWsko:5752",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5752"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Amaranthus spp.",
+"Portulaca oleracea",
+"Solanum nigrum",
+"Chenopodium album",
+"None of these"
+],
+"page": "",
+"q": "Which weed has the highest seed production capacity according to the table?",
+"serial": "128DIQLj:921",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:921"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Higher water application rate",
+"Reduced surface evaporation loss",
+"Easier installation",
+"Lower emitter discharge rate",
+"None of these"
+],
+"page": "",
+"q": "What is the primary advantage of Subsurface Drip Irrigation (SDI) over surface drip?",
+"serial": "1sUgWsko:4885",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4885"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"5-6 months",
+"2-3 months",
+"7-8 months",
+"10-12 months",
+"None of these"
+],
+"page": "",
+"q": "What is the dormancy period of True Potato Seed (TPS) after harvesting?",
+"serial": "1YcJWVgW:613",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:613"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bole",
+"Log",
+"Coupe",
+"Crown",
+"None of these"
+],
+"page": "",
+"q": "In forestry terminology, the main stem of a tree is known as the:",
+"serial": "1UgnIe-g:2805",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2805"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Nitrofen",
+"Alachlor",
+"Propanil",
+"Atrazine",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is recommended for post-emergence weed management in potato?",
+"serial": "1sUgWsko:501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:501"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"High base saturation",
+"Presence of calcareous material",
+"Formation in cool and humid areas",
+"High pH levels",
+"None of these"
+],
+"page": "",
+"q": "What is the defining feature of Spodosols?",
+"serial": "17U0MEc-:1117",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1117"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"5 m x 5 m",
+"6 m x 6 m",
+"7.5 m x 7.5 m",
+"10 m x 10 m",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spacing for coconut cultivation under the square system?",
+"serial": "1sUgWsko:1225",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1225"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Use of resistant varieties",
+"Quarantine",
+"Crop rotation",
+"Application of fungicides",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of exclusion in plant disease management?",
+"serial": "1UgnIe-g:946",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:946"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Banana",
+"Papaya",
+"Pineapple",
+"Strawberry",
+"None of these"
+],
+"page": "",
+"q": "Which of the following fruit crops is propagated by seeds?",
+"serial": "17U0MEc-:1425",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1425"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0-5\u00b0C",
+"5-20\u00b0C",
+"25-35\u00b0C",
+"20-30\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "Coldwater fish are typically found in water temperatures between:",
+"serial": "1sUgWsko:2243",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2243"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Entomophilous",
+"Hydrophilous",
+"Anemophilous",
+"Zoophilous",
+"None of these"
+],
+"page": "",
+"q": "What type of pollination does this vegetable undergo?",
+"serial": "1YcJWVgW:718",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:718"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Aesthetic",
+"Scientific",
+"Hygienic",
+"Recreational",
+"None of these"
+],
+"page": "",
+"q": "Which function of forests involves the study of ecological processes?",
+"serial": "1bxM1Q-4:3860",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3860"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Present",
+"Absent",
+"Reduced",
+"Variable",
+"None of these"
+],
+"page": "",
+"q": "In obligate apomixis, sexual reproduction is",
+"serial": "1UgnIe-g:25",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:25"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wheat",
+"Rice",
+"Sorghum",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "For which crop is a hand rotary duster particularly useful?",
+"serial": "1sUgWsko:6254",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6254"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carpomyia vesuviana",
+"Meridarchis sclerodes",
+"Conogethes punctiferalis",
+"Aphis punicae",
+"None of these"
+],
+"page": "",
+"q": "Which pest is monophagous and causes deformation and rotting of fruits?",
+"serial": "1UgnIe-g:2238",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2238"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Soil compaction",
+"Hysteresis",
+"Buffering capacity",
+"Cation exchange capacity",
+"None of these"
+],
+"page": "",
+"q": "What is the phenomenon where the moisture content at different tensions during wetting and drying of soil varies?",
+"serial": "1sUgWsko:7035",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7035"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Seed to seed method",
+"Bulb to seed method",
+"Tissue culture method",
+"Cutting propagation method",
+"None of these"
+],
+"page": "",
+"q": "Which method is best for quality seed production in onions?",
+"serial": "1sUgWsko:1367",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1367"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sturmiopsis inferens",
+"Bracon bravicornis",
+"Trichospilus pupivora",
+"Encarsia formosa",
+"None of these"
+],
+"page": "",
+"q": "Which natural enemy is associated with the sugarcane shoot borer?",
+"serial": "1sUgWsko:1792",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1792"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Flat fan nozzles",
+"Flood fan nozzles",
+"Hollow cone nozzles",
+"Full cone nozzles",
+"None of these"
+],
+"page": "",
+"q": "Which type of nozzle is useful for insecticide or fungicide applications where the treated surface is not uniform?",
+"serial": "1UgnIe-g:2160",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2160"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"16 seedlings/m\u00b2",
+"25 seedlings/m\u00b2",
+"30 seedlings/m\u00b2",
+"40 seedlings/m\u00b2",
+"None of these"
+],
+"page": "",
+"q": "In the System of Rice Intensification (SRI), what is the recommended planting density?",
+"serial": "128DIQLj:203",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:203"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mango",
+"Litchi",
+"Apple",
+"Banana",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is popularly known as the \"King of fruits\"?",
+"serial": "17U0MEc-:1404",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1404"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Hieracium",
+"Mango",
+"Apple",
+"Citrus",
+"None of these"
+],
+"page": "",
+"q": "Which species is cited as an example of apospory?",
+"serial": "1UgnIe-g:29",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:29"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"State Cooperative Banks (SCBs)",
+"District Cooperative Central Banks (DCCBs)",
+"Central Land Development Bank (CLDB)",
+"Primary Agricultural Cooperative Credit Societies (PACS)",
+"None of these"
+],
+"page": "",
+"q": "Which bank provides long-term credit to Primary Land Development Banks (PLDBs)?",
+"serial": "128DIQLj:2485",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2485"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"CO\u2082",
+"CH\u2084",
+"CFCs",
+"N\u2082O",
+"None of these"
+],
+"page": "",
+"q": "Which greenhouse gas accounts for about 20 % of total greenhouse gases?",
+"serial": "1bxM1Q-4:1595",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1595"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Karonda",
+"Pineapple",
+"Guava",
+"Apple",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is shrubaceous?",
+"serial": "1sUgWsko:816",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:816"
+}
+],
+"set_no": 17,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
