@@ -68862,9 +68862,11 @@
 "afo": {
 "announced_at": "2026-09-29T18:00:00+05:30",
 "ans": {},
+"cd": 15,
 "lock_ts": 1790684986.2514138,
 "locked_by": "36568280182",
 "msg_ann": 30839,
+"msg_timer": 30841,
 "names": {},
 "pinned_ann": true,
 "plan": {
