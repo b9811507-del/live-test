@@ -68873,9 +68873,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 244,
 "names": {},
+"plan": {
+"batch": 2,
+"bidx_next": 244,
+"built_at": "2026-09-29T11:00:55+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 67-72",
+"pages_blocks": [
+"67-68",
+"69-70",
+"71-72"
+],
+"questions": [
+{
+"expl": "Buckwheat (Fagopyrum esculentum) is listed under pseudo\u2011cereals and its family is Polygonaceae.",
+"key": 0,
+"o": [
+"Buckwheat",
+"Amaranthus",
+"Quinoa",
+"Chia seeds",
+"None of these"
+],
+"page": "67-68",
+"q": "Which pseudo\u2011cereal belongs to the family Polygonaceae?",
+"serial": "351",
+"src_row": 224,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:351"
+},
+{
+"expl": "Finger millet (Eleusine coracana) is highlighted as rich in calcium, eight times that of rice.",
+"key": 0,
+"o": [
+"Finger millet",
+"Kodo millet",
+"Proso millet",
+"Barnyard millet",
+"None of these"
+],
+"page": "67-68",
+"q": "Which millet is known to contain eight times more calcium than rice?",
+"serial": "352",
+"src_row": 225,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:352"
+},
+{
+"expl": "Finger millet is noted for being soil alkalinity tolerant, growing up to pH 11.",
+"key": 0,
+"o": [
+"Finger millet",
+"Kodo millet",
+"Barnyard millet",
+"Little millet",
+"None of these"
+],
+"page": "67-68",
+"q": "Which millet can tolerate soil alkalinity up to pH 11?",
+"serial": "353",
+"src_row": 226,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:353"
+},
+{
+"expl": "Barnyard millet is described as the fastest\u2011growing with a duration of 60 days.",
+"key": 2,
+"o": [
+"Finger millet",
+"Proso millet",
+"Barnyard millet",
+"Little millet",
+"None of these"
+],
+"page": "67-68",
+"q": "Which small millet has the shortest growth duration of about 60 days?",
+"serial": "354",
+"src_row": 227,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:354"
+},
+{
+"expl": "Kodo millet is called the coarsest millet and is noted for having the longest duration.",
+"key": 0,
+"o": [
+"Kodo millet",
+"Foxtail millet",
+"Little millet",
+"Proso millet",
+"None of these"
+],
+"page": "67-68",
+"q": "Which millet is described as the \"coarsest millet\" and has the longest duration among small millets?",
+"serial": "355",
+"src_row": 228,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:355"
+},
+{
+"expl": "Finger millet is identified as a C4 plant and highly self\u2011pollinated.",
+"key": 0,
+"o": [
+"Finger millet",
+"Foxtail millet",
+"Proso millet",
+"Kodo millet",
+"None of these"
+],
+"page": "67-68",
+"q": "Which small millet is a C4 plant and highly self\u2011pollinated?",
+"serial": "356",
+"src_row": 229,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:356"
+},
+{
+"expl": "The source states that buckwheat\u2019s origin is China.",
+"key": 0,
+"o": [
+"Buckwheat",
+"Amaranthus",
+"Quinoa",
+"Chia seeds",
+"None of these"
+],
+"page": "67-68",
+"q": "Which pseudo\u2011cereal originates from China?",
+"serial": "357",
+"src_row": 230,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67-68:357"
+},
+{
+"expl": "Line sowing of millets requires 8\u201110 Kg/ha as stated in the source.",
+"key": 1,
+"o": [
+"6-8 Kg/ha",
+"8-10 Kg/ha",
+"10-12 Kg/ha",
+"12-15 Kg/ha",
+"None of these"
+],
+"page": "69-70",
+"q": "What is the average seed rate for line sowing of millets?",
+"serial": "361",
+"src_row": 231,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:361"
+},
+{
+"expl": "Coarse cereals listed are sorghum, pearl millet, ragi, small millets, maize and barley; wheat is not a coarse cereal.",
+"key": 3,
+"o": [
+"Sorghum",
+"Pearl millet",
+"Ragi",
+"Wheat",
+"None of these"
+],
+"page": "69-70",
+"q": "Which of the following is NOT a coarse cereal?",
+"serial": "362",
+"src_row": 232,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:362"
+},
+{
+"expl": "Pulses are legumes harvested solely as dry edible seeds, distinguishing them from green vegetable crops.",
+"key": 1,
+"o": [
+"Harvested while green",
+"Harvested as dry grains",
+"Used only for animal feed",
+"Grown in irrigated fields",
+"None of these"
+],
+"page": "69-70",
+"q": "What is the defining characteristic of a pulse?",
+"serial": "363",
+"src_row": 233,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:363"
+},
+{
+"expl": "Pulse production was about 8\u201110% of total food grain production, as per the data.",
+"key": 1,
+"o": [
+"5\u20117%",
+"8\u201110%",
+"15\u201120%",
+"25\u201130%",
+"None of these"
+],
+"page": "69-70",
+"q": "In 2022\u201123, pulses constituted about what percentage of total food grain production in India?",
+"serial": "364",
+"src_row": 234,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:364"
+},
+{
+"expl": "The top three states are Madhya Pradesh, Maharashtra and Rajasthan; Karnataka is not in the top three.",
+"key": 3,
+"o": [
+"Madhya Pradesh",
+"Maharashtra",
+"Rajasthan",
+"Karnataka",
+"None of these"
+],
+"page": "69-70",
+"q": "Which state is NOT among the top three pulse\u2011producing states in India?",
+"serial": "365",
+"src_row": 235,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:365"
+},
+{
+"expl": "The source lists low\u2011input use, not high\u2011input use, as a reason for low productivity.",
+"key": 2,
+"o": [
+"Limited irrigation facilities",
+"Low\u2011input use by farmers",
+"High\u2011input use of fertilizers",
+"Fragmented land holdings",
+"None of these"
+],
+"page": "69-70",
+"q": "Which of the following is NOT cited as a reason for low pulse productivity in India?",
+"serial": "366",
+"src_row": 236,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:366"
+},
+{
+"expl": "The per\u2011capita daily pulse availability is 47.12 gm/day, as stated.",
+"key": 1,
+"o": [
+"35.5 gm/day",
+"47.12 gm/day",
+"60.3 gm/day",
+"72.8 gm/day",
+"None of these"
+],
+"page": "69-70",
+"q": "Per capita pulse availability in India is approximately",
+"serial": "367",
+"src_row": 237,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69-70:367"
+},
+{
+"expl": "The protocol states 200 g of culture for 10 kg of seeds, which equals 20 g per kg.",
+"key": 0,
+"o": [
+"20 g",
+"200 g",
+"2 g",
+"10 g",
+"None of these"
+],
+"page": "71-72",
+"q": "What is the recommended amount of Rhizobium culture per kilogram of pulse seed?",
+"serial": "371",
+"src_row": 238,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71-72:371"
+},
+{
+"expl": "The source lists the pulse NPK ratio as 1:2:1 for starter dose application.",
+"key": 1,
+"o": [
+"4:2:1",
+"1:2:1",
+"3:2:1",
+"2:1:1",
+"None of these"
+],
+"page": "71-72",
+"q": "Which NPK ratio is recommended for pulses as a starter dose?",
+"serial": "372",
+"src_row": 239,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71-72:372"
+},
+{
+"expl": "Black gram is grown in Kharif and Summer/Spring, but not in Winter.",
+"key": 3,
+"o": [
+"Kharif",
+"Rabi",
+"Summer/Spring",
+"Winter",
+"None of these"
+],
+"page": "71-72",
+"q": "In which season is Black gram NOT cultivated according to the table?",
+"serial": "373",
+"src_row": 240,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71-72:373"
+},
+{
+"expl": "The text identifies these hairs as trichomes, which protect the plant.",
+"key": 0,
+"o": [
+"Trichomes",
+"Stomata",
+"Lenticels",
+"Root hairs",
+"None of these"
+],
+"page": "71-72",
+"q": "The glandular hairs on the surface of a chickpea plant are called?",
+"serial": "374",
+"src_row": 241,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71-72:374"
+},
+{
+"expl": "The source lists protein at 21%, not 90%.",
+"key": 3,
+"o": [
+"It contains 21% protein",
+"It contains 6% fat",
+"It contains 62% carbohydrates",
+"It contains 90% protein",
+"None of these"
+],
+"page": "71-72",
+"q": "Which statement about chickpea is NOT mentioned in the source?",
+"serial": "375",
+"src_row": 242,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71-72:375"
+},
+{
+"expl": "The procedure specifies 10\u201312 hours of shade drying.",
+"key": 1,
+"o": [
+"5\u20136 hours",
+"10\u201312 hours",
+"24 hours",
+"48 hours",
+"None of these"
+],
+"page": "71-72",
+"q": "What is the recommended drying time for Rhizobium\u2011treated pulse seeds?",
+"serial": "376",
+"src_row": 243,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71-72:376"
+}
+],
+"rolled": false,
+"row_from": 224,
+"row_to": 244,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 224,
+"seeded_from": "2026-09-27",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-27",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
