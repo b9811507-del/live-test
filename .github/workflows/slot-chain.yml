@@ -1,8 +1,8 @@
 name: slot-chain
 # v12 SIMPLE — One main workflow only (user order: simple rakho, bina kaam ka delete)
-# - Cron every 5 min + self-chain every 60 sec inside 10:00-19:15 + 180 min pre-slot (3h) to prevent 08:01 gap
+# - v12.2 SLEEP MODE END: self-chain 24/7 (60s near slots/daytime, 300s night) + cron backstop
 # - 20 min before slot: verify EXAM webhook empty, PAID webhook set, Worker alive, can_post, batch admin — auto-fix
-# - Exact time: announce pinned at 11:00/14:30/18:00, then timer message 15 sec countdown (separate), then polls 25 sec gap 0.5 sec
+# - Exact time SHARP: announce 11:00:00/14:30:00/18:00:00 -> 0.5s -> timer "15".."1" (numbers only) -> 0.5s -> polls 25s gap 0.5s
 # - Last message after every test = paid batches (most important)
 # - LATE_MAX 5 min hard (max 3-5 min late only, user order)
 on:
@@ -85,18 +85,13 @@ jobs:
           TZ: Asia/Kolkata
         run: |
           H=$(date +%H); M=$(date +%M); NOW=$((10#$H * 60 + 10#$M))
-          SHOULD=0
-          # Always re-arm if within 180 min (3h) before any slot — prevents 08:01 gap that caused malwa late
+          SLEEP=300
+          # v12.2 user order: SLEEP MODE END - chain re-arms 24/7. 60s when near slot/daytime, 300s at night.
           for GO in 660 870 1080; do
             DIFF=$((GO - NOW))
-            if [ "$DIFF" -ge 0 ] && [ "$DIFF" -le 180 ]; then SHOULD=1; echo "Within 180 min of slot $GO (diff $DIFF) -> will re-arm (prevent gap)"; break; fi
-            if [ "$DIFF" -lt 0 ] && [ "$DIFF" -ge -10 ]; then SHOULD=1; echo "Slot $GO overdue by $(( -DIFF )) min (<10) -> will re-arm (hard fix)"; break; fi
+            if [ "$DIFF" -ge -15 ] && [ "$DIFF" -le 180 ]; then SLEEP=60; echo "Near slot $GO (diff $DIFF) -> 60s"; break; fi
           done
-          if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then SHOULD=1; fi
-          if [ "$SHOULD" -eq 1 ]; then
-            echo "Re-arming slot-chain in 60 sec (simple, no 100-190 jitter)"
-            sleep 60
-            python3 engine/engine.py dispatch slot-chain.yml || true
-          else
-            echo "Outside window and not near slot ($H:$M IST) -> not re-arming (save minutes)"
-          fi
+          if [ "$NOW" -ge 600 ] && [ "$NOW" -le 1155 ]; then SLEEP=60; echo "Daytime 10:00-19:15 -> 60s"; fi
+          echo "Sleep mode END (user order): re-arm 24/7 in ${SLEEP}s"
+          sleep $SLEEP
+          python3 engine/engine.py dispatch slot-chain.yml || true

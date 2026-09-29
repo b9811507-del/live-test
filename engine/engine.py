@@ -935,15 +935,8 @@ def announce_text(job, day, plan):
 
 
 def countdown_text(job, day, plan, secs):
-    cfg = JOBS[job]
-    lines = [tr.t("ann_title", emoji=cfg["emoji"], label=plan.get("label") or cfg.get("label") or job.upper()),
-             tr.t("ann_when", date=day_label(day), time=cfg["time_label"])]
-    pg = pages_text(job, plan)
-    if pg:
-        lines.append(pg)
-    lines += [tr.t("ann_body", n=plan["n"]).split(" · ")[0] + " · %s seconds each" % POLL_SECONDS,
-              tr.t("cd_line", n=max(0, int(secs)))]
-    return "\n".join(lines)
+    # v12.2 user order: timer message shows ONLY the number (15 14 13 12 11 ... 1) - nothing else
+    return "%d" % max(0, int(secs))
 
 
 def tomorrow_pages_note(job, day, st):
@@ -1411,33 +1404,28 @@ def run_job(job, day=None, st=None, force=False):
             j["locked_by"] = RUN_ID
             jsave(st, "%s countdown heartbeat" % job)
             sleep(min((go - istnow()).total_seconds(), 30))
-        # v12 simple: announce done, now separate timer message with 15 sec countdown
-        # User order: announce time pr aaye uske turant bd ek timer message aaye jo 15 sec ka countdown wala uske bd test start
-        if int(j.get("step", 0)) < 1:
-            # already handled announce above, but keep for resume
-            pass
-        # Timer message (separate from announce) — 15 sec countdown
+        # v12.2 user order: announce (sharp) -> 0.5s -> timer msg "15" -> "14" ... "1" (1/sec) -> 0.5s -> test
         if not j.get("msg_timer"):
+            sleep(0.5)  # 0.5s: announce -> countdown message
             tm = tg("sendMessage", chat_id=chat, text=countdown_text(job, day, plan, COUNTDOWN_SECS), parse_mode="HTML", disable_web_page_preview=True)
             if tm:
                 j["msg_timer"] = tm["message_id"]
+                j["cd"] = COUNTDOWN_SECS
                 jsave(st, "%s timer msg #%s" % (job, j["msg_timer"]))
-        anchor = max(go, istnow() + dt.timedelta(seconds=COUNTDOWN_SECS))
-        ticks = sorted({x for x in (COUNTDOWN_SECS, 10, 5, 4, 3, 2, 1) if 0 < x <= COUNTDOWN_SECS}, reverse=True)
-        for val in ticks + [0]:
-            target = anchor - dt.timedelta(seconds=val)
-            if istnow() < target:
-                sleep((target - istnow()).total_seconds())
-            # Edit timer message (not announce) for countdown
+        tick0 = istnow()
+        for val in range(int(j.get("cd", COUNTDOWN_SECS)) - 1, 0, -1):
+            tgt = tick0 + dt.timedelta(seconds=COUNTDOWN_SECS - val)
+            if istnow() < tgt:
+                sleep((tgt - istnow()).total_seconds())
             if j.get("msg_timer"):
                 tg("editMessageText", chat_id=chat, message_id=j["msg_timer"], parse_mode="HTML",
                    text=countdown_text(job, day, plan, val))
-            # Also keep announce pinned, no edit
             j["cd"] = val
             j["lock_ts"] = time.time()
-            jsave(st, "%s countdown %ds (timer msg)" % (job, val))
-        # Delete timer message after countdown? Keep it or delete? User wants timer then test start — we keep it then delete after polls start to keep clean
-        # Optionally delete timer message after countdown to keep group clean, but keep for now as per user: timer then test
+        end_tgt = tick0 + dt.timedelta(seconds=COUNTDOWN_SECS)  # "1" keeps its full second
+        if istnow() < end_tgt:
+            sleep((end_tgt - istnow()).total_seconds())
+        sleep(0.5)  # 0.5s: countdown end -> test start
         j["step"] = 2
         j["started_at"] = istnow().isoformat(timespec="seconds")
         jsave(st, "%s polls start (25s each, 0.5s gap)" % job)
@@ -1806,7 +1794,9 @@ def cycle_job(st, day, job):
             dm_admin(tr.t("adm_missed", job=job.upper(), time=JOBS[job]["time_label"])
                      + " (late guard: %d min, polls never began)" % late_min, "late-seal:" + job, 6 * 3600)
             return "missed"
-    if ph == "warm" and (go_dt(day, job) - istnow()).total_seconds() > DEFER_SECS:
+    # v12.2 user order (fix time sharp): enter run_job up to 180s early; its internal wait
+    # heartbeats until the exact go second -> announce lands at 11:00:00 / 14:30:00 / 18:00:00
+    if ph == "warm" and (go_dt(day, job) - istnow()).total_seconds() > max(DEFER_SECS, 180):
         log("cycle %s: %.0fs to start -> defer (this run only re-arms)" % (
             job, (go_dt(day, job) - istnow()).total_seconds()))
         return "defer"
