@@ -988,12 +988,18 @@ def unpin_other_announces(chat, keep_id, st=None):
         except Exception:
             pass
     unpinned = []
+    seen = set(st.get("unpinned_seen") or [])
     for mid in sorted(ids):
         if keep_id and mid == int(keep_id):
             continue
-        tg("unpinChatMessage", chat_id=chat, message_id=mid)
+        if mid in seen:
+            continue
+        tg("unpinChatMessage", chat_id=chat, message_id=mid, tries=2)
+        time.sleep(0.7)  # v12.2.2: pace calls - the old burst caused 429 storms (2+ min mid-test)
         unpinned.append(mid)
+        seen.add(mid)
     if unpinned:
+        st["unpinned_seen"] = sorted(seen)
         log("unpinned older announce(s): %s (kept %s)" % (unpinned, keep_id))
     return unpinned
 
@@ -1391,11 +1397,6 @@ def run_job(job, day=None, st=None, force=False):
             j["pinned_ann"] = bool(p)
             if not p:
                 dm_admin(tr.t("adm_pin", job=job.upper()), "pin:" + job, 6 * 3600)
-            # v11.2: keep exactly one pinned message in the group -> the current announce
-            try:
-                j["unpinned"] = unpin_other_announces(chat, m["message_id"], st)
-            except Exception as e:
-                log("unpin pass failed:", str(e)[:100])
             jsave(st, "%s announce #%s" % (job, j["msg_ann"]))
             log("announce %s msg=%s pinned=%s" % (job, j["msg_ann"], bool(p)))
         # wait until the exact start time (zero group traffic in between)
@@ -1404,14 +1405,14 @@ def run_job(job, day=None, st=None, force=False):
             j["locked_by"] = RUN_ID
             jsave(st, "%s countdown heartbeat" % job)
             sleep(min((go - istnow()).total_seconds(), 30))
-        # v12.2 user order: announce (sharp) -> 0.5s -> timer msg "15" -> "14" ... "1" (1/sec) -> 0.5s -> test
+        # v12.2.2 user order: announce (sharp) -> 0.5s -> timer "15".."1" (1/sec) -> 0.5s -> Q1
+        # NO jsave/unpin in this path (jsave = 5-17s git commit, unpin = 2min of 429s) - timing-critical
         if not j.get("msg_timer"):
             sleep(0.5)  # 0.5s: announce -> countdown message
             tm = tg("sendMessage", chat_id=chat, text=countdown_text(job, day, plan, COUNTDOWN_SECS), parse_mode="HTML", disable_web_page_preview=True)
             if tm:
                 j["msg_timer"] = tm["message_id"]
                 j["cd"] = COUNTDOWN_SECS
-                jsave(st, "%s timer msg #%s" % (job, j["msg_timer"]))
         tick0 = istnow()
         for val in range(int(j.get("cd", COUNTDOWN_SECS)) - 1, 0, -1):
             tgt = tick0 + dt.timedelta(seconds=COUNTDOWN_SECS - val)
@@ -1428,7 +1429,6 @@ def run_job(job, day=None, st=None, force=False):
         sleep(0.5)  # 0.5s: countdown end -> test start
         j["step"] = 2
         j["started_at"] = istnow().isoformat(timespec="seconds")
-        jsave(st, "%s polls start (25s each, 0.5s gap)" % job)
         log("countdown %ss done -> polls start (25s)" % COUNTDOWN_SECS)
 
     # --- polls (one open at a time, live scoring, journal every 5Q / 100s)
@@ -1497,6 +1497,7 @@ def run_job(job, day=None, st=None, force=False):
                 params.update({"explanation": esc(expl), "explanation_parse_mode": "HTML"})
         else:
             params["type"] = "regular"
+        t_sent = time.time()  # v12.2.2: compensate send+save time so Q-to-Q stays 25s+0.5s
         poll = tg("sendPoll", **params)
         if not ((poll or {}).get("poll") or {}).get("id") and POLL_MODE == "quiz":
             log("quiz poll rejected for Q%d -> falling back to a regular poll" % (i + 1))
@@ -1517,7 +1518,10 @@ def run_job(job, day=None, st=None, force=False):
         fails = 0
         j.setdefault("poll_ids", {})[str(i)] = pid
         aq = ans.setdefault(str(i), {})
-        off = drain(off, pid, POLL_SECONDS + 0.5, aq, names, hard)  # v11.4.19: 1.5s->0.5s gap fix (poll end to next poll instant)
+        if i == 0 and not j.get("start_saved"):
+            j["start_saved"] = True
+            jsave(st, "%s polls start (25s each, 0.5s gap)" % job)  # hidden inside Q1's 25s window
+        off = drain(off, pid, max(4.0, POLL_SECONDS + 0.5 - (time.time() - t_sent)), aq, names, hard)  # v11.4.19: 1.5s->0.5s gap fix (poll end to next poll instant)
         # v11.4.7 (admin order): NO reveal message after each question — the explanation is already
         # inside the quiz poll, so students see correct/wrong + explanation instantly. REVEAL_AFTER_Q=on
         # brings the separate message back if ever needed.
@@ -1647,6 +1651,12 @@ def run_job(job, day=None, st=None, force=False):
     j["partial"] = bool(j.get("partial"))
     j["locked_by"] = ""
     jsave(st, "%s complete" % job)
+    # v12.2.2 housekeeping (moved from announce path): unpin old announces after the full test
+    try:
+        j["unpinned"] = unpin_other_announces(chat, j.get("msg_ann"), st)
+        jsave(st, "%s unpin housekeeping" % job)
+    except Exception as e:
+        log("unpin pass failed:", str(e)[:100])
     if job == "afo":
         try:
             import afo_mongo
