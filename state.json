@@ -74752,9 +74752,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 264,
 "names": {},
+"plan": {
+"batch": 2,
+"bidx_next": 264,
+"built_at": "2026-09-30T10:57:20+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 73-78",
+"pages_blocks": [
+"73-74",
+"75-76",
+"77-78"
+],
+"questions": [
+{
+"expl": "Chickpea grows best in soils with a pH of 6.0 to 7.5, as stated in the soil requirements.",
+"key": 1,
+"o": [
+"5.5-6.5",
+"6.0-7.5",
+"7.5-8.5",
+"8.0-9.0",
+"None of these"
+],
+"page": "73-74",
+"q": "What is the optimal soil pH range for chickpea cultivation?",
+"serial": "381",
+"src_row": 244,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:381"
+},
+{
+"expl": "The text specifies TIBA at 75 ppm as the chemical used for nipping.",
+"key": 0,
+"o": [
+"TIBA (2,3,5-triiodo benzoic acid)",
+"2,4-D",
+"IAA",
+"NAA",
+"None of these"
+],
+"page": "73-74",
+"q": "Which chemical is commonly used for nipping (topping) in chickpea?",
+"serial": "382",
+"src_row": 245,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:382"
+},
+{
+"expl": "Sowing depth of at least 8 cm is recommended to avoid wilt.",
+"key": 2,
+"o": [
+"3 cm",
+"5 cm",
+"8 cm",
+"12 cm",
+"None of these"
+],
+"page": "73-74",
+"q": "To prevent wilt disease, at what minimum depth should chickpea seeds be sown?",
+"serial": "383",
+"src_row": 246,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:383"
+},
+{
+"expl": "Gaurav is listed as an Ascochyta blight resistant Kabuli gram variety.",
+"key": 1,
+"o": [
+"C-235",
+"Gaurav",
+"Aparna",
+"PDG-3",
+"None of these"
+],
+"page": "73-74",
+"q": "Which Kabuli gram variety is noted for resistance to Ascochyta blight?",
+"serial": "384",
+"src_row": 247,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:384"
+},
+{
+"expl": "The source states nitrogen fixation starts about 20 days post\u2011sowing.",
+"key": 1,
+"o": [
+"10 days",
+"20 days",
+"30 days",
+"40 days",
+"None of these"
+],
+"page": "73-74",
+"q": "When does nitrogen fixation in chickpea begin after sowing?",
+"serial": "385",
+"src_row": 248,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:385"
+},
+{
+"expl": "Lentil has 24\u201126% protein, the highest among pulses per the text.",
+"key": 1,
+"o": [
+"Chickpea",
+"Lentil",
+"Mung bean",
+"Soybean",
+"None of these"
+],
+"page": "73-74",
+"q": "Which pulse crop has the highest protein content among pulses?",
+"serial": "386",
+"src_row": 249,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:386"
+},
+{
+"expl": "Lentil should be sown between 15th Oct and 15th Nov as per the source.",
+"key": 1,
+"o": [
+"1st Jan to 15th Feb",
+"15th Oct to 15th Nov",
+"1st May to 15th June",
+"15th Dec to 15th Jan",
+"None of these"
+],
+"page": "73-74",
+"q": "What is the ideal sowing period for lentil in India?",
+"serial": "387",
+"src_row": 250,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73-74:387"
+},
+{
+"expl": "Field peas are sown at 80\u2011100 kg/ha in temperate zones as stated in the source.",
+"key": 2,
+"o": [
+"30-40 kg/ha",
+"55-60 kg/ha",
+"80-100 kg/ha",
+"100-120 kg/ha",
+"None of these"
+],
+"page": "75-76",
+"q": "What is the recommended seed rate for field peas in temperate regions?",
+"serial": "391",
+"src_row": 251,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "75-76:391"
+},
+{
+"expl": "The source specifies 22 \u00b0C as the optimum germination temperature for peas.",
+"key": 1,
+"o": [
+"18 \u00b0C",
+"22 \u00b0C",
+"26 \u00b0C",
+"30 \u00b0C",
+"None of these"
+],
+"page": "75-76",
+"q": "At what temperature does pea germination reach optimum?",
+"serial": "392",
+"src_row": 252,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "75-76:392"
+},
+{
+"expl": "Rachna is noted as the first powdery mildew resistant variety in India.",
+"key": 1,
+"o": [
+"Aparna (HFP\u20114)",
+"Rachna",
+"Sapna",
+"Arka Ajit",
+"None of these"
+],
+"page": "75-76",
+"q": "Which field\u2011pea variety was the first to show resistance to powdery mildew in India?",
+"serial": "393",
+"src_row": 253,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "75-76:393"
+},
+{
+"expl": "Ratan (BIO L\u2011212) is the ICARDA\u2011NARS variety with \u03b2\u2011ODAP <0.10%.",
+"key": 1,
+"o": [
+"Pusa 24",
+"Ratan (BIO L\u2011212)",
+"Prateek",
+"LSD 2",
+"None of these"
+],
+"page": "75-76",
+"q": "Which Lathyrus variety has a \u03b2\u2011ODAP content of less than 0.10%?",
+"serial": "394",
+"src_row": 254,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "75-76:394"
+},
+{
+"expl": "The text states French bean is most sensitive to salt stress and sodicity among pulse crops.",
+"key": 2,
+"o": [
+"Drought",
+"Cold",
+"Salt stress and sodicity",
+"Flooding",
+"None of these"
+],
+"page": "75-76",
+"q": "French bean is most sensitive to which environmental stress?",
+"serial": "395",
+"src_row": 255,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "75-76:395"
+},
+{
+"expl": "Lathyrus sativus has 31.9% protein, higher than the 7.2% in green peas and lower than the 22.5% in field peas.",
+"key": 1,
+"o": [
+"Green peas",
+"Lathyrus sativus",
+"French bean",
+"Red gram",
+"None of these"
+],
+"page": "75-76",
+"q": "Which pulse has a higher protein content according to the source?",
+"serial": "396",
+"src_row": 256,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "75-76:396"
+},
+{
+"expl": "ICPH\u20118 is the first pigeon pea hybrid developed at ICRISAT, Hyderabad in 1991.",
+"key": 0,
+"o": [
+"ICPH-8",
+"UPAS-120",
+"Pusa Ageti",
+"Sharda",
+"None of these"
+],
+"page": "77-78",
+"q": "Which pigeon pea variety is a short\u2011duration hybrid first released in 1991?",
+"serial": "401",
+"src_row": 257,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:401"
+},
+{
+"expl": "Pigeon pea is noted as the most drought\u2011tolerant crop among major pulses.",
+"key": 1,
+"o": [
+"Chickpea",
+"Pigeon pea",
+"Black gram",
+"Green gram",
+"None of these"
+],
+"page": "77-78",
+"q": "Which pulse crop is considered the most drought\u2011tolerant among major pulses?",
+"serial": "402",
+"src_row": 258,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:402"
+},
+{
+"expl": "Its deep tap root penetrates and breaks compacted soil, improving structure and infiltration.",
+"key": 0,
+"o": [
+"It has a deep tap root up to 2 m",
+"It produces high protein yield",
+"It matures early",
+"It has a low harvest index",
+"None of these"
+],
+"page": "77-78",
+"q": "Why is pigeon pea called a biological plough crop?",
+"serial": "403",
+"src_row": 259,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:403"
+},
+{
+"expl": "Bihar records the highest productivity of pigeon pea in India.",
+"key": 1,
+"o": [
+"Maharashtra",
+"Bihar",
+"Rajasthan",
+"Madhya Pradesh",
+"None of these"
+],
+"page": "77-78",
+"q": "Which Indian state has the highest productivity of pigeon pea?",
+"serial": "404",
+"src_row": 260,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:404"
+},
+{
+"expl": "Short\u2011duration varieties are sown at 12\u201315 kg/ha in Kharif.",
+"key": 2,
+"o": [
+"8\u201310 kg/ha",
+"10\u201312 kg/ha",
+"12\u201315 kg/ha",
+"45 kg/ha",
+"None of these"
+],
+"page": "77-78",
+"q": "What is the recommended seed rate for short\u2011duration pigeon pea varieties during the Kharif season?",
+"serial": "405",
+"src_row": 261,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:405"
+},
+{
+"expl": "Black gram is noted for having the highest phosphoric acid among pulses.",
+"key": 1,
+"o": [
+"Pigeon pea",
+"Black gram",
+"Green gram",
+"Chickpea",
+"None of these"
+],
+"page": "77-78",
+"q": "Which pulse contains the highest phosphoric acid content?",
+"serial": "406",
+"src_row": 262,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:406"
+},
+{
+"expl": "Mung bean has a digestibility of 83 to 90% among grain legumes.",
+"key": 1,
+"o": [
+"70\u201380%",
+"83\u201390%",
+"60\u201370%",
+"95\u2013100%",
+"None of these"
+],
+"page": "77-78",
+"q": "What is the digestibility range of green gram (mung bean) among grain legumes?",
+"serial": "407",
+"src_row": 263,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "77-78:407"
+}
+],
+"rolled": false,
+"row_from": 244,
+"row_to": 264,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 244,
+"seeded_from": "2026-09-29",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-29",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
