@@ -74748,9 +74748,11 @@
 "announced_at": "2026-09-30T14:30:00+05:30",
 "ans": {},
 "bidx": 336,
-"lock_ts": 1790758790.8691509,
+"cd": 1,
+"lock_ts": 1790758825.6638393,
 "locked_by": "36692937756",
 "msg_ann": 30929,
+"msg_timer": 30931,
 "names": {},
 "pinned_ann": true,
 "plan": {
@@ -75157,8 +75159,10 @@
 },
 "qidx": 0,
 "seeded_from": "2026-09-29",
+"sent_i": 0,
 "skips": [],
-"step": 1
+"started_at": "2026-09-30T14:30:24+05:30",
+"step": 2
 },
 "malwa": {
 "announced_at": "2026-09-30T11:00:00+05:30",
