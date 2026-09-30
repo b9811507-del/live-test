@@ -74746,8 +74746,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 336,
 "names": {},
+"plan": {
+"bidx_next": 336,
+"built_at": "2026-09-30T14:27:30+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 46-48",
+"pages_list": [
+46,
+47,
+48
+],
+"questions": [
+{
+"expl": "The botanical name of the pea plant is explicitly stated as Pisum sativum in the source.",
+"key": 0,
+"o": [
+"Pisum sativum",
+"Pisum hortense",
+"Pisum arvense",
+"Pisum leguminaceae",
+"None of these"
+],
+"page": "46",
+"q": "What is the botanical name of the pea plant?",
+"serial": "316",
+"src_row": 315,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:316"
+},
+{
+"expl": "The source clearly mentions that the pea plant originated in the Mediterranean region of southern Europe and western Asia.",
+"key": 1,
+"o": [
+"South America",
+"Mediterranean region of southern Europe and western Asia",
+"East Asia",
+"North America",
+"None of these"
+],
+"page": "46",
+"q": "Which region is the origin of the pea plant?",
+"serial": "317",
+"src_row": 316,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:317"
+},
+{
+"expl": "The critical stages of irrigation for pea plants are specified as Pre-flowering and Pod development in the source.",
+"key": 1,
+"o": [
+"Seed germination",
+"Pre-flowering and Pod development",
+"Leaf development",
+"Post-harvest",
+"None of these"
+],
+"page": "46",
+"q": "What is the critical stage of irrigation for pea plants?",
+"serial": "318",
+"src_row": 317,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:318"
+},
+{
+"expl": "The source states that the Arkel variety of pea has sickle-shaped pods.",
+"key": 1,
+"o": [
+"Sylvia",
+"Arkel",
+"Hortense",
+"Arvense",
+"None of these"
+],
+"page": "46",
+"q": "Which variety of pea has sickle-shaped pods?",
+"serial": "319",
+"src_row": 318,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:319"
+},
+{
+"expl": "The source explicitly mentions that the germination type of field pea is Hypogeal.",
+"key": 1,
+"o": [
+"Epigeal",
+"Hypogeal",
+"Vivipary",
+"Pseudovivipary",
+"None of these"
+],
+"page": "46",
+"q": "What is the germination type of field pea?",
+"serial": "320",
+"src_row": 319,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:320"
+},
+{
+"expl": "According to the nutrient management table in the source, Potassium (K2O) is not required in the rainfed ecosystem for pea cultivation.",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Sulphur",
+"None of these"
+],
+"page": "46",
+"q": "Which nutrient is NOT required in rainfed ecosystem for pea cultivation?",
+"serial": "321",
+"src_row": 320,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:321"
+},
+{
+"expl": "The source states that in garden pea, young, green seeds are used mostly as vegetable and also for canning purpose.",
+"key": 2,
+"o": [
+"Used as a pulse (Dal)",
+"Used for oil extraction",
+"Young, green seeds are used as vegetable and for canning",
+"Used for animal feed",
+"None of these"
+],
+"page": "46",
+"q": "What is the primary use of garden pea?",
+"serial": "322",
+"src_row": 321,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "46:322"
+},
+{
+"expl": "The optimum monthly temperature suitable for the growth of field pea is 13-18\u00b0C, as mentioned in the source.",
+"key": 1,
+"o": [
+"10-15\u00b0C",
+"13-18\u00b0C",
+"20-25\u00b0C",
+"25-30\u00b0C",
+"None of these"
+],
+"page": "47",
+"q": "What is the optimum temperature range for the growth of field pea?",
+"serial": "323",
+"src_row": 322,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:323"
+},
+{
+"expl": "Field pea is highly sensitive to water logging, hence a well-drained loam soil is considered best for pea cultivation.",
+"key": 2,
+"o": [
+"Clay soil",
+"Sandy soil",
+"Well-drained loam soil",
+"Peaty soil",
+"None of these"
+],
+"page": "47",
+"q": "What type of soil is considered best for pea cultivation?",
+"serial": "324",
+"src_row": 323,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:324"
+},
+{
+"expl": "The second fortnight of October is the optimum time for sowing of field peas in north Indian states.",
+"key": 1,
+"o": [
+"First fortnight of October",
+"Second fortnight of October",
+"First fortnight of November",
+"Second fortnight of November",
+"None of these"
+],
+"page": "47",
+"q": "What is the optimum sowing time for field peas in north Indian states?",
+"serial": "325",
+"src_row": 324,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:325"
+},
+{
+"expl": "According to ICAR, the seed rate for small seeded field pea is 50-60 kg/ha.",
+"key": 0,
+"o": [
+"50-60 kg/ha",
+"75-80 kg/ha",
+"80-90 kg/ha",
+"100-120 kg/ha",
+"None of these"
+],
+"page": "47",
+"q": "What is the seed rate for field pea according to ICAR for small seeded varieties?",
+"serial": "326",
+"src_row": 325,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:326"
+},
+{
+"expl": "The recommended spacing for pea cultivation is approximately 30 x 10 cm.",
+"key": 2,
+"o": [
+"20 x 5 cm",
+"25 x 10 cm",
+"30 x 10 cm",
+"35 x 15 cm",
+"None of these"
+],
+"page": "47",
+"q": "What is the recommended spacing for pea cultivation?",
+"serial": "327",
+"src_row": 326,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:327"
+},
+{
+"expl": "The yield range for garden pea is 80-120 q/ha.",
+"key": 2,
+"o": [
+"20-25 q/ha",
+"40-60 q/ha",
+"80-120 q/ha",
+"140-160 q/ha",
+"None of these"
+],
+"page": "47",
+"q": "What is the yield range for garden pea?",
+"serial": "328",
+"src_row": 327,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:328"
+},
+{
+"expl": "The ideal moisture percentage for storing pea seeds is 8-10%.",
+"key": 1,
+"o": [
+"5-7%",
+"8-10%",
+"12-15%",
+"18-20%",
+"None of these"
+],
+"page": "47",
+"q": "What is the ideal moisture percentage for storing pea seeds?",
+"serial": "329",
+"src_row": 328,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "47:329"
+},
+{
+"expl": "Soybean follows the C3 photosynthetic pathway and is a short\u2011day plant, as stated in the source.",
+"key": 0,
+"o": [
+"C3 and short day",
+"C4 and long day",
+"CAM and short day",
+"C3 and long day",
+"None of these"
+],
+"page": "48",
+"q": "Which combination correctly describes soybean's photosynthetic pathway and photoperiod requirement?",
+"serial": "330",
+"src_row": 329,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:330"
+},
+{
+"expl": "The source specifies that soybean contains 42 % protein.",
+"key": 1,
+"o": [
+"30%",
+"42%",
+"55%",
+"20%",
+"None of these"
+],
+"page": "48",
+"q": "Approximately what percentage of protein is present in soybean seeds?",
+"serial": "331",
+"src_row": 330,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:331"
+},
+{
+"expl": "Although botanically a pulse, the source notes that in India soybean is mostly grown as an oilseed crop.",
+"key": 1,
+"o": [
+"Pulse",
+"Oilseed",
+"Cereal",
+"Fiber",
+"None of these"
+],
+"page": "48",
+"q": "In India, soybean is mainly cultivated as which type of crop?",
+"serial": "332",
+"src_row": 331,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:332"
+},
+{
+"expl": "The source indicates that soil temperatures of 15.5 \u00b0C or above promote rapid germination and vigorous growth.",
+"key": 2,
+"o": [
+"10 \u00b0C",
+"12.5 \u00b0C",
+"15.5 \u00b0C",
+"20 \u00b0C",
+"None of these"
+],
+"page": "48",
+"q": "Which soil temperature favors rapid germination and vigorous seedling growth of soybean?",
+"serial": "333",
+"src_row": 332,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:333"
+},
+{
+"expl": "According to the source, a mature soybean pod holds between 1 and 4 seeds.",
+"key": 2,
+"o": [
+"They contain 5\u20116 seeds each",
+"Pods become visible 20 days after flowering",
+"Mature pods contain 1\u20114 seeds",
+"Pods are indehiscent",
+"None of these"
+],
+"page": "48",
+"q": "Which statement about mature soybean pods is true?",
+"serial": "334",
+"src_row": 333,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:334"
+},
+{
+"expl": "The source lists 30 \u00b0C as the optimum temperature for soybean.",
+"key": 2,
+"o": [
+"5 \u00b0C",
+"20 \u00b0C",
+"30 \u00b0C",
+"40 \u00b0C",
+"None of these"
+],
+"page": "48",
+"q": "What is the optimum temperature for soybean growth?",
+"serial": "335",
+"src_row": 334,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:335"
+},
+{
+"expl": "Soybean thrives best in well\u2011drained loam soils with a pH between 6.0 and 7.5, as mentioned in the source.",
+"key": 2,
+"o": [
+"4.5\u20115.5",
+"5.0\u20116.0",
+"6.0\u20117.5",
+"7.5\u20118.5",
+"None of these"
+],
+"page": "48",
+"q": "Which soil pH range is most suitable for soybean cultivation?",
+"serial": "336",
+"src_row": 335,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "48:336"
+}
+],
+"row_from": 315,
+"row_to": 336,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 315,
+"seeded_from": "2026-09-29"
+},
 "qidx": 0,
+"seeded_from": "2026-09-29",
+"skips": [],
 "step": 0
 },
 "malwa": {
