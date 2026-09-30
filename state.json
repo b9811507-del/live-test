@@ -74741,7 +74741,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-09-30T17:58:04+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Fermentation method",
+"Acid fermentation method",
+"Alkali method",
+"Crushing method",
+"None of these"
+],
+"page": "",
+"q": "Which method of tomato seed extraction is considered the best and safest?",
+"serial": "1bxM1Q-4:3134",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3134"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To form the serosa membrane.",
+"To differentiate into the ectoderm, mesoderm, and endoderm.",
+"To produce vitellophages.",
+"To initiate blastokinesis.",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of the germ band in insect development?",
+"serial": "1UgnIe-g:1921",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1921"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"4:2:1",
+"1:2:1",
+"3:2:1",
+"2:1:1",
+"None of these"
+],
+"page": "",
+"q": "Which NPK ratio is recommended for pulses as a starter dose?",
+"serial": "128DIQLj:372",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:372"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Kusum",
+"Palas",
+"Khair",
+"Neem",
+"None of these"
+],
+"page": "",
+"q": "Which of the following trees is NOT a host for lac insects?",
+"serial": "1UgnIe-g:2365",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2365"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Parasitoid",
+"Predator",
+"Herbivore",
+"Decomposer",
+"None of these"
+],
+"page": "",
+"q": "What type of natural enemy is Rodolia cardinalis?",
+"serial": "1UgnIe-g:2068",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2068"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Implements (Tractors)",
+"Milk",
+"Live Stock (cattles, Buffaloes)",
+"Oil Seeds",
+"None of these"
+],
+"page": "",
+"q": "According to the world ranking table, which commodity is placed third globally?",
+"serial": "1bxM1Q-4:378",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:378"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Onion",
+"Potato",
+"Tomato",
+"Cucumber",
+"None of these"
+],
+"page": "",
+"q": "Which vegetable is known as the most exported vegetable from India?",
+"serial": "1YcJWVgW:824",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:824"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Spices and condiments",
+"Medicinal plants",
+"Beverages",
+"Fodder/Forage",
+"None of these"
+],
+"page": "",
+"q": "Which category of crops includes tobacco and mint?",
+"serial": "1sUgWsko:4316",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4316"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Dorsal and anal fins",
+"Caudal and dorsal fins",
+"Pectoral and pelvic fins",
+"Anal and caudal fins",
+"None of these"
+],
+"page": "",
+"q": "Which fins are paired in fishes?",
+"serial": "1bxM1Q-4:4262",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4262"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Citrus leafminer",
+"Cottony cushion scale",
+"Mediterranean fruit fly",
+"Red spider mite",
+"None of these"
+],
+"page": "",
+"q": "Rodolia cardinalis was introduced to California in 1888 to control which pest?",
+"serial": "1UgnIe-g:2022",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2022"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0\u00b0C",
+"9.4\u00b0C",
+"10\u00b0C",
+"-18\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "Below which temperature do food spoilage microorganisms show no significant growth?",
+"serial": "1sUgWsko:1549",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1549"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Anthrax Spore Vaccine",
+"B.Q. Polyvalent vaccine",
+"H.S. oil adjuvant vaccine",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "Which vaccine is recommended to be administered a month before the onset of the rainy season?",
+"serial": "1bxM1Q-4:4195",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4195"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Yellow dwarf disease",
+"Grassy shoot disease",
+"Sandal spike disease",
+"Phyllody",
+"None of these"
+],
+"page": "",
+"q": "Which disease is transmitted by the Leaf hopper (Cicadulina mbila)?",
+"serial": "1UgnIe-g:1191",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1191"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Glomerella graminicola",
+"Sphaelotheca reiliana",
+"Sclerophthora rayssiae",
+"Puccinia purpurea",
+"None of these"
+],
+"page": "",
+"q": "What is the perfect stage of the pathogen causing anthracnose in sorghum?",
+"serial": "1UgnIe-g:1053",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1053"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20-25 \u00b0C",
+"25-30 \u00b0C",
+"30-35 \u00b0C",
+"15-20 \u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for seed germination in bottle gourd?",
+"serial": "1YcJWVgW:779",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:779"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Fruit pulp",
+"Shredded peel",
+"Fruit seeds",
+"Fruit juice",
+"None of these"
+],
+"page": "",
+"q": "What is the primary suspended material in citrus marmalade?",
+"serial": "1sUgWsko:1564",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1564"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potash mica",
+"Magnesium mica",
+"Black mica",
+"White mica",
+"None of these"
+],
+"page": "",
+"q": "Which type of mica is also known as muscovite?",
+"serial": "17U0MEc-:1028",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1028"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Eriophyidae",
+"Tetranychidae",
+"Tarsonemidae",
+"Acarina",
+"None of these"
+],
+"page": "",
+"q": "Which family does the thread-footed mite belong to?",
+"serial": "1UgnIe-g:2278",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2278"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"18",
+"22",
+"44",
+"63",
+"None of these"
+],
+"page": "",
+"q": "How many KVKs are there in Rajasthan?",
+"serial": "1bxM1Q-4:2182",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2182"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Simple layering",
+"Compound layering",
+"Air layering",
+"Trench layering",
+"None of these"
+],
+"page": "",
+"q": "Which layering method is also known as serpentine layering?",
+"serial": "1sUgWsko:661",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:661"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Mustard",
+"Marigold",
+"Neem",
+"Tomato",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is NOT mentioned as an antagonistic crop that suppresses plant parasitic nematodes?",
+"serial": "1sUgWsko:3876",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3876"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cumin",
+"Garlic",
+"Black pepper",
+"Turmeric",
+"None of these"
+],
+"page": "",
+"q": "Which of the following spices is classified as a biennial based on its life cycle?",
+"serial": "1YcJWVgW:841",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:841"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Straw",
+"Paddy husk",
+"Cement concrete",
+"Saw dust",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a suitable material for deep litter flooring?",
+"serial": "1sUgWsko:3089",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3089"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Bappakkai",
+"Olour",
+"Chandrakaran",
+"Langra",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a polyembryonic rootstock for mango?",
+"serial": "1sUgWsko:962",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:962"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"ZnSO4",
+"FeSO4",
+"MgSO4",
+"H3BO3",
+"None of these"
+],
+"page": "",
+"q": "Which micronutrient is NOT recommended for spraying on banana plants?",
+"serial": "1bxM1Q-4:3006",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3006"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Discharged within 3\u20114 hrs; seek help after 5 hrs",
+"Discharged within 5\u20116 hrs; seek help after 6\u20117 hrs",
+"Discharged within 7\u20118 hrs; seek help after 9 hrs",
+"Discharged within 2\u20113 hrs; seek help after 4 hrs",
+"None of these"
+],
+"page": "",
+"q": "Within how many hours should the placenta be expelled after calving, and when is veterinary help required?",
+"serial": "1bxM1Q-4:4160",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4160"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"10:1",
+"12:1",
+"20:1",
+"9:1",
+"None of these"
+],
+"page": "",
+"q": "What is the C:N ratio of humus?",
+"serial": "17U0MEc-:1163",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1163"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increase leaf area",
+"Promote dwarfing and induce flowering",
+"Reduce water uptake",
+"Enhance root depth",
+"None of these"
+],
+"page": "",
+"q": "What is the main purpose of removing roots about 40 cm from the plant base?",
+"serial": "1YcJWVgW:30",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:30"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Fine sand",
+"Sandy Loam",
+"Silt Loam",
+"Clay",
+"None of these"
+],
+"page": "",
+"q": "Which soil type has the highest depth of available water per meter of soil?",
+"serial": "1sUgWsko:4567",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4567"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Due to the slower growth rate of heterotrophs compared to nitrifying bacteria",
+"Because heterotrophs have a ten-times greater growth rate and microbial production per unit substra\u2026",
+"As a result of direct chemical neutralization of nitrogen compounds",
+"Due to the absence of sunlight in the culture system",
+"None of these"
+],
+"page": "",
+"q": "Why does biofloc technology immobilize toxic nitrogen species more rapidly than traditional methods?",
+"serial": "1sUgWsko:2662",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1sUgWsko:2662"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"IBA at 3000 ppm",
+"NAA at 3000 ppm",
+"IAA at 2000 ppm",
+"IBA at 500 ppm",
+"None of these"
+],
+"page": "",
+"q": "For air\u2011layering of guava, which auxin and concentration yields 100 % root development?",
+"serial": "1YcJWVgW:48",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:48"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Oxides",
+"Carbonates",
+"Phyllosilicates",
+"Sulphates",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a non-silicate mineral group?",
+"serial": "1sUgWsko:6856",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6856"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gajendra Gadkar Committee",
+"Agricultural Review Team",
+"National Commission on Farmers",
+"Royal Commission on Agriculture",
+"None of these"
+],
+"page": "",
+"q": "Which committee was constituted in June, 1972 to review ICAR?",
+"serial": "17U0MEc-:91",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:91"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To decide daily irrigation schedules",
+"To select crops suitable for a region",
+"To predict immediate pest outbreaks",
+"To determine market prices of produce",
+"None of these"
+],
+"page": "",
+"q": "What is the primary role of climate information in agricultural planning?",
+"serial": "1sUgWsko:5641",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5641"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pedigree method",
+"Backcross method",
+"Single Seed Descent method",
+"Hybridization method",
+"None of these"
+],
+"page": "",
+"q": "Which method is used for the transfer of polygenic traits?",
+"serial": "1UgnIe-g:194",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:194"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Aphididae",
+"Thrips",
+"Spodoptera litura",
+"Myllocerus subfasciatus",
+"None of these"
+],
+"page": "",
+"q": "Which pest is known for causing upward curling of leaves and secreting honeydew that attracts sooty mold?",
+"serial": "1UgnIe-g:2207",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2207"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Potassium",
+"Phosphorus",
+"Nitrogen",
+"Calcium",
+"None of these"
+],
+"page": "",
+"q": "What is the primary nutrient supplied by green manure?",
+"serial": "1sUgWsko:7156",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7156"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Formal education system",
+"Non-formal education",
+"Initiated in the USA in 1914",
+"Involves stretching knowledge",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a characteristic of Extension Education as per the source?",
+"serial": "1sUgWsko:6482",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6482"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Punjab",
+"Haryana",
+"Uttar Pradesh",
+"Rajasthan",
+"None of these"
+],
+"page": "",
+"q": "The Murrah buffalo breed is primarily associated with which Indian state?",
+"serial": "1sUgWsko:3173",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3173"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Rice",
+"Linseed",
+"Chickpea",
+"Safflower",
+"None of these"
+],
+"page": "",
+"q": "For an ESP value of 25-30, which crop is most suitable for cultivation in alkali/sodic soils?",
+"serial": "1sUgWsko:7102",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7102"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"E.J. Butler",
+"Robert Harting",
+"Anton De Barry",
+"P.A. Micheli",
+"None of these"
+],
+"page": "",
+"q": "\"Plant Pathology (India)\" is associated with which individual?",
+"serial": "128DIQLj:136",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:136"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Sprouting",
+"Flowering",
+"Pod filling",
+"Root elongation",
+"None of these"
+],
+"page": "",
+"q": "Which of the following stages is NOT listed as a critical irrigation stage for soybean?",
+"serial": "1sUgWsko:340",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:340"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"700",
+"721",
+"750",
+"800",
+"None of these"
+],
+"page": "",
+"q": "What is the total number of KVKs across all zones?",
+"serial": "1bxM1Q-4:2191",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2191"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Insects with six legs",
+"Insects with segmented legs",
+"Body divided into three parts: Head, Thorax, and Abdomen",
+"Insects with two pairs of wings",
+"None of these"
+],
+"page": "",
+"q": "What does the term 'Hexapoda' refer to in the classification of insects?",
+"serial": "1bxM1Q-4:2384",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2384"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Increased water retention",
+"Reduced transpiration",
+"More water lost per unit dry matter",
+"Enhanced drought tolerance",
+"None of these"
+],
+"page": "",
+"q": "What is the primary effect of potassium deficiency on the water economy of plants?",
+"serial": "1sUgWsko:7338",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7338"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Q = 0.0184 L H^(3/2)",
+"Q = 0.0186 L H^(3/2)",
+"Q = 0.0138 H^(5/2)",
+"Q = 0.62 \u00d7 10^3 a \u221a(2gH)",
+"None of these"
+],
+"page": "",
+"q": "What is the discharge equation for a rectangular weir?",
+"serial": "128DIQLj:823",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:823"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"CO-1",
+"PKM-2",
+"PKM-3",
+"DSH-1",
+"None of these"
+],
+"page": "",
+"q": "Which hybrid is a cross between Guthi and Kirtibharti?",
+"serial": "1bxM1Q-4:3024",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3024"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"High rainfall (>750 mm) with poor infiltration",
+"Low rainfall (<750 mm) with shallow soils",
+"Medium rainfall",
+"Arid regions with deep soils",
+"None of these"
+],
+"page": "",
+"q": "Outward sloping bench terraces are most appropriate under which condition?",
+"serial": "128DIQLj:1486",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1486"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Alkaline KMnO4",
+"Olsen's method",
+"Ammonium acetate",
+"DTPA extractable",
+"None of these"
+],
+"page": "",
+"q": "Which method is used to measure Phosphorus in soil testing?",
+"serial": "17U0MEc-:1282",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1282"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Phyllody",
+"Chlorosis",
+"Necrosis",
+"Hyperplasia",
+"None of these"
+],
+"page": "",
+"q": "Which disease symptom is characterized by the transformation of floral parts into green leafy structures?",
+"serial": "17U0MEc-:2129",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2129"
+}
+],
+"set_no": 18,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
