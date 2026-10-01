@@ -80690,7 +80690,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-01T17:58:22+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 3,
+"o": [
+"Pengba",
+"Chital",
+"Kalbasu",
+"Rohu",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a state fish of any Indian state/UT as per the given data?",
+"serial": "1sUgWsko:2693",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2693"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Vetiver",
+"Celery",
+"Screw Pine",
+"Canna",
+"None of these"
+],
+"page": "",
+"q": "Which plant is known for its carminative property and is used as an appetizer?",
+"serial": "1YcJWVgW:957",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:957"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Copper sulphate, lime, and water",
+"Sulphur, lime, and water",
+"Copper sulphate, ash, and water",
+"Sulphur, ash, and lime",
+"None of these"
+],
+"page": "",
+"q": "What is the composition of the Bordeaux mixture?",
+"serial": "17U0MEc-:2103",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2103"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Anthrax",
+"Black quarter",
+"Rinderpest",
+"Haemorrhagic septicaemia",
+"None of these"
+],
+"page": "",
+"q": "Which disease is caused by Bacillus anthracis?",
+"serial": "128DIQLj:1983",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1983"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Very Fine Sand",
+"Fine Sand",
+"Silt",
+"Clay",
+"None of these"
+],
+"page": "",
+"q": "In the USDA system, which soil separate has the smallest particle size?",
+"serial": "1sUgWsko:6929",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6929"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Metribuzin",
+"Alachlor",
+"Oxadiazon",
+"Pendimethalin",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is recommended for pre-emergence application in potato farming?",
+"serial": "1bxM1Q-4:1296",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1296"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Melons",
+"Cucumber",
+"Pumpkin",
+"Watermelon",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a frost-resistant cucurbit?",
+"serial": "1sUgWsko:1419",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1419"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Endosulfan",
+"DDT",
+"Chlorpyrifos",
+"Glyphosate",
+"None of these"
+],
+"page": "",
+"q": "Which of the following insecticides is banned under the Act as of 31 March 2024?",
+"serial": "1UgnIe-g:2133",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2133"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sustainable Agricultural Land Technique",
+"Sloping Agricultural Land Technology",
+"Soil Amendment and Land Treatment",
+"Systematic Agricultural Land Tillage",
+"None of these"
+],
+"page": "",
+"q": "What does SALT stand for in the context of agriculture?",
+"serial": "1UgnIe-g:2829",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2829"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"After sowing to support crop growth",
+"Before sowing for seed germination and seedling establishment",
+"During the monsoon to prevent waterlogging",
+"To control pests in the field",
+"None of these"
+],
+"page": "",
+"q": "Palco irrigation is applied",
+"serial": "1bxM1Q-4:953",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:953"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sabour (Bhagalpur), Bihar",
+"Pantnagar, Uttarakhand",
+"Ludhiana, Punjab",
+"Kanpur, Uttar Pradesh",
+"None of these"
+],
+"page": "",
+"q": "Where was the study of extension education first started in India?",
+"serial": "1bxM1Q-4:2124",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2124"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"40\u201360 kg/ha",
+"60\u201375 kg/ha",
+"70\u201380 kg/ha",
+"80\u201390 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What seed rate is recommended for hybrid varieties of fodder maize?",
+"serial": "1bxM1Q-4:885",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:885"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"CO1",
+"COH1",
+"COH2",
+"COH3",
+"None of these"
+],
+"page": "",
+"q": "Which resistant maize variety is NOT mentioned for downy mildew management?",
+"serial": "1sUgWsko:3731",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3731"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Studying tree rings to estimate age",
+"Cultivating forest crops and managing timber stands",
+"Classifying woody species taxonomically",
+"Reconstructing past climate from tree rings",
+"None of these"
+],
+"page": "",
+"q": "Silviculture is primarily the art and science of:",
+"serial": "1UgnIe-g:2636",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2636"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Subtilin",
+"Pimaricin",
+"Nisin",
+"Benzoic acid",
+"None of these"
+],
+"page": "",
+"q": "Which antibiotic is used against clostridium and obtained from Streptococcus lactis?",
+"serial": "1YcJWVgW:1179",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1179"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"They are applied to plant surfaces to reduce transpiration.",
+"They can reduce photosynthesis in treated plants.",
+"They increase crop yield under severe moisture stress.",
+"They include compounds such as phenyl mercuric acetate and atrazine.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a typical characteristic of anti\u2011transpirants?",
+"serial": "17U0MEc-:322",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:322"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Allelopathy",
+"Competition",
+"Symbiosis",
+"Parasitism",
+"None of these"
+],
+"page": "",
+"q": "What term describes the direct or indirect effect of one plant on another through the release of chemical inhibitors?",
+"serial": "1sUgWsko:5538",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5538"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"*Colletotrichum falcatum*",
+"*Clavibacter xyli*",
+"*Phytoplasma*",
+"*Xanthomonas vascularam*",
+"None of these"
+],
+"page": "",
+"q": "Which organism causes Red rot disease in sugarcane?",
+"serial": "17U0MEc-:646",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:646"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bikaneri",
+"Bhakarwal",
+"Daccani",
+"Jaisalmeri",
+"None of these"
+],
+"page": "",
+"q": "Which breed of sheep is known for producing carpet-type wool?",
+"serial": "1bxM1Q-4:4112",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4112"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1:1",
+"3:1",
+"1:2:1",
+"9:3:3:1",
+"None of these"
+],
+"page": "",
+"q": "What is the phenotypic ratio of a monohybrid test cross?",
+"serial": "1UgnIe-g:478",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:478"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"3%",
+"5%",
+"7%",
+"10%",
+"None of these"
+],
+"page": "",
+"q": "If a farmer repays a short\u2011term crop loan within one year, what total interest subvention does he receive?",
+"serial": "1bxM1Q-4:219",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:219"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5.0-6.0",
+"6.5-8.0",
+"8.5-9.5",
+"4.0-5.0",
+"None of these"
+],
+"page": "",
+"q": "Which soil pH range is considered optimal for sunflower cultivation?",
+"serial": "1sUgWsko:464",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:464"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2^n",
+"4^n",
+"2n",
+"4n",
+"None of these"
+],
+"page": "",
+"q": "What is the formula to calculate the number of possible genotypic combinations using the Fork line method?",
+"serial": "1UgnIe-g:469",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:469"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lathyrus (grass pea)",
+"Soybean",
+"Cotton",
+"Millet",
+"None of these"
+],
+"page": "",
+"q": "The neurotoxin BOAA (ODA) that plant breeders aim to eliminate is found in which crop?",
+"serial": "1UgnIe-g:12",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:12"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Adults feed on leaf sap",
+"Eggs are laid on fruit skin of developing fruits",
+"Larvae develop in roots",
+"It is a vector of viral disease",
+"None of these"
+],
+"page": "",
+"q": "Which statement about the mango stone weevil is correct?",
+"serial": "17U0MEc-:1449",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1449"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Uric acid",
+"Ammonia",
+"Urea",
+"Carbon dioxide",
+"None of these"
+],
+"page": "",
+"q": "What is the primary excretory product of terrestrial insects?",
+"serial": "1sUgWsko:1746",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1746"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Communicator",
+"Channel",
+"Audience",
+"Audience response",
+"None of these"
+],
+"page": "",
+"q": "Which element is the terminating element in Leagans model of communication?",
+"serial": "128DIQLj:2252",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2252"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Burgundy mixture (Soda Bordeaux)",
+"Bordeaux paste",
+"Bordeaux paint",
+"Chaubattia paste",
+"None of these"
+],
+"page": "",
+"q": "Which of the following mixtures is recommended for use on copper\u2011sensitive crops?",
+"serial": "1sUgWsko:3672",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3672"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"40-50%",
+"30-40%",
+"50-60%",
+"20-30%",
+"None of these"
+],
+"page": "",
+"q": "What is the efficiency range of respiration?",
+"serial": "1UgnIe-g:1610",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1610"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Fusarium oxysporium p.v. Psidii",
+"Odium jujube var. indica",
+"Carpomia vesuviana",
+"Psidium guajava",
+"None of these"
+],
+"page": "",
+"q": "What is the causal organism for guava wilt?",
+"serial": "17U0MEc-:1503",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1503"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Swelling of the flag leaf sheath",
+"Emergence of the first leaf",
+"Root elongation",
+"Flowering",
+"None of these"
+],
+"page": "",
+"q": "The booting stage in rice is characterized by:",
+"serial": "17U0MEc-:525",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:525"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Aphids",
+"Leaf hoppers",
+"Fruit borers",
+"Root parasites",
+"None of these"
+],
+"page": "",
+"q": "Which organism is responsible for transmitting Little Leaf Disease in brinjal?",
+"serial": "1YcJWVgW:555",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:555"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wheat",
+"Tobacco",
+"Maize",
+"Sunflower",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is a short\u2011day plant?",
+"serial": "17U0MEc-:2649",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2649"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"No-till",
+"Ridge till",
+"Mulch till",
+"Conventional tillage",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a type of conservation tillage system?",
+"serial": "1sUgWsko:6116",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6116"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Net Capital Ratio",
+"Working Capital Ratio",
+"Current Ratio",
+"Quick Ratio",
+"None of these"
+],
+"page": "",
+"q": "Which ratio is known as the 'lifeblood of business'?",
+"serial": "128DIQLj:2702",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2702"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"White blisters",
+"Scab",
+"Sclerotia",
+"Phyllody",
+"None of these"
+],
+"page": "",
+"q": "Which disease symptom is characterized by numerous white, blister-like pustules on leaves?",
+"serial": "17U0MEc-:2133",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2133"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"They cause dark brown spots on leaves",
+"They suck the sap of the plant from tender parts and flowers",
+"They cause wilting of the entire plant",
+"They create a white powdery substance on leaves",
+"None of these"
+],
+"page": "",
+"q": "What is the primary effect of aphids on cumin plants?",
+"serial": "17U0MEc-:781",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:781"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Bavistin",
+"Agrosan GN",
+"Mancozeb",
+"Fungicide X",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is recommended for seed treatment in managing Downy mildew in sorghum?",
+"serial": "17U0MEc-:2233",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2233"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Montmorillonite",
+"Kaolinite",
+"Illite",
+"Organic matter",
+"None of these"
+],
+"page": "",
+"q": "Which mineral has the highest CEC value?",
+"serial": "1bxM1Q-4:1634",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1634"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-6 kg/ha",
+"8-10 kg/ha",
+"15-18 kg/ha",
+"18-20 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate for Kharif season Okra as per the source?",
+"serial": "1sUgWsko:1351",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1351"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Convolvulus arvensis",
+"Phalaris",
+"Echinochloa",
+"Avena fatua",
+"None of these"
+],
+"page": "",
+"q": "Which weed is listed as an objectionable weed in wheat and wild rice?",
+"serial": "1bxM1Q-4:1180",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1180"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rosica",
+"Dhulli",
+"CO1",
+"BSR-1",
+"None of these"
+],
+"page": "",
+"q": "Which mutant variety is mentioned for mango?",
+"serial": "1bxM1Q-4:574",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:574"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Letterer Model",
+"Shannon-Weaver Model",
+"Berlo Model",
+"Rogers and Shoemaker Model",
+"None of these"
+],
+"page": "",
+"q": "In which model of communication does the component 'Noise' appear?",
+"serial": "1bxM1Q-4:2146",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2146"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Recording the History of the Farm",
+"Preparing the farm map",
+"Planning Bullock and Human Labour Requirement",
+"Planning the Marketing of Produce",
+"None of these"
+],
+"page": "",
+"q": "What is the first step in preparing farm planning?",
+"serial": "1bxM1Q-4:2362",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2362"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Al\u00b3\u207a",
+"Ca\u00b2\u207a",
+"Mg\u00b2\u207a",
+"Na\u207a",
+"None of these"
+],
+"page": "",
+"q": "Good soil aggregates are primarily formed by which cation?",
+"serial": "128DIQLj:1272",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1272"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To create a new file",
+"To open an existing file",
+"To save the current file under a new name",
+"To close the file",
+"None of these"
+],
+"page": "",
+"q": "The \"Save As\" command is used for what purpose?",
+"serial": "1bxM1Q-4:3793",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3793"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Acts as electron carrier in redox enzymes",
+"Helps utilize iron for chlorophyll synthesis",
+"Regulates potassium/calcium ratio",
+"Participates in ethylene biosynthesis",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a function of copper in plants?",
+"serial": "1sUgWsko:7358",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7358"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Denier",
+"Meter",
+"Gram",
+"Kilogram",
+"None of these"
+],
+"page": "",
+"q": "What is the unit for measuring silk filament thickness?",
+"serial": "1UgnIe-g:2355",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2355"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Central Institute of Subtropical Horticulture (CISTH), Lucknow",
+"National Research Centre for Citrus (NRCC), Nagpur",
+"Central Arid Zone Research Institute (CAZRI), Jodhpur",
+"National Research Centre for Pomegranate (NRCP), Solapur",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a pomological research institute?",
+"serial": "1sUgWsko:789",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:789"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Relatively elastic",
+"Unit elastic",
+"Relatively inelastic",
+"Perfectly elastic",
+"None of these"
+],
+"page": "",
+"q": "The source states that the price elasticity of demand for food is:",
+"serial": "1sUgWsko:3931",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3931"
+}
+],
+"set_no": 19,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
