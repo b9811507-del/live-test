@@ -80695,8 +80695,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 357,
 "names": {},
+"plan": {
+"bidx_next": 357,
+"built_at": "2026-10-01T14:27:34+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 49-51",
+"pages_list": [
+49,
+50,
+51
+],
+"questions": [
+{
+"expl": "The source lists Alfisols, Entisols, Inceptisols, Mollisols and Vertisols as suitable soils; Oxisols are not mentioned.",
+"key": 2,
+"o": [
+"Alfisols",
+"Entisols",
+"Oxisols",
+"Mollisols",
+"None of these"
+],
+"page": "49",
+"q": "Which of the following soil types is NOT mentioned as suitable for soybean cultivation in the source?",
+"serial": "337",
+"src_row": 336,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:337"
+},
+{
+"expl": "Late planting requires a higher seed rate of 100\u2011120 kg/ha as stated in the source.",
+"key": 1,
+"o": [
+"75-80 kg/ha",
+"100-120 kg/ha",
+"50-60 kg/ha",
+"120-140 kg/ha",
+"None of these"
+],
+"page": "49",
+"q": "What is the recommended seed rate for late planting of soybean?",
+"serial": "338",
+"src_row": 337,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:338"
+},
+{
+"expl": "The source specifies a sowing depth of 3\u20114 cm for soybean.",
+"key": 1,
+"o": [
+"1-2 cm",
+"3-4 cm",
+"5-6 cm",
+"7-8 cm",
+"None of these"
+],
+"page": "49",
+"q": "At what depth should soybean seeds be sown?",
+"serial": "339",
+"src_row": 338,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:339"
+},
+{
+"expl": "Critical irrigation stages mentioned are sprouting, flowering, pod filling, and grain development; root elongation is not listed.",
+"key": 3,
+"o": [
+"Sprouting",
+"Flowering",
+"Pod filling",
+"Root elongation",
+"None of these"
+],
+"page": "49",
+"q": "Which of the following stages is NOT listed as a critical irrigation stage for soybean?",
+"serial": "340",
+"src_row": 339,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:340"
+},
+{
+"expl": "Nodule formation starts 2\u20113 weeks after sowing as per the source.",
+"key": 1,
+"o": [
+"1-2 weeks",
+"2-3 weeks",
+"4-5 weeks",
+"6-7 weeks",
+"None of these"
+],
+"page": "49",
+"q": "When does nodule formation by Rhizobium japonicum begin after sowing?",
+"serial": "341",
+"src_row": 340,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:341"
+},
+{
+"expl": "The source specifies N\u2011P\u2011K\u2011S = 20:80:40:40 kg/ha.",
+"key": 0,
+"o": [
+"20:80:40:40 kg/ha",
+"30:70:50:50 kg/ha",
+"25:75:35:45 kg/ha",
+"15:85:45:35 kg/ha",
+"None of these"
+],
+"page": "49",
+"q": "What is the total N\u2011P\u2011K\u2011S fertilizer requirement per hectare for soybean?",
+"serial": "342",
+"src_row": 341,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:342"
+},
+{
+"expl": "The source states that weeds can reduce yield by 54\u201165%.",
+"key": 2,
+"o": [
+"10-20%",
+"30-40%",
+"54-65%",
+"70-80%",
+"None of these"
+],
+"page": "49",
+"q": "What is the expected yield loss percentage due to weed infestation alone?",
+"serial": "343",
+"src_row": 342,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "49:343"
+},
+{
+"expl": "The source states that a moisture content of 13-14% is ideal for threshing soybean seeds.",
+"key": 0,
+"o": [
+"13-14%",
+"15-20%",
+"8-10%",
+"20-25%",
+"None of these"
+],
+"page": "50",
+"q": "What is the ideal moisture content for threshing soybean seeds?",
+"serial": "344",
+"src_row": 343,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:344"
+},
+{
+"expl": "Popping or hollow\u2011heart is described as occurring due to calcium deficiency.",
+"key": 0,
+"o": [
+"Calcium deficiency",
+"Nitrogen deficiency",
+"Phosphorus deficiency",
+"Potassium deficiency",
+"None of these"
+],
+"page": "50",
+"q": "Which nutrient deficiency causes \"popping\" or hollow\u2011heart in groundnut pods?",
+"serial": "345",
+"src_row": 344,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:345"
+},
+{
+"expl": "The phenomenon is specifically named pegging and occurs at 41-45 days after sowing.",
+"key": 0,
+"o": [
+"Pegging",
+"Nodulation",
+"Tuberization",
+"Grafting",
+"None of these"
+],
+"page": "50",
+"q": "The process where the pollinated ovary forms a peg that penetrates the soil to develop pods is called?",
+"serial": "346",
+"src_row": 345,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:346"
+},
+{
+"expl": "The source lists the family of groundnut as Leguminaceae.",
+"key": 0,
+"o": [
+"Leguminaceae",
+"Solanaceae",
+"Poaceae",
+"Rosaceae",
+"None of these"
+],
+"page": "50",
+"q": "Groundnut (Arachis hypogaea) belongs to which plant family?",
+"serial": "347",
+"src_row": 346,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:347"
+},
+{
+"expl": "The erect/bunch type (var. fastigiata) is described as non\u2011dormant and matures in 100\u2011105 days.",
+"key": 0,
+"o": [
+"Erect/Bunch type (A. hypogaea var. fastigiata)",
+"Spreading/Trailing type",
+"Virginia type",
+"Runner type",
+"None of these"
+],
+"page": "50",
+"q": "Which groundnut type is non\u2011dormant and matures in about 100\u2011105 days?",
+"serial": "348",
+"src_row": 347,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:348"
+},
+{
+"expl": "The source states that groundnut protein is 2.5 times higher than that of egg.",
+"key": 0,
+"o": [
+"2.5 times",
+"1.3 times",
+"8 times",
+"5 times",
+"None of these"
+],
+"page": "50",
+"q": "Groundnut kernel protein is approximately how many times higher than that of egg protein?",
+"serial": "349",
+"src_row": 348,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:349"
+},
+{
+"expl": "The text indicates that at harvest soybean seed moisture is 15-20%.",
+"key": 0,
+"o": [
+"15-20%",
+"13-14%",
+"8-10%",
+"20-25%",
+"None of these"
+],
+"page": "50",
+"q": "At harvest, the moisture content of soybean seeds is usually within which range?",
+"serial": "350",
+"src_row": 349,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "50:350"
+},
+{
+"expl": "The source states that this variety matures in about 130-150 days, matching option B.",
+"key": 1,
+"o": [
+"90-110 days",
+"130-150 days",
+"180-200 days",
+"210-230 days",
+"None of these"
+],
+"page": "51",
+"q": "The maturity duration of Arachis hypogaea var. procumbens is closest to:",
+"serial": "351",
+"src_row": 350,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:351"
+},
+{
+"expl": "The source mentions a required resting period of 2-2.5 months for germination, which is option B.",
+"key": 1,
+"o": [
+"1-1.5 months",
+"2-2.5 months",
+"3-3.5 months",
+"4-4.5 months",
+"None of these"
+],
+"page": "51",
+"q": "Groundnut seeds are classified as dormant because they need a resting period before germination. How long is this period?",
+"serial": "352",
+"src_row": 351,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:352"
+},
+{
+"expl": "Groundnut grows best when the mean temperature is 21-26.5\u00b0C, as given in the source.",
+"key": 1,
+"o": [
+"15-20\u00b0C",
+"21-26.5\u00b0C",
+"27-32\u00b0C",
+"33-38\u00b0C",
+"None of these"
+],
+"page": "51",
+"q": "Which temperature range is most suitable for groundnut growth?",
+"serial": "353",
+"src_row": 352,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:353"
+},
+{
+"expl": "The source specifies well\u2011drained sandy or sandy loam soils with pH between 6.0\u20116.5 as ideal.",
+"key": 1,
+"o": [
+"Clay soil, pH 5.5-6.0",
+"Sandy loam, pH 6.0-6.5",
+"Heavy loam, pH 7.5-8.0",
+"All of the above",
+"None of these"
+],
+"page": "51",
+"q": "For optimal growth, groundnut should be cultivated in soils having which combination?",
+"serial": "354",
+"src_row": 353,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:354"
+},
+{
+"expl": "Rainfed seed rate is listed as 140 kg per hectare in the source.",
+"key": 2,
+"o": [
+"80-100 kg/ha",
+"125 kg/ha",
+"140 kg/ha",
+"60-80 kg/ha",
+"None of these"
+],
+"page": "51",
+"q": "What is the recommended seed rate for rainfed groundnut cultivation?",
+"serial": "355",
+"src_row": 354,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:355"
+},
+{
+"expl": "Kharif sowing time is given as the last week of June to the first week of July.",
+"key": 1,
+"o": [
+"First week of June",
+"Last week of June to first week of July",
+"Mid August",
+"Early September",
+"None of these"
+],
+"page": "51",
+"q": "During which period is groundnut sown in the Kharif season?",
+"serial": "356",
+"src_row": 355,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:356"
+},
+{
+"expl": "The source records a plant population of 4.44 lakh/ha for the Rabi season, the highest among the listed options.",
+"key": 2,
+"o": [
+"Spreading type (2.22 lakh/ha)",
+"Bunch type (3.33 lakh/ha)",
+"Rabi (4.44 lakh/ha)",
+"All equal",
+"None of these"
+],
+"page": "51",
+"q": "Which planting arrangement yields the highest plant population per hectare?",
+"serial": "357",
+"src_row": 356,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "51:357"
+}
+],
+"row_from": 336,
+"row_to": 357,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 336,
+"seeded_from": "2026-09-30"
+},
 "qidx": 0,
+"seeded_from": "2026-09-30",
+"skips": [],
 "step": 0
 },
 "malwa": {
