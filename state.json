@@ -80701,9 +80701,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 284,
 "names": {},
+"plan": {
+"batch": 2,
+"bidx_next": 284,
+"built_at": "2026-10-01T10:57:03+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 79-84",
+"pages_blocks": [
+"79-80",
+"81-82",
+"83-84"
+],
+"questions": [
+{
+"expl": "Pusa Baisakhi is a selection from Type 44 and is identified as the best variety for intercropping with sugarcane.",
+"key": 0,
+"o": [
+"Pusa Baisakhi",
+"Type 44",
+"Rabi",
+"Summer",
+"None of these"
+],
+"page": "79-80",
+"q": "Which mungbean variety is best suited for intercropping with sugarcane?",
+"serial": "411",
+"src_row": 264,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:411"
+},
+{
+"expl": "Moth bean thrives best at temperatures between 24\u00b0C and 32\u00b0C, as stated in the source.",
+"key": 1,
+"o": [
+"18-24\u00b0C",
+"24-32\u00b0C",
+"32-40\u00b0C",
+"10-18\u00b0C",
+"None of these"
+],
+"page": "79-80",
+"q": "What is the optimal temperature range for growing moth bean?",
+"serial": "412",
+"src_row": 265,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:412"
+},
+{
+"expl": "The source lists Karnataka as the major producing state for cowpea; Rajasthan is not mentioned as a major producer.",
+"key": 1,
+"o": [
+"Karnataka",
+"Rajasthan",
+"Gujarat",
+"Madhya Pradesh",
+"None of these"
+],
+"page": "79-80",
+"q": "Which state is NOT a major producer of cowpea in India?",
+"serial": "413",
+"src_row": 266,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:413"
+},
+{
+"expl": "Soybean accounts for about 34% of total oilseed production, the highest among the listed crops.",
+"key": 1,
+"o": [
+"Groundnut",
+"Soybean",
+"Rapeseed\u2011Mustard",
+"Sunflower",
+"None of these"
+],
+"page": "79-80",
+"q": "Which oilseed crop contributes the highest average share to India\u2019s total oilseed production?",
+"serial": "414",
+"src_row": 267,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:414"
+},
+{
+"expl": "All edible oilseeds, including groundnut, are covered under the MSP scheme; castor and linseed are non\u2011edible and not covered.",
+"key": 3,
+"o": [
+"Castor",
+"Linseed",
+"Sesame",
+"Groundnut",
+"None of these"
+],
+"page": "79-80",
+"q": "Which of the following oilseed crops is covered under India\u2019s Minimum Support Price (MSP) scheme?",
+"serial": "415",
+"src_row": 268,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:415"
+},
+{
+"expl": "TMO was established in 1986, as mentioned in the source.",
+"key": 0,
+"o": [
+"1986",
+"1990",
+"2014",
+"2000",
+"None of these"
+],
+"page": "79-80",
+"q": "In which year was the Technology Mission on Oilseeds (TMO) established?",
+"serial": "416",
+"src_row": 269,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:416"
+},
+{
+"expl": "The source states that chickpea is the main source of vegetable protein in India.",
+"key": 1,
+"o": [
+"Soybean",
+"Chickpea",
+"Groundnut",
+"Mungbean",
+"None of these"
+],
+"page": "79-80",
+"q": "Which crop is the most important source of vegetable protein in India?",
+"serial": "417",
+"src_row": 270,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "79-80:417"
+},
+{
+"expl": "Soybean is cited as the most important oilseed crop both globally and in India.",
+"key": 1,
+"o": [
+"Groundnut",
+"Soybean",
+"Mustard",
+"Sunflower",
+"None of these"
+],
+"page": "81-82",
+"q": "Which oilseed crop is considered the most important in India?",
+"serial": "421",
+"src_row": 271,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:421"
+},
+{
+"expl": "Linseed contains the highest linolenic acid content among the listed oilseeds.",
+"key": 1,
+"o": [
+"Safflower",
+"Linseed",
+"Coconut",
+"Sesame",
+"None of these"
+],
+"page": "81-82",
+"q": "Which oilseed has the highest percentage of linolenic (Omega\u20113) acid?",
+"serial": "422",
+"src_row": 272,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:422"
+},
+{
+"expl": "A higher oleic/linoleic ratio (>1.6) improves storage stability of edible oils.",
+"key": 0,
+"o": [
+"Oleic to linoleic",
+"Linoleic to linolenic",
+"Palmitic to stearic",
+"Erucic to oleic",
+"None of these"
+],
+"page": "81-82",
+"q": "For an extended shelf life of edible oils, the ratio of which two fatty acids should be more than 1.6?",
+"serial": "423",
+"src_row": 273,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:423"
+},
+{
+"expl": "Coconut oil is unique for its high medium\u2011chain saturated fatty acids, especially lauric acid.",
+"key": 0,
+"o": [
+"Coconut",
+"Sesame",
+"Safflower",
+"Soybean",
+"None of these"
+],
+"page": "81-82",
+"q": "Which oil is primarily composed of medium\u2011chain saturated fatty acids, with lauric acid making up 44\u201152%?",
+"serial": "424",
+"src_row": 274,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:424"
+},
+{
+"expl": "Groundnut, along with coconut, sesame and sunflower, is deficient in linolenic acid.",
+"key": 2,
+"o": [
+"Soybean",
+"Mustard",
+"Groundnut",
+"Rapeseed",
+"None of these"
+],
+"page": "81-82",
+"q": "Which of the following oilseed crops is deficient in linolenic acid?",
+"serial": "425",
+"src_row": 275,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:425"
+},
+{
+"expl": "Rajasthan had the highest oilseed production, surpassing Madhya Pradesh in 2021\u201122.",
+"key": 1,
+"o": [
+"Madhya Pradesh",
+"Rajasthan",
+"Gujarat",
+"Punjab",
+"None of these"
+],
+"page": "81-82",
+"q": "Which Indian state recorded the highest production of oilseeds in 2021\u201122?",
+"serial": "426",
+"src_row": 276,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:426"
+},
+{
+"expl": "Mustard (and rapeseed) oils contain high levels of erucic acid, which can be anti\u2011nutritional.",
+"key": 1,
+"o": [
+"Safflower",
+"Mustard",
+"Sesame",
+"Linseed",
+"None of these"
+],
+"page": "81-82",
+"q": "Which oilseed crop is known for high erucic acid content, a compound with anti\u2011nutritional properties?",
+"serial": "427",
+"src_row": 277,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "81-82:427"
+},
+{
+"expl": "NRCHB 101 is listed with 41\u201143% oil and erucic acid <2%.",
+"key": 1,
+"o": [
+"Pusa Karishma",
+"NRCHB 101",
+"Pusa Bold",
+"Varuna",
+"None of these"
+],
+"page": "83-84",
+"q": "Which rapeseed variety has an oil content of 41\u201143% and erucic acid less than 2%?",
+"serial": "431",
+"src_row": 278,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "83-84:431"
+},
+{
+"expl": "Groundnut shows 1863 kg/ha, the highest among the listed crops.",
+"key": 0,
+"o": [
+"Groundnut",
+"Castor",
+"Soybean",
+"Sunflower",
+"None of these"
+],
+"page": "83-84",
+"q": "Which oilseed crop has the highest productivity (kg/ha) in India according to the table?",
+"serial": "432",
+"src_row": 279,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "83-84:432"
+},
+{
+"expl": "Top three sunflower states are Karnataka, Maharashtra and Andhra Pradesh; Gujarat is not listed.",
+"key": 3,
+"o": [
+"Karnataka",
+"Maharashtra",
+"Andhra Pradesh",
+"Gujarat",
+"None of these"
+],
+"page": "83-84",
+"q": "Which of the following is NOT a top\u20113 producer state of sunflower in India?",
+"serial": "433",
+"src_row": 280,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "83-84:433"
+},
+{
+"expl": "Castor GCH\u20117 has 48\u201150% oil and 85\u201190% ricinoleic acid as per the table.",
+"key": 0,
+"o": [
+"Castor GCH\u20117",
+"Sesame GT\u20112",
+"Safflower PBNS\u201112",
+"Linseed Padmini",
+"None of these"
+],
+"page": "83-84",
+"q": "Which oilseed variety is characterized by 48\u201150% oil and 85\u201190% ricinoleic acid?",
+"serial": "434",
+"src_row": 281,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "83-84:434"
+},
+{
+"expl": "Groundnut (Arachis hypogaea) belongs to the legume family.",
+"key": 0,
+"o": [
+"Groundnut",
+"Sunflower",
+"Safflower",
+"Castor",
+"None of these"
+],
+"page": "83-84",
+"q": "Which of the following crops is a legume oilseed?",
+"serial": "435",
+"src_row": 282,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "83-84:435"
+},
+{
+"expl": "Castor\u2019s leading states are Gujarat, Rajasthan and Andhra Pradesh as per the table.",
+"key": 2,
+"o": [
+"Groundnut",
+"Soybean",
+"Castor",
+"Rapeseed",
+"None of these"
+],
+"page": "83-84",
+"q": "Which crop\u2019s top\u20113 producer states in India are Gujarat, Rajasthan and Andhra Pradesh?",
+"serial": "436",
+"src_row": 283,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "83-84:436"
+}
+],
+"rolled": false,
+"row_from": 264,
+"row_to": 284,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 264,
+"seeded_from": "2026-09-30",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-09-30",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
