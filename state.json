@@ -86719,7 +86719,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-02T17:57:15+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"A well-known Roman family",
+"A Greek god",
+"A type of soil",
+"A farming technique",
+"None of these"
+],
+"page": "",
+"q": "What does the term 'Cicer' in the botanical name of chickpea derive from?",
+"serial": "1sUgWsko:272",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:272"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Indian Institute of Oilseeds Research (IIOR)",
+"Indian Institute of Maize Research (IIMR)",
+"Indian Institute of Oil Palm Research (IIOPR)",
+"Indian Institute of Rice Research (IIRR)",
+"None of these"
+],
+"page": "",
+"q": "Which institute focuses on oilseed crops?",
+"serial": "128DIQLj:43",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:43"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Deriving 50% or more income from a single enterprise",
+"Having several sources of income with no single source exceeding 49%",
+"Combining crop production with livestock rearing",
+"Operating in areas with average annual rainfall of \u2264 50 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the main feature of diversified farming?",
+"serial": "1bxM1Q-4:2350",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2350"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ridger",
+"Power thresher",
+"Trailer",
+"Electric Motor",
+"None of these"
+],
+"page": "",
+"q": "Which implement has a subsidy percentage of 90%?",
+"serial": "1sUgWsko:6104",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6104"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To determine the total number of eggs laid by each bird in 12 months",
+"To provide a resting place for birds",
+"To feed the birds",
+"To provide water to the birds",
+"None of these"
+],
+"page": "",
+"q": "What is the primary use of a trap nest in poultry farming?",
+"serial": "1bxM1Q-4:4251",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4251"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Heredity",
+"Variation",
+"Mutation",
+"Genetics",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the transmission of genetic traits from one generation to the next?",
+"serial": "1UgnIe-g:433",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:433"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Subsistence Farming",
+"Commercial Farming",
+"Arable Farming",
+"Pastoral Farming",
+"None of these"
+],
+"page": "",
+"q": "Which farming system involves growing crops and rearing animals for profit?",
+"serial": "1sUgWsko:4467",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4467"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Hyblaea puera",
+"Eutectona machaeralis",
+"Plecoptera reflexa",
+"Hoplocerambs 5",
+"None of these"
+],
+"page": "",
+"q": "The insect known as teak skeletonizer is?",
+"serial": "1UgnIe-g:2748",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2748"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cell division in cambium",
+"Elongation of stem and internodes",
+"Inhibition of root initiation",
+"Wound healing",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a function of auxin?",
+"serial": "1UgnIe-g:1643",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1643"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Leucine and isoleucine",
+"Tryptophane and lysine",
+"Valine and threonine",
+"Phenylalanine and methionine",
+"None of these"
+],
+"page": "",
+"q": "What is the protein deficient in maize?",
+"serial": "1sUgWsko:163",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:163"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Seminal roots",
+"Adventitious roots",
+"Both emerge simultaneously",
+"Neither, roots form later",
+"None of these"
+],
+"page": "",
+"q": "During seed germination of barley, which root type emerges first from the radicle?",
+"serial": "128DIQLj:335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:335"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Nagpuri",
+"Bhadawari",
+"Mehsana",
+"Ellichpuri",
+"None of these"
+],
+"page": "",
+"q": "Which breed has the earliest age at first calving among the given options?",
+"serial": "1sUgWsko:3190",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3190"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"16%",
+"4%",
+"20%",
+"10%",
+"None of these"
+],
+"page": "",
+"q": "What is the approximate percentage of starch present in sweet potato roots?",
+"serial": "1sUgWsko:1401",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1401"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Zingiber officinale",
+"Solanum tuberosum",
+"Curcuma longa",
+"Dioscorea",
+"None of these"
+],
+"page": "",
+"q": "Which plant is an example of a tuber?",
+"serial": "1sUgWsko:534",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:534"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cleaning the crop row",
+"Opening of soil for seed insertion",
+"Applying fertilizer",
+"Covering the seed",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a step in till planting?",
+"serial": "17U0MEc-:209",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:209"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1:1",
+"1:2.5",
+"1:5",
+"1:10",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum soil\u2011to\u2011water suspension ratio for measuring soil pH?",
+"serial": "128DIQLj:1523",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1523"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"45 x 20",
+"30 x 10",
+"90 x 20",
+"60 x 30",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spacing for Toria (a type of rapeseed) in cm?",
+"serial": "1sUgWsko:380",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:380"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cyprus spp.",
+"Cuscuta",
+"Phalaris minor",
+"Eichornia",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an example of a noxious weed?",
+"serial": "17U0MEc-:887",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:887"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Laxmi Vasundara",
+"Ashirwad Basanti",
+"NRCHB-101",
+"Pusa jai Kisan NRC-HB-506",
+"None of these"
+],
+"page": "",
+"q": "Which variety of mustard is suitable for late sowing in irrigated areas of MP, UP, and Rajasthan?",
+"serial": "17U0MEc-:748",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:748"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Breed in fresh water",
+"Move between fresh and salt water not for breeding",
+"Live solely in the ocean",
+"Migrate only once in their life",
+"None of these"
+],
+"page": "",
+"q": "Amphidromous fish differ from anadromous fish because they:",
+"serial": "1sUgWsko:2267",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2267"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"National Cooperative Development Corporation",
+"National Agricultural Cooperative Marketing Federation",
+"National Cooperative Tobacco Growers Federation",
+"Tribal Cooperative Marketing Federation",
+"None of these"
+],
+"page": "",
+"q": "Which cooperative federation focuses on tobacco growers?",
+"serial": "1sUgWsko:4051",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4051"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Leaves",
+"Stem bark",
+"Root",
+"Fruit",
+"None of these"
+],
+"page": "",
+"q": "Which part of the plant is used in the case of 'Gurmar' (Gymnema sylvestre)?",
+"serial": "1bxM1Q-4:3573",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3573"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1989",
+"2001",
+"2002",
+"2004",
+"None of these"
+],
+"page": "",
+"q": "In which year was the 'Plants, Fruits and Seed Order' introduced in India?",
+"serial": "1sUgWsko:5048",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5048"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1.33 g/cm\u00b3",
+"2.65 g/cm\u00b3",
+"1.6 g/cm\u00b3",
+"0.5 g/cm\u00b3",
+"None of these"
+],
+"page": "",
+"q": "What is the particle density of normal soils as per the given data?",
+"serial": "1sUgWsko:6968",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6968"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Active absorption",
+"Imbibition",
+"Osmosis",
+"Diffusion",
+"None of these"
+],
+"page": "",
+"q": "What is the first step in the absorption of water by plants?",
+"serial": "1bxM1Q-4:2657",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2657"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lawn",
+"Rockery",
+"Garden lanterns",
+"Mixed borders",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a feature of English Gardens as per the source?",
+"serial": "1sUgWsko:1440",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1440"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Al\u00b3\u207a hydrolysis",
+"Ca\u00b2\u207a salts",
+"H\u207a ions themselves",
+"Organic matter decomposition",
+"None of these"
+],
+"page": "",
+"q": "Which factor contributes directly to soil acidity by releasing H\u207a ions?",
+"serial": "128DIQLj:1233",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1233"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Oxalic acid",
+"Saponins",
+"Nitrates",
+"Beta\u2011glucans",
+"None of these"
+],
+"page": "",
+"q": "Which anti\u2011quality constituent is present in Napier grass?",
+"serial": "128DIQLj:661",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:661"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Penaeus monodon",
+"Penaeus indicus",
+"Pemacus monada",
+"Penaeus serratus",
+"None of these"
+],
+"page": "",
+"q": "Which shrimp species is known for attaining the largest size and commanding a high market price in India?",
+"serial": "1sUgWsko:2542",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2542"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Open Center System (Vase Shaped)",
+"Central Leader System (Closed Center)",
+"Modified Leader System",
+"Espalier System",
+"None of these"
+],
+"page": "",
+"q": "Which training system is stated as unsuitable for frost\u2011prone areas?",
+"serial": "1YcJWVgW:25",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:25"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Dr. N. E. Borlaug",
+"Vergese Kurien",
+"S. K. Vasal",
+"Dr. G. S. Khush",
+"None of these"
+],
+"page": "",
+"q": "Who was awarded the 'World Food Prize' in 2000 for research on QPM maize?",
+"serial": "17U0MEc-:126",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:126"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Horizontal",
+"Vertical",
+"Conglomeration",
+"Fragmentation",
+"None of these"
+],
+"page": "",
+"q": "Which type of market integration combines firms operating at the same stage of production?",
+"serial": "1sUgWsko:4059",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4059"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Amaranthus viridis",
+"Datura fastuosa",
+"Orabanche cernua",
+"Cuscuta chinensis",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a herbaceous weed?",
+"serial": "1sUgWsko:5104",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5104"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Punjab",
+"Andhra Pradesh",
+"Maharashtra",
+"Karnataka",
+"None of these"
+],
+"page": "",
+"q": "Which state in India is a pioneer in chilli production?",
+"serial": "17U0MEc-:1571",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1571"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Alec Jeffrey",
+"Louis Pasteur",
+"Paul Berg",
+"Carl Correns",
+"None of these"
+],
+"page": "",
+"q": "Which scientist is credited with the development of DNA fingerprinting?",
+"serial": "128DIQLj:141",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:141"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nawaschi, 1898",
+"Mendel, 1865",
+"Darwin, 1859",
+"Watson, 1953",
+"None of these"
+],
+"page": "",
+"q": "Who first introduced the term \u201cdouble fertilization\u201d and in which year?",
+"serial": "1UgnIe-g:36",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:36"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Clogging of emitter",
+"Damage to lateral systems",
+"Water saves 25-50 per cent",
+"Salt accumulation near plants",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a disadvantage of drip irrigation?",
+"serial": "1bxM1Q-4:1023",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1023"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Operating a tractor",
+"Applying fertilizer",
+"Comparing yields of two varieties",
+"Preparing a nursery\u2011bed",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an example of a method demonstration activity?",
+"serial": "1bxM1Q-4:2169",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2169"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Goats",
+"Sheep",
+"Camels",
+"Alpacas",
+"None of these"
+],
+"page": "",
+"q": "Pashmina wool is obtained from which animal?",
+"serial": "1bxM1Q-4:358",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:358"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Basophiles",
+"Acidophiles",
+"Calcifuges",
+"Oxylophytes",
+"None of these"
+],
+"page": "",
+"q": "Which plant type prefers alkaline (alkali) soils?",
+"serial": "1bxM1Q-4:486",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:486"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Increase available water content",
+"Decrease osmotic potential",
+"Increase osmotic potential leading to low available water content",
+"No effect",
+"None of these"
+],
+"page": "",
+"q": "High soluble salts in soil primarily cause which of the following?",
+"serial": "1bxM1Q-4:1051",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1051"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"7%",
+"9%",
+"8%",
+"6%",
+"None of these"
+],
+"page": "",
+"q": "What is the effective interest rate for post\u2011harvest loans with a 2% subvention on a 9% original rate?",
+"serial": "1bxM1Q-4:220",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:220"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"<5",
+"5-30",
+">30",
+"<10",
+"None of these"
+],
+"page": "",
+"q": "What is the nitrate concentration range where the problem intensity is classified as 'No problem'?",
+"serial": "1sUgWsko:7140",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7140"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Soil texture",
+"Soil structure",
+"Soil color",
+"Soil depth",
+"None of these"
+],
+"page": "",
+"q": "What is the primary factor that influences aeration, permeability, and water capacity in soil?",
+"serial": "1bxM1Q-4:1612",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1612"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Thomas Fairchild \u2013 Sweet William and Red Campion",
+"Joseph Koetter \u2013 Tobacco varieties A and B",
+"John Le Couteur \u2013 Wheat and Barley",
+"De Vilmorin \u2013 Sugar beet and Beetroot",
+"None of these"
+],
+"page": "",
+"q": "Who developed the world's first interspecific hybrid, and which two species were involved?",
+"serial": "1UgnIe-g:2",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"India",
+"Sudan",
+"Australia",
+"Brazil",
+"None of these"
+],
+"page": "",
+"q": "Which country has a world monopoly on Gum Karaya?",
+"serial": "1UgnIe-g:2793",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2793"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C4 photosynthesis",
+"deep rooted",
+"shallow rooted",
+"nitrogen fixation only",
+"None of these"
+],
+"page": "",
+"q": "Among pulses, pigeon pea is especially noted for which physiological trait?",
+"serial": "17U0MEc-:667",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:667"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Arka Meghali",
+"Arka Vikas",
+"Pusa H-1",
+"Punjab Uphar",
+"None of these"
+],
+"page": "",
+"q": "Which variety is noted for suitability under drought conditions?",
+"serial": "1bxM1Q-4:3128",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3128"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Hot and dry weather",
+"Moderately cool, wet weather at 23\u00b0C",
+"Extremely cold and dry weather",
+"High humidity with 30\u00b0C temperature",
+"None of these"
+],
+"page": "",
+"q": "What weather conditions are favorable for the development of Black scurf disease?",
+"serial": "1sUgWsko:3856",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3856"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Scape",
+"Pedicel",
+"Flagella",
+"Basal part",
+"None of these"
+],
+"page": "",
+"q": "Which part of the insect antenna contains the tympanal/Johnston's organ?",
+"serial": "17U0MEc-:1717",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1717"
+}
+],
+"set_no": 20,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
