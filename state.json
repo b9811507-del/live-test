@@ -86730,9 +86730,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 304,
 "names": {},
+"plan": {
+"batch": 2,
+"bidx_next": 304,
+"built_at": "2026-10-02T10:57:39+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 85-90",
+"pages_blocks": [
+"85-86",
+"87-88",
+"89-90"
+],
+"questions": [
+{
+"expl": "Groundnut pods grow underground (positively geotropic) and its yield is strongly affected by environmental conditions, making it unpredictable.",
+"key": 1,
+"o": [
+"Its pods develop above ground and are highly variable in size",
+"Its pods are borne underground and its performance is highly influenced by environmental factors",
+"It requires a very long growing season to reach maturity",
+"It is a C4 plant with variable photosynthetic rates",
+"None of these"
+],
+"page": "85-86",
+"q": "Groundnut is called the \"unpredictable legume\" because of which of the following characteristics?",
+"serial": "441",
+"src_row": 284,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "85-86:441"
+},
+{
+"expl": "The text states that the major pest in light soils of North\u2011Western India is the White grub.",
+"key": 1,
+"o": [
+"Aphids",
+"White grub",
+"Thrips",
+"Cutworm",
+"None of these"
+],
+"page": "85-86",
+"q": "Which pest is the major problem for groundnut grown in the light soils of North\u2011Western India?",
+"serial": "442",
+"src_row": 285,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "85-86:442"
+},
+{
+"expl": "According to the classification table, Spanish group peanuts have the highest oil content.",
+"key": 1,
+"o": [
+"Protein content",
+"Oil content",
+"Seed dormancy period",
+"Yield per hectare",
+"None of these"
+],
+"page": "85-86",
+"q": "The Spanish group of peanut cultivars is best known for having the highest what?",
+"serial": "443",
+"src_row": 286,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "85-86:443"
+},
+{
+"expl": "The source notes that spreading type varieties have dormancy of 2.0\u20112.5 months.",
+"key": 2,
+"o": [
+"0.5 \u2013 1.0 months",
+"1.0 \u2013 1.5 months",
+"2.0 \u2013 2.5 months",
+"3.0 \u2013 3.5 months",
+"None of these"
+],
+"page": "85-86",
+"q": "Spreading or trailing type groundnut varieties exhibit a dormancy period of how many months?",
+"serial": "444",
+"src_row": 287,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "85-86:444"
+},
+{
+"expl": "NAA at 20 ppm is mentioned to curb vegetative growth and improve pod number and yield.",
+"key": 2,
+"o": [
+"Ethrel",
+"Mallic hydrazide",
+"NAA (Planofix)",
+"BAP",
+"None of these"
+],
+"page": "85-86",
+"q": "Application of which plant growth regulator at 20 ppm reduces excessive vegetative growth and increases pod yield in groundnut?",
+"serial": "445",
+"src_row": 288,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "85-86:445"
+},
+{
+"expl": "The text states nodules appear 15 DAS in groundnut, 10 DAS in soybean, and 20 DAS in chickpea.",
+"key": 1,
+"o": [
+"Soybean: 5 DAS, Chickpea: 10 DAS",
+"Soybean: 10 DAS, Chickpea: 20 DAS",
+"Soybean: 20 DAS, Chickpea: 10 DAS",
+"Soybean: 15 DAS, Chickpea: 15 DAS",
+"None of these"
+],
+"page": "85-86",
+"q": "In groundnut, nodules typically appear 15 days after sowing. How does this compare to soybean and chickpea?",
+"serial": "446",
+"src_row": 289,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "85-86:446"
+},
+{
+"expl": "Calcium is essential for pod development and is taken up through the pegs; its deficiency causes popping.",
+"key": 3,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Calcium",
+"None of these"
+],
+"page": "87-88",
+"q": "Which nutrient is most critical for groundnut development and is absorbed through the pegs?",
+"serial": "451",
+"src_row": 290,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:451"
+},
+{
+"expl": "Gypsum should be banded at 30 DAS, coinciding with the peak flowering stage.",
+"key": 2,
+"o": [
+"10 days after sowing (DAS)",
+"20 DAS",
+"30 DAS",
+"40 DAS",
+"None of these"
+],
+"page": "87-88",
+"q": "At what growth stage should band placement of 250 kg ha\u207b\u00b9 gypsum be applied?",
+"serial": "452",
+"src_row": 291,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:452"
+},
+{
+"expl": "Groundnut grows best in soils with pH 6.0\u20136.5.",
+"key": 1,
+"o": [
+"5.5\u20136.0",
+"6.0\u20136.5",
+"6.5\u20137.0",
+"7.0\u20137.5",
+"None of these"
+],
+"page": "87-88",
+"q": "What is the optimum soil pH range for groundnut cultivation?",
+"serial": "453",
+"src_row": 292,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:453"
+},
+{
+"expl": "Groundnut produces 7 flowers for every 4 pegs and 1 pod.",
+"key": 2,
+"o": [
+"5 : 3 : 2",
+"6 : 3 : 1",
+"7 : 4 : 1",
+"4 : 2 : 1",
+"None of these"
+],
+"page": "87-88",
+"q": "The ratio of flower : peg : pod in groundnut is?",
+"serial": "454",
+"src_row": 293,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:454"
+},
+{
+"expl": "Field emergence is intermediate; epigeal germination has been observed.",
+"key": 2,
+"o": [
+"Strictly epigeal",
+"Strictly hypogeal",
+"Intermediate",
+"Always subterranean",
+"None of these"
+],
+"page": "87-88",
+"q": "Groundnut seed germination is best described as?",
+"serial": "455",
+"src_row": 294,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:455"
+},
+{
+"expl": "Aflatoxin is produced by A. flavus, A. parasiticus and A. nomius, not by A. niger.",
+"key": 3,
+"o": [
+"A. flavus",
+"A. parasiticus",
+"A. nomius",
+"A. niger",
+"None of these"
+],
+"page": "87-88",
+"q": "Which of the following fungi is NOT a known producer of aflatoxin in groundnut?",
+"serial": "456",
+"src_row": 295,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:456"
+},
+{
+"expl": "Shelling percentage is about 70% of the unshelled pod weight.",
+"key": 2,
+"o": [
+"50%",
+"60%",
+"70%",
+"80%",
+"None of these"
+],
+"page": "87-88",
+"q": "What is the average shelling percentage of groundnut?",
+"serial": "457",
+"src_row": 296,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "87-88:457"
+},
+{
+"expl": "WHO allows 30 parts per billion of aflatoxin in groundnut, whereas many European countries set a stricter 5 ppb limit.",
+"key": 1,
+"o": [
+"5 ppb",
+"30 ppb",
+"50 ppb",
+"100 ppb",
+"None of these"
+],
+"page": "89-90",
+"q": "What is the permissible limit of aflatoxin in groundnut as set by the WHO?",
+"serial": "461",
+"src_row": 297,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:461"
+},
+{
+"expl": "Post\u2011harvest aflatoxin is favoured by moisture >7%; safe drying requires moisture below 5%.",
+"key": 1,
+"o": [
+"7%",
+"5%",
+"9%",
+"12%",
+"None of these"
+],
+"page": "89-90",
+"q": "Which moisture content is considered safe for drying groundnuts to prevent post\u2011harvest aflatoxin?",
+"serial": "462",
+"src_row": 298,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:462"
+},
+{
+"expl": "DT1 encodes the determinate growth habit; DT2 encodes indeterminate growth.",
+"key": 1,
+"o": [
+"Indeterminate growth",
+"Determinate growth",
+"Early flowering",
+"Late maturity",
+"None of these"
+],
+"page": "89-90",
+"q": "The gene DT1 in soybean is responsible for which growth habit?",
+"serial": "463",
+"src_row": 299,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:463"
+},
+{
+"expl": "Martin\u2019s classification uses the shape of the soybean seed.",
+"key": 1,
+"o": [
+"Colour of seed\u2011coat and embryo",
+"Shape of soybean seed",
+"Size of pods",
+"Maturity period",
+"None of these"
+],
+"page": "89-90",
+"q": "Martin's classification of soybeans is based on what characteristic?",
+"serial": "464",
+"src_row": 300,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:464"
+},
+{
+"expl": "The optimum temperature for soybean is 27\u201330 \u00b0C, with a minimum threshold of 10 \u00b0C.",
+"key": 2,
+"o": [
+"10\u201315 \u00b0C",
+"20\u201325 \u00b0C",
+"27\u201330 \u00b0C",
+"35\u201340 \u00b0C",
+"None of these"
+],
+"page": "89-90",
+"q": "What temperature range is considered ideal for soybean growth?",
+"serial": "465",
+"src_row": 301,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:465"
+},
+{
+"expl": "In sandy soil, soybean seeds are sown at 3\u20134 cm depth.",
+"key": 2,
+"o": [
+"1\u20132 cm",
+"2\u20133 cm",
+"3\u20134 cm",
+"5\u20136 cm",
+"None of these"
+],
+"page": "89-90",
+"q": "For sandy soil, at what depth should soybean seeds be sown?",
+"serial": "466",
+"src_row": 302,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:466"
+},
+{
+"expl": "Bradyrhizobium japonicum is the main Rhizobium species for soybean nodulation.",
+"key": 1,
+"o": [
+"Rhizobium leguminosarum",
+"Bradyrhizobium japonicum",
+"Sinorhizobium meliloti",
+"Azospirillum brasilense",
+"None of these"
+],
+"page": "89-90",
+"q": "Which Rhizobium species is primarily used for soybean inoculation?",
+"serial": "467",
+"src_row": 303,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "89-90:467"
+}
+],
+"rolled": false,
+"row_from": 284,
+"row_to": 304,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 284,
+"seeded_from": "2026-10-01",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-01",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
