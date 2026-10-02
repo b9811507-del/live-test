@@ -86724,8 +86724,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 378,
 "names": {},
+"plan": {
+"bidx_next": 378,
+"built_at": "2026-10-02T14:28:27+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 52-54",
+"pages_list": [
+52,
+53,
+54
+],
+"questions": [
+{
+"expl": "The source lists Flowering, Pegging and Pod formation as critical stages; Harvest is not mentioned.",
+"key": 3,
+"o": [
+"Flowering",
+"Pegging",
+"Pod formation",
+"Harvest",
+"None of these"
+],
+"page": "52",
+"q": "Which of the following is NOT listed as a critical irrigation stage for groundnut?",
+"serial": "358",
+"src_row": 357,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:358"
+},
+{
+"expl": "The text states that Aspergillus flavus group of fungi produces aflatoxin in groundnut.",
+"key": 1,
+"o": [
+"Aspergillus niger",
+"Aspergillus flavus",
+"Penicillium citrinum",
+"Fusarium oxysporum",
+"None of these"
+],
+"page": "52",
+"q": "Aflatoxin contamination in groundnut is primarily caused by infection with which fungus?",
+"serial": "359",
+"src_row": 358,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:359"
+},
+{
+"expl": "Aflatoxin formation is linked to high moisture in stored kernels, as mentioned in the source.",
+"key": 1,
+"o": [
+"Ochratoxin",
+"Aflatoxin",
+"Patulin",
+"Ergot alkaloids",
+"None of these"
+],
+"page": "52",
+"q": "High moisture content in stored groundnut kernels promotes the production of which toxin?",
+"serial": "360",
+"src_row": 359,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:360"
+},
+{
+"expl": "Spreading type yields 20\u201130 q/ha, higher than the 15\u201120 q/ha of the bunch type.",
+"key": 1,
+"o": [
+"Bunch type",
+"Spreading type",
+"Both yield the same",
+"Yield depends only on irrigation",
+"None of these"
+],
+"page": "52",
+"q": "Between bunch type and spreading type groundnut, which yields a higher average production per hectare?",
+"serial": "361",
+"src_row": 360,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:361"
+},
+{
+"expl": "The source specifies a yield of 15\u201120 q/ha for the bunch type.",
+"key": 1,
+"o": [
+"10\u201115 q/ha",
+"15\u201120 q/ha",
+"20\u201125 q/ha",
+"25\u201130 q/ha",
+"None of these"
+],
+"page": "52",
+"q": "What is the typical yield range for the bunch type groundnut?",
+"serial": "362",
+"src_row": 361,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:362"
+},
+{
+"expl": "All three stages\u2014Flowering, Pegging, and Pod formation\u2014are listed as critical irrigation stages.",
+"key": 3,
+"o": [
+"Flowering",
+"Pegging",
+"Pod formation",
+"All of the above",
+"None of these"
+],
+"page": "52",
+"q": "During which growth stages is irrigation most critical for groundnut?",
+"serial": "363",
+"src_row": 362,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:363"
+},
+{
+"expl": "Aflatoxin is produced mainly during storage when kernels have high moisture, as indicated in the source.",
+"key": 1,
+"o": [
+"It occurs mainly during field growth",
+"It occurs mainly during storage due to high moisture",
+"It is produced by bacterial infection",
+"It is unrelated to moisture content",
+"None of these"
+],
+"page": "52",
+"q": "Which statement about aflatoxin formation in groundnut is correct?",
+"serial": "364",
+"src_row": 363,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "52:364"
+},
+{
+"expl": "The source states that pungency in mustard is due to isothiocyanate/thiocyanates (glucose sinigrin).",
+"key": 2,
+"o": [
+"Erucic acid",
+"Glucosinolates",
+"Isothiocyanate",
+"Oleic acid",
+"None of these"
+],
+"page": "53",
+"q": "Which compound is responsible for the pungent taste of mustard?",
+"serial": "365",
+"src_row": 364,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:365"
+},
+{
+"expl": "The government fixed the upper limit of glucosinolates at 0.5%.",
+"key": 1,
+"o": [
+"0.1%",
+"0.5%",
+"1.0%",
+"2.0%",
+"None of these"
+],
+"page": "53",
+"q": "The upper permissible limit of glucosinolates in mustard cake set by the government is?",
+"serial": "366",
+"src_row": 365,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:366"
+},
+{
+"expl": "Among the listed species, B. juncea has 2n=36, the highest chromosome count.",
+"key": 0,
+"o": [
+"B. juncea (2n=36)",
+"B. nigra (2n=16)",
+"B. rapa (2n=20)",
+"B. compestris (2n=20)",
+"None of these"
+],
+"page": "53",
+"q": "Which mustard species has the highest chromosome number (2n)?",
+"serial": "367",
+"src_row": 366,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:367"
+},
+{
+"expl": "The source notes that mustard thrives in dry and cool climates and is grown as a Rabi season crop.",
+"key": 1,
+"o": [
+"Hot and humid",
+"Dry and cool",
+"Wet and tropical",
+"Frosty",
+"None of these"
+],
+"page": "53",
+"q": "Mustard is typically cultivated as a Rabi crop because it prefers which climatic condition?",
+"serial": "368",
+"src_row": 367,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:368"
+},
+{
+"expl": "Canola oils are defined as having less than 2% erucic acid.",
+"key": 2,
+"o": [
+"Greater than 5%",
+"Between 2% and 5%",
+"Less than 2%",
+"Exactly 0.5%",
+"None of these"
+],
+"page": "53",
+"q": "Canola oil is distinguished from regular mustard oil by having erucic acid content:",
+"serial": "369",
+"src_row": 368,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:369"
+},
+{
+"expl": "The source specifies that the fruit of mustard is a siliqua.",
+"key": 2,
+"o": [
+"Legume",
+"Berry",
+"Siliqua",
+"Capsule",
+"None of these"
+],
+"page": "53",
+"q": "The fruit type of mustard plants is called:",
+"serial": "370",
+"src_row": 369,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:370"
+},
+{
+"expl": "The source indicates mustard cake is fed in smaller quantities than canola, so feeding it in larger amounts is false.",
+"key": 2,
+"o": [
+"It is used as cattle feed",
+"It contains glucosinolates that may cause goiter",
+"It can be fed in larger quantities than canola cake",
+"Its erucic acid content is regulated",
+"None of these"
+],
+"page": "53",
+"q": "Which of the following statements about mustard oil cake is FALSE?",
+"serial": "371",
+"src_row": 370,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "53:371"
+},
+{
+"expl": "Mustard thrives when ambient temperature stays between 18\u00b0C and 25\u00b0C. Temperatures outside this range reduce growth and yield.",
+"key": 0,
+"o": [
+"18\u201325\u00b0C",
+"10\u201315\u00b0C",
+"25\u201330\u00b0C",
+"30\u201335\u00b0C",
+"None of these"
+],
+"page": "54",
+"q": "What temperature range is optimal for mustard growth?",
+"serial": "372",
+"src_row": 371,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:372"
+},
+{
+"expl": "Mustard performs best in slightly acidic to neutral soils, specifically pH 6.5 to 7.5. Outside this range nutrient availability declines.",
+"key": 1,
+"o": [
+"5.0\u20136.0",
+"6.5\u20137.5",
+"7.5\u20138.5",
+"8.0\u20139.0",
+"None of these"
+],
+"page": "54",
+"q": "What is the ideal soil pH for cultivating mustard?",
+"serial": "373",
+"src_row": 372,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:373"
+},
+{
+"expl": "Rain\u2011fed mustard receives half the nutrient dose of irrigated crops, i.e., 30\u201120\u201120 NPK applied as a basal dose.",
+"key": 1,
+"o": [
+"60-40-40",
+"30-20-20",
+"40-20-20",
+"20-10-10",
+"None of these"
+],
+"page": "54",
+"q": "Which NPK formulation is recommended for rain\u2011fed mustard cultivation?",
+"serial": "374",
+"src_row": 373,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:374"
+},
+{
+"expl": "The critical leaf N level for mustard at 60 DAS lies between 6.07% and 6.62% of dry weight, indicating adequate nitrogen status.",
+"key": 2,
+"o": [
+"2\u20133%",
+"4\u20135%",
+"6.07\u20136.62%",
+"8\u20139%",
+"None of these"
+],
+"page": "54",
+"q": "At 60 days after sowing, the critical nitrogen concentration in the top 2\u20113rd leaf of mustard is about:",
+"serial": "375",
+"src_row": 374,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:375"
+},
+{
+"expl": "Seeds planted deeper than 6 cm may have reduced emergence; 6 cm is the stated maximum depth for good germination.",
+"key": 2,
+"o": [
+"1 cm",
+"3\u20134 cm",
+"6 cm",
+"8 cm",
+"None of these"
+],
+"page": "54",
+"q": "For better germination, mustard seeds should be sown at a maximum depth of:",
+"serial": "376",
+"src_row": 375,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:376"
+},
+{
+"expl": "Mustard normally receives two irrigations: the first at rosette (20\u201330 DAS) and the second at siliquaatage (50\u201360 DAS).",
+"key": 1,
+"o": [
+"One irrigation at rosette stage",
+"Two irrigations at rosette (20\u201330 DAS) and siliquaatage (50\u201360 DAS)",
+"Three irrigations at rosette, vegetative and pod\u2011filling stages",
+"Four irrigations at seedling, rosette, flowering and pod\u2011filling stages",
+"None of these"
+],
+"page": "54",
+"q": "How many irrigations are generally recommended for mustard in normal soils, and at which stages?",
+"serial": "377",
+"src_row": 376,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:377"
+},
+{
+"expl": "High rainfall (often accompanied by high humidity and cloudiness) during flowering hampers pollination and reduces seed set in mustard.",
+"key": 1,
+"o": [
+"Low humidity",
+"High rainfall",
+"Moderate temperature",
+"High sunlight",
+"None of these"
+],
+"page": "54",
+"q": "Which climatic condition is undesirable during mustard flowering?",
+"serial": "378",
+"src_row": 377,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "54:378"
+}
+],
+"row_from": 357,
+"row_to": 378,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 357,
+"seeded_from": "2026-10-01"
+},
 "qidx": 0,
+"seeded_from": "2026-10-01",
+"skips": [],
 "step": 0
 },
 "malwa": {
