@@ -92556,9 +92556,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 324,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 324,
+"built_at": "2026-10-03T10:57:09+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 91-96",
+"pages_blocks": [
+"91-92",
+"93-94",
+"95-96"
+],
+"questions": [
+{
+"expl": "Gobhi sarson contains 42% oleic acid, the highest among the listed species.",
+"key": 0,
+"o": [
+"Gobhi sarson (Brassica napus)",
+"Indian mustard (Brassica juncea)",
+"Yellow sarson (B. campestris var. Yellow sarson)",
+"Brown sarson (B. campestris var. Brown sarson)",
+"None of these"
+],
+"page": "91-92",
+"q": "Which rapeseed\u2013mustard species has the highest oleic acid content?",
+"serial": "471",
+"src_row": 304,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:471"
+},
+{
+"expl": "White mustard is used mainly for condiments and is distinguished by having 2n = 24 chromosomes.",
+"key": 0,
+"o": [
+"White mustard (Sinapis alba)",
+"Black mustard (B. nigra)",
+"Indian mustard (B. juncea)",
+"Ethiopian mustard (B. carinata)",
+"None of these"
+],
+"page": "91-92",
+"q": "Which mustard variety is primarily used for condiments and has a chromosome number of 2n = 24?",
+"serial": "472",
+"src_row": 305,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:472"
+},
+{
+"expl": "Hydrolysis of sinigrin by myrosinase produces allyl isothiocyanate, responsible for mustard\u2019s bitter taste and aroma.",
+"key": 2,
+"o": [
+"Sinigrin",
+"Myrosinase",
+"Allyl isothiocyanate",
+"Glucosinolate",
+"None of these"
+],
+"page": "91-92",
+"q": "The pungency of mustard is mainly due to the compound formed when sinigrin is hydrolysed by myrosinase. What is this compound?",
+"serial": "473",
+"src_row": 306,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:473"
+},
+{
+"expl": "Ethiopian mustard (B. carinata) is noted for drought tolerance and biofuel potential.",
+"key": 2,
+"o": [
+"Indian mustard (B. juncea)",
+"Black mustard (B. nigra)",
+"Ethiopian mustard (B. carinata)",
+"White mustard (S. alba)",
+"None of these"
+],
+"page": "91-92",
+"q": "Which mustard species is valued for its drought tolerance and potential as a biofuel feedstock?",
+"serial": "474",
+"src_row": 307,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:474"
+},
+{
+"expl": "Rajasthan accounts for 45% of both production and area for rapeseed\u2011mustard in India.",
+"key": 0,
+"o": [
+"Rajasthan",
+"Haryana",
+"Gujarat",
+"Punjab",
+"None of these"
+],
+"page": "91-92",
+"q": "In India, which state contributes about 45% of rapeseed\u2011mustard production and area?",
+"serial": "475",
+"src_row": 308,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:475"
+},
+{
+"expl": "Brown sarson has the lowest average test weight, about 2 gm, compared to others.",
+"key": 1,
+"o": [
+"Indian mustard (B. juncea)",
+"Brown sarson (B. campestris var. Brown sarson)",
+"Gobhi sarson (B. napus)",
+"Yellow sarson (B. campestris var. Yellow sarson)",
+"None of these"
+],
+"page": "91-92",
+"q": "Which species has the lowest average test weight among the listed rapeseed\u2011mustard varieties?",
+"serial": "476",
+"src_row": 309,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:476"
+},
+{
+"expl": "Oleic acid is responsible for the longer shelf\u2011life of mustard oil.",
+"key": 2,
+"o": [
+"Linoleic acid",
+"Linolenic acid",
+"Oleic acid",
+"Erucic acid",
+"None of these"
+],
+"page": "91-92",
+"q": "Which fatty acid imparts a longer self\u2011life to mustard oil?",
+"serial": "477",
+"src_row": 310,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "91-92:477"
+},
+{
+"expl": "Indian mustard is described as self\u2011compatible and self\u2011pollinating, unlike Toria and Taramira which are self\u2011incompatible.",
+"key": 0,
+"o": [
+"Indian mustard",
+"Toria",
+"Taramira",
+"Sarson",
+"None of these"
+],
+"page": "93-94",
+"q": "Which mustard variety is self\u2011pollinating?",
+"serial": "481",
+"src_row": 311,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "93-94:481"
+},
+{
+"expl": "Canola was coined for double\u2011zero rapeseed varieties developed in Canada, hence the name.",
+"key": 1,
+"o": [
+"Single zero rapeseed",
+"Double zero rapeseed",
+"Triple zero rapeseed",
+"Zero zero rapeseed",
+"None of these"
+],
+"page": "93-94",
+"q": "What does the term \"canola\" originally refer to?",
+"serial": "482",
+"src_row": 312,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "93-94:482"
+},
+{
+"expl": "PGSH 51, a CMS\u2011based hybrid, was released in 1994 and is the first commercial Brassica napus hybrid.",
+"key": 0,
+"o": [
+"PGSH 51",
+"NRCHB 506",
+"Pusa Double Zero Mustard 31",
+"Pusa Jai Kisan",
+"None of these"
+],
+"page": "93-94",
+"q": "Which was the first commercial hybrid of Brassica napus?",
+"serial": "483",
+"src_row": 313,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "93-94:483"
+},
+{
+"expl": "The text states the optimum time for toria is mid\u2011September, with a window from end of August to early September.",
+"key": 0,
+"o": [
+"Mid\u2011September",
+"End of August",
+"Early September",
+"Mid\u2011October",
+"None of these"
+],
+"page": "93-94",
+"q": "When is the optimum sowing period for toria in Rajasthan?",
+"serial": "484",
+"src_row": 314,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "93-94:484"
+},
+{
+"expl": "Mustard prefers a neutral to slightly acidic soil pH of 6.0 to 7.5.",
+"key": 1,
+"o": [
+"5.0\u20116.0",
+"6.0\u20117.5",
+"7.5\u20118.5",
+"4.0\u20115.5",
+"None of these"
+],
+"page": "93-94",
+"q": "What is the ideal soil pH range for mustard cultivation?",
+"serial": "485",
+"src_row": 315,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "93-94:485"
+},
+{
+"expl": "Branching, occurring around 30 DAS, is identified as a moisture\u2011sensitive stage for mustard.",
+"key": 1,
+"o": [
+"Germination",
+"Branching",
+"Pod formation",
+"Flowering",
+"None of these"
+],
+"page": "93-94",
+"q": "Which growth stage of mustard is most moisture\u2011sensitive at 30 days after sowing (DAS)?",
+"serial": "486",
+"src_row": 316,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "93-94:486"
+},
+{
+"expl": "Additive series intercropping involves combining two crops in a fixed ratio; Mustard + Potato is cited as such.",
+"key": 1,
+"o": [
+"Wheat + Mustard",
+"Mustard + Potato",
+"Chickpea + Mustard",
+"Sesame + Mustard",
+"None of these"
+],
+"page": "95-96",
+"q": "Which of the following is an example of additive series intercropping?",
+"serial": "491",
+"src_row": 317,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:491"
+},
+{
+"expl": "The source states Chickpea + Mustard optimum ratio is 3 or 4:1; 3:1 is a valid example.",
+"key": 1,
+"o": [
+"1:9",
+"3:1",
+"4:1",
+"9:1",
+"None of these"
+],
+"page": "95-96",
+"q": "What is the optimum planting ratio of Chickpea to Mustard in intercropping?",
+"serial": "492",
+"src_row": 318,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:492"
+},
+{
+"expl": "Harvest moisture content is specified as 30\u201140%.",
+"key": 2,
+"o": [
+"10\u201120%",
+"20\u201130%",
+"30\u201140%",
+"40\u201150%",
+"None of these"
+],
+"page": "95-96",
+"q": "At the time of harvesting, what is the seed moisture content range of rapeseed\u2011mustard?",
+"serial": "493",
+"src_row": 319,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:493"
+},
+{
+"expl": "The text lists South Europe and North Africa as Taramira\u2019s origin.",
+"key": 1,
+"o": [
+"South America",
+"South Europe and North Africa",
+"East Asia",
+"North America",
+"None of these"
+],
+"page": "95-96",
+"q": "Taramira originates from which regions?",
+"serial": "494",
+"src_row": 320,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:494"
+},
+{
+"expl": "Sesamin and sesamol confer stability to sesame oil.",
+"key": 2,
+"o": [
+"Linoleic acid",
+"Oleic acid",
+"Sesamin and sesamol",
+"Acetyl pyrazine",
+"None of these"
+],
+"page": "95-96",
+"q": "Sesame oil\u2019s long shelf life is mainly due to which constituents?",
+"serial": "495",
+"src_row": 321,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:495"
+},
+{
+"expl": "Safe storage moisture is specified as 5%.",
+"key": 1,
+"o": [
+"2%",
+"5%",
+"10%",
+"15%",
+"None of these"
+],
+"page": "95-96",
+"q": "What is the optimal seed moisture content for safe storage of sesame?",
+"serial": "496",
+"src_row": 322,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:496"
+},
+{
+"expl": "Sesame requires 350\u2011450 mm of water during its growth cycle.",
+"key": 1,
+"o": [
+"200\u2011300 mm",
+"350\u2011450 mm",
+"500\u2011600 mm",
+"700\u2011800 mm",
+"None of these"
+],
+"page": "95-96",
+"q": "What is the total water requirement for sesame cultivation?",
+"serial": "497",
+"src_row": 323,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "95-96:497"
+}
+],
+"rolled": false,
+"row_from": 304,
+"row_to": 324,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 304,
+"seeded_from": "2026-10-02",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-02",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
