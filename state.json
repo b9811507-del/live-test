@@ -92545,7 +92545,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-03T17:57:24+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Grow more, feed more",
+"Feed the soil, not the plant",
+"From farm to table",
+"Sustainable yields for all",
+"None of these"
+],
+"page": "",
+"q": "What is the slogan associated with ecological farming?",
+"serial": "1sUgWsko:4811",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4811"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dehorning",
+"Thinning out",
+"Heading back",
+"Bulk pruning",
+"None of these"
+],
+"page": "",
+"q": "Which pruning technique involves cutting away the main limbs or thick major branches to reduce overcrowding?",
+"serial": "1sUgWsko:701",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:701"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cotton",
+"Jute",
+"Soybean",
+"Potato",
+"None of these"
+],
+"page": "",
+"q": "Which crop is known as the 'White gold'?",
+"serial": "1sUgWsko:4341",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4341"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"27",
+"28",
+"29",
+"30",
+"None of these"
+],
+"page": "",
+"q": "According to A.O. Imms, how many insect orders are recognized, including the recent addition?",
+"serial": "1sUgWsko:1705",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1705"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Khillar",
+"Red Kandhari",
+"Krishna Valley",
+"Nimari",
+"None of these"
+],
+"page": "",
+"q": "Which of the following breeds is shared between Maharashtra and Karnataka?",
+"serial": "1sUgWsko:3029",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3029"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Creeping Inflation",
+"Walking Inflation",
+"Running Inflation",
+"Galloping Inflation",
+"None of these"
+],
+"page": "",
+"q": "Which type of inflation is characterized by a rate of 3-10% per year?",
+"serial": "128DIQLj:2434",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2434"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Colour of seed\u2011coat and embryo",
+"Shape of soybean seed",
+"Size of pods",
+"Maturity period",
+"None of these"
+],
+"page": "",
+"q": "Martin's classification of soybeans is based on what characteristic?",
+"serial": "128DIQLj:464",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:464"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Sterilization",
+"Refrigeration",
+"Cellar storage",
+"Freezing",
+"None of these"
+],
+"page": "",
+"q": "Which preservation method is best suited for pure fruit juice according to the source?",
+"serial": "1sUgWsko:1531",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1531"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"The Nature and Properties of Soil",
+"Soil Fertility and Fertilizers",
+"Text Book of Soil Science",
+"Introductory Soil Science",
+"None of these"
+],
+"page": "",
+"q": "Which book is authored by N. C. Brady?",
+"serial": "128DIQLj:1597",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1597"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sulphur fungicide",
+"Zineb",
+"Agrosan GN",
+"Vitavax",
+"None of these"
+],
+"page": "",
+"q": "Which fungicide is commonly recommended for controlling Powdery mildew in crops?",
+"serial": "1bxM1Q-4:2584",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2584"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Homozygosity for deleterious recessive alleles",
+"Heterozygosity",
+"Genetic diversity between parents",
+"Masking of recessive alleles",
+"None of these"
+],
+"page": "",
+"q": "What is the main cause of inbreeding depression according to the dominance hypothesis?",
+"serial": "1UgnIe-g:227",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:227"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Only the name of the active application",
+"Only the name of the open file",
+"Both the application name and the document name",
+"The file path of the document",
+"None of these"
+],
+"page": "",
+"q": "What does the title bar display in MS Word according to the source?",
+"serial": "1bxM1Q-4:3783",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3783"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Desi",
+"Kabuli",
+"Both",
+"Neither",
+"None of these"
+],
+"page": "",
+"q": "Which type of chickpea has higher fiber content and a lower glycemic index?",
+"serial": "1bxM1Q-4:711",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:711"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"0.5-0.75 kg/ha",
+"1.0 kg/ha",
+"0.50 kg/ha",
+"25 g/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the application rate of Atrazine for maize/bajra/sorghum?",
+"serial": "17U0MEc-:919",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:919"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Presence of beard",
+"Curved horns",
+"Short legs",
+"Black coat",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a unique physical trait shared by both male and female Jamunapari goats?",
+"serial": "1sUgWsko:3316",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3316"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"5-5.5",
+"5.5-7",
+"5.5-7.5",
+"6-7.5",
+"None of these"
+],
+"page": "",
+"q": "What is the soil pH range for Tobacco?",
+"serial": "1sUgWsko:4787",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4787"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lysine",
+"Tryptophan",
+"Methionine",
+"Phenylalanine",
+"None of these"
+],
+"page": "",
+"q": "Which amino acid is essential for cuticular sclerotization in insects?",
+"serial": "1UgnIe-g:1954",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1954"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"China",
+"India",
+"United States",
+"Brazil",
+"None of these"
+],
+"page": "",
+"q": "Which country is the main producer and consumer of cumin?",
+"serial": "17U0MEc-:772",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:772"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"National Bureau of Plant Genetic Resources (NBPGR)",
+"Indian Council of Agricultural Research (ICAR)",
+"Forest Research Institute, Dehradun",
+"Central Institute of Forestry, Ranchi",
+"None of these"
+],
+"page": "",
+"q": "Which institute is tasked with the introduction of germplasm of forest trees in India?",
+"serial": "1UgnIe-g:117",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:117"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To deter insects from laying eggs",
+"To make the environment unattractive to insects",
+"To cause insects to move towards the attractant",
+"To induce reproductive sterility in insects",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of insect attractants in pest management?",
+"serial": "1UgnIe-g:2125",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2125"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Citrullus lanatus var. fistulousus Schrad",
+"Trichosanthes dioica",
+"Benincasa hispida",
+"Luffa cylindrica",
+"None of these"
+],
+"page": "",
+"q": "What is the botanical name of Tinda/Round Melon?",
+"serial": "1bxM1Q-4:3186",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3186"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2-200 mm",
+"0.1-2 mm",
+"200-2000 mm",
+"0.01-0.1 mm",
+"None of these"
+],
+"page": "",
+"q": "What is the size range of a soil clod?",
+"serial": "17U0MEc-:1319",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1319"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sandy loam",
+"Loam",
+"Clay loam",
+"Sand",
+"None of these"
+],
+"page": "",
+"q": "Which soil texture has a CEC of 10-15 c mol (P\u207a)/kg?",
+"serial": "1sUgWsko:7028",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7028"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"GA3",
+"Ethrel",
+"NAA",
+"TIBA",
+"None of these"
+],
+"page": "",
+"q": "Which hormone is known to induce maleness in cucurbits?",
+"serial": "1YcJWVgW:765",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:765"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dry & warm weather",
+"Wet & cool weather",
+"Hot & humid weather",
+"Cold & dry weather",
+"None of these"
+],
+"page": "",
+"q": "Which weather conditions are favorable for powdery mildew disease?",
+"serial": "1UgnIe-g:1212",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1212"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Using gypsum",
+"Using iron pyrite",
+"Green manuring",
+"Using urea",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a recommended practice for the reclamation of alkali soils?",
+"serial": "17U0MEc-:1182",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1182"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2n - 1",
+"2n + 1",
+"2n - 2",
+"2n + 2",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome count in a monosomic individual?",
+"serial": "17U0MEc-:2479",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2479"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Peter Decresenzi",
+"Van Helmont",
+"Jethro Tull",
+"Arthur Young",
+"None of these"
+],
+"page": "",
+"q": "Which scientist concluded that the main principle of vegetation is water?",
+"serial": "17U0MEc-:289",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:289"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"MP is increasing",
+"MP is decreasing",
+"MP is constant",
+"MP is zero",
+"None of these"
+],
+"page": "",
+"q": "What is the relationship between Total Product (TP) and Marginal Product (MP) when TP is increasing at an increasing rate?",
+"serial": "128DIQLj:2581",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2581"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Creating and augmenting basic rural infrastructure",
+"Promoting agricultural research",
+"Enhancing marine fishing",
+"Developing horticulture",
+"None of these"
+],
+"page": "",
+"q": "What was the main objective of Bharat Nirman?",
+"serial": "17U0MEc-:89",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:89"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sorghum",
+"Pearl millet",
+"Maize",
+"Wheat",
+"None of these"
+],
+"page": "",
+"q": "Which crop is described as a drought\u2011escaping crop?",
+"serial": "128DIQLj:314",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:314"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Better water retention",
+"Better drainage",
+"Higher nutrient retention",
+"Higher bulk density",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an advantage of loamy soils over sandy soils?",
+"serial": "17U0MEc-:1047",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1047"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Broad casting",
+"Dibbling",
+"Drilling",
+"Hill dropping",
+"None of these"
+],
+"page": "",
+"q": "Which seeding method involves dropping seeds in furrow lines in a continuous flow?",
+"serial": "1bxM1Q-4:3997",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3997"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"24 months",
+"30 months",
+"35 months",
+"40 months",
+"None of these"
+],
+"page": "",
+"q": "At what age do Deoni cattle typically have their first calving?",
+"serial": "1sUgWsko:2944",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2944"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Rich in secondary metabolites",
+"Contain essential oils",
+"Used as food crops",
+"Grown only in tropical regions",
+"None of these"
+],
+"page": "",
+"q": "What is the primary distinguishing feature of aromatic plants?",
+"serial": "1sUgWsko:1500",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1500"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"B horizon",
+"A horizon",
+"Both equally",
+"Neither, it is a new horizon",
+"None of these"
+],
+"page": "",
+"q": "In a transitional horizon labeled AB, which horizon\u2019s characteristics dominate?",
+"serial": "128DIQLj:1126",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1126"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10.5 cm",
+"12.3 cm",
+"17.45 cm",
+"20.1 cm",
+"None of these"
+],
+"page": "",
+"q": "Given wet weight 280 g, dry weight 220 g, bulk density 1.6 g/cm\u00b3, depth 40 cm, what is water content on depth basis?",
+"serial": "128DIQLj:1215",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1215"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Infiltration",
+"Percolation",
+"Seepage",
+"Leaching",
+"None of these"
+],
+"page": "",
+"q": "In unsaturated soil, the process of water entering the soil surface is called?",
+"serial": "128DIQLj:1213",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1213"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Kaolinite",
+"Montmorillonite",
+"Chlorite",
+"Mica",
+"None of these"
+],
+"page": "",
+"q": "Which mineral is an example of a 2:1 type silicate clay?",
+"serial": "17U0MEc-:1094",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1094"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Auto content wizard",
+"Tool bar",
+"Templates",
+"Recycle Bin",
+"None of these"
+],
+"page": "",
+"q": "Which feature in presentation software helps determine the content and organization by asking simple questions?",
+"serial": "1bxM1Q-4:3851",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3851"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Banana",
+"Coconut",
+"Kiwi fruit",
+"Walnut",
+"None of these"
+],
+"page": "",
+"q": "Which crop is simultaneously described as the \"Oldest cultivated tropical fruit\" and also appears under the nickname \"Adams fig\"?",
+"serial": "1bxM1Q-4:280",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:280"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Law of Dominance",
+"Law of Segregation",
+"Law of Independent Assortment",
+"Law of Incomplete Dominance",
+"None of these"
+],
+"page": "",
+"q": "Which Mendelian law states that allele pairs separate during gamete formation and reunite randomly during fertilization?",
+"serial": "1sUgWsko:5951",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5951"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Vitrification",
+"Somaclonal variation",
+"Androgenesis",
+"Transplantation shock",
+"None of these"
+],
+"page": "",
+"q": "What is the term for heritable variations that arise in plants regenerated from tissue culture technique?",
+"serial": "1UgnIe-g:1348",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1348"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2 to 5 kg",
+"5 to 10 kg",
+"10 to 15 kg",
+"15 to 20 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the daily hay or straw consumption for an adult animal?",
+"serial": "1sUgWsko:3107",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3107"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Field pea",
+"Garden pea",
+"Both",
+"Neither",
+"None of these"
+],
+"page": "",
+"q": "Which type of pea is primarily used for dal or pulse production?",
+"serial": "1bxM1Q-4:743",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:743"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Arka Navneet",
+"Arka Keshav",
+"Pusa Kranti",
+"Pant Samrat",
+"None of these"
+],
+"page": "",
+"q": "Which hybrid variety of brinjal has round-shaped fruits?",
+"serial": "1YcJWVgW:558",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:558"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Opuntia",
+"Parthenium",
+"Lantana",
+"Phalaris minor",
+"None of these"
+],
+"page": "",
+"q": "Which weed is classified as a xerophytic weed?",
+"serial": "128DIQLj:963",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:963"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Late vegetative phase",
+"Pod development",
+"Flowering",
+"Early pod formation",
+"None of these"
+],
+"page": "",
+"q": "For chickpea, which stage is NOT listed as a critical irrigation stage?",
+"serial": "1bxM1Q-4:1061",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1061"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Freshwater Aquaculture",
+"Brackishwater Aquaculture",
+"Marine Cage Culture",
+"Ornamental Fish Culture",
+"None of these"
+],
+"page": "",
+"q": "Which term describes fish farming done in a mixture of seawater and freshwater?",
+"serial": "1sUgWsko:2234",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2234"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Dense mixed stands in home gardens",
+"Sparse mixed stands in pastures",
+"Shifting cultivation cycles with fallow periods",
+"Planting trees around fish ponds",
+"None of these"
+],
+"page": "",
+"q": "What is an example of a temporal arrangement in agroforestry?",
+"serial": "1sUgWsko:5492",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5492"
+}
+],
+"set_no": 21,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
