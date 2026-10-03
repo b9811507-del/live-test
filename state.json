@@ -92558,9 +92558,11 @@
 "announced_at": "2026-10-03T11:00:00+05:30",
 "ans": {},
 "bidx": 324,
-"lock_ts": 1791005369.9159768,
+"cd": 1,
+"lock_ts": 1791005425.1304464,
 "locked_by": "37099836370",
 "msg_ann": 31266,
+"msg_timer": 31268,
 "names": {},
 "pinned_ann": true,
 "plan": {
@@ -92954,8 +92956,10 @@
 },
 "qidx": 0,
 "seeded_from": "2026-10-02",
+"sent_i": 0,
 "skips": [],
-"step": 1,
+"started_at": "2026-10-03T11:00:23+05:30",
+"step": 2,
 "vol": 0
 }
 }
