@@ -92550,8 +92550,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 399,
 "names": {},
+"plan": {
+"bidx_next": 399,
+"built_at": "2026-10-03T14:28:16+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 55-57",
+"pages_list": [
+55,
+56,
+57
+],
+"questions": [
+{
+"expl": "The table explicitly states that rapeseed leaves are sessile and clasp the stalk, while mustard leaves are stalked but do not clasp.",
+"key": 0,
+"o": [
+"Rapeseed leaves are sessile and clasp the stalk",
+"Mustard leaves are sessile and clasp the stalk",
+"Both have stalked leaves that do not clasp",
+"Rapeseed leaves are longer than mustard leaves",
+"None of these"
+],
+"page": "55",
+"q": "Which characteristic distinguishes rapeseed from mustard in terms of leaf attachment?",
+"serial": "379",
+"src_row": 378,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:379"
+},
+{
+"expl": "The spacing section specifies Toria/Rapeseed spacing as 30 x 10 cm.",
+"key": 1,
+"o": [
+"45 x 20",
+"30 x 10",
+"90 x 20",
+"60 x 30",
+"None of these"
+],
+"page": "55",
+"q": "What is the recommended spacing for Toria (a type of rapeseed) in cm?",
+"serial": "380",
+"src_row": 379,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:380"
+},
+{
+"expl": "B. campestris var. Yellow sarson has an oil content of 45%, which is the highest among the listed options.",
+"key": 0,
+"o": [
+"B. campestris var. Yellow sarson",
+"B. napus",
+"B. juncea",
+"B. nigra",
+"None of these"
+],
+"page": "55",
+"q": "Which of the following Brassica species has the highest oil content as per the given data?",
+"serial": "381",
+"src_row": 380,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:381"
+},
+{
+"expl": "The critical stage of irrigation is explicitly mentioned as the Rosette stage.",
+"key": 1,
+"o": [
+"Seedling stage",
+"Rosette stage",
+"Flowering stage",
+"Harvesting stage",
+"None of these"
+],
+"page": "55",
+"q": "At which stage is irrigation most critical for rapeseed-mustard crops?",
+"serial": "382",
+"src_row": 381,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:382"
+},
+{
+"expl": "The dominant weeds listed are Chenopodium album, C. murale, Convolvulus arvensis, and Melilotus alba. Parthenium hysterophorus is not mentioned.",
+"key": 3,
+"o": [
+"Chenopodium album",
+"Convolvulus arvensis",
+"Melilotus alba",
+"Parthenium hysterophorus",
+"None of these"
+],
+"page": "55",
+"q": "Which weed is NOT listed as a dominant weed in rapeseed-mustard cultivation?",
+"serial": "383",
+"src_row": 382,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:383"
+},
+{
+"expl": "The table states that rapeseed is cross-pollinated, while mustard is self-pollinated.",
+"key": 2,
+"o": [
+"Rapeseed is self-pollinated; mustard is cross-pollinated",
+"Both are self-pollinated",
+"Rapeseed is cross-pollinated; mustard is self-pollinated",
+"Both are cross-pollinated",
+"None of these"
+],
+"page": "55",
+"q": "How does the pollination mechanism differ between rapeseed and mustard?",
+"serial": "384",
+"src_row": 383,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:384"
+},
+{
+"expl": "The table lists B. nigra's common name as Black mustard and its Hindi name as Banarsi rai.",
+"key": 1,
+"o": [
+"Toria",
+"Banarsi rai",
+"Gobhi sarso",
+"Karan rai",
+"None of these"
+],
+"page": "55",
+"q": "Which of the following is a common name for B. nigra as per the given data?",
+"serial": "385",
+"src_row": 384,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "55:385"
+},
+{
+"expl": "Pusa Jai Kisan is noted as the first Brassica juncea variety worldwide.",
+"key": 0,
+"o": [
+"Pusa Jai Kisan",
+"NRCHB-506",
+"Brown sarson KNS 3",
+"Toria Jawahar Toria",
+"None of these"
+],
+"page": "56",
+"q": "Which variety is the first Brassica juncea developed in the world?",
+"serial": "386",
+"src_row": 385,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:386"
+},
+{
+"expl": "NRCHB-506 is the first Indian mustard hybrid, developed by the Directorate of Rapeseed and Mustard Research, Bharatpur, Rajasthan.",
+"key": 0,
+"o": [
+"NRCHB-506",
+"Pusa Jai Kisan",
+"Mustrad Varuna",
+"Yellow sarson PUSA GOLD",
+"None of these"
+],
+"page": "56",
+"q": "The first hybrid mustard variety developed in India originates from which research centre?",
+"serial": "387",
+"src_row": 386,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:387"
+},
+{
+"expl": "The source specifies cleaning and drying rapeseed to 8-10% moisture for storage.",
+"key": 1,
+"o": [
+"5-7%",
+"8-10%",
+"12-14%",
+"15-18%",
+"None of these"
+],
+"page": "56",
+"q": "For safe storage, rapeseed should be dried to what moisture content?",
+"serial": "388",
+"src_row": 387,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:388"
+},
+{
+"expl": "Rain\u2011fed mustard yields are given as 1.5 to 2.0 tonnes per hectare.",
+"key": 1,
+"o": [
+"1.0-1.5 t",
+"1.5-2.0 t",
+"2.0-2.5 t",
+"2.5-3.0 t",
+"None of these"
+],
+"page": "56",
+"q": "What is the typical yield range for rain\u2011fed mustard?",
+"serial": "389",
+"src_row": 388,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:389"
+},
+{
+"expl": "Sugarcane has a chromosome number of 2n = 80.",
+"key": 2,
+"o": [
+"40",
+"60",
+"80",
+"100",
+"None of these"
+],
+"page": "56",
+"q": "What is the diploid chromosome number (2n) of sugarcane?",
+"serial": "390",
+"src_row": 389,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:390"
+},
+{
+"expl": "The source lists sucrose content of sugarcane as 8-21%.",
+"key": 1,
+"o": [
+"Water 66%",
+"Sucrose 8-21%",
+"Juice from stalk 77-78%",
+"Inflorescence is panicle",
+"None of these"
+],
+"page": "56",
+"q": "Which composition figure for sugarcane is correct?",
+"serial": "391",
+"src_row": 390,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:391"
+},
+{
+"expl": "New Guinea, India, and China are cited as origins; Brazil is not mentioned.",
+"key": 3,
+"o": [
+"New Guinea",
+"India",
+"China",
+"Brazil",
+"None of these"
+],
+"page": "56",
+"q": "Which region is NOT mentioned as an origin of sugarcane?",
+"serial": "392",
+"src_row": 391,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "56:392"
+},
+{
+"expl": "The source states that potassium (K) is responsible for translocation of sugar in sugarcane.",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Calcium",
+"None of these"
+],
+"page": "57",
+"q": "Which nutrient plays a key role in the translocation of sugar within the sugarcane plant?",
+"serial": "393",
+"src_row": 392,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:393"
+},
+{
+"expl": "Earthing up is done at 4 months after planting to protect from lodging and improve irrigation efficiency.",
+"key": 2,
+"o": [
+"2 weeks",
+"1 month",
+"4 months",
+"6 months",
+"None of these"
+],
+"page": "57",
+"q": "Earthing up in sugarcane is typically performed at what interval after planting?",
+"serial": "394",
+"src_row": 393,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:394"
+},
+{
+"expl": "The source specifies gasohol is prepared from 80% petrol and 20% alcohol from sugarcane.",
+"key": 1,
+"o": [
+"90% petrol + 10% alcohol",
+"80% petrol + 20% alcohol",
+"70% petrol + 30% alcohol",
+"60% petrol + 40% alcohol",
+"None of these"
+],
+"page": "57",
+"q": "Gasohol, a fuel used in automobiles, is prepared by mixing petrol with alcohol derived from sugarcane in which proportion?",
+"serial": "395",
+"src_row": 394,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:395"
+},
+{
+"expl": "According to the table, 25 tonnes of bagasse are needed to produce 1 tonne of furfural.",
+"key": 2,
+"o": [
+"10",
+"15",
+"25",
+"40",
+"None of these"
+],
+"page": "57",
+"q": "How many tonnes of bagasse are required to produce one tonne of furfural?",
+"serial": "396",
+"src_row": 395,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:396"
+},
+{
+"expl": "Saccharum officinarum is described as having 2n = 80 and is widely cultivated in India.",
+"key": 2,
+"o": [
+"Saccharum barberi",
+"Saccharum sinense",
+"Saccharum officinarum",
+"Saccharum spontaneum",
+"None of these"
+],
+"page": "57",
+"q": "Which sugarcane species has a chromosome number of 2n = 80 and is widely cultivated in India?",
+"serial": "397",
+"src_row": 396,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:397"
+},
+{
+"expl": "Cane tops, when fresh, contain about 2.8 MJ of energy per kg of dry matter.",
+"key": 2,
+"o": [
+"1.5 MJ",
+"2.0 MJ",
+"2.8 MJ",
+"3.5 MJ",
+"None of these"
+],
+"page": "57",
+"q": "The fresh cane tops provide approximately how many megajoules of energy per kilogram of dry matter?",
+"serial": "398",
+"src_row": 397,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:398"
+},
+{
+"expl": "The source mentions Cuba is known as the sugarcane bowl of the world.",
+"key": 2,
+"o": [
+"Brazil",
+"India",
+"Cuba",
+"China",
+"None of these"
+],
+"page": "57",
+"q": "Which country is referred to as the \"sugarcane bowl of the world\"?",
+"serial": "399",
+"src_row": 398,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "57:399"
+}
+],
+"row_from": 378,
+"row_to": 399,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 378,
+"seeded_from": "2026-10-02"
+},
 "qidx": 0,
+"seeded_from": "2026-10-02",
+"skips": [],
 "step": 0
 },
 "malwa": {
