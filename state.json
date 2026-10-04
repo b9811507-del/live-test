@@ -98476,11 +98476,15 @@
 "8567101693": 2
 }
 },
+"answered_total": 370,
 "bidx": 420,
 "cd": 1,
 "expl_in_poll": 21,
 "last_off": 210570287,
+"lb_parts": 1,
 "lb_parts_sent": 1,
+"lb_rows": 28,
+"lb_sent": true,
 "lock_ts": 1791105121.9113045,
 "locked_by": "37190555568",
 "msg_ann": 31414,
@@ -98918,6 +98922,7 @@
 "bidx": 399,
 "seeded_from": "2026-10-03"
 },
+"players": 28,
 "poll_ids": {
 "0": "6201478595517350751",
 "1": "6201478595517350752",
@@ -98948,7 +98953,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-04T14:30:23+05:30",
-"step": 3
+"step": 4
 },
 "malwa": {
 "announced_at": "2026-10-04T11:00:00+05:30",
