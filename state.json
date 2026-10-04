@@ -98057,7 +98057,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-04T17:57:56+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ammonia",
+"Urea",
+"Uric acid",
+"Carbon dioxide",
+"None of these"
+],
+"page": "",
+"q": "What is the main excretory product in terrestrial insects?",
+"serial": "1UgnIe-g:1949",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1949"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Electron carriers",
+"Proton pumps",
+"ATP synthases",
+"Oxygen carriers",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of cytochromes in the respiratory electron transport chain?",
+"serial": "1bxM1Q-4:2683",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2683"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"HUW 243",
+"HD 2643",
+"Raj 3765",
+"K 68",
+"None of these"
+],
+"page": "",
+"q": "Which wheat variety is most suitable for resistance against leaf blight?",
+"serial": "1bxM1Q-4:687",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:687"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mango",
+"Banana",
+"Citrus",
+"Guava",
+"None of these"
+],
+"page": "",
+"q": "Which fruit crop has the largest cultivated area among the listed fruit crops?",
+"serial": "1YcJWVgW:16",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:16"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Primary succession",
+"Secondary succession",
+"Autogenic succession",
+"Allogenic succession",
+"None of these"
+],
+"page": "",
+"q": "Succession that develops on already well\u2011developed soil after a disturbance is called?",
+"serial": "1UgnIe-g:2762",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2762"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Teak",
+"Neem",
+"Abies",
+"Eucalyptus",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a good coppicing species?",
+"serial": "1UgnIe-g:2803",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2803"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Milking Stage",
+"Dough stage",
+"Flowering (Booting) stage",
+"Jointing stage",
+"None of these"
+],
+"page": "",
+"q": "At which stage does the milky fluid in wheat grains turn hard?",
+"serial": "17U0MEc-:555",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:555"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Post emergence",
+"Pre plant incorporation",
+"Pre emergence",
+"Post plant incorporation",
+"None of these"
+],
+"page": "",
+"q": "What does the abbreviation 'POE' stand for in the context of herbicide application?",
+"serial": "17U0MEc-:926",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:926"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Large leaves",
+"Short internodes",
+"Long roots",
+"Thin bark",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a characteristic of plants suitable for Bonsai?",
+"serial": "1bxM1Q-4:3380",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3380"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Size of family",
+"Size of holding",
+"Quantity of production",
+"a and b",
+"None of these"
+],
+"page": "",
+"q": "Which factor does NOT have a positive relationship with marketable surplus?",
+"serial": "1sUgWsko:4069",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4069"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"4-5 kg/ha",
+"2 kg/ha",
+"10-12 kg/ha",
+"40-50 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate for fodder purpose in sorghum?",
+"serial": "17U0MEc-:620",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:620"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Brazilian guava",
+"Strawberry guava",
+"Costa Rican guava",
+"China guava",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a common name for Psidium cattleianum?",
+"serial": "1sUgWsko:1085",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1085"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Claviceps oryzae",
+"Ephelis oryzae",
+"Serochidium oryzae",
+"Neovossia indica",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of the pathogen causing stem rot in crops?",
+"serial": "1bxM1Q-4:2582",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2582"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1 year",
+"2 years",
+"3 years",
+"5 years",
+"None of these"
+],
+"page": "",
+"q": "For how many years can Tilletia barclayana survive in stored grains?",
+"serial": "1sUgWsko:3692",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3692"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Aphids",
+"Mealy bug",
+"Whiteflies",
+"Thrips",
+"None of these"
+],
+"page": "",
+"q": "What is the major pest affecting pineapple plants?",
+"serial": "1bxM1Q-4:3052",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3052"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Phytochrome",
+"Chlorophyll",
+"Carotenoid",
+"Anthocyanin",
+"None of these"
+],
+"page": "",
+"q": "Which pigment transmits photoperiod information to the plant\u2019s hormonal system?",
+"serial": "1UgnIe-g:1693",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1693"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gobhi sarson (Brassica napus)",
+"Indian mustard (Brassica juncea)",
+"Yellow sarson (B. campestris var. Yellow sarson)",
+"Brown sarson (B. campestris var. Brown sarson)",
+"None of these"
+],
+"page": "",
+"q": "Which rapeseed\u2013mustard species has the highest oleic acid content?",
+"serial": "128DIQLj:471",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:471"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Night soil",
+"Sewage water",
+"Sludge",
+"Manure",
+"None of these"
+],
+"page": "",
+"q": "Human excreta (both solid and liquid) are collectively called:",
+"serial": "128DIQLj:1363",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1363"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Soil-borne",
+"Water-borne",
+"Air-borne",
+"Seed-borne",
+"None of these"
+],
+"page": "",
+"q": "What is the primary method of spread for the Blast disease in rice?",
+"serial": "17U0MEc-:2188",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2188"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To allow emergence of a bunch",
+"To remove all canes from arms after harvest",
+"To initiate development of new canes",
+"To bend the plant towards light",
+"None of these"
+],
+"page": "",
+"q": "In double pruning for single cropping, what is the purpose of 'Foundation pruning'?",
+"serial": "1sUgWsko:772",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:772"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Increase berry size",
+"Increase lateral branches",
+"Reduce fruit size",
+"Induce flowering shoots",
+"None of these"
+],
+"page": "",
+"q": "Girdling removes a 2\u20113 mm white strip of bark around the stem to achieve what effect?",
+"serial": "1YcJWVgW:41",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:41"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Law of Independent Assortment",
+"Cell Theory",
+"Double Helix model of DNA",
+"Fluid mosaic model of cell membranes",
+"None of these"
+],
+"page": "",
+"q": "Which theory was proposed by G.J. Mendel in 1865?",
+"serial": "1bxM1Q-4:1885",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1885"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Andhra Pradesh",
+"Gujarat",
+"Maharashtra",
+"Karnataka",
+"None of these"
+],
+"page": "",
+"q": "Which state leads in banana production?",
+"serial": "1sUgWsko:989",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:989"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potato",
+"Onion",
+"Okra",
+"Watermelon",
+"None of these"
+],
+"page": "",
+"q": "Based on soil acidity tolerance, which crop falls under the 'Moderate Tolerant' category (pH 6.8-6)?",
+"serial": "1sUgWsko:1299",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1299"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Stanchion barn",
+"Loose housing barn",
+"Open air barn",
+"Pen barns",
+"None of these"
+],
+"page": "",
+"q": "Which type of dairy barn does not have any cover?",
+"serial": "1bxM1Q-4:4049",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4049"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"12 months",
+"18 months",
+"20 months",
+"24 months",
+"None of these"
+],
+"page": "",
+"q": "What is the average age at first kidding for Changthangi goats?",
+"serial": "1sUgWsko:3348",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3348"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"20\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"30\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"40\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"None of these"
+],
+"page": "",
+"q": "Root growth of most crops stops when the oxygen diffusion rate (ODR) falls below what value?",
+"serial": "128DIQLj:1182",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1182"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gross output",
+"Systemic integration and balance",
+"Maximum livestock numbers",
+"High market profit only",
+"None of these"
+],
+"page": "",
+"q": "In the comparison table, what is the primary emphasis of a farming system (as opposed to mixed farming)?",
+"serial": "1sUgWsko:4476",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4476"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"T. J. Burrill",
+"H.H. Flor",
+"Vanderplank",
+"T.O. Diener",
+"None of these"
+],
+"page": "",
+"q": "Which scientist gave the term 'Viroid'?",
+"serial": "17U0MEc-:2121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2121"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"25 per cent",
+"30 per cent",
+"40 per cent",
+"50 per cent",
+"None of these"
+],
+"page": "",
+"q": "What percentage of cost is covered under the scheme for survey, feasibility, consultancy, and database?",
+"serial": "1bxM1Q-4:3511",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3511"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"V. candamarcensis",
+"V. pentagona",
+"V. quercifolia",
+"V. monoica",
+"None of these"
+],
+"page": "",
+"q": "Which Vasconella species is identified as the hardiest for papaya cultivation?",
+"serial": "1YcJWVgW:267",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:267"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Program instructions",
+"Collections of characters and letters",
+"System commands",
+"Directory indexes",
+"None of these"
+],
+"page": "",
+"q": "What does a data file primarily contain?",
+"serial": "1bxM1Q-4:3764",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3764"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Hypoxic",
+"Dysoxic",
+"Anoxic",
+"Eutrophic",
+"None of these"
+],
+"page": "",
+"q": "Which condition describes seawater with 0% oxygen saturation?",
+"serial": "1sUgWsko:2173",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2173"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To create a shaded walkway",
+"To provide support for climbers",
+"To cover an area with dense, low-growing herbaceous plants according to a set design",
+"To trim plants into various shapes",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of carpet bedding in horticulture?",
+"serial": "1bxM1Q-4:3554",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3554"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20\u201325 kg/ha",
+"25\u201330 kg/ha",
+"35\u201340 kg/ha",
+"40\u201345 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "For tetraploid berseem, the recommended seed rate is:",
+"serial": "128DIQLj:647",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:647"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"300 kg",
+"400 kg",
+"500 kg",
+"600 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate per hectare for garlic?",
+"serial": "1bxM1Q-4:3238",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3238"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Acute toxicity",
+"Chronic toxicity",
+"Subacute toxicity",
+"Subchronic toxicity",
+"None of these"
+],
+"page": "",
+"q": "What type of toxicity occurs as a result of repeated daily exposure to a toxicant?",
+"serial": "1UgnIe-g:2129",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2129"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Genotype of pollen",
+"Genotype of the plant producing pollen",
+"Environmental conditions",
+"Pollen viability",
+"None of these"
+],
+"page": "",
+"q": "Which factor determines the incompatibility reaction of pollen?",
+"serial": "1UgnIe-g:79",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:79"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Morimona",
+"Moribana",
+"Nageire",
+"Jiyubana",
+"None of these"
+],
+"page": "",
+"q": "Which style of flower arrangement involves flowers being 1.5 times taller than the vase?",
+"serial": "1sUgWsko:1443",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1443"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Murrah",
+"Bhadawari",
+"Sheep",
+"Surti",
+"None of these"
+],
+"page": "",
+"q": "Which breed of sheep is known for providing wool, meat, milk, and hide?",
+"serial": "1bxM1Q-4:4109",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4109"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Straight line",
+"Concave to the origin",
+"Convex to the origin",
+"Upward sloping",
+"None of these"
+],
+"page": "",
+"q": "What is the characteristic shape of a Production Possibility Curve (PPC)?",
+"serial": "128DIQLj:2595",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2595"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Inoculation, Penetration, Infection, Incubation, Colonization, Invasion, Dissemination, Over-season\u2026",
+"Inoculation, Incubation, Penetration, Infection, Invasion, Colonization, Dissemination, Over-season\u2026",
+"Inoculation, Infection, Penetration, Incubation, Colonization, Invasion, Dissemination, Over-season\u2026",
+"Inoculation, Penetration, Incubation, Infection, Invasion, Colonization, Dissemination, Over-season\u2026",
+"None of these"
+],
+"page": "",
+"q": "What is the correct sequence of stages in the disease cycle?",
+"serial": "1UgnIe-g:928",
+"src_row": null,
+"topic": "",
+"trunc": 4,
+"uid": "1UgnIe-g:928"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"166%",
+"150%",
+"200%",
+"133%",
+"None of these"
+],
+"page": "",
+"q": "What is the Crop Rotation Intensity for a 3-year rotation of Paddy - Potato - Sugarcane - Arhar - Wheat?",
+"serial": "17U0MEc-:301",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:301"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bengal",
+"Punjab",
+"Gujarat",
+"Himachal Pradesh",
+"None of these"
+],
+"page": "",
+"q": "Estuarine fish are reported to be more common in which Indian state?",
+"serial": "1sUgWsko:2285",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2285"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Capillary water",
+"Gravitational water",
+"Hygroscopic water",
+"Runoff water",
+"None of these"
+],
+"page": "",
+"q": "Which type of soil water is most available to crops?",
+"serial": "17U0MEc-:1184",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1184"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"It is due to two mutant genes BoAP1 and BoCAL",
+"It results from high temperature stress",
+"It is a modified leaf structure",
+"It develops from root tissue",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly explains cauliflower curd formation?",
+"serial": "1YcJWVgW:639",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:639"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"300-400 days",
+"430-460 days",
+"480-630 days",
+"700-800 days",
+"None of these"
+],
+"page": "",
+"q": "What is the typical calving interval for the Hariana cattle breed?",
+"serial": "1sUgWsko:2959",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2959"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ponkan/Nagpur mandarin",
+"Coorg",
+"Khasi",
+"Kinnow mandarin",
+"None of these"
+],
+"page": "",
+"q": "Which citrus variety is noted as the finest mandarin and also listed as the finest orange variety?",
+"serial": "1YcJWVgW:249",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:249"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-10\u00b0C",
+"5-16\u00b0C",
+"10-20\u00b0C",
+"15-25\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal temperature range for storing mangoes of different varieties?",
+"serial": "1sUgWsko:954",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:954"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Stratus",
+"Strato cumulus",
+"Cumulus",
+"Altocumulus",
+"None of these"
+],
+"page": "",
+"q": "Which lower cloud type is composed of water and often occurs in winter with occasional drizzle?",
+"serial": "1sUgWsko:5747",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5747"
+}
+],
+"set_no": 22,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 4
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
