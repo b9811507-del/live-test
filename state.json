@@ -98068,9 +98068,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 343,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 343,
+"built_at": "2026-10-04T10:57:37+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 97-102",
+"pages_blocks": [
+"97-98",
+"99-100",
+"101-102"
+],
+"questions": [
+{
+"expl": "Sunflower is phototropic; when planted in EW rows, more lodging occurs, so NS orientation is preferred.",
+"key": 1,
+"o": [
+"East\u2011West (EW)",
+"North\u2011South (NS)",
+"Both EW and NS equally",
+"South\u2011North (SN)",
+"None of these"
+],
+"page": "97-98",
+"q": "Which row orientation is preferred for sunflower to reduce lodging?",
+"serial": "501",
+"src_row": 324,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "97-98:501"
+},
+{
+"expl": "Sunflower can produce about 80 seeds per seed, giving a 1:80 multiplication ratio.",
+"key": 2,
+"o": [
+"1:20",
+"1:40",
+"1:80",
+"1:100",
+"None of these"
+],
+"page": "97-98",
+"q": "What is the typical seed multiplication ratio for sunflower?",
+"serial": "502",
+"src_row": 325,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "97-98:502"
+},
+{
+"expl": "Protandry leads to poor seed set; hand pollination or bee hives are suggested to enhance pollination.",
+"key": 1,
+"o": [
+"Use of high nitrogen fertilizer",
+"Supplementary hand pollination",
+"Planting in higher soil pH",
+"Increasing sowing depth",
+"None of these"
+],
+"page": "97-98",
+"q": "Which practice is recommended to improve seed set in protandrous sunflower?",
+"serial": "503",
+"src_row": 326,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "97-98:503"
+},
+{
+"expl": "Sunflower grows best in soils with pH 6.5 to 8.5.",
+"key": 1,
+"o": [
+"4.5\u20136.0",
+"6.5\u20138.5",
+"7.0\u20139.0",
+"5.0\u20137.0",
+"None of these"
+],
+"page": "97-98",
+"q": "What is the optimal soil pH range for sunflower cultivation?",
+"serial": "504",
+"src_row": 327,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "97-98:504"
+},
+{
+"expl": "Sunflower needs 1042 to 1300 GDD with a base temperature of 10\u00b0C.",
+"key": 1,
+"o": [
+"800\u20131000 (base 10\u00b0C)",
+"1042\u20131300 (base 10\u00b0C)",
+"1200\u20131500 (base 10\u00b0C)",
+"900\u20131100 (base 10\u00b0C)",
+"None of these"
+],
+"page": "97-98",
+"q": "The required growing degree days (GDD) for sunflower is approximately",
+"serial": "505",
+"src_row": 328,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "97-98:505"
+},
+{
+"expl": "Rainfed sunflower receives 60 kg N, 40 kg P\u2082O\u2085, and 30 kg K\u2082O per hectare.",
+"key": 1,
+"o": [
+"80:60:40 kg N:P2O5:K2O/ha",
+"60:40:30 kg N:P2O5:K2O/ha",
+"120:80:60 kg N:P2O5:K2O/ha",
+"50:30:20 kg N:P2O5:K2O/ha",
+"None of these"
+],
+"page": "97-98",
+"q": "For rainfed sunflower, the recommended fertilizer ratio is",
+"serial": "506",
+"src_row": 329,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "97-98:506"
+},
+{
+"expl": "Sunflower seeds must be dried below 9% moisture to avoid spoilage and maintain viability.",
+"key": 1,
+"o": [
+"30-40%",
+"Below 9%",
+"15-20%",
+"45%",
+"None of these"
+],
+"page": "99-100",
+"q": "What is the maximum moisture content at which sunflower seeds should be stored for safe use?",
+"serial": "511",
+"src_row": 330,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:511"
+},
+{
+"expl": "Ethrel at 25 ppm for 6 hours breaks dormancy by neutralizing germination inhibitors.",
+"key": 0,
+"o": [
+"Ethrel 25 ppm for 6 hours",
+"Ethrel 50 ppm for 24 hours",
+"Ethrel 25 ppm for 12 hours",
+"Ethrel 10 ppm for 6 hours",
+"None of these"
+],
+"page": "99-100",
+"q": "Which treatment can overcome sunflower seed dormancy for immediate use?",
+"serial": "512",
+"src_row": 331,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:512"
+},
+{
+"expl": "Alpha\u2011tocopherol is a natural antioxidant that protects the oil from oxidation, enhancing stability.",
+"key": 1,
+"o": [
+"Linoleic acid",
+"Alpha\u2011tocopherol",
+"Chlorogenic acid",
+"Phenolic compounds",
+"None of these"
+],
+"page": "99-100",
+"q": "Which component contributes most to sunflower oil\u2019s high oxidative stability?",
+"serial": "513",
+"src_row": 332,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:513"
+},
+{
+"expl": "Carthamin is the water\u2011insoluble, orange\u2011red dye extracted from safflower florets.",
+"key": 1,
+"o": [
+"Carthamidin",
+"Carthamin",
+"Carthamine",
+"Carthaminol",
+"None of these"
+],
+"page": "99-100",
+"q": "Which safflower pigment is water\u2011insoluble and orange\u2011red?",
+"serial": "514",
+"src_row": 333,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:514"
+},
+{
+"expl": "Safflower needs 1500 growing degree\u2011hours (heat units) for proper growth and flowering.",
+"key": 1,
+"o": [
+"1000",
+"1500",
+"2000",
+"2500",
+"None of these"
+],
+"page": "99-100",
+"q": "How many heat units are required for safflower development?",
+"serial": "515",
+"src_row": 334,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:515"
+},
+{
+"expl": "NH\u20111 was released as the first non\u2011spiny safflower hybrid globally.",
+"key": 2,
+"o": [
+"DSH\u2011129",
+"MKH 11",
+"NH\u20111",
+"NARI\u201115",
+"None of these"
+],
+"page": "99-100",
+"q": "Which safflower hybrid is the world\u2019s first non\u2011spiny variety?",
+"serial": "516",
+"src_row": 335,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:516"
+},
+{
+"expl": "Decorticated safflower meal contains about 48% protein, higher than the un\u2011decorticated cake.",
+"key": 1,
+"o": [
+"20%",
+"48%",
+"42%",
+"15%",
+"None of these"
+],
+"page": "99-100",
+"q": "What is the protein content in decorticated safflower cake?",
+"serial": "517",
+"src_row": 336,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "99-100:517"
+},
+{
+"expl": "Safflower is sown at a depth of 5 cm to ensure good emergence.",
+"key": 1,
+"o": [
+"2-3 cm",
+"5 cm",
+"10 cm",
+"15 cm",
+"None of these"
+],
+"page": "101-102",
+"q": "What is the optimum sowing depth for safflower seeds?",
+"serial": "521",
+"src_row": 337,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "101-102:521"
+},
+{
+"expl": "Safflower oil is rich in linoleic acid, a high PUFA content of 70\u201180%.",
+"key": 1,
+"o": [
+"Linolenic acid",
+"Linoleic acid",
+"Oleic acid",
+"Palmitic acid",
+"None of these"
+],
+"page": "101-102",
+"q": "Which fatty acid constitutes 70-80% of safflower oil, making it one of the best edible oils?",
+"serial": "522",
+"src_row": 338,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "101-102:522"
+},
+{
+"expl": "Linseed oil contains about 55% alpha\u2011linolenic acid, giving it a rapid drying quality.",
+"key": 0,
+"o": [
+"Linolenic acid",
+"Linoleic acid",
+"Oleic acid",
+"Stearic acid",
+"None of these"
+],
+"page": "101-102",
+"q": "Linseed oil is widely used in paints and varnishes because it is a quick\u2011drying oil. Which fatty acid is responsible for this property?",
+"serial": "523",
+"src_row": 339,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "101-102:523"
+},
+{
+"expl": "Linseed cake has linamarin, which enzymatically releases HCN when animals consume it.",
+"key": 0,
+"o": [
+"Linamarin",
+"Ricin",
+"Aconitine",
+"Saponin",
+"None of these"
+],
+"page": "101-102",
+"q": "The cake of linseed contains a cyanogenic glucoside that can release toxic prussic acid in animals. What is this compound?",
+"serial": "524",
+"src_row": 340,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "101-102:524"
+},
+{
+"expl": "Rainfed linseed requires 40 kg N, 20 kg P, and 20 kg K per hectare.",
+"key": 1,
+"o": [
+"90+40+30 kg NPK/ha",
+"40+20+20 kg NPK/ha",
+"30+15+15 kg NPK/ha",
+"50+25+25 kg NPK/ha",
+"None of these"
+],
+"page": "101-102",
+"q": "For a rainfed linseed crop, which NPK application rate is recommended?",
+"serial": "525",
+"src_row": 341,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "101-102:525"
+},
+{
+"expl": "Linseed is sown early October to mid November for optimal growth.",
+"key": 2,
+"o": [
+"Early March \u2013 Mid April",
+"Early June \u2013 Mid July",
+"Early October \u2013 Mid November",
+"Early December \u2013 Mid January",
+"None of these"
+],
+"page": "101-102",
+"q": "When is the recommended sowing period for linseed in India?",
+"serial": "526",
+"src_row": 342,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "101-102:526"
+}
+],
+"rolled": false,
+"row_from": 324,
+"row_to": 343,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 324,
+"seeded_from": "2026-10-03",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-03",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
