@@ -98062,8 +98062,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 420,
 "names": {},
+"plan": {
+"bidx_next": 420,
+"built_at": "2026-10-04T14:27:21+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 58-60",
+"pages_list": [
+58,
+59,
+60
+],
+"questions": [
+{
+"expl": "The source states that cane germination is optimum at 27-33\u00b0C.",
+"key": 0,
+"o": [
+"27-33\u00b0C",
+"30-35\u00b0C",
+"33.3-34.4\u00b0C",
+"36\u00b0C",
+"None of these"
+],
+"page": "58",
+"q": "What is the optimum temperature range for sugarcane germination?",
+"serial": "400",
+"src_row": 399,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:400"
+},
+{
+"expl": "The optimum pH required for sugarcane is given as 6.5-7.5.",
+"key": 1,
+"o": [
+"5.0-6.0",
+"6.5-7.5",
+"7.5-8.5",
+"8.0-9.0",
+"None of these"
+],
+"page": "58",
+"q": "Which soil pH range is considered optimal for sugarcane cultivation?",
+"serial": "401",
+"src_row": 400,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:401"
+},
+{
+"expl": "The table lists Adsali (July\u2011Aug) for South India with a duration of 15\u201118 months.",
+"key": 2,
+"o": [
+"Spring/Eksali",
+"Autumn",
+"Adsali",
+"Ridge and furrow system",
+"None of these"
+],
+"page": "58",
+"q": "In which planting season is sugarcane grown in South India with a crop duration of 15-18 months?",
+"serial": "402",
+"src_row": 401,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:402"
+},
+{
+"expl": "The source specifies that 80\u201185% relative humidity favors cane elongation.",
+"key": 2,
+"o": [
+"60-65%",
+"70-75%",
+"80-85%",
+"90-95%",
+"None of these"
+],
+"page": "58",
+"q": "What relative humidity range most favorably supports cane elongation?",
+"serial": "403",
+"src_row": 402,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:403"
+},
+{
+"expl": "Temperatures above 38\u00b0C are reported to adversely affect sprouting.",
+"key": 0,
+"o": [
+"Above 38\u00b0C",
+"Below 27\u00b0C",
+"30-35\u00b0C",
+"33.3-34.4\u00b0C",
+"None of these"
+],
+"page": "58",
+"q": "Which temperature condition is harmful to sugarcane sprouting when exceeded?",
+"serial": "404",
+"src_row": 403,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:404"
+},
+{
+"expl": "High wind velocity of 60 km/hr is stated to be harmful, leading to lodging.",
+"key": 2,
+"o": [
+"30 km/hr",
+"45 km/hr",
+"60 km/hr",
+"75 km/hr",
+"None of these"
+],
+"page": "58",
+"q": "What wind velocity is considered harmful and can cause lodging in sugarcane?",
+"serial": "405",
+"src_row": 404,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:405"
+},
+{
+"expl": "The source mentions that the AICRP on sugarcane was stated in 1970\u201171.",
+"key": 1,
+"o": [
+"1965-66",
+"1970-71",
+"1975-76",
+"1980-81",
+"None of these"
+],
+"page": "58",
+"q": "In which year was the AICRP on sugarcane stated?",
+"serial": "406",
+"src_row": 405,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "58:406"
+},
+{
+"expl": "The source states that flat planting uses shallow furrows 8-10 cm deep.",
+"key": 1,
+"o": [
+"5-6 cm",
+"8-10 cm",
+"12-15 cm",
+"20-25 cm",
+"None of these"
+],
+"page": "59",
+"q": "In flat planting, what is the typical depth of the furrows made?",
+"serial": "407",
+"src_row": 406,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:407"
+},
+{
+"expl": "The trench method is followed in tall\u2011growing cane areas like coastal zones to protect the crop from lodging.",
+"key": 2,
+"o": [
+"Flat planting",
+"Furrow planting",
+"Trench method",
+"Single bud direct planting",
+"None of these"
+],
+"page": "59",
+"q": "Which planting method is specifically recommended for tall\u2011growing cane areas such as coastal regions to prevent lodging?",
+"serial": "408",
+"src_row": 407,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:408"
+},
+{
+"expl": "The source notes furrows are about 10-15 cm deep in northern India and about 20 cm deep in southern India.",
+"key": 2,
+"o": [
+"Same depth both regions",
+"Deeper in north (20 cm) than south (10-15 cm)",
+"Deeper in south (20 cm) than north (10-15 cm)",
+"No furrows used in south",
+"None of these"
+],
+"page": "59",
+"q": "In furrow planting, how does the recommended furrow depth differ between northern and southern India?",
+"serial": "409",
+"src_row": 408,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:409"
+},
+{
+"expl": "In the modified trench system ridges and furrows are opened at 120 cm spacing, unlike the 75-90 cm spacing of regular trenches.",
+"key": 1,
+"o": [
+"Using a deeper trench of 30 cm",
+"Spacing ridges and furrows at 120 cm",
+"Applying fertilizer only on surface",
+"Planting single bud setts directly",
+"None of these"
+],
+"page": "59",
+"q": "The modified trench system differs from the regular trench method primarily by:",
+"serial": "410",
+"src_row": 409,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:410"
+},
+{
+"expl": "STP technique saves about 2-3 tonnes per hectare versus the normal 8-10 tonnes per hectare.",
+"key": 1,
+"o": [
+"1-2 t/ha",
+"2-3 t/ha",
+"4-5 t/ha",
+"6-7 t/ha",
+"None of these"
+],
+"page": "59",
+"q": "What is the approximate seed cost saving per hectare when using the STP (transplanting) technique compared to conventional sowing?",
+"serial": "411",
+"src_row": 410,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:411"
+},
+{
+"expl": "The method plants single bud setts at a spacing of 30-45 cm in the furrows.",
+"key": 1,
+"o": [
+"10-20 cm",
+"30-45 cm",
+"60-75 cm",
+"90-100 cm",
+"None of these"
+],
+"page": "59",
+"q": "In single bud direct planting, what is the typical spacing between setts in the furrow?",
+"serial": "412",
+"src_row": 411,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:412"
+},
+{
+"expl": "Flat planting is common in North India, not South India, making option C false.",
+"key": 2,
+"o": [
+"Furrows are 8-10 cm deep",
+"Soil cover is 5-7 cm",
+"It is common in South India",
+"Furrow distance is 75-90 cm",
+"None of these"
+],
+"page": "59",
+"q": "Which of the following statements about flat planting is FALSE?",
+"serial": "413",
+"src_row": 412,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "59:413"
+},
+{
+"expl": "The Partha method was developed for water\u2011logged or excess moisture conditions, especially in coastal Andhra Pradesh and Tamil Nadu during the N\u2011E monsoon.",
+"key": 0,
+"o": [
+"Waterlogged or excess soil moisture conditions",
+"Saline soil conditions",
+"Drought-prone areas",
+"Frost-affected regions",
+"None of these"
+],
+"page": "60",
+"q": "Which condition is the Partha method specifically suggested for?",
+"serial": "414",
+"src_row": 413,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:414"
+},
+{
+"expl": "The method specifies planting the three eye\u2011budded setts at a slant of 60\u00b0 to the vertical.",
+"key": 2,
+"o": [
+"30\u00b0",
+"45\u00b0",
+"60\u00b0",
+"90\u00b0",
+"None of these"
+],
+"page": "60",
+"q": "In the Partha method, at what angle are the three eye\u2011budded setts planted relative to the vertical?",
+"serial": "415",
+"src_row": 414,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:415"
+},
+{
+"expl": "The source lists the sett rate for 2\u2011budded setts as 80,000\u20111,00,000 setts per hectare.",
+"key": 1,
+"o": [
+"35,000\u201150,000",
+"80,000\u2011100,000",
+"1,87,500",
+"150,000\u2011200,000",
+"None of these"
+],
+"page": "60",
+"q": "What is the recommended sett rate for 2\u2011budded setts per hectare?",
+"serial": "416",
+"src_row": 415,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:416"
+},
+{
+"expl": "Ethrel is applied at floral initiation either twice at 500 ppm or once at 1000 ppm; the single\u2011spray rate is 1000 ppm.",
+"key": 2,
+"o": [
+"250 ppm",
+"500 ppm",
+"1000 ppm",
+"1500 ppm",
+"None of these"
+],
+"page": "60",
+"q": "At floral initiation, ethrel may be sprayed once at which concentration?",
+"serial": "417",
+"src_row": 416,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:417"
+},
+{
+"expl": "Detrashing means removing the dry and lower leaves, retaining only the top 8\u201110 leaves for effective photosynthesis.",
+"key": 2,
+"o": [
+"Only the top 8\u201110 leaves",
+"The middle leaves",
+"Dry and lower leaves",
+"All leaves older than 2 weeks",
+"None of these"
+],
+"page": "60",
+"q": "Detrashing in sugarcane cultivation involves removal of which leaves?",
+"serial": "418",
+"src_row": 417,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:418"
+},
+{
+"expl": "The text states that 30\u201140 % of India's sugarcane area is under the ratoon system.",
+"key": 1,
+"o": [
+"10\u201120%",
+"30\u201140%",
+"50\u201160%",
+"70\u201180%",
+"None of these"
+],
+"page": "60",
+"q": "Approximately what percentage of India's sugarcane area is under the ratoon system?",
+"serial": "419",
+"src_row": 418,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:419"
+},
+{
+"expl": "The source explicitly mentions that saline soil is unfit for sugarcane cultivation.",
+"key": 0,
+"o": [
+"Saline soil",
+"Loamy soil",
+"Laterite soil",
+"Alluvial soil",
+"None of these"
+],
+"page": "60",
+"q": "Which soil type is described as unfit for sugarcane cultivation?",
+"serial": "420",
+"src_row": 419,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "60:420"
+}
+],
+"row_from": 399,
+"row_to": 420,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 399,
+"seeded_from": "2026-10-03"
+},
 "qidx": 0,
+"seeded_from": "2026-10-03",
+"skips": [],
 "step": 0
 },
 "malwa": {
