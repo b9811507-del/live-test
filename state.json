@@ -98481,6 +98481,8 @@
 "cd": 1,
 "congrats_sent": 31439,
 "cta_sent": "off",
+"done_at": "2026-10-04T14:42:38+05:30",
+"elapsed_s": 913,
 "expl_in_poll": 21,
 "file_msg": 31440,
 "file_sent": "IARI_p58-60_21Q_2026-10-04.html",
@@ -98490,8 +98492,18 @@
 "lb_rows": 28,
 "lb_sent": true,
 "lock_ts": 1791105121.9113045,
-"locked_by": "37190555568",
+"locked_by": "",
 "msg_ann": 31414,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 31416,
 "names": {
 "1087274184": "\u0936\u093f\u0935 \u092d\u0915\u094d\u0924",
@@ -98523,6 +98535,8 @@
 "8501796920": "Sei123",
 "8567101693": "Tushar"
 },
+"paid_msg": 31442,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 420,
@@ -98957,7 +98971,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-04T14:30:23+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 31441,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 103-108\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 61, 62, 63"
 },
