@@ -102905,9 +102905,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 364,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 364,
+"built_at": "2026-10-05T10:58:00+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 103-108",
+"pages_blocks": [
+"103-104",
+"105-106",
+"107-108"
+],
+"questions": [
+{
+"expl": "Castor oil stays liquid down to -32\u00b0C, making it suitable as a lubricant in cold conditions.",
+"key": 0,
+"o": [
+"It remains liquid at -32\u00b0C",
+"It has high viscosity at high temperatures",
+"It contains 85-90% ricinoleic acid",
+"It is derived from the roots of the plant",
+"None of these"
+],
+"page": "103-104",
+"q": "Which property of castor oil allows it to be used as a lubricant at very low temperatures?",
+"serial": "531",
+"src_row": 343,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "103-104:531"
+},
+{
+"expl": "The presence of ricin, a highly toxic protein, makes castor seed unsafe for human consumption.",
+"key": 1,
+"o": [
+"It contains a mildly toxic alkaloid called ricinine",
+"It contains the highly poisonous protein ricin",
+"It has a high oil content that is difficult to digest",
+"It is a monoecious plant",
+"None of these"
+],
+"page": "103-104",
+"q": "Why is castor seed considered non\u2011edible for humans?",
+"serial": "532",
+"src_row": 344,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "103-104:532"
+},
+{
+"expl": "Short day length (<9 hrs) promotes male flower development in castor.",
+"key": 2,
+"o": [
+"High temperature (>32 \u00b0C)",
+"Low temperature (<32 \u00b0C)",
+"Short day length (<9 hrs)",
+"Long day length (>18 hrs)",
+"None of these"
+],
+"page": "103-104",
+"q": "Which condition increases the production of male flowers in castor?",
+"serial": "533",
+"src_row": 345,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "103-104:533"
+},
+{
+"expl": "Light soils with low moisture require a sowing depth of 8\u201310 cm to ensure adequate seed\u2013soil contact.",
+"key": 2,
+"o": [
+"4\u20136 cm",
+"6\u20138 cm",
+"8\u201310 cm",
+"10\u201312 cm",
+"None of these"
+],
+"page": "103-104",
+"q": "For light soils with low moisture, what is the recommended sowing depth of castor seeds?",
+"serial": "534",
+"src_row": 346,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "103-104:534"
+},
+{
+"expl": "Castor cake contains nitrogen, phosphorus and potassium but not a significant fat content.",
+"key": 3,
+"o": [
+"6.5% nitrogen",
+"2.5% P\u2082O\u2085",
+"1% K\u2082O",
+"10% fat",
+"None of these"
+],
+"page": "103-104",
+"q": "Which of the following is NOT a component of castor cake?",
+"serial": "535",
+"src_row": 347,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "103-104:535"
+},
+{
+"expl": "Niger oil is employed as a sesame oil substitute for pharmaceutical purposes.",
+"key": 1,
+"o": [
+"Castor",
+"Niger (Guizotia abyssinica)",
+"Sunflower",
+"Sesame",
+"None of these"
+],
+"page": "103-104",
+"q": "Which oilseed crop is used as a substitute for sesame oil in pharmaceutical applications?",
+"serial": "536",
+"src_row": 348,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "103-104:536"
+},
+{
+"expl": "The source states that Niger produces disc floret and ray floret flowers.",
+"key": 0,
+"o": [
+"Disc floret and ray floret",
+"Ligule and bract",
+"Petal and sepal",
+"Tubular and bell",
+"None of these"
+],
+"page": "105-106",
+"q": "Niger produces two types of flowers. Which pair correctly names them?",
+"serial": "541",
+"src_row": 349,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:541"
+},
+{
+"expl": "Linoleic acid makes up 48\u201155% of Niger oil, the highest among its fatty acids.",
+"key": 0,
+"o": [
+"Linoleic acid",
+"Oleic acid",
+"Palmitic acid",
+"Stearic acid",
+"None of these"
+],
+"page": "105-106",
+"q": "Which fatty acid constitutes the largest proportion of Niger oil?",
+"serial": "542",
+"src_row": 350,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:542"
+},
+{
+"expl": "The source specifies a safe storage moisture content of 5% for Niger seed.",
+"key": 0,
+"o": [
+"5%",
+"10%",
+"15%",
+"20%",
+"None of these"
+],
+"page": "105-106",
+"q": "What is the safe moisture content for storing Niger seed?",
+"serial": "543",
+"src_row": 351,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:543"
+},
+{
+"expl": "Sulphur uptake for 1 ton of produce is greatest for rapeseed\u2011mustard (12 kg) compared with other oilseeds.",
+"key": 0,
+"o": [
+"Rapeseed\u2011mustard",
+"Soybean",
+"Sunflower",
+"Peanut",
+"None of these"
+],
+"page": "105-106",
+"q": "Which oilseed crop has the highest sulfur requirement per ton of economic produce?",
+"serial": "544",
+"src_row": 352,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:544"
+},
+{
+"expl": "The source identifies linseed oil as the most commonly used oil in paints and varnishes.",
+"key": 0,
+"o": [
+"Linseed oil",
+"Castor oil",
+"Mustard oil",
+"Palm oil",
+"None of these"
+],
+"page": "105-106",
+"q": "Which oil is most widely used in paints and varnishes?",
+"serial": "545",
+"src_row": 353,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:545"
+},
+{
+"expl": "These crops exhibit epigeal germination, where cotyledons emerge above the soil.",
+"key": 0,
+"o": [
+"Epigeal",
+"Hypogeal",
+"Viviparous",
+"Recalcitrant",
+"None of these"
+],
+"page": "105-106",
+"q": "The germination type of castor, niger, soybean and linseed is:",
+"serial": "546",
+"src_row": 354,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:546"
+},
+{
+"expl": "The source lists the castor semilooper (Achaea janata) as the principal pest of castor.",
+"key": 0,
+"o": [
+"Castor semilooper (Achaea janata)",
+"Cotton bollworm",
+"Rice leafhopper",
+"Maize weevil",
+"None of these"
+],
+"page": "105-106",
+"q": "What is the major pest of castor?",
+"serial": "547",
+"src_row": 355,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:547"
+},
+{
+"expl": "The most prominent intercropping system in Rajasthan, according to the source, is chickpea with mustard.",
+"key": 0,
+"o": [
+"Chickpea and mustard",
+"Wheat and mustard",
+"Rice and soybean",
+"Maize and sorghum",
+"None of these"
+],
+"page": "105-106",
+"q": "Which intercropping system is most prominent in Rajasthan?",
+"serial": "548",
+"src_row": 356,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "105-106:548"
+},
+{
+"expl": "G. arboreum is a diploid species (2n=26) and is known as tree cotton or Asian cotton.",
+"key": 2,
+"o": [
+"G. hirsutum",
+"G. barbadense",
+"G. arboreum",
+"G. herbaceum",
+"None of these"
+],
+"page": "107-108",
+"q": "Which cotton species is a diploid (2n=26) and is commonly called tree cotton?",
+"serial": "551",
+"src_row": 357,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:551"
+},
+{
+"expl": "G. hirsutum accounts for about 90% of cotton production in India.",
+"key": 0,
+"o": [
+"90%",
+"5%",
+"3%",
+"<1%",
+"None of these"
+],
+"page": "107-108",
+"q": "What percentage of India\u2019s cotton production is contributed by G. hirsutum?",
+"serial": "552",
+"src_row": 358,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:552"
+},
+{
+"expl": "The recommended sowing depth for cotton is 4\u20136 cm.",
+"key": 1,
+"o": [
+"2\u20134 cm",
+"4\u20136 cm",
+"6\u20138 cm",
+"8\u201310 cm",
+"None of these"
+],
+"page": "107-108",
+"q": "What is the optimum sowing depth for cotton seeds?",
+"serial": "553",
+"src_row": 359,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:553"
+},
+{
+"expl": "Sujata is the first Egyptian (G. barbadense) cotton variety cultivated in India.",
+"key": 0,
+"o": [
+"Sujata",
+"Suvin",
+"MCU 5",
+"JCC 1",
+"None of these"
+],
+"page": "107-108",
+"q": "Which variety is the first Egyptian cotton variety released in India?",
+"serial": "554",
+"src_row": 360,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:554"
+},
+{
+"expl": "G. barbadense, or Sea Island cotton, is prized for its extra\u2011long staple fibres.",
+"key": 0,
+"o": [
+"Extra\u2011long staple fibres",
+"Short staple fibres",
+"High yield in low input systems",
+"Low fibre quality",
+"None of these"
+],
+"page": "107-108",
+"q": "Which of the following is a key feature of G. barbadense?",
+"serial": "555",
+"src_row": 361,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:555"
+},
+{
+"expl": "Maharashtra hosts the highest area of Bt cotton in India.",
+"key": 0,
+"o": [
+"Maharashtra",
+"Gujarat",
+"Punjab",
+"Karnataka",
+"None of these"
+],
+"page": "107-108",
+"q": "Which Indian state has the largest area of Bt cotton cultivation?",
+"serial": "556",
+"src_row": 362,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:556"
+},
+{
+"expl": "Cotton needs a frost\u2011free period of 180\u2013200 days from emergence.",
+"key": 2,
+"o": [
+"120\u2013140 days",
+"150\u2013170 days",
+"180\u2013200 days",
+"210\u2013230 days",
+"None of these"
+],
+"page": "107-108",
+"q": "What is the required frost\u2011free period for cotton cultivation?",
+"serial": "557",
+"src_row": 363,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "107-108:557"
+}
+],
+"rolled": false,
+"row_from": 343,
+"row_to": 364,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 343,
+"seeded_from": "2026-10-04",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-04",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
