@@ -102899,8 +102899,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 441,
 "names": {},
+"plan": {
+"bidx_next": 441,
+"built_at": "2026-10-05T14:28:29+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 61-63",
+"pages_list": [
+61,
+62,
+63
+],
+"questions": [
+{
+"expl": "The source explicitly states that pre-emergence application of Atrazine or Oxyflurofen is done on 3-4 days of planting using a knapsack sprayer.",
+"key": 0,
+"o": [
+"Pre-emergence application",
+"Post-emergence application",
+"Directed spray at 21 DAP",
+"Knapsack sprayer only",
+"None of these"
+],
+"page": "61",
+"q": "Which weed control method involves applying Atrazine or Oxyflurofen within 3-4 days of planting?",
+"serial": "421",
+"src_row": 420,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:421"
+},
+{
+"expl": "The table in the source specifies that the Ridge & Furrow method is used in South India.",
+"key": 1,
+"o": [
+"North India",
+"South India",
+"Coastal area",
+"Sloppy land",
+"None of these"
+],
+"page": "61",
+"q": "In which region is the Ridge & Furrow planting method primarily used?",
+"serial": "422",
+"src_row": 421,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:422"
+},
+{
+"expl": "The source describes the Trench method as a deep 'U' shaped trench at 75-90 cm spacing with 20-25 cm depth.",
+"key": 2,
+"o": [
+"Shallow furrow at 75-90 cm spacing",
+"Dead furrow with 10-15 cm depth",
+"Deep 'U' shaped trench at 20-25 cm depth",
+"Pits dug along the contour",
+"None of these"
+],
+"page": "61",
+"q": "What is the primary characteristic of the Trench method of sugarcane planting?",
+"serial": "423",
+"src_row": 422,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:423"
+},
+{
+"expl": "The source states that higher doses of nitrogen during the ripening stage decrease sucrose content.",
+"key": 2,
+"o": [
+"Phosphorus",
+"Potash",
+"Nitrogen",
+"Sulphur",
+"None of these"
+],
+"page": "61",
+"q": "Which nutrient's higher dose during the ripening stage decreases sucrose content in sugarcane?",
+"serial": "424",
+"src_row": 423,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:424"
+},
+{
+"expl": "The Partha method is described in the source as being practiced in waterlogged or excess soil moisture conditions.",
+"key": 1,
+"o": [
+"Pit method",
+"Partha method",
+"Skip furrow",
+"Mechanical planting",
+"None of these"
+],
+"page": "61",
+"q": "Which planting method is specifically developed for waterlogged or excess soil moisture conditions?",
+"serial": "425",
+"src_row": 424,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:425"
+},
+{
+"expl": "The source explicitly lists the recommended dose of Potash as 60 kg.",
+"key": 1,
+"o": [
+"50 kg",
+"60 kg",
+"80 kg",
+"100 kg",
+"None of these"
+],
+"page": "61",
+"q": "What is the recommended dose of Potash (K) for sugarcane as per the nutrient management section?",
+"serial": "426",
+"src_row": 425,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:426"
+},
+{
+"expl": "The Mechanical planting method involves a tractor-mounted planter that places seed setts and fertilizer, but the description of single budded setts in a nursery refers to the Distant planting method.",
+"key": 2,
+"o": [
+"Developed at IISR, Lucknow",
+"Tractor-mounted sugarcane planter",
+"Single budded setts are planted in nursery",
+"Fertilizer is applied beside the seed sett",
+"None of these"
+],
+"page": "61",
+"q": "Which of the following is NOT a feature of the Mechanical planting method?",
+"serial": "427",
+"src_row": 426,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "61:427"
+},
+{
+"expl": "The source specifies 100 kg ferrous sulphate per hectare as the recommended iron application rate.",
+"key": 0,
+"o": [
+"100 kg ferrous sulphate/ha",
+"50 kg ferrous sulphate/ha",
+"75 kg ferrous sulphate/ha",
+"25 kg ferrous sulphate/ha",
+"None of these"
+],
+"page": "62",
+"q": "Which fertilizer rate is recommended for iron in sugarcane cultivation?",
+"serial": "428",
+"src_row": 427,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:428"
+},
+{
+"expl": "The study reports a 25% reduction in chemical fertilizer use when bio\u2011fertilizers are applied.",
+"key": 2,
+"o": [
+"10%",
+"15%",
+"25%",
+"30%",
+"None of these"
+],
+"page": "62",
+"q": "By what percentage can bio\u2011fertilizers reduce the requirement of chemical fertilizers?",
+"serial": "429",
+"src_row": 428,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:429"
+},
+{
+"expl": "The formative phase, or tillering stage, is identified as the most sensitive to water stress.",
+"key": 1,
+"o": [
+"Germination (0\u201360 DAP)",
+"Formative (60\u2013130 DAP)",
+"Grand growth (130\u2013250 DAP)",
+"Maturity (250\u2013365 DAP)",
+"None of these"
+],
+"page": "62",
+"q": "Which irrigation phase is considered the most critical for water stress in sugarcane?",
+"serial": "430",
+"src_row": 429,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:430"
+},
+{
+"expl": "The source lists brittleness and metallic sound at nodes as the key maturity symptom.",
+"key": 1,
+"o": [
+"Buds swell at nodes",
+"Cane becomes brittle and produces a metallic sound at nodes",
+"Brix reading between 18\u201320%",
+"Glucose content <0.5%",
+"None of these"
+],
+"page": "62",
+"q": "What is the most important symptom indicating sugarcane maturity?",
+"serial": "431",
+"src_row": 430,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:431"
+},
+{
+"expl": "Full earthing\u2011up is carried out after final manuring, which occurs 90\u2013120 days during peak tillering.",
+"key": 2,
+"o": [
+"Immediately after planting",
+"After the first partial earthing\u2011up",
+"After final manuring (90\u2013120 days during peak tillering)",
+"At harvest",
+"None of these"
+],
+"page": "62",
+"q": "When is full earthing\u2011up performed in sugarcane cultivation?",
+"serial": "432",
+"src_row": 431,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:432"
+},
+{
+"expl": "Molasses composition lists sucrose at 35%.",
+"key": 0,
+"o": [
+"Sucrose",
+"Water",
+"Ash",
+"Fructose",
+"None of these"
+],
+"page": "62",
+"q": "Which component constitutes 35% of molasses?",
+"serial": "433",
+"src_row": 432,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:433"
+},
+{
+"expl": "Higher nitrogen enhances vegetative growth, leading to reduced sucrose content.",
+"key": 1,
+"o": [
+"Increases sucrose content",
+"Reduces sucrose content",
+"Increases yield without affecting sucrose",
+"Has no effect on sucrose",
+"None of these"
+],
+"page": "62",
+"q": "What effect does a higher dose of nitrogen have on sugarcane?",
+"serial": "434",
+"src_row": 433,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "62:434"
+},
+{
+"expl": "Glucose is reported at 7%, which is higher than the 5% and 3% values given for the other listed constituents.",
+"key": 1,
+"o": [
+"Non nitrogenous acids \u2013 5%",
+"Glucose \u2013 7%",
+"Other reducing sugars \u2013 3%",
+"Water \u2013 80%",
+"None of these"
+],
+"page": "63",
+"q": "Which constituent listed has the highest percentage in sugarcane juice?",
+"serial": "435",
+"src_row": 434,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:435"
+},
+{
+"expl": "The source attributes the development of crop logging to H.F. Clements.",
+"key": 0,
+"o": [
+"H.F. Clements",
+"J. Doe",
+"R. Singh",
+"M. Patel",
+"None of these"
+],
+"page": "63",
+"q": "Crop logging, a method for assessing nutrient requirements of crops, was introduced by which scientist?",
+"serial": "436",
+"src_row": 435,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:436"
+},
+{
+"expl": "The source states that north\u2011Indian crops harvested in 10\u201112 months give yields of 600\u20111000 quintals per hectare.",
+"key": 0,
+"o": [
+"600\u20111000 Quintals per hectare",
+"800\u20111300 Quintals per hectare",
+"1000\u20111500 Quintals per hectare",
+"400\u2011600 Quintals per hectare",
+"None of these"
+],
+"page": "63",
+"q": "In north India, sugarcane harvested after 10\u201112 months typically yields about how many quintals per hectare?",
+"serial": "437",
+"src_row": 436,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:437"
+},
+{
+"expl": "Vacuum crushers are reported to extract 70\u201175% juice, the highest among the listed options.",
+"key": 2,
+"o": [
+"Ordinary crusher (50\u201165%)",
+"Power crusher (60\u201170%)",
+"Vacuum crusher (70\u201175%)",
+"All crushers give the same yield",
+"None of these"
+],
+"page": "63",
+"q": "Which type of crusher provides the highest juice extraction percentage from sugarcane?",
+"serial": "438",
+"src_row": 437,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:438"
+},
+{
+"expl": "The source defines cane as matured when TSS >16% and purity is 85%.",
+"key": 1,
+"o": [
+"Immature",
+"Matured",
+"Overripe",
+"Ready for planting",
+"None of these"
+],
+"page": "63",
+"q": "According to maturity criteria, when the juice TSS exceeds 16% and purity reaches 85%, the cane is considered:",
+"serial": "439",
+"src_row": 438,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:439"
+},
+{
+"expl": "Maturity is indicated by a Fehling test solution reading of less than 0.5% glucose.",
+"key": 0,
+"o": [
+"Less than 0.5% glucose",
+"Less than 1% glucose",
+"Exactly 0.5% glucose",
+"More than 0.5% glucose",
+"None of these"
+],
+"page": "63",
+"q": "For the Fehling test, a mature sugarcane stalk shows a glucose reading of:",
+"serial": "440",
+"src_row": 439,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:440"
+},
+{
+"expl": "The source mentions a metallic voice from the sugarcane stem as a traditional maturity indicator.",
+"key": 0,
+"o": [
+"Metallic voice from the stem",
+"Hollow thump when struck",
+"Rustling of leaves",
+"Sweet aroma emitted",
+"None of these"
+],
+"page": "63",
+"q": "The traditional method of determining sugarcane maturity involves listening for what characteristic sound?",
+"serial": "441",
+"src_row": 440,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "63:441"
+}
+],
+"row_from": 420,
+"row_to": 441,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 420,
+"seeded_from": "2026-10-04"
+},
 "qidx": 0,
+"seeded_from": "2026-10-04",
+"skips": [],
 "step": 0
 },
 "malwa": {
