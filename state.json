@@ -108749,9 +108749,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 382,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 382,
+"built_at": "2026-10-06T10:58:02+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 109-114",
+"pages_blocks": [
+"109-110",
+"111-112",
+"113-114"
+],
+"questions": [
+{
+"expl": "The first reproductive structure in cotton is the square, which matures into the boll.",
+"key": 1,
+"o": [
+"Boll",
+"Square",
+"Seed",
+"Pod",
+"None of these"
+],
+"page": "109-110",
+"q": "The structure that first appears on a cotton plant at the start of reproductive growth and later develops into the fruit is called:",
+"serial": "561",
+"src_row": 364,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "109-110:561"
+},
+{
+"expl": "The recommended phosphorus dose is applied as a basal application before sowing.",
+"key": 1,
+"o": [
+"Nitrogen",
+"Phosphorus (P\u2082O\u2085)",
+"Potassium (K\u2082O)",
+"Calcium",
+"None of these"
+],
+"page": "109-110",
+"q": "Which nutrient in cotton fertilization should be applied as a basal dose at or before sowing?",
+"serial": "562",
+"src_row": 365,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "109-110:562"
+},
+{
+"expl": "Cotton requires about 600\u2013800 mm of water, with a range of 700\u20131100 mm.",
+"key": 1,
+"o": [
+"300\u2013500 mm",
+"600\u2013800 mm",
+"900\u20131100 mm",
+"1200\u20131400 mm",
+"None of these"
+],
+"page": "109-110",
+"q": "What is the typical water requirement range for cotton cultivation?",
+"serial": "563",
+"src_row": 366,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "109-110:563"
+},
+{
+"expl": "Flex Cotton tolerates glyphosate during both vegetative and reproductive stages.",
+"key": 2,
+"o": [
+"Only vegetative phase",
+"Only reproductive phase",
+"Both vegetative and reproductive phases",
+"Neither phase",
+"None of these"
+],
+"page": "109-110",
+"q": "In Roundup Ready Flex Cotton, glyphosate can be applied during which growth phases?",
+"serial": "564",
+"src_row": 367,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "109-110:564"
+},
+{
+"expl": "Lint weight = 80\u201350=30 g; ginning% = (30/80)\u00d7100 = 37.5%.",
+"key": 1,
+"o": [
+"33%",
+"37.5%",
+"40%",
+"45%",
+"None of these"
+],
+"page": "109-110",
+"q": "A seed cotton sample weighs 80 g and the seed alone weighs 50 g. What is the ginning percentage?",
+"serial": "565",
+"src_row": 368,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "109-110:565"
+},
+{
+"expl": "The lint index formula uses seed index and ginning percentage as shown.",
+"key": 0,
+"o": [
+"Lint index = (Seed index \u00d7 Ginning percent) \u00f7 (100 \u2013 Ginning percent)",
+"Lint index = Seed index \u00d7 Seed weight",
+"Lint index = Lint weight \u00f7 Seed weight",
+"Lint index = Ginning percent \u00f7 100",
+"None of these"
+],
+"page": "109-110",
+"q": "Which statement correctly describes the formula for lint index?",
+"serial": "566",
+"src_row": 369,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "109-110:566"
+},
+{
+"expl": "Chemical delinting uses 100 ml H\u2082SO\u2084 per kg of seed cotton, a 1:10 ratio.",
+"key": 0,
+"o": [
+"100 ml per kg of seed cotton",
+"50 ml per kg of seed cotton",
+"200 ml per kg of seed cotton",
+"10 ml per kg of seed cotton",
+"None of these"
+],
+"page": "111-112",
+"q": "Which of the following is the correct concentration of sulphuric acid used in chemical delinting of cotton seed?",
+"serial": "571",
+"src_row": 370,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "111-112:571"
+},
+{
+"expl": "UNR cotton is planted at 2,77,000 plants per hectare with 19 \u00d7 19 cm spacing.",
+"key": 0,
+"o": [
+"2,77,000 / ha",
+"1,50,000 / ha",
+"3,00,000 / ha",
+"2,00,000 / ha",
+"None of these"
+],
+"page": "111-112",
+"q": "What is the plant population per hectare in Ultra Narrow Row (UNR) cotton with 19 \u00d7 19 cm spacing?",
+"serial": "572",
+"src_row": 371,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "111-112:572"
+},
+{
+"expl": "Topping is done when the plant reaches 1\u20131.2 m, typically 80\u201385 days after sowing.",
+"key": 1,
+"o": [
+"0.5\u20130.8 m",
+"1\u20131.2 m",
+"1.5\u20131.8 m",
+"2\u20132.5 m",
+"None of these"
+],
+"page": "111-112",
+"q": "At what plant height is topping (nipping) usually performed in cotton?",
+"serial": "573",
+"src_row": 372,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "111-112:573"
+},
+{
+"expl": "Fiber length is measured by a Fibrograph.",
+"key": 1,
+"o": [
+"Micronaire",
+"Fibrograph",
+"Arealometer",
+"Nepiness meter",
+"None of these"
+],
+"page": "111-112",
+"q": "Which instrument is used to measure cotton fiber length?",
+"serial": "574",
+"src_row": 373,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "111-112:574"
+},
+{
+"expl": "Indian ordinary cotton has a count number of approximately 22.",
+"key": 1,
+"o": [
+"10",
+"22",
+"30",
+"40",
+"None of these"
+],
+"page": "111-112",
+"q": "The typical spinning count number for Indian ordinary cotton is about?",
+"serial": "575",
+"src_row": 374,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "111-112:575"
+},
+{
+"expl": "Gossypol, gossypurpurin, and gossypulvin are toxic; chlorophyll is not a cotton pigment.",
+"key": 3,
+"o": [
+"Gossypol",
+"Gossypurpurin",
+"Gossypulvin",
+"Chlorophyll",
+"None of these"
+],
+"page": "111-112",
+"q": "Which of the following is NOT a toxic pigment found in cotton?",
+"serial": "576",
+"src_row": 375,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "111-112:576"
+},
+{
+"expl": "White jute is planted February\u2013March and spaced 30 \u00d7 7 cm; 20 \u00d7 7 cm spacing belongs to Tossa jute.",
+"key": 3,
+"o": [
+"Origin: Indo-Myanmar region",
+"Fiber colour: Creamy white",
+"Planting period: February\u2013March",
+"Spacing: 20 \u00d7 7 cm",
+"None of these"
+],
+"page": "113-114",
+"q": "Which of the following is NOT a characteristic of white jute (Tita Pat) as per the comparison table?",
+"serial": "581",
+"src_row": 376,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "113-114:581"
+},
+{
+"expl": "Retting of jute is a microbial process best carried out at about 34 \u00b0C.",
+"key": 1,
+"o": [
+"25 \u00b0C",
+"34 \u00b0C",
+"21\u201327 \u00b0C",
+"40 \u00b0C",
+"None of these"
+],
+"page": "113-114",
+"q": "What is the optimal temperature for the retting of jute?",
+"serial": "582",
+"src_row": 377,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "113-114:582"
+},
+{
+"expl": "Sulphur boosts fibre strength by producing sulphur\u2011adenosyl\u2011methionine, which promotes lignin synthesis.",
+"key": 1,
+"o": [
+"Cellulose",
+"Lignin via sulphur\u2011adenosyl\u2011methionine",
+"Hemicellulose",
+"Pectin",
+"None of these"
+],
+"page": "113-114",
+"q": "Sulphur application in jute cultivation primarily enhances fibre strength by promoting the synthesis of which compound?",
+"serial": "583",
+"src_row": 378,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "113-114:583"
+},
+{
+"expl": "Sunhemp is specifically mentioned as suitable for saline\u2011alkaline soil reclamation.",
+"key": 0,
+"o": [
+"Sunhemp",
+"Ramie",
+"Jute",
+"Hemp",
+"None of these"
+],
+"page": "113-114",
+"q": "Which allied fibre crop is noted for its suitability in reclaiming saline\u2011alkaline soils?",
+"serial": "584",
+"src_row": 379,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "113-114:584"
+},
+{
+"expl": "Ribboning is the separation of phloem fibre from the xylem before the retting stage.",
+"key": 0,
+"o": [
+"Separating the bark from the woody core before retting",
+"Soaking harvested plants in water",
+"Removing fibres after retting",
+"Chemical degumming of fibres",
+"None of these"
+],
+"page": "113-114",
+"q": "In the context of jute processing, what does the term \"ribboning\" refer to?",
+"serial": "585",
+"src_row": 380,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "113-114:585"
+},
+{
+"expl": "Over\u2011retting produces dazed and weak fibres, whereas under\u2011retting gives croppy and coarse fibres.",
+"key": 0,
+"o": [
+"Dazed and weak fibre",
+"Croppy and coarse fibre",
+"Fine fibre of good quality",
+"Strong fibre",
+"None of these"
+],
+"page": "113-114",
+"q": "Which of the following fibre types in jute is caused by over\u2011retting?",
+"serial": "586",
+"src_row": 381,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "113-114:586"
+}
+],
+"rolled": false,
+"row_from": 364,
+"row_to": 382,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 364,
+"seeded_from": "2026-10-05",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-05",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
