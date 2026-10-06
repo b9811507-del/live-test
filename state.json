@@ -108738,7 +108738,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-06T17:58:24+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Malaria",
+"Lathyrism",
+"Dysentery",
+"Cholera",
+"None of these"
+],
+"page": "",
+"q": "What disease is caused by the continuous consumption of Lathyrus?",
+"serial": "17U0MEc-:265",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:265"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Potato",
+"Sweet potato",
+"Cabbage",
+"Tomato",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a short day plant?",
+"serial": "1YcJWVgW:477",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:477"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1 500-2 000 kg",
+"500 kg",
+"4 000-5 000 kg",
+"17 000-20 000 kg",
+"None of these"
+],
+"page": "",
+"q": "In Fish+Pig farming, what is the approximate live weight production of pig meat per hectare?",
+"serial": "1sUgWsko:2410",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2410"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Spodoptera frugiperda",
+"Chilo partellus",
+"Helicoverpa armigera",
+"Ostrinia nubilalis",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of the maize stem borer?",
+"serial": "17U0MEc-:1684",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1684"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Calcium",
+"Zinc",
+"Boron",
+"Iron",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient deficiency causes Jonathan spot on apples?",
+"serial": "1YcJWVgW:403",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:403"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Keyboard macros to automate tasks",
+"Drawing toolbar to create graphics",
+"Automatic generation of email reports",
+"Data and time-related functions",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a feature of Excel?",
+"serial": "1bxM1Q-4:3822",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3822"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Providing supplementary feeds only",
+"Fertilizing ponds only",
+"Both fertilizing ponds and providing supplementary feeds",
+"No inputs are needed",
+"None of these"
+],
+"page": "",
+"q": "In culture fisheries, which practice is essential to achieve maximum yield?",
+"serial": "1sUgWsko:2231",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2231"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Active and polar",
+"Passive and non-polar",
+"Active and non-polar",
+"Passive and polar",
+"None of these"
+],
+"page": "",
+"q": "What type of transport do gibberellins exhibit?",
+"serial": "1UgnIe-g:1658",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1658"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Seeds attach to the outside of animals",
+"Seeds survive digestion and are excreted",
+"Seeds have hooks that embed in soil",
+"Seeds are dispersed by wind",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes epizoochory?",
+"serial": "128DIQLj:944",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:944"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Positive correlation",
+"Negative correlation",
+"No correlation",
+"Direct proportion",
+"None of these"
+],
+"page": "",
+"q": "What is the relationship between price and demand?",
+"serial": "128DIQLj:2415",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2415"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Polyphenol oxidase (PPO)",
+"Amylase",
+"Catalase",
+"Lipase",
+"None of these"
+],
+"page": "",
+"q": "Which enzyme is primarily responsible for enzymatic browning in fruits like apples and bananas?",
+"serial": "1YcJWVgW:1191",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1191"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Coccinellidae",
+"Tephritidae",
+"Aleurodidae",
+"Apidae",
+"None of these"
+],
+"page": "",
+"q": "Which insect family is known for having a vasiform orifice?",
+"serial": "1UgnIe-g:1869",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1869"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sigatoka leaf spot",
+"Bunchy top",
+"Panama wilt",
+"Moko disease",
+"None of these"
+],
+"page": "",
+"q": "Which disease in bananas is caused by the fungus Fusarium oxysporum?",
+"serial": "17U0MEc-:1462",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1462"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"VOL",
+"TYPE",
+"TREE",
+"COPY",
+"None of these"
+],
+"page": "",
+"q": "Which command is used to display the disk volume label in DOS?",
+"serial": "1bxM1Q-4:3780",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3780"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tea",
+"Coffee",
+"Wheat",
+"Tobacco",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is NOT mentioned as being supported by Andisol areas?",
+"serial": "17U0MEc-:1124",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1124"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To eliminate excess water and soluble carbohydrates",
+"To aid in digestion of complex proteins",
+"To store excess haemolymph",
+"To absorb nutrients from food",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of the filter chamber in homopteran insects?",
+"serial": "17U0MEc-:1758",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1758"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"45%",
+"55%",
+"65%",
+"75%",
+"None of these"
+],
+"page": "",
+"q": "Using % Porosity = 100 - (BD/PD)\u00d7100, what is the porosity of a soil with BD = 1.2 cm\u00b3/cc and PD = 2.65 cm\u00b3/cc?",
+"serial": "1bxM1Q-4:1847",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1847"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cyprinidae",
+"Clariidae",
+"Cichlidae",
+"Percidae",
+"None of these"
+],
+"page": "",
+"q": "Which family does Catla belong to?",
+"serial": "1sUgWsko:2420",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2420"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"PKM 1",
+"Sugar Baby",
+"Arka Rajahans",
+"Durgapur meetha",
+"None of these"
+],
+"page": "",
+"q": "Which variety of watermelon is known for its high Total Soluble Solids (TSS) content?",
+"serial": "1bxM1Q-4:3193",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3193"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Character of the farmer",
+"Capacity of the farmer",
+"Net worth of the farmer",
+"Collateral provided by the farmer",
+"None of these"
+],
+"page": "",
+"q": "What is the primary basis for banks to sanction loans to borrowers?",
+"serial": "128DIQLj:2446",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2446"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C. paradisi",
+"C. grandis",
+"C. nobilis",
+"C. deliciosa",
+"None of these"
+],
+"page": "",
+"q": "Which citrus species is the direct ancestor of grapefruit?",
+"serial": "1YcJWVgW:251",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:251"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Clay loam",
+"Loam",
+"Fine sandy loam",
+"Sandy loam",
+"None of these"
+],
+"page": "",
+"q": "Which soil type needs the least lime to raise pH from 5.5 to 6.5?",
+"serial": "1sUgWsko:2325",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2325"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Specialised farming",
+"Diversified farming",
+"Mixed farming",
+"Ranching farming",
+"None of these"
+],
+"page": "",
+"q": "Which type of farming is defined by a single product contributing less than 50% of the total farm income?",
+"serial": "1sUgWsko:4488",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4488"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Awareness, Interest, Evaluation, Trial, Adoption",
+"Adoption, Interest, Evaluation, Trial, Awareness",
+"Awareness, Innovation, Evaluation, Trial, Adoption",
+"Adoption, Innovation, Evaluation, Trial, Awareness",
+"None of these"
+],
+"page": "",
+"q": "The acronym 'AIETA' in the adoption process refers to the sequence of which stages?",
+"serial": "1sUgWsko:6514",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6514"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"A flour mill engaging in retailing",
+"A wholesaler assuming the function of retailing",
+"A processing firm assuming the function of assembling/purchasing produce from villages",
+"A commission agent assuming the function of retailing",
+"None of these"
+],
+"page": "",
+"q": "Which example best illustrates backward integration?",
+"serial": "1sUgWsko:4063",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4063"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Chikmagalur, Karnataka",
+"Puttur, Karnataka",
+"Kasargod, Kerala",
+"Pedavegi, Andhra Pradesh",
+"None of these"
+],
+"page": "",
+"q": "The Central Plantation Crops Research Institute (CPCRI) is located in which district?",
+"serial": "1sUgWsko:798",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:798"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Comose",
+"Pappus",
+"Balloon",
+"Hydrochory",
+"None of these"
+],
+"page": "",
+"q": "Which dispersal mechanism involves the modification of the calyx into hairs for seed dispersal?",
+"serial": "17U0MEc-:843",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:843"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lactose",
+"Glucose",
+"Allolactose",
+"cAMP",
+"None of these"
+],
+"page": "",
+"q": "Which molecule acts as the inducer by binding to the repressor and causing it to detach from the operator?",
+"serial": "1UgnIe-g:599",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:599"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"White",
+"Grey or bluish",
+"Yellow",
+"Red",
+"None of these"
+],
+"page": "",
+"q": "Which color best describes Alto\u2011stratus clouds?",
+"serial": "1sUgWsko:5740",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5740"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sunflower",
+"Aster",
+"Hollyhock",
+"Tithonia",
+"None of these"
+],
+"page": "",
+"q": "Which annual flower is useful for massing in beds?",
+"serial": "1bxM1Q-4:3379",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3379"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Protein synthesis",
+"Packing and transport of materials",
+"Cellular respiration",
+"Photosynthesis",
+"None of these"
+],
+"page": "",
+"q": "What is the main function of the Golgi body?",
+"serial": "1bxM1Q-4:1896",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1896"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"2-5%",
+"10%",
+"15%",
+"20%",
+"None of these"
+],
+"page": "",
+"q": "What is the sucrose concentration in vase solution for pulsing in gladiolus?",
+"serial": "1YcJWVgW:1126",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1126"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"YP Singh",
+"E.M. Rogers",
+"AIETA",
+"BHU PET",
+"None of these"
+],
+"page": "",
+"q": "Who proposed the 'Diffusion of Innovation Theory'?",
+"serial": "128DIQLj:2322",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2322"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wheat",
+"Paddy",
+"Maize",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "The pH of peat soil is 3.9. Which crop is noted as suitable for this pH level?",
+"serial": "1sUgWsko:7058",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7058"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"\u03bc",
+"\u03c3",
+"\u03b1",
+"\u03b2",
+"None of these"
+],
+"page": "",
+"q": "What is the symbol used to denote Standard Deviation?",
+"serial": "17U0MEc-:2877",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2877"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Leaves",
+"Stems",
+"Roots and rootlets",
+"Panicles",
+"None of these"
+],
+"page": "",
+"q": "Foot rot disease caused by Pythium species mainly shows symptoms in which plant part?",
+"serial": "1sUgWsko:3709",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3709"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Coccidiosis",
+"Theileriasis",
+"Brucellosis",
+"Trypanosomiasis",
+"None of these"
+],
+"page": "",
+"q": "Which disease among the following is NOT a protozoan disease in livestock?",
+"serial": "1sUgWsko:2857",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2857"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mean > Variance",
+"Mean < Variance",
+"Mean = Variance",
+"No relationship",
+"None of these"
+],
+"page": "",
+"q": "What is the relationship between mean and variance in a Binomial Distribution?",
+"serial": "17U0MEc-:2898",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2898"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-6",
+"6-7",
+"7-8",
+"8-9",
+"None of these"
+],
+"page": "",
+"q": "Which soil pH range is most suitable for papaya growth?",
+"serial": "1sUgWsko:1066",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1066"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mainframe computer",
+"Mini computer",
+"Micro computer",
+"Super computer",
+"None of these"
+],
+"page": "",
+"q": "Which type of computer is known for its use in banks, airlines, and railways due to its large memory and high speed?",
+"serial": "1bxM1Q-4:3725",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3725"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Aggressivity",
+"Competition Coefficient",
+"Relative Crowding Coefficient",
+"Harvest Diversity Index",
+"None of these"
+],
+"page": "",
+"q": "In intercropping, which index indicates whether a crop in a mixed population yields more or less than expected?",
+"serial": "1sUgWsko:4545",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4545"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wood Ash",
+"Tobacco Stem",
+"Sea Weeds",
+"Flue Dust",
+"None of these"
+],
+"page": "",
+"q": "Which organic potassium fertilizer source contains the highest percentage of K\u2082O?",
+"serial": "1sUgWsko:7225",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7225"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Apple",
+"Strawberry",
+"Citrus and Mango",
+"Pineapple",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is affected by the fungal organism Colletotrichum gloeosporioides?",
+"serial": "1bxM1Q-4:3643",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3643"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sindhu",
+"Amrapali",
+"Ratna",
+"Arka Udaya",
+"None of these"
+],
+"page": "",
+"q": "Which mango variety is stone\u2011less and has a pulp percentage of 83%?",
+"serial": "1YcJWVgW:176",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:176"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"m - 1",
+"n - 1",
+"(m-1)(n-1)",
+"mn - 1",
+"None of these"
+],
+"page": "",
+"q": "What does the degrees of freedom (df) for the interaction AB represent in a Mixed Factorial Design?",
+"serial": "1bxM1Q-4:3703",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3703"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Spreading type (2.22 lakh/ha)",
+"Bunch type (3.33 lakh/ha)",
+"Rabi (4.44 lakh/ha)",
+"All equal",
+"None of these"
+],
+"page": "",
+"q": "Which planting arrangement yields the highest plant population per hectare?",
+"serial": "1sUgWsko:357",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:357"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Francis Bacon",
+"Jan Baptiste Van Helmont",
+"Arthur Young",
+"Charles Darwin",
+"None of these"
+],
+"page": "",
+"q": "Which scientist conducted the 'Pot experiment' in the development of scientific agriculture?",
+"serial": "1sUgWsko:4100",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4100"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ca deficiency",
+"Bo deficiency",
+"Improper pollination",
+"High temperature",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of Hen & Chicken disease in grapes?",
+"serial": "17U0MEc-:1514",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1514"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"ENIAC",
+"EDVAC",
+"EDSAC",
+"UNIVAC",
+"None of these"
+],
+"page": "",
+"q": "What was the first stored program computer?",
+"serial": "1bxM1Q-4:3719",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3719"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase soil salinity",
+"To reduce soil erosion and nutrient loss by leaching",
+"To enhance weed growth",
+"To promote waterlogging",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of growing cover crops?",
+"serial": "1sUgWsko:4706",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4706"
+}
+],
+"set_no": 24,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
