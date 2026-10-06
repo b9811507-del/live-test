@@ -108743,8 +108743,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 462,
 "names": {},
+"plan": {
+"bidx_next": 462,
+"built_at": "2026-10-06T14:28:14+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 64-66",
+"pages_list": [
+64,
+65,
+66
+],
+"questions": [
+{
+"expl": "The source states that sucrose content increases as the crop advances in maturity, reaching its maximum at peak maturity.",
+"key": 2,
+"o": [
+"It decreases",
+"It remains unchanged",
+"It increases",
+"It first rises then falls",
+"None of these"
+],
+"page": "64",
+"q": "What happens to sucrose content in sugarcane as it approaches peak maturity?",
+"serial": "442",
+"src_row": 441,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:442"
+},
+{
+"expl": "Non\u2011sugars are reported to be at a minimum when sucrose is at its maximum at peak maturity.",
+"key": 3,
+"o": [
+"Water content",
+"Sucrose",
+"Reducing sugars",
+"Non\u2011sugars (organic and inorganic)",
+"None of these"
+],
+"page": "64",
+"q": "At peak maturity of sugarcane, which component is at its lowest level?",
+"serial": "443",
+"src_row": 442,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:443"
+},
+{
+"expl": "The source lists Glyphosine at 5 kg per hectare.",
+"key": 1,
+"o": [
+"4 kg/ha",
+"5 kg/ha",
+"6 kg/ha",
+"3 kg/ha",
+"None of these"
+],
+"page": "64",
+"q": "What is the recommended application rate of Glyphosine for sugarcane per hectare?",
+"serial": "444",
+"src_row": 443,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:444"
+},
+{
+"expl": "Sodium metasilicate requires 750 L/ha, which is higher than the 600 L/ha for Polaris and the other products have no volume specified.",
+"key": 1,
+"o": [
+"Polaris (5 kg/600 L/ha)",
+"Sodium metasilicate (4 kg/750 L/ha)",
+"Ethrel (4 kg/ha)",
+"Glyphosine (5 kg/ha)",
+"None of these"
+],
+"page": "64",
+"q": "Which product is applied with the greatest liquid volume per hectare?",
+"serial": "445",
+"src_row": 444,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:445"
+},
+{
+"expl": "The source gives the average stalk yield as 60\u201370 tonnes per hectare.",
+"key": 1,
+"o": [
+"50\u201360 tonnes/ha",
+"60\u201370 tonnes/ha",
+"70\u201380 tonnes/ha",
+"80\u201390 tonnes/ha",
+"None of these"
+],
+"page": "64",
+"q": "The average yield of sugarcane stalk is reported as:",
+"serial": "446",
+"src_row": 445,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:446"
+},
+{
+"expl": "The source specifies 1000\u20111200 quintals per hectare for southern states.",
+"key": 2,
+"o": [
+"800\u2013900 quintals/ha",
+"900\u20131000 quintals/ha",
+"1000\u20131200 quintals/ha",
+"1200\u20131300 quintals/ha",
+"None of these"
+],
+"page": "64",
+"q": "In the southern states, the typical sugarcane yield range is:",
+"serial": "447",
+"src_row": 446,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:447"
+},
+{
+"expl": "Both organic and inorganic non\u2011sugars decrease with maturity, so an increase is incorrect.",
+"key": 2,
+"o": [
+"Water content decreases",
+"Reducing sugars decrease",
+"Organic non\u2011sugars increase",
+"Sucrose content increases",
+"None of these"
+],
+"page": "64",
+"q": "Which of the following changes does NOT occur as sugarcane matures?",
+"serial": "448",
+"src_row": 447,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "64:448"
+},
+{
+"expl": "Dehiscence refers to the splitting open of a fruit or capsule at maturity to release seeds.",
+"key": 0,
+"o": [
+"Dehiscence",
+"Germination",
+"Abscission",
+"Maturation",
+"None of these"
+],
+"page": "65",
+"q": "The capsule that encloses sesame seeds bursts only when the seeds are fully ripe. This phenomenon is called",
+"serial": "449",
+"src_row": 448,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:449"
+},
+{
+"expl": "Sesame grows best when temperatures are between 25\u00b0C and 27\u00b0C.",
+"key": 1,
+"o": [
+"20-22\u00b0C",
+"25-27\u00b0C",
+"30-32\u00b0C",
+"15-18\u00b0C",
+"None of these"
+],
+"page": "65",
+"q": "What is the optimal temperature range for cultivating sesame?",
+"serial": "450",
+"src_row": 449,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:450"
+},
+{
+"expl": "Sandy and saline soils are unsuitable; sesame prefers well\u2011drained light loamy soils.",
+"key": 2,
+"o": [
+"Light loamy soil",
+"Well\u2011drained soil",
+"Sandy soil",
+"Fertile soil",
+"None of these"
+],
+"page": "65",
+"q": "Which soil type is least suitable for sesame cultivation?",
+"serial": "451",
+"src_row": 450,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:451"
+},
+{
+"expl": "Critical irrigation periods are the 4\u20115 leaf stage, flowering, and pod formation; irrigation is not emphasized at harvest maturity.",
+"key": 3,
+"o": [
+"4-5 leaf stage",
+"Flowering stage",
+"Pod formation stage",
+"Harvest maturity stage",
+"None of these"
+],
+"page": "65",
+"q": "Irrigation is critical at several sesame growth stages. At which stage is it NOT considered critical?",
+"serial": "452",
+"src_row": 451,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:452"
+},
+{
+"expl": "Seeds should be stored at 6% moisture or less to prevent spoilage.",
+"key": 1,
+"o": [
+"4%",
+"6%",
+"8%",
+"10%",
+"None of these"
+],
+"page": "65",
+"q": "What is the maximum moisture content allowed for storing sesame seeds?",
+"serial": "453",
+"src_row": 452,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:453"
+},
+{
+"expl": "Sesame seeds contain a high oil content, typically 50\u201160%.",
+"key": 2,
+"o": [
+"18-20%",
+"30-35%",
+"50-60%",
+"70-75%",
+"None of these"
+],
+"page": "65",
+"q": "Approximately what percentage of oil is present in sesame seeds?",
+"serial": "454",
+"src_row": 453,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:454"
+},
+{
+"expl": "The recommended seed rate for one hectare is about 3\u20114 kg.",
+"key": 1,
+"o": [
+"1-2 kg",
+"3-4 kg",
+"5-6 kg",
+"7-8 kg",
+"None of these"
+],
+"page": "65",
+"q": "How many kilograms of seed are required to sow one hectare of sesame?",
+"serial": "455",
+"src_row": 454,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "65:455"
+},
+{
+"expl": "Day neutral crops flower when temperature and moisture are favorable, regardless of photoperiod.",
+"key": 2,
+"o": [
+"It flowers only under short-day conditions",
+"It requires long days to initiate flowering",
+"Flowering is independent of day length",
+"It cannot flower under any photoperiod",
+"None of these"
+],
+"page": "66",
+"q": "Sunflower is classified as a day neutral crop. Which statement best describes this classification?",
+"serial": "456",
+"src_row": 455,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:456"
+},
+{
+"expl": "Sunflower oil is rich in linoleic acid, making up roughly two\u2011thirds of its fatty\u2011acid profile.",
+"key": 1,
+"o": [
+"Linolenic acid",
+"Linoleic acid",
+"Oleic acid",
+"Palmitic acid",
+"None of these"
+],
+"page": "66",
+"q": "Which polyunsaturated fatty acid constitutes about 67% of sunflower oil?",
+"serial": "457",
+"src_row": 456,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:457"
+},
+{
+"expl": "The crop performs best when daytime temperatures are between 20 and 25\u00b0C; lower or higher temperatures reduce yield and oil quality.",
+"key": 2,
+"o": [
+"8\u201334\u00b0C",
+"15\u201320\u00b0C",
+"20\u201325\u00b0C",
+">38\u00b0C",
+"None of these"
+],
+"page": "66",
+"q": "What temperature range is considered optimal for sunflower growth and oil formation?",
+"serial": "458",
+"src_row": 457,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:458"
+},
+{
+"expl": "Sunflower seeds are actually achenes, a type of dry, indehiscent fruit.",
+"key": 0,
+"o": [
+"Achene",
+"Capsule",
+"Legume",
+"Samara",
+"None of these"
+],
+"page": "66",
+"q": "The fruit of the sunflower plant is botanically termed a:",
+"serial": "459",
+"src_row": 458,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:459"
+},
+{
+"expl": "Optimal yields are obtained with a sowing density of 55,000 to 98,000 plants per hectare.",
+"key": 1,
+"o": [
+"30,000\u201340,000 plants/ha",
+"55,000\u201398,000 plants/ha",
+"100,000\u2013120,000 plants/ha",
+"10,000\u201320,000 plants/ha",
+"None of these"
+],
+"page": "66",
+"q": "Recommended plant population for sunflower cultivation is:",
+"serial": "460",
+"src_row": 459,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:460"
+},
+{
+"expl": "Kharif sowing is advised from July until the first week of August to match climatic conditions.",
+"key": 1,
+"o": [
+"June to early July",
+"July to the first week of August",
+"August to September",
+"September to October",
+"None of these"
+],
+"page": "66",
+"q": "During the Kharif season, the suitable sowing window for sunflower is:",
+"serial": "461",
+"src_row": 460,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:461"
+},
+{
+"expl": "The apical region of the flower exhibits greater auxin activity, influencing growth and development.",
+"key": 0,
+"o": [
+"Apical portion of the flower",
+"Basal portion of the flower",
+"Ray florets",
+"Disk florets",
+"None of these"
+],
+"page": "66",
+"q": "Auxin activity is highest in which part of the sunflower flower?",
+"serial": "462",
+"src_row": 461,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "66:462"
+}
+],
+"row_from": 441,
+"row_to": 462,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 441,
+"seeded_from": "2026-10-05"
+},
 "qidx": 0,
+"seeded_from": "2026-10-05",
+"skips": [],
 "step": 0
 },
 "malwa": {
