@@ -114551,9 +114551,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 400,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 400,
+"built_at": "2026-10-07T10:58:12+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 115-120",
+"pages_blocks": [
+"115-116",
+"117-118",
+"119-120"
+],
+"questions": [
+{
+"expl": "Agave is propagated by bulbils and suckers, yields 200\u2011250 leaves, and harvesting begins after 2.5\u20113 years; fiber extraction is done by decortication.",
+"key": 1,
+"o": [
+"It is propagated by seeds",
+"Harvesting starts after 2.5-3 years",
+"It yields 500 leaves in its life cycle",
+"Fiber extraction uses retting",
+"None of these"
+],
+"page": "115-116",
+"q": "Which of the following is a correct statement about Agave?",
+"serial": "591",
+"src_row": 382,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "115-116:591"
+},
+{
+"expl": "Linum usitatissimum ssp. humile is the oil\u2011producing (linseed) variety, while ssp. usitatissimum is the fiber flax.",
+"key": 1,
+"o": [
+"ssp. usitatissimum",
+"ssp. humile",
+"ssp. linum",
+"ssp. oil",
+"None of these"
+],
+"page": "115-116",
+"q": "Identify the subspecies of Linum usitatissimum that is used for oil production.",
+"serial": "592",
+"src_row": 383,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "115-116:592"
+},
+{
+"expl": "In Andhra Pradesh, the bast fiber crop Mesta is locally called Bimli.",
+"key": 0,
+"o": [
+"Bimli",
+"Jute",
+"Kenaf",
+"Roselle",
+"None of these"
+],
+"page": "115-116",
+"q": "Mesta is also known by what name in Andhra Pradesh?",
+"serial": "593",
+"src_row": 384,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "115-116:593"
+},
+{
+"expl": "Lignocellulosic fibers listed are jute, sunhemp, and mesta; cotton is a cellulosic fiber, not lignocellulosic.",
+"key": 3,
+"o": [
+"Jute",
+"Sunhemp",
+"Mesta",
+"Cotton",
+"None of these"
+],
+"page": "115-116",
+"q": "Which of the following is NOT a lignocellulosic fiber?",
+"serial": "594",
+"src_row": 385,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "115-116:594"
+},
+{
+"expl": "Mesta bale weight is 181 kg, slightly higher than cotton (170 kg) and jute/sunhemp (180 kg).",
+"key": 2,
+"o": [
+"Cotton",
+"Jute and Sunhemp",
+"Mesta",
+"Silk",
+"None of these"
+],
+"page": "115-116",
+"q": "According to the standard bale weights, which crop has the heaviest bale?",
+"serial": "595",
+"src_row": 386,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "115-116:595"
+},
+{
+"expl": "The table lists sugarcane, sugar beet, tobacco, and cluster bean as cash crops; cotton is not included in that table.",
+"key": 3,
+"o": [
+"Sugarcane",
+"Sugar beet",
+"Tobacco",
+"Cotton",
+"None of these"
+],
+"page": "115-116",
+"q": "Which of the following crops is NOT listed as a cash crop in the provided table?",
+"serial": "596",
+"src_row": 387,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "115-116:596"
+},
+{
+"expl": "Tamil Nadu records the highest productivity (105 t/ha) due to favourable climatic conditions.",
+"key": 2,
+"o": [
+"Uttar Pradesh",
+"Maharashtra",
+"Tamil Nadu",
+"Karnataka",
+"None of these"
+],
+"page": "117-118",
+"q": "Which Indian state has the highest sugarcane productivity per hectare?",
+"serial": "601",
+"src_row": 388,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "117-118:601"
+},
+{
+"expl": "Sugarcane growth does not occur below 16 \u00b0C, as stated in the climate section.",
+"key": 1,
+"o": [
+"10\u00b0C",
+"16\u00b0C",
+"20\u00b0C",
+"27\u00b0C",
+"None of these"
+],
+"page": "117-118",
+"q": "What is the minimum threshold temperature required for sugarcane growth?",
+"serial": "602",
+"src_row": 389,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "117-118:602"
+},
+{
+"expl": "The process of creating modern cultivars by backcrossing is called nobilization.",
+"key": 2,
+"o": [
+"Hybridization",
+"Polyploidization",
+"Nobilization",
+"Crossbreeding",
+"None of these"
+],
+"page": "117-118",
+"q": "The repeated backcrossing of Saccharum officinarum with Saccharum spontaneum to produce modern cultivars is known as?",
+"serial": "603",
+"src_row": 390,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "117-118:603"
+},
+{
+"expl": "WL 11-2534 is noted for a 23% Brix value and suitability to waterlogged fields.",
+"key": 1,
+"o": [
+"Co 62175",
+"WL 11-2534",
+"VMC 7616",
+"Co 0238",
+"None of these"
+],
+"page": "117-118",
+"q": "Which waterlogged\u2011condition variety has the highest Brix value of 23%?",
+"serial": "604",
+"src_row": 391,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "117-118:604"
+},
+{
+"expl": "The formative stage (60\u2011130 days) is the most critical for irrigation.",
+"key": 1,
+"o": [
+"Germination",
+"Formative (tillering)",
+"Grand growth",
+"Maturity and ripening",
+"None of these"
+],
+"page": "117-118",
+"q": "During which growth stage is irrigation most critical for sugarcane?",
+"serial": "605",
+"src_row": 392,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "117-118:605"
+},
+{
+"expl": "The CCEA approved an FRP of Rs. 340 per quintal at 10.25% recovery.",
+"key": 1,
+"o": [
+"Rs. 315.10",
+"Rs. 340",
+"Rs. 350",
+"Rs. 400",
+"None of these"
+],
+"page": "117-118",
+"q": "What is the Fair and Remunerative Price (FRP) per quintal for a recovery rate of 10.25% in the 2024\u201125 sugar season?",
+"serial": "606",
+"src_row": 393,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "117-118:606"
+},
+{
+"expl": "North India uses 35,000\u201340,000 three\u2011budded setts per hectare as the standard seed rate.",
+"key": 1,
+"o": [
+"25,000-40,000/ha",
+"35,000-40,000/ha",
+"70,000-80,000/ha",
+"100,000-120,000/ha",
+"None of these"
+],
+"page": "119-120",
+"q": "Which seed rate range is typical for three\u2011budded setts in the north?",
+"serial": "611",
+"src_row": 394,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "119-120:611"
+},
+{
+"expl": "Three buds per sett provide the best balance of growth and yield, though two\u2011bud setts are used in some regions.",
+"key": 2,
+"o": [
+"One bud",
+"Two buds",
+"Three buds",
+"Four buds",
+"None of these"
+],
+"page": "119-120",
+"q": "What is the ideal number of buds per sugarcane sett for maximum yield?",
+"serial": "612",
+"src_row": 395,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "119-120:612"
+},
+{
+"expl": "The flat\u2011bed method is popular in Northern India and employs 10\u201115 cm deep furrows with 75\u201190 cm row spacing.",
+"key": 0,
+"o": [
+"Flat\u2011bed method",
+"Ridge and Furrow method",
+"Trench method",
+"Pit planting",
+"None of these"
+],
+"page": "119-120",
+"q": "Which planting method uses shallow furrows of 10\u201115 cm depth and 75\u201190 cm row spacing?",
+"serial": "613",
+"src_row": 396,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "119-120:613"
+},
+{
+"expl": "Agallol is specifically mentioned as a fungicide used for treating sugarcane setts.",
+"key": 0,
+"o": [
+"Agallol",
+"Chlorothalonil",
+"Mancozeb",
+"Copper sulfate",
+"None of these"
+],
+"page": "119-120",
+"q": "Which fungicide is used for sett treatment in sugarcane?",
+"serial": "614",
+"src_row": 397,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "119-120:614"
+},
+{
+"expl": "STP saves 60\u201170% on seed costs by improving seed multiplication and survival.",
+"key": 2,
+"o": [
+"30\u201140%",
+"50\u201155%",
+"60\u201170%",
+"80\u201190%",
+"None of these"
+],
+"page": "119-120",
+"q": "The STP method increases seed multiplication ratio from 1:10 to 1:40 and saves what percentage of seed costs?",
+"serial": "615",
+"src_row": 398,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "119-120:615"
+},
+{
+"expl": "Nitrogen is typically applied 2\u20113 months after sowing to enhance sugar accumulation.",
+"key": 2,
+"o": [
+"Immediately after sowing",
+"1\u20112 months after sowing",
+"2\u20113 months after sowing",
+"6\u20118 months after sowing",
+"None of these"
+],
+"page": "119-120",
+"q": "When is the nitrogen dose usually applied to promote sugar accumulation?",
+"serial": "616",
+"src_row": 399,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "119-120:616"
+}
+],
+"rolled": false,
+"row_from": 382,
+"row_to": 400,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 382,
+"seeded_from": "2026-10-06",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-06",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
