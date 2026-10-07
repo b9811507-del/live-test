@@ -114545,8 +114545,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 483,
 "names": {},
+"plan": {
+"bidx_next": 483,
+"built_at": "2026-10-07T14:28:15+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 67-69",
+"pages_list": [
+67,
+68,
+69
+],
+"questions": [
+{
+"expl": "The source states that sunflower germination type is epigeal.",
+"key": 0,
+"o": [
+"Epigeal",
+"Hypogeal",
+"Reptant",
+"Viviparous",
+"None of these"
+],
+"page": "67",
+"q": "What type of germination does sunflower exhibit?",
+"serial": "463",
+"src_row": 462,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:463"
+},
+{
+"expl": "Sunflower performs best when soil pH lies between 6.5 and 8.0.",
+"key": 1,
+"o": [
+"5.0-6.0",
+"6.5-8.0",
+"8.5-9.5",
+"4.0-5.0",
+"None of these"
+],
+"page": "67",
+"q": "Which soil pH range is considered optimal for sunflower cultivation?",
+"serial": "464",
+"src_row": 463,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:464"
+},
+{
+"expl": "The source mentions complete failure in sandy soil having pH 4.6.",
+"key": 0,
+"o": [
+"Sandy soil with pH 4.6",
+"Clayey soil with pH 7.0",
+"Deep loam with pH 6.8",
+"Saline soil with pH 8.2",
+"None of these"
+],
+"page": "67",
+"q": "In which soil condition did sunflower experience complete failure?",
+"serial": "465",
+"src_row": 464,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:465"
+},
+{
+"expl": "The table lists 30 x 30 cm spacing with a seed rate of 10 kg per hectare.",
+"key": 2,
+"o": [
+"30 kg",
+"20 kg",
+"10 kg",
+"5 kg",
+"None of these"
+],
+"page": "67",
+"q": "According to the seed spacing table, what seed rate (kg/ha) corresponds to a spacing of 30 cm x 30 cm?",
+"serial": "466",
+"src_row": 465,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:466"
+},
+{
+"expl": "Seeds should be sown at a depth of 3-5 cm for better stand.",
+"key": 1,
+"o": [
+"1-2 cm",
+"3-5 cm",
+"6-8 cm",
+"10 cm",
+"None of these"
+],
+"page": "67",
+"q": "What is the recommended depth for sowing sunflower seeds to ensure a good stand?",
+"serial": "467",
+"src_row": 466,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:467"
+},
+{
+"expl": "Nitrogen is applied at 82 kg/ha, the highest among the listed nutrients.",
+"key": 0,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Sulphur",
+"None of these"
+],
+"page": "67",
+"q": "Which nutrient requires the highest application rate per hectare for sunflower?",
+"serial": "468",
+"src_row": 467,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:468"
+},
+{
+"expl": "The water management schedule advises an interval of 7-8 days after the first post\u2011sowing irrigation.",
+"key": 2,
+"o": [
+"Every 3-4 days",
+"Every 5-6 days",
+"Every 7-8 days",
+"Every 10-12 days",
+"None of these"
+],
+"page": "67",
+"q": "After the initial irrigation, at what interval should subsequent watering be applied?",
+"serial": "469",
+"src_row": 468,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "67:469"
+},
+{
+"expl": "The source lists bud initiation as occurring at 35-40 days after sowing (DAs).",
+"key": 0,
+"o": [
+"35-40 DAs",
+"55-65 DAS",
+"65-90 DAS",
+"10-12% seed moisture",
+"None of these"
+],
+"page": "68",
+"q": "Which irrigation critical stage corresponds to bud initiation in tobacco?",
+"serial": "470",
+"src_row": 469,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:470"
+},
+{
+"expl": "The text states that seed filling under good management is only 75% in India.",
+"key": 0,
+"o": [
+"75%",
+"90-95%",
+"50-60%",
+"30-40%",
+"None of these"
+],
+"page": "68",
+"q": "Under good management in India, seed filling in tobacco achieves approximately what percentage?",
+"serial": "471",
+"src_row": 470,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:471"
+},
+{
+"expl": "MSFH 1 is listed under the Hybrids category, whereas the others are listed as varieties.",
+"key": 1,
+"o": [
+"CO1",
+"MSFH 1",
+"K2",
+"BSH 1 EC 68415",
+"None of these"
+],
+"page": "68",
+"q": "Which of the following is a hybrid tobacco variety mentioned in the source?",
+"serial": "472",
+"src_row": 471,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:472"
+},
+{
+"expl": "Physiological maturity is defined as 30-40% seed moisture in the source.",
+"key": 0,
+"o": [
+"30-40%",
+"10-12%",
+"50-60%",
+"5-8%",
+"None of these"
+],
+"page": "68",
+"q": "What is the approximate seed moisture content at physiological maturity of tobacco?",
+"serial": "473",
+"src_row": 472,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:473"
+},
+{
+"expl": "The average yield given is 18-20 quintals per hectare.",
+"key": 0,
+"o": [
+"18-20 q/ha",
+"25-30 q/ha",
+"10-12 q/ha",
+"30-35 q/ha",
+"None of these"
+],
+"page": "68",
+"q": "According to the source, the average tobacco yield per hectare is:",
+"serial": "474",
+"src_row": 473,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:474"
+},
+{
+"expl": "The chromosome count for Nicotiana tabacum is reported as 2n=48.",
+"key": 0,
+"o": [
+"48",
+"24",
+"64",
+"32",
+"None of these"
+],
+"page": "68",
+"q": "What is the chromosome number (2n) of Nicotiana tabacum?",
+"serial": "475",
+"src_row": 474,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:475"
+},
+{
+"expl": "The source notes that Nicotiana rustica is smaller than Nicotiana tabacum.",
+"key": 0,
+"o": [
+"It has a smaller plant size",
+"It has larger leaves",
+"It contains higher nicotine content",
+"It is cultivated on heavy soils",
+"None of these"
+],
+"page": "68",
+"q": "Which statement correctly distinguishes Nicotiana rustica from Nicotiana tabacum?",
+"serial": "476",
+"src_row": 475,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "68:476"
+},
+{
+"expl": "The source states that tobacco seeds need about 21\u00b0C for germination.",
+"key": 0,
+"o": [
+"21\u00b0C",
+"26\u00b0C",
+"30\u00b0C",
+"15\u00b0C",
+"None of these"
+],
+"page": "69",
+"q": "What temperature is required for tobacco seed germination?",
+"serial": "477",
+"src_row": 476,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:477"
+},
+{
+"expl": "Tobacco adapts to moderately acidic soils with pH between 5.5 and 6.5.",
+"key": 0,
+"o": [
+"5.5-6.5",
+"4.0-5.0",
+"7.0-8.0",
+"6.5-7.5",
+"None of these"
+],
+"page": "69",
+"q": "Which soil pH range is most suitable for tobacco cultivation?",
+"serial": "478",
+"src_row": 477,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:478"
+},
+{
+"expl": "Topping removes flower heads to divert energy to leaf development, enhancing leaf size and quality.",
+"key": 0,
+"o": [
+"Improve leaf size and quality",
+"Increase nicotine content",
+"Promote early flowering",
+"Reduce water requirement",
+"None of these"
+],
+"page": "69",
+"q": "The primary aim of topping in tobacco farming is to:",
+"serial": "479",
+"src_row": 478,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:479"
+},
+{
+"expl": "FCV is described as covering 30% of area and 20% of production.",
+"key": 0,
+"o": [
+"Flue Cured Virginia (FCV)",
+"Non\u2011Virginia types",
+"Bidi tobacco",
+"Hookah tobacco",
+"None of these"
+],
+"page": "69",
+"q": "Which Indian tobacco type contributes about 30% of the cultivated area and 20% of total production?",
+"serial": "480",
+"src_row": 479,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:480"
+},
+{
+"expl": "Sodic soils cause high chloride uptake, leading to poor burning quality of leaves.",
+"key": 0,
+"o": [
+"Plants absorb excess chloride ions, reducing leaf burning quality",
+"Low moisture retention hampers growth",
+"Excessive acidity damages roots",
+"High nitrogen causes leaf discoloration",
+"None of these"
+],
+"page": "69",
+"q": "Why are sodic soils considered unsuitable for tobacco?",
+"serial": "481",
+"src_row": 480,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:481"
+},
+{
+"expl": "The source specifies the second fortnight of August as the optimal sowing period.",
+"key": 0,
+"o": [
+"Second fortnight of August",
+"First week of June",
+"Mid\u2011December",
+"Last week of October",
+"None of these"
+],
+"page": "69",
+"q": "When is the optimum sowing time for tobacco in India?",
+"serial": "482",
+"src_row": 481,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:482"
+},
+{
+"expl": "The source mentions hookah, chewing, and snuff, but does not mention any pharmaceutical analgesic use.",
+"key": 3,
+"o": [
+"Hookah",
+"Chewing",
+"Snuff",
+"Pharmaceutical analgesic",
+"None of these"
+],
+"page": "69",
+"q": "Which of the following is NOT listed as a use of tobacco in the source?",
+"serial": "483",
+"src_row": 482,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "69:483"
+}
+],
+"row_from": 462,
+"row_to": 483,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 462,
+"seeded_from": "2026-10-06"
+},
 "qidx": 0,
+"seeded_from": "2026-10-06",
+"skips": [],
 "step": 0
 },
 "malwa": {
