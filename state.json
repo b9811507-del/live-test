@@ -114540,7 +114540,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-07T17:57:49+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Less than 1/3 atm",
+"1/3 atm to 15 atm",
+"15 atm to 10,000 atm",
+"Greater than 10,000 atm",
+"None of these"
+],
+"page": "",
+"q": "What is the moisture tension range for 'Super Available or Superfluous Water'?",
+"serial": "1sUgWsko:6995",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6995"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pearl millet + black gram.",
+"Mustard planted with nine rows of wheat.",
+"Rice + maize on ridges and trenches.",
+"Sugarcane in furrows with intercrops on ridges.",
+"None of these"
+],
+"page": "",
+"q": "The intercropping example with a 9:1 row ratio is:",
+"serial": "128DIQLj:684",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:684"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Balehonnur, Karnataka",
+"Kottayam, Kerala",
+"Coimbatore, Tamil Nadu",
+"Hyderabad, Telangana",
+"None of these"
+],
+"page": "",
+"q": "Where is the Central Coffee Research Institute (CCRI) located?",
+"serial": "1YcJWVgW:984",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:984"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"< 0.002 mm",
+"0.002 \u2013 0.05 mm",
+"0.05 \u2013 0.10 mm",
+"0.10 \u2013 0.25 mm",
+"None of these"
+],
+"page": "",
+"q": "According to the USDA system, what is the diameter range for silt particles?",
+"serial": "1sUgWsko:6925",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6925"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Stomodeum",
+"Mesenteron",
+"Proctodeum",
+"Hypodermis",
+"None of these"
+],
+"page": "",
+"q": "Which part of the nematode's alimentary canal is lined internally with cuticle?",
+"serial": "1UgnIe-g:2417",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2417"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Malvi",
+"Nagori",
+"Ammritmahal",
+"Tharparkar",
+"None of these"
+],
+"page": "",
+"q": "Which cattle breed is known for its narrow face, long horns, and grey-colored body?",
+"serial": "17U0MEc-:2980",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2980"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Less variability and more homogeneity",
+"More variability and less homogeneity",
+"No variability and complete homogeneity",
+"Equal variability and homogeneity",
+"None of these"
+],
+"page": "",
+"q": "What does a higher value of Coefficient of Variation (C.V.) indicate?",
+"serial": "17U0MEc-:2873",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2873"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It involves two parents",
+"It has the lowest performance",
+"Its performance is the average of the single crosses involved",
+"It is the least uniform",
+"None of these"
+],
+"page": "",
+"q": "What is the primary characteristic of a double cross hybrid?",
+"serial": "1UgnIe-g:168",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:168"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Medium for dissolving nutrients",
+"Ingredient in photosynthesis",
+"Source of energy",
+"Regulating plant temperature",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a role of water in plants as per the source?",
+"serial": "1sUgWsko:4571",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4571"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Black sunken ulcer-like lesions",
+"Grey mass of spores",
+"White powdery growth",
+"Yellow streaks on leaves",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a characteristic feature of anthracnose in sorghum?",
+"serial": "1UgnIe-g:1054",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1054"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Anthocyanins",
+"Solasodine",
+"Vitamin B",
+"Iron",
+"None of these"
+],
+"page": "",
+"q": "Which compound is responsible for the bitter taste in brinjal?",
+"serial": "1sUgWsko:1339",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1339"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Khadar is older alluvium, while Bhangar is newer",
+"Khadar is clayey and dark, while Bhangar is sandy and light",
+"Khadar is deposited annually by floods, while Bhangar is away from flood plains",
+"Khadar has more kankar modules than Bhangar",
+"None of these"
+],
+"page": "",
+"q": "What distinguishes Khadar from Bhangar in Alluvial soil?",
+"serial": "1sUgWsko:7044",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7044"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It contains more nutrients",
+"It is easier to apply",
+"The presence of cellulose in undecomposed FYM favors termite growth",
+"It improves soil texture",
+"None of these"
+],
+"page": "",
+"q": "What is the primary reason to use well-decomposed FYM to prevent termites?",
+"serial": "1UgnIe-g:2276",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2276"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.15%",
+"0.5%",
+"1.0%",
+"2.0%",
+"None of these"
+],
+"page": "",
+"q": "What is the potassium percentage in compost as per the given data?",
+"serial": "1sUgWsko:7153",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7153"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Middle section",
+"Root tip",
+"Terminal end",
+"Lower half",
+"None of these"
+],
+"page": "",
+"q": "Ring budding differs from many other budding techniques because it is performed on the __________ of the rootstock.",
+"serial": "1sUgWsko:614",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:614"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Flat planting",
+"Furrow planting",
+"Trench method",
+"Single bud direct planting",
+"None of these"
+],
+"page": "",
+"q": "Which planting method is specifically recommended for tall\u2011growing cane areas such as coastal regions to prevent lodging?",
+"serial": "1sUgWsko:408",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:408"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Packing",
+"Financing",
+"Transferring Title",
+"Distribution",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a Market Management Function?",
+"serial": "1sUgWsko:4036",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4036"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Impermeable membrane",
+"Semi\u2011permeable membrane",
+"Porous membrane",
+"Rigid membrane",
+"None of these"
+],
+"page": "",
+"q": "Osmosis occurs across which type of membrane?",
+"serial": "1UgnIe-g:1463",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1463"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"2n=10",
+"2n=12",
+"2n=14",
+"2n=16",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number of Jute (Corchorus spp.)?",
+"serial": "1sUgWsko:257",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:257"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cow dung",
+"Pig dung",
+"Poultry manure",
+"All contribute equally",
+"None of these"
+],
+"page": "",
+"q": "For ponds with lowest water level >1.2 m, which manure type contributes the greatest amount in the monsoon season?",
+"serial": "1sUgWsko:2331",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2331"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Hayes and Garber (1919)",
+"Mendel and Fischer",
+"Watson and Crick",
+"Singh and Rao",
+"None of these"
+],
+"page": "",
+"q": "The commercial use of synthetic varieties in maize was first proposed by which researchers?",
+"serial": "1UgnIe-g:297",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:297"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To alter genetic material",
+"To scan and cut DNA at specific sequences",
+"To introduce genes from another species",
+"To create mRNA from DNA",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of restriction enzymes?",
+"serial": "1bxM1Q-4:2109",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2109"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1.0 g/cm\u00b3",
+"2.66 g/cm\u00b3",
+"2.1\u20132.4 g/cm\u00b3",
+"1.1\u20131.4 g/cm\u00b3",
+"None of these"
+],
+"page": "",
+"q": "What is the typical particle density of mineral soils?",
+"serial": "17U0MEc-:1066",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1066"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Record and general appearance",
+"Stump analysis",
+"Volume calculation",
+"Height measurement",
+"None of these"
+],
+"page": "",
+"q": "Which method is used to determine the age of standing trees?",
+"serial": "1UgnIe-g:2737",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2737"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C.E. = Source/Sink x 100",
+"C.E. = Sink/Source x 100",
+"C.E. = Source x Sink / 100",
+"C.E. = Sink - Source x 100",
+"None of these"
+],
+"page": "",
+"q": "What is the formula for the Coefficient of Effectiveness (C.E.)?",
+"serial": "17U0MEc-:303",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:303"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Oxathiins",
+"Alkyl phosphonates",
+"Triazoles",
+"Phenylamides",
+"None of these"
+],
+"page": "",
+"q": "Which fungicide group is specifically effective against oomycetes such as downy mildew?",
+"serial": "1UgnIe-g:977",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:977"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Rent",
+"Wages",
+"Profit",
+"Interest",
+"None of these"
+],
+"page": "",
+"q": "What is the reward for Labor as a factor of production?",
+"serial": "1bxM1Q-4:2229",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2229"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Orange",
+"Barbados cherry",
+"Lemon",
+"Guava",
+"None of these"
+],
+"page": "",
+"q": "What is the richest source of vitamin C among the following?",
+"serial": "17U0MEc-:1334",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1334"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Maximizing short-term crop yield",
+"Meeting the food and fuel needs of the present generation without endangering future resources",
+"Using only chemical fertilizers",
+"Eliminating all pests and weeds",
+"None of these"
+],
+"page": "",
+"q": "What is the primary goal of sustainable agriculture?",
+"serial": "1bxM1Q-4:1437",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1437"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase soil fertility",
+"To eliminate erosion hazards",
+"To enhance water drainage",
+"To promote weed growth",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of bench terracing?",
+"serial": "1bxM1Q-4:1395",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1395"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"JRC-212",
+"JRC-321",
+"JRC 7447",
+"D154",
+"None of these"
+],
+"page": "",
+"q": "Which variety of jute is also known as 'Sonali'?",
+"serial": "1bxM1Q-4:829",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:829"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Basalt",
+"Granite",
+"Limestone",
+"Schist",
+"None of these"
+],
+"page": "",
+"q": "Which rock type is formed by the cooling of magma below the earth's surface?",
+"serial": "128DIQLj:1092",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1092"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"5 : 3 : 2",
+"6 : 3 : 1",
+"7 : 4 : 1",
+"4 : 2 : 1",
+"None of these"
+],
+"page": "",
+"q": "The ratio of flower : peg : pod in groundnut is?",
+"serial": "128DIQLj:454",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:454"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Lepidoptera",
+"Diptera",
+"Coleoptera",
+"Acari",
+"None of these"
+],
+"page": "",
+"q": "The Eriophyid mite (Aceria cajani) belongs to which of the following orders?",
+"serial": "1sUgWsko:1973",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1973"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"4",
+"6",
+"8",
+"12",
+"None of these"
+],
+"page": "",
+"q": "What is the coordination number of silicon in the tetrahedral sheet of a clay mineral?",
+"serial": "128DIQLj:1243",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1243"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"12",
+"24",
+"36",
+"48",
+"None of these"
+],
+"page": "",
+"q": "How many chromosome pairs does rice possess?",
+"serial": "1bxM1Q-4:619",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:619"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gall midge",
+"Cotony cushion seal",
+"Platygaster",
+"Aphid",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of hermaphroditism in insects?",
+"serial": "1UgnIe-g:1942",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1942"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"2-4 cm",
+"5-7 cm",
+"7-10 cm",
+"12-15 cm",
+"None of these"
+],
+"page": "",
+"q": "In zero tillage, fertilizers are placed at what depth?",
+"serial": "1sUgWsko:6430",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6430"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Matrix of mitochondria",
+"Inner mitochondrial membrane",
+"Cytoplasm",
+"Nucleus",
+"None of these"
+],
+"page": "",
+"q": "Where are all the enzymes of the Krebs cycle located, except one?",
+"serial": "1UgnIe-g:1592",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1592"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Large crystals",
+"Entrapped water steam forming vesicles",
+"High silica content",
+"Formation in horizontal cracks",
+"None of these"
+],
+"page": "",
+"q": "Vesicular rocks are characterized by:",
+"serial": "1sUgWsko:6816",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6816"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Feldspar",
+"Quartz",
+"Calcite",
+"Muscovite",
+"None of these"
+],
+"page": "",
+"q": "In the descending sequence of weathering resistance, which mineral ranks between muscovite and biotite?",
+"serial": "17U0MEc-:1089",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1089"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cuscuta sp.",
+"Chicorium intybus",
+"Lactuca seriola",
+"Melilotus spp.",
+"None of these"
+],
+"page": "",
+"q": "Which weed is associated with the crop 'Berseem' according to the source?",
+"serial": "1sUgWsko:5082",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5082"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"One person is the owner and manager of the firm.",
+"Owned by members of an undivided Hindu family.",
+"A partnership of two or more persons.",
+"A joint\u2011stock company with limited liability.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes a sole proprietorship?",
+"serial": "1sUgWsko:3998",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3998"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Inelastic",
+"Unit elastic",
+"Elastic",
+"Perfectly elastic",
+"None of these"
+],
+"page": "",
+"q": "Which elasticity type corresponds to a demand curve that is horizontal?",
+"serial": "1sUgWsko:3935",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3935"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"20 meters",
+"33 ft",
+"66 ft",
+"100 ft",
+"None of these"
+],
+"page": "",
+"q": "What is the length of an Engineer's Chain?",
+"serial": "1bxM1Q-4:4060",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4060"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gujarat",
+"Karnataka",
+"UP",
+"Haryana",
+"None of these"
+],
+"page": "",
+"q": "Which state is NOT part of the \"Northern plain and central Highlands including Aravallis\" zone?",
+"serial": "1sUgWsko:5833",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5833"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lethal dose",
+"Sub-lethal dose",
+"Acute dose",
+"Minimum effective dose",
+"None of these"
+],
+"page": "",
+"q": "What term describes a pesticide dose that does not cause immediate death but can affect pest population growth?",
+"serial": "1UgnIe-g:2151",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2151"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"H. Vulgare",
+"H. spontaneum",
+"H. distichum",
+"H. flexuosum",
+"None of these"
+],
+"page": "",
+"q": "Which barley group is six\u2011rowed with all three spikelets fertile and is most commonly cultivated in India?",
+"serial": "1sUgWsko:188",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:188"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Seeds",
+"Suckers",
+"Cuttings",
+"Grafting",
+"None of these"
+],
+"page": "",
+"q": "What is the preferred method of propagation for Small Cardamom?",
+"serial": "1YcJWVgW:877",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:877"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To conserve soil moisture in areas with heavy rainfall",
+"To increase the land slope for better water runoff",
+"To reduce soil erosion in low rainfall areas",
+"To promote afforestation in dry regions",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of sloping inward terracing?",
+"serial": "1bxM1Q-4:1401",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1401"
+}
+],
+"set_no": 25,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
