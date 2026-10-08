@@ -120885,6 +120885,8 @@
 "cd": 1,
 "congrats_sent": 31890,
 "cta_sent": "off",
+"done_at": "2026-10-08T11:11:47+05:30",
+"elapsed_s": 873,
 "expl_in_poll": 20,
 "file_msg": 31891,
 "file_sent": "MALWA_VOL_1_p121-126_20Q_2026-10-08.html",
@@ -120894,8 +120896,18 @@
 "lb_rows": 40,
 "lb_sent": true,
 "lock_ts": 1791438065.475896,
-"locked_by": "37732399771",
+"locked_by": "",
 "msg_ann": 31865,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 31867,
 "names": {
 "1023152775": "Anjali \ud83d\udc9b\u2764\ufe0f",
@@ -120939,6 +120951,8 @@
 "8906964276": "Ankit.Rajput\ud83c\udf3e\ud83c\udf3e",
 "964195451": "Neeraj"
 },
+"paid_msg": 31893,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 3,
@@ -121359,7 +121373,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-08T11:00:22+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 31892,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 127-132\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 70, 71, 72",
 "vol": 0
