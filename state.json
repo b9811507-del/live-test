@@ -120317,8 +120317,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 504,
 "names": {},
+"plan": {
+"bidx_next": 504,
+"built_at": "2026-10-08T14:28:01+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 70-72",
+"pages_list": [
+70,
+71,
+72
+],
+"questions": [
+{
+"expl": "Priming is the removal of mature leaves to prepare the crop for the next stage.",
+"key": 0,
+"o": [
+"Removal of mature leaves",
+"Application of nitrogen fertilizer",
+"Controlled irrigation",
+"Shade treatment",
+"None of these"
+],
+"page": "70",
+"q": "Which of the following best describes the process of priming in tobacco cultivation?",
+"serial": "484",
+"src_row": 483,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:484"
+},
+{
+"expl": "Flue curing imparts the color, texture, and aroma required for cigarette tobacco.",
+"key": 0,
+"o": [
+"Cigarette",
+"Pipe",
+"Chewing",
+"Snuff",
+"None of these"
+],
+"page": "70",
+"q": "Flue curing is primarily used for which type of tobacco product?",
+"serial": "485",
+"src_row": 484,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:485"
+},
+{
+"expl": "The source states the potato\u2019s probable origin is Peru in South America.",
+"key": 0,
+"o": [
+"Peru",
+"China",
+"France",
+"India",
+"None of these"
+],
+"page": "70",
+"q": "The probable centre of origin of the potato (Solanum tuberosum) is?",
+"serial": "486",
+"src_row": 485,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:486"
+},
+{
+"expl": "Solanin is produced when tubers are exposed to solar radiation.",
+"key": 0,
+"o": [
+"Solar radiation",
+"Cold stress",
+"Mechanical damage",
+"Humidity",
+"None of these"
+],
+"page": "70",
+"q": "Solanin in potato tubers is formed when they are exposed to what?",
+"serial": "487",
+"src_row": 486,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:487"
+},
+{
+"expl": "Tuberization is badly affected at about 30\u00b0C (and also below 10\u00b0C).",
+"key": 0,
+"o": [
+"30\u00b0C",
+"20\u00b0C",
+"15\u00b0C",
+"10\u00b0C",
+"None of these"
+],
+"page": "70",
+"q": "At which temperature is tuberization of potato severely affected?",
+"serial": "488",
+"src_row": 487,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:488"
+},
+{
+"expl": "Acidic soils (pH 5.0-6.5) limit scab diseases in potatoes.",
+"key": 0,
+"o": [
+"5.0-6.5",
+"6.5-7.5",
+"7.5-8.5",
+"4.0-5.0",
+"None of these"
+],
+"page": "70",
+"q": "What soil pH range is most suitable for potato cultivation to limit scab diseases?",
+"serial": "489",
+"src_row": 488,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:489"
+},
+{
+"expl": "The main crop is planted from the first to the third week of October in plains.",
+"key": 0,
+"o": [
+"First week of October to third week of October",
+"Third week of September to first week of October",
+"Second week of November to fourth week of November",
+"First week of August to third week of August",
+"None of these"
+],
+"page": "70",
+"q": "When is the main crop of potato typically planted in plains?",
+"serial": "490",
+"src_row": 489,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "70:490"
+},
+{
+"expl": "The main crop of potato in plains is planted between 10 Oct and 25 Oct as per the given planting time ranges.",
+"key": 1,
+"o": [
+"20 Sep - 10 Oct",
+"10 Oct - 25 Oct",
+"25 Oct - 10 Nov",
+"Third week of February to second week of April",
+"None of these"
+],
+"page": "71",
+"q": "What is the recommended planting time for the main crop of potato in plains?",
+"serial": "491",
+"src_row": 490,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:491"
+},
+{
+"expl": "The Ridge and Furrow Method explicitly mentions preparing ridges and planting tubers on them.",
+"key": 1,
+"o": [
+"Flat Bed Method",
+"Ridge and Furrow Method",
+"Hill Planting Method",
+"Bed and Furrow Method",
+"None of these"
+],
+"page": "71",
+"q": "Which potato planting method involves preparing ridges where tubers are planted?",
+"serial": "492",
+"src_row": 491,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:492"
+},
+{
+"expl": "The seed rate for medium-sized potato tubers is specified as 15-20 q/ha in the source.",
+"key": 1,
+"o": [
+"10-15 q/ha",
+"15-20 q/ha",
+"25-30 q/ha",
+"8-12 q/ha",
+"None of these"
+],
+"page": "71",
+"q": "What is the seed rate for medium-sized potato tubers per hectare?",
+"serial": "493",
+"src_row": 492,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:493"
+},
+{
+"expl": "The storage temperature for potatoes is clearly mentioned as 4-7\u00b0C.",
+"key": 1,
+"o": [
+"0-4\u00b0C",
+"4-7\u00b0C",
+"7-10\u00b0C",
+"10-12\u00b0C",
+"None of these"
+],
+"page": "71",
+"q": "At what temperature should potatoes be stored?",
+"serial": "494",
+"src_row": 493,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:494"
+},
+{
+"expl": "For tubers with a diameter of 5.0-6.0 cm, the planting distance is specified as 60 x 40 cm.",
+"key": 3,
+"o": [
+"50 x 20 cm",
+"60 x 15 cm",
+"60 x 25 cm",
+"60 x 40 cm",
+"None of these"
+],
+"page": "71",
+"q": "What is the recommended planting distance for potato tubers with a diameter of 5.0-6.0 cm (longer axis)?",
+"serial": "495",
+"src_row": 494,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:495"
+},
+{
+"expl": "Out tubers have the lowest seed rate of 8-12 q/ha compared to other grades.",
+"key": 3,
+"o": [
+"Large size",
+"Medium size",
+"Small size",
+"Out tubers",
+"None of these"
+],
+"page": "71",
+"q": "Which potato seed grade has the lowest seed rate per hectare?",
+"serial": "496",
+"src_row": 495,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:496"
+},
+{
+"expl": "In hilly regions, potato is planted from the third week of February to the second week of April.",
+"key": 2,
+"o": [
+"Third week of October to first week of November",
+"10 Oct - 25 Oct",
+"Third week of February to second week of April",
+"20 Sep - 10 Oct",
+"None of these"
+],
+"page": "71",
+"q": "When is potato planted in hilly regions?",
+"serial": "497",
+"src_row": 496,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "71:497"
+},
+{
+"expl": "The source explicitly states that seed storage requires 2.4\u00b0C and 95% relative humidity.",
+"key": 0,
+"o": [
+"2.4\u00b0C and 95% RH",
+"7\u00b0C and 95% RH",
+"8-15\u00b0C and 95% RH",
+"4-7\u00b0C and 95% RH",
+"None of these"
+],
+"page": "72",
+"q": "What is the recommended temperature and relative humidity for storing potato seeds in cold storage?",
+"serial": "498",
+"src_row": 497,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:498"
+},
+{
+"expl": "The source specifies 80-100 kg/ha for Phosphorus, not 120-150 kg/ha.",
+"key": 2,
+"o": [
+"250-500 q/ha of farmyard manure",
+"100-150 kg/ha of Nitrogen",
+"120-150 kg/ha of Phosphorus",
+"80-100 kg/ha of Potassium",
+"None of these"
+],
+"page": "72",
+"q": "Which of the following is NOT a recommended nutrient application rate for potato cultivation per hectare?",
+"serial": "499",
+"src_row": 498,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:499"
+},
+{
+"expl": "The source states that a 24-25 cm deep plough is required for potato cultivation.",
+"key": 2,
+"o": [
+"15-20 cm",
+"20-25 cm",
+"24-25 cm",
+"30-35 cm",
+"None of these"
+],
+"page": "72",
+"q": "What is the ideal depth for ploughing in potato cultivation?",
+"serial": "500",
+"src_row": 499,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:500"
+},
+{
+"expl": "The source mentions propanil @ 1.0 kg a.i./ha as a post-emergence herbicide for potato.",
+"key": 2,
+"o": [
+"Nitrofen",
+"Alachlor",
+"Propanil",
+"Atrazine",
+"None of these"
+],
+"page": "72",
+"q": "Which herbicide is recommended for post-emergence weed management in potato?",
+"serial": "501",
+"src_row": 500,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:501"
+},
+{
+"expl": "The source states that heaping under shade hardens the skin and separates adhering soil.",
+"key": 1,
+"o": [
+"To increase tuber size",
+"To harden the skin and separate adhering soil",
+"To prevent sprouting",
+"To enhance color",
+"None of these"
+],
+"page": "72",
+"q": "What is the primary purpose of heaping harvested potatoes under shade for a couple of days?",
+"serial": "502",
+"src_row": 501,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:502"
+},
+{
+"expl": "The source lists CCC, Sodium ascorbate, and garlic acid, but not Gibberellic acid.",
+"key": 2,
+"o": [
+"CCC at 500 mg/l",
+"Sodium ascorbate at 100 mg/l",
+"Gibberellic acid at 10-100 mg/l",
+"Garlic acid at 10-100 mg/l",
+"None of these"
+],
+"page": "72",
+"q": "Which plant growth regulator, when used for soaking potato seed tubers, is NOT mentioned in the source?",
+"serial": "503",
+"src_row": 502,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:503"
+},
+{
+"expl": "The source specifies a yield range of 350-450 quintals per hectare under good management.",
+"key": 2,
+"o": [
+"200-300 quintals",
+"300-400 quintals",
+"350-450 quintals",
+"450-500 quintals",
+"None of these"
+],
+"page": "72",
+"q": "What is the typical yield range of marketable potatoes per hectare under good crop management?",
+"serial": "504",
+"src_row": 503,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "72:504"
+}
+],
+"row_from": 483,
+"row_to": 504,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 483,
+"seeded_from": "2026-10-07"
+},
 "qidx": 0,
+"seeded_from": "2026-10-07",
+"skips": [],
 "step": 0
 },
 "malwa": {
