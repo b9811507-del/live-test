@@ -120323,9 +120323,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 420,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 420,
+"built_at": "2026-10-08T10:57:10+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 121-126",
+"pages_blocks": [
+"121-122",
+"123-124",
+"125-126"
+],
+"questions": [
+{
+"expl": "The standard NPK recommendation for sugarcane is 150\u2013180 kg N, 60 kg P, and 60 kg K per hectare.",
+"key": 0,
+"o": [
+"150-180:60:60",
+"200-250:80:80",
+"100-120:50:50",
+"180-200:70:70",
+"None of these"
+],
+"page": "121-122",
+"q": "What is the recommended NPK dose (kg/ha) for sugarcane cultivation?",
+"serial": "621",
+"src_row": 400,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "121-122:621"
+},
+{
+"expl": "Drip irrigation requires about 940 mm of water per hectare for sugarcane.",
+"key": 0,
+"o": [
+"940 mm",
+"1500 mm",
+"2500 mm",
+"80 ton of water",
+"None of these"
+],
+"page": "121-122",
+"q": "What is the annual water requirement for drip irrigation of sugarcane per hectare?",
+"serial": "622",
+"src_row": 401,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "121-122:622"
+},
+{
+"expl": "Earthing up is done between 45\u2013120 days after planting and again at 180 DAP.",
+"key": 0,
+"o": [
+"45-120 DAP and again at 180 DAP",
+"30-60 DAP only",
+"150 DAP only",
+"210 DAP only",
+"None of these"
+],
+"page": "121-122",
+"q": "Earthing up in sugarcane is performed between which days after planting?",
+"serial": "623",
+"src_row": 402,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "121-122:623"
+},
+{
+"expl": "Ratoon crops need 25% more nitrogen than main crops.",
+"key": 0,
+"o": [
+"25%",
+"50%",
+"75%",
+"100%",
+"None of these"
+],
+"page": "121-122",
+"q": "How much more nitrogen is required for a ratoon sugarcane crop compared to the main crop?",
+"serial": "624",
+"src_row": 403,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "121-122:624"
+},
+{
+"expl": "A top\u2011bottom Brix ratio greater than 1 signifies ripe sugarcane.",
+"key": 0,
+"o": [
+">1",
+"<1",
+"=1",
+">2",
+"None of these"
+],
+"page": "121-122",
+"q": "Which top\u2011bottom Brix ratio indicates that the sugarcane is ripe?",
+"serial": "625",
+"src_row": 404,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "121-122:625"
+},
+{
+"expl": "Bagasse accounts for 27\u201330% of the total weight of a sugarcane stalk.",
+"key": 0,
+"o": [
+"27-30%",
+"3-5%",
+"20-25%",
+"8-10%",
+"None of these"
+],
+"page": "121-122",
+"q": "Bagasse constitutes what percentage of the weight of a sugarcane stalk?",
+"serial": "626",
+"src_row": 405,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "121-122:626"
+},
+{
+"expl": "Sugarcane competes with weeds most intensely for the first 120 days (about 4 months) after planting.",
+"key": 2,
+"o": [
+"60",
+"90",
+"120",
+"150",
+"None of these"
+],
+"page": "123-124",
+"q": "The critical period of crop\u2011weed competition in sugarcane lasts up to how many days after planting?",
+"serial": "631",
+"src_row": 406,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "123-124:631"
+},
+{
+"expl": "Mung bean is cultivated with spring cane; wheat is grown with autumn cane.",
+"key": 1,
+"o": [
+"Wheat",
+"Mung bean",
+"Black gram",
+"Rice",
+"None of these"
+],
+"page": "123-124",
+"q": "Which of the following crops is grown with spring cane?",
+"serial": "632",
+"src_row": 407,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "123-124:632"
+},
+{
+"expl": "Sugarcane yields about 10% sugar recovery from the harvested crop.",
+"key": 1,
+"o": [
+"5%",
+"10%",
+"15%",
+"20%",
+"None of these"
+],
+"page": "123-124",
+"q": "What is the approximate percent sugar recovery from sugarcane?",
+"serial": "633",
+"src_row": 408,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "123-124:633"
+},
+{
+"expl": "Sugar beet is a C\u2083 root crop, whereas sugarcane is a C\u2084 grass and tobacco is C\u2083 but not listed as a root crop.",
+"key": 1,
+"o": [
+"Sugarcane",
+"Sugar beet",
+"Tobacco",
+"All of the above",
+"None of these"
+],
+"page": "123-124",
+"q": "Which of the following is a C\u2083 plant?",
+"serial": "634",
+"src_row": 409,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "123-124:634"
+},
+{
+"expl": "Despite being a short\u2011day plant, tobacco is grown during the Rabi season.",
+"key": 1,
+"o": [
+"Kharif",
+"Rabi",
+"Summer",
+"Monsoon",
+"None of these"
+],
+"page": "123-124",
+"q": "Tobacco is a short\u2011day plant cultivated in which season?",
+"serial": "635",
+"src_row": 410,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "123-124:635"
+},
+{
+"expl": "Tobacco prefers acidic soils with a pH of 5.0 to 6.0.",
+"key": 1,
+"o": [
+"4.0\u20135.0",
+"5.0\u20136.0",
+"6.5\u20137.5",
+"7.0\u20138.0",
+"None of these"
+],
+"page": "123-124",
+"q": "What is the optimum soil pH range for tobacco cultivation?",
+"serial": "636",
+"src_row": 411,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "123-124:636"
+},
+{
+"expl": "Topping removes the flower head, arresting apical dominance and directing energy to leaf growth while limiting height.",
+"key": 1,
+"o": [
+"Increase fruit yield",
+"Reduce plant height and promote leaf development",
+"Enhance root growth",
+"Increase seed production",
+"None of these"
+],
+"page": "125-126",
+"q": "Topping in tobacco is performed to achieve which of the following outcomes?",
+"serial": "641",
+"src_row": 412,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:641"
+},
+{
+"expl": "The text states de-suckering is performed seven days after topping to redirect energy to leaf development.",
+"key": 2,
+"o": [
+"3 days",
+"5 days",
+"7 days",
+"10 days",
+"None of these"
+],
+"page": "125-126",
+"q": "De-suckering is carried out how many days after topping?",
+"serial": "642",
+"src_row": 413,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:642"
+},
+{
+"expl": "Flue curing is specifically mentioned for cigarette (flue\u2011cured Virginia) tobacco.",
+"key": 1,
+"o": [
+"Fire curing",
+"Flue curing",
+"Sun curing",
+"Smoke curing",
+"None of these"
+],
+"page": "125-126",
+"q": "Which curing method is used for cigarette tobacco?",
+"serial": "643",
+"src_row": 414,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:643"
+},
+{
+"expl": "The source lists 50 ppm as the upper limit of Cl in irrigation water for tobacco.",
+"key": 2,
+"o": [
+"20 ppm",
+"30 ppm",
+"50 ppm",
+"70 ppm",
+"None of these"
+],
+"page": "125-126",
+"q": "What is the maximum permissible chloride concentration in irrigation water for tobacco?",
+"serial": "644",
+"src_row": 415,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:644"
+},
+{
+"expl": "Black shank is identified as a disease caused by Phytophthora nicotianae.",
+"key": 0,
+"o": [
+"Phytophthora nicotianae",
+"Alternaria solani",
+"Fusarium oxysporum",
+"Cytospora spp.",
+"None of these"
+],
+"page": "125-126",
+"q": "Black shank in tobacco is caused by which pathogen?",
+"serial": "645",
+"src_row": 416,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:645"
+},
+{
+"expl": "Cluster bean seeds contain 28\u201336% crude protein as stated in the text.",
+"key": 2,
+"o": [
+"10\u201315%",
+"20\u201325%",
+"28\u201336%",
+"40\u201350%",
+"None of these"
+],
+"page": "125-126",
+"q": "The seed protein content of cluster bean ranges around which percentage?",
+"serial": "646",
+"src_row": 417,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:646"
+},
+{
+"expl": "The text specifies 35\u201340 kg/ha for tetraploid berseem varieties.",
+"key": 2,
+"o": [
+"20\u201325 kg/ha",
+"25\u201330 kg/ha",
+"35\u201340 kg/ha",
+"40\u201345 kg/ha",
+"None of these"
+],
+"page": "125-126",
+"q": "For tetraploid berseem, the recommended seed rate is:",
+"serial": "647",
+"src_row": 418,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:647"
+},
+{
+"expl": "Cluster bean is used for forage, gum, and green manure, but not as a primary grain crop.",
+"key": 3,
+"o": [
+"Forage",
+"Guar gum production",
+"Green manure",
+"Primary grain crop",
+"None of these"
+],
+"page": "125-126",
+"q": "Which of the following is NOT a use of cluster bean?",
+"serial": "648",
+"src_row": 419,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "125-126:648"
+}
+],
+"rolled": false,
+"row_from": 400,
+"row_to": 420,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 400,
+"seeded_from": "2026-10-07",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-07",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
