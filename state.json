@@ -120312,7 +120312,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-08T17:58:23+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 3,
+"o": [
+"Black or Stem Rust",
+"Brown or Leaf Rust",
+"Yellow or Stripe Rust",
+"White Rust",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a type of rust affecting wheat?",
+"serial": "1UgnIe-g:1013",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1013"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Energy received on Earth's surface at noon",
+"Percentage of reflected solar radiation",
+"Energy received on a unit area at Earth's outer atmosphere perpendicular to the sun's direction",
+"Total heat absorbed by Earth's surface",
+"None of these"
+],
+"page": "",
+"q": "What does the term 'Solar constant' refer to?",
+"serial": "1sUgWsko:5668",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5668"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Autumn queen",
+"Queen of east",
+"Glory of east",
+"Queen of flowers",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a nickname for Chrysanthemum?",
+"serial": "1YcJWVgW:1069",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1069"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Traditional breeding",
+"Farming of transgenic plants",
+"Organic farming",
+"Hydroponics",
+"None of these"
+],
+"page": "",
+"q": "What is another term for molecular farming?",
+"serial": "1UgnIe-g:1413",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1413"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Troposphere",
+"Stratosphere",
+"Mesosphere",
+"Thermosphere",
+"None of these"
+],
+"page": "",
+"q": "In which atmospheric layer does temperature generally decrease with altitude?",
+"serial": "1sUgWsko:5606",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5606"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Semi-permeable membrane",
+"Selectively permeable membrane",
+"Plasma membrane",
+"Cell membrane",
+"None of these"
+],
+"page": "",
+"q": "Which type of membrane allows only the solvent to pass through but not the solutes?",
+"serial": "1UgnIe-g:1466",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1466"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1998-99",
+"2000-01",
+"2002-03",
+"2004-05",
+"None of these"
+],
+"page": "",
+"q": "The Shetkari Bazar programme in Orissa was launched in which year?",
+"serial": "1sUgWsko:4058",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4058"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0 to -33.3",
+"33.3 to -66.6",
+"-66.6 to -100",
+"0 to 10",
+"None of these"
+],
+"page": "",
+"q": "Which moisture deficiency index (MDI) range corresponds to a 'Semi arid' climate according to ACRP on Dryland Agriculture?",
+"serial": "1sUgWsko:4390",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4390"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pasteurization",
+"Homogenization",
+"Sterilization",
+"Thermization",
+"None of these"
+],
+"page": "",
+"q": "Which process in milk processing prevents the formation of a cream layer by breaking down fat globules?",
+"serial": "1sUgWsko:2750",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2750"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cattle",
+"Buffaloes",
+"Camel",
+"Sheep (Ewe)",
+"None of these"
+],
+"page": "",
+"q": "Which animal has the shortest estrous cycle?",
+"serial": "17U0MEc-:2974",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2974"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Pumpkin",
+"Cucumber",
+"Tomato",
+"Watermelon",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a 'Non-Climacteric' vegetable?",
+"serial": "1sUgWsko:1279",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1279"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rinderpest",
+"Tuberculosis",
+"Johne's disease",
+"Calf scours",
+"None of these"
+],
+"page": "",
+"q": "Which disease is depicted in the diagram showing emaciated cattle with visible ribs and hip bones?",
+"serial": "1sUgWsko:2835",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2835"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"10 times its height",
+"15 times its height",
+"20 times its height",
+"25 times its height",
+"None of these"
+],
+"page": "",
+"q": "What is the minimum recommended length of a shelterbelt relative to its height?",
+"serial": "1UgnIe-g:2704",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2704"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1 April 2005",
+"1 April 2010",
+"1 April 2015",
+"1 April 2020",
+"None of these"
+],
+"page": "",
+"q": "When was the Nutrient Based Subsidy (NBS) scheme launched?",
+"serial": "128DIQLj:1425",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1425"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Melody",
+"Snow Princess",
+"Corella",
+"Jyotsna",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a variety of Gladiolus?",
+"serial": "1bxM1Q-4:3386",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3386"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Foot and Mouth Disease",
+"Hemorrhagic Septicemia",
+"Anthrax",
+"Black Quarter",
+"None of these"
+],
+"page": "",
+"q": "Which disease is also known as Gorhi?",
+"serial": "1bxM1Q-4:4193",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4193"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Near field capacity",
+"50%",
+"25%",
+"75%",
+"None of these"
+],
+"page": "",
+"q": "Maximum production is achieved when irrigation is given at ___ soil moisture content in the crop\u2019s root zone.",
+"serial": "1bxM1Q-4:964",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:964"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Francis Crick",
+"James Watson",
+"Robert Holley",
+"Severo Ochoa",
+"None of these"
+],
+"page": "",
+"q": "Which scientist achieved the first in vitro synthesis of RNA?",
+"serial": "1UgnIe-g:580",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:580"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"50:50",
+"70:30",
+"60:40",
+"80:20",
+"None of these"
+],
+"page": "",
+"q": "What is the funding pattern for ATMA?",
+"serial": "128DIQLj:2143",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2143"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Heterochromatin",
+"Euchromatin",
+"Nucleosome",
+"Chromatin",
+"None of these"
+],
+"page": "",
+"q": "What are the darkly stained regions of chromosomes called?",
+"serial": "1UgnIe-g:544",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:544"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Relay pump theory",
+"Pulsation theory",
+"Cohesion and Adhesion Theory",
+"Imbibition Theory",
+"None of these"
+],
+"page": "",
+"q": "Which theory is most widely accepted for explaining the ascent of sap?",
+"serial": "1bxM1Q-4:2663",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2663"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"The ratio of economic yield to biological yield",
+"The total weight of the crop",
+"The amount of water used by the crop",
+"The number of crops harvested per year",
+"None of these"
+],
+"page": "",
+"q": "What does the Harvest Index (H.I.) measure?",
+"serial": "17U0MEc-:299",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:299"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Center for Global Innovation in Agriculture Research",
+"Consultative Group on International Agricultural Research",
+"Cooperative Group for Integrated Agricultural Research",
+"Council for Global Agricultural Innovation",
+"None of these"
+],
+"page": "",
+"q": "Full form of CGIAR is:",
+"serial": "128DIQLj:65",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:65"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"5%",
+"10%",
+"25%",
+"45%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of soil composition by volume is organic matter?",
+"serial": "1sUgWsko:6751",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6751"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Meckerel sky",
+"Overcast sky",
+"Clear sky",
+"Foggy sky",
+"None of these"
+],
+"page": "",
+"q": "Which sky condition is associated with Cirrocumulus clouds?",
+"serial": "1sUgWsko:5724",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5724"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Innovation and Communication Channels",
+"Sender and Receiver",
+"Encoder and Decoder",
+"Message and Channel",
+"None of these"
+],
+"page": "",
+"q": "What are the two main elements of the Diffusion Process?",
+"serial": "1bxM1Q-4:2148",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2148"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Exfoliation",
+"Freezing",
+"Evaporation",
+"Sublimation",
+"None of these"
+],
+"page": "",
+"q": "Which process causes a 9% volume expansion of trapped water inside rocks?",
+"serial": "128DIQLj:1112",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1112"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bhawaga",
+"Jalore seedless",
+"Ganesh",
+"Ruby",
+"None of these"
+],
+"page": "",
+"q": "Which variety is the leading pomegranate cultivar in Maharashtra?",
+"serial": "17U0MEc-:1489",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1489"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rasping and lapping",
+"Chewing and biting",
+"Piercing and sucking",
+"Siphoning",
+"None of these"
+],
+"page": "",
+"q": "Which type of mouthpart is characteristic of insects like honey bees?",
+"serial": "1bxM1Q-4:2395",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2395"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Kalyansona",
+"Sonalika",
+"C-306",
+"GW-190",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a double\u2011gene dwarf wheat variety?",
+"serial": "1bxM1Q-4:683",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:683"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"686 kcal",
+"7.6 kcal",
+"100 kcal",
+"500 kcal",
+"None of these"
+],
+"page": "",
+"q": "How much energy is produced from one molecule of glucose?",
+"serial": "1UgnIe-g:1513",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1513"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Grape",
+"Mandarin",
+"Coffee",
+"Coconut",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is propagated by 'Hardwood stem cuttings'?",
+"serial": "1sUgWsko:872",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:872"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0-90 days",
+"90-150 days",
+"150-210 days",
+"210-270 days",
+"None of these"
+],
+"page": "",
+"q": "What is the growing period (GP) range for a Semi-arid region in the described system?",
+"serial": "1sUgWsko:928",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:928"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Chilli thrips",
+"Meloidogyne arenaria",
+"Aphids",
+"Whiteflies",
+"None of these"
+],
+"page": "",
+"q": "Which pest is considered the most serious for chilli cultivation?",
+"serial": "1YcJWVgW:577",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:577"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"High protein content",
+"Beta carotene enrichment",
+"Drought resistance",
+"Pest resistance",
+"None of these"
+],
+"page": "",
+"q": "What is the unique feature of Golden Rice?",
+"serial": "17U0MEc-:528",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:528"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Low",
+"Medium",
+"High",
+"Very High",
+"None of these"
+],
+"page": "",
+"q": "Which climate classification is assigned to a region with reference ET of 7 mm/day?",
+"serial": "1sUgWsko:4569",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4569"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Herpetology",
+"Ichthyology",
+"Ornithology",
+"Entomology",
+"None of these"
+],
+"page": "",
+"q": "Which branch of science deals with the study of fishes?",
+"serial": "1bxM1Q-4:4260",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4260"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Presence of antennae",
+"Three body regions: head, thorax, abdomen",
+"Four pairs of legs attached to prosoma and opisthosoma",
+"One pair of simple eyes only",
+"None of these"
+],
+"page": "",
+"q": "What is a distinguishing feature of Arachnida compared to Insecta?",
+"serial": "1sUgWsko:1698",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1698"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"30\u201132%",
+"33\u201135%",
+"37\u20114%",
+"40\u201142%",
+"None of these"
+],
+"page": "",
+"q": "The new raya mustard variety CS\u201156 (Triveni) is noted for an oil content of about:",
+"serial": "1bxM1Q-4:356",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:356"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Iran",
+"India",
+"Greece",
+"Spain",
+"None of these"
+],
+"page": "",
+"q": "Which country is the major producer of saffron, accounting for 90% of global production?",
+"serial": "1YcJWVgW:890",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:890"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Occupation",
+"Income",
+"Way of dressing",
+"Education",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a determinant of social class?",
+"serial": "128DIQLj:2183",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2183"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Theory first, then practical",
+"Practical first, then theory",
+"Only theory",
+"Only practical",
+"None of these"
+],
+"page": "",
+"q": "What is the approach of teaching in extension education?",
+"serial": "1bxM1Q-4:2127",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2127"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"30 days",
+"56 days",
+"70 days",
+"90 days",
+"None of these"
+],
+"page": "",
+"q": "What is the typical suckling period for pigs?",
+"serial": "1sUgWsko:3564",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3564"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Allethrin",
+"Permethrin",
+"Cypermethrin",
+"Deltamethrin",
+"None of these"
+],
+"page": "",
+"q": "Which synthetic pyrethroid is known for being the first photostable one?",
+"serial": "17U0MEc-:1935",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1935"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lightning",
+"Halo",
+"Thunderstorm",
+"Tornado",
+"None of these"
+],
+"page": "",
+"q": "Which phenomenon is produced by Cirrostratus clouds?",
+"serial": "1sUgWsko:5727",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5727"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Even-span type",
+"Uneven-span type",
+"Ridge and furrow type",
+"Gothic arch type",
+"None of these"
+],
+"page": "",
+"q": "Which type of greenhouse is specifically constructed on hilly terrain?",
+"serial": "1sUgWsko:1639",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1639"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Aonla murrabba",
+"Agra ka petha",
+"Mango squash",
+"Almond Sarbat",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of candy?",
+"serial": "17U0MEc-:1673",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1673"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Crop regulation",
+"Stooling",
+"Soil drenching",
+"Pruning",
+"None of these"
+],
+"page": "",
+"q": "Which practice is used to avoid fruit fly attacks in guava cultivation?",
+"serial": "17U0MEc-:1499",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1499"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tropical Forests",
+"Montane Subo\u00b7opical Forests",
+"Tropical Deciduous Forests",
+"Alpine scrub",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a major group of forests classified by Champion and Seth (1967)?",
+"serial": "1sUgWsko:5391",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5391"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1760",
+"2030",
+"2100",
+"1900",
+"None of these"
+],
+"page": "",
+"q": "What was the MSP of de\u2011husked coconut for the 2018\u201119 season?",
+"serial": "1bxM1Q-4:401",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:401"
+}
+],
+"set_no": 26,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
