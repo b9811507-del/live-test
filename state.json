@@ -126110,8 +126110,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 525,
 "names": {},
+"plan": {
+"bidx_next": 525,
+"built_at": "2026-10-09T14:27:29+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 73-75",
+"pages_list": [
+73,
+74,
+75
+],
+"questions": [
+{
+"expl": "The Seed Plot Technique was explicitly developed by Pushkarnath et al. in 1967 as stated in the source.",
+"key": 1,
+"o": [
+"Ramanujam",
+"Pushkarnath et al.",
+"Bose",
+"Swaminathan",
+"None of these"
+],
+"page": "73",
+"q": "The Seed Plot Technique for potato was developed by which scientist in 1967?",
+"serial": "505",
+"src_row": 504,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:505"
+},
+{
+"expl": "The source specifies that dehaulming should occur before the aphid population reaches the critical level of 20 aphids per 100 compound leaves.",
+"key": 2,
+"o": [
+"10 aphids",
+"15 aphids",
+"20 aphids",
+"25 aphids",
+"None of these"
+],
+"page": "73",
+"q": "What is the critical aphid population threshold (per 100 compound leaves) for dehaulming in the Seed Plot Technique?",
+"serial": "506",
+"src_row": 505,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:506"
+},
+{
+"expl": "True Potato Seed (TPS) involves sexual reproduction, where seeds are sown in a nursery to raise seedlings before transplanting to the main field.",
+"key": 1,
+"o": [
+"Tuber planting",
+"True Potato Seed (TPS)",
+"Seed Plot Technique",
+"Vegetative propagation",
+"None of these"
+],
+"page": "73",
+"q": "Which method of potato cultivation involves sowing seeds in a nursery before transplanting seedlings to the main field?",
+"serial": "507",
+"src_row": 506,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:507"
+},
+{
+"expl": "The source states that the cost of cultivation can be reduced using TPS compared to the traditional method of planting by tubers.",
+"key": 1,
+"o": [
+"Higher yield per hectare",
+"Reduced cost of cultivation",
+"Faster maturity",
+"Better taste",
+"None of these"
+],
+"page": "73",
+"q": "What is the primary economic advantage of using True Potato Seed (TPS) over traditional tuber planting?",
+"serial": "508",
+"src_row": 507,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:508"
+},
+{
+"expl": "The source classifies minor irrigation projects as those covering a cultural command area of less than 2,000 hectares.",
+"key": 0,
+"o": [
+"2,000 hectares",
+"2,500 hectares",
+"5,000 hectares",
+"10,000 hectares",
+"None of these"
+],
+"page": "73",
+"q": "A minor irrigation project in India covers a cultural command area of up to how many hectares?",
+"serial": "509",
+"src_row": 508,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:509"
+},
+{
+"expl": "The Damodar Valley project is listed under West Bengal, while Upper Ganga Canal and Ramganga are in Uttar Pradesh.",
+"key": 2,
+"o": [
+"Upper Ganga Canal",
+"Ramganga",
+"Damodar Valley",
+"Gandhi Sagar",
+"None of these"
+],
+"page": "73",
+"q": "Which of the following irrigation projects is NOT located in Uttar Pradesh?",
+"serial": "510",
+"src_row": 509,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:510"
+},
+{
+"expl": "The source defines medium irrigation projects as those costing between 2.5 million to 50 million rupees.",
+"key": 1,
+"o": [
+"Less than 2.5 million rupees",
+"2.5 million to 50 million rupees",
+"50 million to 100 million rupees",
+"More than 100 million rupees",
+"None of these"
+],
+"page": "73",
+"q": "What is the cost range for a medium irrigation project in India?",
+"serial": "511",
+"src_row": 510,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "73:511"
+},
+{
+"expl": "The SOURCE explicitly lists Bhima and Jayakwadi (Godavari) as irrigation projects under Maharashtra.",
+"key": 1,
+"o": [
+"Punjab",
+"Maharashtra",
+"Andhra Pradesh",
+"Karnataka",
+"None of these"
+],
+"page": "74",
+"q": "Which state's irrigation projects include the Bhima and Jayakwadi systems associated with the Godavari river?",
+"serial": "512",
+"src_row": 511,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:512"
+},
+{
+"expl": "The SOURCE states the distribution order as 'Canal > Tanks > Wells > Others', making Canal the highest.",
+"key": 2,
+"o": [
+"Wells",
+"Tanks",
+"Canal",
+"Others",
+"None of these"
+],
+"page": "74",
+"q": "In the distribution of irrigated area, which source ranks highest in India according to the SOURCE?",
+"serial": "513",
+"src_row": 512,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:513"
+},
+{
+"expl": "The SOURCE directly mentions the average annual rainfall as 1190 mm.",
+"key": 1,
+"o": [
+"1090 mm",
+"1190 mm",
+"1290 mm",
+"1390 mm",
+"None of these"
+],
+"page": "74",
+"q": "What is the average annual rainfall of India as per the SOURCE?",
+"serial": "514",
+"src_row": 513,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:514"
+},
+{
+"expl": "Ghataprabha is listed under Karnataka, while the other options are Tamil Nadu projects in the SOURCE.",
+"key": 3,
+"o": [
+"Periyar Vaigai",
+"Cauvery delta",
+"Mettur-Lower Bhavani Project",
+"Ghataprabha",
+"None of these"
+],
+"page": "74",
+"q": "Which of the following irrigation projects is NOT associated with Tamil Nadu according to the SOURCE?",
+"serial": "515",
+"src_row": 514,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:515"
+},
+{
+"expl": "The SOURCE explicitly states that rainfall below 2.5 mm is not considered for water budgeting.",
+"key": 2,
+"o": [
+"1.5 mm",
+"2.0 mm",
+"2.5 mm",
+"3.0 mm",
+"None of these"
+],
+"page": "74",
+"q": "What is the threshold rainfall value below which water is not considered for water budgeting as per the SOURCE?",
+"serial": "516",
+"src_row": 515,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:516"
+},
+{
+"expl": "The Cauvery delta system is listed under Tamil Nadu, while the other options are Andhra Pradesh projects in the SOURCE.",
+"key": 3,
+"o": [
+"Godavari delta system",
+"Krishna delta system",
+"Nagarjuna Sagar (Krishna)",
+"Cauvery delta system",
+"None of these"
+],
+"page": "74",
+"q": "Which delta system is NOT mentioned under Andhra Pradesh's irrigation projects in the SOURCE?",
+"serial": "517",
+"src_row": 516,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:517"
+},
+{
+"expl": "The SOURCE explicitly states the total surface runoff as 180 M ha m.",
+"key": 3,
+"o": [
+"150 M ha m",
+"160 M ha m",
+"170 M ha m",
+"180 M ha m",
+"None of these"
+],
+"page": "74",
+"q": "What is the total surface runoff mentioned in the SOURCE?",
+"serial": "518",
+"src_row": 517,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "74:518"
+},
+{
+"expl": "The salad lists kiwi, strawberries, mandarin orange, bananas, grapes, and pineapple \u2013 six distinct fruits.",
+"key": 1,
+"o": [
+"5",
+"6",
+"7",
+"8",
+"None of these"
+],
+"page": "75",
+"q": "How many different fruit types are present in the salad (excluding mint)?",
+"serial": "519",
+"src_row": 518,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:519"
+},
+{
+"expl": "Mandarin orange is the only citrus fruit mentioned among the ingredients.",
+"key": 2,
+"o": [
+"Kiwi",
+"Strawberry",
+"Mandarin orange",
+"Banana",
+"None of these"
+],
+"page": "75",
+"q": "Which of the following citrus fruits is included in the salad?",
+"serial": "520",
+"src_row": 519,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:520"
+},
+{
+"expl": "Mint leaves are an herb, whereas all other listed items are fruits.",
+"key": 1,
+"o": [
+"Pineapple",
+"Mint leaves",
+"Grapes",
+"Mandarin orange",
+"None of these"
+],
+"page": "75",
+"q": "Which ingredient in the salad is not a fruit?",
+"serial": "521",
+"src_row": 520,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:521"
+},
+{
+"expl": "The description specifies that the fruit salad is in two clear glass dishes.",
+"key": 0,
+"o": [
+"Clear glass dishes",
+"Ceramic bowls",
+"Metal trays",
+"Plastic cups",
+"None of these"
+],
+"page": "75",
+"q": "The salad is presented in what kind of container?",
+"serial": "522",
+"src_row": 521,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:522"
+},
+{
+"expl": "The photograph shows the dishes sitting on a wooden table.",
+"key": 1,
+"o": [
+"Marble countertop",
+"Wooden table",
+"Stainless steel slab",
+"Glass shelf",
+"None of these"
+],
+"page": "75",
+"q": "On which type of surface is the salad placed?",
+"serial": "523",
+"src_row": 522,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:523"
+},
+{
+"expl": "The listed fruits provide green, red, orange, and yellow hues; none naturally contributes blue color.",
+"key": 2,
+"o": [
+"Green",
+"Red",
+"Blue",
+"Yellow",
+"None of these"
+],
+"page": "75",
+"q": "Which color is least likely to appear in the salad?",
+"serial": "524",
+"src_row": 523,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:524"
+},
+{
+"expl": "Pineapple originates from tropical regions and is widely regarded as a tropical fruit.",
+"key": 2,
+"o": [
+"Strawberry",
+"Mandarin orange",
+"Pineapple",
+"Grape",
+"None of these"
+],
+"page": "75",
+"q": "Which of the following fruits in the salad is commonly classified as a tropical fruit?",
+"serial": "525",
+"src_row": 524,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "75:525"
+}
+],
+"row_from": 504,
+"row_to": 525,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 504,
+"seeded_from": "2026-10-08"
+},
 "qidx": 0,
+"seeded_from": "2026-10-08",
+"skips": [],
 "step": 0
 },
 "malwa": {
