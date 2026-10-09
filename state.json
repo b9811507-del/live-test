@@ -126116,9 +126116,438 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 442,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 442,
+"built_at": "2026-10-09T10:57:10+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 22,
+"pages": "Book pages 127-132",
+"pages_blocks": [
+"127-128",
+"129-130",
+"131-132"
+],
+"questions": [
+{
+"expl": "Berseem grows best at 18-25 \u00b0C; higher temperatures halt vegetative growth and trigger flowering.",
+"key": 1,
+"o": [
+"10-15\u00b0C",
+"18-25\u00b0C",
+"30-35\u00b0C",
+"40-45\u00b0C",
+"None of these"
+],
+"page": "127-128",
+"q": "What temperature range is optimal for the growth of Berseem (Cicer arietinum)?",
+"serial": "651",
+"src_row": 420,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:651"
+},
+{
+"expl": "Chicory (Compositae) is the main objectionable weed and is managed by dipping in a 10% salt solution.",
+"key": 0,
+"o": [
+"Chicory",
+"Clover",
+"Ryegrass",
+"Mustard",
+"None of these"
+],
+"page": "127-128",
+"q": "Which weed in Berseem is controlled by the flotation technique using a 10% salt solution?",
+"serial": "652",
+"src_row": 421,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:652"
+},
+{
+"expl": "The source lists NPK for Lucerne as 20\u201140 kg/ha N, 60\u201180 kg/ha P, 40\u201160 kg/ha K.",
+"key": 0,
+"o": [
+"20-40 : 60-80 : 40-60",
+"20-25 : 60-80 : 40",
+"30-40 : 70-80 : 50-60",
+"10-20 : 40-50 : 30-40",
+"None of these"
+],
+"page": "127-128",
+"q": "What NPK ratio is recommended for Lucerne cultivation?",
+"serial": "653",
+"src_row": 422,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:653"
+},
+{
+"expl": "Berseem is rich in calcium but low in magnesium; over\u2011feeding leads to grass tetany.",
+"key": 2,
+"o": [
+"It is high in magnesium",
+"It is deficient in calcium",
+"Excessive feeding can cause grass tetany",
+"It contains high saponin",
+"None of these"
+],
+"page": "127-128",
+"q": "Which statement about Berseem is true?",
+"serial": "654",
+"src_row": 423,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:654"
+},
+{
+"expl": "All four options are mentioned as major oat varieties in the source.",
+"key": 4,
+"o": [
+"Kent",
+"UPO-212",
+"OS-6",
+"JHO-851",
+"None of these"
+],
+"page": "127-128",
+"q": "Which of the following is NOT a major variety of oat listed in the source?",
+"serial": "655",
+"src_row": 424,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:655"
+},
+{
+"expl": "Lucerne contains saponin as an anti\u2011quality constituent.",
+"key": 0,
+"o": [
+"Saponin",
+"Avenin",
+"Nitrate",
+"Chlorophyll",
+"None of these"
+],
+"page": "127-128",
+"q": "Which anti\u2011quality constituent is present in Lucerne?",
+"serial": "656",
+"src_row": 425,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:656"
+},
+{
+"expl": "Lucerne is sown with 30 cm spacing between rows as per the source.",
+"key": 1,
+"o": [
+"20-25 cm",
+"30 cm",
+"40-45 cm",
+"50 cm",
+"None of these"
+],
+"page": "127-128",
+"q": "What is the recommended spacing between rows for Lucerne sowing?",
+"serial": "657",
+"src_row": 426,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "127-128:657"
+},
+{
+"expl": "Napier grass contains oxalic acid as its anti\u2011quality compound.",
+"key": 0,
+"o": [
+"Oxalic acid",
+"Saponins",
+"Nitrates",
+"Beta\u2011glucans",
+"None of these"
+],
+"page": "129-130",
+"q": "Which anti\u2011quality constituent is present in Napier grass?",
+"serial": "661",
+"src_row": 427,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:661"
+},
+{
+"expl": "Dormancy occurs when temperatures drop below 15\u00b0C (59\u00b0F).",
+"key": 1,
+"o": [
+"10\u00b0C (50\u00b0F)",
+"15\u00b0C (59\u00b0F)",
+"20\u00b0C (68\u00b0F)",
+"25\u00b0C (77\u00b0F)",
+"None of these"
+],
+"page": "129-130",
+"q": "Napier grass enters a dormant state when temperatures fall below what value?",
+"serial": "662",
+"src_row": 428,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:662"
+},
+{
+"expl": "Multi\u2011cut sorghum requires about 25 kg/ha of seed.",
+"key": 1,
+"o": [
+"10 kg/ha",
+"25 kg/ha",
+"40 kg/ha",
+"8\u201310 kg/ha",
+"None of these"
+],
+"page": "129-130",
+"q": "What is the recommended seed rate for multi\u2011cut fodder sorghum?",
+"serial": "663",
+"src_row": 429,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:663"
+},
+{
+"expl": "HCN peaks at 35\u201340 days after sowing and remains significant up to 55 DAS.",
+"key": 2,
+"o": [
+"20\u201325 DAS",
+"30\u201335 DAS",
+"35\u201340 DAS",
+"45\u201350 DAS",
+"None of these"
+],
+"page": "129-130",
+"q": "At what days after sowing (DAS) does the HCN content in forage sorghum peak?",
+"serial": "664",
+"src_row": 430,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:664"
+},
+{
+"expl": "Pusa Giant is a 2n=3x=21 triploid hybrid and is sterile.",
+"key": 1,
+"o": [
+"Pusa Napier\u20111",
+"Pusa Giant",
+"Pusa Chari\u20111",
+"GFSH\u20111",
+"None of these"
+],
+"page": "129-130",
+"q": "Which variety is a triploid sterile hybrid of Napier grass and Pearl millet?",
+"serial": "665",
+"src_row": 431,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:665"
+},
+{
+"expl": "Napier grass was introduced to India in 1912.",
+"key": 1,
+"o": [
+"1904",
+"1912",
+"1969",
+"2000",
+"None of these"
+],
+"page": "129-130",
+"q": "In which year was Napier grass introduced to India?",
+"serial": "666",
+"src_row": 432,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:666"
+},
+{
+"expl": "Single\u2011cut varieties are harvested from 50% flowering to full flowering stage.",
+"key": 1,
+"o": [
+"30\u201335 days after sowing",
+"50% flowering to full flowering",
+"70 days after sowing",
+"90 days after sowing",
+"None of these"
+],
+"page": "129-130",
+"q": "Single\u2011cut fodder sorghum should be harvested between which growth stages?",
+"serial": "667",
+"src_row": 433,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:667"
+},
+{
+"expl": "Dhurrin (prussic acid) in sorghum leaves releases HCN when ingested.",
+"key": 1,
+"o": [
+"Saponin",
+"Dhurrin",
+"Oxalic acid",
+"Nitrates",
+"None of these"
+],
+"page": "129-130",
+"q": "Which cyanogenic compound present in sorghum converts to toxic HCN after animal feeding?",
+"serial": "668",
+"src_row": 434,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "129-130:668"
+},
+{
+"expl": "Fodder crops are advised to receive a balanced NPK of 1:2:2 to support high biomass production.",
+"key": 0,
+"o": [
+"1:2:2",
+"2:1:1",
+"3:3:3",
+"1:1:2",
+"None of these"
+],
+"page": "131-132",
+"q": "What is the recommended NPK application ratio for fodder crops?",
+"serial": "671",
+"src_row": 435,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:671"
+},
+{
+"expl": "Lopping refers to cutting the above\u2011ground part of fodder crops for forage.",
+"key": 0,
+"o": [
+"Lopping",
+"Topping",
+"Shearing",
+"Pruning",
+"None of these"
+],
+"page": "131-132",
+"q": "The harvesting of fodder crops such as lucerne is known as?",
+"serial": "672",
+"src_row": 436,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:672"
+},
+{
+"expl": "Berseem is noted for producing the largest root nodules among the listed legumes.",
+"key": 0,
+"o": [
+"Berseem",
+"Lucerne",
+"Soybean",
+"Mung bean",
+"None of these"
+],
+"page": "131-132",
+"q": "Which legume has the largest root nodules?",
+"serial": "673",
+"src_row": 437,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:673"
+},
+{
+"expl": "Lucerne is reported to fix about 194 kg N per hectare, making it a top N\u2011fixer.",
+"key": 1,
+"o": [
+"Berseem",
+"Lucerne",
+"Soybean",
+"Mung bean",
+"None of these"
+],
+"page": "131-132",
+"q": "Which crop is one of the highest nitrogen\u2011fixating, contributing 194 kg N/ha?",
+"serial": "674",
+"src_row": 438,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:674"
+},
+{
+"expl": "Soybean develops root nodules as early as 10 days after sowing (10 DAS).",
+"key": 2,
+"o": [
+"Berseem",
+"Lucerne",
+"Soybean",
+"Mung bean",
+"None of these"
+],
+"page": "131-132",
+"q": "Root nodules appear earliest in which crop?",
+"serial": "675",
+"src_row": 439,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:675"
+},
+{
+"expl": "Sesbania rostrata can nodulate stems and roots, enabling nitrogen fixation in waterlogged conditions.",
+"key": 2,
+"o": [
+"Sesbania aculeata",
+"Crotalaria juncea",
+"Sesbania rostrata",
+"Vigna unguiculata",
+"None of these"
+],
+"page": "131-132",
+"q": "Which green manure crop uniquely forms nodules on both stems and roots, suitable for flooded rice fields?",
+"serial": "676",
+"src_row": 440,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:676"
+},
+{
+"expl": "Sunhemp (Crotalaria juncea) is highlighted as the most outstanding and drought\u2011tolerant green manure crop in India.",
+"key": 1,
+"o": [
+"Dhaincha",
+"Sunhemp",
+"Berseem",
+"Mung bean",
+"None of these"
+],
+"page": "131-132",
+"q": "Which green manure crop is considered the most outstanding in India and is drought tolerant?",
+"serial": "677",
+"src_row": 441,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "131-132:677"
+}
+],
+"rolled": false,
+"row_from": 420,
+"row_to": 442,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 420,
+"seeded_from": "2026-10-08",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-08",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
