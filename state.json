@@ -126105,7 +126105,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-09T17:57:12+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 3,
+"o": [
+"8 t/h",
+"10 t/h",
+"30 t/h",
+"35 t/h",
+"None of these"
+],
+"page": "",
+"q": "What is the production capacity of the Brush Type Vegetable & Fruit Cleaning Machine for oranges?",
+"serial": "1sUgWsko:6463",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6463"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Maize shootfly",
+"Stem borer",
+"Pink stem borer",
+"Aphid",
+"None of these"
+],
+"page": "",
+"q": "Which pest infests maize a month after sowing, causing central shoot withering and a \"dead heart\" symptom?",
+"serial": "1sUgWsko:1850",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1850"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Parlet",
+"Thompson seedless",
+"Anab\u2011e Sahi",
+"Dogridge",
+"None of these"
+],
+"page": "",
+"q": "Which grape variety commonly uses the Telephone training system?",
+"serial": "1YcJWVgW:354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:354"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A low-maintenance lawn area",
+"An alpine garden with plants growing in rock crevices",
+"A formal parterre with geometric patterns",
+"A water feature surrounded by shrubs",
+"None of these"
+],
+"page": "",
+"q": "What best describes a rockery in garden design?",
+"serial": "1YcJWVgW:1017",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1017"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"24 \u00b0C",
+"27 \u00b0C",
+"30 \u00b0C",
+"35 \u00b0C",
+"None of these"
+],
+"page": "",
+"q": "Lycopene synthesis in tomato fruit is optimal at 21\u201124 \u00b0C but declines when temperature exceeds which value?",
+"serial": "1YcJWVgW:511",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:511"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Datura",
+"Argemone mexicana",
+"Wild oat",
+"Cyperus rotundus",
+"None of these"
+],
+"page": "",
+"q": "Which weed's seeds affect the germination and growth of sunflower?",
+"serial": "1sUgWsko:5250",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5250"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Subsistence farming",
+"Commercial farming",
+"Plantation farming",
+"Mixed farming",
+"None of these"
+],
+"page": "",
+"q": "Which type of farming is primarily practiced in areas with high population density and limited land?",
+"serial": "1sUgWsko:4481",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4481"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"H.F. Clements",
+"J. Doe",
+"R. Singh",
+"M. Patel",
+"None of these"
+],
+"page": "",
+"q": "Crop logging, a method for assessing nutrient requirements of crops, was introduced by which scientist?",
+"serial": "1sUgWsko:436",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:436"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Capitalistic Farming",
+"Corporate Farming",
+"Joint Farming",
+"Collective Farming",
+"None of these"
+],
+"page": "",
+"q": "Which form of farming is managed by a corporate sector operating body and requires large land and capital?",
+"serial": "1sUgWsko:4497",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4497"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"PEP carboxylase",
+"Rubisco",
+"NADP-ME",
+"NAD-ME",
+"None of these"
+],
+"page": "",
+"q": "Which enzyme is responsible for the initial fixation of CO2 in C4 plants?",
+"serial": "1UgnIe-g:1549",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1549"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Selection of individuals based on phenotypic superiority",
+"Selection based on genotypic variance",
+"Selection based on environmental variance",
+"Selection based on generation interval",
+"None of these"
+],
+"page": "",
+"q": "What is the primary characteristic of mass selection in plant breeding?",
+"serial": "1UgnIe-g:132",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:132"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Single cross",
+"Criss-cross",
+"Triple cross",
+"Backcross",
+"None of these"
+],
+"page": "",
+"q": "Which breeding method involves mating two different breeds in a rotational manner?",
+"serial": "1sUgWsko:2897",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2897"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"8-10 t/ha",
+"5-7 t/ha",
+"12-15 t/ha",
+"3-5 t/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the average yield of garlic per hectare?",
+"serial": "1YcJWVgW:759",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:759"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"K-65",
+"Lok-1",
+"Sujata",
+"Shailaja",
+"None of these"
+],
+"page": "",
+"q": "Which variety of wheat is suitable for late sowing and saline soils?",
+"serial": "17U0MEc-:561",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:561"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rauvolfia serpentina",
+"Carum carvi",
+"Pinus roxburghii",
+"Pyrethrum",
+"None of these"
+],
+"page": "",
+"q": "Which plant is mentioned as an important spice that yields drugs?",
+"serial": "1sUgWsko:5523",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5523"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Gulabi",
+"Hazari",
+"Panruti selection",
+"Golden Delight",
+"None of these"
+],
+"page": "",
+"q": "Which variety of jackfruit is NOT listed in the source?",
+"serial": "1bxM1Q-4:3029",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3029"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"2n - 1",
+"2n + 1",
+"2n + 2",
+"2n - 2",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number representation for a tetrasomic individual?",
+"serial": "1sUgWsko:5940",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5940"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Leaf",
+"Fruit",
+"Bark",
+"Seed",
+"None of these"
+],
+"page": "",
+"q": "Which part of the plant Cymbopogon citratus (DC.) Stapf. is used as a spice?",
+"serial": "1bxM1Q-4:3272",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3272"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1",
+"2",
+"3",
+"4",
+"None of these"
+],
+"page": "",
+"q": "How many distinct URLs are present in the source?",
+"serial": "1bxM1Q-4:3626",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3626"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"A limiting case of Binomial Distribution",
+"A type of Normal Distribution",
+"A type of Uniform Distribution",
+"A type of Exponential Distribution",
+"None of these"
+],
+"page": "",
+"q": "What does the Poisson distribution represent?",
+"serial": "17U0MEc-:2896",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2896"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"400 \u00b5m or more",
+"100\u2013400 \u00b5m",
+"50\u2013150 \u00b5m",
+"0.1\u201350 \u00b5m",
+"None of these"
+],
+"page": "",
+"q": "Which spray size range corresponds to a \"mist\"?",
+"serial": "1sUgWsko:1761",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1761"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Anton de Bary",
+"Louis Pasteur",
+"P.M.A. Millardet",
+"Van Schmeling",
+"None of these"
+],
+"page": "",
+"q": "Who is known as the father of plant pathology?",
+"serial": "17U0MEc-:2087",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2087"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wheat field",
+"Cotton field",
+"Paddy field",
+"Sugarcane field",
+"None of these"
+],
+"page": "",
+"q": "In which agricultural field are 'Cage wheels' most commonly used?",
+"serial": "1sUgWsko:6072",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6072"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Jawaharlal Nehru Solar Mission",
+"National Biodiversity Act",
+"New and Renewable Energy Policy",
+"National Policy on Biofuels",
+"None of these"
+],
+"page": "",
+"q": "Which entry specifically pertains to solar energy initiatives?",
+"serial": "1bxM1Q-4:416",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:416"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0 to 6 weeks",
+"0 to 8 weeks",
+"9 to 18 weeks",
+"18 to 72 weeks",
+"None of these"
+],
+"page": "",
+"q": "At what age range are birds typically reared in a brooder/chick house?",
+"serial": "1sUgWsko:3420",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3420"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To develop disease resistance in plants",
+"To cross an inbred line with an open pollinated variety",
+"To cross F\u2081 with its recessive parent",
+"To cross two different species",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of a test cross?",
+"serial": "17U0MEc-:2485",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2485"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Dokuchaiev",
+"Joffe",
+"Jenny",
+"Opper",
+"None of these"
+],
+"page": "",
+"q": "The equation S = f(CI, O, R, P, T, ...) for soil formation was formulated by which scientist?",
+"serial": "1sUgWsko:6758",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6758"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"King and Willow leaf",
+"King and Sour orange",
+"Willow leaf and Sweet orange",
+"Nobilis and Deliciosa",
+"None of these"
+],
+"page": "",
+"q": "Kinnow mandarin is a hybrid of which two mandarin varieties?",
+"serial": "1sUgWsko:1017",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1017"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Horizontal resistance",
+"Vertical resistance",
+"Systemic acquired resistance",
+"Induced systemic resistance",
+"None of these"
+],
+"page": "",
+"q": "The Vertifolia effect observed in potato is primarily due to reliance on which type of resistance?",
+"serial": "1UgnIe-g:941",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:941"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cercospora arachidicola",
+"Phaeoisariopsis personata",
+"Aspergillus niger",
+"Trichoderma harzianum",
+"None of these"
+],
+"page": "",
+"q": "Which fungus is the causal agent of early leaf spot in groundnut?",
+"serial": "1sUgWsko:3767",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3767"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cotton",
+"Wheat",
+"Rice",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which crop is used as a trap crop to induce suicidal germination of Striga?",
+"serial": "128DIQLj:1073",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1073"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Less than 5%",
+"Less than 10%",
+"Less than 15%",
+"Less than 20%",
+"None of these"
+],
+"page": "",
+"q": "What moisture content is considered safe for storing grain?",
+"serial": "1UgnIe-g:2298",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2298"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1919",
+"1921",
+"1925",
+"1930",
+"None of these"
+],
+"page": "",
+"q": "In which year was the Indian Central Cotton Committee established?",
+"serial": "128DIQLj:106",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:106"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"30-50 kg/h",
+"100-200 kg/h",
+"300-500 kg/h",
+"625 kg/h",
+"None of these"
+],
+"page": "",
+"q": "What is the capacity range of a manual thresher?",
+"serial": "1sUgWsko:6436",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6436"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Striga hermonthica",
+"Orobanche sp.",
+"Loranthus longiflorus",
+"Cuscuta campestris",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is classified as a total root parasite?",
+"serial": "1sUgWsko:5118",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5118"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"3.5\u00b0C/km",
+"6.5\u00b0C/km",
+"10\u00b0C/km",
+"15\u00b0C/km",
+"None of these"
+],
+"page": "",
+"q": "What is the dry adiabatic lapse rate?",
+"serial": "17U0MEc-:355",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:355"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Short tail with a white switch",
+"Long, whip-like tail reaching up to the ground with a black switch",
+"No dewlap",
+"Tall legs with a small hump",
+"None of these"
+],
+"page": "",
+"q": "Which physical feature is characteristic of the Sahiwal breed as per the description?",
+"serial": "1sUgWsko:2916",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2916"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Post-emergence",
+"0-3 DAS",
+"Within 2 weeks after emergence",
+"Pre-planting",
+"None of these"
+],
+"page": "",
+"q": "What is the application time for Alachlor (Lasso) in maize crops?",
+"serial": "1bxM1Q-4:1269",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1269"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Nitrogen",
+"Magnesium",
+"Sulphur",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient is located at the center of the chlorophyll molecule and is essential for photosynthesis?",
+"serial": "1sUgWsko:7344",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7344"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1980",
+"1981",
+"1982",
+"1991",
+"None of these"
+],
+"page": "",
+"q": "In which year was the EXIM Bank of India founded?",
+"serial": "128DIQLj:2245",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2245"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Faunal Pedoturbation",
+"Floral Pedoturbation",
+"Argilli Pedoturbation",
+"Hydraulic Pedoturbation",
+"None of these"
+],
+"page": "",
+"q": "Which type of Pedoturbation is caused by the swell-shrink behavior of clays in vertisols?",
+"serial": "1sUgWsko:6788",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6788"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To prevent disease",
+"Due to slow performance outdoors",
+"To increase milk yield",
+"To reduce feed costs",
+"None of these"
+],
+"page": "",
+"q": "Why are exotic breed heifers reared indoors in tropical areas?",
+"serial": "1sUgWsko:3135",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3135"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Amaranthus spp.",
+"Abutilon spp.",
+"Parthenium hysterophorus",
+"Chenopodium album",
+"None of these"
+],
+"page": "",
+"q": "Which weed is the alternate host for the gram caterpillar of pigeon pea?",
+"serial": "1sUgWsko:5282",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5282"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Kalyan Sona",
+"Heera",
+"HD-2009",
+"Sonaro-64",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a triple gene dwarf wheat variety developed in 1970?",
+"serial": "17U0MEc-:563",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:563"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ginger",
+"Cardamom",
+"Turmeric",
+"Coriander",
+"None of these"
+],
+"page": "",
+"q": "Which crop has a pH requirement of 5-5.5?",
+"serial": "1sUgWsko:1494",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1494"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Protein synthesis",
+"Lipid storage",
+"Photosynthesis",
+"Cell division",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of spherosomes in plant cells?",
+"serial": "17U0MEc-:2429",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2429"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tree species classification",
+"Age of trees through growth\u2011ring analysis",
+"Soil nutrient status",
+"Forest canopy density",
+"None of these"
+],
+"page": "",
+"q": "Dendrochronology provides a precise estimate of:",
+"serial": "1UgnIe-g:2637",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2637"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sodium nitrate",
+"Calcium nitrate",
+"Ammonium sulphate",
+"Ammonium chloride",
+"None of these"
+],
+"page": "",
+"q": "Which fertilizer has the highest equivalent basacity?",
+"serial": "17U0MEc-:1218",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1218"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pine wood",
+"Teak wood",
+"Sal wood",
+"Bamboo",
+"None of these"
+],
+"page": "",
+"q": "Which type of wood is commonly used for wooden-framed greenhouse structures?",
+"serial": "1sUgWsko:1648",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1648"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mangosteen",
+"Loquat",
+"Carambola",
+"Mulberry",
+"None of these"
+],
+"page": "",
+"q": "Which fruit crop requires the application of calcium in its manure and fertilizer regimen?",
+"serial": "1bxM1Q-4:3084",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3084"
+}
+],
+"set_no": 27,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
