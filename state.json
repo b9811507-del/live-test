@@ -131913,9 +131913,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 463,
 "names": {},
+"plan": {
+"batch": 3,
+"bidx_next": 463,
+"built_at": "2026-10-10T10:57:43+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 133-138",
+"pages_blocks": [
+"133-134",
+"135-136",
+"137-138"
+],
+"questions": [
+{
+"expl": "In successful intercropping, crops should have different root systems to exploit nutrients at varying depths; identical root systems would increase competition.",
+"key": 3,
+"o": [
+"The differences in maturity of component crops should be at least 30 days.",
+"The peak nutrient demand of the component crops should be different.",
+"Competition between the crops should be minimal or zero.",
+"The crops should have the same root system.",
+"None of these"
+],
+"page": "133-134",
+"q": "Which of the following is NOT a characteristic of a successful intercropping system?",
+"serial": "681",
+"src_row": 442,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:681"
+},
+{
+"expl": "Relay intercropping seeds are sown when the rice crop is maturing to make use of the remaining soil moisture.",
+"key": 1,
+"o": [
+"To increase the number of crops per year regardless of soil moisture.",
+"To utilize soil moisture from the rice field.",
+"To reduce the need for fertilizer.",
+"To avoid pest infestation.",
+"None of these"
+],
+"page": "133-134",
+"q": "What is the main purpose of relay cropping in rice-based systems?",
+"serial": "682",
+"src_row": 443,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:682"
+},
+{
+"expl": "Sequential cropping plants the next crop after the previous one is harvested, and delays in sowing are frequent.",
+"key": 1,
+"o": [
+"Overlapping of crop growth periods.",
+"Delay in sowing or planting of the next crop.",
+"Excessive nutrient competition.",
+"Inadequate seedbed preparation.",
+"None of these"
+],
+"page": "133-134",
+"q": "In a sequential cropping system, the most common problem is:",
+"serial": "683",
+"src_row": 444,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:683"
+},
+{
+"expl": "The text cites one row of mustard with nine rows of wheat as a 9:1 intercropping example.",
+"key": 1,
+"o": [
+"Pearl millet + black gram.",
+"Mustard planted with nine rows of wheat.",
+"Rice + maize on ridges and trenches.",
+"Sugarcane in furrows with intercrops on ridges.",
+"None of these"
+],
+"page": "133-134",
+"q": "The intercropping example with a 9:1 row ratio is:",
+"serial": "684",
+"src_row": 445,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:684"
+},
+{
+"expl": "Decoy crops mimic preferred hosts, diverting pests and reducing damage to the primary crop.",
+"key": 1,
+"o": [
+"Are highly susceptible to the same pests as the main crop.",
+"Attract pests or pathogens away from the main crop.",
+"Increase the yield of the main crop.",
+"Provide additional nitrogen to the soil.",
+"None of these"
+],
+"page": "133-134",
+"q": "Decoy crops are used in pest management because they:",
+"serial": "685",
+"src_row": 446,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:685"
+},
+{
+"expl": "Relay intercropping allows planting up to four crops within one agricultural year.",
+"key": 2,
+"o": [
+"Sequential cropping.",
+"Mixed cropping.",
+"Relay intercropping.",
+"Intercropping.",
+"None of these"
+],
+"page": "133-134",
+"q": "Which multiple cropping system can involve up to four crops in a single year?",
+"serial": "686",
+"src_row": 447,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:686"
+},
+{
+"expl": "Mixed cropping involves sowing seeds of different crops together in the same field without row arrangement.",
+"key": 1,
+"o": [
+"Growing two or more crops in distinct rows with fixed ratios.",
+"Growing two or more crops simultaneously without distinct rows.",
+"Growing a single variety of a crop on a farm.",
+"Growing crops in a specific sequence after harvest.",
+"None of these"
+],
+"page": "133-134",
+"q": "Mixed cropping is best described as:",
+"serial": "687",
+"src_row": 448,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "133-134:687"
+},
+{
+"expl": "Marigold is specifically mentioned as a trap crop that reduces Pratylenchus nematode population.",
+"key": 1,
+"o": [
+"Tomato",
+"Marigold",
+"Corn",
+"Wheat",
+"None of these"
+],
+"page": "135-136",
+"q": "Which crop is used as a trap crop to reduce Pratylenchus nematode population?",
+"serial": "691",
+"src_row": 449,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "135-136:691"
+},
+{
+"expl": "Replacement series keeps the total plant density constant while varying crop proportions.",
+"key": 0,
+"o": [
+"Total plant density",
+"Yield of each crop",
+"Soil moisture",
+"Weed suppression",
+"None of these"
+],
+"page": "135-136",
+"q": "In a replacement series intercropping, what is maintained?",
+"serial": "692",
+"src_row": 450,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "135-136:692"
+},
+{
+"expl": "Atrazine controls weeds in sole sorghum but is toxic to legumes in intercropping systems.",
+"key": 1,
+"o": [
+"Pendimethalin",
+"Atrazine",
+"Glyphosate",
+"2,4-D",
+"None of these"
+],
+"page": "135-136",
+"q": "Which herbicide is toxic to legumes in a sorghum\u2011legume intercropping system?",
+"serial": "693",
+"src_row": 451,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "135-136:693"
+},
+{
+"expl": "Companion intercropping is defined by yields of both crops remaining equal to their stand yields, with no competition or synergy.",
+"key": 1,
+"o": [
+"Increase total yield beyond sole crops",
+"Ensure equal yields as pure stand",
+"Reduce pest population",
+"Improve soil fertility",
+"None of these"
+],
+"page": "135-136",
+"q": "What is the primary objective of companion intercropping?",
+"serial": "694",
+"src_row": 452,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "135-136:694"
+},
+{
+"expl": "The listed components include crop production, livestock, poultry, aquaculture, horticulture, sericulture, etc., but irrigation scheduling is not mentioned as a component.",
+"key": 1,
+"o": [
+"Livestock rearing",
+"Irrigation scheduling",
+"Poultry rearing",
+"Sericulture",
+"None of these"
+],
+"page": "135-136",
+"q": "Which of the following is NOT listed as a component of a farming system?",
+"serial": "695",
+"src_row": 453,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "135-136:695"
+},
+{
+"expl": "The source cites soil fertility, pest cycle break, and soil structure improvement; labor requirement is not mentioned as a benefit.",
+"key": 3,
+"o": [
+"Boosts soil fertility",
+"Breaks pest life cycles",
+"Improves soil structure",
+"Decreases labor requirement",
+"None of these"
+],
+"page": "135-136",
+"q": "Which of the following is NOT a benefit of crop rotation mentioned in the source?",
+"serial": "696",
+"src_row": 454,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "135-136:696"
+},
+{
+"expl": "IFS aims to reduce chemical use; increasing chemical use contradicts this goal.",
+"key": 3,
+"o": [
+"Maximizing yield of all components for steady income",
+"Rejuvenating system productivity and achieving agro-ecological balance",
+"Control pests, diseases, and weeds naturally through effective cropping system management",
+"Reducing chemical use to provide chemical\u2011free produce and a healthier environment",
+"None of these"
+],
+"page": "137-138",
+"q": "Which of the following is NOT a primary goal of the Integrated Farming System?",
+"serial": "701",
+"src_row": 455,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:701"
+},
+{
+"expl": "Source states intercropping raises light interception by 30\u201140%.",
+"key": 2,
+"o": [
+"10-20%",
+"20-30%",
+"30-40%",
+"40-50%",
+"None of these"
+],
+"page": "137-138",
+"q": "Intercropping systems increase light interception by approximately how much?",
+"serial": "702",
+"src_row": 456,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:702"
+},
+{
+"expl": "The term was first coined by Gilbert E. Bailey in 1915.",
+"key": 0,
+"o": [
+"Gilbert E. Bailey",
+"Dickson Despommier",
+"Whitney Smith",
+"International Centre for Insect Physiology and Ecology",
+"None of these"
+],
+"page": "137-138",
+"q": "Who first coined the term \"vertical farming\"?",
+"serial": "703",
+"src_row": 457,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:703"
+},
+{
+"expl": "Napier grass is the fodder crop that attracts stem borers (pull).",
+"key": 0,
+"o": [
+"Napier grass",
+"Desmodium",
+"Maize",
+"Sorghum",
+"None of these"
+],
+"page": "137-138",
+"q": "In the push\u2011pull strategy, which crop serves as the pull component to attract stem borers?",
+"serial": "704",
+"src_row": 458,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:704"
+},
+{
+"expl": "Cowpea provides 25\u201130 kg N/ha as stated in the source.",
+"key": 1,
+"o": [
+"Green gram",
+"Cowpea",
+"Groundnut",
+"Soybean",
+"None of these"
+],
+"page": "137-138",
+"q": "Which legume contributes 25\u201130 kg N/ha to the soil?",
+"serial": "705",
+"src_row": 459,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:705"
+},
+{
+"expl": "Sorghum and pearl millet stubble have high C:N ratio, leading to N immobilization.",
+"key": 1,
+"o": [
+"Leguminous crop residues",
+"Sorghum stubble",
+"Wheat straw",
+"Rice husk",
+"None of these"
+],
+"page": "137-138",
+"q": "Which residue type causes temporary nitrogen immobilization in the soil?",
+"serial": "706",
+"src_row": 460,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:706"
+},
+{
+"expl": "Groundnut > Maize > Jute > Summer rice in potassium utilization.",
+"key": 0,
+"o": [
+"Groundnut",
+"Maize",
+"Jute",
+"Summer rice",
+"None of these"
+],
+"page": "137-138",
+"q": "Which crop has the highest potassium utilization efficiency?",
+"serial": "707",
+"src_row": 461,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:707"
+},
+{
+"expl": "The recommendation is to apply phosphorus to wheat only, not to both crops.",
+"key": 1,
+"o": [
+"Both rice and wheat",
+"Only wheat",
+"Only rice",
+"Neither crop",
+"None of these"
+],
+"page": "137-138",
+"q": "In a rice\u2011wheat cropping system, where should phosphorus be applied?",
+"serial": "708",
+"src_row": 462,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "137-138:708"
+}
+],
+"rolled": false,
+"row_from": 442,
+"row_to": 463,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 442,
+"seeded_from": "2026-10-09",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-09",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
