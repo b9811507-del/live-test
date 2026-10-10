@@ -131907,8 +131907,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 546,
 "names": {},
+"plan": {
+"bidx_next": 546,
+"built_at": "2026-10-10T14:27:12+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 76-78",
+"pages_list": [
+76,
+77,
+78
+],
+"questions": [
+{
+"expl": "Aerial roots are adventitious roots that do not enter soil and are found in monocots like Araceae and Orchidaceae for aerial absorption.",
+"key": 2,
+"o": [
+"Tap root",
+"Fibrous root",
+"Aerial roots",
+"Storage roots",
+"None of these"
+],
+"page": "76",
+"q": "Which root type is characteristic of monocot families such as Araceae and Orchidaceae and absorbs water and minerals from the air?",
+"serial": "526",
+"src_row": 525,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:526"
+},
+{
+"expl": "Contractile roots actively pull the rootstock into the soil; they are typical of bulbous and cormous species.",
+"key": 0,
+"o": [
+"Contractile roots",
+"Haustoria",
+"Prop roots",
+"Buttress roots",
+"None of these"
+],
+"page": "76",
+"q": "Which root type is known for pulling the rootstock deeper into the soil and is commonly found in plants with bulbs and corms?",
+"serial": "527",
+"src_row": 526,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:527"
+},
+{
+"expl": "A corm is a globose stem surrounded by few scale\u2011like leaves, as seen in Iris spp.",
+"key": 1,
+"o": [
+"Bulb",
+"Corm",
+"Rhizome",
+"Tuber",
+"None of these"
+],
+"page": "76",
+"q": "Which underground stem type has globose stem tissue surrounded by scanty, scale\u2011like leaves?",
+"serial": "528",
+"src_row": 527,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:528"
+},
+{
+"expl": "Haustoria are specialized roots that invade host tissues, typical of parasitic plants.",
+"key": 0,
+"o": [
+"Haustoria",
+"Aerial roots",
+"Contractile roots",
+"Prop roots",
+"None of these"
+],
+"page": "76",
+"q": "Which root type is specialized to penetrate host plant tissues and is characteristic of parasitic plants?",
+"serial": "529",
+"src_row": 528,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:529"
+},
+{
+"expl": "Emergent aquatic plants have submerged roots or stems with aerial shoots above the water surface.",
+"key": 2,
+"o": [
+"Emersed",
+"Floating",
+"Emergent",
+"Submerged",
+"None of these"
+],
+"page": "76",
+"q": "In aquatic plants, which category refers to plants that have roots or stems anchored underwater but shoots growing above water?",
+"serial": "530",
+"src_row": 529,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:530"
+},
+{
+"expl": "Buttress roots are enlarged, horizontally spreading roots at tree bases that aid mechanical support.",
+"key": 0,
+"o": [
+"Buttress roots",
+"Prop roots",
+"Pneumatophores",
+"Contractile roots",
+"None of these"
+],
+"page": "76",
+"q": "Which root type provides mechanical support by spreading horizontally and thickening at the base of trees?",
+"serial": "531",
+"src_row": 530,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:531"
+},
+{
+"expl": "Bulbs consist of a small stem and fleshy leaves, used for vegetative propagation and can form bulbels.",
+"key": 0,
+"o": [
+"Bulb",
+"Corm",
+"Rhizome",
+"Tuber",
+"None of these"
+],
+"page": "76",
+"q": "Which underground stem type is used for vegetative propagation and may develop bulbels?",
+"serial": "532",
+"src_row": 531,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "76:532"
+},
+{
+"expl": "A rhizome is a horizontal underground stem with short internodes that bear scale\u2011like leaves, as seen in Zingiber officinale.",
+"key": 2,
+"o": [
+"It has protective scales",
+"It is thick and bears outer buds",
+"It has short internodes bearing scale\u2011like leaves",
+"It grows above ground",
+"None of these"
+],
+"page": "77",
+"q": "Which feature distinguishes a rhizome from other underground stems?",
+"serial": "533",
+"src_row": 532,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:533"
+},
+{
+"expl": "Solanum tuberosum (potato) is a classic example of a tuber, a thick underground storage stem without protective scales.",
+"key": 1,
+"o": [
+"Zingiber officinale",
+"Solanum tuberosum",
+"Curcuma longa",
+"Dioscorea",
+"None of these"
+],
+"page": "77",
+"q": "Which plant is an example of a tuber?",
+"serial": "534",
+"src_row": 533,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:534"
+},
+{
+"expl": "Raised nursery beds are specifically prepared during the rainy season to take advantage of soil moisture.",
+"key": 1,
+"o": [
+"Spring\u2011summer",
+"Rainy",
+"Winter",
+"All seasons",
+"None of these"
+],
+"page": "77",
+"q": "During which season is a raised nursery bed prepared?",
+"serial": "535",
+"src_row": 534,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:535"
+},
+{
+"expl": "Thinning removes excess seedlings to reduce overcrowding, improving aeration and development.",
+"key": 2,
+"o": [
+"Transfer seedlings to another bed",
+"Expose seedlings to full sunlight",
+"Remove excess seedlings for better aeration",
+"Apply mulch over the bed",
+"None of these"
+],
+"page": "77",
+"q": "What is the primary purpose of thinning in nursery operations?",
+"serial": "536",
+"src_row": 535,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:536"
+},
+{
+"expl": "Hardening off is the practice of exposing plants to sunlight and withholding irrigation to build tolerance before transplanting.",
+"key": 2,
+"o": [
+"Thinning",
+"Pricking",
+"Hardening off",
+"Mulching",
+"None of these"
+],
+"page": "77",
+"q": "Which nursery operation involves exposing plants to full sunlight for 7\u201310 days before transplanting?",
+"serial": "537",
+"src_row": 536,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:537"
+},
+{
+"expl": "Greenhouses are built using cladding materials such as plastic polythene and fibreglass to control temperature and light.",
+"key": 2,
+"o": [
+"Plastic polythene",
+"Fibreglass",
+"Both plastic polythene and fibreglass",
+"Glass only",
+"None of these"
+],
+"page": "77",
+"q": "Which materials are used to construct the cladding of a greenhouse?",
+"serial": "538",
+"src_row": 537,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:538"
+},
+{
+"expl": "Greenhouses maintain a night temperature of 13 \u00b0C to 15 \u00b0C to support plant growth.",
+"key": 2,
+"o": [
+"5\u20137 \u00b0C",
+"10\u201312 \u00b0C",
+"13\u201315 \u00b0C",
+"18\u201320 \u00b0C",
+"None of these"
+],
+"page": "77",
+"q": "What night temperature range is maintained inside a greenhouse?",
+"serial": "539",
+"src_row": 538,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "77:539"
+},
+{
+"expl": "Lathhouses are erected mainly to create shade, raise tender plants, and shield them from excessive heat and light.",
+"key": 0,
+"o": [
+"To provide shade and protect tender plants from high temperature and light intensity",
+"To increase the ambient temperature for cold crops",
+"To supply irrigation water to seedlings",
+"To reduce pest infestation through chemical barriers",
+"None of these"
+],
+"page": "78",
+"q": "What is the primary purpose of a lathhouse?",
+"serial": "540",
+"src_row": 539,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:540"
+},
+{
+"expl": "Hotbeds use electric cables, hot water, steam pipes, hot air fumes or fermenting manure, but not solar panels.",
+"key": 3,
+"o": [
+"Electric heating cables",
+"Hot water circulation",
+"Steam pipes",
+"Solar panels",
+"None of these"
+],
+"page": "78",
+"q": "Which of the following heating methods is NOT typically used in hotbeds?",
+"serial": "541",
+"src_row": 540,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:541"
+},
+{
+"expl": "The source specifies the standard hotbed size as 0.9 x 1.8 m\u00b2.",
+"key": 0,
+"o": [
+"0.9 x 1.8 m\u00b2",
+"1.8 x 3.6 m\u00b2",
+"0.5 x 1.0 m\u00b2",
+"2.0 x 4.0 m\u00b2",
+"None of these"
+],
+"page": "78",
+"q": "What is the standard size of a hotbed?",
+"serial": "542",
+"src_row": 541,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:542"
+},
+{
+"expl": "Cold frames are similar to hotbeds but lack provision for supplying bottom heat.",
+"key": 0,
+"o": [
+"It does not provide bottom heat",
+"It uses a different shade intensity",
+"It is constructed from plastic instead of wood",
+"It has a larger glass covering",
+"None of these"
+],
+"page": "78",
+"q": "How does a cold frame differ from a hotbed?",
+"serial": "543",
+"src_row": 542,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:543"
+},
+{
+"expl": "The text states that mist chambers are ideal for rooting leaf cuttings.",
+"key": 1,
+"o": [
+"Stem cuttings",
+"Leaf cuttings",
+"Root cuttings",
+"Flower cuttings",
+"None of these"
+],
+"page": "78",
+"q": "The mist chamber is particularly suitable for rooting which type of cutting?",
+"serial": "544",
+"src_row": 543,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:544"
+},
+{
+"expl": "Formula R = (P% \u00d7 G%) / 100 uses Purity (P) and Germination (G).",
+"key": 0,
+"o": [
+"Purity and Germination",
+"Moisture and Yield",
+"Purity and Yield",
+"Germination and Yield",
+"None of these"
+],
+"page": "78",
+"q": "The real value of a seed is calculated using which two percentages?",
+"serial": "545",
+"src_row": 544,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:545"
+},
+{
+"expl": "Seed production gardening is the type dedicated to seed production.",
+"key": 2,
+"o": [
+"Kitchen gardening",
+"Market gardening",
+"Seed production gardening",
+"Processing gardening",
+"None of these"
+],
+"page": "78",
+"q": "Which type of vegetable gardening is specifically aimed at producing seeds?",
+"serial": "546",
+"src_row": 545,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "78:546"
+}
+],
+"row_from": 525,
+"row_to": 546,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 525,
+"seeded_from": "2026-10-09"
+},
 "qidx": 0,
+"seeded_from": "2026-10-09",
+"skips": [],
 "step": 0
 },
 "malwa": {
