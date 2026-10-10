@@ -134212,10 +134212,14 @@
 "978174619": 2
 }
 },
+"answered_total": 2209,
 "cd": 1,
 "expl_in_poll": 0,
 "last_off": 210595155,
+"lb_parts": 3,
 "lb_parts_sent": 3,
+"lb_rows": 88,
+"lb_sent": true,
 "lock_ts": 1791637032.518739,
 "locked_by": "38051992457",
 "msg_ann": 32172,
@@ -135224,6 +135228,7 @@
 "src": "mongo:agri.afo_sets",
 "trunc": 0
 },
+"players": 88,
 "poll_ids": {
 "0": "6219893894864177061",
 "1": "6219893894864177062",
@@ -135282,7 +135287,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-10T18:00:21+05:30",
-"step": 3
+"step": 4
 },
 "iari": {
 "announced_at": "2026-10-10T14:30:01+05:30",
