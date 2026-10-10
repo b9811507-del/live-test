@@ -131902,7 +131902,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-10T17:57:34+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mirrors",
+"Hovers",
+"Diffusers",
+"Lenses",
+"None of these"
+],
+"page": "",
+"q": "In the brooding equipment described, what term is used for the light reflectors?",
+"serial": "1sUgWsko:3475",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3475"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10 days after sowing (DAS)",
+"20 DAS",
+"30 DAS",
+"40 DAS",
+"None of these"
+],
+"page": "",
+"q": "At what growth stage should band placement of 250 kg ha\u207b\u00b9 gypsum be applied?",
+"serial": "128DIQLj:452",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:452"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"8.0",
+"8.5",
+"9.0",
+"9.5",
+"None of these"
+],
+"page": "",
+"q": "What is the upper limit of the acceptable pH range for water quality management in fisheries?",
+"serial": "1sUgWsko:2299",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2299"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Heterotrophs",
+"Consumers",
+"Phototrophs/Autotrophs",
+"Decomposers",
+"None of these"
+],
+"page": "",
+"q": "What is the term for plants that produce food themselves through photosynthesis?",
+"serial": "17U0MEc-:271",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:271"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Crop production combined with livestock raising",
+"Grazing animals on public lands",
+"No single enterprise contributes 50% of the farm income",
+"Major enterprise contributes more than 50% of the farm income",
+"None of these"
+],
+"page": "",
+"q": "What is the primary characteristic of Diversified Farming?",
+"serial": "1sUgWsko:3965",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3965"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Insurance",
+"Depreciation",
+"Labour",
+"Mortgage",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an example of a Fixed Cost in farming?",
+"serial": "1sUgWsko:3969",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3969"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10-20 days",
+"30-40 days",
+"50-60 days",
+"70-80 days",
+"None of these"
+],
+"page": "",
+"q": "When soil is kept continuously moist, roots in shoots typically emerge within what time frame?",
+"serial": "1sUgWsko:674",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:674"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Campoletis chloridae",
+"Bracon sp.",
+"Platygaster oryzae",
+"Isotima javensis",
+"None of these"
+],
+"page": "",
+"q": "Which parasitoid is used for controlling the spotted bollworm in cotton?",
+"serial": "1UgnIe-g:2034",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2034"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Labelling & tagging",
+"Seed collection",
+"Planting hybrid seeds",
+"Selection of progeny",
+"None of these"
+],
+"page": "",
+"q": "Which step involves marking hybridized plants with a tag?",
+"serial": "1UgnIe-g:183",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:183"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ploughing",
+"Penning in the field",
+"Milk production",
+"Wet ploughing",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a primary use of the Pullikulam cattle breed?",
+"serial": "1sUgWsko:2987",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2987"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"AA",
+"AAA",
+"AAB",
+"ABB",
+"None of these"
+],
+"page": "",
+"q": "Which genome group accounts for about 60 % of cultivated banana varieties?",
+"serial": "1YcJWVgW:206",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:206"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Normal distribution",
+"Binomial distribution",
+"Exponential distribution",
+"Uniform distribution",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a discrete distribution?",
+"serial": "17U0MEc-:2890",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2890"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Punjab",
+"Karnataka",
+"Gujarat",
+"Haryana",
+"None of these"
+],
+"page": "",
+"q": "Which state uses the least amount of poor-quality water for irrigation?",
+"serial": "1sUgWsko:7146",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7146"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lysimeter",
+"Pressure plate apparatus",
+"USWB class 'A' open pan evaporimeter",
+"Soil moisture depletion studies",
+"None of these"
+],
+"page": "",
+"q": "Which method is used to measure ET and leaching losses?",
+"serial": "17U0MEc-:467",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:467"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Stage I",
+"Stage II",
+"Stage III",
+"At the end of Stage I",
+"None of these"
+],
+"page": "",
+"q": "At which stage of production does the Marginal Physical Product (MPP) equal the Average Physical Product (APP)?",
+"serial": "128DIQLj:2582",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2582"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mechanical filter",
+"Biological filter",
+"Ozone and UV treatment",
+"Aeration/Oxygenation",
+"None of these"
+],
+"page": "",
+"q": "Which component of a Recirculating Aquaculture System (RAS) removes solid particles from the water?",
+"serial": "1sUgWsko:2619",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2619"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rohu",
+"Catla",
+"Silver carp",
+"Mrigal",
+"None of these"
+],
+"page": "",
+"q": "Which fish species is NOT classified as an Indian major carp?",
+"serial": "1bxM1Q-4:4266",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4266"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Food",
+"Shelterbelts",
+"Fuel wood",
+"Clothes",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a productive function of forests?",
+"serial": "1sUgWsko:5496",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5496"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Increases genetic variation",
+"Breaks linkages",
+"Maintains linkage disequilibrium",
+"Allows new gene combinations",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a significance of crossing over?",
+"serial": "1UgnIe-g:504",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:504"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"18",
+"20",
+"21",
+"25",
+"None of these"
+],
+"page": "",
+"q": "In 1999, NBSS & LUP classified India into how many agro\u2011ecological zones?",
+"serial": "128DIQLj:75",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:75"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Migratory ectoparasitic",
+"Migratory endoparasitic",
+"Sedentary endoparasitic",
+"Sedentary ectoparasitic",
+"None of these"
+],
+"page": "",
+"q": "What type of feeding behavior does Tylenchulus semipenetrans exhibit?",
+"serial": "1UgnIe-g:2499",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2499"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Constant volume combustion",
+"Constant pressure combustion",
+"Adiabatic combustion",
+"Isothermal combustion",
+"None of these"
+],
+"page": "",
+"q": "In a diesel engine, the type of combustion that occurs when fuel is sprayed into the cylinder at high temperature is called:",
+"serial": "1sUgWsko:6294",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6294"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Broadcasting",
+"Drilling",
+"Dibbling",
+"Transplanting",
+"None of these"
+],
+"page": "",
+"q": "Which method is generally used for sowing seeds in mixed cropping?",
+"serial": "1bxM1Q-4:940",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:940"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Smutting",
+"Uredinales",
+"Exysiphales",
+"Peronosporales",
+"None of these"
+],
+"page": "",
+"q": "Which order is correctly paired with rust fungi?",
+"serial": "1UgnIe-g:943",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:943"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Each for all and all for each",
+"Unity in diversity",
+"Survival of the fittest",
+"Strength in numbers",
+"None of these"
+],
+"page": "",
+"q": "What is the motto of co-operation?",
+"serial": "128DIQLj:2474",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2474"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It relies solely on physical methods.",
+"It involves advance land use planning to minimize weed invasion.",
+"It focuses on immediate eradication of weeds.",
+"It is limited to chemical herbicides.",
+"None of these"
+],
+"page": "",
+"q": "Which of these is a key feature of weed management that distinguishes it from weed control?",
+"serial": "1sUgWsko:5158",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5158"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Plant physiology",
+"Plant phenology",
+"Plant morphology",
+"Plant ecology",
+"None of these"
+],
+"page": "",
+"q": "What is the study of the timing of recurring biological events in plants called?",
+"serial": "1UgnIe-g:1637",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1637"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Epiphytes",
+"Halophytes",
+"Lithophytes",
+"Chamaephytes",
+"None of these"
+],
+"page": "",
+"q": "Plants that grow on another plant for physical support are called?",
+"serial": "1bxM1Q-4:485",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:485"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"50 birds per acre",
+"100 birds per acre",
+"150 birds per acre",
+"200 birds per acre",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended stocking density for a free\u2011range system on ordinary land?",
+"serial": "128DIQLj:2033",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2033"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Uttar Pradesh",
+"Gujarat",
+"West Bengal",
+"Assam",
+"None of these"
+],
+"page": "",
+"q": "Which state is NOT mentioned among the major potato producing states in India?",
+"serial": "1bxM1Q-4:890",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:890"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rabi",
+"Kharif",
+"Both equal",
+"None",
+"None of these"
+],
+"page": "",
+"q": "Which season yields higher onion production per hectare?",
+"serial": "1YcJWVgW:736",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:736"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Deccani",
+"Kendrapada",
+"Marwari",
+"Nali",
+"None of these"
+],
+"page": "",
+"q": "The FecB mutation, linked to prolificacy, is found in which Indian sheep breed besides Garole?",
+"serial": "1sUgWsko:3225",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3225"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Splash/rain drop erosion",
+"Sheet erosion",
+"Rill erosion",
+"Gully erosion",
+"None of these"
+],
+"page": "",
+"q": "Which type of soil erosion cannot be removed by normal tillage operations?",
+"serial": "17U0MEc-:1190",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1190"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Root-to-seed method",
+"Leaf-cutting method",
+"Stem-cutting method",
+"Tissue culture method",
+"None of these"
+],
+"page": "",
+"q": "What is the preferred method for nucleus seed production in this plant?",
+"serial": "1YcJWVgW:690",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:690"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Hyperplasia",
+"Hypertrophy",
+"Hyperplasia and Hypertrophy",
+"Cell enlargement",
+"None of these"
+],
+"page": "",
+"q": "What is the term for an abnormal increase in the size of cells of a tissue in nematodes?",
+"serial": "17U0MEc-:2284",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2284"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"*Batocera rufomaculata*",
+"*Sitophilus oryzae*",
+"*Sternochetus mangiferae*",
+"*Raphidopalpa foveicollis*",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of the Mango stem borer?",
+"serial": "17U0MEc-:1859",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1859"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sigatoka is caused by a fungus and shows leaf spots, while bunchy top is viral and causes stunting",
+"Sigatoka is transmitted by aphids, while bunchy top spreads through soil",
+"Sigatoka causes pinkish pseudostem streaks, while bunchy top causes yellow leaf spots",
+"Sigatoka leads to bacterial ooze, while bunchy top leads to dark brown fruit discoloration",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly differentiates Sigatoka leaf spot from Banana bunchy top?",
+"serial": "1sUgWsko:3815",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3815"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20\u201125\u00b0C",
+"14\u201116\u00b0C",
+"25\u201129\u00b0C",
+"27\u201132\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for wheat grain formation?",
+"serial": "1bxM1Q-4:507",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:507"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A product that can be increased only by decreasing another product",
+"A product that can be increased without affecting another product",
+"A product that is produced in a fixed proportion with another product",
+"A product that is produced only after the other product is finished",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best defines a supplementary product?",
+"serial": "1sUgWsko:3984",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3984"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Confined aquifer",
+"Artesian aquifer",
+"Unconfined aquifer",
+"Pressure aquifer",
+"None of these"
+],
+"page": "",
+"q": "Which type of aquifer is characterized by water not being under pressure?",
+"serial": "1bxM1Q-4:4063",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4063"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pusa vishwas",
+"Pusa nasdar",
+"Pusa chikni",
+"Pusa manjari",
+"None of these"
+],
+"page": "",
+"q": "Which variety of pumpkin is popular?",
+"serial": "17U0MEc-:1532",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1532"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5.5-6.5",
+"6.5-7.5",
+"7.5-8.5",
+"8.5-9.5",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal pH range for the cultivation of Watermelon?",
+"serial": "1bxM1Q-4:3191",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3191"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Saw fly",
+"Male mosquito",
+"Mango mealy bug",
+"Pulse beetle",
+"None of these"
+],
+"page": "",
+"q": "Which insect is associated with plumose antennae?",
+"serial": "17U0MEc-:1721",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1721"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rapeseed leaves are sessile and clasp the stalk",
+"Mustard leaves are sessile and clasp the stalk",
+"Both have stalked leaves that do not clasp",
+"Rapeseed leaves are longer than mustard leaves",
+"None of these"
+],
+"page": "",
+"q": "Which characteristic distinguishes rapeseed from mustard in terms of leaf attachment?",
+"serial": "1sUgWsko:379",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:379"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Seedling blight",
+"Powdery mildew",
+"Rust",
+"Leaf spot",
+"None of these"
+],
+"page": "",
+"q": "Which disease is more likely to occur in waterlogged soil for castor crops?",
+"serial": "17U0MEc-:766",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:766"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"XY",
+"XX",
+"XO",
+"YY",
+"None of these"
+],
+"page": "",
+"q": "What is the typical chromosomal arrangement for females in humans?",
+"serial": "1UgnIe-g:508",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:508"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1/3",
+"1",
+"15",
+"31",
+"None of these"
+],
+"page": "",
+"q": "At which moisture tension (in atm) is water held at the permanent wilting point of plants?",
+"serial": "1sUgWsko:7003",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7003"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Vaginal insemination",
+"Uterine insemination",
+"Cervical insemination",
+"Intramuscular insemination",
+"None of these"
+],
+"page": "",
+"q": "Which insemination technique is generally followed for a better conception rate?",
+"serial": "1sUgWsko:3300",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3300"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"2nd round",
+"7th round",
+"8th round",
+"9th round",
+"None of these"
+],
+"page": "",
+"q": "Which round of GATT negotiations led to the establishment of the WTO?",
+"serial": "128DIQLj:2686",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2686"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chlorophyll a",
+"Carotenoids",
+"Phycobilins",
+"Anthocyanins",
+"None of these"
+],
+"page": "",
+"q": "The yellow colour of etiolated or variegated leaves is mainly due to which pigment after chlorophyll loss?",
+"serial": "1UgnIe-g:1517",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1517"
+}
+],
+"set_no": 28,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
