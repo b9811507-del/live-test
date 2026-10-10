@@ -132499,6 +132499,8 @@
 "cd": 1,
 "congrats_sent": 32139,
 "cta_sent": "off",
+"done_at": "2026-10-10T11:12:15+05:30",
+"elapsed_s": 868,
 "expl_in_poll": 21,
 "file_msg": 32140,
 "file_sent": "MALWA_VOL_1_p133-138_21Q_2026-10-10.html",
@@ -132508,8 +132510,18 @@
 "lb_rows": 39,
 "lb_sent": true,
 "lock_ts": 1791610894.6967778,
-"locked_by": "38027551559",
+"locked_by": "",
 "msg_ann": 32113,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 32115,
 "names": {
 "1023152775": "Anjali \ud83d\udc9b\u2764\ufe0f",
@@ -132552,6 +132564,8 @@
 "8824694648": "RISK2797",
 "939317225": "sp_oreo"
 },
+"paid_msg": 32142,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 3,
@@ -132991,7 +133005,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-10T11:00:23+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 32141,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 139-144\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 76, 77, 78",
 "vol": 0
