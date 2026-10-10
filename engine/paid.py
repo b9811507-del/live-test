@@ -47,7 +47,7 @@ DEFAULTS = [
     {"key": "afo", "emoji": "🌆", "title": "AFO SELECTION BATCH", "price": "₹251", "chat": "-1003687531473",
      "perks": "AFO mains full-length tests (new pattern) · previous-year papers · selection-focused "
               "practice · unlimited attempts with best explanation"},
-    {"key": "cane", "emoji": "🎋", "title": "SUGARCANE PREMIUM BATCH", "price": "₹151",
+    {"key": "cane", "emoji": "🎋", "title": "UPSSSC SUGARCANE PREMIUM BATCH", "price": "₹151",
      "chat": "-1003707610763",
      "perks": "Sugarcane premium classes · daily tests · revision notes · "
               "unlimited attempts with best explanation"},
@@ -162,18 +162,41 @@ def line(pairs):
 
 
 # --------------------------------------------------------------------------- group message (last message after every test)
-def group_text():
-    return (
-        "\U0001F393 <b>ALL PAID BATCHES</b> \u2014 AGRI QUIZ WORLD\n\n"
-        "Complete book-wise courses \u00b7 full test series \u00b7 expert-vetted MCQ banks \u00b7 PDF library access.\n"
-        "\u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> \u2014 pay once, the batch is yours for life.\n\n"
-        "\U0001F449 <i>Touch the button below for the full batch list, fees and instant join.</i>"
-    )
+def group_text(E):
+    # v12.3 LOCKED (user-locked 3-Oct): name+details line, then fees + JOIN NOW line.
+    # JOIN NOW = per-batch deep link -> bot opens that batch's payment section instantly.
+    def row(name, fee, key):
+        return ("%s\n\u3000\u3000<b>%s\u3000\u3000<a href=\"%s\">\U0001F4B3 JOIN NOW</a></b>"
+                % (name, fee, deep_link(E, key)))
+    def fee(key):
+        b = batch(key) or {}
+        return b.get("price") or ""
+    parts = [
+        "<b>\U0001F393 ALL PAID BATCHES \u2014 AGRI QUIZ WORLD</b>",
+        "",
+        row("\U0001F4D8 IARI BOOK MCQ BATCH (7400+ Q)", fee("iari"), "iari"),
+        "",
+        row("\U0001F4DA MALWA BOOK VOL 1+2+HORTICULTURE (3000+2800+1250 Q)", fee("malwa"), "malwa"),
+        "",
+        row("\U0001F33E NEMRAJ SUNDA BOOK BATCH (3100+ Q)", fee("nemraj"), "nemraj"),
+        "",
+        row("\U0001F4D7 RK SHARMA BOOK BATCH (4500+ Q)", fee("rksharma"), "rksharma"),
+        "",
+        row("\U0001F306 AFO SELECTION BATCH (400+ subject test \u00b7 100+ full length test)", fee("afo"), "afo"),
+        "",
+        row("\U0001F38B UPSSSC SUGARCANE PREMIUM BATCH (Complete UP Special + Computer + Agriculture according syllabus)", fee("cane"), "cane"),
+        "",
+        row("\U0001F404 PASHUDHAN ADHIKARI BATCH (Section A+C 25 test \u00b7 A+B 25 test)", fee("pashu"), "pashu"),
+        "",
+        "\u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> \u2014 pay once, the batch is yours for life.",
+    ]
+    return "\n".join(parts)
 
 
 
 def group_keyboard(E):
-    return {"inline_keyboard": [[{"text": "\U0001F4F2 Touch for more information", "url": deep_link(E, "catalog")}]]}
+    # v12.3: buttons moved INTO the message text (per-batch JOIN NOW links) - no keyboard needed
+    return None
 
 
 def post_after_test(E, chat, job=None, day=None):
@@ -201,12 +224,19 @@ def post_after_test(E, chat, job=None, day=None):
         E.log("paid: reusing today's message #%s for %s in %s" % (prev_id, job, chat))
         return prev_id
     tag = "msg_%s_%s" % (day, job or "test")
-    m = ptg(E, "sendMessage", chat_id=chat, text=group_text(), parse_mode="HTML",
+    m = ptg(E, "sendMessage", chat_id=chat, text=group_text(E), parse_mode="HTML",
              disable_web_page_preview=True, reply_markup=group_keyboard(E))
     if m:
         paid[tag] = m["message_id"]
         paid[dkey] = {"id": m["message_id"], "job": job, "at": E.istnow().isoformat(timespec="seconds")}
         paid["posted_at"] = E.istnow().isoformat(timespec="seconds")
+        for old in (paid.get("last_ids") or []):
+            try:
+                if int(old) != int(m["message_id"]):
+                    ptg(E, "deleteMessage", chat_id=chat, message_id=old)
+            except Exception:
+                pass
+        paid["last_ids"] = [m["message_id"]]
         E.jsave(st, "paid batches message")
         E.log("paid: batches message posted (#%s, superseded %s)" % (m["message_id"], prev_id))
     else:
