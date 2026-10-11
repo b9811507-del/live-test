@@ -137250,7 +137250,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-11T17:58:04+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 3,
+"o": [
+"Rabies",
+"Q fever",
+"Tuberculosis",
+"Foot-and-mouth disease",
+"None of these"
+],
+"page": "",
+"q": "Among the listed zoonotic diseases, which one is NOT mentioned in the source as transmittable from animal to man?",
+"serial": "128DIQLj:2004",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2004"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Crop rotation",
+"Legislative quarantine regulations",
+"Soil solarization",
+"Flooding",
+"None of these"
+],
+"page": "",
+"q": "Which regulatory method restricts the movement of potato tubers used as seed materials from Nilgiri hills (TN) to other parts of the country?",
+"serial": "1sUgWsko:3892",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3892"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1,16,000 plants/ha",
+"5,00,000 plants/ha",
+"3,33,333 plants/ha",
+"2,50,000 plants/ha",
+"None of these"
+],
+"page": "",
+"q": "The SRI method for rice uses a spacing of 25\u00d725 cm. Approximately how many plants per hectare does this correspond to?",
+"serial": "1bxM1Q-4:557",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:557"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"4 qt/ha",
+"6 qt/ha",
+"8 qt/ha",
+"10 qt/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended amount of gypsum for reclamation of sodic or alkali soils with pH > 8.5?",
+"serial": "17U0MEc-:1179",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1179"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chlorantraniliprole 18.5 SC",
+"Imidacloprid 70 WS",
+"Imidacloprid 17.8 SL",
+"Neem oil",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is recommended for treating sugarcane setts against pests?",
+"serial": "1sUgWsko:1892",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1892"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20-25\u00b0C",
+"25-30\u00b0C",
+"30-35\u00b0C",
+"35-40\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for nitrifying bacteria?",
+"serial": "17U0MEc-:1199",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1199"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ring spot",
+"Damping off",
+"Papaya leaf curl",
+"Stem rot",
+"None of these"
+],
+"page": "",
+"q": "Which disease is most serious for papaya seedlings?",
+"serial": "17U0MEc-:1480",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1480"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Citrus",
+"Banana",
+"Coconut",
+"Coffee",
+"None of these"
+],
+"page": "",
+"q": "Which crop has its growth period described as \"Flowering, fruit setting and enlargement\"?",
+"serial": "1sUgWsko:4634",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4634"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Oogamy",
+"Isogamy",
+"Formation of conidia",
+"Union of gametangia",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a method of asexual reproduction in fungi?",
+"serial": "17U0MEc-:2138",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2138"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Banana",
+"Citrus",
+"Avocado",
+"Passion fruit",
+"None of these"
+],
+"page": "",
+"q": "Based on ethylene evolution, which fruit falls under the 'Very Low' class at 20\u00b0C?",
+"serial": "1sUgWsko:830",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:830"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Persuasion",
+"Decision",
+"Implementation",
+"Knowledge",
+"None of these"
+],
+"page": "",
+"q": "At which stage of the innovation-decision process are mass media relatively more important?",
+"serial": "128DIQLj:2335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2335"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Panama Wilt",
+"Sigatoka Leaf Spot",
+"Streak Virus",
+"Bract Disease",
+"None of these"
+],
+"page": "",
+"q": "Which banana disease is caused by a virus spread by mealy bugs?",
+"serial": "1YcJWVgW:437",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:437"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Root rot",
+"Ramularia blight",
+"Powdery mildew",
+"Leaf rust",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a problem associated with fennel cultivation?",
+"serial": "1YcJWVgW:867",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:867"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Altered enzyme actions",
+"Reduced permeability of plant membranes",
+"Deficiency of Ca and Mg",
+"Abnormal growth of plant root system",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a direct effect of soil acidity on crops?",
+"serial": "1bxM1Q-4:1807",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1807"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"World Water Day",
+"World Wetlands Day",
+"World Oceans Day",
+"World Environment Day",
+"None of these"
+],
+"page": "",
+"q": "Which of these days is dedicated to raising awareness about the importance of wetlands?",
+"serial": "1sUgWsko:2686",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2686"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Maize stem borer",
+"Wheat aphid",
+"Ghujhia weevil",
+"Termite",
+"None of these"
+],
+"page": "",
+"q": "Which pest is known for causing 'dead hearts' in maize and wheat crops?",
+"serial": "17U0MEc-:2003",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2003"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Combine (Mounted and Drawn)",
+"Seed Drill",
+"Seed cum fertilizer",
+"Puddler",
+"None of these"
+],
+"page": "",
+"q": "Which implement has the lowest cost among those with a subsidy percentage of 70%?",
+"serial": "1sUgWsko:6102",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6102"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Clay",
+"Silt",
+"Sand",
+"Loam",
+"None of these"
+],
+"page": "",
+"q": "In puddling, which soil fraction forms the bottom layer of the impervious layer?",
+"serial": "128DIQLj:904",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:904"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Kharif",
+"Rabi",
+"Summer/Spring",
+"Winter",
+"None of these"
+],
+"page": "",
+"q": "In which season is Black gram NOT cultivated according to the table?",
+"serial": "128DIQLj:373",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:373"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"75% and 25%",
+"60% and 40%",
+"80% and 20%",
+"50% and 50%",
+"None of these"
+],
+"page": "",
+"q": "According to the Cobb-Douglas production function, what is the share of labor and capital respectively?",
+"serial": "128DIQLj:2561",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2561"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Srinagar",
+"Kenya Blue",
+"Manali",
+"CO-1",
+"None of these"
+],
+"page": "",
+"q": "Which variety of Tuberose is listed in the table?",
+"serial": "1bxM1Q-4:3395",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3395"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Green Seeker",
+"SPAD meter",
+"Leaf Colour Chart",
+"NDVI scanner",
+"None of these"
+],
+"page": "",
+"q": "Which device measures leaf chlorophyll content non\u2011destructively to indicate plant nitrogen status?",
+"serial": "128DIQLj:233",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:233"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"2000",
+"2004",
+"2006",
+"2010",
+"None of these"
+],
+"page": "",
+"q": "In which year was India officially declared rinderpest\u2011free?",
+"serial": "128DIQLj:1987",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1987"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Governor lag",
+"Governor hunting",
+"Governor drift",
+"Governor oscillation",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the erratic variation of speed in a governor when it overcompensates for speed changes?",
+"serial": "1sUgWsko:6347",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6347"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1 g/wk",
+"2 g/wk",
+"3 g/wk",
+"4 g/wk",
+"None of these"
+],
+"page": "",
+"q": "What is the maximum growth rate of Penaeus vannamei under intensive culture conditions?",
+"serial": "1sUgWsko:2549",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2549"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Gram Pod Borer",
+"Termites",
+"AR",
+"Molya Nematode",
+"None of these"
+],
+"page": "",
+"q": "Which pest is specifically known for cutting germinating seedlings at the ground level in wheat nurseries?",
+"serial": "1sUgWsko:1870",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1870"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"An open trench left between two adjacent strips after finishing ploughing",
+"A strip left at each end of the field for the tractor to turn",
+"The area where the tractor and plough are idle",
+"A strip where gathering is performed",
+"None of these"
+],
+"page": "",
+"q": "What is a dead furrow?",
+"serial": "1sUgWsko:6140",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6140"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Creamy white to green",
+"Creamy white to brown",
+"Brown to black",
+"Green to yellow",
+"None of these"
+],
+"page": "",
+"q": "At what stage is the maturity of ARI fruits identified by the change in seed color?",
+"serial": "1sUgWsko:1138",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1138"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"HD-2009 (Arjun)",
+"HD-2967",
+"PBW-343",
+"WH-147",
+"None of these"
+],
+"page": "",
+"q": "Which variety of wheat is susceptible to 2, 4-D where spike deformity occurs?",
+"serial": "17U0MEc-:587",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:587"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Commelina benghalensis",
+"Chenopodium album",
+"Daucus carota",
+"Cynodon dactylon",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a biennial weed?",
+"serial": "1sUgWsko:5085",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5085"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase leaf density",
+"To induce flowering",
+"To promote root growth",
+"To prevent disease spread",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of dehorning in fruit trees?",
+"serial": "1sUgWsko:702",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:702"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Engine type",
+"Wheel type, Crawler type, Walking type",
+"Horsepower",
+"Fuel type",
+"None of these"
+],
+"page": "",
+"q": "What is the primary classification of tractors based on structural design?",
+"serial": "1sUgWsko:6018",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6018"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20 cm",
+"25 cm",
+"30 cm",
+"35 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spacing for transplanting chilli seedlings?",
+"serial": "1bxM1Q-4:3155",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3155"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Control of Colorado potato beetle",
+"Management of grape phylloxera",
+"Suppression of rice blast fungus",
+"Eradication of wheat rust",
+"None of these"
+],
+"page": "",
+"q": "Which pest management success is cited as a notable example of Host Plant Resistance?",
+"serial": "1UgnIe-g:2078",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2078"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"*Plasmodiophora brassicae*",
+"*Erwinia crotovera*",
+"*Albugo candida*",
+"*Fusarium oxysporum*",
+"None of these"
+],
+"page": "",
+"q": "Which pathogen causes club rot of cauliflower?",
+"serial": "17U0MEc-:1580",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1580"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Moisture content of grains <22-25%",
+"Husk colour turns pale brown",
+"15% moisture in grain",
+"Grains in hard dough stage",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a characteristic of maize at harvest maturity?",
+"serial": "1sUgWsko:4397",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4397"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Complete Budgeting",
+"Total Budgeting",
+"Partial Budgeting",
+"Annual Budgeting",
+"None of these"
+],
+"page": "",
+"q": "Which type of budgeting refers to estimating costs and returns for a particular enterprise?",
+"serial": "1bxM1Q-4:2364",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2364"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Leaf shape",
+"Life span",
+"Flower colour",
+"Root depth",
+"None of these"
+],
+"page": "",
+"q": "Based on ontogeny, weeds are classified primarily by which characteristic?",
+"serial": "128DIQLj:956",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:956"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Prismatic",
+"Columnar",
+"Crumb",
+"Wedge",
+"None of these"
+],
+"page": "",
+"q": "Which of the following soil structures is most suitable for crop cultivation?",
+"serial": "1sUgWsko:6963",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6963"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Typhoon system of drip irrigation",
+"Center Pivot",
+"Bubbler irrigation",
+"Raingun",
+"None of these"
+],
+"page": "",
+"q": "Which irrigation system was developed in Israel and is used in Maharashtra sugarcane fields?",
+"serial": "128DIQLj:781",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:781"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"mRNA",
+"tRNA",
+"DNA polymerase",
+"Ribosomes",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT required for the translation process in eukaryotic cells?",
+"serial": "1UgnIe-g:591",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:591"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Merino",
+"Dorper",
+"Suffolk",
+"Rambouillet",
+"None of these"
+],
+"page": "",
+"q": "Which exotic fine wool breed of sheep originated in Spain?",
+"serial": "1sUgWsko:3228",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3228"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Avocado",
+"Cashewnut",
+"Almond",
+"Pecanut",
+"None of these"
+],
+"page": "",
+"q": "Among the given fruit sources, which has the highest percentage of fat content?",
+"serial": "1sUgWsko:891",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:891"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gregarious phase",
+"Solitary phase",
+"Migratory phase",
+"Reproductive phase",
+"None of these"
+],
+"page": "",
+"q": "Which phase of locusts is characterized by independent living and slow reproduction?",
+"serial": "1UgnIe-g:2265",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2265"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Black spots on leaves",
+"White tips at the tillering stage",
+"Yellowing of the entire plant",
+"Stunted growth",
+"None of these"
+],
+"page": "",
+"q": "What is a characteristic symptom of White Tip disease in rice?",
+"serial": "1UgnIe-g:2493",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2493"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Glucosinolate",
+"Sinigrin",
+"Alliin",
+"Lipoic acid",
+"None of these"
+],
+"page": "",
+"q": "The pungency in cabbage leaves is due to which glucosinolate?",
+"serial": "17U0MEc-:1403",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1403"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pusa mukta",
+"Pusa drumhead",
+"Pusa sambandh",
+"Golden Acre",
+"None of these"
+],
+"page": "",
+"q": "Which hybrid of cabbage is resistant to black rot?",
+"serial": "17U0MEc-:1589",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1589"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Broad Bed and Furrow system",
+"Contour bunding",
+"Graded bunding",
+"Sub-soiling",
+"None of these"
+],
+"page": "",
+"q": "Which system is suitable for managing rainwater in deep black soils where surface drainage during the monsoon period is a problem?",
+"serial": "17U0MEc-:335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:335"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A soft, nutrient-rich layer formed by organic matter",
+"A hard, semi-impervious layer formed due to continuous ploughing or salt deposition",
+"A waterlogged layer in clay soils",
+"A layer of decomposed plant material",
+"None of these"
+],
+"page": "",
+"q": "What is the distinguishing feature of 'Hard Pan' in soil?",
+"serial": "1sUgWsko:4729",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4729"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Using the cheapest resource only",
+"Using more than one resource in substitution to minimize cost",
+"Ignoring cost considerations",
+"Maximizing output regardless of cost",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes the principle of least cost combination?",
+"serial": "1bxM1Q-4:2296",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2296"
+}
+],
+"set_no": 29,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
