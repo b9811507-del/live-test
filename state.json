@@ -137261,9 +137261,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 482,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 482,
+"built_at": "2026-10-11T10:58:24+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 139-144",
+"pages_blocks": [
+"139-140",
+"141-142",
+"143-144"
+],
+"questions": [
+{
+"expl": "Industrial crops such as cotton, tobacco, sesame, safflower, and castor are cultivated to produce non\u2011food industrial products.",
+"key": 1,
+"o": [
+"Cash crops",
+"Industrial crops",
+"Restorative crops",
+"Biofuel crops",
+"None of these"
+],
+"page": "139-140",
+"q": "Which crop category is grown primarily for producing non\u2011food industrial products?",
+"serial": "711",
+"src_row": 463,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:711"
+},
+{
+"expl": "Smother crops like cowpea and sweet potato suppress weeds; sugarcane is not used for this purpose.",
+"key": 2,
+"o": [
+"Cowpea",
+"Sweet potato",
+"Sugarcane",
+"Groundnut",
+"None of these"
+],
+"page": "139-140",
+"q": "Which of the following crops is NOT typically used as a smother crop to suppress weeds?",
+"serial": "712",
+"src_row": 464,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:712"
+},
+{
+"expl": "Gross cropped area = 50+30+20+25 = 125 ha; Net area = 50 ha; Intensity = (125/50)\u00d7100 = 250%.",
+"key": 2,
+"o": [
+"150%",
+"200%",
+"250%",
+"300%",
+"None of these"
+],
+"page": "139-140",
+"q": "A farmer sows 50 ha wheat, 30 ha maize, 20 ha mung bean and 25 ha vegetables on a 50 ha plot in a year. What is the cropping intensity?",
+"serial": "713",
+"src_row": 465,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:713"
+},
+{
+"expl": "Sweet potato is a root crop that stores food in its enlarged tuberous roots.",
+"key": 0,
+"o": [
+"Sweet potato",
+"Potato",
+"Carrot",
+"Yam bean",
+"None of these"
+],
+"page": "139-140",
+"q": "Which crop is classified as a root crop that stores food in enlarged roots?",
+"serial": "714",
+"src_row": 466,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:714"
+},
+{
+"expl": "Ginger grown under coconut is a multistoreyed system using different canopy heights.",
+"key": 1,
+"o": [
+"Mustard + Sugarcane",
+"Ginger in coconut",
+"Groundnut + Sweet potato",
+"Toria + Green gram",
+"None of these"
+],
+"page": "139-140",
+"q": "Which of the following is an example of multistoreyed cropping?",
+"serial": "715",
+"src_row": 467,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:715"
+},
+{
+"expl": "Rubber crops like Hevea brasiliensis are grown for latex, which is processed into rubber.",
+"key": 0,
+"o": [
+"Rubber crops",
+"Biofuel crops",
+"Root crops",
+"Tuber crops",
+"None of these"
+],
+"page": "139-140",
+"q": "Which crop category is cultivated for latex production?",
+"serial": "716",
+"src_row": 468,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:716"
+},
+{
+"expl": "Sorghum is used as a nurse crop to shade and support the growth of cowpea.",
+"key": 0,
+"o": [
+"Sorghum",
+"Mustard",
+"Cowpea",
+"Sweet potato",
+"None of these"
+],
+"page": "139-140",
+"q": "Which crop acts as a nurse crop by providing shade to cowpea?",
+"serial": "717",
+"src_row": 469,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "139-140:717"
+},
+{
+"expl": "Cropping intensity = (Gross cropped area \u00f7 total land area) \u00d7 100 = (125 \u00f7 50) \u00d7 100 = 250%.",
+"key": 2,
+"o": [
+"150%",
+"200%",
+"250%",
+"300%",
+"None of these"
+],
+"page": "141-142",
+"q": "If a farmer cultivates 50 ha wheat, 30 ha maize, 20 ha mungbean and 25 ha vegetables on a 50\u2011ha farm, what is the cropping intensity?",
+"serial": "721",
+"src_row": 470,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "141-142:721"
+},
+{
+"expl": "The sequence has 3 crops in one year; CRI = (3 \u00f7 1) \u00d7 100 = 300%.",
+"key": 2,
+"o": [
+"200%",
+"250%",
+"300%",
+"350%",
+"None of these"
+],
+"page": "141-142",
+"q": "What is the crop rotational intensity (CRI) of the rotation sequence Rice \u2013 Wheat \u2013 Mungbean \u2013 Fallow?",
+"serial": "722",
+"src_row": 471,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "141-142:722"
+},
+{
+"expl": "MCI = (40+30+20)/100 \u00d7 100 = 90%.",
+"key": 2,
+"o": [
+"70%",
+"80%",
+"90%",
+"100%",
+"None of these"
+],
+"page": "141-142",
+"q": "A farmer cultivates wheat on 40 ha, maize on 30 ha and green gram on 20 ha in a year. If the total cultivable area is 100 ha, what is the Multiple Cropping Index (MCI)?",
+"serial": "723",
+"src_row": 472,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "141-142:723"
+},
+{
+"expl": "CLUI sums area \u00d7 duration for each crop and divides by total area \u00d7 365 days.",
+"key": 2,
+"o": [
+"Cropping Intensity",
+"Crop Rotational Intensity",
+"Cultivated Land Utilization Index",
+"Land Equivalent Ratio",
+"None of these"
+],
+"page": "141-142",
+"q": "Which index measures land utilisation by incorporating the actual duration of each crop?",
+"serial": "724",
+"src_row": 473,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "141-142:724"
+},
+{
+"expl": "Cropping Index = number of crops \u00d7 100 = 4 \u00d7 100 = 400%.",
+"key": 0,
+"o": [
+"400%",
+"300%",
+"200%",
+"100%",
+"None of these"
+],
+"page": "141-142",
+"q": "If a farmer grows 4 crops in a year, what is the Cropping Index?",
+"serial": "725",
+"src_row": 474,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "141-142:725"
+},
+{
+"expl": "LER < 1 means intercropping has a yield disadvantage compared to sole planting.",
+"key": 3,
+"o": [
+"20% yield advantage over sole cropping",
+"Yield compensation between systems",
+"20% land saving compared to sole cropping",
+"Yield disadvantage in intercropping",
+"None of these"
+],
+"page": "141-142",
+"q": "An intercropping system yields a Land Equivalent Ratio (LER) of 0.95. What does this indicate?",
+"serial": "726",
+"src_row": 475,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "141-142:726"
+},
+{
+"expl": "IER replaces the economic yield used in LER with total income, keeping the same ratio concept.",
+"key": 1,
+"o": [
+"It is identical to the Land Equivalent Ratio (LER) but uses economic yield.",
+"It is identical to the Land Equivalent Ratio (LER) but uses total income.",
+"It uses net income instead of economic yield.",
+"It uses gross yield instead of economic yield.",
+"None of these"
+],
+"page": "143-144",
+"q": "Which statement correctly describes the Income Equivalent Ratio (IER)?",
+"serial": "731",
+"src_row": 476,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "143-144:731"
+},
+{
+"expl": "Monetary inputs require money to purchase, such as fertilizer and seed, whereas time of sowing is non\u2011monetary.",
+"key": 0,
+"o": [
+"Fertilizer and seed",
+"Time of sowing",
+"Both fertilizer and seed, and time of sowing",
+"Neither fertilizer nor seed nor time of sowing",
+"None of these"
+],
+"page": "143-144",
+"q": "In the calculation of the Monetary Advantage Index (MAI), which of the following inputs is classified as a monetary input?",
+"serial": "732",
+"src_row": 477,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "143-144:732"
+},
+{
+"expl": "RYT, introduced by De Witt and Bergh, uses biological yield and is mainly applied to fodder crops.",
+"key": 2,
+"o": [
+"Cereals",
+"Legumes",
+"Fodder crops",
+"Root crops",
+"None of these"
+],
+"page": "143-144",
+"q": "The Relative Yield Total (RYT) is primarily used for which type of crops?",
+"serial": "733",
+"src_row": 478,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "143-144:733"
+},
+{
+"expl": "Aab > 0 means crop A\u2019s relative yield increase exceeds that of crop B, indicating higher competitiveness.",
+"key": 1,
+"o": [
+"Crop B is more competitive (dominant).",
+"Crop A is more competitive (dominant).",
+"Both crops are equally competitive.",
+"The system is unstable.",
+"None of these"
+],
+"page": "143-144",
+"q": "If the aggressivity value Aab is greater than zero, what does it indicate about crop A?",
+"serial": "734",
+"src_row": 479,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "143-144:734"
+},
+{
+"expl": "RCC < 1 signifies that the crop yields less than expected, i.e., a yield disadvantage.",
+"key": 2,
+"o": [
+"Yield advantage for the crop.",
+"No competition between crops.",
+"Yield disadvantage for the crop.",
+"Complete dominance of one crop.",
+"None of these"
+],
+"page": "143-144",
+"q": "In a replacement series intercropping experiment, an RCC value of 0.8 indicates:",
+"serial": "735",
+"src_row": 480,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "143-144:735"
+},
+{
+"expl": "An optimum LAI of 6\u20139 is typical for crops with upright leaves, such as corn.",
+"key": 1,
+"o": [
+"Wheat",
+"Corn",
+"Soybean",
+"Cotton",
+"None of these"
+],
+"page": "143-144",
+"q": "Which crop type would have an optimum Leaf Area Index (LAI) of around 7?",
+"serial": "736",
+"src_row": 481,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "143-144:736"
+}
+],
+"rolled": false,
+"row_from": 463,
+"row_to": 482,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 463,
+"seeded_from": "2026-10-10",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-10",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
