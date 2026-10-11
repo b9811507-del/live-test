@@ -44,14 +44,14 @@ DEFAULTS = [
     {"key": "rksharma", "emoji": "📗", "title": "RK SHARMA BOOK BATCH", "price": "₹99", "chat": "",
      "perks": "R.K. Sharma book MCQs · subject-wise practice · revision notes · "
               "unlimited attempts with best explanation"},
-    {"key": "afo", "emoji": "🌆", "title": "AFO SELECTION BATCH", "price": "₹251", "chat": "-1003687531473",
+    {"key": "afo", "emoji": "🌆", "title": "AFO SELECTION BATCH", "price": "₹251", "chat": "-1003687531473", "until": "2026-10-30",
      "perks": "AFO mains full-length tests (new pattern) · previous-year papers · selection-focused "
               "practice · unlimited attempts with best explanation"},
-    {"key": "cane", "emoji": "🎋", "title": "UPSSSC SUGARCANE PREMIUM BATCH", "price": "₹151",
+    {"key": "cane", "emoji": "🎋", "title": "UPSSSC SUGARCANE PREMIUM BATCH", "price": "₹151", "until": "2026-11-25",
      "chat": "-1003707610763",
      "perks": "Sugarcane premium classes · daily tests · revision notes · "
               "unlimited attempts with best explanation"},
-    {"key": "pashu", "emoji": "🐄", "title": "PASHUDHAN ADHIKARI BATCH", "price": "₹151",
+    {"key": "pashu", "emoji": "🐄", "title": "PASHUDHAN ADHIKARI BATCH", "price": "₹151", "until": "2026-10-11",
      "chat": "-1003947957354",
      "perks": "Pashudhan Adhikari syllabus classes · daily MCQ tests · structured notes · "
               "unlimited attempts with best explanation"},
@@ -83,6 +83,13 @@ def batch(key):
         if b["key"] == key:
             return b
     return None
+
+
+def sell_open(E, key):
+    """until = removal date (IST): batch stops showing/selling from that date. '' = open forever.
+    Orders: pashu closed 11-Oct (exam done), afo 30-Oct, cane 25-Nov."""
+    u = (batch(key) or {}).get("until") or ""
+    return (not u) or str(E.daykey()) < u
 
 
 def provider_token():
@@ -171,25 +178,21 @@ def group_text(E):
     def fee(key):
         b = batch(key) or {}
         return b.get("price") or ""
-    parts = [
-        "<b>\U0001F393 ALL PAID BATCHES \u2014 AGRI QUIZ WORLD</b>",
-        "",
-        row("\U0001F4D8 IARI BOOK MCQ BATCH (7400+ Q)", fee("iari"), "iari"),
-        "",
-        row("\U0001F4DA MALWA BOOK VOL 1+2+HORTICULTURE (3000+2800+1250 Q)", fee("malwa"), "malwa"),
-        "",
-        row("\U0001F33E NEMRAJ SUNDA BOOK BATCH (3100+ Q)", fee("nemraj"), "nemraj"),
-        "",
-        row("\U0001F4D7 RK SHARMA BOOK BATCH (4500+ Q)", fee("rksharma"), "rksharma"),
-        "",
-        row("\U0001F306 AFO SELECTION BATCH (400+ subject test \u00b7 100+ full length test)", fee("afo"), "afo"),
-        "",
-        row("\U0001F38B UPSSSC SUGARCANE PREMIUM BATCH (Complete UP Special + Computer + Agriculture according syllabus)", fee("cane"), "cane"),
-        "",
-        row("\U0001F404 PASHUDHAN ADHIKARI BATCH (Section A+C 25 test \u00b7 A+B 25 test)", fee("pashu"), "pashu"),
-        "",
-        "\u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> \u2014 pay once, the batch is yours for life.",
+    rows = [
+        ("\U0001F4D8 IARI BOOK MCQ BATCH (7400+ Q)", "iari"),
+        ("\U0001F4DA MALWA BOOK VOL 1+2+HORTICULTURE (3000+2800+1250 Q)", "malwa"),
+        ("\U0001F33E NEMRAJ SUNDA BOOK BATCH (3100+ Q)", "nemraj"),
+        ("\U0001F4D7 RK SHARMA BOOK BATCH (4500+ Q)", "rksharma"),
+        ("\U0001F306 AFO SELECTION BATCH (400+ subject test \u00b7 100+ full length test)", "afo"),
+        ("\U0001F38B UPSSSC SUGARCANE PREMIUM BATCH (Complete UP Special + Computer + Agriculture according syllabus)", "cane"),
+        ("\U0001F404 PASHUDHAN ADHIKARI BATCH (Section A+C 25 test \u00b7 A+B 25 test)", "pashu"),
     ]
+    parts = ["<b>\U0001F393 ALL PAID BATCHES \u2014 AGRI QUIZ WORLD</b>", ""]
+    for name, key in rows:
+        if not sell_open(E, key):      # exam done / date passed -> auto-hide (admin orders 11-Oct)
+            continue
+        parts += [row(name, fee(key), key), ""]
+    parts.append("\u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> \u2014 pay once, the batch is yours for life.")
     return "\n".join(parts)
 
 
@@ -253,6 +256,8 @@ def _send(E, uid, text, keyboard=None):
 def catalog_keyboard(E):
     rows = []
     for b in batches():
+        if not sell_open(E, b["key"]):
+            continue
         amt = price_amount(b["price"])
         label = ("\U0001F4B3 Pay & Join \u2014 %s" % (b["price"] or "enquire"))[:64]
         cb = "rzp:" + b["key"] if (amt and razorpay.enabled()) else "batch:" + b["key"]
@@ -274,6 +279,8 @@ def send_catalog(E, uid, greeting=True):
     _send(E, uid, intro)
     last = None
     for b in batches():
+        if not sell_open(E, b["key"]):
+            continue
         body = ("%s <b>%s</b>\n\nFee: <b>%s</b>\n\u267E\uFE0F Unlimited attempts \u00b7 \u23F3 Lifetime validity \u00b7 instant join after payment"
                 % (b["emoji"], b["title"], b["price"] or "Fee on enquiry"))
         if b.get("perks"):
@@ -299,6 +306,8 @@ def send_batch_detail(E, uid, key):
     b = batch(key)
     if not b:
         return _send(E, uid, "This batch is not open right now \u2014 tap a batch from /start to see what\u2019s available.")
+    if not sell_open(E, key):
+        return _send(E, uid, "\u23F3 <b>%s</b> ka enrolment band ho chuka hai \u2014 is batch ka time poora ho gaya. Baaki batches dekhne ke liye /start dabayein." % b["title"])
     body = ("%s <b>%s</b>\n\nFee: <b>%s</b> \u00b7 \u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b>"
             % (b["emoji"], b["title"], b["price"] or "Fee on enquiry"))
     if b.get("perks"):
@@ -331,6 +340,9 @@ def create_razorpay_link(E, st, key, uid, name=""):
     from translator import t
     b = batch(key)
     if not b:
+        return None
+    if not sell_open(E, key):
+        _send(E, str(uid), "\u23F3 <b>%s</b> ka enrolment band ho chuka hai." % b["title"])
         return None
     amt = price_amount(b["price"])
     if amt <= 0:
