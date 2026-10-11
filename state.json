@@ -137255,8 +137255,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 567,
 "names": {},
+"plan": {
+"bidx_next": 567,
+"built_at": "2026-10-11T14:28:24+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 79-81",
+"pages_list": [
+79,
+80,
+81
+],
+"questions": [
+{
+"expl": "Planting in the north prevents the south\u2011western sun from shading the crops, ensuring continuous growth.",
+"key": 0,
+"o": [
+"North",
+"South",
+"East",
+"West",
+"None of these"
+],
+"page": "79",
+"q": "In a kitchen garden, perennial trees such as papaya, lemon and banana should be planted in which direction to avoid shading the vegetables?",
+"serial": "547",
+"src_row": 546,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:547"
+},
+{
+"expl": "Market gardening is practiced on small plots; large land holdings are characteristic of truck gardening.",
+"key": 3,
+"o": [
+"Small farm size",
+"Intensive cultivation",
+"Sale arranged by the grower",
+"Large land holdings",
+"None of these"
+],
+"page": "79",
+"q": "Which of the following is NOT a typical feature of market gardening?",
+"serial": "548",
+"src_row": 547,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:548"
+},
+{
+"expl": "Truck gardening benefits from cheap labour and large land areas, allowing extensive cultivation.",
+"key": 0,
+"o": [
+"Availability of cheap labour",
+"Proximity to consumption market",
+"Short growing seasons",
+"High labour cost",
+"None of these"
+],
+"page": "79",
+"q": "Which factor makes truck gardening suitable for large land holdings?",
+"serial": "549",
+"src_row": 548,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:549"
+},
+{
+"expl": "India\u2019s varied climates across regions provide all seasons naturally, reducing the need for forced cultivation.",
+"key": 1,
+"o": [
+"Uniform climate across the country",
+"Diverse climatic conditions within regions",
+"Lack of demand for high\u2011priced vegetables",
+"High cost of forcing techniques",
+"None of these"
+],
+"page": "79",
+"q": "In India, forcing gardens are less necessary because:",
+"serial": "550",
+"src_row": 549,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:550"
+},
+{
+"expl": "Typha grass, which floats naturally in the lake, serves as the base for the floating garden.",
+"key": 1,
+"o": [
+"Lotus leaves",
+"Typha grass leaves",
+"Reed stems",
+"Bamboo mats",
+"None of these"
+],
+"page": "79",
+"q": "Which plant material is used as a base for raising vegetables in the floating garden of Dal Lake?",
+"serial": "551",
+"src_row": 550,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:551"
+},
+{
+"expl": "The main goal of a kitchen garden is to supply vegetables for household consumption.",
+"key": 2,
+"o": [
+"Commercial sale",
+"Export",
+"Consumption of one\u2019s own house",
+"Research",
+"None of these"
+],
+"page": "79",
+"q": "Kitchen gardens primarily aim to produce:",
+"serial": "552",
+"src_row": 551,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:552"
+},
+{
+"expl": "The RRB SO\u20112020 question refers to the Square System for orchard layout.",
+"key": 1,
+"o": [
+"Circular",
+"Square",
+"Linear",
+"Random",
+"None of these"
+],
+"page": "79",
+"q": "In orchard layout, which system is mentioned in RRB SO\u20112020?",
+"serial": "553",
+"src_row": 552,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "79:553"
+},
+{
+"expl": "The square system specifies planting trees on every corner of a square.",
+"key": 0,
+"o": [
+"each corner of a square",
+"each corner of a rectangle",
+"along a line",
+"in a circle",
+"None of these"
+],
+"page": "80",
+"q": "In the square planting system, trees are planted at which positions?",
+"serial": "554",
+"src_row": 553,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:554"
+},
+{
+"expl": "The square system allows the central spot between four trees to be used for short\u2011lived filler trees.",
+"key": 0,
+"o": [
+"central place used for filler trees",
+"wider alley spaces between rows",
+"no equal distribution of space per tree",
+"use of mechanical operations",
+"None of these"
+],
+"page": "80",
+"q": "Which feature is unique to the square system?",
+"serial": "555",
+"src_row": 554,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:555"
+},
+{
+"expl": "The square system permits intercropping and cultivation in two directions.",
+"key": 0,
+"o": [
+"Square",
+"Rectangular",
+"Both",
+"Neither",
+"None of these"
+],
+"page": "80",
+"q": "Which system allows intercropping in two directions?",
+"serial": "556",
+"src_row": 555,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:556"
+},
+{
+"expl": "Rectangular layout has a larger spacing between rows than between trees in a row, creating wider alleyways.",
+"key": 0,
+"o": [
+"Distance between rows > distance between trees in a row",
+"Distance between rows < distance between trees in a row",
+"Trees planted only on corners",
+"Trees planted in a grid",
+"None of these"
+],
+"page": "80",
+"q": "In the rectangular system, why are alley spaces between rows wider?",
+"serial": "557",
+"src_row": 556,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:557"
+},
+{
+"expl": "The square system is described as the most commonly followed method for fruit plants.",
+"key": 0,
+"o": [
+"Square",
+"Rectangular",
+"Both equally",
+"Neither",
+"None of these"
+],
+"page": "80",
+"q": "Which system is most commonly followed for planting fruit plants?",
+"serial": "558",
+"src_row": 557,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:558"
+},
+{
+"expl": "The rectangular system\u2019s wider alley spaces allow for easy intercultural and mechanical operations.",
+"key": 1,
+"o": [
+"Square",
+"Rectangular",
+"Both",
+"Neither",
+"None of these"
+],
+"page": "80",
+"q": "Which system permits easy mechanical operations?",
+"serial": "559",
+"src_row": 558,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:559"
+},
+{
+"expl": "The diagram labels both the vertical and horizontal distances between rows and columns as 3 m.",
+"key": 0,
+"o": [
+"3m",
+"5m",
+"2m",
+"4m",
+"None of these"
+],
+"page": "80",
+"q": "In the square system, what is the spacing between rows and columns as shown in the diagram?",
+"serial": "560",
+"src_row": 559,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "80:560"
+},
+{
+"expl": "A hexagon has six outer trees and one central tree, making seven in total.",
+"key": 1,
+"o": [
+"6",
+"7",
+"8",
+"9",
+"None of these"
+],
+"page": "81",
+"q": "How many trees form a hexagon with a central tree in the hexagonal planting system?",
+"serial": "561",
+"src_row": 560,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:561"
+},
+{
+"expl": "0.866 is the decimal value of \u221a3/2, used to compute the vertical spacing in a hexagonal layout.",
+"key": 1,
+"o": [
+"\u221a2/2",
+"\u221a3/2",
+"1/\u221a2",
+"\u221a3",
+"None of these"
+],
+"page": "81",
+"q": "The perpendicular distance between any two adjacent rows in the hexagonal system equals 0.866 times the distance between any two trees. What does 0.866 represent?",
+"serial": "562",
+"src_row": 561,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:562"
+},
+{
+"expl": "Because the row spacing is smaller, the hexagonal layout fits about 15% more trees than a square grid.",
+"key": 1,
+"o": [
+"10%",
+"15%",
+"20%",
+"25%",
+"None of these"
+],
+"page": "81",
+"q": "Compared to the square planting system, the hexagonal system accommodates approximately how many percent more trees?",
+"serial": "563",
+"src_row": 562,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:563"
+},
+{
+"expl": "The irregular geometry makes the layout and cultivation more challenging than the square system.",
+"key": 1,
+"o": [
+"Easy to layout",
+"Difficult to layout",
+"Requires less labor",
+"Produces fewer trees",
+"None of these"
+],
+"page": "81",
+"q": "Which of the following is a limitation of the hexagonal planting system?",
+"serial": "564",
+"src_row": 563,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:564"
+},
+{
+"expl": "Each hexagon is formed by placing trees at the corners of an equilateral triangle.",
+"key": 1,
+"o": [
+"Square",
+"Equilateral triangle",
+"Right triangle",
+"Parallelogram",
+"None of these"
+],
+"page": "81",
+"q": "In the hexagonal system, trees are planted at the corners of what geometric shape?",
+"serial": "565",
+"src_row": 564,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:565"
+},
+{
+"expl": "The formula multiplies 0.866 by the tree-to-tree spacing to get the vertical row spacing.",
+"key": 1,
+"o": [
+"Distance between rows",
+"Distance between trees",
+"Spacing between columns",
+"Spacing between rows",
+"None of these"
+],
+"page": "81",
+"q": "The perpendicular distance between adjacent rows is calculated as 0.866 \u00d7 the distance between any two trees. What is the second factor in this product?",
+"serial": "566",
+"src_row": 565,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:566"
+},
+{
+"expl": "Because a seventh tree sits at the centre of each hexagon, the system is called a septule.",
+"key": 1,
+"o": [
+"Hexule",
+"Septule",
+"Hexagon",
+"Septet",
+"None of these"
+],
+"page": "81",
+"q": "What term is used to describe the hexagonal planting system that includes a central tree?",
+"serial": "567",
+"src_row": 566,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "81:567"
+}
+],
+"row_from": 546,
+"row_to": 567,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 546,
+"seeded_from": "2026-10-10"
+},
 "qidx": 0,
+"seeded_from": "2026-10-10",
+"skips": [],
 "step": 0
 },
 "malwa": {
