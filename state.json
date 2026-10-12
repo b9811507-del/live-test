@@ -142788,6 +142788,8 @@
 "cd": 1,
 "congrats_sent": 32406,
 "cta_sent": "off",
+"done_at": "2026-10-12T14:42:41+05:30",
+"elapsed_s": 886,
 "expl_in_poll": 21,
 "file_msg": 32407,
 "file_sent": "IARI_p82-84_21Q_2026-10-12.html",
@@ -142797,8 +142799,18 @@
 "lb_rows": 28,
 "lb_sent": true,
 "lock_ts": 1791796317.2663507,
-"locked_by": "38226759776",
+"locked_by": "",
 "msg_ann": 32381,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 32383,
 "names": {
 "1151444210": "agrico04",
@@ -142830,6 +142842,8 @@
 "8739536104": "Reacher",
 "978174619": "Kuldeep758"
 },
+"paid_msg": 32409,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 588,
@@ -143264,7 +143278,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-12T14:30:24+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 32408,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 151-156\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 85, 86, 87"
 },
