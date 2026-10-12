@@ -142384,7 +142384,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-12T17:58:19+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Allotetraploid",
+"Autohexaploid",
+"Allooctaploid",
+"Autotetraploid",
+"None of these"
+],
+"page": "",
+"q": "A plant with two distinct genomes each present in two copies is an example of which polyploid?",
+"serial": "1sUgWsko:5947",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5947"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lactometer",
+"Hygrometer",
+"Pycnometer",
+"Spectrophotometer",
+"None of these"
+],
+"page": "",
+"q": "Which instrument is used to measure the fat percentage in milk?",
+"serial": "1bxM1Q-4:1531",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1531"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Alluvial soils",
+"Endodynamomorphic soils",
+"Ectodynamomorphic soils",
+"Colluvial soils",
+"None of these"
+],
+"page": "",
+"q": "Soils formed under the predominant influence of climate, where parent material effects are obliterated, are called:",
+"serial": "1sUgWsko:6771",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6771"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tropical rainforest",
+"Arid desert",
+"Moderate rainfall with mild cold",
+"Mediterranean",
+"None of these"
+],
+"page": "",
+"q": "Chickpea is mainly cultivated in climates with moderate rainfall and mild cold weather.",
+"serial": "1bxM1Q-4:714",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:714"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Extensive root damage",
+"Leaf spot disease",
+"Stem lodging",
+"Flowering inhibition",
+"None of these"
+],
+"page": "",
+"q": "What is the primary damage caused by whitegrub in sorghum?",
+"serial": "1sUgWsko:1890",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1890"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Covalent bond",
+"Ionic bond",
+"Hydrogen bond",
+"Peptide bond",
+"None of these"
+],
+"page": "",
+"q": "In DNA, which type of bond is responsible for the specific pairing between adenine (A) and thymine (T)?",
+"serial": "1sUgWsko:5952",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5952"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Crop rotation",
+"Irrigation",
+"Utilization and treatment of land according to its capability",
+"Chemical fertilizers",
+"None of these"
+],
+"page": "",
+"q": "According to the passage, the key to soil and water conservation is:",
+"serial": "1bxM1Q-4:1330",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1330"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"15-30%",
+"Less than 15%",
+"30-50%",
+"50-100%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of crop residues does Zero tillage keep on the surface?",
+"serial": "1sUgWsko:6122",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6122"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cocopeat: Sand: Soil (1:1:1)",
+"Peat: Perlite: Vermiculite",
+"Cocopeat: Compost: Soil",
+"Sand: Soil: Perlite",
+"None of these"
+],
+"page": "",
+"q": "Which combination is identified as the optimum media for growing vegetable seedlings in pro trays?",
+"serial": "1YcJWVgW:85",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:85"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase plant height",
+"To encourage sympodial branching and boll development",
+"To reduce the number of leaves",
+"To change the flower color",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of topping in cotton plants?",
+"serial": "17U0MEc-:685",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:685"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Dactylopius tomentus",
+"Crocidosema lantana",
+"Teranychus desertum",
+"Cactoblastis cactrum",
+"None of these"
+],
+"page": "",
+"q": "Which bio-agent is used for controlling Lantana camara?",
+"serial": "17U0MEc-:908",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:908"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10-20 kg",
+"20-30 kg",
+"30-40 kg",
+"40-50 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the typical weight range of a puddler?",
+"serial": "1sUgWsko:6213",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6213"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1922",
+"1918",
+"1908",
+"1878",
+"None of these"
+],
+"page": "",
+"q": "When was the first double cross hybrid maize variety released in the USA?",
+"serial": "1UgnIe-g:259",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:259"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Deceleration (Linear) phase",
+"Stationary (Plateau) phase",
+"Exponential phase",
+"Death phase",
+"None of these"
+],
+"page": "",
+"q": "In which phase does the growth rate become equal to the death rate, resulting in a plateau?",
+"serial": "1UgnIe-g:1629",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1629"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bihar",
+"Uttar Pradesh",
+"West Bengal",
+"Haryana",
+"None of these"
+],
+"page": "",
+"q": "In which Indian state was black tip of mango first reported in 1909?",
+"serial": "1UgnIe-g:1140",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1140"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Roots",
+"Leaves and Pods",
+"Flowers",
+"Stem bark",
+"None of these"
+],
+"page": "",
+"q": "Which part of the Senna plant is economically important?",
+"serial": "1YcJWVgW:927",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:927"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Boll",
+"Square",
+"Seed",
+"Pod",
+"None of these"
+],
+"page": "",
+"q": "The structure that first appears on a cotton plant at the start of reproductive growth and later develops into the fruit is called:",
+"serial": "128DIQLj:561",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:561"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Vitamin A",
+"Vitamin D",
+"Vitamin C",
+"Vitamin K",
+"None of these"
+],
+"page": "",
+"q": "Which of the following vitamins is NOT fat-soluble?",
+"serial": "1sUgWsko:893",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:893"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sociometry",
+"Election",
+"Group discussion method",
+"Workshop method",
+"None of these"
+],
+"page": "",
+"q": "Which method is most popular for selecting lay leaders?",
+"serial": "128DIQLj:2211",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2211"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"North",
+"South",
+"East",
+"West",
+"None of these"
+],
+"page": "",
+"q": "What is the preferred direction for animals to face when eating fodder under the shade?",
+"serial": "1bxM1Q-4:4134",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4134"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Channa striatus",
+"Tor putitora",
+"Labeo calbasu",
+"Etroplus suratensis",
+"None of these"
+],
+"page": "",
+"q": "The scientific name of Golden Mahseer is:",
+"serial": "1sUgWsko:2691",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2691"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Jaffarabadi",
+"Mehsana",
+"Bhadawari",
+"Surti",
+"None of these"
+],
+"page": "",
+"q": "Which buffalo breed is NOT classified under the Gujarat group in the geographical classification table?",
+"serial": "1sUgWsko:3163",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3163"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Haemorrhagic Septicaemia",
+"Black Quarter",
+"Brucellosis",
+"Pasteurellosis",
+"None of these"
+],
+"page": "",
+"q": "Which disease is also known as 'Contagious abortion' or 'Bang's disease'?",
+"serial": "1sUgWsko:2826",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2826"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Phosphorus",
+"Potassium",
+"Calcium",
+"Magnesium",
+"None of these"
+],
+"page": "",
+"q": "Topple disorder in gladiolus is mainly due to deficiency of which nutrient?",
+"serial": "1YcJWVgW:1096",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1096"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"6-8%",
+"4-6%",
+"8-10%",
+"10-12%",
+"None of these"
+],
+"page": "",
+"q": "What is the safe moisture content range for the storage of seed spices?",
+"serial": "1YcJWVgW:838",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:838"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Protandry",
+"Protogyny",
+"Monoecy",
+"Dioecy",
+"None of these"
+],
+"page": "",
+"q": "The flowering of Sapota is characterized by which phenomenon?",
+"serial": "1YcJWVgW:285",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:285"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Fire blight of apple/pear",
+"Black rot of crucifers",
+"Bacterial blight of rice",
+"Angular leaf spot/black arm of cotton",
+"None of these"
+],
+"page": "",
+"q": "Which disease is caused by Erwinia amylovora?",
+"serial": "17U0MEc-:2176",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2176"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lentil",
+"Peas",
+"Kesari",
+"Soybean",
+"None of these"
+],
+"page": "",
+"q": "Which pulse is scientifically named as Lathyrus sativus?",
+"serial": "1sUgWsko:4311",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4311"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"18% N, 10% P\u2082O\u2085, 0% K\u2082O",
+"N:P:K ratio of 18:10:0",
+"18% N, 10% K\u2082O, 0% P\u2082O\u2085",
+"18% N, 10% N, 0% P\u2082O\u2085",
+"None of these"
+],
+"page": "",
+"q": "The label \"18:10:0\" on a fertilizer indicates:",
+"serial": "128DIQLj:1374",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1374"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To remove weeds",
+"To break the hard pan beneath the plough layer",
+"To mix soil and crop residues",
+"To prepare the seed bed",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of sub-soiling in special purpose tillage?",
+"serial": "1sUgWsko:6129",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6129"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"beta-D Glucose Esterase",
+"Glutathione-S-Transferase",
+"Phosphino-thion-acetyl Transferase",
+"Aryl Acyl Amidase",
+"None of these"
+],
+"page": "",
+"q": "Which enzyme is targeted by the herbicide 2,4\u2011D?",
+"serial": "128DIQLj:1021",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1021"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Oxalis ocetorella",
+"Oxalis corniculata",
+"Melilotus alba",
+"Mimosa pudica",
+"None of these"
+],
+"page": "",
+"q": "Which of the following plants is classified under the family Oxalidaceae?",
+"serial": "1bxM1Q-4:1196",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1196"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To achieve environmental, socio-behavioral, and aesthetic outcomes",
+"To maximize agricultural output",
+"To develop urban infrastructure",
+"To promote industrial growth",
+"None of these"
+],
+"page": "",
+"q": "What is the main goal of landscape architecture?",
+"serial": "1bxM1Q-4:3486",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3486"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Hadda beetle",
+"Stem borer",
+"Thrips",
+"Fruit borer",
+"None of these"
+],
+"page": "",
+"q": "Which insect pest of tomato causes skeletonization and drying of leaves by scraping chlorophyll?",
+"serial": "1sUgWsko:2105",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2105"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Messenger RNA (m-RNA)",
+"Transfer RNA (t-RNA)",
+"Ribosomal RNA (r-RNA)",
+"Small Nuclear RNA (sn-RNA)",
+"None of these"
+],
+"page": "",
+"q": "Which type of RNA carries amino acids to the site of protein synthesis?",
+"serial": "17U0MEc-:2461",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2461"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Collego",
+"Biophos",
+"Bipolaris",
+"Atrazine",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a microbial toxin produced by Streptomyces hygroscopicus?",
+"serial": "1sUgWsko:5183",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5183"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Correlation Coefficient",
+"Regression Coefficient",
+"Standard Deviation",
+"Both B and C",
+"None of these"
+],
+"page": "",
+"q": "Which statistical element has a range of 0 to \u03b1?",
+"serial": "1bxM1Q-4:3675",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3675"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To reduce hopper burn by brown planthopper",
+"To manage white grub, cutworm, and hairy caterpillar",
+"To minimize damage from diamond back moth",
+"To destroy pupae of fruit fly in mango orchard",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of deep ploughing in pest management?",
+"serial": "1UgnIe-g:2012",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2012"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Southern India",
+"Northwestern India",
+"Eastern coastal region",
+"Central plateau",
+"None of these"
+],
+"page": "",
+"q": "Western disturbance is identified in the source as a dominant factor for rainfall in which area?",
+"serial": "1sUgWsko:5632",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5632"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase flower size",
+"To encourage lateral branches",
+"To reduce plant height",
+"To enhance root formation",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of pinching in Chrysanthemum cultivation?",
+"serial": "1YcJWVgW:1071",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1071"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pasteuria penetrans",
+"Thionazin",
+"Carbofuran",
+"Ethylene dibromide",
+"None of these"
+],
+"page": "",
+"q": "Which biological control agent is effective against nematodes?",
+"serial": "1UgnIe-g:2527",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2527"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Langra",
+"Kesar",
+"Banganapalli",
+"Neelum",
+"None of these"
+],
+"page": "",
+"q": "Which variety is most prone to fruit drop?",
+"serial": "1bxM1Q-4:2946",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2946"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Impeller reaches 3000 rpm",
+"Casing is completely filled with water and air removed",
+"Total head exceeds 4 meters",
+"Discharge nozzle is open",
+"None of these"
+],
+"page": "",
+"q": "A centrifugal pump will not operate until which condition is met?",
+"serial": "128DIQLj:2895",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2895"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mango fruit fly and stone weevil",
+"Red pumpkin beetle",
+"Khapra beetle",
+"Pulse beetle",
+"None of these"
+],
+"page": "",
+"q": "Which pest is a major concern for quarantine in mango, restricting international trade?",
+"serial": "1UgnIe-g:2297",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2297"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wind, humidity, soil pH",
+"Solar radiation, temperature, rainfall",
+"Atmospheric pressure, cloud cover, altitude",
+"Evaporation, fog, frost",
+"None of these"
+],
+"page": "",
+"q": "Which three climatic factors are identified as most important for crop growth and yield?",
+"serial": "1sUgWsko:5639",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5639"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10-15 cm",
+"20-25 cm",
+"30-35 cm",
+"5-10 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal length range for export-quality bitter gourd?",
+"serial": "1bxM1Q-4:3613",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3613"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Bar chart",
+"Line chart",
+"Doughnut chart",
+"Area chart",
+"None of these"
+],
+"page": "",
+"q": "Which chart type is similar to a pie chart but can represent more than one data series?",
+"serial": "1bxM1Q-4:3833",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3833"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Soil acidity",
+"Salinity",
+"High pH",
+"Low temperature",
+"None of these"
+],
+"page": "",
+"q": "Guava is susceptible to which soil condition?",
+"serial": "1YcJWVgW:335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:335"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Saccharum barberi",
+"Saccharum sinense",
+"Saccharum officinarum",
+"Saccharum spontaneum",
+"None of these"
+],
+"page": "",
+"q": "Which sugarcane species has a chromosome number of 2n = 80 and is widely cultivated in India?",
+"serial": "1sUgWsko:397",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:397"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gibberellic acid",
+"Maleic hydrazide",
+"2,4-D",
+"Ethrel",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is sprayed pre-harvest to prevent rotting and sprouting of onion bulbs?",
+"serial": "1sUgWsko:1371",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1371"
+}
+],
+"set_no": 30,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
