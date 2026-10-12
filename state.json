@@ -142389,8 +142389,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 588,
 "names": {},
+"plan": {
+"bidx_next": 588,
+"built_at": "2026-10-12T14:27:50+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 82-84",
+"pages_list": [
+82,
+83,
+84
+],
+"questions": [
+{
+"expl": "The text states the Quincunx system allows exactly 1.81 times more plants than the square method.",
+"key": 1,
+"o": [
+"Double the number",
+"Exact 1.81 times",
+"1.5 times",
+"2.5 times",
+"None of these"
+],
+"page": "82",
+"q": "Quincunx system accommodates how many more plants compared to the square method?",
+"serial": "568",
+"src_row": 567,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:568"
+},
+{
+"expl": "The source specifies that the central filler tree should be a short\u2011lived one.",
+"key": 1,
+"o": [
+"Long\u2011lived tree",
+"Short\u2011lived tree",
+"Fruit\u2011bearing tree",
+"Ornamental tree",
+"None of these"
+],
+"page": "82",
+"q": "Which type of tree is recommended as the central filler in the Quincunx system?",
+"serial": "569",
+"src_row": 568,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:569"
+},
+{
+"expl": "The system is recommended when the distance between permanent trees exceeds 10 m.",
+"key": 2,
+"o": [
+"When distance is less than 5 m",
+"When distance is between 5 m and 10 m",
+"When distance is more than 10 m",
+"At any distance",
+"None of these"
+],
+"page": "82",
+"q": "When should the Quincunx system be used based on the spacing of permanent trees?",
+"serial": "570",
+"src_row": 569,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:570"
+},
+{
+"expl": "The Contour system aims to minimize erosion and conserve soil moisture on undulated terrain.",
+"key": 2,
+"o": [
+"Maximizing fruit yield",
+"Reducing pest incidence",
+"Minimizing land erosion and conserving soil moisture",
+"Increasing irrigation efficiency",
+"None of these"
+],
+"page": "82",
+"q": "What is the primary purpose of the Contour system?",
+"serial": "571",
+"src_row": 570,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:571"
+},
+{
+"expl": "The irrigation channel is graded so water flow becomes slow, enabling soil penetration.",
+"key": 2,
+"o": [
+"It is accelerated to drain quickly",
+"It is diverted away from the orchard",
+"It is slowed to allow soil penetration",
+"It is evaporated before reaching the ground",
+"None of these"
+],
+"page": "82",
+"q": "How is water flow managed in the Contour system?",
+"serial": "572",
+"src_row": 571,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:572"
+},
+{
+"expl": "The system is generally followed on hills with undulated topography where erosion risk is high.",
+"key": 2,
+"o": [
+"Flat plains",
+"Deserts",
+"Hills with undulated topography",
+"Wetlands",
+"None of these"
+],
+"page": "82",
+"q": "Which terrain is most suitable for implementing the Contour system?",
+"serial": "573",
+"src_row": 572,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:573"
+},
+{
+"expl": "The filler trees are removed after a few years when the main trees reach bearing age.",
+"key": 2,
+"o": [
+"They should be left untouched",
+"They should be pruned regularly",
+"They should be removed",
+"They should be replaced with new trees",
+"None of these"
+],
+"page": "82",
+"q": "What should be done with the filler trees in the Quincunx system after the main trees start bearing?",
+"serial": "574",
+"src_row": 573,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "82:574"
+},
+{
+"expl": "In the triangular system, even rows are positioned midway between odd rows, unlike the square system where rows are directly opposite.",
+"key": 2,
+"o": [
+"Square",
+"Row-column",
+"Triangular",
+"Random",
+"None of these"
+],
+"page": "83",
+"q": "Which planting arrangement places trees in even numbered rows midway between those in odd rows?",
+"serial": "575",
+"src_row": 574,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:575"
+},
+{
+"expl": "The system follows the principle of an isolateral (equal side) triangle for spacing.",
+"key": 2,
+"o": [
+"Isosceles triangle",
+"Equilateral triangle",
+"Isolateral triangle",
+"Scalene triangle",
+"None of these"
+],
+"page": "83",
+"q": "The triangular planting system is based on which geometric principle?",
+"serial": "576",
+"src_row": 575,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:576"
+},
+{
+"expl": "The horizontal spacing equals the perpendicular distance between adjacent rows.",
+"key": 1,
+"o": [
+"Twice the perpendicular distance between rows",
+"The same as the perpendicular distance between rows",
+"Half the perpendicular distance between rows",
+"1.118 times the perpendicular distance between rows",
+"None of these"
+],
+"page": "83",
+"q": "In the triangular system, the distance between adjacent trees in a row is equal to what?",
+"serial": "577",
+"src_row": 576,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:577"
+},
+{
+"expl": "Vertical spacing is 1.118 times the horizontal spacing between trees.",
+"key": 1,
+"o": [
+"0.9 times the horizontal distance",
+"1.118 times the horizontal distance",
+"Equal to the horizontal distance",
+"1.5 times the horizontal distance",
+"None of these"
+],
+"page": "83",
+"q": "The vertical distance between two trees in adjacent rows in the triangular system equals:",
+"serial": "578",
+"src_row": 577,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:578"
+},
+{
+"expl": "Because each tree occupies more area, fewer trees fit per hectare in the triangular system.",
+"key": 1,
+"o": [
+"More trees per hectare",
+"Fewer trees per hectare",
+"Same number of trees per hectare",
+"No change",
+"None of these"
+],
+"page": "83",
+"q": "Compared to the square system, the triangular system results in:",
+"serial": "579",
+"src_row": 578,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:579"
+},
+{
+"expl": "HDP refers to accommodating more plants per unit area than a normal planting system.",
+"key": 1,
+"o": [
+"Planting fewer trees per unit area than normal",
+"Planting more trees per unit area than normal",
+"Planting trees at greater spacing",
+"Planting trees in a triangular pattern",
+"None of these"
+],
+"page": "83",
+"q": "High Density Planting (HDP) is defined as:",
+"serial": "580",
+"src_row": 579,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:580"
+},
+{
+"expl": "In the triangular system, each tree occupies a larger area, leading to lower density per hectare.",
+"key": 2,
+"o": [
+"Each tree occupies less area than in square system",
+"Each tree occupies the same area as in square system",
+"Each tree occupies more area than in square system",
+"Area occupancy varies with tree species",
+"None of these"
+],
+"page": "83",
+"q": "Which statement is true regarding tree area occupancy in the triangular system?",
+"serial": "581",
+"src_row": 580,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "83:581"
+},
+{
+"expl": "Meadow Orcharding was developed in Israel, as stated in the source.",
+"key": 0,
+"o": [
+"Israel",
+"USA",
+"France",
+"China",
+"None of these"
+],
+"page": "84",
+"q": "Meadow Orcharding system originated in which country?",
+"serial": "582",
+"src_row": 581,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:582"
+},
+{
+"expl": "The source specifies 45 x 75 cm spacing within rows for Meadow Orcharding.",
+"key": 0,
+"o": [
+"45 x 75 cm",
+"50 x 80 cm",
+"30 x 60 cm",
+"60 x 90 cm",
+"None of these"
+],
+"page": "84",
+"q": "What is the spacing within rows in Meadow Orcharding?",
+"serial": "583",
+"src_row": 582,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:583"
+},
+{
+"expl": "The source lists 210-270 cm as the row\u2011to\u2011row spacing in Meadow Orcharding.",
+"key": 0,
+"o": [
+"210-270 cm",
+"150-200 cm",
+"300-350 cm",
+"100-150 cm",
+"None of these"
+],
+"page": "84",
+"q": "What is the spacing between rows in Meadow Orcharding?",
+"serial": "584",
+"src_row": 583,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:584"
+},
+{
+"expl": "The source gives No. of plants = Area \u00f7 Planting Distance for square/rectangular systems.",
+"key": 0,
+"o": [
+"Area \u00f7 Planting Distance",
+"Area \u00d7 Planting Distance",
+"Planting Distance \u00f7 Area",
+"\u221aArea \u00f7 Planting Distance",
+"None of these"
+],
+"page": "84",
+"q": "What is the formula to calculate the number of plants in a square or rectangular planting system?",
+"serial": "585",
+"src_row": 584,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:585"
+},
+{
+"expl": "Using the formula and the given values gives 115 plants, as noted in the source.",
+"key": 1,
+"o": [
+"100",
+"115",
+"120",
+"90",
+"None of these"
+],
+"page": "84",
+"q": "In a hexagonal planting system, if the area is 10,000 m\u00b2 and the planting distance is 10 \u00d7 8.66 m, how many plants are obtained?",
+"serial": "586",
+"src_row": 585,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:586"
+},
+{
+"expl": "The source states that the row\u2011to\u2011row distance in hexagonal system is calculated by Pythagoras theorem.",
+"key": 0,
+"o": [
+"Pythagoras",
+"Euclid",
+"Fermat",
+"Archimedes",
+"None of these"
+],
+"page": "84",
+"q": "Which theorem is used to calculate the row\u2011to\u2011row distance in a hexagonal planting system?",
+"serial": "587",
+"src_row": 586,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:587"
+},
+{
+"expl": "The example in the source shows 100 plants for a 10 \u00d7 10 m distance in a quincunx system.",
+"key": 0,
+"o": [
+"100",
+"115",
+"120",
+"90",
+"None of these"
+],
+"page": "84",
+"q": "In a quincunx planting system, with an area of 10,000 m\u00b2 and planting distance of 10 \u00d7 10 m, how many plants are planted?",
+"serial": "588",
+"src_row": 587,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "84:588"
+}
+],
+"row_from": 567,
+"row_to": 588,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 567,
+"seeded_from": "2026-10-11"
+},
 "qidx": 0,
+"seeded_from": "2026-10-11",
+"skips": [],
 "step": 0
 },
 "malwa": {
