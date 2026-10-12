@@ -142395,9 +142395,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 502,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 502,
+"built_at": "2026-10-12T10:58:29+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 145-150",
+"pages_blocks": [
+"145-146",
+"147-148",
+"149-150"
+],
+"questions": [
+{
+"expl": "CGR is calculated as the increase in dry weight per unit area per unit time, expressed as (W2-W1)/[(T2-T1)\u00d7A].",
+"key": 0,
+"o": [
+"(W2 - W1) / [(T2 - T1) \u00d7 A]",
+"(ln W2 - ln W1) / (T2 - T1)",
+"(W2 - W1) / (T2 - T1)",
+"(W2 / W1) / (T2 - T1)",
+"None of these"
+],
+"page": "145-146",
+"q": "Which formula correctly defines Crop Growth Rate (CGR)?",
+"serial": "741",
+"src_row": 482,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "145-146:741"
+},
+{
+"expl": "RGR is described as a compound interest type growth where the increase is relative to the existing weight.",
+"key": 1,
+"o": [
+"Simple interest",
+"Compound interest",
+"Inflation rate",
+"Depreciation",
+"None of these"
+],
+"page": "145-146",
+"q": "Relative Growth Rate (RGR) is analogous to which financial concept?",
+"serial": "742",
+"src_row": 483,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "145-146:742"
+},
+{
+"expl": "Potato\u2019s harvest index is about 80 %, the highest among the listed crops.",
+"key": 3,
+"o": [
+"Pigeonpea",
+"Mustard",
+"Wheat",
+"Potato",
+"None of these"
+],
+"page": "145-146",
+"q": "Which crop has the highest harvest index among the options?",
+"serial": "743",
+"src_row": 484,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "145-146:743"
+},
+{
+"expl": "The law states that growth is constrained by the most deficient factor, like the shortest stave in a barrel.",
+"key": 1,
+"o": [
+"the nutrient in greatest supply",
+"the nutrient in smallest supply",
+"water availability only",
+"light intensity",
+"None of these"
+],
+"page": "145-146",
+"q": "According to the Law of Minimum, plant growth is limited by:",
+"serial": "744",
+"src_row": 485,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "145-146:744"
+},
+{
+"expl": "Mitscherlich\u2019s law of diminishing returns uses this differential equation to relate growth to nutrient supply.",
+"key": 0,
+"o": [
+"Law of Diminishing Returns",
+"Law of Minimum",
+"Inverse Yield\u2011Nitrogen Law",
+"Macy\u2019s Poverty Adjustment Law",
+"None of these"
+],
+"page": "145-146",
+"q": "The equation dy/dx = (A-y)C is associated with which law?",
+"serial": "745",
+"src_row": 486,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "145-146:745"
+},
+{
+"expl": "It is defined as [Sink / Source] \u00d7 100, measuring the proportion of photosynthate that reaches the sink.",
+"key": 1,
+"o": [
+"(Sink + Source)/100",
+"(Sink / Source) \u00d7 100",
+"(Source / Sink) \u00d7 100",
+"(Sink - Source)/100",
+"None of these"
+],
+"page": "145-146",
+"q": "The coefficient of effectiveness is calculated as:",
+"serial": "746",
+"src_row": 487,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "145-146:746"
+},
+{
+"expl": "A crop ideotype is a biological model designed to behave predictably within a defined environment.",
+"key": 2,
+"o": [
+"Phenotype",
+"Genotype",
+"Ideotype",
+"Ecotype",
+"None of these"
+],
+"page": "147-148",
+"q": "Which term refers to a model plant expected to perform predictably in a specific environment?",
+"serial": "751",
+"src_row": 488,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:751"
+},
+{
+"expl": "The 30 cm is between rows in a pair; 60 cm is between successive pairs.",
+"key": 1,
+"o": [
+"Distance between the two rows in a pair",
+"Distance between the two rows in a pair and the next pair",
+"Distance between plants within a row",
+"Distance between rows in a single row",
+"None of these"
+],
+"page": "147-148",
+"q": "In a paired row planting with 30/60 cm spacing, what does the 60 cm refer to?",
+"serial": "752",
+"src_row": 489,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:752"
+},
+{
+"expl": "Irrigated cropping intensity varies from 200 to 400%.",
+"key": 2,
+"o": [
+"100-200%",
+"150-250%",
+"200-400%",
+"400-600%",
+"None of these"
+],
+"page": "147-148",
+"q": "The cropping intensity in irrigated agriculture typically ranges between:",
+"serial": "753",
+"src_row": 490,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:753"
+},
+{
+"expl": "Monoculture crops occupy the entire available area, giving 100% intensity.",
+"key": 3,
+"o": [
+"0%",
+"50%",
+"75%",
+"100%",
+"None of these"
+],
+"page": "147-148",
+"q": "In monoculture systems, the cropping intensity is always:",
+"serial": "754",
+"src_row": 491,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:754"
+},
+{
+"expl": "Zabo is a Nagaland system integrating agro\u2011forestry and livestock.",
+"key": 0,
+"o": [
+"Zabo",
+"Jhum",
+"Shifting cultivation",
+"Slash and burn",
+"None of these"
+],
+"page": "147-148",
+"q": "Which indigenous farming system of Nagaland combines agro\u2011forestry and animal husbandry?",
+"serial": "755",
+"src_row": 492,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:755"
+},
+{
+"expl": "Physiological maturity marks peak seed dry weight and vigor.",
+"key": 0,
+"o": [
+"Physiological maturity",
+"Dormancy",
+"Germination",
+"Harvest maturity",
+"None of these"
+],
+"page": "147-148",
+"q": "The stage at which a seed attains maximum dry weight, viability, and vigor is called:",
+"serial": "756",
+"src_row": 493,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:756"
+},
+{
+"expl": "ATER compares intercropping to sole cropping in terms of area and time.",
+"key": 1,
+"o": [
+"Light interception coefficient",
+"Area Time Equivalent Ratio (ATER)",
+"Cropping Intensity Index",
+"Water Use Efficiency",
+"None of these"
+],
+"page": "147-148",
+"q": "The efficiency measure of intercropping that considers both land area and time relative to sole cropping is known as:",
+"serial": "757",
+"src_row": 494,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:757"
+},
+{
+"expl": "Sorghum to Pigeonpea is typically 2:1 in intercropping systems.",
+"key": 1,
+"o": [
+"1:1",
+"2:1",
+"3:1",
+"1:2",
+"None of these"
+],
+"page": "147-148",
+"q": "The commonly practiced intercropping ratio of Sorghum and Pigeonpea is:",
+"serial": "758",
+"src_row": 495,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "147-148:758"
+},
+{
+"expl": "Surface (gravity) irrigation is the most common method in India, covering roughly 95% of the irrigated area.",
+"key": 0,
+"o": [
+"Surface irrigation",
+"Sub\u2011surface irrigation",
+"Pressurized irrigation",
+"Drip irrigation",
+"None of these"
+],
+"page": "149-150",
+"q": "Which irrigation method accounts for about 95% of India's irrigated area?",
+"serial": "761",
+"src_row": 496,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "149-150:761"
+},
+{
+"expl": "'Sem' occurs when seepage from canals makes surrounding land swampy and saline\u2011alkaline, as noted for the IGNP command area.",
+"key": 1,
+"o": [
+"Waterlogging due to excess rainfall",
+"Saline\u2011alkaline soil formation due to canal seepage",
+"Nutrient leaching from over\u2011fertilization",
+"Pest infestation",
+"None of these"
+],
+"page": "149-150",
+"q": "The term 'sem' described in the source refers to which phenomenon?",
+"serial": "762",
+"src_row": 497,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "149-150:762"
+},
+{
+"expl": "Lift irrigation involves raising water from a lower to a higher elevation before field application.",
+"key": 1,
+"o": [
+"Soil moisture is insufficient",
+"Water source lies at a lower elevation than the field",
+"Rainfall is excessive",
+"Groundwater table is deep",
+"None of these"
+],
+"page": "149-150",
+"q": "Lift irrigation is primarily employed when:",
+"serial": "763",
+"src_row": 498,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "149-150:763"
+},
+{
+"expl": "Check basins work best on fine\u2011textured, low\u2011permeability soils and are suitable for slopes up to about 3%.",
+"key": 1,
+"o": [
+"Coarse sandy soils with high permeability",
+"Fine\u2011textured soils with low permeability",
+"Heavy clay with high slope",
+"Loamy soils with moderate slope",
+"None of these"
+],
+"page": "149-150",
+"q": "The check basin method is most effective on which type of soil?",
+"serial": "764",
+"src_row": 499,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "149-150:764"
+},
+{
+"expl": "The method is unsuitable for sandy soils because they have low water\u2011holding capacity and high infiltration rates.",
+"key": 1,
+"o": [
+"Slightly acidic soils",
+"Sandy soils",
+"Loamy soils",
+"Clayey soils",
+"None of these"
+],
+"page": "149-150",
+"q": "Border strip irrigation is unsuitable for which soil condition?",
+"serial": "765",
+"src_row": 500,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "149-150:765"
+},
+{
+"expl": "Surge irrigation supplies water intermittently, allowing better infiltration and reducing runoff compared with continuous flow.",
+"key": 1,
+"o": [
+"Applying water only at night",
+"Intermittent on\u2011off application creating cycles",
+"Using pressurized pipes",
+"Delivering water through subsurface emitters",
+"None of these"
+],
+"page": "149-150",
+"q": "Surge irrigation improves water\u2011use efficiency by:",
+"serial": "766",
+"src_row": 501,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "149-150:766"
+}
+],
+"rolled": false,
+"row_from": 482,
+"row_to": 502,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 482,
+"seeded_from": "2026-10-11",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-11",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
