@@ -145124,6 +145124,8 @@
 "cd": 1,
 "congrats_sent": 32466,
 "cta_sent": "off",
+"done_at": "2026-10-12T18:28:45+05:30",
+"elapsed_s": 1822,
 "expl_in_poll": 0,
 "file_msg": 32467,
 "file_sent": "AFO_pFull-length-set-30_50Q_2026-10-12.html",
@@ -145133,8 +145135,18 @@
 "lb_rows": 88,
 "lb_sent": true,
 "lock_ts": 1791809866.4126658,
-"locked_by": "38249177819",
+"locked_by": "",
 "msg_ann": 32410,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 32412,
 "names": {
 "1027390571": "Sns",
@@ -145226,6 +145238,8 @@
 "934412436": "Pravin",
 "964195451": "Neeraj"
 },
+"paid_msg": 32469,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "built_at": "2026-10-12T17:58:19+05:30",
@@ -146199,7 +146213,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-12T18:00:22+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 32468,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 151-156\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 85, 86, 87\n\ud83c\udf06 6:00 PM \u00b7 <b>AFO MAINS TEST (NEW PATTERN)</b> \u2014 full-length set 31 (50 questions, +2 / \u22120.5)"
 },
