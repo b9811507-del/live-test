@@ -148176,7 +148176,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-13T17:58:02+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Subsistence agriculture",
+"Commercial farming",
+"Sustainable agriculture",
+"Intensive monoculture",
+"None of these"
+],
+"page": "",
+"q": "According to the types of agriculture table, which type has low input but high output?",
+"serial": "1sUgWsko:4479",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4479"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"800-1500 kg/ha",
+"500-700 kg/ha",
+"200-500 kg/ha",
+"1500-2000 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate range for potato cultivation per hectare?",
+"serial": "1YcJWVgW:611",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:611"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2.65 g/cm\u00b3",
+"2.837 g/cm\u00b3",
+"1.19 g/cc",
+"1.4 g/cc",
+"None of these"
+],
+"page": "",
+"q": "What is the particle density of clay as given in the source?",
+"serial": "1sUgWsko:6973",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6973"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Olivine",
+"Dolomite",
+"Biotite",
+"Tourmaline",
+"None of these"
+],
+"page": "",
+"q": "Which silicate mineral supplies both magnesium and molybdenum to plants?",
+"serial": "17U0MEc-:1088",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1088"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ager and Cultura",
+"Agri and Cultus",
+"Agrum and Cultivation",
+"Ager and Cultus",
+"None of these"
+],
+"page": "",
+"q": "From which Latin words is the term 'Agriculture' derived?",
+"serial": "1sUgWsko:4089",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4089"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bargur",
+"Umblachery",
+"Murrah",
+"Red Sindhi",
+"None of these"
+],
+"page": "",
+"q": "Which breed tends to remain away from strangers due to cautious behaviour?",
+"serial": "1sUgWsko:2978",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2978"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Provides structural support to the embryo",
+"Stores water for germination",
+"Provides food to the embryo",
+"Protects the embryo from pests",
+"None of these"
+],
+"page": "",
+"q": "What is the primary role of endosperm in monocotyledonous seeds?",
+"serial": "1sUgWsko:4916",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4916"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Langra",
+"Kesar",
+"Bombay Green",
+"Dashahari",
+"None of these"
+],
+"page": "",
+"q": "Which mango variety is known for its characteristic turpentine flavor?",
+"serial": "17U0MEc-:1441",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1441"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10 cm",
+"15 cm",
+"20 cm",
+"25 cm",
+"None of these"
+],
+"page": "",
+"q": "In thin layer drying, what is the maximum thickness of the grain bed considered?",
+"serial": "1sUgWsko:6443",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6443"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Accumulation of acetylcholine",
+"Bradycardia",
+"Increased hypersensitivity",
+"Hyperactivity",
+"None of these"
+],
+"page": "",
+"q": "Which symptom is NOT associated with carbamate poisoning?",
+"serial": "1UgnIe-g:2135",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2135"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2000 kg/ha",
+"1000 kg/ha",
+"500 kg/ha",
+"200 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What lime dose (kg/ha) is recommended for soil pH between 5.1 and 6.5?",
+"serial": "1sUgWsko:2297",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2297"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rapeseed is self-pollinated; mustard is cross-pollinated",
+"Both are self-pollinated",
+"Rapeseed is cross-pollinated; mustard is self-pollinated",
+"Both are cross-pollinated",
+"None of these"
+],
+"page": "",
+"q": "How does the pollination mechanism differ between rapeseed and mustard?",
+"serial": "1sUgWsko:384",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:384"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Directly sold to farmers",
+"Used to produce certified seed",
+"Produced by farmers",
+"Has the lowest genetic purity",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of foundation seed?",
+"serial": "1sUgWsko:4941",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4941"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Plant anatomy",
+"Physiological processes of plants",
+"Plant taxonomy",
+"Plant ecology",
+"None of these"
+],
+"page": "",
+"q": "Plant physiology is a branch of botany that studies",
+"serial": "1UgnIe-g:1458",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1458"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Commercial agroforestry systems",
+"Intermediate agroforestry systems",
+"Subsistence agroforestry systems",
+"Mixed agroforestry systems",
+"None of these"
+],
+"page": "",
+"q": "Which agroforestry category is primarily aimed at large\u2011scale market production?",
+"serial": "1sUgWsko:5526",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5526"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"M.S. Swaminathan",
+"Pushkarnath et al.",
+"Norman Borlaug",
+"B.P. Pal",
+"None of these"
+],
+"page": "",
+"q": "Who developed the seed plot technique for potato in 1967?",
+"serial": "1sUgWsko:5027",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5027"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ganga-1",
+"Amber",
+"Vikram",
+"Kisan",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a synthetic variety of maize?",
+"serial": "17U0MEc-:607",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:607"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"B. campestris var. Yellow sarson",
+"B. napus",
+"B. juncea",
+"B. nigra",
+"None of these"
+],
+"page": "",
+"q": "Which of the following Brassica species has the highest oil content as per the given data?",
+"serial": "1sUgWsko:381",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:381"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"*Solanum lycopersicum* var. *hortense*",
+"*Solanum lycopersicum* var. *cerasiforme*",
+"*Lycopersicon esculentum* var. *cerasiforme*",
+"*Solanum melongena* var. *cerasiforme*",
+"None of these"
+],
+"page": "",
+"q": "What is the botanical name of the cherry tomato?",
+"serial": "1YcJWVgW:502",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:502"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"NAARM",
+"FRI",
+"NRC-WS",
+"ICRISAT",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is not an international institute but a national research center?",
+"serial": "17U0MEc-:104",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:104"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"They provide food only",
+"They act as a habitat for wildlife",
+"They prevent soil erosion only",
+"They increase atmospheric CO2",
+"None of these"
+],
+"page": "",
+"q": "Which statement best describes the role of trees in wildlife conservation?",
+"serial": "1sUgWsko:5525",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5525"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Feldspars",
+"Quartz",
+"Pyroxenes",
+"Dolomite",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a Ferro-Magnesium mineral as per the source?",
+"serial": "1sUgWsko:6853",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6853"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-7 kg",
+"8-10 kg",
+"15-20 kg",
+"25-35 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal weight range for commercial propagation offshoots in date palm?",
+"serial": "1sUgWsko:1156",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1156"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Fragments with highest net charge",
+"Fragments with largest molecular weight",
+"Fragments with smallest molecular weight",
+"Fragments with circular conformation",
+"None of these"
+],
+"page": "",
+"q": "During agarose gel electrophoresis, which DNA fragments travel the farthest toward the anode?",
+"serial": "1UgnIe-g:1397",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1397"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Calyx splitting",
+"Root rot",
+"Leaf spot",
+"Powdery mildew",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a physiological disorder of carnation?",
+"serial": "1YcJWVgW:1130",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1130"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"50%",
+"87.5%",
+"93.75%",
+"96.875%",
+"None of these"
+],
+"page": "",
+"q": "What is the percentage of purebred blood in the third generation of grading up?",
+"serial": "1sUgWsko:2901",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2901"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"C3",
+"C4",
+"CAM",
+"C2",
+"None of these"
+],
+"page": "",
+"q": "Sorghum follows which photosynthetic pathway?",
+"serial": "1sUgWsko:186",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:186"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Bright Red",
+"Bright Yellow",
+"Bright Blue",
+"Bright Green",
+"None of these"
+],
+"page": "",
+"q": "What color represents the 'Moderate toxic' category in herbicide toxicity classification?",
+"serial": "1bxM1Q-4:1306",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1306"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Amaranthus sp.",
+"Chenopodium sp.",
+"Johnson grass",
+"Wild oat",
+"None of these"
+],
+"page": "",
+"q": "Which weed is associated with Rabi crops like Wheat and Barley?",
+"serial": "1bxM1Q-4:1204",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1204"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Eichhornia crassipes",
+"Amaranthus viridis",
+"Chenopodium album",
+"Cynodon spp.",
+"None of these"
+],
+"page": "",
+"q": "Which plant is used for cleaning water?",
+"serial": "1bxM1Q-4:1168",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1168"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Potato",
+"Tomato",
+"Cotton",
+"Sugarcane",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is LEAST responsive to farmyard manure?",
+"serial": "1bxM1Q-4:1674",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1674"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Irish famine",
+"Bengal famine",
+"Ceylon epidemic",
+"Great Famine",
+"None of these"
+],
+"page": "",
+"q": "Which famine was caused by the brown spot of rice?",
+"serial": "1UgnIe-g:927",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:927"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Blaney-Criddle",
+"Radiation method",
+"Pan evaporation method",
+"Modified Penman method",
+"None of these"
+],
+"page": "",
+"q": "Which method is considered the simplest for measuring reference evapotranspiration?",
+"serial": "128DIQLj:791",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:791"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nicotiana sanderae",
+"Arabidopsis thaliana",
+"Zea mays",
+"Oryza sativa",
+"None of these"
+],
+"page": "",
+"q": "The gametophytic self\u2011incompatibility system was first discovered in which species?",
+"serial": "1UgnIe-g:77",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:77"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Coffee",
+"Wheat",
+"Maize",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "Which plantation crop is mentioned as part of agroforestry in tropical highlands?",
+"serial": "1sUgWsko:5536",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5536"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wheat and barley",
+"Rice and jute",
+"Corn and soybean",
+"Cotton and sugarcane",
+"None of these"
+],
+"page": "",
+"q": "Which crops are NOT suitable for sprinkler irrigation?",
+"serial": "17U0MEc-:427",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:427"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sodium chlorate",
+"TCA",
+"Methyl bromide",
+"Atrazine",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is an example of a TEMPORARY soil sterilant?",
+"serial": "1sUgWsko:5211",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5211"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dr. S. Puskar Nath",
+"Dr. S. Ramanujam",
+"Dr. M.S. Swaminathan",
+"Dr. Norman Borlaug",
+"None of these"
+],
+"page": "",
+"q": "Who developed the seed plot technique (SPT) for virus-free potato tuber production?",
+"serial": "1YcJWVgW:616",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:616"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sodium",
+"Calcium",
+"Chloride",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a primary cation contaminant in irrigation water?",
+"serial": "1bxM1Q-4:1071",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1071"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Soil applied herbicides",
+"Pre-emergence herbicides",
+"Foliage applied herbicides",
+"Pre-plant incorporation herbicides",
+"None of these"
+],
+"page": "",
+"q": "Which category of herbicides is applied to the foliage of plants?",
+"serial": "17U0MEc-:900",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:900"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sorbitol",
+"Glucose",
+"Fructose",
+"Sucrose",
+"None of these"
+],
+"page": "",
+"q": "What is the major sugar present in apple?",
+"serial": "1YcJWVgW:388",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:388"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"S. carpocapsae and H. bacteriophora",
+"Neoplectana carpocapsae",
+"Achromobacter nematophilus",
+"Xiphinema index",
+"None of these"
+],
+"page": "",
+"q": "Which nematode species is used in the commercial formulation 'Ecomax'?",
+"serial": "17U0MEc-:2367",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2367"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10-20 cm",
+"30-60 cm",
+"60-90 cm",
+"90-120 cm",
+"None of these"
+],
+"page": "",
+"q": "At what depth is the sub-soiler used to break the hard pan of soil?",
+"serial": "1sUgWsko:4293",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4293"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Promoting seed dormancy",
+"Stimulating leaf expansion",
+"Inducing stomatal closure",
+"Enhancing drought tolerance",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a reported function of abscisic acid?",
+"serial": "1UgnIe-g:1665",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1665"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Irregular holes on the surface",
+"Unpleasant smell and unhealthy appearance",
+"Resinous substances on pods",
+"Shot holes in leaves",
+"None of these"
+],
+"page": "",
+"q": "What is a distinguishing feature of grains infested by the Angoumois Grain Moth?",
+"serial": "1sUgWsko:2133",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2133"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Compost",
+"Urine",
+"Peat",
+"Manure tea",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is considered a liquid manure?",
+"serial": "1bxM1Q-4:1750",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1750"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The actual monetary cost of inputs",
+"The value of the next best alternative foregone",
+"The total revenue from farm sales",
+"The cost of agricultural subsidies",
+"None of these"
+],
+"page": "",
+"q": "In agricultural economics, the term 'opportunity cost' refers to:",
+"serial": "1sUgWsko:3896",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3896"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Flood irrigation",
+"Check basin",
+"Furrow irrigation",
+"Drip irrigation",
+"None of these"
+],
+"page": "",
+"q": "Which irrigation method specifically avoids flooding the entire field surface by directing flow along furrows?",
+"serial": "1sUgWsko:4593",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4593"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"18 qt of good nuts/ha",
+"2-4 kg/tree",
+"10-12 tons/ha",
+"5-7 kg/tree",
+"None of these"
+],
+"page": "",
+"q": "What is the yield of Horticulture 537?",
+"serial": "1bxM1Q-4:3651",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3651"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"5 years",
+"10 years",
+"15 years",
+"20 years",
+"None of these"
+],
+"page": "",
+"q": "What is the maximum lifespan of better grades of fiberglass-reinforced plastic (FRP) panels?",
+"serial": "1sUgWsko:1671",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1671"
+}
+],
+"set_no": 31,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
