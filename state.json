@@ -148187,9 +148187,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 522,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 522,
+"built_at": "2026-10-13T10:57:41+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 151-156",
+"pages_blocks": [
+"151-152",
+"153-154",
+"155-156"
+],
+"questions": [
+{
+"expl": "Karnataka leads in sprinkler irrigation area, followed by Rajasthan and Haryana.",
+"key": 0,
+"o": [
+"Karnataka",
+"Rajasthan",
+"Haryana",
+"Maharashtra",
+"None of these"
+],
+"page": "151-152",
+"q": "Which state has the highest area of sprinkler irrigation in India?",
+"serial": "771",
+"src_row": 502,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "151-152:771"
+},
+{
+"expl": "Sprinkler systems need pressures above 2.5 kg/cm\u00b2 to function properly.",
+"key": 0,
+"o": [
+"> 2.5 kg/cm\u00b2",
+"< 2.5 kg/cm\u00b2",
+"= 2.5 kg/cm\u00b2",
+"1.5 kg/cm\u00b2",
+"None of these"
+],
+"page": "151-152",
+"q": "What is the minimum operating pressure required for a sprinkler irrigation system?",
+"serial": "772",
+"src_row": 503,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "151-152:772"
+},
+{
+"expl": "Drip irrigation achieves about 90 % efficiency, higher than most methods.",
+"key": 2,
+"o": [
+"60 %",
+"70 %",
+"90 %",
+"100 %",
+"None of these"
+],
+"page": "151-152",
+"q": "What is the irrigation efficiency of a drip irrigation system?",
+"serial": "773",
+"src_row": 504,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "151-152:773"
+},
+{
+"expl": "Sprinkler irrigation is unsuitable for rice and jute when infiltration rates are below 4 mm/h.",
+"key": 0,
+"o": [
+"Rice and jute",
+"Wheat",
+"Maize",
+"Barley",
+"None of these"
+],
+"page": "151-152",
+"q": "Which crops are generally unsuitable for sprinkler irrigation due to very fine textured soils?",
+"serial": "774",
+"src_row": 505,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "151-152:774"
+},
+{
+"expl": "Calcium carbonate and calcium sulphate build up and clog drip emitters.",
+"key": 2,
+"o": [
+"Sand",
+"Bacteria",
+"Calcium carbonate and calcium sulphate",
+"Salt",
+"None of these"
+],
+"page": "151-152",
+"q": "What is the main chemical contributor to clogging in drip irrigation lines?",
+"serial": "775",
+"src_row": 506,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "151-152:775"
+},
+{
+"expl": "Drip irrigation saves about 50\u201370 % of water relative to conventional methods.",
+"key": 2,
+"o": [
+"20\u201330 %",
+"40\u201350 %",
+"50\u201370 %",
+"80\u201390 %",
+"None of these"
+],
+"page": "151-152",
+"q": "Compared to conventional irrigation, how much water can drip irrigation save?",
+"serial": "776",
+"src_row": 507,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "151-152:776"
+},
+{
+"expl": "The Typhoon system of drip irrigation was developed in Israel and is employed in Maharashtra for sugarcane cultivation.",
+"key": 0,
+"o": [
+"Typhoon system of drip irrigation",
+"Center Pivot",
+"Bubbler irrigation",
+"Raingun",
+"None of these"
+],
+"page": "153-154",
+"q": "Which irrigation system was developed in Israel and is used in Maharashtra sugarcane fields?",
+"serial": "781",
+"src_row": 508,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:781"
+},
+{
+"expl": "A raingun functions as a macro sprinkler, dispersing water over a wide area.",
+"key": 1,
+"o": [
+"Furrow irrigation",
+"Macro sprinkler",
+"Drip irrigation",
+"Bubbler irrigation",
+"None of these"
+],
+"page": "153-154",
+"q": "A raingun is a type of:",
+"serial": "782",
+"src_row": 509,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:782"
+},
+{
+"expl": "LEPA is a low\u2011energy variant of sprinkler irrigation, designed for precise water delivery.",
+"key": 2,
+"o": [
+"Furrow irrigation",
+"Bubbler irrigation",
+"Sprinkler irrigation",
+"Drip irrigation",
+"None of these"
+],
+"page": "153-154",
+"q": "LEPA (Low Energy Precision Application) is a modification of:",
+"serial": "783",
+"src_row": 510,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:783"
+},
+{
+"expl": "Drip systems typically use screen (mesh) and sand filters; ceramic filters are not common.",
+"key": 2,
+"o": [
+"Screen (mesh) filter",
+"Sand filter",
+"Ceramic filter",
+"Both A and B",
+"None of these"
+],
+"page": "153-154",
+"q": "Which of the following is NOT a common filter used in drip irrigation systems?",
+"serial": "784",
+"src_row": 511,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:784"
+},
+{
+"expl": "It refers to the soil layer supplying about 90% of the crop\u2019s evapotranspiration water.",
+"key": 0,
+"o": [
+"The soil depth from which a crop extracts most of the water required for evapotranspiration",
+"The total root length of a plant",
+"The depth of the water table",
+"The depth of the soil layer that receives irrigation water",
+"None of these"
+],
+"page": "153-154",
+"q": "Effective root zone depth is defined as:",
+"serial": "785",
+"src_row": 512,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:785"
+},
+{
+"expl": "Sugarcane requires a very deep root zone of about 180 cm for optimal water uptake.",
+"key": 0,
+"o": [
+"Sugarcane",
+"Wheat",
+"Tomato",
+"Potato",
+"None of these"
+],
+"page": "153-154",
+"q": "Which crop is classified as very deep rooted (180 cm) according to the moisture extraction depth table?",
+"serial": "786",
+"src_row": 513,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:786"
+},
+{
+"expl": "Higher relative humidity reduces evapotranspiration, showing a negative correlation.",
+"key": 1,
+"o": [
+"Solar radiation",
+"Relative humidity",
+"Wind speed",
+"Air temperature",
+"None of these"
+],
+"page": "153-154",
+"q": "Which factor is negatively correlated with crop evapotranspiration?",
+"serial": "787",
+"src_row": 514,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:787"
+},
+{
+"expl": "Consumptive use = ET + WB, but since 99% of absorbed water is lost through transpiration, it is practically equal to ET.",
+"key": 1,
+"o": [
+"Evapotranspiration only",
+"Evapotranspiration plus water used in metabolic processes",
+"Water used in metabolic processes only",
+"Evapotranspiration plus soil evaporation",
+"None of these"
+],
+"page": "153-154",
+"q": "Consumptive use of water is equal to:",
+"serial": "788",
+"src_row": 515,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "153-154:788"
+},
+{
+"expl": "The Blaney-Criddle method is described as the simplest way to estimate reference ET.",
+"key": 0,
+"o": [
+"Blaney-Criddle",
+"Radiation method",
+"Pan evaporation method",
+"Modified Penman method",
+"None of these"
+],
+"page": "155-156",
+"q": "Which method is considered the simplest for measuring reference evapotranspiration?",
+"serial": "791",
+"src_row": 516,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "155-156:791"
+},
+{
+"expl": "The USWB Class A Open Pan Evaporimeter is the most commonly used evaporimeter in India.",
+"key": 1,
+"o": [
+"Sunken Screen Evaporimeter",
+"USWB Class A Open Pan Evaporimeter",
+"Can Evaporimeter",
+"Portable Evaporimeter",
+"None of these"
+],
+"page": "155-156",
+"q": "Which evaporimeter is most commonly used in India?",
+"serial": "792",
+"src_row": 517,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "155-156:792"
+},
+{
+"expl": "Rice has the maximum water requirement per day (900\u20112500 mm).",
+"key": 0,
+"o": [
+"Rice",
+"Sugarcane",
+"Maize",
+"Wheat",
+"None of these"
+],
+"page": "155-156",
+"q": "According to the water requirement table, which crop has the highest daily water requirement?",
+"serial": "793",
+"src_row": 518,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "155-156:793"
+},
+{
+"expl": "Sugarcane needs more irrigations than rice, as stated in the source.",
+"key": 1,
+"o": [
+"Rice",
+"Sugarcane",
+"Wheat",
+"Maize",
+"None of these"
+],
+"page": "155-156",
+"q": "Which crop requires the maximum number of irrigations?",
+"serial": "794",
+"src_row": 519,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "155-156:794"
+},
+{
+"expl": "The given NIR formula matches the one in the source: NIR = (FC \u2013 MC)/10 \u00d7 BD \u00d7 Depth.",
+"key": 2,
+"o": [
+"NIR = (FC \u2013 MC) \u00d7 BD \u00d7 Depth",
+"NIR = (CU \u2013 ER) + AL",
+"NIR = (Field capacity \u2013 Moisture content before irrigation)/10 \u00d7 Bulk density \u00d7 Depth",
+"NIR = (CU \u2013 ER) \u2013 AL",
+"None of these"
+],
+"page": "155-156",
+"q": "Which formula correctly represents the net irrigation requirement (NIR) in terms of field capacity and moisture content?",
+"serial": "795",
+"src_row": 520,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "155-156:795"
+},
+{
+"expl": "Using NIR = (FC \u2013 MC)/10 \u00d7 BD \u00d7 Depth gives 25.01 mm, as provided in the source.",
+"key": 0,
+"o": [
+"25.01 mm",
+"15.00 mm",
+"30.00 mm",
+"20.00 mm",
+"None of these"
+],
+"page": "155-156",
+"q": "Calculate the net irrigation requirement for a soil depth of 0\u201125 cm, field capacity 21.4 %, moisture content before irrigation 14.5 %, bulk density 1.45 g/cm\u00b3.",
+"serial": "796",
+"src_row": 521,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "155-156:796"
+}
+],
+"rolled": false,
+"row_from": 502,
+"row_to": 522,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 502,
+"seeded_from": "2026-10-12",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-12",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
