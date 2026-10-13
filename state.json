@@ -148181,8 +148181,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 609,
 "names": {},
+"plan": {
+"bidx_next": 609,
+"built_at": "2026-10-13T14:27:59+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 85-87",
+"pages_list": [
+85,
+86,
+87
+],
+"questions": [
+{
+"expl": "For a 100 m x 100 m field with 10 m spacing, the number of rows is calculated as field length / spacing = 100 / 10 = 10 rows lengthwise and widthwise.",
+"key": 1,
+"o": [
+"9",
+"10",
+"11",
+"12",
+"None of these"
+],
+"page": "85",
+"q": "In square system of planting, if a field is 100 m x 100 m with a planting distance of 10 m x 10 m, how many rows are there lengthwise and widthwise?",
+"serial": "589",
+"src_row": 588,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:589"
+},
+{
+"expl": "The formula for additional plants at the centers of squares is derived from the spaces between rows, hence (No. of rows lengthwise \u2013 1) x (No. of rows widthwise \u2013 1).",
+"key": 2,
+"o": [
+"(No. of rows lengthwise) x (No. of rows widthwise)",
+"(No. of rows lengthwise + 1) x (No. of rows widthwise + 1)",
+"(No. of rows lengthwise \u2013 1) x (No. of rows widthwise \u2013 1)",
+"(No. of rows lengthwise) + (No. of rows widthwise)",
+"None of these"
+],
+"page": "85",
+"q": "What is the formula for calculating the number of additional plants planted at the centers of squares in the square system?",
+"serial": "590",
+"src_row": 589,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:590"
+},
+{
+"expl": "For 10 rows lengthwise and widthwise, additional plants = (10-1) x (10-1) = 9 x 9 = 81.",
+"key": 0,
+"o": [
+"81",
+"90",
+"100",
+"121",
+"None of these"
+],
+"page": "85",
+"q": "In a 100 m x 100 m field with 10 m x 10 m planting distance, how many additional plants are planted at the centers of squares?",
+"serial": "591",
+"src_row": 590,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:591"
+},
+{
+"expl": "Total plants = square-planted plants (100) + additional center plants (81) = 181.",
+"key": 1,
+"o": [
+"100",
+"181",
+"200",
+"162",
+"None of these"
+],
+"page": "85",
+"q": "If the total number of plants in a square system includes both the square-planted and additional center plants, what is the total for a 100 m x 100 m field with 10 m spacing?",
+"serial": "592",
+"src_row": 591,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:592"
+},
+{
+"expl": "Additional plants are planted at the centers of squares to utilize the empty spaces between the square-planted plants, maximizing field usage.",
+"key": 2,
+"o": [
+"To increase the total field area",
+"To reduce the planting distance",
+"To utilize the space between square-planted plants",
+"To decrease the number of rows",
+"None of these"
+],
+"page": "85",
+"q": "What is the primary reason for planting additional plants at the centers of squares in the square system?",
+"serial": "593",
+"src_row": 592,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:593"
+},
+{
+"expl": "Additional plants = (5-1) x (5-1) = 4 x 4 = 16.",
+"key": 0,
+"o": [
+"16",
+"20",
+"25",
+"4",
+"None of these"
+],
+"page": "85",
+"q": "In the square system of planting, if the number of rows lengthwise is 5 and widthwise is 5, how many additional plants are planted at the centers of squares?",
+"serial": "594",
+"src_row": 593,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:594"
+},
+{
+"expl": "The total number of plants in the square system includes only the square-planted plants and the additional plants at the centers of squares. Boundary plants are not separately considered in this calculation.",
+"key": 3,
+"o": [
+"Plants planted in the square system",
+"Plants planted at the corners of the field",
+"Plants planted at the centers of squares",
+"Plants planted along the field boundaries",
+"None of these"
+],
+"page": "85",
+"q": "Which of the following is NOT a component of the total number of plants in the square system of planting?",
+"serial": "595",
+"src_row": 594,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "85:595"
+},
+{
+"expl": "Herbaceous cutting uses 1\u20132 month old shoots and is ideal for ornamental plants.",
+"key": 3,
+"o": [
+"Hard wood cutting",
+"Semi-hard wood cutting",
+"Soft wood cutting",
+"Herbaceous cutting",
+"None of these"
+],
+"page": "86",
+"q": "Which type of cutting is suitable for ornamental plants and uses shoots 1-2 months old?",
+"serial": "596",
+"src_row": 595,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:596"
+},
+{
+"expl": "Shield budding employs a boat\u2011shaped bud of 2.5\u20133.0 cm length.",
+"key": 0,
+"o": [
+"Shield budding",
+"Patch budding",
+"Chip budding",
+"Ring budding",
+"None of these"
+],
+"page": "86",
+"q": "In budding, which method uses a boat-shaped bud of 2.5\u20133.0 cm?",
+"serial": "597",
+"src_row": 596,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:597"
+},
+{
+"expl": "Soft wood cutting needs high humidity and is taken from 2\u20133 month old shoots 10\u201315 cm long.",
+"key": 2,
+"o": [
+"Hard wood cutting",
+"Semi-hard wood cutting",
+"Soft wood cutting",
+"Herbaceous cutting",
+"None of these"
+],
+"page": "86",
+"q": "Which cutting requires high humidity and is taken from 2\u20133 month old shoots of 10\u201315 cm length?",
+"serial": "598",
+"src_row": 597,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:598"
+},
+{
+"expl": "Semi\u2011hard wood cutting is taken from 4\u20139 month old shoots.",
+"key": 1,
+"o": [
+"1 year old",
+"4\u20139 months old",
+"2\u20133 months old",
+"1\u20132 months old",
+"None of these"
+],
+"page": "86",
+"q": "What is the age range for semi\u2011hard wood cutting?",
+"serial": "599",
+"src_row": 598,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:599"
+},
+{
+"expl": "Separation and division is a distinct asexual propagation method.",
+"key": 3,
+"o": [
+"Cutting",
+"Budding",
+"Grafting",
+"Separation and Division",
+"None of these"
+],
+"page": "86",
+"q": "Which method of asexual propagation involves separating and dividing?",
+"serial": "600",
+"src_row": 599,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:600"
+},
+{
+"expl": "Chip budding is used during periods of low sap flow.",
+"key": 2,
+"o": [
+"Shield budding",
+"Patch budding",
+"Chip budding",
+"Ring budding",
+"None of these"
+],
+"page": "86",
+"q": "Which budding technique is practiced when there is lack of sap flow?",
+"serial": "601",
+"src_row": 600,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:601"
+},
+{
+"expl": "Hard wood cutting is taken from one\u2011year\u2011old wood and must have 2\u20133 buds.",
+"key": 0,
+"o": [
+"Hard wood cutting",
+"Semi\u2011hard wood cutting",
+"Soft wood cutting",
+"Herbaceous cutting",
+"None of these"
+],
+"page": "86",
+"q": "In stem cutting, which type requires at least 2\u20133 buds and is taken from one\u2011year\u2011old wood?",
+"serial": "602",
+"src_row": 601,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "86:602"
+},
+{
+"expl": "Chip budding is a specific propagation method where a small chip of bud wood is inserted under the bark of a rootstock to form a new plant.",
+"key": 1,
+"o": [
+"Grafting",
+"Chip Budding",
+"Layering",
+"Cutting",
+"None of these"
+],
+"page": "87",
+"q": "Which propagation technique involves the insertion of a small chip of bud wood under the bark of a rootstock?",
+"serial": "603",
+"src_row": 602,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:603"
+},
+{
+"expl": "The chip of bud wood in chip budding is taken from the stem, as it contains the necessary bud for propagation.",
+"key": 2,
+"o": [
+"Root",
+"Leaf",
+"Stem",
+"Flower",
+"None of these"
+],
+"page": "87",
+"q": "In chip budding, the chip of bud wood is typically taken from which part of the plant?",
+"serial": "604",
+"src_row": 603,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:604"
+},
+{
+"expl": "Chip budding is primarily used for asexual propagation, allowing the creation of genetically identical plants.",
+"key": 1,
+"o": [
+"To increase fruit size",
+"To propagate plants asexually",
+"To control pests",
+"To enhance soil fertility",
+"None of these"
+],
+"page": "87",
+"q": "What is the primary purpose of chip budding in horticulture?",
+"serial": "605",
+"src_row": 604,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:605"
+},
+{
+"expl": "A trowel is not typically used in chip budding; tools like a budding knife, secateurs, and grafting tape are more relevant.",
+"key": 2,
+"o": [
+"Budding knife",
+"Secateurs",
+"Trowel",
+"Grafting tape",
+"None of these"
+],
+"page": "87",
+"q": "Which of the following is NOT a common tool used in chip budding?",
+"serial": "606",
+"src_row": 605,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:606"
+},
+{
+"expl": "The process of placing the chip under the bark of the rootstock is referred to as insertion.",
+"key": 3,
+"o": [
+"Inoculation",
+"Inarching",
+"Inlaying",
+"Insertion",
+"None of these"
+],
+"page": "87",
+"q": "During chip budding, the chip is inserted under the bark of the rootstock. What is this process called?",
+"serial": "607",
+"src_row": 606,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:607"
+},
+{
+"expl": "Chip budding is typically performed during the summer season in temperate climates when the bark is slipping and the cambium is active.",
+"key": 2,
+"o": [
+"Winter",
+"Spring",
+"Summer",
+"Autumn",
+"None of these"
+],
+"page": "87",
+"q": "Which season is most suitable for performing chip budding in temperate climates?",
+"serial": "608",
+"src_row": 607,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:608"
+},
+{
+"expl": "Chip budding often has a higher success rate with smaller scions compared to other propagation methods like grafting.",
+"key": 1,
+"o": [
+"Faster growth rate",
+"Higher success rate with smaller scions",
+"Lower cost",
+"No need for rootstock",
+"None of these"
+],
+"page": "87",
+"q": "What is the main advantage of chip budding over other propagation methods like grafting?",
+"serial": "609",
+"src_row": 608,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "87:609"
+}
+],
+"row_from": 588,
+"row_to": 609,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 588,
+"seeded_from": "2026-10-12"
+},
 "qidx": 0,
+"seeded_from": "2026-10-12",
+"skips": [],
 "step": 0
 },
 "malwa": {
