@@ -154167,7 +154167,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-14T17:57:12+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sodium chloride",
+"Silver iodide",
+"Dry ice",
+"Potassium iodide",
+"None of these"
+],
+"page": "",
+"q": "What is the primary material used in cold cloud seeding?",
+"serial": "17U0MEc-:395",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:395"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Source",
+"Transmitter",
+"Receiver",
+"Destination",
+"None of these"
+],
+"page": "",
+"q": "In the Shannon-Weaver Model, what component is responsible for converting the message into a signal?",
+"serial": "1sUgWsko:6526",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6526"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"\u00b11.645",
+"\u00b11.96",
+"\u00b12.58",
+"0",
+"None of these"
+],
+"page": "",
+"q": "At a 5 % significance level, what are the critical z\u2011values for a two\u2011tailed test?",
+"serial": "128DIQLj:2805",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2805"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"HPO4^2-",
+"PO4^3-",
+"H2PO4^-",
+"H3PO4",
+"None of these"
+],
+"page": "",
+"q": "At pH 6.5 or lower, which phosphate ion is most readily absorbed by plants?",
+"serial": "17U0MEc-:1008",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1008"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mesentron",
+"Proctodeum",
+"Stomodaeum",
+"Intestine",
+"None of these"
+],
+"page": "",
+"q": "Which part of the alimentary canal in nematodes is responsible for forming the stomatostylet in Plant Parasitic Nematodes (PPN)?",
+"serial": "17U0MEc-:2302",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2302"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increased crop yield",
+"Spread of new diseases",
+"Improved nutritional content",
+"Enhanced plant growth",
+"None of these"
+],
+"page": "",
+"q": "What is the primary risk associated with genetic engineering?",
+"serial": "1UgnIe-g:1370",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1370"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"3.4",
+"2.4",
+"4.4",
+"5.4",
+"None of these"
+],
+"page": "",
+"q": "What is the pH of vinegar when it contains 5% acetic acid?",
+"serial": "1YcJWVgW:1181",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1181"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Muscidae",
+"Pyralidae",
+"Noctuidae",
+"Curculionidae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the shootfly Atherigona naqvii belong to?",
+"serial": "1sUgWsko:1867",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1867"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Higher water infiltration into the subsoil",
+"Lesser surface runoff of rain water",
+"Improved soil structure making it less resistant to root growth",
+"Increased surface runoff of rain water",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT listed as an advantage of minimum tillage?",
+"serial": "1bxM1Q-4:593",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:593"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lambing",
+"Farrowing",
+"Calving",
+"Foaling",
+"None of these"
+],
+"page": "",
+"q": "Which term refers to the act of giving birth in cattle?",
+"serial": "1sUgWsko:2781",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2781"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dr. Seeman A. Knapp",
+"Dr. Norman Borlaug",
+"Dr. M.S. Swaminathan",
+"Dr. Robert F. Kennedy",
+"None of these"
+],
+"page": "",
+"q": "Who is recognized as the father of method demonstration?",
+"serial": "1bxM1Q-4:2165",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2165"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Two sprays of 2 kg Zinc sulphate + 1 kg slaked lime at the interval of 10-15 days",
+"Application of nitrogen fertilizers",
+"Increasing irrigation frequency",
+"Use of herbicides",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended management practice for Khaira disease in rice?",
+"serial": "1UgnIe-g:995",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:995"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ailanthus",
+"Simaruba",
+"Bombax",
+"Teak",
+"None of these"
+],
+"page": "",
+"q": "Matchwood is commonly derived from which tree?",
+"serial": "1sUgWsko:5511",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5511"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+".png",
+".jpeg",
+".gif",
+".tiff",
+"None of these"
+],
+"page": "",
+"q": "What is the file extension of the images shown?",
+"serial": "1sUgWsko:3615",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3615"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Rajasthan",
+"Karnataka",
+"Madhya Pradesh",
+"Uttarakhand",
+"None of these"
+],
+"page": "",
+"q": "Where is the Bandipur National Park located?",
+"serial": "1UgnIe-g:2775",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2775"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Terminal spikes",
+"Racemes",
+"Axillary panicles",
+"Umbels",
+"None of these"
+],
+"page": "",
+"q": "What type of inflorescence does papaya exhibit?",
+"serial": "1YcJWVgW:263",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:263"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"PS I",
+"PS II",
+"PS III",
+"PS IV",
+"None of these"
+],
+"page": "",
+"q": "Which photosystem has the active reaction centre P680?",
+"serial": "1UgnIe-g:1531",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1531"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Milk production",
+"Light agricultural work",
+"Heavy work",
+"Racing",
+"None of these"
+],
+"page": "",
+"q": "For what purpose are Deoni bullocks particularly well-suited?",
+"serial": "1sUgWsko:2947",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2947"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"High temperature and heavy rainfall with alternate wet and dry periods",
+"Cold and dry conditions",
+"Moderate temperature and low rainfall",
+"High humidity and constant rainfall",
+"None of these"
+],
+"page": "",
+"q": "What climatic conditions are ideal for the formation of Laterite Soils?",
+"serial": "1bxM1Q-4:1648",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1648"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Vitamin A deficiency in the cow",
+"Overfeeding of milk with high fat percentage",
+"Failure to receive colostrum",
+"Septicaemia",
+"None of these"
+],
+"page": "",
+"q": "What is the most important factor contributing to calf scours according to the source?",
+"serial": "1sUgWsko:2832",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2832"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pulse crops",
+"Oilseed crops",
+"Forage crops",
+"Fiber crops",
+"None of these"
+],
+"page": "",
+"q": "Which category of crops is primarily cultivated for the extraction of vegetable oil?",
+"serial": "1sUgWsko:4406",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4406"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nif gene",
+"Fix gene",
+"Nod gene",
+"Rhiz gene",
+"None of these"
+],
+"page": "",
+"q": "Which gene is responsible for nitrogen fixation?",
+"serial": "17U0MEc-:996",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:996"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Excellent water",
+"Moderately good water",
+"Slightly usable water",
+"Not suitable water",
+"None of these"
+],
+"page": "",
+"q": "Water with a chloride concentration of 15 (units) is classified as:",
+"serial": "1sUgWsko:7132",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7132"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"80%",
+"50%",
+"20%",
+"100%",
+"None of these"
+],
+"page": "",
+"q": "The marketed surplus of fruits and vegetables is approximately:",
+"serial": "1sUgWsko:4002",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4002"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Liquid concentrate",
+"Powder",
+"Tablet",
+"Gel",
+"None of these"
+],
+"page": "",
+"q": "What form is the preservative used in holding solutions?",
+"serial": "1sUgWsko:1482",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1482"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"MS medium",
+"B5 medium",
+"N6 medium",
+"White's medium",
+"None of these"
+],
+"page": "",
+"q": "Which medium is considered the most effective and popular for anther culture?",
+"serial": "1UgnIe-g:1351",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1351"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rice",
+"Wheat",
+"Sugarcane",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "Which crop originates from South East Asia?",
+"serial": "1sUgWsko:4212",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4212"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"950 kg",
+"600 kg",
+"800 kg",
+"700 kg",
+"None of these"
+],
+"page": "",
+"q": "What is the mature male weight of Red Dane cattle?",
+"serial": "1sUgWsko:3016",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3016"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Final watering before harvest",
+"First watering of the base period",
+"Watering during the rainy season",
+"Watering after irrigation",
+"None of these"
+],
+"page": "",
+"q": "In the context of irrigation, 'Kor watering' refers to:",
+"serial": "1bxM1Q-4:951",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:951"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5.5 to 6.5",
+"6.5 to 7.5",
+"7.5 to 8.5",
+"4.5 to 5.5",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal soil pH range for maize cultivation?",
+"serial": "1sUgWsko:151",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:151"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Faster assessment of viability",
+"Higher accuracy",
+"Lower cost",
+"No need for laboratory equipment",
+"None of these"
+],
+"page": "",
+"q": "Compared to the semination test, the tetrazolium test offers which advantage?",
+"serial": "1UgnIe-g:804",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:804"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"60 - 70 cm",
+"70 - 75 cm",
+"75 - 90 cm",
+"90 - 100 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended width for feed mangers in a barn?",
+"serial": "1bxM1Q-4:4238",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4238"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gales",
+"Squalls",
+"Breezes",
+"Storms",
+"None of these"
+],
+"page": "",
+"q": "What are winds of high speed called?",
+"serial": "1bxM1Q-4:1526",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1526"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10-12 kg/ha",
+"12-15 kg/ha",
+"15-20 kg/ha",
+"20-25 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate for cowpea during the rainy season?",
+"serial": "17U0MEc-:1637",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1637"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Charles Darwin",
+"F.W. Went",
+"Kogl & Smith",
+"Dr. Gustafson",
+"None of these"
+],
+"page": "",
+"q": "Who first isolated and named auxin?",
+"serial": "1UgnIe-g:1640",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1640"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Atratof",
+"Solaro",
+"Both Atratof and Solaro",
+"Lasso",
+"None of these"
+],
+"page": "",
+"q": "What is the trade name of the herbicide with the chemical name Atrazine?",
+"serial": "1bxM1Q-4:1234",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1234"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Suckers",
+"Rhizomes",
+"Seeds",
+"Bits",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a method of commercial propagation for bananas?",
+"serial": "1bxM1Q-4:3001",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3001"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Gene frequency",
+"Genome",
+"Gene pool",
+"Allele",
+"None of these"
+],
+"page": "",
+"q": "The sum total of all alleles present in the breeding members of a randomly mating population is known as:",
+"serial": "1sUgWsko:5960",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5960"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Capitalistic farming",
+"Dry farming",
+"Mixed farming",
+"Individual farming",
+"None of these"
+],
+"page": "",
+"q": "In which farming system is crop production combined with livestock or dairying?",
+"serial": "1sUgWsko:4489",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4489"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Fusarium moniliforme f. sp. vasinfectum",
+"Xanthomonas campestris pv. malvacearum",
+"Phytoplasma (MLO)",
+"Phomopsis vexans",
+"None of these"
+],
+"page": "",
+"q": "Fusarium wilt of cotton is caused by which organism?",
+"serial": "17U0MEc-:2267",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2267"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"epigeal",
+"hypogeal",
+"viviparous",
+"none",
+"None of these"
+],
+"page": "",
+"q": "Pigeon pea exhibits which type of germination?",
+"serial": "17U0MEc-:671",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:671"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"India",
+"Brazil",
+"Vietnam",
+"Indonesia",
+"None of these"
+],
+"page": "",
+"q": "Which country is the leading producer of black pepper?",
+"serial": "1YcJWVgW:869",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:869"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mulberry leaves",
+"Direct feeding on silkworms",
+"Silkworm faeces",
+"Plankton in the pond",
+"None of these"
+],
+"page": "",
+"q": "In the Seri\u2011Fish system, fish obtain their nutrition primarily from:",
+"serial": "1sUgWsko:2366",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2366"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Super phosphate",
+"Ammonium sulphate",
+"MOP",
+"Urea",
+"None of these"
+],
+"page": "",
+"q": "Which fertilizer should NOT be used in the last puddle of soil preparation?",
+"serial": "1bxM1Q-4:1837",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1837"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Davenport",
+"Bruce",
+"Keeble",
+"Pellew",
+"None of these"
+],
+"page": "",
+"q": "Who first proposed the Dominance Hypothesis?",
+"serial": "1UgnIe-g:220",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:220"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Robert Brown",
+"G.J. Mendel",
+"C. Darwin",
+"A.R. Wallace",
+"None of these"
+],
+"page": "",
+"q": "Who discovered the Nucleus?",
+"serial": "1bxM1Q-4:1887",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1887"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"J.V. Leibig",
+"S.N. Winogradsky",
+"J.B. Boussingault",
+"Jethro Tull",
+"None of these"
+],
+"page": "",
+"q": "Who is credited with pioneering soil microbiology?",
+"serial": "1sUgWsko:4216",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4216"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Constituent of enzyme systems regulating metabolic reactions",
+"Involved in chlorophyll synthesis and photosynthesis",
+"Directly fixes atmospheric nitrogen in leguminous plants",
+"Influences the formation of growth hormones like IAA and Auxin",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a primary role of zinc in plants?",
+"serial": "1sUgWsko:7372",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7372"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Wind energy",
+"Biomass energy",
+"Solar energy",
+"Tidal energy",
+"None of these"
+],
+"page": "",
+"q": "Which renewable energy source is used for solar dryers, lanterns, and cookers?",
+"serial": "1sUgWsko:6001",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6001"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"1\u20131.5 t/ha/crop",
+"1.5\u20132 t/ha/crop",
+"2\u20132.5 t/ha/crop",
+"2.5\u20133 t/ha/crop",
+"None of these"
+],
+"page": "",
+"q": "Which production range is associated with shrimp farming outside the Coastal Regulation Zone?",
+"serial": "1sUgWsko:2576",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2576"
+}
+],
+"set_no": 32,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
