@@ -154178,9 +154178,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 541,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 541,
+"built_at": "2026-10-14T10:58:15+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 157-162",
+"pages_blocks": [
+"157-158",
+"159-160",
+"161-162"
+],
+"questions": [
+{
+"expl": "GIR = Net / Efficiency = 5 / 0.70 \u2248 7.14 cm.",
+"key": 0,
+"o": [
+"7.14 cm",
+"5 cm",
+"3.5 cm",
+"10 cm",
+"None of these"
+],
+"page": "157-158",
+"q": "If the net irrigation requirement is 5 cm and the irrigation efficiency is 70 %, what is the gross irrigation requirement (GIR)?",
+"serial": "801",
+"src_row": 522,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "157-158:801"
+},
+{
+"expl": "Irrigation interval is defined as the days between two successive irrigations.",
+"key": 0,
+"o": [
+"The number of days between two successive irrigations",
+"The number of days to complete one full irrigation cycle",
+"The number of days between the first and last irrigation of a season",
+"The number of days between irrigation and harvest",
+"None of these"
+],
+"page": "157-158",
+"q": "What does the term \"irrigation interval\" refer to?",
+"serial": "802",
+"src_row": 523,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "157-158:802"
+},
+{
+"expl": "Duty is the area that can be irrigated per unit of water, measured in hectares per cumec.",
+"key": 0,
+"o": [
+"Duty",
+"Delta",
+"Base period",
+"Irrigation interval",
+"None of these"
+],
+"page": "157-158",
+"q": "Which irrigation parameter is expressed in hectares per cumec?",
+"serial": "803",
+"src_row": 524,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "157-158:803"
+},
+{
+"expl": "For wheat (and maize) the optimal DASM during sensitive stages is 25 %.",
+"key": 2,
+"o": [
+"20\u201125 %",
+"50 %",
+"25 %",
+"75 %",
+"None of these"
+],
+"page": "157-158",
+"q": "During moisture\u2011sensitive stages, at what percentage of Depletion of Available Soil Moisture (DASM) should wheat be irrigated?",
+"serial": "804",
+"src_row": 525,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "157-158:804"
+},
+{
+"expl": "IW = ratio \u00d7 CPE = 0.6 \u00d7 10 cm = 6 cm.",
+"key": 0,
+"o": [
+"6 cm",
+"5 cm",
+"10 cm",
+"4 cm",
+"None of these"
+],
+"page": "157-158",
+"q": "If cumulative pan evaporation (CPE) is 10 cm, what irrigation depth corresponds to an IW/CPE ratio of 0.6?",
+"serial": "805",
+"src_row": 526,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "157-158:805"
+},
+{
+"expl": "Rice has the highest ratio of 1.2, higher than all other listed crops.",
+"key": 0,
+"o": [
+"Rice",
+"Cotton",
+"Sugarcane",
+"Sorghum",
+"None of these"
+],
+"page": "157-158",
+"q": "Which crop has the highest optimum IW/CPE ratio according to the table?",
+"serial": "806",
+"src_row": 527,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "157-158:806"
+},
+{
+"expl": "Safflower has the lowest value (0.4) among the listed crops.",
+"key": 3,
+"o": [
+"Pearl millet",
+"Rapeseed/ Mustard",
+"Potato",
+"Safflower",
+"None of these"
+],
+"page": "159-160",
+"q": "Which crop has the lowest value in the table of crops and numerical values?",
+"serial": "811",
+"src_row": 528,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "159-160:811"
+},
+{
+"expl": "1 ha\u2011mm is a 1 mm layer over 1 ha, which is 10,000 litres.",
+"key": 0,
+"o": [
+"10,000 litres",
+"100,000 litres",
+"1,000,000 litres",
+"10,000,000 litres",
+"None of these"
+],
+"page": "159-160",
+"q": "1 ha\u2011mm of water equals how many litres?",
+"serial": "812",
+"src_row": 529,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "159-160:812"
+},
+{
+"expl": "The adjustment factor used is 0.85 to convert surface velocity to average velocity.",
+"key": 1,
+"o": [
+"0.75",
+"0.85",
+"1.0",
+"1.15",
+"None of these"
+],
+"page": "159-160",
+"q": "In the float method, surface velocity is adjusted by multiplying with which factor to obtain average stream velocity?",
+"serial": "813",
+"src_row": 530,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "159-160:813"
+},
+{
+"expl": "Groundnut\u2019s critical stages are flowering, pegging, and early pod development.",
+"key": 0,
+"o": [
+"Flowering",
+"Seedling",
+"Tasselling",
+"Blooming",
+"None of these"
+],
+"page": "159-160",
+"q": "During which growth stage is irrigation most critical for groundnut?",
+"serial": "814",
+"src_row": 531,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "159-160:814"
+},
+{
+"expl": "The volumetric method is simple and accurate for small discharges.",
+"key": 0,
+"o": [
+"Volumetric method",
+"Velocity\u2011area methods",
+"Direct discharge method",
+"All of the above",
+"None of these"
+],
+"page": "159-160",
+"q": "Which method is best suited for measuring small discharges through channels or pipes?",
+"serial": "815",
+"src_row": 532,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "159-160:815"
+},
+{
+"expl": "Discharge = volume \u00f7 time = 200 L \u00f7 20 s = 10 lps.",
+"key": 1,
+"o": [
+"5 lps",
+"10 lps",
+"20 lps",
+"40 lps",
+"None of these"
+],
+"page": "159-160",
+"q": "A 200\u2011litre barrel filled in 20 seconds yields a discharge of?",
+"serial": "816",
+"src_row": 533,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "159-160:816"
+},
+{
+"expl": "Rectangular weirs are designed to handle high flow rates and are specified for measuring large discharges.",
+"key": 0,
+"o": [
+"Rectangular weir",
+"Trapezoidal weir",
+"90\u00b0 V\u2011notch weir",
+"Orifice",
+"None of these"
+],
+"page": "161-162",
+"q": "Which weir type is primarily used for measuring high discharge in irrigation channels?",
+"serial": "821",
+"src_row": 534,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:821"
+},
+{
+"expl": "A 90\u00b0 V\u2011notch weir has equal horizontal and vertical sides, giving a 1:1 slope.",
+"key": 0,
+"o": [
+"1 horizontal : 1 vertical",
+"1 horizontal : 4 vertical",
+"1 horizontal : 2 vertical",
+"2 horizontal : 1 vertical",
+"None of these"
+],
+"page": "161-162",
+"q": "What is the side slope ratio of a 90\u00b0 V\u2011notch weir?",
+"serial": "822",
+"src_row": 535,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:822"
+},
+{
+"expl": "The standard formula for a rectangular weir is Q = 0.0184 L H^(3/2).",
+"key": 0,
+"o": [
+"Q = 0.0184 L H^(3/2)",
+"Q = 0.0186 L H^(3/2)",
+"Q = 0.0138 H^(5/2)",
+"Q = 0.62 \u00d7 10^3 a \u221a(2gH)",
+"None of these"
+],
+"page": "161-162",
+"q": "What is the discharge equation for a rectangular weir?",
+"serial": "823",
+"src_row": 536,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:823"
+},
+{
+"expl": "Finger millet shows the highest WUE value (13.4 kg ha\u207b\u00b9 cm\u207b\u00b9) in the provided table.",
+"key": 0,
+"o": [
+"Finger millet",
+"Wheat",
+"Rice",
+"Groundnut",
+"None of these"
+],
+"page": "161-162",
+"q": "Which crop has the highest water use efficiency (WUE) among those listed?",
+"serial": "824",
+"src_row": 537,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:824"
+},
+{
+"expl": "A Parshall flume is composed of a converging section, a throat, and a diverging section \u2013 three parts.",
+"key": 0,
+"o": [
+"3",
+"2",
+"4",
+"5",
+"None of these"
+],
+"page": "161-162",
+"q": "How many sections does a Parshall flume consist of?",
+"serial": "825",
+"src_row": 538,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:825"
+},
+{
+"expl": "Indian irrigation projects generally achieve only 30\u201340 % efficiency.",
+"key": 0,
+"o": [
+"30\u201340 %",
+"50\u201360 %",
+"70\u201380 %",
+"90\u2013100 %",
+"None of these"
+],
+"page": "161-162",
+"q": "What is the typical irrigation efficiency of Indian irrigation projects?",
+"serial": "826",
+"src_row": 539,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:826"
+},
+{
+"expl": "The weir depth must be at least 5 cm to ensure reliable discharge calculations.",
+"key": 0,
+"o": [
+"5 cm",
+"10 cm",
+"15 cm",
+"20 cm",
+"None of these"
+],
+"page": "161-162",
+"q": "For accurate weir measurement, the depth of water over the crest should be at least how many centimeters?",
+"serial": "827",
+"src_row": 540,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "161-162:827"
+}
+],
+"rolled": false,
+"row_from": 522,
+"row_to": 541,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 522,
+"seeded_from": "2026-10-13",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-13",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
