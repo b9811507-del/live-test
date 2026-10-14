@@ -154172,8 +154172,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 630,
 "names": {},
+"plan": {
+"bidx_next": 630,
+"built_at": "2026-10-14T14:28:24+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 88-90",
+"pages_list": [
+88,
+89,
+90
+],
+"questions": [
+{
+"expl": "The method specifies a ring\u2011shaped bark of 2.5\u20113.0 cm length is removed from the scion.",
+"key": 1,
+"o": [
+"1.0\u20111.5 cm",
+"2.5\u20113.0 cm",
+"3.5\u20114.0 cm",
+"4.5\u20115.0 cm",
+"None of these"
+],
+"page": "88",
+"q": "What is the length range of the bark ring taken from the scion in the ring budding method?",
+"serial": "610",
+"src_row": 609,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:610"
+},
+{
+"expl": "The technique calls for an incision on the terminal end of the rootstock, matching the size of the bud ring.",
+"key": 1,
+"o": [
+"Mid\u2011section of the stem",
+"Terminal end of the rootstock",
+"Base of the rootstock",
+"A lateral branch",
+"None of these"
+],
+"page": "88",
+"q": "In ring budding, the incision on the rootstock is made at which part of the plant?",
+"serial": "611",
+"src_row": 610,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:611"
+},
+{
+"expl": "The description explicitly states that no rapping is required in this method.",
+"key": 0,
+"o": [
+"Rapping",
+"Making an incision on the rootstock",
+"Removing a bark ring from the scion",
+"Inserting the bud ring into the rootstock",
+"None of these"
+],
+"page": "88",
+"q": "Which step is NOT required when performing ring budding?",
+"serial": "612",
+"src_row": 611,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:612"
+},
+{
+"expl": "The method involves taking a ring\u2011shaped bark that encloses a bud from the scion shoot.",
+"key": 1,
+"o": [
+"A leaf",
+"A bud",
+"A flower",
+"A root",
+"None of these"
+],
+"page": "88",
+"q": "The bark ring removed from the scion in ring budding contains which of the following?",
+"serial": "613",
+"src_row": 612,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:613"
+},
+{
+"expl": "The incision is made on the terminal end of the rootstock, a distinctive feature of ring budding.",
+"key": 2,
+"o": [
+"Middle section",
+"Root tip",
+"Terminal end",
+"Lower half",
+"None of these"
+],
+"page": "88",
+"q": "Ring budding differs from many other budding techniques because it is performed on the __________ of the rootstock.",
+"serial": "614",
+"src_row": 613,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:614"
+},
+{
+"expl": "Ring budding involves taking a ring\u2011shaped bark segment with a bud and inserting it into a matching incision.",
+"key": 1,
+"o": [
+"Removing a circular leaf",
+"Inserting a circular bark piece that contains a bud",
+"Grafting an entire scion branch",
+"Planting seeds in a ring pattern",
+"None of these"
+],
+"page": "88",
+"q": "The term \"ring budding\" primarily refers to which of the following actions?",
+"serial": "615",
+"src_row": 614,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:615"
+},
+{
+"expl": "The description notes that the incision should be similar in size to the bud ring taken from the scion.",
+"key": 2,
+"o": [
+"Longer than",
+"Wider than",
+"Similar to",
+"Deeper than",
+"None of these"
+],
+"page": "88",
+"q": "The incision made on the rootstock must be __________ in size to the bud taken from the scion.",
+"serial": "616",
+"src_row": 615,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "88:616"
+},
+{
+"expl": "The source states that a rectangular bud 2\u20133 cm long and 0.5\u20131.0 cm wide is taken from the scion shoot.",
+"key": 1,
+"o": [
+"1\u20132 cm long and 0.5\u20131.0 cm wide",
+"2\u20133 cm long and 0.5\u20131.0 cm wide",
+"3\u20134 cm long and 1\u20131.5 cm wide",
+"0.5\u20131.0 cm long and 2\u20133 cm wide",
+"None of these"
+],
+"page": "89",
+"q": "What is the typical size of the bud used in the Forkert budding method?",
+"serial": "617",
+"src_row": 616,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:617"
+},
+{
+"expl": "The description explicitly mentions that the vertical flap of bark is left intact with the lower portion of the rootstock.",
+"key": 1,
+"o": [
+"Horizontal flap",
+"Vertical flap of bark",
+"Entire bark layer",
+"No bark is left intact",
+"None of these"
+],
+"page": "89",
+"q": "During the Forkert method, which part of the bark is left intact when making the incision?",
+"serial": "618",
+"src_row": 617,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:618"
+},
+{
+"expl": "The text says the vertical flap of bark is left intact with the lower portion of the rootstock.",
+"key": 2,
+"o": [
+"Upper portion",
+"Middle portion",
+"Lower portion",
+"Entire rootstock",
+"None of these"
+],
+"page": "89",
+"q": "Which portion of the rootstock remains attached to the vertical bark flap in Forkert budding?",
+"serial": "619",
+"src_row": 618,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:619"
+},
+{
+"expl": "The Forkert method is described as using a rectangular bud 2\u20133 cm long.",
+"key": 2,
+"o": [
+"Patch budding",
+"Grafting",
+"Forkert budding",
+"Budding",
+"None of these"
+],
+"page": "89",
+"q": "Which budding technique involves taking a rectangular bud of 2\u20133 cm length?",
+"serial": "620",
+"src_row": 619,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:620"
+},
+{
+"expl": "The source states that an incision of the same size is also made on the rootstock.",
+"key": 2,
+"o": [
+"Larger than the bud",
+"Smaller than the bud",
+"Same size as the bud",
+"No incision is made",
+"None of these"
+],
+"page": "89",
+"q": "In the Forkert method, the incision made on the rootstock is:",
+"serial": "621",
+"src_row": 620,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:621"
+},
+{
+"expl": "The vertical flap of bark is part of the rootstock, as it is left intact with the lower portion of the rootstock.",
+"key": 1,
+"o": [
+"Scion",
+"Rootstock",
+"Both scion and rootstock",
+"Neither",
+"None of these"
+],
+"page": "89",
+"q": "The vertical bark flap left intact during Forkert budding belongs to which part?",
+"serial": "622",
+"src_row": 621,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:622"
+},
+{
+"expl": "The description does not mention removal of the rootstock; instead it retains the lower portion with the bark flap.",
+"key": 3,
+"o": [
+"Rectangular bud 2\u20133 cm long",
+"Incision of same size on rootstock",
+"Vertical flap of bark left intact",
+"The rootstock is removed entirely",
+"None of these"
+],
+"page": "89",
+"q": "Which of the following is NOT a feature of Forkert budding?",
+"serial": "623",
+"src_row": 622,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "89:623"
+},
+{
+"expl": "The source explicitly states that budding (where the bud is covered with bark and tied with polythene tape) is used to protect the bud from drying out in dry climates, with examples like mango and jackfruit.",
+"key": 0,
+"o": [
+"Budding",
+"Venner grafting",
+"Whip grafting",
+"Bridge grafting",
+"None of these"
+],
+"page": "90",
+"q": "Which grafting method is specifically used to protect the bud from drying out in dry climates?",
+"serial": "624",
+"src_row": 623,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:624"
+},
+{
+"expl": "Inarching is an attached method of grafting, not a type of detached scion grafting. The ICAR classification lists detached scion grafting under apical and side grafting, excluding inarching.",
+"key": 1,
+"o": [
+"Cleft grafting",
+"Inarching",
+"Wedge grafting",
+"Saddle grafting",
+"None of these"
+],
+"page": "90",
+"q": "Which of the following is NOT a type of detached scion grafting as per ICAR classification?",
+"serial": "625",
+"src_row": 624,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:625"
+},
+{
+"expl": "The source defines top working as a technique to upgrade seedling plantations of inferior varieties with superior commercial cultivars or hybrids.",
+"key": 1,
+"o": [
+"To propagate new plants from seeds",
+"To rejuvenate inferior seedling plantations with superior cultivars",
+"To repair damaged rootstocks",
+"To increase the height of the plant",
+"None of these"
+],
+"page": "90",
+"q": "What is the primary objective of 'Top working' in grafting?",
+"serial": "626",
+"src_row": 625,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:626"
+},
+{
+"expl": "Bridge grafting is explicitly mentioned in the source as the method practiced when the scion is healthy but the rootstock near the collar region is damaged.",
+"key": 1,
+"o": [
+"Epicotyl grafting",
+"Bridge grafting",
+"Soft wood grafting",
+"Double working",
+"None of these"
+],
+"page": "90",
+"q": "Which grafting method is practiced when the scion is healthy but the rootstock near the collar region is damaged?",
+"serial": "627",
+"src_row": 626,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:627"
+},
+{
+"expl": "The source states that in Soft wood grafting, the rootstock shoot should be 1 year old and the scion should be 2-3 months old, with pencil thickness.",
+"key": 0,
+"o": [
+"1 year old rootstock, 2-3 months old scion",
+"2 years old rootstock, 1 year old scion",
+"6 months old rootstock, 1 month old scion",
+"3 years old rootstock, 6 months old scion",
+"None of these"
+],
+"page": "90",
+"q": "In Soft wood grafting, what is the recommended age of the rootstock shoot and scion respectively?",
+"serial": "628",
+"src_row": 627,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:628"
+},
+{
+"expl": "The source explicitly mentions that 'Beurre Hardy' is the most widely used interstock in double working, particularly for Pear.",
+"key": 1,
+"o": [
+"Mango",
+"Beurre Hardy",
+"Apple",
+"Sapota",
+"None of these"
+],
+"page": "90",
+"q": "Which interstock is most widely used in 'Double working' grafting for Pear?",
+"serial": "629",
+"src_row": 628,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:629"
+},
+{
+"expl": "The source states that Tongue grafting is a modified form of whip grafting, with examples including Apple, Pear, and Walnut.",
+"key": 1,
+"o": [
+"Venner grafting",
+"Tongue grafting",
+"Cleft grafting",
+"Wedge grafting",
+"None of these"
+],
+"page": "90",
+"q": "Which of the following grafting methods is a modified form of whip grafting?",
+"serial": "630",
+"src_row": 629,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "90:630"
+}
+],
+"row_from": 609,
+"row_to": 630,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 609,
+"seeded_from": "2026-10-13"
+},
 "qidx": 0,
+"seeded_from": "2026-10-13",
+"skips": [],
 "step": 0
 },
 "malwa": {
