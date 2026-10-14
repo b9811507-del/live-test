@@ -154617,6 +154617,8 @@
 "cd": 1,
 "congrats_sent": 32642,
 "cta_sent": "off",
+"done_at": "2026-10-14T14:43:01+05:30",
+"elapsed_s": 873,
 "expl_in_poll": 21,
 "file_msg": 32643,
 "file_sent": "IARI_p88-90_21Q_2026-10-14.html",
@@ -154626,8 +154628,18 @@
 "lb_rows": 36,
 "lb_sent": true,
 "lock_ts": 1791969133.9050581,
-"locked_by": "38538884610",
+"locked_by": "",
 "msg_ann": 32617,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 32619,
 "names": {
 "1027390571": "Sns",
@@ -154667,6 +154679,8 @@
 "8739536104": "Reacher",
 "949138970": "Lezsp1"
 },
+"paid_msg": 32645,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 630,
@@ -155101,7 +155115,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-14T14:30:24+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 32644,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 163-168\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 91, 92, 94"
 },
