@@ -159909,9 +159909,438 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 563,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 563,
+"built_at": "2026-10-15T10:57:18+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 22,
+"pages": "Book pages 163-168",
+"pages_blocks": [
+"163-164",
+"165-166",
+"167-168"
+],
+"questions": [
+{
+"expl": "Water Application Efficiency is defined as the ratio of water stored in the root zone to the water delivered to the plot.",
+"key": 1,
+"o": [
+"Water Conveyance Efficiency",
+"Water Application Efficiency",
+"Water Storage Efficiency",
+"Water Distribution Efficiency",
+"None of these"
+],
+"page": "163-164",
+"q": "Which efficiency type is defined as the ratio of water stored in the root zone to the water delivered to the plot?",
+"serial": "831",
+"src_row": 541,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:831"
+},
+{
+"expl": "The drainage coefficient for open ditches generally ranges from 0.6 to 2.5 cm/day.",
+"key": 1,
+"o": [
+"0.1 to 0.5 cm/day",
+"0.6 to 2.5 cm/day",
+"3 to 5 cm/day",
+"5 to 10 cm/day",
+"None of these"
+],
+"page": "163-164",
+"q": "What is the typical range of the drainage coefficient for open ditches?",
+"serial": "832",
+"src_row": 542,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:832"
+},
+{
+"expl": "Potentially water logged soils have a water table depth of 2 to 3 meters.",
+"key": 1,
+"o": [
+"< 2 m",
+"2 - 3 m",
+"> 3 m",
+"> 5 m",
+"None of these"
+],
+"page": "163-164",
+"q": "Which depth of water table corresponds to a \"Potentially water logged\" condition?",
+"serial": "833",
+"src_row": 543,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:833"
+},
+{
+"expl": "Water\u2019s highest density of 1.0 g/cm\u00b3 occurs at 4\u00b0C.",
+"key": 1,
+"o": [
+"0\u00b0C",
+"4\u00b0C",
+"25\u00b0C",
+"100\u00b0C",
+"None of these"
+],
+"page": "163-164",
+"q": "At what temperature does water attain its highest density?",
+"serial": "834",
+"src_row": 544,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:834"
+},
+{
+"expl": "Punjab has the highest percentage of its area under irrigation at 98%.",
+"key": 1,
+"o": [
+"Uttar Pradesh",
+"Punjab",
+"Haryana",
+"Andhra Pradesh",
+"None of these"
+],
+"page": "163-164",
+"q": "Which Indian state has the highest percentage of its area under irrigation?",
+"serial": "835",
+"src_row": 545,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:835"
+},
+{
+"expl": "Tobacco is listed as a crop sensitive to waterlogging or low soil aeration.",
+"key": 2,
+"o": [
+"Wheat",
+"Sugarcane",
+"Tobacco",
+"Maize",
+"None of these"
+],
+"page": "163-164",
+"q": "Which crop is most sensitive to waterlogging or low soil aeration?",
+"serial": "836",
+"src_row": 546,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:836"
+},
+{
+"expl": "Warabandi is the traditional rotational water supply method for canal irrigation.",
+"key": 0,
+"o": [
+"Warabandi",
+"Herringbone",
+"Gridiron",
+"Tile drains",
+"None of these"
+],
+"page": "163-164",
+"q": "What is the traditional method of rotational water supply in canal\u2011irrigated areas?",
+"serial": "837",
+"src_row": 547,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "163-164:837"
+},
+{
+"expl": "Waterlogged plants lose turgor pressure, causing the characteristic flopping of stems.",
+"key": 0,
+"o": [
+"Flopping",
+"Wilting",
+"Root rot",
+"Sinking",
+"None of these"
+],
+"page": "165-166",
+"q": "The wilting of plants due to waterlogged conditions is called:",
+"serial": "841",
+"src_row": 548,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:841"
+},
+{
+"expl": "Nitrogenous fertilizers improve plant vigor and help mitigate waterlogging stress.",
+"key": 0,
+"o": [
+"Nitrogenous fertilizers",
+"Phosphatic fertilizers",
+"Potassium fertilizers",
+"Organic manure",
+"None of these"
+],
+"page": "165-166",
+"q": "The adverse effects of waterlogging can be reduced by applying:",
+"serial": "842",
+"src_row": 549,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:842"
+},
+{
+"expl": "Roots produce alcohol dehydrogenase to facilitate anaerobic respiration during waterlogging.",
+"key": 0,
+"o": [
+"Alcohol dehydrogenase",
+"Catalase",
+"Peroxidase",
+"Amylase",
+"None of these"
+],
+"page": "165-166",
+"q": "Enzyme activity that increases in the roots of plants under waterlogged conditions:",
+"serial": "843",
+"src_row": 550,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:843"
+},
+{
+"expl": "Barley tolerates higher salinity levels than cotton and sugar beet.",
+"key": 0,
+"o": [
+"Barley",
+"Cotton",
+"Sugar beet",
+"Maize",
+"None of these"
+],
+"page": "165-166",
+"q": "Which crop is most salt\u2011tolerant among the following?",
+"serial": "844",
+"src_row": 551,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:844"
+},
+{
+"expl": "Dryland agriculture relies solely on rainfall, without irrigation.",
+"key": 0,
+"o": [
+"Dryland agriculture",
+"Growing crops with minimal irrigation",
+"Growing crops in arid regions only",
+"Growing crops with artificial drainage",
+"None of these"
+],
+"page": "165-166",
+"q": "Growing crops entirely under rainfed conditions is known as:",
+"serial": "845",
+"src_row": 552,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:845"
+},
+{
+"expl": "V.A. Tamhane began research at Manjari in 1923.",
+"key": 0,
+"o": [
+"1923",
+"1944",
+"1970",
+"1976",
+"None of these"
+],
+"page": "165-166",
+"q": "The first systematic research on dryland farming in India was started in:",
+"serial": "846",
+"src_row": 553,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:846"
+},
+{
+"expl": "The name change occurred on 1 April 2004.",
+"key": 0,
+"o": [
+"2004",
+"2000",
+"1995",
+"2010",
+"None of these"
+],
+"page": "165-166",
+"q": "The CADP programme was renamed to CADM on:",
+"serial": "847",
+"src_row": 554,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:847"
+},
+{
+"expl": "CAZRI was founded in 1959 at Jodhpur.",
+"key": 0,
+"o": [
+"1959",
+"1965",
+"1972",
+"1980",
+"None of these"
+],
+"page": "165-166",
+"q": "The Central Arid Zone Research Institute (CAZRI) was established in:",
+"serial": "848",
+"src_row": 555,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "165-166:848"
+},
+{
+"expl": "Drought escape relies on rapid development and early maturity, so early maturing crops are the hallmark.",
+"key": 0,
+"o": [
+"Early maturing crops",
+"Deep root system",
+"High stomatal resistance",
+"Osmotic adjustment",
+"None of these"
+],
+"page": "167-168",
+"q": "Which of the following is a characteristic of the drought escape strategy?",
+"serial": "851",
+"src_row": 556,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:851"
+},
+{
+"expl": "Drought avoidance includes improving water uptake by developing efficient roots and a higher root:shoot ratio.",
+"key": 1,
+"o": [
+"Drought escape",
+"Drought avoidance",
+"Drought tolerance",
+"Osmotic adjustment",
+"None of these"
+],
+"page": "167-168",
+"q": "Which plant adaptation involves increasing the root:shoot ratio to greater than one?",
+"serial": "852",
+"src_row": 557,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:852"
+},
+{
+"expl": "Soybean (and Sorghum) deposit lipids on leaves, a trait mentioned for reducing transpiration.",
+"key": 0,
+"o": [
+"Soybean",
+"Groundnut",
+"Cowpea",
+"Mung bean",
+"None of these"
+],
+"page": "167-168",
+"q": "Which crop is known to deposit lipids on its leaves to reduce water loss?",
+"serial": "853",
+"src_row": 558,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:853"
+},
+{
+"expl": "IMD classifies a severe drought year when coverage exceeds 40 % of the country.",
+"key": 2,
+"o": [
+"10\u201320 %",
+"20\u201340 %",
+">40 %",
+"<20 %",
+"None of these"
+],
+"page": "167-168",
+"q": "According to the IMD, what rainfall coverage defines an All India Severe Drought Year?",
+"serial": "854",
+"src_row": 559,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:854"
+},
+{
+"expl": "The text states seepage loss is the primary issue for farm ponds.",
+"key": 1,
+"o": [
+"Sedimentation",
+"Seepage loss",
+"Erosion",
+"Waterlogging",
+"None of these"
+],
+"page": "167-168",
+"q": "What is the main problem associated with farm ponds?",
+"serial": "855",
+"src_row": 560,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:855"
+},
+{
+"expl": "The source specifies a 12 % contribution of awns to grain photosynthesis.",
+"key": 1,
+"o": [
+"5 %",
+"12 %",
+"20 %",
+"30 %",
+"None of these"
+],
+"page": "167-168",
+"q": "The contribution of awns in wheat, barley, and triticale to grain photosynthesis is approximately?",
+"serial": "856",
+"src_row": 561,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:856"
+},
+{
+"expl": "Osmotic adjustment involves breaking down carbohydrates and proteins to raise solute concentration and lower osmotic potential.",
+"key": 1,
+"o": [
+"Increase in stomatal resistance",
+"Breakdown of carbohydrates increasing solutes",
+"Deep root growth",
+"Leaf folding",
+"None of these"
+],
+"page": "167-168",
+"q": "Which process best describes osmotic adjustment in plants?",
+"serial": "857",
+"src_row": 562,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "167-168:857"
+}
+],
+"rolled": false,
+"row_from": 541,
+"row_to": 563,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 541,
+"seeded_from": "2026-10-14",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-14",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
