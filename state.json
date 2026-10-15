@@ -159903,8 +159903,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 651,
 "names": {},
+"plan": {
+"bidx_next": 651,
+"built_at": "2026-10-15T14:27:44+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 91-94",
+"pages_list": [
+91,
+92,
+94
+],
+"questions": [
+{
+"expl": "Epicotyl grafting specifically uses germinated mango seedlings of 7 to 10 days with coppery-colored leaves as the rootstock.",
+"key": 1,
+"o": [
+"Side-veneer grafting",
+"Epicotyl grafting",
+"Bark grafting",
+"Approach grafting",
+"None of these"
+],
+"page": "91",
+"q": "Which grafting method involves using a 7 to 10-day-old mango seedling with coppery-colored leaves for the scion?",
+"serial": "631",
+"src_row": 630,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:631"
+},
+{
+"expl": "The seedling is deheaded at a height of 10 cm from the ground level in epicotyl grafting.",
+"key": 2,
+"o": [
+"5 cm",
+"7 cm",
+"10 cm",
+"15 cm",
+"None of these"
+],
+"page": "91",
+"q": "In epicotyl grafting of mango, at what height from the ground is the seedling deheaded?",
+"serial": "632",
+"src_row": 631,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:632"
+},
+{
+"expl": "Whole-root grafting is a type of root grafting, not approach grafting. Approach grafting includes spliced, tongued, and inlay methods.",
+"key": 2,
+"o": [
+"Spliced approach grafting",
+"Tongued approach grafting",
+"Whole-root grafting",
+"Inlay approach grafting",
+"None of these"
+],
+"page": "91",
+"q": "Which of the following is NOT a type of approach grafting?",
+"serial": "633",
+"src_row": 632,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:633"
+},
+{
+"expl": "Bracing is used to strengthen scaffolding limbs of a tree to support the load of the fruit crop.",
+"key": 1,
+"o": [
+"To increase fruit size",
+"To strengthen scaffolding limbs to support fruit load",
+"To prevent disease spread",
+"To improve root development",
+"None of these"
+],
+"page": "91",
+"q": "What is the primary purpose of bracing in fruit trees?",
+"serial": "634",
+"src_row": 633,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:634"
+},
+{
+"expl": "Epicotyl grafting is practiced during June-July when the environment remains sufficiently moist.",
+"key": 2,
+"o": [
+"Bark grafting",
+"Side-tongue grafting",
+"Epicotyl grafting",
+"Bridge grafting",
+"None of these"
+],
+"page": "91",
+"q": "Which grafting method is practiced during June-July when the environment is sufficiently moist?",
+"serial": "635",
+"src_row": 634,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:635"
+},
+{
+"expl": "A rope or electrical cord is used to temporarily brace the larger limbs in bracing.",
+"key": 1,
+"o": [
+"Plastic ties",
+"Rope or electrical cord",
+"Metal wires",
+"Wooden stakes",
+"None of these"
+],
+"page": "91",
+"q": "In bracing, what is used to temporarily brace larger limbs?",
+"serial": "636",
+"src_row": 635,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:636"
+},
+{
+"expl": "Inarching is listed as a method of repair grafting, along with bridge grafting and bracing.",
+"key": 0,
+"o": [
+"Inarching",
+"Spliced approach grafting",
+"Whole-root grafting",
+"Side-veneer grafting",
+"None of these"
+],
+"page": "91",
+"q": "Which of the following is a method of repair grafting?",
+"serial": "637",
+"src_row": 636,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "91:637"
+},
+{
+"expl": "Whip and tongue grafting is a common method for fruit trees like mango and citrus, where a scion is joined to a rootstock with precise cuts for better union.",
+"key": 1,
+"o": [
+"Budding",
+"Whip and tongue grafting",
+"Cleft grafting",
+"Layering",
+"None of these"
+],
+"page": "92",
+"q": "Which grafting technique is primarily used to propagate fruit trees like mango and citrus by joining a scion to a rootstock?",
+"serial": "638",
+"src_row": 637,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:638"
+},
+{
+"expl": "The stock (or rootstock) is the lower part of the graft that provides the root system, while the scion is the upper part.",
+"key": 1,
+"o": [
+"Scion",
+"Stock",
+"Bud",
+"Graft",
+"None of these"
+],
+"page": "92",
+"q": "In grafting, the part of the plant that provides the root system is called:",
+"serial": "639",
+"src_row": 638,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:639"
+},
+{
+"expl": "Air layering is a propagation method but not a type of grafting; it involves rooting a stem while still attached to the parent plant.",
+"key": 2,
+"o": [
+"T-budding",
+"Approach grafting",
+"Air layering",
+"Cleft grafting",
+"None of these"
+],
+"page": "92",
+"q": "Which of the following is NOT a type of grafting technique?",
+"serial": "640",
+"src_row": 639,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:640"
+},
+{
+"expl": "Grafting is used to combine the desirable traits of a scion (e.g., fruit quality) with a rootstock (e.g., disease resistance or hardiness).",
+"key": 1,
+"o": [
+"Increase seed production",
+"Combine desirable traits of two plants",
+"Prevent disease spread",
+"Reduce water usage",
+"None of these"
+],
+"page": "92",
+"q": "The primary purpose of grafting in horticulture is to:",
+"serial": "641",
+"src_row": 640,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:641"
+},
+{
+"expl": "Cleft grafting involves splitting the rootstock vertically and inserting a scion with a wedge-shaped cut into the cleft.",
+"key": 2,
+"o": [
+"Budding",
+"Whip grafting",
+"Cleft grafting",
+"Splice grafting",
+"None of these"
+],
+"page": "92",
+"q": "Which grafting method involves making a vertical cut in the rootstock and inserting a scion with a matching cut?",
+"serial": "642",
+"src_row": 641,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:642"
+},
+{
+"expl": "Compatibility between the scion and stock is essential for a successful graft union, as it ensures proper vascular connection and growth.",
+"key": 1,
+"o": [
+"Matching leaf color",
+"Compatibility between scion and stock",
+"Using synthetic hormones",
+"Grafting in winter",
+"None of these"
+],
+"page": "92",
+"q": "What is the most critical factor for the success of a graft union?",
+"serial": "643",
+"src_row": 642,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:643"
+},
+{
+"expl": "A grafting knife is specifically designed to make clean, precise cuts for scions and rootstocks, which is critical for successful grafting.",
+"key": 1,
+"o": [
+"Pruning shears",
+"Grafting knife",
+"Hoe",
+"Spade",
+"None of these"
+],
+"page": "92",
+"q": "Which of these is a common tool used in grafting to make precise cuts?",
+"serial": "644",
+"src_row": 643,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "92:644"
+},
+{
+"expl": "The image is explicitly labeled as 'Fig. Wedge Grafting' in the source, indicating the depicted method is Wedge Grafting.",
+"key": 1,
+"o": [
+"Saddle Grafting",
+"Wedge Grafting",
+"Cleft Grafting",
+"Bud Grafting",
+"None of these"
+],
+"page": "94",
+"q": "Which grafting method is depicted in the image labeled as 'Fig. Wedge Grafting'?",
+"serial": "652",
+"src_row": 644,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:652"
+},
+{
+"expl": "Grafting is a method of asexual propagation used to combine desirable traits from different plants.",
+"key": 0,
+"o": [
+"To propagate plants asexually",
+"To increase soil fertility",
+"To control pest infestations",
+"To enhance flower color",
+"None of these"
+],
+"page": "94",
+"q": "What is the primary purpose of grafting in horticulture?",
+"serial": "653",
+"src_row": 645,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:653"
+},
+{
+"expl": "Wedge Grafting involves inserting a scion into a slit or wedge-shaped cut in the stock.",
+"key": 1,
+"o": [
+"Saddle Grafting",
+"Wedge Grafting",
+"Bud Grafting",
+"Approach Grafting",
+"None of these"
+],
+"page": "94",
+"q": "In which grafting method is a scion inserted into a slit made in the stock?",
+"serial": "654",
+"src_row": 646,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:654"
+},
+{
+"expl": "Saddle, Cleft, and Bud Grafting are common, but 'Root Grafting' is not a standard grafting method.",
+"key": 2,
+"o": [
+"Saddle Grafting",
+"Cleft Grafting",
+"Root Grafting",
+"Bud Grafting",
+"None of these"
+],
+"page": "94",
+"q": "Which of the following is NOT a common type of grafting?",
+"serial": "655",
+"src_row": 647,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:655"
+},
+{
+"expl": "The scion is the detached part of a plant that is grafted onto the stock (root system).",
+"key": 1,
+"o": [
+"The part of the plant that provides the root system",
+"The part of the plant that is grafted onto the stock",
+"The soil medium used for grafting",
+"The tool used to make cuts in grafting",
+"None of these"
+],
+"page": "94",
+"q": "What is the scion in the context of grafting?",
+"serial": "656",
+"src_row": 648,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:656"
+},
+{
+"expl": "The source explicitly mentions 'Saddle Grafting' in addition to 'Wedge Grafting'.",
+"key": 2,
+"o": [
+"Cleft Grafting",
+"Bud Grafting",
+"Saddle Grafting",
+"Approach Grafting",
+"None of these"
+],
+"page": "94",
+"q": "Which grafting method is mentioned alongside 'Wedge Grafting' in the source?",
+"serial": "657",
+"src_row": 649,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:657"
+},
+{
+"expl": "Saddle Grafting involves fitting a scion and stock of similar thickness together, resembling a saddle.",
+"key": 1,
+"o": [
+"Scion is inserted into a wedge-shaped cut",
+"Scion and stock are of equal thickness and fit like a saddle",
+"A bud is inserted under the bark of the stock",
+"Scion is attached to the stock without cutting",
+"None of these"
+],
+"page": "94",
+"q": "What is the key feature of Saddle Grafting?",
+"serial": "658",
+"src_row": 650,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "94:658"
+}
+],
+"row_from": 630,
+"row_to": 651,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 630,
+"seeded_from": "2026-10-14"
+},
 "qidx": 0,
+"seeded_from": "2026-10-14",
+"skips": [],
 "step": 0
 },
 "malwa": {
