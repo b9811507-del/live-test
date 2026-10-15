@@ -159898,7 +159898,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-15T17:57:22+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"< 500 mm",
+"< 750 mm",
+"750-1150 mm",
+"> 1150 mm",
+"None of these"
+],
+"page": "",
+"q": "In dryland agriculture, what is the rainfall threshold for Dry Farming?",
+"serial": "1sUgWsko:4687",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4687"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Close, intimate, frequent contact",
+"Large, impersonal, infrequent contact",
+"Formal structure and rules",
+"Voluntary membership",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a characteristic of a primary group?",
+"serial": "128DIQLj:2173",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2173"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Trisomy",
+"Monosomy",
+"Tetrasomy",
+"Nullisomy",
+"None of these"
+],
+"page": "",
+"q": "What is the term for an organism missing one chromosome?",
+"serial": "1UgnIe-g:340",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:340"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Salmon",
+"Trout",
+"Shark",
+"Whale",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a major species cultured in ponds?",
+"serial": "1bxM1Q-4:4268",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4268"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To control weeds",
+"To improve soil aeration",
+"To enhance water retention",
+"To promote root growth",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of blind hoeing in sugarcane cultivation?",
+"serial": "17U0MEc-:638",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:638"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tobacco",
+"Potato",
+"Maize",
+"Onion",
+"None of these"
+],
+"page": "",
+"q": "Which of the following has the highest chromosome number?",
+"serial": "17U0MEc-:2456",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2456"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Seeds",
+"Bulbs",
+"Stem cuttings",
+"Tubers",
+"None of these"
+],
+"page": "",
+"q": "What is the primary method of propagation for Bougainvillea?",
+"serial": "1YcJWVgW:1116",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1116"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5%",
+"10%",
+"15%",
+"20%",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal salt concentration for vigorous Lactic Acid Bacteria (LAB) activity?",
+"serial": "1YcJWVgW:1206",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1206"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"41 \u00b0C",
+"39 \u00b0C",
+"42 \u00b0C",
+"40 \u00b0C",
+"None of these"
+],
+"page": "",
+"q": "The optimum temperature of an artificial vagina for cattle is:",
+"serial": "128DIQLj:1833",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1833"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Flower",
+"Flower Head",
+"Modified Stem",
+"Fruit",
+"None of these"
+],
+"page": "",
+"q": "What is the correct classification of Broccoli based on plant parts used?",
+"serial": "1sUgWsko:1295",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1295"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Highly mobile",
+"Immobile",
+"Moderately mobile",
+"Very immobile",
+"None of these"
+],
+"page": "",
+"q": "Which group of nutrients includes copper as a member?",
+"serial": "1sUgWsko:7391",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7391"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Setaceous",
+"Plumose",
+"Capitate",
+"Geniculate",
+"None of these"
+],
+"page": "",
+"q": "The antenna of a male mosquito is best described as which type?",
+"serial": "1sUgWsko:1731",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1731"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Apple",
+"Pear",
+"Mango",
+"Banana",
+"None of these"
+],
+"page": "",
+"q": "The first successful transgenic fruit plants were produced in which species?",
+"serial": "1YcJWVgW:444",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:444"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"W. Sutton",
+"G.J. Mendel",
+"C.B. Bridges",
+"M.J. Schleiden",
+"None of these"
+],
+"page": "",
+"q": "The Chromosomal theory of heredity was proposed by:",
+"serial": "1bxM1Q-4:1889",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1889"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Fresh flowers",
+"Foliage",
+"Dried twig",
+"Seeds",
+"None of these"
+],
+"page": "",
+"q": "Which item is NOT part of the term \"Term flowers\" as defined in the source?",
+"serial": "1YcJWVgW:1022",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1022"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Extensive System",
+"Intensive System",
+"Semi-intensive System",
+"Rotational Grazing Method",
+"None of these"
+],
+"page": "",
+"q": "Which system of sheep and goat rearing involves dividing pasture land into sections with temporary fences and moving animals between them?",
+"serial": "1sUgWsko:3263",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3263"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Weeds that live for more than two years",
+"Weeds that complete their seed-to-seed cycle in 2-4 weeks",
+"Weeds that reproduce only through bulbs",
+"Weeds that grow in non-cropped areas",
+"None of these"
+],
+"page": "",
+"q": "Ephemeral weeds are best described as:",
+"serial": "1sUgWsko:5084",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5084"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Apple",
+"Palmyra Palm",
+"Cashew apple",
+"Date Palm",
+"None of these"
+],
+"page": "",
+"q": "What is the source of Fenni?",
+"serial": "1YcJWVgW:1232",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1232"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Papain",
+"Bromelin",
+"Amylase",
+"Lipase",
+"None of these"
+],
+"page": "",
+"q": "Which enzyme is found in pineapple fruits?",
+"serial": "1bxM1Q-4:3048",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3048"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Innovators",
+"Early adopters",
+"Early majority",
+"Late majority",
+"None of these"
+],
+"page": "",
+"q": "Which adopter category is known for legitimizing new ideas?",
+"serial": "128DIQLj:2336",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2336"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mahseer",
+"Trout",
+"Carps",
+"Mullet",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a warmwater fish?",
+"serial": "1sUgWsko:2246",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2246"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Barley",
+"Cotton",
+"Sugar beet",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which crop is most salt\u2011tolerant among the following?",
+"serial": "128DIQLj:844",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:844"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"UP, Bihar, Rajasthan, MP & Punjab",
+"Maharashtra, Gujarat & AP",
+"Karnataka, AP & Tamilnadu",
+"Gujarat, Karnataka, AP & Tamilnadu",
+"None of these"
+],
+"page": "",
+"q": "Which states are most prominent for maize-based cropping pattern?",
+"serial": "1bxM1Q-4:925",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:925"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5 %",
+"12 %",
+"20 %",
+"30 %",
+"None of these"
+],
+"page": "",
+"q": "The contribution of awns in wheat, barley, and triticale to grain photosynthesis is approximately?",
+"serial": "128DIQLj:856",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:856"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Less than 500 mm",
+"500-750 mm",
+"750-1000 mm",
+"More than 1000 mm",
+"None of these"
+],
+"page": "",
+"q": "What is the rainfall range for the 'Semi arid' climatic region in dry farming?",
+"serial": "1sUgWsko:4854",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4854"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"mRNA codon GUA; tRNA anticodon CAU",
+"mRNA codon AUG; tRNA anticodon UAC",
+"mRNA codon CAA; tRNA anticodon GUU",
+"mRNA codon GCA; tRNA anticodon CGU",
+"None of these"
+],
+"page": "",
+"q": "The DNA triplet CAT corresponds to which codon in the mRNA and which anticodon in the tRNA?",
+"serial": "1UgnIe-g:594",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:594"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Masking of the harmful effects of recessive alleles by their dominant alleles",
+"Increased genetic diversity between parents",
+"Heterozygosity",
+"Homozygosity for deleterious recessive alleles",
+"None of these"
+],
+"page": "",
+"q": "What is the primary result of heterosis according to the dominance hypothesis?",
+"serial": "1UgnIe-g:226",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:226"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Water\u2011soluble, 14\u201118 % P\u2082O\u2085",
+"Citrate\u2011soluble, 14\u201118 % P\u2082O\u2085",
+"Water\u2011soluble, 33\u201140 % P\u2082O\u2085",
+"Citrate\u2011soluble, 33\u201140 % P\u2082O\u2085",
+"None of these"
+],
+"page": "",
+"q": "Basic slag belongs to which solubility class and what is its typical P\u2082O\u2085 range?",
+"serial": "1sUgWsko:7216",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7216"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Effective rainfall and groundwater",
+"Total rainfall and irrigation",
+"Groundwater and irrigation",
+"Effective rainfall and irrigation",
+"None of these"
+],
+"page": "",
+"q": "In the irrigation requirement formula IR = WR \u2013 (ER + GW), which terms are subtracted from the total water requirement?",
+"serial": "1bxM1Q-4:954",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:954"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10-12%",
+"18-20%",
+"25-30%",
+"35-40%",
+"None of these"
+],
+"page": "",
+"q": "Sesame seeds contain approximately how much protein?",
+"serial": "1bxM1Q-4:784",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:784"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"9:7",
+"13:1",
+"3:1",
+"1:1",
+"None of these"
+],
+"page": "",
+"q": "Which phenotypic ratio is characteristic of dominant epistasis?",
+"serial": "1UgnIe-g:527",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:527"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Brown rice",
+"Red rice",
+"Black rice",
+"White rice",
+"None of these"
+],
+"page": "",
+"q": "Weedy rice is commonly referred to as ________ because of the color of its endosperm.",
+"serial": "128DIQLj:187",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:187"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Eriosoma lanigerum",
+"Oryctes rhinoceros",
+"Icerya purchasi",
+"Quadraspidiotus perniciosus",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of the Rhinoveros beetle?",
+"serial": "1UgnIe-g:2070",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2070"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10 ppm",
+"40 ppm",
+"60 ppm",
+"50 ppm",
+"None of these"
+],
+"page": "",
+"q": "What concentration of GA is used to increase berry size in grapes?",
+"serial": "1bxM1Q-4:3630",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3630"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gonial Parthenogenesis",
+"Somatic Parthenogenesis",
+"Apogamy",
+"Pseudogamy",
+"None of these"
+],
+"page": "",
+"q": "Which type of parthenogenesis involves embryo development from the egg cell?",
+"serial": "1UgnIe-g:30",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:30"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cigarette Beetle",
+"Drug Store Beetle",
+"Pulse Beetle",
+"Lesser Grain Borer",
+"None of these"
+],
+"page": "",
+"q": "Which pest infests pulses by laying eggs on them, with grubs feeding on the inner contents?",
+"serial": "1sUgWsko:2132",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2132"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ammonium nitrate",
+"Ammonium sulphate",
+"Calcium nitrate",
+"Sodium nitrate",
+"None of these"
+],
+"page": "",
+"q": "Which fertilizer contains the highest percentage of Nitrogen?",
+"serial": "17U0MEc-:1216",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1216"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Evaporation",
+"Seepage",
+"Transpiration",
+"Leaching",
+"None of these"
+],
+"page": "",
+"q": "Water loss from an irrigation channel is mainly caused by:",
+"serial": "17U0MEc-:446",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:446"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"15-20 inches",
+"20-25 inches",
+"24-30 inches",
+"10-15 inches",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended manger length per young stock?",
+"serial": "1bxM1Q-4:4137",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4137"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Presence of Malic acid 90-96% and oxalic acid 4-10%",
+"High protein content",
+"Presence of citric acid",
+"High moisture content",
+"None of these"
+],
+"page": "",
+"q": "What is the primary reason for the sour taste in gram leaves and pods?",
+"serial": "1sUgWsko:274",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:274"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Tea",
+"Potato",
+"Rice",
+"Pearl millet",
+"None of these"
+],
+"page": "",
+"q": "Which crop requires the most acidic soil pH range among the given options?",
+"serial": "1sUgWsko:4782",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4782"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0\u20135 \u00b0C",
+"5\u201318 \u00b0C",
+"18\u201325 \u00b0C",
+"25\u201330 \u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for post\u2011stock trout?",
+"serial": "1sUgWsko:2635",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2635"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Proximity to markets",
+"Higher elevation than surrounding ground",
+"Presence of other farms nearby",
+"Availability of cheap labor",
+"None of these"
+],
+"page": "",
+"q": "What is an important consideration for the location of dairy buildings?",
+"serial": "1bxM1Q-4:4121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4121"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Soybean",
+"Maize",
+"Sunflower",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops has a germination temperature requirement of exactly 21\u00b0C?",
+"serial": "1sUgWsko:4820",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4820"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"West Bengal",
+"Punjab",
+"Uttar Pradesh",
+"Haryana",
+"None of these"
+],
+"page": "",
+"q": "Which state leads in paddy production in India?",
+"serial": "1bxM1Q-4:498",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:498"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"January to March",
+"April to June",
+"August to October",
+"November to December",
+"None of these"
+],
+"page": "",
+"q": "During which months is the damage caused by Castor Semilooper (*Achaea janata*) maximum?",
+"serial": "1sUgWsko:2090",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2090"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Organophosphate poisoning",
+"Carbamate poisoning",
+"Pyrethroid poisoning",
+"General insecticide poisoning",
+"None of these"
+],
+"page": "",
+"q": "The antidote mixture of activated charcoal, tannic acid, and magnesium oxide is used for treating?",
+"serial": "1UgnIe-g:2136",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2136"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Paraquat",
+"Glyphosate",
+"Atrazine",
+"2,4-D",
+"None of these"
+],
+"page": "",
+"q": "Which herbicide is classified as selective based on its mode of action?",
+"serial": "1sUgWsko:5195",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5195"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Heliograph",
+"Hygrometer",
+"Infiltrometer",
+"Pulvimeter",
+"None of these"
+],
+"page": "",
+"q": "Which instrument measures the duration of bright sunshine hours?",
+"serial": "1bxM1Q-4:1529",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1529"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Adam Smith",
+"Alfred Marshall",
+"Robbins",
+"Samuelson",
+"None of these"
+],
+"page": "",
+"q": "Who defined economics as the 'Science of Choice'?",
+"serial": "128DIQLj:2362",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2362"
+}
+],
+"set_no": 33,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
