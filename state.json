@@ -164594,9 +164594,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 582,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 582,
+"built_at": "2026-10-16T10:58:12+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 169-174",
+"pages_blocks": [
+"169-170",
+"171-172",
+"173-174"
+],
+"questions": [
+{
+"expl": "The source defines moderate drought as a 25\u201350% rainfall deficit, meaning 50\u201375% of normal rainfall, and severe drought as >50% deficit, meaning less than 50% of normal rainfall.",
+"key": 0,
+"o": [
+"Moderate drought: 25\u201350% deficit, 50\u201375% of normal rainfall; Severe drought: >50% deficit, <50% of\u2026",
+"Moderate drought: 10\u201325% deficit, 75\u201390% of normal rainfall; Severe drought: 25\u201350% deficit, 50\u201375%\u2026",
+"Moderate drought: 50\u201375% deficit, <25% of normal rainfall; Severe drought: >75% deficit, <10% of no\u2026",
+"Moderate drought: 0\u201310% deficit, 90\u2013100% of normal rainfall; Severe drought: 10\u201325% deficit, 75\u201390%\u2026",
+"None of these"
+],
+"page": "169-170",
+"q": "Which statement correctly describes moderate and severe drought in terms of rainfall deficit and actual rainfall received?",
+"serial": "861",
+"src_row": 563,
+"topic": "Agronomy",
+"trunc": 4,
+"uid": "169-170:861"
+},
+{
+"expl": "Hydrological drought refers to the drying up of surface water sources like streams, lakes, and rivers.",
+"key": 0,
+"o": [
+"Hydrological drought",
+"Agricultural (soil) drought",
+"Atmospheric drought",
+"Physiological drought",
+"None of these"
+],
+"page": "169-170",
+"q": "Which type of drought is characterized by the depletion of surface water bodies such as streams, lakes, and rivers?",
+"serial": "862",
+"src_row": 564,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "169-170:862"
+},
+{
+"expl": "The source states drought is a temporary phenomenon describing water availability, while aridity is a permanent climate condition.",
+"key": 0,
+"o": [
+"Drought is temporary; aridity is permanent.",
+"Drought is permanent; aridity is temporary.",
+"Drought refers to soil moisture; aridity refers to rainfall.",
+"Aridity refers to soil moisture; drought refers to rainfall.",
+"None of these"
+],
+"page": "169-170",
+"q": "What is the key difference between drought and aridity according to the source?",
+"serial": "863",
+"src_row": 565,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "169-170:863"
+},
+{
+"expl": "The LGP table lists >180 days as the Humid climate category.",
+"key": 3,
+"o": [
+"Arid",
+"Semi\u2011arid",
+"Sub\u2011humid",
+"Humid",
+"None of these"
+],
+"page": "169-170",
+"q": "Which climate category corresponds to a Length of Growing Period (LGP) of more than 180 days?",
+"serial": "864",
+"src_row": 566,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "169-170:864"
+},
+{
+"expl": "The source notes that drought before flowering increases crop duration, whereas drought after flowering leads to early maturity.",
+"key": 0,
+"o": [
+"It increases crop duration.",
+"It shortens crop duration.",
+"It has no effect on crop duration.",
+"It delays flowering but not maturity.",
+"None of these"
+],
+"page": "169-170",
+"q": "How does drought occurring before flowering affect crop maturity?",
+"serial": "865",
+"src_row": 567,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "169-170:865"
+},
+{
+"expl": "Thinning is defined as removing alternate rows as a mid\u2011season correction for dry conditions.",
+"key": 0,
+"o": [
+"Thinning",
+"Spraying",
+"Ratooning",
+"Mulching",
+"None of these"
+],
+"page": "169-170",
+"q": "Which mid\u2011season correction practice involves removing alternate rows?",
+"serial": "866",
+"src_row": 568,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "169-170:866"
+},
+{
+"expl": "Soil solarization employs clear transparent polythene to trap solar heat and control soil-borne diseases and pests.",
+"key": 1,
+"o": [
+"Black polythene film",
+"Clear (transparent) polythene film",
+"Green polythene film",
+"Brown polythene film",
+"None of these"
+],
+"page": "171-172",
+"q": "Which type of polythene film is used for soil solarization?",
+"serial": "871",
+"src_row": 569,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:871"
+},
+{
+"expl": "Bunding is listed among the mechanical measures for conserving soil moisture in in\u2011situ water harvesting.",
+"key": 1,
+"o": [
+"Summer ploughing",
+"Bunding",
+"Pasture",
+"Kaolin application",
+"None of these"
+],
+"page": "171-172",
+"q": "In in\u2011situ water harvesting, which of the following is a mechanical measure?",
+"serial": "872",
+"src_row": 570,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:872"
+},
+{
+"expl": "Mung bean, a short\u2011duration pulse, is given as an example of a contingency crop for late onset of monsoon.",
+"key": 1,
+"o": [
+"Wheat",
+"Mung bean",
+"Rice",
+"Maize",
+"None of these"
+],
+"page": "171-172",
+"q": "Which crop is cited as an example for contingency cropping when the monsoon is delayed?",
+"serial": "873",
+"src_row": 571,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:873"
+},
+{
+"expl": "Reflectant anti\u2011transpirants are white materials that reflect sunlight; Kaolin is provided as an example.",
+"key": 0,
+"o": [
+"Kaolin (5%)",
+"Atrazine (low concentration)",
+"Mobileaf",
+"Cycocel (CCC)",
+"None of these"
+],
+"page": "171-172",
+"q": "Which anti\u2011transpirant belongs to the reflectant type?",
+"serial": "874",
+"src_row": 572,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:874"
+},
+{
+"expl": "The leeward protection of shelterbelts extends up to 30 times the height of the trees.",
+"key": 3,
+"o": [
+"5\u201310 times",
+"10\u201320 times",
+"20\u201330 times",
+"Up to 30 times",
+"None of these"
+],
+"page": "171-172",
+"q": "Shelterbelts can protect the leeward side of a field up to how many times their height?",
+"serial": "875",
+"src_row": 573,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:875"
+},
+{
+"expl": "BBF is recommended for black soils in high\u2011rainfall areas receiving more than 750 mm annually.",
+"key": 2,
+"o": [
+"Less than 500 mm",
+"500\u2013750 mm",
+"Greater than 750 mm",
+"Any amount of rainfall",
+"None of these"
+],
+"page": "171-172",
+"q": "What minimum annual rainfall is recommended for adopting the Broad Bed and Furrows (BBF) system?",
+"serial": "876",
+"src_row": 574,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:876"
+},
+{
+"expl": "Pusa Hydrogel, a semi\u2011synthetic cellulose hydrogel, can absorb water up to about 400 times its dry weight.",
+"key": 3,
+"o": [
+"150\u2013200 times",
+"250\u2013300 times",
+"350\u2013400 times",
+"Up to 400 times",
+"None of these"
+],
+"page": "171-172",
+"q": "Approximately how many times its dry weight can Pusa Hydrogel absorb water?",
+"serial": "877",
+"src_row": 575,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "171-172:877"
+},
+{
+"expl": "The source lists the order as Region, Basin, Catchment, Watershed.",
+"key": 0,
+"o": [
+"Region > Basin > Catchment > Watershed",
+"Region > Watershed > Basin > Catchment",
+"Basin > Region > Catchment > Watershed",
+"Catchment > Basin > Region > Watershed",
+"None of these"
+],
+"page": "173-174",
+"q": "Which of the following represents the correct hierarchical sequence of watershed units from largest to smallest?",
+"serial": "881",
+"src_row": 576,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "173-174:881"
+},
+{
+"expl": "Micro watershed area is 100\u20131,000 ha, so 750 ha fits this category.",
+"key": 1,
+"o": [
+"Mini watershed",
+"Micro watershed",
+"Milli watershed",
+"Sub\u2011watershed",
+"None of these"
+],
+"page": "173-174",
+"q": "A watershed covering 750 ha falls under which classification?",
+"serial": "882",
+"src_row": 577,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "173-174:882"
+},
+{
+"expl": "The source explicitly states soil moisture is the limiting factor.",
+"key": 1,
+"o": [
+"Soil fertility",
+"Soil moisture",
+"Pest pressure",
+"Crop variety",
+"None of these"
+],
+"page": "173-174",
+"q": "In dryland farming, the most limiting factor is:",
+"serial": "883",
+"src_row": 578,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "173-174:883"
+},
+{
+"expl": "Rajasthan\u2019s systems are Tanka, Nadi, and Khadin; Sutra is not mentioned.",
+"key": 3,
+"o": [
+"Tanka",
+"Nadi",
+"Khadin",
+"Sutra",
+"None of these"
+],
+"page": "173-174",
+"q": "The traditional water harvesting systems of Rajasthan include all except:",
+"serial": "884",
+"src_row": 579,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "173-174:884"
+},
+{
+"expl": "The source specifies intercropping is feasible at 600\u2013850 mm rainfall.",
+"key": 1,
+"o": [
+"300\u2013500 mm",
+"600\u2013850 mm",
+"900\u20131200 mm",
+"1500\u20132000 mm",
+"None of these"
+],
+"page": "173-174",
+"q": "Intercropping is feasible where annual rainfall is:",
+"serial": "885",
+"src_row": 580,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "173-174:885"
+},
+{
+"expl": "Primary tillage implements include mould\u2011board plough, disc plough, etc.; harrows and rollers are secondary implements.",
+"key": 2,
+"o": [
+"Harrows",
+"Cultivators",
+"Mould\u2011board plough",
+"Rollers",
+"None of these"
+],
+"page": "173-174",
+"q": "Which implement is used for primary tillage operations?",
+"serial": "886",
+"src_row": 581,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "173-174:886"
+}
+],
+"rolled": false,
+"row_from": 563,
+"row_to": 582,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 4,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 563,
+"seeded_from": "2026-10-15",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-15",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
