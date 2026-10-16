@@ -164583,7 +164583,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-16T17:57:42+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Total plant density",
+"Yield of each crop",
+"Soil moisture",
+"Weed suppression",
+"None of these"
+],
+"page": "",
+"q": "In a replacement series intercropping, what is maintained?",
+"serial": "128DIQLj:692",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:692"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dwarf Sunflower",
+"Maize",
+"Wheat",
+"Rice",
+"None of these"
+],
+"page": "",
+"q": "Which plant is used as the indicator plant for determining the Permanent Wilting Point (PWP) in soil?",
+"serial": "1sUgWsko:7008",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7008"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Sorghum",
+"Castor",
+"Groundnut",
+"Wheat",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is NOT typically considered a major dryland crop in the context provided?",
+"serial": "17U0MEc-:190",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:190"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Numerical aberration",
+"Structural aberration",
+"Gene mutation",
+"Epigenetic modification",
+"None of these"
+],
+"page": "",
+"q": "A change in the number of chromosomes in a cell is classified as which type of chromosomal aberration?",
+"serial": "1UgnIe-g:629",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:629"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"High initial investment",
+"High carbon emission activity",
+"Low impact farming with high returns",
+"Requires constant flow of clean water",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an advantage of cage culture?",
+"serial": "1sUgWsko:2640",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2640"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"India",
+"USA",
+"Japan",
+"Germany",
+"None of these"
+],
+"page": "",
+"q": "Which country first started the use of power tillers?",
+"serial": "128DIQLj:2958",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2958"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Alexander Knapp",
+"Seaman A. Knapp",
+"Robert Chambers",
+"J.P. Leagans",
+"None of these"
+],
+"page": "",
+"q": "Who coined the term 'andragogy'?",
+"serial": "128DIQLj:2341",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2341"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Spawn",
+"Hatchling",
+"Juvenile",
+"Adult",
+"None of these"
+],
+"page": "",
+"q": "During which stage is the mouth not yet formed, preventing the fish from taking external food?",
+"serial": "1sUgWsko:2249",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2249"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Trichogramma",
+"Aphelinus mali",
+"Beauveria bassiana",
+"Metarhizium anisopliae",
+"None of these"
+],
+"page": "",
+"q": "Which biological control agent is recommended for release in December and June to control pests in fruit trees?",
+"serial": "1sUgWsko:2098",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2098"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"150 m",
+"250 m",
+"400 m",
+"600 m",
+"None of these"
+],
+"page": "",
+"q": "What minimum isolation distance must sorghum seed be kept from Johnson grass (Sorghum falpense)?",
+"serial": "1UgnIe-g:843",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:843"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"End of 1st year",
+"End of 2nd year",
+"End of 3rd year",
+"End of 4th year",
+"None of these"
+],
+"page": "",
+"q": "At what age does Mrigal attain sexual maturity?",
+"serial": "1sUgWsko:2454",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2454"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A method of sowing a crop after mechanically removing weeds",
+"A strategy of allowing weed seeds to germinate and then flushing them before planting",
+"A technique of applying herbicides to soil",
+"A method of seed sterilization",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes a stale seed bed?",
+"serial": "128DIQLj:1075",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1075"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Green and moist straw",
+"Yellow and dry straw",
+"Brown and wet straw",
+"Black and dry straw",
+"None of these"
+],
+"page": "",
+"q": "What is the visual indicator of ripening in wheat?",
+"serial": "1sUgWsko:128",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:128"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ustilaginoidea virens",
+"Tilletia barcayana",
+"Fusarium moniliforme",
+"Helminthosporium oryzae",
+"None of these"
+],
+"page": "",
+"q": "The disease also known as 'black smut' in rice is caused by which fungus?",
+"serial": "1sUgWsko:3682",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3682"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"John Deere",
+"Mahindra and Mahindra",
+"TAFE",
+"Escorts",
+"None of these"
+],
+"page": "",
+"q": "Which company holds the largest share in the Indian tractor market as of 1HFY18?",
+"serial": "1sUgWsko:6056",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6056"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increase seed production",
+"Combine desirable traits of two plants",
+"Prevent disease spread",
+"Reduce water usage",
+"None of these"
+],
+"page": "",
+"q": "The primary purpose of grafting in horticulture is to:",
+"serial": "1sUgWsko:641",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:641"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1\u20132 cm",
+"3\u20135 cm",
+"7\u201310 cm",
+"15\u201320 cm",
+"None of these"
+],
+"page": "",
+"q": "Subsurface herbicide application is typically applied at what depth?",
+"serial": "1sUgWsko:5226",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5226"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Doka",
+"Dang",
+"Pind",
+"Gandora/Kimri",
+"None of these"
+],
+"page": "",
+"q": "Which harvest stage is characterized by green fruits and is the initial stage?",
+"serial": "1YcJWVgW:363",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:363"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increase in genetic diversity",
+"Loss of vigor and productivity",
+"Enhanced seed production",
+"Improved environmental resistance",
+"None of these"
+],
+"page": "",
+"q": "What is clonal degeneration?",
+"serial": "1UgnIe-g:321",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:321"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"30 km/hr",
+"45 km/hr",
+"60 km/hr",
+"75 km/hr",
+"None of these"
+],
+"page": "",
+"q": "What wind velocity is considered harmful and can cause lodging in sugarcane?",
+"serial": "1sUgWsko:405",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:405"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Anguina tritici",
+"Meloidogyne incognita",
+"Tylenchulus spp.",
+"Bursaphelenchus xylophilus",
+"None of these"
+],
+"page": "",
+"q": "Which of the following nematodes completes only one generation per year?",
+"serial": "1UgnIe-g:2438",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2438"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"IVRI Bareilly",
+"NDRI Karnal",
+"IARI New Delhi",
+"GBPUAT Pantnagar",
+"None of these"
+],
+"page": "",
+"q": "Which institution is responsible for the development of both Karan Swiss and Karan Fries breeds?",
+"serial": "1sUgWsko:2995",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2995"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Prolonged hot dry summer",
+"Moderate winter",
+"Rain-free period during ripening",
+"High humidity during flowering",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a suitable climate condition for Date Palm cultivation?",
+"serial": "1sUgWsko:1150",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1150"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Boll",
+"Capsule",
+"Square",
+"Flower",
+"None of these"
+],
+"page": "",
+"q": "What is the term used for the appearance of flower bud in cotton?",
+"serial": "17U0MEc-:684",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:684"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Angoumois grain moth, potato tuber moth, pulse beetle and sweet potato beetle",
+"Cottony cushion scale, Apple wooly aphis, Sugarcane pyrilla",
+"White fly, Pink bollworm, Spotted bollworm",
+"Green Leaf Hopper, Brown Plant Hopper, Gundhi bug",
+"None of these"
+],
+"page": "",
+"q": "Which insect pests start their infestation from the field?",
+"serial": "17U0MEc-:1691",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1691"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"NIESBUD",
+"NISIET",
+"EDI",
+"IIE",
+"None of these"
+],
+"page": "",
+"q": "Which institution is located in Ahmedabad, Gujarat, and was established in 1983?",
+"serial": "128DIQLj:2235",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2235"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"India",
+"Nigeria",
+"China",
+"Brazil",
+"None of these"
+],
+"page": "",
+"q": "Which country leads in the production of groundnut?",
+"serial": "17U0MEc-:723",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:723"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"An immature, non\u2011receptive stigma",
+"A mature stigma during anthesis",
+"A post\u2011anthesis stigma",
+"A seed\u2011filled ovary",
+"None of these"
+],
+"page": "",
+"q": "Bud pollination is most effective when applied 1\u20132 days before anthesis to:",
+"serial": "1UgnIe-g:80",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:80"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Natatorial",
+"Raptatorial",
+"Foragial",
+"Stridulatorial",
+"None of these"
+],
+"page": "",
+"q": "Which type of insect legs are adapted for swimming?",
+"serial": "17U0MEc-:1736",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1736"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"India",
+"China",
+"Japan",
+"United States",
+"None of these"
+],
+"page": "",
+"q": "The aerobic rice system (ARS) was first developed in which country?",
+"serial": "128DIQLj:246",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:246"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"500g",
+"750g",
+"1000g",
+"1250g",
+"None of these"
+],
+"page": "",
+"q": "What is the quantity of N2 required for a 10-year-old mango plant?",
+"serial": "1bxM1Q-4:2954",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2954"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Study of insect behavior",
+"Study of insect structure and function",
+"Study of insect genetics",
+"Study of insect ecology",
+"None of these"
+],
+"page": "",
+"q": "In insect morphology, which of the following best describes its primary focus?",
+"serial": "17U0MEc-:1702",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1702"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Garber/Glubler B. Triplets",
+"Jethro Tull",
+"E.H. Faulkner",
+"Subhash Palekar",
+"None of these"
+],
+"page": "",
+"q": "Which pioneer is credited with the concept of \"Zero tillage\"?",
+"serial": "128DIQLj:131",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:131"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Law of conservation of energy",
+"Law of conservation of mass",
+"Law of conservation of momentum",
+"Law of conservation of charge",
+"None of these"
+],
+"page": "",
+"q": "What does Bernoulli's theorem relate to in fluid flow?",
+"serial": "1bxM1Q-4:4073",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4073"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Standardized Milk",
+"Full Cream Milk",
+"Toned Milk",
+"Double Toned Milk",
+"None of these"
+],
+"page": "",
+"q": "Which type of milk has a minimum fat content of 6% and minimum SNF of 9%?",
+"serial": "1sUgWsko:2756",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2756"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Crocin",
+"Crocetin",
+"\u03b2-carotene",
+"Capsanthin",
+"None of these"
+],
+"page": "",
+"q": "Which coloring component is responsible for the yellowish orange color in saffron?",
+"serial": "1bxM1Q-4:3326",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3326"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To produce commercial fruits",
+"To supplement forage production",
+"To act as windbreaks",
+"To provide fuelwood only",
+"None of these"
+],
+"page": "",
+"q": "In silvopastoral systems, what is the role of trees and shrubs scattered on pastures?",
+"serial": "1sUgWsko:5480",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5480"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Inter-varietal crosses occur between different species; distant crosses occur within the same speci\u2026",
+"Inter-varietal crosses are intraspecific; distant crosses are interspecific or intergeneric.",
+"Both involve crossing within the same species.",
+"Both involve crossing between different genera.",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly distinguishes inter-varietal from distant hybridization?",
+"serial": "1UgnIe-g:161",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1UgnIe-g:161"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"January-February",
+"June-July",
+"April-May",
+"September-October",
+"None of these"
+],
+"page": "",
+"q": "What is the best time for pruning ber crops in Rajasthan?",
+"serial": "17U0MEc-:1497",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1497"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Uttar Pradesh",
+"Punjab",
+"Haryana",
+"Madhya Pradesh",
+"None of these"
+],
+"page": "",
+"q": "Which state leads both wheat production and wheat area?",
+"serial": "1bxM1Q-4:501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:501"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Hard pan of soil",
+"Application of undecomposed FYM",
+"Overwatering",
+"Drought stress",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a cause of carrot forking?",
+"serial": "17U0MEc-:1605",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1605"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Spinach",
+"Amaranthus",
+"Fenugreek",
+"Garlic",
+"None of these"
+],
+"page": "",
+"q": "Which vegetable has the highest calcium content?",
+"serial": "1YcJWVgW:819",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:819"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potyviridae",
+"Bunyaviridae",
+"Rhabdoviridae",
+"Reoviridae",
+"None of these"
+],
+"page": "",
+"q": "What is the largest single group of plant virus family?",
+"serial": "17U0MEc-:2093",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2093"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Temperatures above freezing in the lower atmosphere.",
+"Temperatures below freezing throughout the atmosphere.",
+"Presence of strong winds.",
+"High humidity at the surface.",
+"None of these"
+],
+"page": "",
+"q": "Snow crystals are described as branched hexagonal stars. Which atmospheric condition ensures they reach the ground as snow?",
+"serial": "1sUgWsko:5772",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5772"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Multiparous vaccinated sows",
+"Non\u2011vaccinated primiparous sows",
+"Boars",
+"Weaned piglets",
+"None of these"
+],
+"page": "",
+"q": "Porcine parvovirus infection mainly causes reproductive problems in which category of sows?",
+"serial": "1sUgWsko:3593",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3593"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Metallic sound",
+"Drying of tendril at the base of the fruit",
+"Bright color",
+"Soft rind",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a sign of maturity in watermelons?",
+"serial": "17U0MEc-:1620",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1620"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Barley has long, prominent awns; wheat awns are generally shorter or absent",
+"Wheat has long, prominent awns; barley awns are generally shorter or absent",
+"Both wheat and barley have equally long awns",
+"Neither wheat nor barley has awns",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly contrasts wheat and barley awns?",
+"serial": "128DIQLj:336",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:336"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"9\u201111",
+"11+",
+"4\u20116",
+"6\u20119",
+"None of these"
+],
+"page": "",
+"q": "At which pH does the alkaline death point occur for fish?",
+"serial": "1sUgWsko:2300",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2300"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"150 sq.ft",
+"100 sq.ft",
+"200 sq.ft",
+"120 sq.ft",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended size for isolation boxes in agriculture?",
+"serial": "1bxM1Q-4:4145",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4145"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Calving",
+"Lambing",
+"Kidding",
+"Farrowing",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the parturition process in pigs?",
+"serial": "17U0MEc-:2968",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2968"
+}
+],
+"set_no": 34,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
