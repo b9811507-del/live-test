@@ -164588,8 +164588,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 672,
 "names": {},
+"plan": {
+"bidx_next": 672,
+"built_at": "2026-10-16T14:27:17+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 95-97",
+"pages_list": [
+95,
+96,
+97
+],
+"questions": [
+{
+"expl": "Layering is defined as a vegetative propagation method where a branch is induced to root while still attached to the mother plant.",
+"key": 2,
+"o": [
+"Cutting",
+"Grafting",
+"Layering",
+"Budding",
+"None of these"
+],
+"page": "95",
+"q": "Which layering technique involves rooting a branch while it remains attached to the parent plant?",
+"serial": "659",
+"src_row": 651,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:659"
+},
+{
+"expl": "Simple layering involves bending a branch and burying a portion of it in the soil to induce rooting at a single point.",
+"key": 2,
+"o": [
+"Compound layering",
+"Air layering",
+"Simple layering",
+"Trench layering",
+"None of these"
+],
+"page": "95",
+"q": "In which type of layering is the branch bent and buried in the soil at a single point?",
+"serial": "660",
+"src_row": 652,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:660"
+},
+{
+"expl": "Compound layering is alternatively referred to as serpentine layering, where multiple sections of a branch are buried to form roots.",
+"key": 1,
+"o": [
+"Simple layering",
+"Compound layering",
+"Air layering",
+"Trench layering",
+"None of these"
+],
+"page": "95",
+"q": "Which layering method is also known as serpentine layering?",
+"serial": "661",
+"src_row": 653,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:661"
+},
+{
+"expl": "Trench layering (continuous layering) involves burying a long, flexible branch in a trench to induce rooting at multiple points along its length.",
+"key": 3,
+"o": [
+"To propagate plants with weak stems",
+"To create multiple rooted plants from a single branch",
+"To propagate plants in waterlogged soils",
+"To induce rooting in a long, flexible branch buried in a trench",
+"None of these"
+],
+"page": "95",
+"q": "What is the primary purpose of trench layering?",
+"serial": "662",
+"src_row": 654,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:662"
+},
+{
+"expl": "Air layering involves rooting a branch while it is still attached to the parent plant but without direct contact with the soil, typically using a moist medium like moss.",
+"key": 2,
+"o": [
+"Simple layering",
+"Compound layering",
+"Air layering",
+"Trench layering",
+"None of these"
+],
+"page": "95",
+"q": "Which layering technique does NOT require the branch to be in contact with the soil?",
+"serial": "663",
+"src_row": 655,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:663"
+},
+{
+"expl": "After rooting, the branch is excised (cut) from the mother plant and planted as a new seedling.",
+"key": 1,
+"o": [
+"Watering the buried branch",
+"Excising the rooted branch from the mother plant",
+"Applying fertilizer to the parent plant",
+"Covering the branch with plastic",
+"None of these"
+],
+"page": "95",
+"q": "What is the final step in the layering process before the new plant is established independently?",
+"serial": "664",
+"src_row": 656,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:664"
+},
+{
+"expl": "The source lists Simple, Compound/Serpentine, Continuous/Trench, and Air layering but does not mention Mound layering.",
+"key": 0,
+"o": [
+"Mound layering",
+"Simple layering",
+"Air layering",
+"Compound layering",
+"None of these"
+],
+"page": "95",
+"q": "Which of the following is NOT a type of layering mentioned in the source?",
+"serial": "665",
+"src_row": 657,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "95:665"
+},
+{
+"expl": "Mound layering is specifically used for fruit crops such as apple, pear, and quince, giving it a commercial advantage over simple layering.",
+"key": 1,
+"o": [
+"Requires younger shoots",
+"Allows propagation of fruit crops like apple",
+"Does not need rooting hormone",
+"Can be done in summer",
+"None of these"
+],
+"page": "96",
+"q": "Which of the following is a primary advantage of mound (stool) layering over simple layering?",
+"serial": "666",
+"src_row": 658,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:666"
+},
+{
+"expl": "The shoot is pegged 15 to 20 cm from the tip to form the U\u2011shape for rooting.",
+"key": 1,
+"o": [
+"5-10 cm",
+"15-20 cm",
+"25-30 cm",
+"35-40 cm",
+"None of these"
+],
+"page": "96",
+"q": "In simple layering, what is the typical distance from the shoot tip to the point where it is pegged down?",
+"serial": "667",
+"src_row": 659,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:667"
+},
+{
+"expl": "Apple, along with pear, quince, currants and gooseberry, is a typical species for mound layering.",
+"key": 1,
+"o": [
+"Banana",
+"Apple",
+"Tomato",
+"Wheat",
+"None of these"
+],
+"page": "96",
+"q": "Which of the following species is commonly propagated using mound layering?",
+"serial": "668",
+"src_row": 660,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:668"
+},
+{
+"expl": "The concentration of IBA is generally 3,000 to 5,000 ppm for different species.",
+"key": 2,
+"o": [
+"500-1000 ppm",
+"1500-2500 ppm",
+"3000-5000 ppm",
+"6000-8000 ppm",
+"None of these"
+],
+"page": "96",
+"q": "What is the usual concentration range of IBA used in mound layering?",
+"serial": "669",
+"src_row": 661,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:669"
+},
+{
+"expl": "Simple layering is typically done in early spring when shoots are flexible and dormant.",
+"key": 0,
+"o": [
+"Early spring",
+"Mid-summer",
+"Late autumn",
+"Winter",
+"None of these"
+],
+"page": "96",
+"q": "At what time of year is simple layering usually performed?",
+"serial": "670",
+"src_row": 662,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:670"
+},
+{
+"expl": "After girdling near the base, IBA in lanolin paste is applied to the upper part of the ring.",
+"key": 1,
+"o": [
+"Girdle the shoot at the tip",
+"Apply rooting hormone to the upper portion of the ring",
+"Leave the shoot above ground level",
+"Use fresh soil only",
+"None of these"
+],
+"page": "96",
+"q": "Which of the following is a correct step in mound layering?",
+"serial": "671",
+"src_row": 663,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:671"
+},
+{
+"expl": "Simple layering is usually performed in early spring, not late winter.",
+"key": 2,
+"o": [
+"It involves bending an intact shoot to the ground",
+"It requires cutting or girdling at the bottom of the U",
+"It is typically done in late winter",
+"It stimulates adventitious root formation",
+"None of these"
+],
+"page": "96",
+"q": "Which of the following statements about simple layering is false?",
+"serial": "672",
+"src_row": 664,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "96:672"
+},
+{
+"expl": "The source states that rooted shoots should be severed after 60 to 70 days.",
+"key": 2,
+"o": [
+"30-40 days",
+"45-55 days",
+"60-70 days",
+"75-85 days",
+"None of these"
+],
+"page": "97",
+"q": "After how many days should rooted shoots be severed from the mother plant before planting in the nursery or field?",
+"serial": "673",
+"src_row": 665,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:673"
+},
+{
+"expl": "The text mentions root emergence within 30 to 40 days under moist conditions.",
+"key": 1,
+"o": [
+"10-20 days",
+"30-40 days",
+"50-60 days",
+"70-80 days",
+"None of these"
+],
+"page": "97",
+"q": "When soil is kept continuously moist, roots in shoots typically emerge within what time frame?",
+"serial": "674",
+"src_row": 666,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:674"
+},
+{
+"expl": "Serpentine layering involves alternating covered and exposed sections along the branch.",
+"key": 2,
+"o": [
+"The entire branch is buried in soil",
+"The branch is cut into several pieces",
+"It is alternately covered and exposed along its length",
+"Only the tip is covered with soil",
+"None of these"
+],
+"page": "97",
+"q": "In compound (serpentine) layering, how is a one\u2011year\u2011old branch treated?",
+"serial": "675",
+"src_row": 667,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:675"
+},
+{
+"expl": "The exposed part must have at least one bud to produce a new shoot.",
+"key": 1,
+"o": [
+"At least one leaf",
+"At least one bud",
+"A node with roots",
+"A flower bud",
+"None of these"
+],
+"page": "97",
+"q": "What must be present on the exposed portion of the stem in serpentine layering to develop a new shoot?",
+"serial": "676",
+"src_row": 668,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:676"
+},
+{
+"expl": "Apple, pear and cherry are mentioned; mango is not.",
+"key": 3,
+"o": [
+"Apple",
+"Pear",
+"Cherry",
+"Mango",
+"None of these"
+],
+"page": "97",
+"q": "Which fruit tree is NOT listed as a common species for trench layering?",
+"serial": "677",
+"src_row": 669,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:677"
+},
+{
+"expl": "The mother plants are planted at a 45\u00b0 angle.",
+"key": 1,
+"o": [
+"30\u00b0",
+"45\u00b0",
+"60\u00b0",
+"90\u00b0",
+"None of these"
+],
+"page": "97",
+"q": "At what angle are mother plants placed at the base of a trench in continuous (trench) layering?",
+"serial": "678",
+"src_row": 670,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:678"
+},
+{
+"expl": "Rows are spaced 90 cm apart according to the source.",
+"key": 2,
+"o": [
+"45 cm",
+"60 cm",
+"90 cm",
+"120 cm",
+"None of these"
+],
+"page": "97",
+"q": "What is the recommended spacing between rows of mother plants in trench layering?",
+"serial": "679",
+"src_row": 671,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "97:679"
+}
+],
+"row_from": 651,
+"row_to": 672,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 651,
+"seeded_from": "2026-10-15"
+},
 "qidx": 0,
+"seeded_from": "2026-10-15",
+"skips": [],
 "step": 0
 },
 "malwa": {
