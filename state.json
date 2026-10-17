@@ -169714,9 +169714,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 601,
 "names": {},
+"plan": {
+"batch": 4,
+"bidx_next": 601,
+"built_at": "2026-10-17T10:58:31+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 175-180",
+"pages_blocks": [
+"175-176",
+"177-178",
+"179-180"
+],
+"questions": [
+{
+"expl": "Irrigated fields benefit from larger aggregates (>5 mm) which improve drainage and root penetration.",
+"key": 2,
+"o": [
+"1\u20132 mm",
+"1\u20135 mm",
+">5 mm",
+"5\u201310 mm",
+"None of these"
+],
+"page": "175-176",
+"q": "Which soil aggregate size is preferred for irrigated agriculture?",
+"serial": "891",
+"src_row": 582,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "175-176:891"
+},
+{
+"expl": "Both the DASM range and the field\u2011capacity percentage are specified as optimal for ploughing.",
+"key": 2,
+"o": [
+"25\u201350% DASM",
+"60% of field capacity",
+"25\u201350% DASM or 60% of field capacity",
+"40% DASM",
+"None of these"
+],
+"page": "175-176",
+"q": "The optimum soil moisture for effective ploughing is 25\u201350% depletion of available soil moisture (DASM) or 60% of field capacity. Which statement is correct?",
+"serial": "892",
+"src_row": 583,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "175-176:892"
+},
+{
+"expl": "CRIDA defines medium plough depth as 15\u201320 cm.",
+"key": 1,
+"o": [
+"5\u20136 cm",
+"15\u201320 cm",
+"25\u201330 cm",
+"10\u201315 cm",
+"None of these"
+],
+"page": "175-176",
+"q": "According to the CRIDA classification, what depth corresponds to a medium plough?",
+"serial": "893",
+"src_row": 584,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "175-176:893"
+},
+{
+"expl": "Blind tillage is performed before crop emergence to break crusts and suppress weeds.",
+"key": 2,
+"o": [
+"Break hard soil crusts",
+"Control weeds",
+"Both A and B",
+"Improve soil fertility",
+"None of these"
+],
+"page": "175-176",
+"q": "What are the primary goals of blind tillage?",
+"serial": "894",
+"src_row": 585,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "175-176:894"
+},
+{
+"expl": "Conservation tillage is defined by having at least 30% residue cover.",
+"key": 2,
+"o": [
+"<15%",
+"15\u201330%",
+">=30%",
+"50\u201360%",
+"None of these"
+],
+"page": "175-176",
+"q": "Conservation tillage requires at least what percentage of the soil surface to be covered with crop residues?",
+"serial": "895",
+"src_row": 586,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "175-176:895"
+},
+{
+"expl": "Minimum tillage can lead to lower seed germination due to limited seedbed preparation.",
+"key": 3,
+"o": [
+"Higher seed germination",
+"Increased nitrogen requirement",
+"Reduced erosion",
+"Lower seed germination",
+"None of these"
+],
+"page": "175-176",
+"q": "Which of the following is a disadvantage of minimum tillage?",
+"serial": "896",
+"src_row": 587,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "175-176:896"
+},
+{
+"expl": "Zero tillage reduces soil disturbance, making it ideal for soils that are vulnerable to wind and water erosion.",
+"key": 1,
+"o": [
+"Highly compacted soils",
+"Soils prone to wind erosion",
+"Clayey soils",
+"Sandy soils",
+"None of these"
+],
+"page": "177-178",
+"q": "Zero tillage is especially suitable for which type of soil?",
+"serial": "901",
+"src_row": 588,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:901"
+},
+{
+"expl": "Zero tillage actually increases earthworm activity; a decrease is not listed as a benefit.",
+"key": 2,
+"o": [
+"Reduced surface runoff",
+"Increased organic matter content",
+"Decreased earthworm population",
+"Homogenous soil structure",
+"None of these"
+],
+"page": "177-178",
+"q": "Which of the following is NOT a benefit of zero tillage mentioned in the source?",
+"serial": "902",
+"src_row": 589,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:902"
+},
+{
+"expl": "The source states a minimum of 20% clay is necessary for puddling to be effective.",
+"key": 2,
+"o": [
+"10%",
+"15%",
+"20%",
+"25%",
+"None of these"
+],
+"page": "177-178",
+"q": "What is the minimum clay content required for effective puddling?",
+"serial": "903",
+"src_row": 590,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:903"
+},
+{
+"expl": "Puddling creates an impervious layer with sand at the bottom, followed by silt and clay.",
+"key": 2,
+"o": [
+"Clay",
+"Silt",
+"Sand",
+"Loam",
+"None of these"
+],
+"page": "177-178",
+"q": "In puddling, which soil fraction forms the bottom layer of the impervious layer?",
+"serial": "904",
+"src_row": 591,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:904"
+},
+{
+"expl": "The source defines a dead furrow as the trench left between strips after ploughing.",
+"key": 1,
+"o": [
+"A furrow left for seed placement",
+"An open trench left between two adjacent strips after ploughing",
+"A furrow filled with residue",
+"A furrow used for irrigation",
+"None of these"
+],
+"page": "177-178",
+"q": "What is a dead furrow?",
+"serial": "905",
+"src_row": 592,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:905"
+},
+{
+"expl": "The source lists Turbo Happy Seeder as the machine for sowing under surface residue.",
+"key": 2,
+"o": [
+"Kera",
+"Pora",
+"Turbo Happy Seeder",
+"Conventional seed drill",
+"None of these"
+],
+"page": "177-178",
+"q": "Which machine is used for sowing under surface residue conditions?",
+"serial": "906",
+"src_row": 593,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:906"
+},
+{
+"expl": "Organic farming excludes all synthetic inputs, GM crops, and synthetic pesticides; therefore all of the above are excluded.",
+"key": 3,
+"o": [
+"Synthetic fertilizers",
+"GM crops",
+"Synthetic pesticides",
+"All of the above",
+"None of these"
+],
+"page": "177-178",
+"q": "Which of the following is NOT excluded in organic farming?",
+"serial": "907",
+"src_row": 594,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "177-178:907"
+},
+{
+"expl": "The major forms listed are Permaculture, Natural farming, Biodynamic farming, Ecological farming, Vedic Krishi, Zero Budget Natural Farming, and Panchgavya Krishi. Conventional farming is not among them.",
+"key": 1,
+"o": [
+"Permaculture",
+"Conventional farming",
+"Biodynamic farming",
+"Zero Budget Natural Farming",
+"None of these"
+],
+"page": "179-180",
+"q": "Which of the following is NOT a major system of organic farming?",
+"serial": "911",
+"src_row": 595,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "179-180:911"
+},
+{
+"expl": "The transition period for perennial crops such as fruit trees is 36 months (3 years).",
+"key": 1,
+"o": [
+"24 months",
+"36 months",
+"48 months",
+"12 months",
+"None of these"
+],
+"page": "179-180",
+"q": "What is the conversion period for perennial crops in organic farming?",
+"serial": "912",
+"src_row": 596,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "179-180:912"
+},
+{
+"expl": "Data shows Madhya Pradesh had the largest certified organic area, followed by Maharashtra, Gujarat, and Rajasthan.",
+"key": 0,
+"o": [
+"Madhya Pradesh",
+"Maharashtra",
+"Gujarat",
+"Rajasthan",
+"None of these"
+],
+"page": "179-180",
+"q": "Which Indian state had the highest area under certified organic farming in 2022?",
+"serial": "913",
+"src_row": 597,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "179-180:913"
+},
+{
+"expl": "The India Organic \u2013 NPOP logo, issued by APEDA under NPOP, is the official mark for certified organic products.",
+"key": 0,
+"o": [
+"India Organic \u2013 NPOP",
+"Jaivik Bharat \u2013 FSSAI",
+"Organic India \u2013 APEDA",
+"Green India \u2013 IFOAM",
+"None of these"
+],
+"page": "179-180",
+"q": "Which logo is used on organic certified products in India?",
+"serial": "914",
+"src_row": 598,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "179-180:914"
+},
+{
+"expl": "Masanobu Fukuoka pioneered natural farming, while Albert Howard is the father of organic farming and Rudolf Steiner of biodynamic farming.",
+"key": 1,
+"o": [
+"Albert Howard",
+"Masanobu Fukuoka",
+"Rudolf Steiner",
+"Subhash Palekar",
+"None of these"
+],
+"page": "179-180",
+"q": "Who is regarded as the father of natural farming?",
+"serial": "915",
+"src_row": 599,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "179-180:915"
+},
+{
+"expl": "The inaugural organic agriculture university in India was set up in Gujarat.",
+"key": 0,
+"o": [
+"Gujarat",
+"Maharashtra",
+"Rajasthan",
+"Karnataka",
+"None of these"
+],
+"page": "179-180",
+"q": "The first organic agriculture university in India was established in which state?",
+"serial": "916",
+"src_row": 600,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "179-180:916"
+}
+],
+"rolled": false,
+"row_from": 582,
+"row_to": 601,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 582,
+"seeded_from": "2026-10-16",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-16",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
