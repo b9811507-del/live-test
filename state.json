@@ -169708,8 +169708,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 693,
 "names": {},
+"plan": {
+"bidx_next": 693,
+"built_at": "2026-10-17T14:28:08+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 98-100",
+"pages_list": [
+98,
+99,
+100
+],
+"questions": [
+{
+"expl": "Air layering is used for tropical and subtropical trees like litchi, guava, and mango, but not for apple, which is typically propagated via grafting or budding.",
+"key": 2,
+"o": [
+"Litchi",
+"Guava",
+"Apple",
+"Mango",
+"None of these"
+],
+"page": "98",
+"q": "Which of the following fruits is NOT typically propagated using air layering?",
+"serial": "680",
+"src_row": 672,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:680"
+},
+{
+"expl": "Air layers are made in spring or summer, specifically July-August, on stems of the previous season\u2019s growth.",
+"key": 1,
+"o": [
+"Winter (December-January)",
+"Spring or summer (July-August)",
+"Monsoon (June-September)",
+"Autumn (October-November)",
+"None of these"
+],
+"page": "98",
+"q": "During which season are air layers typically made for propagation?",
+"serial": "681",
+"src_row": 673,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:681"
+},
+{
+"expl": "The presence of active leaves on the layered shoot speeds up root formation, aiding in successful propagation.",
+"key": 1,
+"o": [
+"Prevents pest infestation",
+"Speeds up root formation",
+"Increases flower production",
+"Reduces water loss",
+"None of these"
+],
+"page": "98",
+"q": "What is the primary advantage of having active leaves on a layered shoot in air layering?",
+"serial": "682",
+"src_row": 674,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:682"
+},
+{
+"expl": "Air layering is also known as Marcottage, along with other names like Gootee, Pot layering, and Chinese layering.",
+"key": 1,
+"o": [
+"Grafting",
+"Marcottage",
+"Cutting",
+"Budding",
+"None of these"
+],
+"page": "98",
+"q": "Which of the following is another name for air layering?",
+"serial": "683",
+"src_row": 675,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:683"
+},
+{
+"expl": "The recommended concentration for IBA application in air layering is 3000-5000 PPM.",
+"key": 2,
+"o": [
+"1000-2000 PPM",
+"2000-3000 PPM",
+"3000-5000 PPM",
+"5000-7000 PPM",
+"None of these"
+],
+"page": "98",
+"q": "What is the recommended concentration range for IBA application in air layering?",
+"serial": "684",
+"src_row": 676,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:684"
+},
+{
+"expl": "In tip layering, the tips of shoots are buried 5 to 10 cm deep in the soil.",
+"key": 1,
+"o": [
+"2-3 cm",
+"5-10 cm",
+"10-15 cm",
+"15-20 cm",
+"None of these"
+],
+"page": "98",
+"q": "In tip layering, how deep are the shoot tips buried in the soil?",
+"serial": "685",
+"src_row": 677,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:685"
+},
+{
+"expl": "Tip layering is the simplest form of layering and often occurs naturally.",
+"key": 1,
+"o": [
+"It requires specialized equipment",
+"It is the simplest form of layering",
+"It is used exclusively for woody plants",
+"It involves rooting in water",
+"None of these"
+],
+"page": "98",
+"q": "Which of the following is a characteristic feature of tip layering?",
+"serial": "686",
+"src_row": 678,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "98:686"
+},
+{
+"expl": "The source explicitly states that rooting in buried shoots takes place within a month.",
+"key": 1,
+"o": [
+"Within a week",
+"Within a month",
+"Within two months",
+"Within six months",
+"None of these"
+],
+"page": "99",
+"q": "In tip layering, when does rooting typically occur in buried shoots?",
+"serial": "687",
+"src_row": 679,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:687"
+},
+{
+"expl": "The source specifies that the new plants (layers) may be detached and transplanted during spring.",
+"key": 3,
+"o": [
+"Summer",
+"Monsoon",
+"Autumn",
+"Spring",
+"None of these"
+],
+"page": "99",
+"q": "During which season are the new plants (layers) detached and transplanted in tip layering?",
+"serial": "688",
+"src_row": 680,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:688"
+},
+{
+"expl": "Tip layering involves burying shoots to induce rooting, as evidenced by the mention of rooting in buried shoots.",
+"key": 1,
+"o": [
+"To promote flowering",
+"To induce rooting",
+"To prevent disease",
+"To increase leaf size",
+"None of these"
+],
+"page": "99",
+"q": "What is the primary purpose of burying shoots in tip layering?",
+"serial": "689",
+"src_row": 681,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:689"
+},
+{
+"expl": "Tip layering is a propagation method where the tip of a shoot is buried to develop roots, as implied by the term 'tip layering' and the context.",
+"key": 1,
+"o": [
+"It requires grafting",
+"It involves burying the tip of a shoot",
+"It is used for annual plants only",
+"It requires chemical treatment",
+"None of these"
+],
+"page": "99",
+"q": "Which of the following is a characteristic feature of tip layering?",
+"serial": "690",
+"src_row": 682,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:690"
+},
+{
+"expl": "The source states that the new plants (layers) may be detached and transplanted during spring, which is after rooting.",
+"key": 2,
+"o": [
+"Immediately after rooting",
+"After one year",
+"During spring",
+"Only in winter",
+"None of these"
+],
+"page": "99",
+"q": "After rooting, when can the layers be separated from the parent plant in tip layering?",
+"serial": "691",
+"src_row": 683,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:691"
+},
+{
+"expl": "The source explicitly refers to 'Tip Layering' as the propagation method being discussed.",
+"key": 2,
+"o": [
+"Grafting",
+"Cutting",
+"Tip layering",
+"Budding",
+"None of these"
+],
+"page": "99",
+"q": "Which propagation method is being described in the source?",
+"serial": "692",
+"src_row": 684,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:692"
+},
+{
+"expl": "The source specifies that the new plants (layers) may be detached and transplanted during spring, which is the time frame mentioned.",
+"key": 2,
+"o": [
+"Immediately",
+"After one month",
+"During spring",
+"After two seasons",
+"None of these"
+],
+"page": "99",
+"q": "What is the time frame for transplanting new plants in tip layering after rooting?",
+"serial": "693",
+"src_row": 685,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "99:693"
+},
+{
+"expl": "Pruning is defined as the judicious removal of plant parts to obtain a better and qualitative yield.",
+"key": 1,
+"o": [
+"To increase the number of branches",
+"Judicious removal of plant parts for better qualitative yield",
+"To completely remove the plant",
+"To encourage vertical growth only",
+"None of these"
+],
+"page": "100",
+"q": "What is the primary objective of pruning in horticulture?",
+"serial": "694",
+"src_row": 686,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:694"
+},
+{
+"expl": "Heading back is described as the pruning method where only the tops of branches are cut off, encouraging lateral growth.",
+"key": 1,
+"o": [
+"Thinning out",
+"Heading back",
+"Topping",
+"Rejuvenation pruning",
+"None of these"
+],
+"page": "100",
+"q": "Which type of pruning involves cutting off only the tops of branches?",
+"serial": "695",
+"src_row": 687,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:695"
+},
+{
+"expl": "Heading back encourages lateral growth as it involves light pruning of branch tops.",
+"key": 2,
+"o": [
+"Complete removal of a branch",
+"No re-growth allowed",
+"Encourages lateral growth",
+"Weakens the tree permanently",
+"None of these"
+],
+"page": "100",
+"q": "What is a characteristic effect of 'heading back' pruning?",
+"serial": "696",
+"src_row": 688,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:696"
+},
+{
+"expl": "Thinning out involves the complete removal of a branch or part, with no re-growth allowed.",
+"key": 1,
+"o": [
+"It is partially cut to regrow",
+"It is completely removed with no re-growth allowed",
+"It is left to dry on the tree",
+"It is used for grafting",
+"None of these"
+],
+"page": "100",
+"q": "In 'thinning out' pruning, what happens to the removed branch?",
+"serial": "697",
+"src_row": 689,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:697"
+},
+{
+"expl": "Thinning out does not give strength to the tree as it involves complete removal of branches without re-growth.",
+"key": 1,
+"o": [
+"Heading back",
+"Thinning out",
+"Formative pruning",
+"Renewal pruning",
+"None of these"
+],
+"page": "100",
+"q": "Which pruning type does NOT contribute to strengthening the tree?",
+"serial": "698",
+"src_row": 690,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:698"
+},
+{
+"expl": "The source mentions only 'Heading back' and 'Thinning out' as types of pruning; 'Pinching' is not listed.",
+"key": 2,
+"o": [
+"Heading back",
+"Thinning out",
+"Pinching",
+"Topping",
+"None of these"
+],
+"page": "100",
+"q": "Pruning is classified into types based on the method of removal. Which of the following is NOT a type of pruning mentioned?",
+"serial": "699",
+"src_row": 691,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:699"
+},
+{
+"expl": "Heading back pruning encourages lateral growth as it involves light pruning of branch tops.",
+"key": 1,
+"o": [
+"Vertical growth only",
+"Lateral growth",
+"No growth",
+"Downward growth",
+"None of these"
+],
+"page": "100",
+"q": "What is the outcome of 'heading back' pruning in terms of branch growth direction?",
+"serial": "700",
+"src_row": 692,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "100:700"
+}
+],
+"row_from": 672,
+"row_to": 693,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 672,
+"seeded_from": "2026-10-16"
+},
 "qidx": 0,
+"seeded_from": "2026-10-16",
+"skips": [],
 "step": 0
 },
 "malwa": {
