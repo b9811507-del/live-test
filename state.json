@@ -169703,7 +169703,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-17T17:57:38+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Increases fruit size",
+"Induces uniform flowering",
+"Reduces ethylene production and delays softening",
+"Induces disease resistance",
+"None of these"
+],
+"page": "",
+"q": "What is the primary effect of Putrescine on peaches?",
+"serial": "1bxM1Q-4:3635",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3635"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potato",
+"Wheat",
+"Sorghum",
+"Finger millet",
+"None of these"
+],
+"page": "",
+"q": "Which crop requires the least amount of Nitrogen (N) per 100 kg of economic produce?",
+"serial": "1sUgWsko:7291",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7291"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Overuse of chemical fertilizers",
+"Excessive irrigation",
+"Soil erosion",
+"Crop rotation",
+"None of these"
+],
+"page": "",
+"q": "Which factor primarily contributes to nitrate contamination of groundwater in agricultural areas?",
+"serial": "1bxM1Q-4:946",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:946"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"4.5 to 5.5",
+"4.5 to 6.5",
+"5.2 to 8.0",
+"4.5 to 8.0",
+"None of these"
+],
+"page": "",
+"q": "The pH range for optimal growth of Coffee is:",
+"serial": "1sUgWsko:1194",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1194"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Finger millet",
+"Proso millet",
+"Barnyard millet",
+"Little millet",
+"None of these"
+],
+"page": "",
+"q": "Which small millet has the shortest growth duration of about 60 days?",
+"serial": "128DIQLj:354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:354"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Behavior of individual consumers",
+"Behavior of the economic system as a whole",
+"Pricing strategies of firms",
+"Government budgeting processes",
+"None of these"
+],
+"page": "",
+"q": "What is the primary focus of macroeconomics?",
+"serial": "1sUgWsko:3908",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3908"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"30 cm",
+"60 cm",
+"90 cm",
+"120 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the effective root zone depth for rice cultivation?",
+"serial": "128DIQLj:185",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:185"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To produce genetically identical offspring",
+"To increase genetic diversity",
+"To enhance seed production",
+"To reduce environmental variations",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of clonal selection in asexually propagated plants?",
+"serial": "1UgnIe-g:317",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:317"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cucumis sativus",
+"Cucumis melo",
+"Cucurbita pepo",
+"Citrullus lanatus",
+"None of these"
+],
+"page": "",
+"q": "What is the botanical name of muskmelon?",
+"serial": "1bxM1Q-4:3196",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3196"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rhinoceros beetle",
+"Potato tuber moth",
+"Greasy cutworm",
+"Diamondback moth",
+"None of these"
+],
+"page": "",
+"q": "Which pest's adult form has a long horn projecting dorsally from the head in males?",
+"serial": "1sUgWsko:2124",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2124"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Price volatility",
+"Soil degradation",
+"Pest infestation",
+"Labor shortage",
+"None of these"
+],
+"page": "",
+"q": "Buffer stock operations primarily address which economic issue in agriculture?",
+"serial": "1sUgWsko:4088",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4088"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"80-100 kg/ha",
+"60-80 kg/ha",
+"50-70 kg/ha",
+"90-110 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate for spreading type groundnut per hectare?",
+"serial": "17U0MEc-:728",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:728"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Increasing fruit setting and yield",
+"Preventing leaf curl",
+"Controlling nematodes",
+"Enhancing seed germination",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of a foliar spray of PCPA (20 ppm) in tomato cultivation?",
+"serial": "1bxM1Q-4:3131",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3131"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Due to tunneling in the stem",
+"Due to destruction of pulp and liquid oozing from the fruit",
+"Due to zig-zag tunnels in the seed",
+"Due to shedding of leaves",
+"None of these"
+],
+"page": "",
+"q": "Why does the infestation of Bactrocera dorsalis lead to fruit drop in mango?",
+"serial": "1sUgWsko:2037",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2037"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.29\u20130.56 \u03bcm",
+"0.39\u20130.76 \u03bcm",
+"0.45\u20130.80 \u03bcm",
+"0.10\u20130.30 \u03bcm",
+"None of these"
+],
+"page": "",
+"q": "What is the wavelength range of visible light in the solar spectrum?",
+"serial": "1sUgWsko:5666",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5666"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Banana",
+"Pomegranate",
+"Walnut",
+"Fig",
+"None of these"
+],
+"page": "",
+"q": "Which fruit exhibits the characteristic of Protoandry?",
+"serial": "1bxM1Q-4:2865",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2865"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1",
+"2",
+"3",
+"4",
+"None of these"
+],
+"page": "",
+"q": "In Split Plot Design, how many factors are typically applied?",
+"serial": "1bxM1Q-4:3702",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3702"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Darwin",
+"Sachs",
+"Mendel",
+"Pasteur",
+"None of these"
+],
+"page": "",
+"q": "Who coined the term 'imbibition'?",
+"serial": "1bxM1Q-4:2655",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2655"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Low humidity and high temperature",
+"High humidity and low temperature (10\u201112 \u00b0C)",
+"Dry soil and moderate temperature",
+"High light intensity and warm temperature",
+"None of these"
+],
+"page": "",
+"q": "Which environmental conditions most favor the development of late blight in potato?",
+"serial": "1UgnIe-g:1114",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1114"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Shell",
+"Kernel",
+"Husk",
+"Endosperm",
+"None of these"
+],
+"page": "",
+"q": "Which part of the coconut is used to make coir, a fiber used for mats and ropes?",
+"serial": "1sUgWsko:1216",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1216"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Theophrastus",
+"Aristotle",
+"Socrates",
+"Plato",
+"None of these"
+],
+"page": "",
+"q": "Which Greek philosopher recorded observations on plant diseases?",
+"serial": "1UgnIe-g:902",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:902"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Drying up of streams and rivers",
+"Depletion of groundwater table",
+"Reduction in crop yield",
+"Loss of power generation capacity",
+"None of these"
+],
+"page": "",
+"q": "Which impact is NOT mentioned as a consequence of hydrological drought in the source?",
+"serial": "1sUgWsko:5780",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5780"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Use of synthetically compounded fertilizers",
+"Crop rotation",
+"Use of animal manure",
+"Biological pest control",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a characteristic of organic farming?",
+"serial": "1bxM1Q-4:1433",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1433"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1250 m^3 per year",
+"400 m^3 per year",
+"2300 m^3 per year",
+"75 m^3 per year",
+"None of these"
+],
+"page": "",
+"q": "According to the source, water availability per capita in India is",
+"serial": "1bxM1Q-4:959",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:959"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"pBR-322",
+"pUC-18",
+"Ti plasmid",
+"Ri plasmid",
+"None of these"
+],
+"page": "",
+"q": "Which plasmid vector is derived from pBR-322 and is much smaller, with resistance to ampicillin only?",
+"serial": "1UgnIe-g:1390",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1390"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Okra",
+"Potato",
+"Tomato",
+"Carrot",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops has the highest seed rate per hectare?",
+"serial": "1bxM1Q-4:3116",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3116"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The ratio of the yield of intercropping to the yield of a sole crop",
+"The relative land area required by a sole crop to produce the yield achieved in intercropping",
+"The ratio of the ground area to the total leaf area",
+"The ratio of the total leaf area to the ground area",
+"None of these"
+],
+"page": "",
+"q": "What does Land Equivalent Ratio (LER) mean?",
+"serial": "17U0MEc-:292",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:292"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Orange or green",
+"Blue",
+"Red",
+"Yellow",
+"None of these"
+],
+"page": "",
+"q": "What color is the seed lot certificate?",
+"serial": "1UgnIe-g:859",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:859"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The percentage of applied irrigation water that is lost",
+"The percentage of applied irrigation water stored in the soil and available for crop use",
+"The ratio of irrigation water to rainfall",
+"The percentage of water used for irrigation",
+"None of these"
+],
+"page": "",
+"q": "Irrigation efficiency is best described as",
+"serial": "1bxM1Q-4:955",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:955"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Globodera",
+"Heterodera",
+"Meloidogyne",
+"Pratylenchus",
+"None of these"
+],
+"page": "",
+"q": "Which genus is a cereal cyst nematode affecting wheat?",
+"serial": "1sUgWsko:3877",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3877"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"4-Chlorophenoxyacetic acid (4-CPA)",
+"Ethrel",
+"Gibberellic acid",
+"PCPA",
+"None of these"
+],
+"page": "",
+"q": "Which growth regulator is used to promote fruit set in tomatoes by preventing flower and fruit shedding?",
+"serial": "1YcJWVgW:519",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:519"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"5\u20137 days",
+"10\u201312 days",
+"15\u201320 days",
+"25\u201330 days",
+"None of these"
+],
+"page": "",
+"q": "In a modified mat nursery for machine planting, seedlings are ready for transplanting after how many days post\u2011seeding?",
+"serial": "1sUgWsko:6222",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6222"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Peru",
+"China",
+"France",
+"India",
+"None of these"
+],
+"page": "",
+"q": "The probable centre of origin of the potato (Solanum tuberosum) is?",
+"serial": "1sUgWsko:486",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:486"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ratio of water output to water input",
+"Ratio of water input to water output",
+"Percentage of rainfall captured",
+"Amount of water stored in soil",
+"None of these"
+],
+"page": "",
+"q": "Irrigation efficiency is best described as:",
+"serial": "1sUgWsko:4663",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4663"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Urea",
+"Ammonium sulfate",
+"Ammonium nitrate",
+"Urea + ammonium sulfate",
+"None of these"
+],
+"page": "",
+"q": "In calcareous or highly alkaline soils, which nitrogen source is preferable?",
+"serial": "1sUgWsko:109",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:109"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Family",
+"Village",
+"Blocks",
+"Gram Sabha",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is the basic unit for rural development programmes?",
+"serial": "128DIQLj:2181",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2181"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Tomato",
+"Marigold",
+"Corn",
+"Wheat",
+"None of these"
+],
+"page": "",
+"q": "Which crop is used as a trap crop to reduce Pratylenchus nematode population?",
+"serial": "128DIQLj:691",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:691"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"25-30%",
+"20-25%",
+"15-20%",
+"15%",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal moisture content in maize kernels for harvesting?",
+"serial": "1sUgWsko:170",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:170"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Runner",
+"Stolon",
+"Rhizome",
+"Offset",
+"None of these"
+],
+"page": "",
+"q": "Which natural modification grows below ground horizontally?",
+"serial": "1YcJWVgW:98",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:98"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Red rot of sugarcane",
+"Sugarcane mosaic virus",
+"Sugarcane smut",
+"Sugarcane rust",
+"None of these"
+],
+"page": "",
+"q": "What is the most destructive disease of sugarcane?",
+"serial": "17U0MEc-:236",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:236"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gir",
+"Red Sindhi",
+"Rathi",
+"Deoni",
+"None of these"
+],
+"page": "",
+"q": "Which indigenous Indian cattle breed is the highest milk producer (2000-2500 L/lactation) and is also known as a best beef breed?",
+"serial": "128DIQLj:1731",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1731"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sorghum halepense",
+"Parthenium hysterophorus",
+"Amaranthus spp.",
+"Argemone mexicana",
+"None of these"
+],
+"page": "",
+"q": "Which weed causes dermal allergies in humans?",
+"serial": "17U0MEc-:845",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:845"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"October \u2013 November",
+"February \u2013 April",
+"March \u2013 June",
+"July \u2013 October",
+"None of these"
+],
+"page": "",
+"q": "During which months is the Zaid cropping season primarily observed in India?",
+"serial": "1sUgWsko:4856",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4856"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"500-1000 fruits",
+"1000-2000 fruits",
+"2000-3000 fruits",
+"3000-4000 fruits",
+"None of these"
+],
+"page": "",
+"q": "What is the average yield range per tree for mango varieties mentioned in the source?",
+"serial": "1sUgWsko:979",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:979"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"FAO",
+"IRRI, Philippines",
+"WHO",
+"UNEP",
+"None of these"
+],
+"page": "",
+"q": "Which organization holds the largest germplasm collection of rice in the world?",
+"serial": "1UgnIe-g:126",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:126"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2 months",
+"3 months",
+"4 months",
+"5 months",
+"None of these"
+],
+"page": "",
+"q": "At what age can a calf be weaned?",
+"serial": "1sUgWsko:3079",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3079"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"15 inch",
+"18 inch",
+"15 cm",
+"20 inch",
+"None of these"
+],
+"page": "",
+"q": "What is the front feeding length of a conventional cage?",
+"serial": "1sUgWsko:3452",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3452"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pie chart and Bar chart",
+"Scatter (xy) chart and Surface chart",
+"Line chart and Area chart",
+"Column chart and Radar chart",
+"None of these"
+],
+"page": "",
+"q": "What types of charts are mentioned in the context of data visualization?",
+"serial": "1bxM1Q-4:3840",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3840"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Avocado",
+"Grape",
+"Papaya",
+"Fig",
+"None of these"
+],
+"page": "",
+"q": "Which fruit has an oil content of 8.5%?",
+"serial": "1YcJWVgW:1149",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1149"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1",
+"2",
+"3",
+"4",
+"None of these"
+],
+"page": "",
+"q": "How many branches of the vines are trained parallel to the ground in the Kniffin system?",
+"serial": "1sUgWsko:759",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:759"
+}
+],
+"set_no": 35,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
