@@ -174975,9 +174975,438 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 623,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 623,
+"built_at": "2026-10-18T10:58:20+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 22,
+"pages": "Book pages 181-186",
+"pages_blocks": [
+"181-182",
+"183-184",
+"185-186"
+],
+"questions": [
+{
+"expl": "Amaranthus spp. has a seed production of 1,96,000, the highest among the listed weeds.",
+"key": 0,
+"o": [
+"Amaranthus spp.",
+"Portulaca oleracea",
+"Solanum nigrum",
+"Chenopodium album",
+"None of these"
+],
+"page": "181-182",
+"q": "Which weed has the highest seed production capacity according to the table?",
+"serial": "921",
+"src_row": 601,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:921"
+},
+{
+"expl": "Exogenous dormancy arises from seed coat factors such as a hard coat or inhibitors present in the coat.",
+"key": 1,
+"o": [
+"Innate/Inherent",
+"Exogenous",
+"Induced",
+"Enforced",
+"None of these"
+],
+"page": "181-182",
+"q": "Which type of dormancy is caused by a hard seed coat?",
+"serial": "922",
+"src_row": 602,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:922"
+},
+{
+"expl": "Weeds caused a 33% loss, higher than insects (26%) and diseases (20%).",
+"key": 0,
+"o": [
+"Weeds",
+"Insects",
+"Diseases",
+"All of the above",
+"None of these"
+],
+"page": "181-182",
+"q": "According to DWR 2015, which category caused the highest percentage loss in crop production?",
+"serial": "923",
+"src_row": 603,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:923"
+},
+{
+"expl": "Poaceae is one of the three families (Poaceae, Asteraceae, Cyperaceae) that together account for 44% of the worst weeds.",
+"key": 0,
+"o": [
+"Poaceae",
+"Brassicaceae",
+"Solanaceae",
+"Orchidaceae",
+"None of these"
+],
+"page": "181-182",
+"q": "Which of the following families is included in the trio that accounts for 44% of the world\u2019s worst weed species?",
+"serial": "924",
+"src_row": 604,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:924"
+},
+{
+"expl": "Argemone mexicana contains sanguinarine and oxotriacontaric acid, which cause dropsy.",
+"key": 0,
+"o": [
+"Argemone mexicana",
+"Parthenium hysterophorus",
+"Ambrosia",
+"Milk from animals fed on Mexican poppy",
+"None of these"
+],
+"page": "181-182",
+"q": "Which weed is responsible for causing dropsy in humans?",
+"serial": "925",
+"src_row": 605,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:925"
+},
+{
+"expl": "Cyperus rotundus (night sedge) is reported to enhance denitrification.",
+"key": 0,
+"o": [
+"Cyperus rotundus",
+"Cynodon dactylon",
+"Imperata cylindrica",
+"Lantana camara",
+"None of these"
+],
+"page": "181-182",
+"q": "Which weed is known to enhance denitrification in soil?",
+"serial": "926",
+"src_row": 606,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:926"
+},
+{
+"expl": "Echinochloa is listed as the host for the rice stem borer.",
+"key": 1,
+"o": [
+"Aeschynomone",
+"Echinochloa",
+"Cenchrus ciliaris",
+"Saccharum",
+"None of these"
+],
+"page": "181-182",
+"q": "Which weed acts as an alternate host for the rice stem borer?",
+"serial": "927",
+"src_row": 607,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "181-182:927"
+},
+{
+"expl": "The term was introduced by Hans Mollish in 1935, as stated in the source.",
+"key": 0,
+"o": [
+"Hans Mollish",
+"Jan Smuts",
+"Charles Darwin",
+"Gregor Mendel",
+"None of these"
+],
+"page": "183-184",
+"q": "Who first coined the term \"allelopathy\" in 1935?",
+"serial": "931",
+"src_row": 608,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:931"
+},
+{
+"expl": "Above\u2011ground competition involves light and CO2; water is obtained from the soil, i.e., below\u2011ground.",
+"key": 2,
+"o": [
+"Light",
+"Carbon dioxide (CO2)",
+"Water",
+"Sunlight intensity",
+"None of these"
+],
+"page": "183-184",
+"q": "Which resource is NOT typically contested above ground between crops and weeds?",
+"serial": "932",
+"src_row": 609,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:932"
+},
+{
+"expl": "The source lists carrot with a 72% yield loss, the greatest among the given crops.",
+"key": 0,
+"o": [
+"Carrot",
+"Sugar beet",
+"Onion",
+"Mustard",
+"None of these"
+],
+"page": "183-184",
+"q": "Which crop suffers the highest percentage yield reduction due to weeds?",
+"serial": "933",
+"src_row": 610,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:933"
+},
+{
+"expl": "Cynodon dactylon has a transpiration ratio of 813, higher than pearl millet's 450.",
+"key": 1,
+"o": [
+"Pearl millet",
+"Cynodon dactylon",
+"Setaria lutens",
+"Amaranthus",
+"None of these"
+],
+"page": "183-184",
+"q": "Among the examples given, which plant exhibits the highest transpiration ratio?",
+"serial": "934",
+"src_row": 611,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:934"
+},
+{
+"expl": "The source states that Chenopodium album indicates sulfur dioxide and hydrogen sulfide pollution.",
+"key": 0,
+"o": [
+"SO\u2082 and H\u2082S",
+"CO\u2082 and O\u2083",
+"NO\u2093 and NH\u2083",
+"CH\u2084 and N\u2082O",
+"None of these"
+],
+"page": "183-184",
+"q": "Chenopodium album is an indicator of pollution by which gases?",
+"serial": "935",
+"src_row": 612,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:935"
+},
+{
+"expl": "A pappus is described as a parachute\u2011like calyx modification aiding wind dispersal.",
+"key": 0,
+"o": [
+"Pappus",
+"Comose",
+"Balloon or papery structure",
+"Wing\u2011like appendage",
+"None of these"
+],
+"page": "183-184",
+"q": "Which seed\u2011dispersal mechanism involves a parachute\u2011like modification of the calyx?",
+"serial": "936",
+"src_row": 613,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:936"
+},
+{
+"expl": "Sugarcane\u2019s critical period is 30\u2011120 DAS, longer than the other crops\u2019 ranges.",
+"key": 2,
+"o": [
+"Rice (Direct Seeded)",
+"Soybean",
+"Sugarcane",
+"Mustard",
+"None of these"
+],
+"page": "183-184",
+"q": "Which crop listed has the longest critical period of weed competition (in days after sowing)?",
+"serial": "937",
+"src_row": 614,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:937"
+},
+{
+"expl": "The source specifies Setaria lutens as a Zn\u2011accumulating weed.",
+"key": 0,
+"o": [
+"Setaria lutens",
+"Amaranthus",
+"Chenopodium album",
+"Portulaca",
+"None of these"
+],
+"page": "183-184",
+"q": "Which weed is identified as a zinc accumulator?",
+"serial": "938",
+"src_row": 615,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "183-184:938"
+},
+{
+"expl": "Xanthium strumarium bears hooks that attach to animals, facilitating zoochory.",
+"key": 0,
+"o": [
+"Xanthium strumarium",
+"Cenchrus sp.",
+"Tribulus terrestris",
+"Datura alba",
+"None of these"
+],
+"page": "185-186",
+"q": "Which weed uses hooks for animal-mediated dispersal?",
+"serial": "941",
+"src_row": 616,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:941"
+},
+{
+"expl": "Endozoochory is defined as the viability of seeds after passing through animal digestive tracts.",
+"key": 0,
+"o": [
+"Endozoochory",
+"Epizoochory",
+"Anthropochory",
+"Censor mechanism",
+"None of these"
+],
+"page": "185-186",
+"q": "Which dispersal mode involves seeds surviving digestion and being excreted by animals?",
+"serial": "942",
+"src_row": 617,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:942"
+},
+{
+"expl": "Argemone mexicana is listed as an example of the censor mechanism where wind forces pods to release seeds.",
+"key": 0,
+"o": [
+"Argemone mexicana",
+"Datura alba",
+"Celosia argentea",
+"Alligator Weed",
+"None of these"
+],
+"page": "185-186",
+"q": "The \"censor mechanism\" is exemplified by which plant?",
+"serial": "943",
+"src_row": 618,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:943"
+},
+{
+"expl": "Epizoochory refers to seed adhesion on the exterior of animals.",
+"key": 0,
+"o": [
+"Seeds attach to the outside of animals",
+"Seeds survive digestion and are excreted",
+"Seeds have hooks that embed in soil",
+"Seeds are dispersed by wind",
+"None of these"
+],
+"page": "185-186",
+"q": "Which of the following best describes epizoochory?",
+"serial": "944",
+"src_row": 619,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:944"
+},
+{
+"expl": "Anthropochory is a form of zoochory where humans move plant material.",
+"key": 0,
+"o": [
+"Human\u2011mediated dispersal",
+"Animal\u2011mediated dispersal",
+"Seed adhesion to animals",
+"Wind dispersal",
+"None of these"
+],
+"page": "185-186",
+"q": "Anthropochory is best defined as:",
+"serial": "945",
+"src_row": 620,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:945"
+},
+{
+"expl": "Bermuda Grass is the common name for the weed listed in Table 1.",
+"key": 0,
+"o": [
+"Bermuda Grass",
+"Crowfoot Grass",
+"Large Crabgrass",
+"Thatch Grass",
+"None of these"
+],
+"page": "185-186",
+"q": "Which weed is commonly known as \"Bermuda Grass\"?",
+"serial": "946",
+"src_row": 621,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:946"
+},
+{
+"expl": "Goose Grass appears in Table 2, not Table 1.",
+"key": 2,
+"o": [
+"Barnyard Grass",
+"Jungle Rice",
+"Goose Grass",
+"Yellow Foxtail",
+"None of these"
+],
+"page": "185-186",
+"q": "Which weed is NOT listed among the common weeds in Table 1?",
+"serial": "947",
+"src_row": 622,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "185-186:947"
+}
+],
+"rolled": false,
+"row_from": 601,
+"row_to": 623,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 601,
+"seeded_from": "2026-10-17",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-17",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
