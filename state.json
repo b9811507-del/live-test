@@ -174964,7 +174964,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-18T17:57:14+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"To replace manual labor completely",
+"To apply engineering principles for better agricultural operations and increased crop yield",
+"To reduce the cost of agricultural inputs",
+"To promote organic farming practices",
+"None of these"
+],
+"page": "",
+"q": "What is the primary objective of farm mechanization?",
+"serial": "1sUgWsko:6413",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6413"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Bright yellow linear stripes",
+"Small circular orange blisters",
+"Dark reddish\u2011brown spindle\u2011shaped pustules",
+"Olive\u2011black spores covered by a gray membrane",
+"None of these"
+],
+"page": "",
+"q": "How do the uredia of brown (leaf) rust appear on wheat leaves?",
+"serial": "1sUgWsko:3700",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3700"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Raw paddy",
+"Parboiled paddy",
+"Both raw and parboiled paddy",
+"Milled paddy",
+"None of these"
+],
+"page": "",
+"q": "For which type of paddy is the air temperature in the LSU dryer set to 85\u00b0C?",
+"serial": "1sUgWsko:6450",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6450"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Credibility",
+"Perception",
+"Communication Fidelity",
+"Kinesics",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the process by which an individual receives and analyzes stimuli through their senses?",
+"serial": "128DIQLj:2265",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2265"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Alphonso",
+"Kesar",
+"Langra",
+"Dasheri",
+"None of these"
+],
+"page": "",
+"q": "Which mango variety has the highest percentage of perfect (bisexual) flowers?",
+"serial": "1YcJWVgW:160",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:160"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2%",
+"4%",
+"6%",
+"8%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of the total protein in rice is lysine?",
+"serial": "128DIQLj:178",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:178"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sustainable Age of Forest Land Technology",
+"Sustainable Agroforestry Land Technology",
+"Sustainable Age of Land Technology",
+"Sustainable Agricultural Land Technology",
+"None of these"
+],
+"page": "",
+"q": "SALT 3 in forestry stands for:",
+"serial": "1UgnIe-g:2830",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2830"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1.5-2.5",
+"2.5-4.5",
+"4.5-6.5",
+"6.5-8.5",
+"None of these"
+],
+"page": "",
+"q": "What is the typical sprinkler pressure range in kg/cm\u00b2 for sprinkler irrigation?",
+"serial": "17U0MEc-:434",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:434"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Indian Institute of Pulses Research",
+"Indian Institute of Maize Research",
+"Indian Institute of Oilseeds Research",
+"Indian Institute of Horticultural Research",
+"None of these"
+],
+"page": "",
+"q": "Which institute focuses on pulses research?",
+"serial": "1sUgWsko:4146",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4146"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Relative positions of genes and/or markers on chromosomes",
+"The sequence of DNA in a species",
+"The structure of plasmids",
+"The process of gene cloning",
+"None of these"
+],
+"page": "",
+"q": "What does a genetic map represent?",
+"serial": "1bxM1Q-4:2105",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2105"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Black polythene film",
+"Clear (transparent) polythene film",
+"Green polythene film",
+"Brown polythene film",
+"None of these"
+],
+"page": "",
+"q": "Which type of polythene film is used for soil solarization?",
+"serial": "128DIQLj:871",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:871"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gericke",
+"Jean Baptiste Boussingault",
+"C.T. Patel",
+"C.D. Mayee",
+"None of these"
+],
+"page": "",
+"q": "Who is the scientist that coined the term \"Hydroponics\"?",
+"serial": "128DIQLj:132",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:132"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Chhattisgarh",
+"Maharashtra",
+"Gujarat",
+"Karnataka",
+"None of these"
+],
+"page": "",
+"q": "Which Indian state records the highest productivity of okra cultivation?",
+"serial": "1YcJWVgW:592",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:592"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Flowering",
+"Pegging",
+"Pod formation",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "During which growth stages is irrigation most critical for groundnut?",
+"serial": "1sUgWsko:363",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:363"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase file size",
+"To make the presentation attractive and give natural effects",
+"To reduce the number of slides",
+"To add more text",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of using different color schemes in a presentation?",
+"serial": "1bxM1Q-4:3854",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3854"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Prophase",
+"Metaphase",
+"Anaphase",
+"Telophase",
+"None of these"
+],
+"page": "",
+"q": "During which phase of mitosis do chromosomes align in the equatorial plate?",
+"serial": "17U0MEc-:2441",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2441"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Carotenoids",
+"Anthocyanins",
+"Chalcones and Aurones",
+"Flavonols",
+"None of these"
+],
+"page": "",
+"q": "Which pigment groups give Dahlia its yellow colour?",
+"serial": "1sUgWsko:1476",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1476"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Regular pest",
+"Occasional pest",
+"Seasonal pest",
+"Persistent pest",
+"None of these"
+],
+"page": "",
+"q": "A pest that occurs throughout the year and is difficult to control belongs to which category?",
+"serial": "1sUgWsko:1753",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1753"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Indian Agricultural Research Institute",
+"Central Potato Research Institute",
+"National Horticulture Research Institute",
+"Indian Council of Agricultural Research",
+"None of these"
+],
+"page": "",
+"q": "Which institute is located at Shimla, Himachal Pradesh, and was established in 1949?",
+"serial": "1sUgWsko:1387",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1387"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Concave to the X-axis (Input axis)",
+"Convex to the X-axis (Input axis)",
+"A straight line with a positive slope",
+"A straight line with a negative slope",
+"None of these"
+],
+"page": "",
+"q": "What is the shape of the total product curve under the Law of Diminishing Returns?",
+"serial": "128DIQLj:2572",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2572"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carotene",
+"Casein",
+"Lactose",
+"Albumin",
+"None of these"
+],
+"page": "",
+"q": "Which pigment is responsible for the yellow color in cow milk?",
+"serial": "1sUgWsko:2731",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2731"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Jowar",
+"Cotton",
+"Orange",
+"Banana",
+"None of these"
+],
+"page": "",
+"q": "Which crop is highlighted as providing 50% of the country\u2019s production in the Western zone?",
+"serial": "1sUgWsko:5810",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5810"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-7 %",
+"10-12 %",
+"20-25 %",
+"30-35 %",
+"None of these"
+],
+"page": "",
+"q": "What grain moisture content is considered optimum for safe storage of sorghum?",
+"serial": "128DIQLj:325",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:325"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"feeding young goats",
+"parturition of pregnant female goat",
+"castration of male goat",
+"breeding of goats",
+"None of these"
+],
+"page": "",
+"q": "Kidding refers to:",
+"serial": "1sUgWsko:4725",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4725"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Apple",
+"Citrus",
+"Guava",
+"Pineapple",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is characterized by a juice content of 50% as a maturity index?",
+"serial": "1sUgWsko:1520",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1520"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"10,000 litres",
+"100,000 litres",
+"1,000,000 litres",
+"10,000,000 litres",
+"None of these"
+],
+"page": "",
+"q": "1 ha\u2011mm of water equals how many litres?",
+"serial": "128DIQLj:812",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:812"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"lignifications of testa",
+"lignifications of endocarp",
+"lignifications of pericarp",
+"lignifications of seed coat",
+"None of these"
+],
+"page": "",
+"q": "Seedlessness in pomegranate is due to lack of what?",
+"serial": "1sUgWsko:1112",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1112"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ambulatorial",
+"Saltatorial",
+"Scansorial",
+"Cursorial",
+"None of these"
+],
+"page": "",
+"q": "Which type of leg modification is adapted for jumping?",
+"serial": "17U0MEc-:1732",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1732"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"220-430 lb",
+"350-650 lb",
+"580-1,140 lb",
+"1,000-1,400 lb",
+"None of these"
+],
+"page": "",
+"q": "For a mouldboard plow operating in light soil, what is the approximate draft requirement per foot of width?",
+"serial": "1sUgWsko:6359",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6359"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Nobel Peace Prize",
+"World Food Prize",
+"Wolf Prize",
+"Magsaysay Award",
+"None of these"
+],
+"page": "",
+"q": "Which award did Dr. G. S. Khush receive for his contributions to rice breeding?",
+"serial": "17U0MEc-:125",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:125"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sapotaceae",
+"Sapindaceae",
+"Moraceae",
+"Rutaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family includes both Litchi and Rambutan?",
+"serial": "1sUgWsko:855",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:855"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-10",
+"10-12",
+"15-20",
+"20-25",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended number of flash cards for one discussion?",
+"serial": "1bxM1Q-4:2175",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2175"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Devine",
+"Atrazine",
+"Paraquat",
+"Diuron",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is the first commercial bio-herbicide/mycoherbicide?",
+"serial": "1bxM1Q-4:1498",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1498"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pithecellobium dulce",
+"Tamarindus indica",
+"Butea monosperma",
+"Acacia nilotica",
+"None of these"
+],
+"page": "",
+"q": "The scientific name of the Tamarind tree is:",
+"serial": "1UgnIe-g:2657",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2657"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Norman Ernest Borlaug",
+"M. S. Swaminathan",
+"William Gaud",
+"Norman Borlaug Jr.",
+"None of these"
+],
+"page": "",
+"q": "Who is recognized as the \"Father of the Green Revolution\"?",
+"serial": "1bxM1Q-4:372",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:372"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Macro-economics and inter-farm science",
+"Micro-economics and intra-farm science",
+"Aggregate resources of a nation",
+"International agricultural policies",
+"None of these"
+],
+"page": "",
+"q": "What is the primary focus of Farm Management?",
+"serial": "128DIQLj:2492",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2492"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rice",
+"Wheat",
+"Sunflower",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "What is a suitable crop to grow in case of a late onset of monsoon?",
+"serial": "1bxM1Q-4:1138",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1138"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Chenopodium album \u2013 30 years",
+"Convolvulus arvensis \u2013 50 years",
+"Striga \u2013 20 years",
+"Lotus \u2013 1000 years",
+"None of these"
+],
+"page": "",
+"q": "Which weed seed has the longest longevity?",
+"serial": "128DIQLj:1076",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1076"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Troposphere",
+"Stratosphere",
+"Mesosphere",
+"Thermosphere",
+"None of these"
+],
+"page": "",
+"q": "Which layer of the atmosphere is responsible for absorbing UV rays due to the presence of the ozone layer?",
+"serial": "17U0MEc-:344",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:344"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Suitable for close-growing crops",
+"Uses small and shallow furrows",
+"Water flows in straight lines",
+"Adapted for heavy soils",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a feature of corrugation irrigation?",
+"serial": "1sUgWsko:4606",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4606"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lack of labor",
+"Soil moisture conservation",
+"High rainfall",
+"Excessive irrigation",
+"None of these"
+],
+"page": "",
+"q": "What is the primary challenge in dry farming regions?",
+"serial": "1sUgWsko:4490",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4490"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cooperative Better Farming",
+"Cooperative Joint Farming",
+"Cooperative Tenant Farming",
+"Cooperative Collective Farming",
+"None of these"
+],
+"page": "",
+"q": "Which cooperative farming system involves the society providing credit, seed, manure, and implements, while members pay a fixed rent for their leased plots?",
+"serial": "1sUgWsko:4503",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4503"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Breeds only in artificial ponds",
+"Breeds in rivers and under special conditions in bundhs",
+"Breeds exclusively in oceans",
+"Breeds in stagnant water",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a specific feature of Mrigal's breeding mentioned in the source?",
+"serial": "1sUgWsko:2449",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2449"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Test cross",
+"Back cross",
+"Composite cross",
+"Synthetic cross",
+"None of these"
+],
+"page": "",
+"q": "In plant breeding, which cross is used to develop disease resistance by crossing F1 with one of its parents?",
+"serial": "1sUgWsko:5968",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5968"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Foot and Mouth Disease",
+"IBR",
+"Haemorrhagic Septicaemia",
+"Rabies",
+"None of these"
+],
+"page": "",
+"q": "Which disease does NOT require a booster dose according to the provided vaccination schedule?",
+"serial": "1sUgWsko:2862",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2862"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20-27\u00b0C",
+"16-20\u00b0C",
+"12-16\u00b0C",
+"10-16\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "Which temperature range is suitable for the curd initiation and development of 'Mid-Early' varieties of cauliflower?",
+"serial": "1YcJWVgW:645",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:645"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Madhya Pradesh",
+"Uttar Pradesh",
+"Rajasthan",
+"Bihar",
+"None of these"
+],
+"page": "",
+"q": "Which Indian state is the primary habitat for the Jamunapari goat breed?",
+"serial": "1sUgWsko:3312",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3312"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1 km",
+"2.5 km",
+"5 km",
+"7 km",
+"None of these"
+],
+"page": "",
+"q": "In tropical and subtropical regions, the mean lower level of middle clouds is approximately:",
+"serial": "1sUgWsko:5728",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5728"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sand",
+"Loam",
+"Clay",
+"Silt",
+"None of these"
+],
+"page": "",
+"q": "Under unsaturated conditions, in which soil type does water move the fastest?",
+"serial": "1sUgWsko:6997",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6997"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Silen",
+"Schoefield",
+"SPL Sorenson",
+"Brings & Sentz",
+"None of these"
+],
+"page": "",
+"q": "The abbreviation \"pH\" is linked to which author?",
+"serial": "1sUgWsko:4231",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4231"
+}
+],
+"set_no": 36,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
