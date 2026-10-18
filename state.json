@@ -174964,9 +174964,11 @@
 "afo": {
 "announced_at": "2026-10-18T18:00:00+05:30",
 "ans": {},
-"lock_ts": 1792326580.2874057,
+"cd": 1,
+"lock_ts": 1792326626.5198565,
 "locked_by": "39127297394",
 "msg_ann": 33125,
+"msg_timer": 33127,
 "names": {},
 "pinned_ann": true,
 "plan": {
@@ -175883,8 +175885,10 @@
 "trunc": 0
 },
 "qidx": 0,
+"sent_i": 0,
 "skips": [],
-"step": 1
+"started_at": "2026-10-18T18:00:24+05:30",
+"step": 2
 },
 "iari": {
 "announced_at": "2026-10-18T14:30:00+05:30",
