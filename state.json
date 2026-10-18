@@ -175234,6 +175234,8 @@
 "cd": 1,
 "congrats_sent": 33121,
 "cta_sent": "off",
+"done_at": "2026-10-18T14:42:27+05:30",
+"elapsed_s": 832,
 "expl_in_poll": 21,
 "file_msg": 33122,
 "file_sent": "IARI_p101-103_21Q_2026-10-18.html",
@@ -175243,8 +175245,18 @@
 "lb_rows": 21,
 "lb_sent": true,
 "lock_ts": 1792314709.3323157,
-"locked_by": "39113478081",
+"locked_by": "",
 "msg_ann": 33096,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 33098,
 "names": {
 "1039237604": "AV_Leeuwenhoik",
@@ -175269,6 +175281,8 @@
 "8739536104": "Reacher",
 "8824694648": "RISK2797"
 },
+"paid_msg": 33124,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 714,
@@ -175703,7 +175717,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-18T14:30:22+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 33123,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 187-192\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 104, 105, 106"
 },
