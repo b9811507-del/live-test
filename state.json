@@ -174969,8 +174969,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 714,
 "names": {},
+"plan": {
+"bidx_next": 714,
+"built_at": "2026-10-18T14:28:31+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 101-103",
+"pages_list": [
+101,
+102,
+103
+],
+"questions": [
+{
+"expl": "Dehorning is specifically defined as cutting away the main limbs or thick major branches to remove overcrowding and intermingling of branches.",
+"key": 0,
+"o": [
+"Dehorning",
+"Thinning out",
+"Heading back",
+"Bulk pruning",
+"None of these"
+],
+"page": "101",
+"q": "Which pruning technique involves cutting away the main limbs or thick major branches to reduce overcrowding?",
+"serial": "701",
+"src_row": 693,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:701"
+},
+{
+"expl": "Dehorning is done to induce flowering, as stated in the source.",
+"key": 1,
+"o": [
+"To increase leaf density",
+"To induce flowering",
+"To promote root growth",
+"To prevent disease spread",
+"None of these"
+],
+"page": "101",
+"q": "What is the primary purpose of dehorning in fruit trees?",
+"serial": "702",
+"src_row": 694,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:702"
+},
+{
+"expl": "Bulk pruning is explicitly defined as heavy pruning all over the tree.",
+"key": 2,
+"o": [
+"Thinning cuts",
+"Heading back",
+"Bulk pruning",
+"Dehorning",
+"None of these"
+],
+"page": "101",
+"q": "Which pruning method is described as heavy pruning all over the tree?",
+"serial": "703",
+"src_row": 695,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:703"
+},
+{
+"expl": "The source states that for good fruit production, only judicious heading back or thinning out should be done, not bulk pruning.",
+"key": 1,
+"o": [
+"Complete removal of all branches",
+"Judicious heading back or thinning out",
+"Frequent watering",
+"Application of fertilizers",
+"None of these"
+],
+"page": "101",
+"q": "According to the source, what should be done for good fruit production instead of bulk pruning?",
+"serial": "704",
+"src_row": 696,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:704"
+},
+{
+"expl": "Dehorning is done to remove overcrowding, intermingling, and induce flowering, but not to increase tree height.",
+"key": 3,
+"o": [
+"Removing overcrowding of branches",
+"Inducing flowering",
+"Preventing intermingling of branches",
+"Increasing tree height",
+"None of these"
+],
+"page": "101",
+"q": "Which of the following is NOT a reason for dehorning in fruit trees?",
+"serial": "705",
+"src_row": 697,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:705"
+},
+{
+"expl": "The image is labeled as 'Thinning Cuts,' which corresponds to the pruning method of thinning out.",
+"key": 2,
+"o": [
+"Bulk pruning",
+"Heading back",
+"Thinning out",
+"Dehorning",
+"None of these"
+],
+"page": "101",
+"q": "What type of pruning is depicted in the image referenced as 'Thinning Cuts'?",
+"serial": "706",
+"src_row": 698,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:706"
+},
+{
+"expl": "Dehorning removes overcrowding and intermingling of branches, reducing competition for light and nutrients.",
+"key": 1,
+"o": [
+"Bulk pruning",
+"Dehorning",
+"Heading back",
+"Thinning out",
+"None of these"
+],
+"page": "101",
+"q": "Which pruning method is most likely to be used to reduce competition among branches for light and nutrients?",
+"serial": "707",
+"src_row": 699,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "101:707"
+},
+{
+"expl": "Ringing or girdling is performed to hasten flowering and fruiting by allowing greater accumulation of photosynthates in the upward portion of the plant.",
+"key": 1,
+"o": [
+"To increase water absorption by roots",
+"To hasten flowering and fruiting",
+"To prevent pest infestation",
+"To improve soil fertility",
+"None of these"
+],
+"page": "102",
+"q": "What is the primary purpose of ringing or girdling in horticulture?",
+"serial": "708",
+"src_row": 700,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:708"
+},
+{
+"expl": "Girdling involves removing a circular ring of bark measuring about 1-3 cm in length.",
+"key": 1,
+"o": [
+"A circular ring of wood",
+"A circular ring of bark",
+"Leaves from the upper branches",
+"Roots near the stem base",
+"None of these"
+],
+"page": "102",
+"q": "Which part of the plant is removed during the girdling process?",
+"serial": "709",
+"src_row": 701,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:709"
+},
+{
+"expl": "Girdling is a milder treatment where a knife is drawn around the branch to cut through the bark but not the wood.",
+"key": 1,
+"o": [
+"Girdling cuts through the wood but not the bark",
+"Girdling is a milder treatment that cuts through the bark but not the wood",
+"Girdling is performed only on roots",
+"Girdling is used exclusively for pest control",
+"None of these"
+],
+"page": "102",
+"q": "How does girdling differ from ringing in horticultural practices?",
+"serial": "710",
+"src_row": 702,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:710"
+},
+{
+"expl": "Girdling is done in vigorous mango trees and grapes to induce fruiting.",
+"key": 1,
+"o": [
+"Wheat and rice",
+"Mango and grapes",
+"Potato and tomato",
+"Sugarcane and cotton",
+"None of these"
+],
+"page": "102",
+"q": "In which of the following crops is girdling commonly practiced to induce fruiting?",
+"serial": "711",
+"src_row": 703,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:711"
+},
+{
+"expl": "Girdling is also used to increase the berry size of a fruit.",
+"key": 2,
+"o": [
+"It reduces the berry size",
+"It has no effect on berry size",
+"It increases the berry size",
+"It causes the berries to fall prematurely",
+"None of these"
+],
+"page": "102",
+"q": "What is the effect of girdling on the berry size of a fruit?",
+"serial": "712",
+"src_row": 704,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:712"
+},
+{
+"expl": "Girdling disrupts the downward flow of photosynthates by cutting the bark, leading to their accumulation in the upper portion of the plant.",
+"key": 1,
+"o": [
+"By blocking water transport to the upper parts",
+"By cutting the bark, which disrupts the downward flow of photosynthates",
+"By increasing the rate of photosynthesis",
+"By enhancing nutrient uptake from the soil",
+"None of these"
+],
+"page": "102",
+"q": "Why does girdling lead to greater accumulation of photosynthates in the upper portion of the plant?",
+"serial": "713",
+"src_row": 705,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:713"
+},
+{
+"expl": "Girdling is associated with hastening flowering, inducing fruiting, and increasing berry size, but it does not improve soil drainage.",
+"key": 2,
+"o": [
+"Hastening flowering",
+"Increasing berry size",
+"Improving soil drainage",
+"Inducing fruiting",
+"None of these"
+],
+"page": "102",
+"q": "Which of the following is NOT a typical outcome of girdling in horticultural practices?",
+"serial": "714",
+"src_row": 706,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "102:714"
+},
+{
+"expl": "Notching is defined as making a notch above a bud by removing a wedge-shaped piece of bark, which checks hormone influence and encourages growth.",
+"key": 0,
+"o": [
+"Notching",
+"Nicking",
+"Bending",
+"Smudging",
+"None of these"
+],
+"page": "103",
+"q": "Which horticultural practice involves removing a wedge-shaped piece of bark above a bud to restrict hormone influence and promote growth?",
+"serial": "715",
+"src_row": 707,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:715"
+},
+{
+"expl": "Nicking involves making a notch below a bud, ensuring carbohydrate accumulation from leaves to the bud, which may lead to fruit bud formation.",
+"key": 1,
+"o": [
+"Notching",
+"Nicking",
+"Root pruning",
+"Smudging",
+"None of these"
+],
+"page": "103",
+"q": "The practice of making a notch below a bud to accumulate carbohydrates and potentially form fruit buds is called:",
+"serial": "716",
+"src_row": 708,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:716"
+},
+{
+"expl": "Bending a branch downward checks growth and causes starch accumulation, leading to greater flowering, and is practiced with local guava in Maharashtra.",
+"key": 2,
+"o": [
+"Smudging",
+"Root pruning",
+"Bending",
+"Nicking",
+"None of these"
+],
+"page": "103",
+"q": "Which method is commonly used in Maharashtra's Deccan area for local guava varieties to increase flowering by accumulating starch?",
+"serial": "717",
+"src_row": 709,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:717"
+},
+{
+"expl": "Smudging involves smoking the tree, and the ethylene gas in the smoke is responsible for initiating off-season flowering.",
+"key": 1,
+"o": [
+"Methane",
+"Ethylene",
+"Carbon dioxide",
+"Oxygen",
+"None of these"
+],
+"page": "103",
+"q": "What is the primary gas responsible for inducing off-season flowering in mango trees through the practice of smudging?",
+"serial": "718",
+"src_row": 710,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:718"
+},
+{
+"expl": "Root pruning checks vegetative growth, leading to the plant becoming dwarf and accumulating carbohydrates for fruit bud differentiation.",
+"key": 1,
+"o": [
+"Increased vegetative growth",
+"Dwarfing of the plant",
+"Immediate flowering",
+"Root decay",
+"None of these"
+],
+"page": "103",
+"q": "In root pruning, what is the immediate effect on the plant's growth after the procedure?",
+"serial": "719",
+"src_row": 711,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:719"
+},
+{
+"expl": "After root pruning, exposure, and irrigation, trees burst into flowering in about 2-3 weeks.",
+"key": 1,
+"o": [
+"1-2 weeks",
+"2-3 weeks",
+"3-4 weeks",
+"4-5 weeks",
+"None of these"
+],
+"page": "103",
+"q": "How long does it typically take for trees to burst into flowering after root pruning and subsequent irrigation?",
+"serial": "720",
+"src_row": 712,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:720"
+},
+{
+"expl": "Root pruning is generally included in bahar treatments for trees like mosambi, santra, guava, pomegranate, and lime, but not for apple.",
+"key": 2,
+"o": [
+"Mosambi",
+"Santra",
+"Apple",
+"Guava",
+"None of these"
+],
+"page": "103",
+"q": "Which of the following fruit trees is NOT typically included in bahar treatments involving root pruning?",
+"serial": "721",
+"src_row": 713,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "103:721"
+}
+],
+"row_from": 693,
+"row_to": 714,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 693,
+"seeded_from": "2026-10-17"
+},
 "qidx": 0,
+"seeded_from": "2026-10-17",
+"skips": [],
 "step": 0
 },
 "malwa": {
