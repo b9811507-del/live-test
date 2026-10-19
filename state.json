@@ -179983,8 +179983,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 735,
 "names": {},
+"plan": {
+"bidx_next": 735,
+"built_at": "2026-10-19T14:27:33+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 104-106",
+"pages_list": [
+104,
+105,
+106
+],
+"questions": [
+{
+"expl": "The Central Leader System is explicitly stated as being also known as the Closed center system in the source.",
+"key": 1,
+"o": [
+"Open centre system",
+"Central leader system",
+"Modified leader system",
+"Bush system",
+"None of these"
+],
+"page": "104",
+"q": "Which training system is also known as the 'Closed center system'?",
+"serial": "722",
+"src_row": 714,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:722"
+},
+{
+"expl": "The source specifies that the first branch in the Central Leader System is allowed to grow at 45 to 50 cm height from ground level.",
+"key": 1,
+"o": [
+"30 to 35 cm",
+"45 to 50 cm",
+"60 to 65 cm",
+"15 to 20 cm",
+"None of these"
+],
+"page": "104",
+"q": "In the Central Leader System, at what height from the ground is the first branch typically allowed to grow?",
+"serial": "723",
+"src_row": 715,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:723"
+},
+{
+"expl": "The source lists Bush, Pyramid, Espalier, Cordon, and Tatura Trellis as special methods of training. Grafting is not mentioned as a training method.",
+"key": 3,
+"o": [
+"Pyramid System",
+"Espalier System",
+"Cordon System",
+"Grafting System",
+"None of these"
+],
+"page": "104",
+"q": "Which of the following is NOT a special method of training mentioned in the source?",
+"serial": "724",
+"src_row": 716,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:724"
+},
+{
+"expl": "The Telephone System is described as the 'Overhead trellis system' in the source, which involves an overhead structure.",
+"key": 2,
+"o": [
+"Head system",
+"Kniffin System",
+"Telephone System",
+"Bower System",
+"None of these"
+],
+"page": "104",
+"q": "Which training method for grape vines involves an overhead structure?",
+"serial": "725",
+"src_row": 717,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:725"
+},
+{
+"expl": "The source states that tree management (spraying, pruning, thinning, and harvesting) is difficult under the Central Leader System.",
+"key": 2,
+"o": [
+"Trees become too short",
+"Trees are highly spreading",
+"Tree management is difficult",
+"Trees are structurally weak",
+"None of these"
+],
+"page": "104",
+"q": "What is a major disadvantage of the Central Leader System?",
+"serial": "726",
+"src_row": 718,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:726"
+},
+{
+"expl": "The source lists apple, pear, mango, and sapota as fruits commonly using the Central Leader System. Banana is not mentioned.",
+"key": 3,
+"o": [
+"Apple",
+"Pear",
+"Mango",
+"Banana",
+"None of these"
+],
+"page": "104",
+"q": "Which fruit is NOT commonly associated with the Central Leader System?",
+"serial": "727",
+"src_row": 719,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:727"
+},
+{
+"expl": "The source specifies that side branches are allowed to grow on the main stem at a distance of 15 to 20 cm in the Central Leader System.",
+"key": 2,
+"o": [
+"5 to 10 cm",
+"10 to 15 cm",
+"15 to 20 cm",
+"20 to 25 cm",
+"None of these"
+],
+"page": "104",
+"q": "In the Central Leader System, what is the typical spacing between side branches on the main stem?",
+"serial": "728",
+"src_row": 720,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "104:728"
+},
+{
+"expl": "The Open Centre System involves beheading the plant when it reaches a height of 45 to 50 cm, as stated in the source.",
+"key": 1,
+"o": [
+"30 to 40 cm",
+"45 to 50 cm",
+"60 to 70 cm",
+"80 to 90 cm",
+"None of these"
+],
+"page": "105",
+"q": "In the Open Centre System, at what height is the plant typically beheaded to initiate training?",
+"serial": "729",
+"src_row": 721,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:729"
+},
+{
+"expl": "The Open Centre System is explicitly mentioned as widely used for peaches and suitable for mechanical harvesting.",
+"key": 1,
+"o": [
+"Central Leader System",
+"Open Centre System",
+"Modified Leader System",
+"Bush System",
+"None of these"
+],
+"page": "105",
+"q": "Which training system is widely used for peaches and facilitates mechanical harvesting?",
+"serial": "730",
+"src_row": 722,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:730"
+},
+{
+"expl": "The Open Centre System allows maximum sunshine to reach all branches, improving light interception.",
+"key": 1,
+"o": [
+"Increased tree height for better light exposure",
+"Maximum sunshine reaching all branches",
+"Reduced need for pruning",
+"Enhanced root development",
+"None of these"
+],
+"page": "105",
+"q": "What is the primary advantage of the Open Centre System regarding light interception?",
+"serial": "731",
+"src_row": 723,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:731"
+},
+{
+"expl": "Better light penetration in the Open Centre System ensures improved fruit coloration on the interior side of the tree.",
+"key": 2,
+"o": [
+"Due to increased shade on the interior canopy",
+"Because of reduced pruning requirements",
+"As a result of better light penetration to all parts of the tree",
+"Due to the tree's structural strength",
+"None of these"
+],
+"page": "105",
+"q": "Why might the Open Centre System lead to better fruit coloration on the interior side of the tree?",
+"serial": "732",
+"src_row": 724,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:732"
+},
+{
+"expl": "The Open Centre System results in structurally weak trees, with limbs more likely to break under crop load or strong winds.",
+"key": 1,
+"o": [
+"Excessive height leading to difficulty in harvesting",
+"Structural weakness and increased risk of limb breakage",
+"Poor fruit quality due to over-exposure to sunlight",
+"High maintenance costs for spraying",
+"None of these"
+],
+"page": "105",
+"q": "What is a major disadvantage of the Open Centre System in terms of tree structure?",
+"serial": "733",
+"src_row": 725,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:733"
+},
+{
+"expl": "The Modified Leader System allows the main stem to grow for 4 to 5 years before it is cut.",
+"key": 2,
+"o": [
+"1 to 2 years",
+"2 to 3 years",
+"4 to 5 years",
+"6 to 7 years",
+"None of these"
+],
+"page": "105",
+"q": "In the Modified Leader System, for how many years is the main stem allowed to grow before being cut?",
+"serial": "734",
+"src_row": 726,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:734"
+},
+{
+"expl": "In the Modified Leader System, the main stem is cut at a height of 120 to 150 cm from the ground level.",
+"key": 2,
+"o": [
+"80 to 100 cm",
+"100 to 120 cm",
+"120 to 150 cm",
+"150 to 180 cm",
+"None of these"
+],
+"page": "105",
+"q": "At what height is the main stem cut in the Modified Leader System?",
+"serial": "735",
+"src_row": 727,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "105:735"
+},
+{
+"expl": "The guideline specifies selecting the first shoot at 40 cm above ground.",
+"key": 1,
+"o": [
+"30 cm",
+"40 cm",
+"50 cm",
+"60 cm",
+"None of these"
+],
+"page": "106",
+"q": "At what height from the ground is the first shoot selected on the main stem?",
+"serial": "736",
+"src_row": 728,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:736"
+},
+{
+"expl": "Apple, guava, pear and plum are mentioned; mango is not.",
+"key": 3,
+"o": [
+"Apple",
+"Guava",
+"Pear",
+"Mango",
+"None of these"
+],
+"page": "106",
+"q": "Which of the following fruit trees is NOT listed as commonly using this training method?",
+"serial": "737",
+"src_row": 729,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:737"
+},
+{
+"expl": "The text notes that well\u2011distributed branches allow plenty of sunshine to reach the interior.",
+"key": 1,
+"o": [
+"Increased fruit size",
+"Plenty of sunshine reaches interior",
+"Faster growth rate",
+"Higher root depth",
+"None of these"
+],
+"page": "106",
+"q": "Besides structural strength, which advantage is explicitly mentioned for the trained trees?",
+"serial": "738",
+"src_row": 730,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:738"
+},
+{
+"expl": "The Bush system keeps the plant height to 2.0 m.",
+"key": 1,
+"o": [
+"1.5 metres",
+"2.0 metres",
+"2.5 metres",
+"3.0 metres",
+"None of these"
+],
+"page": "106",
+"q": "In the Bush system, what is the maximum overall height allowed for the plant?",
+"serial": "739",
+"src_row": 731,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:739"
+},
+{
+"expl": "The first\u2011year cut height is specified as 70 cm.",
+"key": 2,
+"o": [
+"50 cm",
+"60 cm",
+"70 cm",
+"80 cm",
+"None of these"
+],
+"page": "106",
+"q": "During the first year of the Bush system, the plant is cut to a height of ___ cm.",
+"serial": "740",
+"src_row": 732,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:740"
+},
+{
+"expl": "Branches are spaced one foot apart in the espalier method.",
+"key": 1,
+"o": [
+"6 inches",
+"1 foot",
+"2 feet",
+"3 feet",
+"None of these"
+],
+"page": "106",
+"q": "In the Espalier system, horizontal branches are trained to grow how far apart?",
+"serial": "741",
+"src_row": 733,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:741"
+},
+{
+"expl": "The pyramid system is described as giving plants a pyramid shape.",
+"key": 1,
+"o": [
+"Bush system",
+"Pyramid system",
+"Espalier system",
+"Central leader system",
+"None of these"
+],
+"page": "106",
+"q": "Which training system gives the plant a pyramid shape?",
+"serial": "742",
+"src_row": 734,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "106:742"
+}
+],
+"row_from": 714,
+"row_to": 735,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 714,
+"seeded_from": "2026-10-18"
+},
 "qidx": 0,
+"seeded_from": "2026-10-18",
+"skips": [],
 "step": 0
 },
 "malwa": {
