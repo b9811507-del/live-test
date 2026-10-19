@@ -179989,9 +179989,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 641,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 641,
+"built_at": "2026-10-19T10:57:24+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 187-192",
+"pages_blocks": [
+"187-188",
+"189-190",
+"191-192"
+],
+"questions": [
+{
+"expl": "Annual weeds finish from seed to seed in a single year, unlike perennials that persist for many years.",
+"key": 0,
+"o": [
+"It completes its life cycle within one year or season",
+"It lives for several years and reproduces repeatedly",
+"It grows only during the winter months",
+"It requires two growing seasons to set seed",
+"None of these"
+],
+"page": "187-188",
+"q": "What defines an annual weed?",
+"serial": "951",
+"src_row": 623,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "187-188:951"
+},
+{
+"expl": "Chaulai (Amaranthus viridis) appears in the monsoon/kharif annual weed list for maize, bajra and sorghum.",
+"key": 0,
+"o": [
+"Chaulai (Amaranthus viridis)",
+"Mexican Poppy (Argemone mexicana)",
+"Broom Rape (Orobanche cernua)",
+"Stone Breaker (Phyllanthus niruri)",
+"None of these"
+],
+"page": "187-188",
+"q": "Which of the following is listed as a monsoon/kharif annual weed associated with maize?",
+"serial": "952",
+"src_row": 624,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "187-188:952"
+},
+{
+"expl": "The text lists Umbrella Sedge under the rice crop\u2019s monsoon/kharif annual weeds.",
+"key": 1,
+"o": [
+"Moong",
+"Rice",
+"Mustard",
+"Soybean",
+"None of these"
+],
+"page": "187-188",
+"q": "Umbrella Sedge (Cyperus difformis) is a weed of which crop?",
+"serial": "953",
+"src_row": 625,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "187-188:953"
+},
+{
+"expl": "Phyllanthus niruri is identified in the source as \"Hajardana/ Stone Breaker\".",
+"key": 1,
+"o": [
+"Tribulus terrestris",
+"Phyllanthus niruri",
+"Parthenium hysterophorus",
+"Amaranthus spinosus",
+"None of these"
+],
+"page": "187-188",
+"q": "Which weed is referred to as \"Stone Breaker\"?",
+"serial": "954",
+"src_row": 626,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "187-188:954"
+},
+{
+"expl": "Mexican Poppy (Argemone mexicana) appears in the rabi annual weed list for mustard.",
+"key": 1,
+"o": [
+"Gokharu (Tribulus terrestris)",
+"Mexican Poppy (Argemone mexicana)",
+"Barnyard Grass (Echinochloa crus-galli)",
+"Congress Grass (Parthenium hysterophorus)",
+"None of these"
+],
+"page": "187-188",
+"q": "Which of the following is a rabi annual weed?",
+"serial": "955",
+"src_row": 627,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "187-188:955"
+},
+{
+"expl": "The classification described uses life span (annual vs. perennial) as the basis.",
+"key": 1,
+"o": [
+"Leaf shape",
+"Life span",
+"Flower colour",
+"Root depth",
+"None of these"
+],
+"page": "187-188",
+"q": "Based on ontogeny, weeds are classified primarily by which characteristic?",
+"serial": "956",
+"src_row": 628,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "187-188:956"
+},
+{
+"expl": "Phalaris minor is listed as an obligate weed (anthrophyte) that occurs on cropped lands. The other options are facultative or xerophytic weeds.",
+"key": 0,
+"o": [
+"Phalaris minor",
+"Opuntia",
+"Lantana",
+"Parthenium",
+"None of these"
+],
+"page": "189-190",
+"q": "Which weed is classified as an obligate weed (anthrophyte) found in cropped lands?",
+"serial": "961",
+"src_row": 629,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "189-190:961"
+},
+{
+"expl": "Cyperus rotundus is described as a deep-rooted perennial (1.0 m or more). Cynodon dactylon and Agropyron repens are shallow-rooted perennials, and Phalaris minor is a monocot weed.",
+"key": 2,
+"o": [
+"Cynodon dactylon",
+"Agropyron repens",
+"Cyperus rotundus",
+"Phalaris minor",
+"None of these"
+],
+"page": "189-190",
+"q": "Which of the following is a deep-rooted perennial weed?",
+"serial": "962",
+"src_row": 630,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "189-190:962"
+},
+{
+"expl": "Opuntia is listed under xerophytic weeds, which are desert weeds. The other options belong to different categories.",
+"key": 0,
+"o": [
+"Opuntia",
+"Parthenium",
+"Lantana",
+"Phalaris minor",
+"None of these"
+],
+"page": "189-190",
+"q": "Which weed is classified as a xerophytic weed?",
+"serial": "963",
+"src_row": 631,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "189-190:963"
+},
+{
+"expl": "Parthenium hysterophorus is identified as an alien/invasive weed originating from the USA. The others are native or from other regions.",
+"key": 2,
+"o": [
+"Lantana camara",
+"Cynodon dactylon",
+"Parthenium hysterophorus",
+"Sorghum halepense",
+"None of these"
+],
+"page": "189-190",
+"q": "Which weed is an alien/invasive weed introduced from the USA?",
+"serial": "964",
+"src_row": 632,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "189-190:964"
+},
+{
+"expl": "Avena fatua is a monocot with one cotyledon and is tolerant to 2,4\u2011D herbicide. Opuntia, Lantana, and Parthenium are dicots.",
+"key": 0,
+"o": [
+"Avena fatua",
+"Opuntia",
+"Lantana",
+"Parthenium",
+"None of these"
+],
+"page": "189-190",
+"q": "Which weed is a monocot with a single cotyledon and tolerant to 2,4\u2011D herbicide?",
+"serial": "965",
+"src_row": 633,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "189-190:965"
+},
+{
+"expl": "Chicory/Kasni (Cichorium intybus) can be annual, biennial, or perennial, whereas the others are strictly biennial.",
+"key": 3,
+"o": [
+"Wild Carrot",
+"Alligator Weed",
+"Common thistle",
+"Chicory/Kasni",
+"None of these"
+],
+"page": "189-190",
+"q": "Which weed can be annual, biennial, or perennial?",
+"serial": "966",
+"src_row": 634,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "189-190:966"
+},
+{
+"expl": "Sedges are monocots with narrow leaves and stems that have a triangular cross\u2011section.",
+"key": 1,
+"o": [
+"Broad leaves and tap root system",
+"Narrow leaves and triangular stem cross\u2011section",
+"Broad leaves and absence of chlorophyll",
+"Floating leaves above water surface",
+"None of these"
+],
+"page": "191-192",
+"q": "Which of the following characteristics is typical of sedges?",
+"serial": "971",
+"src_row": 635,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "191-192:971"
+},
+{
+"expl": "Dodder is a total stem parasite, completely lacking chlorophyll and deriving all nutrients from its host.",
+"key": 1,
+"o": [
+"Loranthus",
+"Dodder (Cuscuta spp.)",
+"Striga spp.",
+"Orobanche spp.",
+"None of these"
+],
+"page": "191-192",
+"q": "Which weed is a total stem parasite that lacks chlorophyll?",
+"serial": "972",
+"src_row": 636,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "191-192:972"
+},
+{
+"expl": "Striga spp. are semi\u2011root parasites; they have chlorophyll but rely on the host for water and nutrients.",
+"key": 2,
+"o": [
+"Orobanche spp.",
+"Dodder (Cuscuta spp.)",
+"Striga spp.",
+"Loranthus",
+"None of these"
+],
+"page": "191-192",
+"q": "Which weed is a semi\u2011root parasite that contains chlorophyll?",
+"serial": "973",
+"src_row": 637,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "191-192:973"
+},
+{
+"expl": "Water hyacinth is a classic floating weed with leaves above water and roots submerged.",
+"key": 2,
+"o": [
+"Nymphaea",
+"Hydrilla",
+"Water hyacinth (Eichhornia crassipes)",
+"Ipomoea",
+"None of these"
+],
+"page": "191-192",
+"q": "Which of the following is a floating aquatic weed?",
+"serial": "974",
+"src_row": 638,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "191-192:974"
+},
+{
+"expl": "Cyperus rotundus is listed as a C4 weed, while the others are C3 or CAM.",
+"key": 1,
+"o": [
+"Phalaris minor",
+"Cyperus rotundus",
+"Ageratum conyzoides",
+"Convolvulus arvensis",
+"None of these"
+],
+"page": "191-192",
+"q": "Which of the following is a C4 weed?",
+"serial": "975",
+"src_row": 639,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "191-192:975"
+},
+{
+"expl": "Lambsquarters is cited as an absolute weed of wheat, always regarded as undesirable.",
+"key": 1,
+"o": [
+"Barley",
+"Lambsquarters",
+"Cowpea",
+"Lantana camara",
+"None of these"
+],
+"page": "191-192",
+"q": "Which weed is considered an absolute weed of wheat?",
+"serial": "976",
+"src_row": 640,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "191-192:976"
+}
+],
+"rolled": false,
+"row_from": 623,
+"row_to": 641,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 623,
+"seeded_from": "2026-10-18",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-18",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
