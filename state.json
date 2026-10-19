@@ -179978,7 +179978,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-19T17:57:31+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"January-February",
+"March-April",
+"May-June",
+"July-August",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal sowing time for Corchorus capsularis (White Jute)?",
+"serial": "1sUgWsko:265",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:265"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Glycerol",
+"Fatty acids",
+"Phosphoric acid",
+"Carbohydrates",
+"None of these"
+],
+"page": "",
+"q": "What is the primary building block of fats in our bodies?",
+"serial": "17U0MEc-:3086",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:3086"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Theophrastus",
+"G. J. Mendel",
+"Stephen Hales",
+"Aristotle",
+"None of these"
+],
+"page": "",
+"q": "Which scientist is known as the 'Father of Genetics'?",
+"serial": "1sUgWsko:5853",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5853"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lysine",
+"Methionine",
+"Glycine",
+"Tryptophan",
+"None of these"
+],
+"page": "",
+"q": "Which amino acid is considered the major essential amino acid for poultry?",
+"serial": "128DIQLj:2035",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2035"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Emasculation",
+"Bagging",
+"Pollination",
+"Re\u2011bagging",
+"None of these"
+],
+"page": "",
+"q": "Which step in hybridization removes anthers to prevent self\u2011pollination?",
+"serial": "1UgnIe-g:177",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:177"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Higher resistance to weathering",
+"Lower density",
+"Higher solubility",
+"Lower melting point",
+"None of these"
+],
+"page": "",
+"q": "A rock rich in mica, compared to a feldspar\u2011rich rock, would likely exhibit which property?",
+"serial": "1sUgWsko:6908",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6908"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20-30 kg",
+"32-40 kg",
+"45-55 kg",
+"60-70 kg",
+"None of these"
+],
+"page": "",
+"q": "An adult cattle weighing 400 kg requires approximately how many kilograms of green fodder per day?",
+"serial": "1sUgWsko:3562",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3562"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Plantvax (Oxycarboxin)",
+"Propiconazole",
+"Zineb",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is recommended for the management of Black Rust in wheat?",
+"serial": "1UgnIe-g:1023",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1023"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Chilo infuscatellus",
+"Chilo sacchariphagus indicus",
+"Scirpophaga excerptalis",
+"Emmalocera depressela",
+"None of these"
+],
+"page": "",
+"q": "Which pest causes dead heart in early shoot of sugarcane?",
+"serial": "1sUgWsko:1882",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1882"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Skeletonisation of leaves",
+"Papery white appearance due to chlorophyll scraping",
+"Heavy defoliation",
+"Irregular holes on petioles",
+"None of these"
+],
+"page": "",
+"q": "The early-stage damage symptom of Tobacco caterpillar includes:",
+"serial": "1sUgWsko:2018",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2018"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mustard",
+"Cotton",
+"Sun hemp",
+"Radish",
+"None of these"
+],
+"page": "",
+"q": "Which crop has the lowest seed requirement for variety (50 kg/ha)?",
+"serial": "1sUgWsko:4970",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4970"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Coccinella septempunctata",
+"Dipha aphidivora",
+"Chrysoperla carnea",
+"Cryptolaemus montrouzieri",
+"None of these"
+],
+"page": "",
+"q": "Which of the following predators is specifically used for controlling the brown plant hopper (Nilaparvata lugens)?",
+"serial": "1UgnIe-g:2025",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2025"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Crop rotation",
+"Flooding of fields",
+"Intercropping",
+"Insecticide seed treatment",
+"None of these"
+],
+"page": "",
+"q": "Which cultural practice helps control cut worms in the field?",
+"serial": "1bxM1Q-4:2641",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2641"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"By adding water to whole milk",
+"By mixing buffalo milk and skim milk",
+"By evaporating water from raw milk",
+"By fermenting pasteurized milk",
+"None of these"
+],
+"page": "",
+"q": "How is standardized milk prepared?",
+"serial": "1sUgWsko:2757",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2757"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Stem",
+"Leaf",
+"Root",
+"Flower",
+"None of these"
+],
+"page": "",
+"q": "Which part of the plant is clove obtained from?",
+"serial": "17U0MEc-:1356",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1356"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Proestrum",
+"Oestrum",
+"Metestrum",
+"Dioestrum",
+"None of these"
+],
+"page": "",
+"q": "Which phase of the oestrus cycle is characterized by the female being ready to receive the male?",
+"serial": "1sUgWsko:3106",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3106"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Aparna",
+"Kashi Anmol",
+"Puri Red",
+"NP-46A",
+"None of these"
+],
+"page": "",
+"q": "Which chilli variety is specifically suitable for capsaicin extraction?",
+"serial": "1YcJWVgW:578",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:578"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Alluvial and volcanic soils",
+"Clay soils",
+"Loam soils",
+"Sandy soils",
+"None of these"
+],
+"page": "",
+"q": "What soil type is best for banana cultivation?",
+"serial": "1sUgWsko:990",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:990"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10-15%",
+"20-25%",
+"30%",
+"50%",
+"None of these"
+],
+"page": "",
+"q": "What is the estimated fertilizer loss in the field if not properly applied?",
+"serial": "1sUgWsko:6383",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6383"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Breeder seed",
+"Foundation seed",
+"Registered seed",
+"Certified seed",
+"None of these"
+],
+"page": "",
+"q": "Which seed class is generally omitted in India, with certified seed produced directly from foundation seed?",
+"serial": "1sUgWsko:4948",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4948"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To produce genetically diverse plants",
+"To produce a large number of planting materials",
+"To induce mutations in plants",
+"To study plant diseases",
+"None of these"
+],
+"page": "",
+"q": "What is the main purpose of micropropagation?",
+"serial": "1UgnIe-g:1341",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1341"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Alphonso \u00d7 Janardhan Pasand",
+"Alphonso \u00d7 Neelum",
+"Alphonso \u00d7 Banganapalli",
+"Banganapalli \u00d7 Alphonso",
+"None of these"
+],
+"page": "",
+"q": "Arka Anmol is a cross between which two parent varieties?",
+"serial": "1YcJWVgW:182",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:182"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Aphididae",
+"Lacciferidae",
+"Margarodidae",
+"Pseudococcidae",
+"None of these"
+],
+"page": "",
+"q": "Which family of insects is known for producing lac?",
+"serial": "17U0MEc-:1835",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1835"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Row intercropping",
+"Strip intercropping",
+"Relay intercropping",
+"Alley cropping",
+"None of these"
+],
+"page": "",
+"q": "Which intercropping system involves growing crops in strips wide enough for independent cultivation but narrow enough for agronomic interaction?",
+"serial": "1sUgWsko:4525",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4525"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"UV light",
+"Visible light",
+"Far red light",
+"Infrared light",
+"None of these"
+],
+"page": "",
+"q": "Which type of light has a wavelength range of 700 to 750 nm and affects plants besides causing photosynthesis?",
+"serial": "1sUgWsko:1657",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1657"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2900 B.C.",
+"3000 B.C.",
+"2700 B.C.",
+"2500 B.C.",
+"None of these"
+],
+"page": "",
+"q": "The invention of the plough and the start of irrigated farming occurred in which year?",
+"serial": "17U0MEc-:48",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:48"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Rectangular bud 2\u20133 cm long",
+"Incision of same size on rootstock",
+"Vertical flap of bark left intact",
+"The rootstock is removed entirely",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a feature of Forkert budding?",
+"serial": "1sUgWsko:623",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:623"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Brassica nigra",
+"Brassica juncea",
+"Brassica rapa",
+"Eruca sativa",
+"None of these"
+],
+"page": "",
+"q": "Which species is used as black mustard for condiments?",
+"serial": "1bxM1Q-4:810",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:810"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Peru",
+"India",
+"China",
+"Brazil",
+"None of these"
+],
+"page": "",
+"q": "Which country is the origin of the potato?",
+"serial": "1YcJWVgW:596",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:596"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Crop residue",
+"Cattle dung",
+"Food waste",
+"Municipal waste",
+"None of these"
+],
+"page": "",
+"q": "What is the primary source of biogas in rural India?",
+"serial": "128DIQLj:2922",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2922"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Gujarat",
+"Rajasthan",
+"Karnataka",
+"Kerala",
+"None of these"
+],
+"page": "",
+"q": "Which state is the largest producer of Black pepper in India?",
+"serial": "1YcJWVgW:842",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:842"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Agropedia",
+"RKMP",
+"KVK-net",
+"AgriNet",
+"None of these"
+],
+"page": "",
+"q": "Which of the following was NOT created under NAIP?",
+"serial": "128DIQLj:2142",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2142"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Upward communication",
+"Downward communication",
+"Horizontal communication",
+"Lateral communication",
+"None of these"
+],
+"page": "",
+"q": "What type of communication occurs when information flows from a higher level to a lower level in an organization?",
+"serial": "128DIQLj:2261",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2261"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cabbage",
+"Radish",
+"Groundnut",
+"Knol-khol",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a host plant for the Cabbage butterfly (Pieris brassicae)?",
+"serial": "1sUgWsko:1999",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1999"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Select a layout for the slide",
+"Double click to open the presentation app",
+"Insert a new slide",
+"Save the presentation",
+"None of these"
+],
+"page": "",
+"q": "What is the first step to create a new presentation?",
+"serial": "1bxM1Q-4:3847",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3847"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Dracunculus medinensis",
+"Wucheraria bancrofti",
+"Onchocera volvulus",
+"Ascaris lumbricoides",
+"None of these"
+],
+"page": "",
+"q": "Which nematode causes 'Onchocerciasis' or river blindness, commonly in Africa?",
+"serial": "17U0MEc-:2310",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2310"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Triazines",
+"Phenyl Ureas",
+"Unclassified",
+"Sulfonylureas",
+"None of these"
+],
+"page": "",
+"q": "Glyphosate belongs to which chemical group of herbicides?",
+"serial": "1sUgWsko:5203",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5203"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Different types of skin",
+"Same types of skin",
+"Uniform skin",
+"Smooth skin",
+"None of these"
+],
+"page": "",
+"q": "What is the meaning of the term 'Heterodera'?",
+"serial": "1UgnIe-g:2464",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2464"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cashew nut",
+"Avocado",
+"Papaya",
+"Tea",
+"None of these"
+],
+"page": "",
+"q": "The nickname \"Dollar earning crop\" is associated with which crop?",
+"serial": "1YcJWVgW:75",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:75"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Alpine",
+"Anglo-Nubian",
+"Saanen",
+"Angora",
+"None of these"
+],
+"page": "",
+"q": "Which breed of goat is known as the 'Milk queen of goats'?",
+"serial": "1bxM1Q-4:4117",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4117"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"25-28\u00b0C",
+"30-32\u00b0C",
+"20-25\u00b0C",
+"35-40\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimum temperature range for rice cultivation?",
+"serial": "1bxM1Q-4:624",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:624"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"3",
+"2",
+"4",
+"5",
+"None of these"
+],
+"page": "",
+"q": "How many sections does a Parshall flume consist of?",
+"serial": "128DIQLj:825",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:825"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bottom trawling",
+"Trolling",
+"Jigging",
+"Casting",
+"None of these"
+],
+"page": "",
+"q": "Which fishing method involves towing trawl nets along the sea floor and can cause serious damage to sea floor habitats?",
+"serial": "1sUgWsko:2164",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2164"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"4",
+"5",
+"6",
+"7",
+"None of these"
+],
+"page": "",
+"q": "How many productive functions of forests are explicitly listed in the source?",
+"serial": "1sUgWsko:5501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5501"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1.50 to 2.00 mg",
+"2.00 to 2.50 mg",
+"2.29 to 2.45 mg",
+"3.00 to 3.50 mg",
+"None of these"
+],
+"page": "",
+"q": "What is the iron content range (in mg) of Rohu as per the source?",
+"serial": "1sUgWsko:2436",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2436"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"House fly",
+"Syrphid fly",
+"Fruit fly",
+"Tachnidae fly",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a predacious fly on aphids?",
+"serial": "17U0MEc-:1854",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1854"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"amount of water retained by soil after drainage by gravitational force",
+"amount of water retained after evaporation",
+"amount of water retained after capillary rise",
+"amount of water retained after irrigation",
+"None of these"
+],
+"page": "",
+"q": "Field capacity is defined as:",
+"serial": "1sUgWsko:4721",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4721"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Madhya Pradesh",
+"Uttar Pradesh",
+"Rajasthan",
+"Gujarat",
+"None of these"
+],
+"page": "",
+"q": "Which state in India is the highest producer of coriander seeds?",
+"serial": "17U0MEc-:782",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:782"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mg2+",
+"Ca2+",
+"Zn2+",
+"ATP",
+"None of these"
+],
+"page": "",
+"q": "Which cofactor is required for Type I restriction enzyme activity?",
+"serial": "1UgnIe-g:1378",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1378"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"400 gm",
+"450 gm",
+"500 gm",
+"550 gm",
+"None of these"
+],
+"page": "",
+"q": "What is the total quantity of Potassium (K) required for a 5-year-old Grape plant?",
+"serial": "1bxM1Q-4:2917",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2917"
+}
+],
+"set_no": 37,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
