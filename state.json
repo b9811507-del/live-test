@@ -185539,7 +185539,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-20T17:58:08+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Less than 0.1 mm",
+"0.1-0.5 mm",
+"Greater than 0.5 mm",
+"0.5-1 mm",
+"None of these"
+],
+"page": "",
+"q": "What is the particle size range for soil particles moved by surface creep?",
+"serial": "17U0MEc-:1189",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1189"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"South Kanara",
+"Srivardhan",
+"Mangala",
+"Maroon",
+"None of these"
+],
+"page": "",
+"q": "Which variety is NOT associated with the horticulture planting space of 10m x 10m?",
+"serial": "1bxM1Q-4:3101",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3101"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Above the ground",
+"Below the ground",
+"Inside the ground",
+"Above soil",
+"None of these"
+],
+"page": "",
+"q": "In Greek, the term \u2018Hypogea\u2019 in Arachis hypogea means",
+"serial": "1bxM1Q-4:756",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:756"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Coconut",
+"Banana",
+"Sugarcane",
+"Acid lime",
+"None of these"
+],
+"page": "",
+"q": "Which crop is irrigated using the 'Trench and mounds' method?",
+"serial": "1sUgWsko:4686",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4686"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Archidorium",
+"Fernery",
+"Conservatory",
+"Orchidarium",
+"None of these"
+],
+"page": "",
+"q": "What is the term for a structure where various orchid species are cultivated for scientific or economic reasons?",
+"serial": "1bxM1Q-4:3533",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3533"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tillet",
+"Prevost",
+"Anton de Bary",
+"H.H. Flor",
+"None of these"
+],
+"page": "",
+"q": "Which scientist studied the late blight of potato and proved its fungal cause?",
+"serial": "1UgnIe-g:910",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:910"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Spraying Ridomil MZ",
+"Painting the stem with Bordeaux mixture",
+"Scraping and treating with Mercuric chloride (0.1 %) or Potassium permanganate (1 %)",
+"Avoiding injuries to crown roots",
+"None of these"
+],
+"page": "",
+"q": "Which management practice involves chemical disinfection after scraping diseased tissue?",
+"serial": "1sUgWsko:3796",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3796"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"> 0 (Positive)",
+"< 0 (Negative)",
+"= 0 (Zero)",
+"1 (One)",
+"None of these"
+],
+"page": "",
+"q": "What is the Marginal Rate of Product Substitution (MRPS) for supplementary enterprises?",
+"serial": "128DIQLj:2602",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2602"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ricardo",
+"Slutsky",
+"Keynes",
+"Samuelson",
+"None of these"
+],
+"page": "",
+"q": "Who developed the Liquidity Preference Theory?",
+"serial": "1bxM1Q-4:2237",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2237"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Light, moisture, nutrients",
+"Light, carbon dioxide, minerals",
+"Water, nitrogen, phosphorus",
+"Sunlight, heat, wind",
+"None of these"
+],
+"page": "",
+"q": "Interference effects in agroforestry involve competition for which three resources?",
+"serial": "1sUgWsko:5534",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5534"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"2.5%",
+"3.0%",
+"3.5%",
+"4.0%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of salts (minerals) is present in sea water?",
+"serial": "1sUgWsko:6748",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6748"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pomegranate",
+"Date palm",
+"Mango",
+"Strawberry",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is medium tolerant to salinity?",
+"serial": "1YcJWVgW:138",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:138"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Spray of Imidacloprid",
+"Using a rope to dislodge larval cases",
+"Alternate drying & wetting of field",
+"Growing multi-gene resistant varieties",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a management practice for controlling rice case worm?",
+"serial": "17U0MEc-:1976",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1976"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"H-4",
+"Varalaxmi",
+"Maru Vikas",
+"Savita",
+"None of these"
+],
+"page": "",
+"q": "Which is the first interspecific hybrid between G. hirsutum and G. barbadense?",
+"serial": "17U0MEc-:679",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:679"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Disc harrow",
+"Paddlers",
+"Chisel plough",
+"Ridge plough",
+"None of these"
+],
+"page": "",
+"q": "Which implement is used for puddling in paddy fields?",
+"serial": "128DIQLj:2974",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2974"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Fine soil texture",
+"Well\u2011aggregated soil structure",
+"High organic matter",
+"Soil compaction",
+"None of these"
+],
+"page": "",
+"q": "Which factor does NOT increase soil water availability?",
+"serial": "1bxM1Q-4:1046",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1046"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cornish",
+"Leghorn",
+"Brahma",
+"New Hampshire",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a Mediterranean breed of chicken?",
+"serial": "1bxM1Q-4:4200",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4200"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Phellandrene",
+"Carvone",
+"Andrographolide",
+"Withaferine",
+"None of these"
+],
+"page": "",
+"q": "Which active compound is found in the essential seed oil of Dill?",
+"serial": "1YcJWVgW:922",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:922"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"12-14 months",
+"16-18 months",
+"20-22 months",
+"24-26 months",
+"None of these"
+],
+"page": "",
+"q": "At what age does the Beetal goat breed typically reach first kidding?",
+"serial": "1sUgWsko:3323",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3323"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Boron",
+"Iron",
+"Copper",
+"Hydrogen sulfide",
+"None of these"
+],
+"page": "",
+"q": "Which water quality parameter must be completely absent (nil) in the pond?",
+"serial": "1sUgWsko:2534",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2534"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"50",
+"55",
+"60",
+"65",
+"None of these"
+],
+"page": "",
+"q": "How many All India Coordinated Research Projects (AICRPs) are listed in the source?",
+"serial": "128DIQLj:54",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:54"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Zinc",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient deficiency in maize causes White Bud?",
+"serial": "1sUgWsko:138",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:138"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"PMKSY",
+"PMFBY",
+"PKVY",
+"Soil Health Card Scheme",
+"None of these"
+],
+"page": "",
+"q": "Which scheme aims to promote organic farming in India?",
+"serial": "17U0MEc-:180",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:180"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Phosphate",
+"Unionised ammonia",
+"Ionised ammonia",
+"Dissolved oxygen",
+"None of these"
+],
+"page": "",
+"q": "Which parameter must be kept below 5 ppm in the water?",
+"serial": "1sUgWsko:2495",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2495"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Chi-square test",
+"F test",
+"T test",
+"ANOVA",
+"None of these"
+],
+"page": "",
+"q": "Which statistical test is applicable when the number of treatments is exactly two?",
+"serial": "17U0MEc-:2846",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2846"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Single super phosphate (SSP)",
+"Sodium nitrate",
+"Urea",
+"Ammonium sulphate",
+"None of these"
+],
+"page": "",
+"q": "Among the following, which is a high\u2011analysis fertilizer?",
+"serial": "128DIQLj:1378",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1378"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"25 cm between plants, 60 cm between rows",
+"45 cm between plants, 20 cm between rows",
+"20 cm between plants, 45 cm between rows",
+"30 cm between plants, 75 cm between rows",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended plant spacing for rainfed maize?",
+"serial": "1sUgWsko:162",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:162"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To produce timber",
+"To improve soil conservation",
+"Fish production and bund stabilization",
+"To produce fodder for livestock",
+"None of these"
+],
+"page": "",
+"q": "What is the main role of Aquaforestry?",
+"serial": "1bxM1Q-4:3903",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3903"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ganga-1",
+"Protina",
+"Amber",
+"Vikram",
+"None of these"
+],
+"page": "",
+"q": "Which of the following maize varieties is known for being rich in lysine and tryptophan amino acids?",
+"serial": "17U0MEc-:604",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:604"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1 diploid : 5 triploid",
+"1 triploid : 5 diploid",
+"1 diploid : 1 triploid",
+"5 diploid : 1 triploid",
+"None of these"
+],
+"page": "",
+"q": "What is the optimal plant ratio for fruit setting in triploid watermelon cultivation?",
+"serial": "1UgnIe-g:354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:354"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Automobile and factory emissions",
+"Deforestation",
+"Use of nitrogen fertilizers",
+"Paddy cultivation",
+"None of these"
+],
+"page": "",
+"q": "In developed countries, which activity is a major source of CFC emissions?",
+"serial": "17U0MEc-:213",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:213"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Bellowing",
+"Bleating",
+"Grunting",
+"Roaring",
+"None of these"
+],
+"page": "",
+"q": "What sound does a goat typically make?",
+"serial": "1sUgWsko:2784",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2784"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To produce food for family consumption",
+"To maximize profit through large-scale production",
+"To grow a variety of crops and rear livestock",
+"To cultivate a single crop for export",
+"None of these"
+],
+"page": "",
+"q": "What is the primary objective of commercial farming?",
+"serial": "1sUgWsko:4482",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4482"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Awareness stage",
+"Evaluation stage",
+"Trial stage",
+"Adoption stage",
+"None of these"
+],
+"page": "",
+"q": "Which stage of adoption helps to establish a benchmark?",
+"serial": "128DIQLj:2346",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2346"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sweet floral",
+"Pineapple smell",
+"Musty earth",
+"Acetone\u2011like",
+"None of these"
+],
+"page": "",
+"q": "What distinctive odor is associated with sett rot (pineapple disease) in sugarcane?",
+"serial": "1sUgWsko:3752",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3752"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"0.45 kg ai/ha",
+"1.0 kg ai/ha",
+"1.5 kg ai/ha",
+"2.0 kg ai/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended rate of application for Pendimethalin in soybean fields?",
+"serial": "1bxM1Q-4:1304",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1304"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Up to 40%",
+"Up to 50%",
+"Up to 60%",
+"Up to 70%",
+"None of these"
+],
+"page": "",
+"q": "What is the water use efficiency of sprinkler irrigation compared to surface methods?",
+"serial": "1sUgWsko:4619",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4619"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Test cross",
+"Back cross",
+"Top cross",
+"Reciprocal cross",
+"None of these"
+],
+"page": "",
+"q": "Which cross involves the crossing of F\u2081 with one of its parents?",
+"serial": "17U0MEc-:2484",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2484"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Zorapetra",
+"Psocoptera",
+"Mallophaga",
+"Siphonculata",
+"None of these"
+],
+"page": "",
+"q": "Which insect order is known for having a Y-shaped epicranial suture?",
+"serial": "17U0MEc-:1818",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1818"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase crop diversity",
+"To provide a continuous cover of the land and protect against soil erosion",
+"To reduce the need for irrigation",
+"To enhance the aesthetic appeal of the farm",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of Permanent or Temporary Buffer Strip Cropping?",
+"serial": "1bxM1Q-4:1384",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1384"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5.5-6.5",
+"6.5-7.5",
+"7.5-8.5",
+"4.5-5.5",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal pH range for the soil used in Ridge Gourd cultivation?",
+"serial": "1bxM1Q-4:3180",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3180"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"200-500",
+"500-1000",
+"200-1000",
+"1500-2000",
+"None of these"
+],
+"page": "",
+"q": "What is the work capacity range (in kg/h) of a paddy thresher?",
+"serial": "1sUgWsko:6400",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6400"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Grass carp",
+"Silver carp",
+"Common carp",
+"Tilapia",
+"None of these"
+],
+"page": "",
+"q": "Which exotic/Chinese carp listed has the scientific name \"Hypophtalmichthys molitrix\"?",
+"serial": "1bxM1Q-4:4285",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4285"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1999",
+"2000",
+"2001",
+"2002",
+"None of these"
+],
+"page": "",
+"q": "Which year was declared by the Government of India as the Year of Women\u2019s Empowerment (Swashakti)?",
+"serial": "1sUgWsko:4106",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4106"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Nitrogen",
+"Phosphorus (P\u2082O\u2085)",
+"Potassium (K\u2082O)",
+"Calcium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient in cotton fertilization should be applied as a basal dose at or before sowing?",
+"serial": "128DIQLj:562",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:562"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Photograph",
+"Diagram",
+"Slide",
+"Model",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of a projected visual aid?",
+"serial": "17U0MEc-:2695",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2695"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Central Soil and Water Conservation Research and Training Institute (CSWCRT), Dehradun",
+"Indian Agricultural Research Institute, New Delhi",
+"National Institute of Hydrology, Roorkee",
+"Central Arid Zone Research Institute, Jodhpur",
+"None of these"
+],
+"page": "",
+"q": "Which institute is involved in soil and water conservation research and training?",
+"serial": "1bxM1Q-4:1423",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1423"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Regulation of shape and growth of the tree",
+"Enhancement of production and quality of fruits",
+"Increase soil fertility",
+"Control of tree size",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a main objective of pruning?",
+"serial": "1YcJWVgW:34",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:34"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tubers",
+"Leaves",
+"Adventitious root",
+"Flowers",
+"None of these"
+],
+"page": "",
+"q": "The edible portion of sweet potato (Ipomoea batata) is which part?",
+"serial": "17U0MEc-:242",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:242"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Situation",
+"Objective",
+"Reconsideration",
+"Teaching",
+"None of these"
+],
+"page": "",
+"q": "What is the final step in the extension education process according to Dr. J.P. Leagans?",
+"serial": "17U0MEc-:2667",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2667"
+}
+],
+"set_no": 38,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
