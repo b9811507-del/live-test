@@ -185550,9 +185550,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 659,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 659,
+"built_at": "2026-10-20T10:57:43+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 193-198",
+"pages_blocks": [
+"193-194",
+"195-196",
+"197-198"
+],
+"questions": [
+{
+"expl": "Volunteer weeds arise when seeds from a former crop are shed into a new crop field and germinate there.",
+"key": 0,
+"o": [
+"seed shedding from a previously sown crop",
+"off\u2011type plants removed by roguing",
+"seeds that resemble crop seeds",
+"weeds that are difficult to control",
+"None of these"
+],
+"page": "193-194",
+"q": "Volunteer weeds are defined as plants that grow in the main crop due to:",
+"serial": "981",
+"src_row": 641,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "193-194:981"
+},
+{
+"expl": "Rogue weeds are off\u2011type plants of the same species; Kalyan Sona in HD 2329 wheat is a classic example.",
+"key": 1,
+"o": [
+"Phalaris minor in wheat",
+"Kalyan Sona variety growing in HD 2329 wheat",
+"Wild oat in mustard",
+"Lantana in wheat",
+"None of these"
+],
+"page": "193-194",
+"q": "Which example best illustrates a rogue weed?",
+"serial": "982",
+"src_row": 642,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "193-194:982"
+},
+{
+"expl": "The table lists Field bind weed as an objectionable weed for wheat.",
+"key": 3,
+"o": [
+"Senji/clover",
+"Dodder",
+"Lantana",
+"Field bind weed",
+"None of these"
+],
+"page": "193-194",
+"q": "Which weed is listed as objectionable for wheat in the source table?",
+"serial": "983",
+"src_row": 643,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "193-194:983"
+},
+{
+"expl": "Sorghum halepense (Johnson grass) spreads mainly via rhizomes, as shown in the vegetative part table.",
+"key": 0,
+"o": [
+"Rhizomes",
+"Tubers",
+"Bulbs",
+"Offsets",
+"None of these"
+],
+"page": "193-194",
+"q": "Sorghum halepense propagates primarily through which vegetative part?",
+"serial": "984",
+"src_row": 644,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "193-194:984"
+},
+{
+"expl": "2,4-D, discovered in the 1940s, was the first selective organic herbicide used on crops.",
+"key": 0,
+"o": [
+"2,4-D",
+"2,4-DB",
+"Glyphosate",
+"Atrazine",
+"None of these"
+],
+"page": "193-194",
+"q": "What was the first selective organic herbicide introduced worldwide?",
+"serial": "985",
+"src_row": 645,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "193-194:985"
+},
+{
+"expl": "The source states 2,4-D was first tested in India in 1946 and introduced commercially in 1948.",
+"key": 0,
+"o": [
+"1946",
+"1948",
+"1950",
+"1952",
+"None of these"
+],
+"page": "193-194",
+"q": "In which year was 2,4-D first tested as a herbicide in India?",
+"serial": "986",
+"src_row": 646,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "193-194:986"
+},
+{
+"expl": "Pre\u2011plant incorporation herbicides are applied before seed planting to prevent weed establishment.",
+"key": 0,
+"o": [
+"Pre-plant incorporation",
+"Pre-emergence",
+"Post-emergence",
+"Early post-emergence",
+"None of these"
+],
+"page": "195-196",
+"q": "Which herbicide type is applied before crop seeds are planted?",
+"serial": "991",
+"src_row": 647,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "195-196:991"
+},
+{
+"expl": "Residual action describes the duration a herbicide stays effective in the soil.",
+"key": 2,
+"o": [
+"Selectivity",
+"Spectrum of weed control",
+"Residual action in soil",
+"Site of application",
+"None of these"
+],
+"page": "195-196",
+"q": "Which classification criterion refers to how long a herbicide remains active in soil?",
+"serial": "992",
+"src_row": 648,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "195-196:992"
+},
+{
+"expl": "Broad\u2011spectrum herbicides affect many weed species, whereas narrow\u2011spectrum target fewer.",
+"key": 1,
+"o": [
+"narrow",
+"broad",
+"selective",
+"residual",
+"None of these"
+],
+"page": "195-196",
+"q": "A herbicide that can control a wide range of weed species is said to have a ______ spectrum.",
+"serial": "993",
+"src_row": 649,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "195-196:993"
+},
+{
+"expl": "Early post\u2011emergence herbicides are applied right after weed emergence, before crop emergence.",
+"key": 2,
+"o": [
+"Pre-plant incorporation",
+"Pre-emergence",
+"Early post-emergence",
+"Post-emergence",
+"None of these"
+],
+"page": "195-196",
+"q": "Which herbicide type is typically applied immediately after weed emergence but before the crop has fully emerged?",
+"serial": "994",
+"src_row": 650,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "195-196:994"
+},
+{
+"expl": "Soil\u2011site herbicides are applied to the ground and affect weed roots.",
+"key": 1,
+"o": [
+"Foliar",
+"Soil",
+"Seed",
+"Systemic",
+"None of these"
+],
+"page": "195-196",
+"q": "A herbicide that is applied to the soil and acts on weed roots is best described as having which site of application?",
+"serial": "995",
+"src_row": 651,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "195-196:995"
+},
+{
+"expl": "Selectivity refers to whether a herbicide targets a narrow or broad range of weed species.",
+"key": 1,
+"o": [
+"Spectrum of weed control",
+"Selectivity",
+"Residual action in soil",
+"Window of application",
+"None of these"
+],
+"page": "195-196",
+"q": "Which classification distinguishes herbicides that affect only a specific group of weeds from those that affect many?",
+"serial": "996",
+"src_row": 652,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "195-196:996"
+},
+{
+"expl": "Methyl\u2011bromide is listed as a temporary soil sterilant that remains active for only 15\u201116 weeks.",
+"key": 0,
+"o": [
+"Methyl-bromide",
+"Triazines",
+"Phenylureas",
+"Metham",
+"None of these"
+],
+"page": "197-198",
+"q": "Which of the following is a temporary soil sterilant used for 15\u201116 weeks of soil sterilization?",
+"serial": "1001",
+"src_row": 653,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "197-198:1001"
+},
+{
+"expl": "Paraquat is a contact herbicide that kills plants by direct contact and has low mobility.",
+"key": 2,
+"o": [
+"Glyphosate",
+"Atrazine",
+"Paraquat",
+"Propanil",
+"None of these"
+],
+"page": "197-198",
+"q": "Which herbicide is classified as a contact herbicide with low mobility?",
+"serial": "1002",
+"src_row": 654,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "197-198:1002"
+},
+{
+"expl": "Atrazine moves through the xylem, exhibiting apoplastic movement.",
+"key": 1,
+"o": [
+"Glyphosate",
+"Atrazine",
+"2,4\u2011D",
+"Propanil",
+"None of these"
+],
+"page": "197-198",
+"q": "Which herbicide moves through the xylem (apoplastic movement) in the plant?",
+"serial": "1003",
+"src_row": 655,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "197-198:1003"
+},
+{
+"expl": "Pulse crops lack \u03b2\u2011oxidation, so 2,4\u2011DB is not converted to the active 2,4\u2011D and remains safe.",
+"key": 2,
+"o": [
+"It is a non\u2011selective herbicide.",
+"It is converted into 2,4\u2011D inside the crop.",
+"It is a proherbicide that is not converted due to lack of \u03b2\u2011oxidation.",
+"It is absorbed only by weeds.",
+"None of these"
+],
+"page": "197-198",
+"q": "Why is 2,4\u2011DB considered safe for pulse crops?",
+"serial": "1004",
+"src_row": 656,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "197-198:1004"
+},
+{
+"expl": "Alachlor is listed with the trade names Lasso and Crop Star and is applied pre\u2011emergence.",
+"key": 2,
+"o": [
+"Glyphosate",
+"2,4\u2011D",
+"Alachlor",
+"Propanil",
+"None of these"
+],
+"page": "197-198",
+"q": "Which herbicide is applied pre\u2011emergence according to the trade name table?",
+"serial": "1005",
+"src_row": 657,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "197-198:1005"
+},
+{
+"expl": "Glyphosate is a translocated herbicide that moves within the plant from the application site to other parts.",
+"key": 2,
+"o": [
+"Paraquat",
+"Diquat",
+"Glyphosate",
+"Oxyfluorfen",
+"None of these"
+],
+"page": "197-198",
+"q": "Which herbicide is a systemic (translocated) herbicide?",
+"serial": "1006",
+"src_row": 658,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "197-198:1006"
+}
+],
+"rolled": false,
+"row_from": 641,
+"row_to": 659,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 641,
+"seeded_from": "2026-10-19",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-19",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
