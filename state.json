@@ -185851,6 +185851,8 @@
 "cd": 1,
 "congrats_sent": 33351,
 "cta_sent": "off",
+"done_at": "2026-10-20T14:41:52+05:30",
+"elapsed_s": 856,
 "expl_in_poll": 21,
 "file_msg": 33352,
 "file_sent": "IARI_p107-109_21Q_2026-10-20.html",
@@ -185860,8 +185862,18 @@
 "lb_rows": 20,
 "lb_sent": true,
 "lock_ts": 1792487480.3720198,
-"locked_by": "39397120250",
+"locked_by": "",
 "msg_ann": 33326,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 33328,
 "names": {
 "1123670987": "Locksmitth",
@@ -185885,6 +185897,8 @@
 "8567101693": "Tushar",
 "978174619": "Kuldeep758"
 },
+"paid_msg": 33354,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 756,
@@ -186319,7 +186333,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-20T14:30:21+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 33353,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 199-204\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 110, 111, 112"
 },
