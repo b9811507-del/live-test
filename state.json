@@ -185544,8 +185544,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 756,
 "names": {},
+"plan": {
+"bidx_next": 756,
+"built_at": "2026-10-20T14:27:33+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 107-109",
+"pages_list": [
+107,
+108,
+109
+],
+"questions": [
+{
+"expl": "The Cordon System is explicitly mentioned as a training system that finds favor in apples and pears.",
+"key": 1,
+"o": [
+"Mango and Guava",
+"Apple and Pear",
+"Banana and Papaya",
+"Grapes and Orange",
+"None of these"
+],
+"page": "107",
+"q": "Which fruit crops are most commonly associated with the Cordon System of training?",
+"serial": "743",
+"src_row": 735,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:743"
+},
+{
+"expl": "Vertical cordons are trained erect and grown to a height of 10-12 feet as per the source.",
+"key": 2,
+"o": [
+"5-6 feet",
+"8-10 feet",
+"10-12 feet",
+"15-18 feet",
+"None of these"
+],
+"page": "107",
+"q": "What is the typical height of vertical cordons in fruit trees?",
+"serial": "744",
+"src_row": 736,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:744"
+},
+{
+"expl": "The first fruiting wood in vertical cordons is developed at about 30 cm from the ground.",
+"key": 2,
+"o": [
+"10 cm",
+"20 cm",
+"30 cm",
+"40 cm",
+"None of these"
+],
+"page": "107",
+"q": "At what height from the ground is the first fruiting wood developed in vertical cordons?",
+"serial": "745",
+"src_row": 737,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:745"
+},
+{
+"expl": "The Cordon System is described as seldom found in commercial fruit production and has been replaced by dwarf pyramids.",
+"key": 1,
+"o": [
+"Single stemmed trees",
+"Used in commercial fruit production",
+"Can be vertical, oblique, or horizontal",
+"Replaced by dwarf pyramids",
+"None of these"
+],
+"page": "107",
+"q": "Which of the following is NOT a characteristic of the Cordon System?",
+"serial": "746",
+"src_row": 738,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:746"
+},
+{
+"expl": "The source states that the Cordon System is also followed in vines incapable of standing on their own.",
+"key": 1,
+"o": [
+"Herbaceous crops",
+"Vines incapable of standing on their own",
+"Root crops",
+"Annual plants",
+"None of these"
+],
+"page": "107",
+"q": "In which type of plants is the Cordon System also followed besides fruit trees?",
+"serial": "747",
+"src_row": 739,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:747"
+},
+{
+"expl": "The Tatura Trellis is explicitly mentioned as one of the highest yielding systems in peaches.",
+"key": 2,
+"o": [
+"Cordon System",
+"Espalier System",
+"Tatura Trellis",
+"Bush System",
+"None of these"
+],
+"page": "107",
+"q": "Which training system is described as one of the highest yielding systems in peaches?",
+"serial": "748",
+"src_row": 740,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:748"
+},
+{
+"expl": "The source states that the Cordon System has been replaced by dwarf pyramids, making it uncommon in commercial fruit production.",
+"key": 1,
+"o": [
+"It requires excessive pruning",
+"It is replaced by dwarf pyramids",
+"It is only suitable for tropical fruits",
+"It produces low-quality fruits",
+"None of these"
+],
+"page": "107",
+"q": "Why is the Cordon System considered uncommon in commercial fruit production?",
+"serial": "749",
+"src_row": 741,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "107:749"
+},
+{
+"expl": "The Head System is described as developing a bush shape, requiring support in early years, and becoming self-supporting after 4-5 years.",
+"key": 1,
+"o": [
+"Pergola system",
+"Head system",
+"V-shaped system",
+"Y-shaped leader system",
+"None of these"
+],
+"page": "108",
+"q": "Which training system for grape vines results in a bush-shaped plant that initially requires support but becomes self-supporting after 4-5 years?",
+"serial": "750",
+"src_row": 742,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:750"
+},
+{
+"expl": "The source explicitly states that trees are planted 6 x 1 m apart, resulting in 1668 trees per hectare.",
+"key": 0,
+"o": [
+"1668",
+"1000",
+"2000",
+"1500",
+"None of these"
+],
+"page": "108",
+"q": "In the V-shaped training system, how many trees are planted per hectare when spaced 6 x 1 m apart?",
+"serial": "751",
+"src_row": 743,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:751"
+},
+{
+"expl": "The pergola system is commonly used for grape, passion fruit, and peaches, but not mango.",
+"key": 3,
+"o": [
+"Grape",
+"Passion fruit",
+"Peach",
+"Mango",
+"None of these"
+],
+"page": "108",
+"q": "Which of the following crops is NOT typically trained using the pergola system?",
+"serial": "752",
+"src_row": 744,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:752"
+},
+{
+"expl": "The pergola is developed to support perennial vine crops using a network of crisscross wires and angle iron poles.",
+"key": 1,
+"o": [
+"To increase fruit size",
+"To support perennial vine crops",
+"To reduce water usage",
+"To prevent disease",
+"None of these"
+],
+"page": "108",
+"q": "What is the primary purpose of developing a pergola in vine crop training?",
+"serial": "753",
+"src_row": 745,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:753"
+},
+{
+"expl": "The Head System allows grape vines to grow to a height of 75 to 90 cm.",
+"key": 2,
+"o": [
+"30 to 45 cm",
+"60 to 75 cm",
+"75 to 90 cm",
+"90 to 120 cm",
+"None of these"
+],
+"page": "108",
+"q": "At what height are grape vines typically allowed to grow in the Head System?",
+"serial": "754",
+"src_row": 746,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:754"
+},
+{
+"expl": "The V-shaped system is characterized by a main framework of Y-shaped leaders tied with wires.",
+"key": 1,
+"o": [
+"Use of angle iron poles",
+"Y-shaped leaders tied with wires",
+"Bush-shaped plant growth",
+"Self-supporting after 4-5 years",
+"None of these"
+],
+"page": "108",
+"q": "Which feature distinguishes the V-shaped training system from others mentioned in the source?",
+"serial": "755",
+"src_row": 747,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:755"
+},
+{
+"expl": "The Head System is followed in less vigorous cultivars of grape vines.",
+"key": 2,
+"o": [
+"Highly vigorous",
+"Moderately vigorous",
+"Less vigorous",
+"Disease-resistant",
+"None of these"
+],
+"page": "108",
+"q": "For which type of grape cultivar is the Head System most suitable?",
+"serial": "756",
+"src_row": 748,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "108:756"
+},
+{
+"expl": "The Kniffin system is explicitly described as the 4-canes system in the source.",
+"key": 1,
+"o": [
+"2-canes system",
+"4-canes system",
+"6-canes system",
+"8-canes system",
+"None of these"
+],
+"page": "109",
+"q": "The Kniffin system of vine training is also referred to as the:",
+"serial": "757",
+"src_row": 749,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:757"
+},
+{
+"expl": "The source states that the two rows of wires are stretched at heights of 1.05 and 1.65 metres from ground level.",
+"key": 1,
+"o": [
+"0.9 and 1.5 m",
+"1.05 and 1.65 m",
+"1.2 and 1.8 m",
+"1.5 and 2.0 m",
+"None of these"
+],
+"page": "109",
+"q": "In the Kniffin system, at what height from the ground are the two rows of wires stretched?",
+"serial": "758",
+"src_row": 750,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:758"
+},
+{
+"expl": "The source mentions that 2 branches of the vines are trained parallel to the ground along both lines of wire.",
+"key": 1,
+"o": [
+"1",
+"2",
+"3",
+"4",
+"None of these"
+],
+"page": "109",
+"q": "How many branches of the vines are trained parallel to the ground in the Kniffin system?",
+"serial": "759",
+"src_row": 751,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:759"
+},
+{
+"expl": "The source explicitly states that the Telephone system is also known as the 6-canes system.",
+"key": 1,
+"o": [
+"Kniffin system",
+"Telephone system",
+"Bower system",
+"Pergola system",
+"None of these"
+],
+"page": "109",
+"q": "Which training system is also known as the 6-canes system?",
+"serial": "760",
+"src_row": 752,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:760"
+},
+{
+"expl": "The source specifies that poles in the Telephone system are erected at a distance of 3.6 to 4.8 metres.",
+"key": 1,
+"o": [
+"2.4 to 3.6 m",
+"3.6 to 4.8 m",
+"4.8 to 6.0 m",
+"1.8 to 2.4 m",
+"None of these"
+],
+"page": "109",
+"q": "In the Telephone system, what is the typical distance between erected poles?",
+"serial": "761",
+"src_row": 753,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:761"
+},
+{
+"expl": "The source states that vines in the Telephone system are allowed to grow to a height of 1.5 to 1.6 m before training.",
+"key": 1,
+"o": [
+"1.2 to 1.4 m",
+"1.5 to 1.6 m",
+"1.7 to 1.8 m",
+"1.0 to 1.2 m",
+"None of these"
+],
+"page": "109",
+"q": "To what height are the vines allowed to grow before being trained with wires in the Telephone system?",
+"serial": "762",
+"src_row": 754,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:762"
+},
+{
+"expl": "The Kniffin system is a 4-canes system, while the Telephone system is a 6-canes system, as per the source.",
+"key": 1,
+"o": [
+"Kniffin uses 2 canes, Telephone uses 4 canes",
+"Kniffin uses 4 canes, Telephone uses 6 canes",
+"Kniffin uses 6 canes, Telephone uses 4 canes",
+"Kniffin uses 3 canes, Telephone uses 5 canes",
+"None of these"
+],
+"page": "109",
+"q": "What is the primary difference between the Kniffin and Telephone systems in terms of cane count?",
+"serial": "763",
+"src_row": 755,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "109:763"
+}
+],
+"row_from": 735,
+"row_to": 756,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 735,
+"seeded_from": "2026-10-19"
+},
 "qidx": 0,
+"seeded_from": "2026-10-19",
+"skips": [],
 "step": 0
 },
 "malwa": {
