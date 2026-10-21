@@ -190301,7 +190301,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-21T17:57:43+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Biparental",
+"Uniparental",
+"Autosomal",
+"Sex-linked",
+"None of these"
+],
+"page": "",
+"q": "What is the inheritance pattern in cytoplasmic inheritance?",
+"serial": "1UgnIe-g:645",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:645"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Calf",
+"Foal",
+"Piglet",
+"Kid",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the newborn of a pig?",
+"serial": "1sUgWsko:2786",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2786"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rhizome",
+"Fruit",
+"Bark",
+"Seed",
+"None of these"
+],
+"page": "",
+"q": "Which part of the plant Curcuma longa L. is used as a spice?",
+"serial": "1bxM1Q-4:3275",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3275"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10%",
+"20%",
+"30%",
+"40%",
+"None of these"
+],
+"page": "",
+"q": "Commercial bleaching powder used for fish control contains approximately what percentage of chlorine?",
+"serial": "1sUgWsko:2345",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2345"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20%",
+"40%",
+"60%",
+"80%",
+"None of these"
+],
+"page": "",
+"q": "Approximately what proportion of all known fish species are found in freshwater habitats?",
+"serial": "1sUgWsko:2242",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2242"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Groundnut",
+"Soybean",
+"Mustard",
+"Sunflower",
+"None of these"
+],
+"page": "",
+"q": "Which oilseed crop is considered the most important in India?",
+"serial": "128DIQLj:421",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:421"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Zinc",
+"Calcium",
+"Magnesium",
+"Both zinc and magnesium",
+"None of these"
+],
+"page": "",
+"q": "\"Goose stepping\" and bone deformation in poultry are linked to deficiency of which minerals?",
+"serial": "1sUgWsko:3506",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3506"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Transfer seedlings to another bed",
+"Expose seedlings to full sunlight",
+"Remove excess seedlings for better aeration",
+"Apply mulch over the bed",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of thinning in nursery operations?",
+"serial": "1sUgWsko:536",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:536"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Dr. M.S. Randhawa",
+"Professor Lancelot Hogben",
+"Charles Darwin",
+"Gregor Mendel",
+"None of these"
+],
+"page": "",
+"q": "Who gave the term 'bio-aesthetic planting'?",
+"serial": "1bxM1Q-4:3481",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3481"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2010",
+"1st April, 2014",
+"2014-15",
+"19 Feb. 2015",
+"None of these"
+],
+"page": "",
+"q": "When was the Integrated Scheme for Agricultural Marketing (ISAM) launched?",
+"serial": "17U0MEc-:171",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:171"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cleistogamy",
+"Chasmogamy",
+"Geitonogamy",
+"Xenogamy",
+"None of these"
+],
+"page": "",
+"q": "Pollination that occurs inside an unopened flower bud, preventing cross\u2011pollination, is termed:",
+"serial": "1sUgWsko:5893",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5893"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Castor",
+"Pearlmillet",
+"Sunflower",
+"Cowpea",
+"None of these"
+],
+"page": "",
+"q": "Which crop is recommended to cultivate during the early onset of monsoon?",
+"serial": "1bxM1Q-4:1137",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1137"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Growing different species of trees in one place",
+"Arranging colorful potted plants in tiers",
+"Creating miniature forms of plants",
+"Budding plants at different heights",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of an arboretum?",
+"serial": "1bxM1Q-4:3368",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3368"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.5 kg fish biomass per m\u00b3",
+"1 kg fish biomass per m\u00b3",
+"2 kg fish biomass per m\u00b3",
+"5 kg fish biomass per m\u00b3",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended stocking density for seabass in a 100\u2011tonne water body?",
+"serial": "1sUgWsko:2491",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2491"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Water content",
+"Sucrose",
+"Reducing sugars",
+"Non\u2011sugars (organic and inorganic)",
+"None of these"
+],
+"page": "",
+"q": "At peak maturity of sugarcane, which component is at its lowest level?",
+"serial": "1sUgWsko:443",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:443"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Onion Fly (Delia antiqua)",
+"Mustard aphid (Lipaphis erysimi)",
+"Onion Thrips (Thrips tabaci)",
+"Cabbage butterfly (Pieris brassicae)",
+"None of these"
+],
+"page": "",
+"q": "Which pest causes small white silvery patches on onion leaves and leads to drying from the tip downward in severe infestation?",
+"serial": "1sUgWsko:2115",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2115"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Langra",
+"Alphonso",
+"Dasheri",
+"Kesar",
+"None of these"
+],
+"page": "",
+"q": "Which mango cultivar has the highest percentage of perfect (bisexual) flowers?",
+"serial": "1YcJWVgW:172",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:172"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Extremely Toxic",
+"Highly Toxic",
+"Moderate Toxic",
+"Slightly Toxic",
+"None of these"
+],
+"page": "",
+"q": "Which toxicity category has an acute toxicity range of 51-500 mg/kg and is marked with a bright yellow triangle?",
+"serial": "1sUgWsko:5199",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5199"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Activated charcoal",
+"Gastric lavage",
+"Inducing vomiting and stomach wash",
+"Oral atropine",
+"None of these"
+],
+"page": "",
+"q": "What is the most effective immediate management for a swallowed insecticidal poison?",
+"serial": "1UgnIe-g:2134",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2134"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Transpiration",
+"Transpiration Ratio",
+"Temporary Wilting Percentage",
+"Total Digestible Nutrients",
+"None of these"
+],
+"page": "",
+"q": "What is the ratio of water transpired by a plant to the dry matter produced by it called?",
+"serial": "1sUgWsko:4766",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4766"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mean = Mode = Median",
+"Mean - Mode = 3 (Mean - Median)",
+"Mode = 3 Median - 2 Mean",
+"Mean = Median = Mode",
+"None of these"
+],
+"page": "",
+"q": "In a moderately skewed distribution, which of the following relationships holds true?",
+"serial": "128DIQLj:2755",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2755"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Swingle",
+"Luthara",
+"Mitra",
+"Suttar",
+"None of these"
+],
+"page": "",
+"q": "Which scientist reported Karnal bunt disease for the first time?",
+"serial": "17U0MEc-:2212",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2212"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Petunia",
+"Rose",
+"Gladiolus",
+"Dahlia",
+"None of these"
+],
+"page": "",
+"q": "Which flower is suitable for both hanging baskets and bedding purposes?",
+"serial": "1bxM1Q-4:3518",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3518"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Abscisic acid",
+"Ethylene",
+"Cytokinin",
+"Gibberellin",
+"None of these"
+],
+"page": "",
+"q": "The hormone that directly triggers abscission in plants is:",
+"serial": "1UgnIe-g:1666",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1666"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Gill net",
+"Drag Net",
+"Trawl net",
+"Cast net",
+"None of these"
+],
+"page": "",
+"q": "Which fishing gear is NOT explicitly listed in the SOURCE?",
+"serial": "1sUgWsko:2678",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2678"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Collection of facts",
+"Analysis of situation",
+"Centralized decision-making",
+"Identification of problems",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a step in programme planning for agricultural extension?",
+"serial": "1bxM1Q-4:2137",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2137"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Portulaca grandiflora",
+"Schizanthus",
+"Pansy",
+"Michaelmas daisy",
+"None of these"
+],
+"page": "",
+"q": "Which plant has a trailing stem with short thick leaves resembling roses?",
+"serial": "1bxM1Q-4:3407",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3407"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Central Institute for Arid Horticulture (CIAH)",
+"Central Institute on Post harvest Engineering and Technology (CIPHET)",
+"Central Institute of Sub Tropical Horticulture (CISH)",
+"Central Institute of Potato Research (CPRI)",
+"None of these"
+],
+"page": "",
+"q": "Which institute specializes in post\u2011harvest engineering and technology?",
+"serial": "128DIQLj:32",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:32"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Soil conservation",
+"Wildlife conservation",
+"High calorific value",
+"Water conservation",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of energy plantation?",
+"serial": "1UgnIe-g:2841",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2841"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bihar",
+"Haryana",
+"Maharashtra",
+"Rajasthan",
+"None of these"
+],
+"page": "",
+"q": "Which state has the smallest area of saline soil among the listed states?",
+"serial": "1sUgWsko:7065",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7065"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"75%",
+"90%",
+"100%",
+"50%",
+"None of these"
+],
+"page": "",
+"q": "What is the seed replacement rate in hybrids?",
+"serial": "1UgnIe-g:890",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:890"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lysenko",
+"F. Went",
+"Alexandrian Fleming",
+"Beijerinck",
+"None of these"
+],
+"page": "",
+"q": "Who is credited with the discovery of penicillin?",
+"serial": "17U0MEc-:284",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:284"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"15\u00b0C - 20\u00b0C",
+"21\u00b0C - 27\u00b0C",
+"28\u00b0C - 35\u00b0C",
+"10\u00b0C - 18\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal temperature range for the growth of brinjal?",
+"serial": "1sUgWsko:1344",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1344"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chenopodium album",
+"Saccharum spontaneum",
+"Cenchrus ciliaris",
+"Agropyron portulaca",
+"None of these"
+],
+"page": "",
+"q": "Which weed acts as a host for powdery mildew in maize?",
+"serial": "1sUgWsko:5152",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5152"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Jethro Tull",
+"Charles Darwin",
+"Gregor Mendel",
+"Norman Borlaug",
+"None of these"
+],
+"page": "",
+"q": "Who is known as the 'Father of Weed Science'?",
+"serial": "1sUgWsko:5074",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5074"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Dicofol 18.5 EC",
+"Ethion 50 EC",
+"Sulphur (Wokovit 80 % WDG)",
+"Chlorpyrifos",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a common acaricide/miticide?",
+"serial": "17U0MEc-:1804",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1804"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Beta vulgaris",
+"Beta vulgaris sp. maritima",
+"Chenopodiaceae",
+"Athalia lugens proxia",
+"None of these"
+],
+"page": "",
+"q": "What is the scientific name of beetroot?",
+"serial": "1YcJWVgW:697",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:697"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Outer maxillae",
+"Inner maxillae",
+"Labrum",
+"Mandibles",
+"None of these"
+],
+"page": "",
+"q": "In piercing\u2011sucking mouthparts, which structures form the salivary and food canals?",
+"serial": "1UgnIe-g:1891",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1891"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"By crossing two haploid plants",
+"By doubling the chromosome number of haploid plants using Colchicine treatment",
+"By natural selection",
+"By genetic engineering",
+"None of these"
+],
+"page": "",
+"q": "How are double haploid plants developed?",
+"serial": "17U0MEc-:2471",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2471"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"5-10 kg/ha",
+"10-15 kg/ha",
+"15-20 kg/ha",
+"20-25 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended application rate of ZnSO\u2084 for managing zinc deficiency in maize?",
+"serial": "17U0MEc-:2226",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2226"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dr. B. P. Pal",
+"M. S. Swaminathan",
+"Dr. K. C. Mehta",
+"E. J. Butler",
+"None of these"
+],
+"page": "",
+"q": "Who is considered the father of Indian Plant Breeding?",
+"serial": "1bxM1Q-4:255",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:255"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Green algae",
+"Brown algae",
+"Red algae",
+"Cyanobacteria",
+"None of these"
+],
+"page": "",
+"q": "Agar used in plant tissue culture is derived from which type of algae?",
+"serial": "1UgnIe-g:1335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1335"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Before 10:00 a.m.",
+"Before 12:00 p.m.",
+"Before 2:00 p.m.",
+"Before 4:00 p.m.",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended time to complete the tapping of latex from papaya fruits?",
+"serial": "1bxM1Q-4:2977",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2977"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mesocarp",
+"Endosperm",
+"Thalamus",
+"Epicarp",
+"None of these"
+],
+"page": "",
+"q": "Which part of the mango is edible?",
+"serial": "17U0MEc-:2386",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2386"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"18\u201320 kg ha\u207b\u00b9",
+"8\u201310 kg ha\u207b\u00b9",
+"30\u201335 kg ha\u207b\u00b9",
+"5\u20137 kg ha\u207b\u00b9",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended seed rate for summer season okra?",
+"serial": "1YcJWVgW:587",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:587"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Clear felling system",
+"Shelterwood system",
+"Selection system",
+"Periodic block system",
+"None of these"
+],
+"page": "",
+"q": "In which silvicultural system is the term 'felling cycle' relevant?",
+"serial": "1UgnIe-g:2715",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2715"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"10 ton/ha/year",
+"12 ton/ha/year",
+"16.4 ton/ha/year",
+"20 ton/ha/year",
+"None of these"
+],
+"page": "",
+"q": "What is the permissible limit of soil loss in India per hectare per year?",
+"serial": "1sUgWsko:7405",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7405"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Fixed capital",
+"Working capital",
+"Sunk capital",
+"Floating capital",
+"None of these"
+],
+"page": "",
+"q": "Which type of capital is meant only for a specific purpose?",
+"serial": "1sUgWsko:3946",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3946"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Right side",
+"Left side",
+"Front side",
+"Rear side",
+"None of these"
+],
+"page": "",
+"q": "From which side are cows typically milked in hand milking?",
+"serial": "1sUgWsko:2791",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2791"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"TSP",
+"DCP",
+"DSP",
+"SSP",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a water\u2011soluble phosphorus fertilizer?",
+"serial": "1sUgWsko:7215",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7215"
+}
+],
+"set_no": 39,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
