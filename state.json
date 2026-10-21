@@ -190306,8 +190306,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 777,
 "names": {},
+"plan": {
+"bidx_next": 777,
+"built_at": "2026-10-21T14:28:37+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 110-112",
+"pages_list": [
+110,
+111,
+112
+],
+"questions": [
+{
+"expl": "The Bower system is explicitly stated to have better light penetration and good ventilation in each part of the vine, making it superior to the Kniffin system.",
+"key": 1,
+"o": [
+"Kniffin system",
+"Bower system",
+"Head system",
+"Cordon system",
+"None of these"
+],
+"page": "110",
+"q": "Which training system for grape vines is described as having better light penetration and good ventilation in all parts of the vine?",
+"serial": "764",
+"src_row": 756,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:764"
+},
+{
+"expl": "The Bower system is well-suited for vigorous cultivars, specifically mentioned as Anab-e-Shahi in the source.",
+"key": 2,
+"o": [
+"Dwarf cultivars",
+"Moderately vigorous cultivars",
+"Vigorous cultivars like Anab-e-Shahi",
+"Low apical dominance cultivars",
+"None of these"
+],
+"page": "110",
+"q": "For which type of grape cultivar is the Bower system most suitable?",
+"serial": "765",
+"src_row": 757,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:765"
+},
+{
+"expl": "The Bower system is described as suitable for vigorous cultivars, not moderately vigorous ones. The other options are correct characteristics.",
+"key": 1,
+"o": [
+"Most expensive of all systems",
+"Best suited for moderately vigorous cultivars",
+"Vines trained on a criss-cross network of wires",
+"Practiced at a commercial scale",
+"None of these"
+],
+"page": "110",
+"q": "Which of the following is NOT a characteristic of the Bower system for grape vine training?",
+"serial": "766",
+"src_row": 758,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:766"
+},
+{
+"expl": "The source explicitly states that South India (including Maharashtra, Andhra Pradesh, and Karnataka) practices double pruning of grape vines.",
+"key": 1,
+"o": [
+"North India",
+"Maharashtra, Andhra Pradesh, and Karnataka",
+"Punjab and Haryana",
+"Uttar Pradesh and Bihar",
+"None of these"
+],
+"page": "110",
+"q": "In which regions of India is double pruning of grape vines practiced?",
+"serial": "767",
+"src_row": 759,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:767"
+},
+{
+"expl": "The Bower system is stated to be superior to the Kniffin system due to better light penetration and ventilation in all parts of the vine.",
+"key": 1,
+"o": [
+"Lower cost",
+"Better penetration of light and ventilation",
+"Suitability for dwarf cultivars",
+"Easier maintenance",
+"None of these"
+],
+"page": "110",
+"q": "What is the primary advantage of the Bower system over the Kniffin system for grape vine training?",
+"serial": "768",
+"src_row": 760,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:768"
+},
+{
+"expl": "The Bower system is explicitly described as the best method for training grape vines and is practiced commercially despite its high cost.",
+"key": 2,
+"o": [
+"Kniffin system",
+"Head system",
+"Bower system",
+"Vertical shoot positioning",
+"None of these"
+],
+"page": "110",
+"q": "Which training system for grape vines is described as the best method for training and is practiced commercially despite being expensive?",
+"serial": "769",
+"src_row": 761,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:769"
+},
+{
+"expl": "The source states that the system superior to the Kniffin system (implied to be the one described earlier) is suitable for moderately vigorous cultivars with no strong apical dominance.",
+"key": 1,
+"o": [
+"Bower system",
+"Kniffin system",
+"Cordon system",
+"Head system",
+"None of these"
+],
+"page": "110",
+"q": "Which training system is suitable for moderately vigorous grape cultivars with no strong apical dominance?",
+"serial": "770",
+"src_row": 762,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "110:770"
+},
+{
+"expl": "The SOURCE explicitly states that single pruning for single cropping in North India is done at the onset of spring or late winter, specifically January\u2013February.",
+"key": 2,
+"o": [
+"April and October",
+"December to January and May to June",
+"January to February",
+"March and September",
+"None of these"
+],
+"page": "111",
+"q": "Which pruning schedule is followed in North India for single cropping in grapes?",
+"serial": "771",
+"src_row": 763,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:771"
+},
+{
+"expl": "The SOURCE defines Foundation pruning as removing all canes from arms after harvest to initiate the development of new canes.",
+"key": 2,
+"o": [
+"To allow emergence of a bunch",
+"To remove all canes from arms after harvest",
+"To initiate development of new canes",
+"To bend the plant towards light",
+"None of these"
+],
+"page": "111",
+"q": "In double pruning for single cropping, what is the purpose of 'Foundation pruning'?",
+"serial": "772",
+"src_row": 764,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:772"
+},
+{
+"expl": "The SOURCE states that phototropism refers to the bending of plants towards light.",
+"key": 3,
+"o": [
+"Geotropism",
+"Hyponasty",
+"Epinasty",
+"Phototropism",
+"None of these"
+],
+"page": "111",
+"q": "Which type of tropism involves the bending of plants towards light?",
+"serial": "773",
+"src_row": 765,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:773"
+},
+{
+"expl": "The SOURCE explains that sod culture prevents erosion and thus the washing away of nutrients by allowing natural grasses to grow without tilling.",
+"key": 1,
+"o": [
+"To increase soil tillage",
+"To prevent erosion and nutrient loss",
+"To promote rapid growth of weeds",
+"To replace soil with inert medium",
+"None of these"
+],
+"page": "111",
+"q": "What is the primary function of sod culture in orchard management?",
+"serial": "774",
+"src_row": 766,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:774"
+},
+{
+"expl": "The SOURCE lists substrates like gravel, sand, peat, vermiculite, etc., but does not mention clay as a substrate for hydroponics.",
+"key": 2,
+"o": [
+"Gravel",
+"Peat",
+"Clay",
+"Vermiculite",
+"None of these"
+],
+"page": "111",
+"q": "Which of the following is NOT a substrate used in hydroponics?",
+"serial": "775",
+"src_row": 767,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:775"
+},
+{
+"expl": "The SOURCE defines epinasty as a differential growth response with greater growth on the upper surface, resulting in downward bending of an organ.",
+"key": 2,
+"o": [
+"Upward rolling of an organ",
+"Bending towards gravity",
+"Downward bending of an organ",
+"Bending towards light",
+"None of these"
+],
+"page": "111",
+"q": "What is the outcome of epinasty in plant organs?",
+"serial": "776",
+"src_row": 768,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:776"
+},
+{
+"expl": "The SOURCE specifies that double pruning \u2013 double cropping is followed in Tamil Nadu, with pruning done in December\u2013January and May\u2013June.",
+"key": 3,
+"o": [
+"Maharashtra",
+"Karnataka",
+"Andhra Pradesh",
+"Tamil Nadu",
+"None of these"
+],
+"page": "111",
+"q": "In which Indian state is the double pruning \u2013 double cropping system primarily followed?",
+"serial": "777",
+"src_row": 769,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "111:777"
+},
+{
+"expl": "The SOURCE lists Nutrient Film Technique (NFT), Tube culture, and Aeroponics as soilless culture techniques. Aquaponics is mentioned separately as a combined structure of fish and plants, but Hydroponics is not explicitly listed among the soilless techniques in the SOURCE.",
+"key": 3,
+"o": [
+"Nutrient Film Technique (NFT)",
+"Tube culture",
+"Aquaponics",
+"Hydroponics",
+"None of these"
+],
+"page": "112",
+"q": "Which of the following is NOT a soilless culture technique?",
+"serial": "778",
+"src_row": 770,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:778"
+},
+{
+"expl": "The SOURCE defines NFT as growing plants in a shallow stream of nutrient solution that is continuously circulated along plastic troughs or gullies.",
+"key": 1,
+"o": [
+"Stagnant in plastic containers",
+"Continuously circulated along plastic troughs",
+"Sprayed as mist on suspended roots",
+"Mixed with soil for better absorption",
+"None of these"
+],
+"page": "112",
+"q": "In Nutrient Film Technique (NFT), plants are grown in a shallow stream of nutrient solution that is:",
+"serial": "779",
+"src_row": 771,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:779"
+},
+{
+"expl": "The SOURCE explicitly states that strawberry and raspberry are suitable fruit crops for hydroponics.",
+"key": 2,
+"o": [
+"Lettuce",
+"Spinach",
+"Strawberry",
+"Potato",
+"None of these"
+],
+"page": "112",
+"q": "Which of the following crops is an example of a suitable fruit crop for hydroponics?",
+"serial": "780",
+"src_row": 772,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:780"
+},
+{
+"expl": "The SOURCE describes aeroponics as a system where plants are grown in troughs or containers, with roots suspended and sprayed with nutrient mist.",
+"key": 1,
+"o": [
+"Submerged in nutrient solution",
+"Suspended and sprayed with nutrient mist",
+"Planted in soil-like media",
+"Grown in shallow troughs",
+"None of these"
+],
+"page": "112",
+"q": "In aeroponics, the roots of the plants are:",
+"serial": "781",
+"src_row": 773,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:781"
+},
+{
+"expl": "The SOURCE specifies that the optimum pH of the nutrient solution is between 5.2 and 6.5.",
+"key": 1,
+"o": [
+"4.0 \u2013 5.0",
+"5.2 \u2013 6.5",
+"6.5 \u2013 7.5",
+"7.0 \u2013 8.0",
+"None of these"
+],
+"page": "112",
+"q": "What is the optimum pH range for the nutrient solution in soilless culture?",
+"serial": "782",
+"src_row": 774,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:782"
+},
+{
+"expl": "The SOURCE states that aeroponics is suitable for short-stature vegetables such as lettuce, spinach, and potato.",
+"key": 2,
+"o": [
+"Nutrient Film Technique (NFT)",
+"Tube culture",
+"Aeroponics",
+"Aquaponics",
+"None of these"
+],
+"page": "112",
+"q": "Which soilless culture technique is most suitable for short-stature vegetables like lettuce and spinach?",
+"serial": "783",
+"src_row": 775,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:783"
+},
+{
+"expl": "The SOURCE defines aquaponics as a combined structure of growing fish and plants.",
+"key": 1,
+"o": [
+"Soil and nutrient solution",
+"Fish and plants",
+"Aeroponics and hydroponics",
+"Plastic troughs and gullies",
+"None of these"
+],
+"page": "112",
+"q": "Aquaponics is best described as a system that combines:",
+"serial": "784",
+"src_row": 776,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "112:784"
+}
+],
+"row_from": 756,
+"row_to": 777,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 756,
+"seeded_from": "2026-10-20"
+},
 "qidx": 0,
+"seeded_from": "2026-10-20",
+"skips": [],
 "step": 0
 },
 "malwa": {
