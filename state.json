@@ -190312,9 +190312,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 680,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 680,
+"built_at": "2026-10-21T10:57:32+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 199-204",
+"pages_blocks": [
+"199-200",
+"201-202",
+"203-204"
+],
+"questions": [
+{
+"expl": "Metsulfuron\u2011methyl is listed as a good substitute of 2,4\u2011D for broad\u2011leaf weed control in wheat.",
+"key": 0,
+"o": [
+"Metsulfuron\u2011methyl",
+"Sulfosulfuron",
+"Fenoxaprop\u2011ethyl",
+"Glyphosate",
+"None of these"
+],
+"page": "199-200",
+"q": "Which herbicide can be used as a good substitute of 2,4\u2011D for broad\u2011leaf weed control in wheat?",
+"serial": "1011",
+"src_row": 659,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1011"
+},
+{
+"expl": "Sulfosulfuron, clodinafop\u2011propargyl and fenaxaprop\u2011p ethyl are good substitutes; glyphosate is not.",
+"key": 3,
+"o": [
+"Sulfosulfuron",
+"Clodinafop\u2011propargyl",
+"Fenaxaprop\u2011p ethyl",
+"Glyphosate",
+"None of these"
+],
+"page": "199-200",
+"q": "Which of the following is NOT a good substitute of isoproturon for narrow\u2011leaf weed control in wheat?",
+"serial": "1012",
+"src_row": 660,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1012"
+},
+{
+"expl": "DNOC (1932) was the first developed organic herbicide.",
+"key": 0,
+"o": [
+"DNOC",
+"Dinosab",
+"Glyphosate",
+"Paraquat",
+"None of these"
+],
+"page": "199-200",
+"q": "What was the first organic herbicide developed worldwide?",
+"serial": "1013",
+"src_row": 661,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1013"
+},
+{
+"expl": "Glyphosate is a non\u2011selective, systemic, translocated herbicide.",
+"key": 0,
+"o": [
+"Non\u2011selective, systemic, translocated herbicide",
+"Selective, contact herbicide",
+"Non\u2011selective, contact herbicide",
+"Selective, systemic herbicide",
+"None of these"
+],
+"page": "199-200",
+"q": "Glyphosate is best described as:",
+"serial": "1014",
+"src_row": 662,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1014"
+},
+{
+"expl": "Sorghum is most sensitive to the herbicide Imazethapyr.",
+"key": 1,
+"o": [
+"Triazines",
+"Imazethapyr",
+"Glyphosate",
+"Paraquat",
+"None of these"
+],
+"page": "199-200",
+"q": "Sorghum is most sensitive to which herbicide?",
+"serial": "1015",
+"src_row": 663,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1015"
+},
+{
+"expl": "DCA is performed through a Wax Bar or Rope Wick Applicator.",
+"key": 0,
+"o": [
+"Wax Bar or Rope Wick Applicator",
+"High Volume Spray",
+"Ultra Low Volume Spray",
+"Dust formulation",
+"None of these"
+],
+"page": "199-200",
+"q": "Direct Contact Application (DCA) is performed using which applicator?",
+"serial": "1016",
+"src_row": 664,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1016"
+},
+{
+"expl": "SI = Max dose tolerated by crop / Min dose required for weed control.",
+"key": 0,
+"o": [
+"Maximum dose tolerated by crop \u00f7 Minimum dose required for weed control",
+"Minimum dose required for weed control \u00f7 Maximum dose tolerated by crop",
+"Maximum dose for weed control \u00f7 Minimum dose tolerated by crop",
+"Minimum dose tolerated by crop \u00f7 Maximum dose for weed control",
+"None of these"
+],
+"page": "199-200",
+"q": "The Selectivity Index (SI) is calculated as:",
+"serial": "1017",
+"src_row": 665,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "199-200:1017"
+},
+{
+"expl": "2,4\u2011D inhibits beta\u2011D Glucose Esterase, disrupting auxin metabolism.",
+"key": 0,
+"o": [
+"beta-D Glucose Esterase",
+"Glutathione-S-Transferase",
+"Phosphino-thion-acetyl Transferase",
+"Aryl Acyl Amidase",
+"None of these"
+],
+"page": "201-202",
+"q": "Which enzyme is targeted by the herbicide 2,4\u2011D?",
+"serial": "1021",
+"src_row": 666,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "201-202:1021"
+},
+{
+"expl": "Photodecomposition is the degradation of chemicals through exposure to light.",
+"key": 1,
+"o": [
+"Absorption by soil",
+"Photodecomposition",
+"Thermo-degradation",
+"Volatilization",
+"None of these"
+],
+"page": "201-202",
+"q": "Which environmental fate process involves breakdown of herbicides by sunlight?",
+"serial": "1022",
+"src_row": 667,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "201-202:1022"
+},
+{
+"expl": "Growth regulators mimic or interfere with plant hormones to disrupt development.",
+"key": 2,
+"o": [
+"Lipid Synthesis Inhibitors",
+"Amino Acid Synthesis Inhibitors",
+"Growth Regulators",
+"Photosynthesis Inhibitors",
+"None of these"
+],
+"page": "201-202",
+"q": "Which class of herbicides functions primarily as growth regulators?",
+"serial": "1023",
+"src_row": 668,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "201-202:1023"
+},
+{
+"expl": "Cell\u2011wall synthesis inhibitors block the formation of structural polysaccharides in plant cell walls.",
+"key": 2,
+"o": [
+"Metabolism",
+"Vitamin Synthesis",
+"Cell-wall Synthesis",
+"Germination",
+"None of these"
+],
+"page": "201-202",
+"q": "Which herbicide action mechanism involves inhibition of cell\u2011wall synthesis?",
+"serial": "1024",
+"src_row": 669,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "201-202:1024"
+},
+{
+"expl": "Lolium rigidum was the first weed found resistant to more than one herbicide class.",
+"key": 1,
+"o": [
+"Senecio vulgaris",
+"Lolium rigidum",
+"Phalaris minor",
+"Isoproturon resistant Phalaris minor",
+"None of these"
+],
+"page": "201-202",
+"q": "What was the first weed reported to have multiple herbicide resistance?",
+"serial": "1025",
+"src_row": 670,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "201-202:1025"
+},
+{
+"expl": "Atrazine has resistance reported in 66 weed species, the highest among herbicides.",
+"key": 1,
+"o": [
+"Glyphosate",
+"Atrazine",
+"Dicamba",
+"2,4\u2011D",
+"None of these"
+],
+"page": "201-202",
+"q": "Which herbicide has the highest number of weed species showing resistance?",
+"serial": "1026",
+"src_row": 671,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "201-202:1026"
+},
+{
+"expl": "The source states that the Poaceae family has the highest number (80 species) of herbicide\u2011resistant weeds.",
+"key": 0,
+"o": [
+"Poaceae",
+"Fabaceae",
+"Asteraceae",
+"Solanaceae",
+"None of these"
+],
+"page": "203-204",
+"q": "Which plant family has the highest number of herbicide\u2011resistant weed species?",
+"serial": "1031",
+"src_row": 672,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1031"
+},
+{
+"expl": "According to the source, wheat crop shows the highest reported number of herbicide\u2011resistant weeds.",
+"key": 1,
+"o": [
+"Rice",
+"Wheat",
+"Maize",
+"Soybean",
+"None of these"
+],
+"page": "203-204",
+"q": "The maximum number of herbicide\u2011resistant weeds has been reported in which crop?",
+"serial": "1032",
+"src_row": 673,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1032"
+},
+{
+"expl": "Negative cross\u2011resistance is defined as increased sensitivity to a different herbicide after resistance to one herbicide.",
+"key": 2,
+"o": [
+"resistant to two or more herbicides via a single mechanism",
+"resistant to different herbicides via multiple mechanisms",
+"more sensitive to a different herbicide",
+"completely immune to all herbicides",
+"None of these"
+],
+"page": "203-204",
+"q": "Negative cross\u2011resistance means that a plant resistant to one herbicide becomes ___ to another herbicide.",
+"serial": "1033",
+"src_row": 674,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1033"
+},
+{
+"expl": "The source notes that 2,4\u2011D ethyl ester is the most toxic and effective, and it is absorbed faster than the Na\u2011salt and amine forms.",
+"key": 2,
+"o": [
+"2,4\u2011D Na\u2011salt",
+"2,4\u2011D amine",
+"2,4\u2011D ethyl ester",
+"2,4\u2011D acetate",
+"None of these"
+],
+"page": "203-204",
+"q": "Which 2,4\u2011D formulation is the most toxic and is absorbed faster than the others?",
+"serial": "1034",
+"src_row": 675,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1034"
+},
+{
+"expl": "Using the formula (Dose \u00d7 Area)/%a.i. \u00d7 100: (2 \u00d7 2)/30 \u00d7 100 = 13.33 kg of product.",
+"key": 1,
+"o": [
+"6.66 kg",
+"13.33 kg",
+"20 kg",
+"26.66 kg",
+"None of these"
+],
+"page": "203-204",
+"q": "If the recommended dose of Pendimethalin 30 EC is 2 kg a.i./ha, how much commercial product is needed for 2 ha?",
+"serial": "1035",
+"src_row": 676,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1035"
+},
+{
+"expl": "The source indicates atrazine dose doubles from 0.5 kg/ha in light soil to 1.0 kg/ha in heavy (clay/organic\u2011rich) soil.",
+"key": 1,
+"o": [
+"Light soil",
+"Heavy soil",
+"Warm tropical climate",
+"Cultivation of sugarcane",
+"None of these"
+],
+"page": "203-204",
+"q": "Which condition would require the higher atrazine dose for sorghum?",
+"serial": "1036",
+"src_row": 677,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1036"
+},
+{
+"expl": "Hoffman discovered the first safener (1,8\u2011naphthalic anhydride) and is called the father of safeners.",
+"key": 0,
+"o": [
+"Hoffman",
+"Smith",
+"Jones",
+"Patel",
+"None of these"
+],
+"page": "203-204",
+"q": "Who is recognized as the \"father of safeners/herbicide antidotes\"?",
+"serial": "1037",
+"src_row": 678,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1037"
+},
+{
+"expl": "The source records that Crocidosema lantanae was used in Hawaii in 1902 to control Lantana camara.",
+"key": 0,
+"o": [
+"1902, Hawaii",
+"1950, Brazil",
+"1902, India",
+"1890, USA",
+"None of these"
+],
+"page": "203-204",
+"q": "The first successful insect biological control of Lantana camara was achieved in 1902 at which location?",
+"serial": "1038",
+"src_row": 679,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "203-204:1038"
+}
+],
+"rolled": false,
+"row_from": 659,
+"row_to": 680,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 659,
+"seeded_from": "2026-10-20",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-20",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
