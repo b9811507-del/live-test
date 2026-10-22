@@ -195935,9 +195935,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 698,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 698,
+"built_at": "2026-10-22T10:57:11+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 205-210",
+"pages_blocks": [
+"205-206",
+"207-208",
+"209-210"
+],
+"questions": [
+{
+"expl": "The definition given in the source states that such organisms or their products are called bioherbicides.",
+"key": 1,
+"o": [
+"Mycoherbicides",
+"Bioherbicides",
+"Biocontrol agents",
+"Herbicidal fungi",
+"None of these"
+],
+"page": "205-206",
+"q": "What is the term for living microorganisms or their derived products used for biological weed control?",
+"serial": "1041",
+"src_row": 680,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "205-206:1041"
+},
+{
+"expl": "The source specifies that De Vine (1981, USA) was the first commercial bioherbicide.",
+"key": 0,
+"o": [
+"De Vine",
+"Collego",
+"Biomol",
+"Bipolaris",
+"None of these"
+],
+"page": "205-206",
+"q": "Which was the first commercial bioherbicide introduced worldwide?",
+"serial": "1042",
+"src_row": 681,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "205-206:1042"
+},
+{
+"expl": "The table shows Striga as a fungal agent used against the weed.",
+"key": 2,
+"o": [
+"Parthenium hysterophorus",
+"Orobanche cernua",
+"Striga",
+"Tribulus terrestris",
+"None of these"
+],
+"page": "205-206",
+"q": "Which biological control agent listed uses a fungus to target the weed Orobanche cernua?",
+"serial": "1043",
+"src_row": 682,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "205-206:1043"
+},
+{
+"expl": "Pendimethalin is listed with 0.25 kg/ha and PPI (pre\u2011plant incorporation).",
+"key": 0,
+"o": [
+"Pendimethalin",
+"Butachlor",
+"Nitrofen",
+"Benthiocarb",
+"None of these"
+],
+"page": "205-206",
+"q": "In the chemical weed control table for rice, which herbicide is applied as pre\u2011plant incorporation at a dose of 0.25 kg/ha?",
+"serial": "1044",
+"src_row": 683,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "205-206:1044"
+},
+{
+"expl": "The source defines PE as Pre\u2011Emergence.",
+"key": 1,
+"o": [
+"Post Emergence",
+"Pre\u2011Emergence",
+"Pre\u2011Planting",
+"Post\u2011Planting",
+"None of these"
+],
+"page": "205-206",
+"q": "What does the abbreviation \"PE\" stand for in herbicide application timing?",
+"serial": "1045",
+"src_row": 684,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "205-206:1045"
+},
+{
+"expl": "Lubao2 is listed with Colletotrichum as the agent.",
+"key": 0,
+"o": [
+"Lubao2",
+"Dr. Bio Sedge",
+"VELGO",
+"Methoxy\u2011phenon",
+"None of these"
+],
+"page": "205-206",
+"q": "Which biocontrol agent uses the fungus Colletotrichum to target a weed?",
+"serial": "1046",
+"src_row": 685,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "205-206:1046"
+},
+{
+"expl": "Isoproturon is listed for POE 25\u201130 DAS targeting grasses in wheat.",
+"key": 1,
+"o": [
+"Pendimethalin",
+"Isoproturon",
+"Clodinafop\u2011propargyl",
+"Sulfosulfuron",
+"None of these"
+],
+"page": "207-208",
+"q": "Which herbicide is applied at 25\u201130 DAS POE for controlling grasses (NLWs) in wheat?",
+"serial": "1051",
+"src_row": 686,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "207-208:1051"
+},
+{
+"expl": "The text states Phalaris minor has developed resistance to isoproturon.",
+"key": 1,
+"o": [
+"Carthamus oxycantha",
+"Phalaris minor",
+"Avena fatua",
+"Chenopodium album",
+"None of these"
+],
+"page": "207-208",
+"q": "Which weed has developed resistance to isoproturon in wheat?",
+"serial": "1052",
+"src_row": 687,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "207-208:1052"
+},
+{
+"expl": "Alachlor is used at PE 0\u20113 DAS for NLWs in maize.",
+"key": 1,
+"o": [
+"Atrazine",
+"Alachlor",
+"Oxyfluorfen",
+"Tembotrione",
+"None of these"
+],
+"page": "207-208",
+"q": "Which herbicide is applied at PE (0\u20113 DAS) for controlling NLWs in maize?",
+"serial": "1053",
+"src_row": 688,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "207-208:1053"
+},
+{
+"expl": "Trifluralin is listed for PPI to control grasses in pulses.",
+"key": 0,
+"o": [
+"Trifluralin",
+"Fluchloralin",
+"Imazethapyr",
+"Quizalofop\u2011ethyl",
+"None of these"
+],
+"page": "207-208",
+"q": "Which herbicide is used at PPI for controlling grasses in pulses?",
+"serial": "1054",
+"src_row": 689,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "207-208:1054"
+},
+{
+"expl": "The source notes that Simazine has been withdrawn from use in India.",
+"key": 1,
+"o": [
+"Atrazine",
+"Simazine",
+"Oxyfluorfen",
+"Alachlor",
+"None of these"
+],
+"page": "207-208",
+"q": "Which herbicide has been withdrawn from use in India?",
+"serial": "1055",
+"src_row": 690,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "207-208:1055"
+},
+{
+"expl": "The table lists Sulfosulfuron + Metsulfuron for grasses + broad leaf in wheat.",
+"key": 1,
+"o": [
+"Pendimethalin + Isoproturon",
+"Sulfosulfuron + Metsulfuron",
+"Clodinafop\u2011propargyl + Pinaxaden",
+"Carfentrazone + 2,4\u2011D",
+"None of these"
+],
+"page": "207-208",
+"q": "Which herbicide combination is used for total control of grasses + broad leaf in wheat?",
+"serial": "1056",
+"src_row": 691,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "207-208:1056"
+},
+{
+"expl": "Pendimethalin is listed for groundnut as a PE herbicide within 2 DAS targeting annual grasses.",
+"key": 0,
+"o": [
+"Pendimethalin",
+"Alachlor",
+"Fluchloralin",
+"Metribuzin",
+"None of these"
+],
+"page": "209-210",
+"q": "In groundnut, which herbicide is applied as pre\u2011emergence within 2 days after sowing to control annual grasses?",
+"serial": "1061",
+"src_row": 692,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "209-210:1061"
+},
+{
+"expl": "Diuron (DCMU) is identified as a cotton herbicide in the source.",
+"key": 0,
+"o": [
+"Diuron",
+"Monuron",
+"Pendimethalin",
+"Fluchloralin",
+"None of these"
+],
+"page": "209-210",
+"q": "Which herbicide is specifically described as a cotton herbicide with the chemical name Dichlorophenyl dimethyl urea (DCMU)?",
+"serial": "1062",
+"src_row": 693,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "209-210:1062"
+},
+{
+"expl": "Pronamide at 2 kg/ha is the herbicide mentioned for Cuscuta control.",
+"key": 0,
+"o": [
+"Pronamide",
+"Glyphosate",
+"Oxyfluorfen",
+"Quizalofop\u2011ethyl",
+"None of these"
+],
+"page": "209-210",
+"q": "What selective, systemic pre\u2011emergence herbicide is recommended for controlling the parasitic weed Cuscuta in linseed and niger?",
+"serial": "1063",
+"src_row": 694,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "209-210:1063"
+},
+{
+"expl": "The source explicitly states that Glyphosate is non\u2011selective and must be applied carefully.",
+"key": 0,
+"o": [
+"Glyphosate",
+"Metribuzin",
+"Pendimethalin",
+"Fluchloralin",
+"None of these"
+],
+"page": "209-210",
+"q": "Which herbicide is noted as non\u2011selective and requires careful application?",
+"serial": "1064",
+"src_row": 695,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "209-210:1064"
+},
+{
+"expl": "Glyphosate is listed for sugarcane as Early POE/POE to control all weeds.",
+"key": 0,
+"o": [
+"Glyphosate",
+"Atrazine",
+"2,4\u2011D",
+"Metribuzin",
+"None of these"
+],
+"page": "209-210",
+"q": "In sugarcane, which herbicide is applied early post\u2011emergence to control all weeds?",
+"serial": "1065",
+"src_row": 696,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "209-210:1065"
+},
+{
+"expl": "The table specifies Metribuzin at 0.7 kg/ha for sugarcane + potato.",
+"key": 0,
+"o": [
+"Metribuzin 0.7 kg/ha",
+"Metribuzin 0.5 kg/ha",
+"Pendimethalin 0.7 kg/ha",
+"Alachlor 0.5 kg/ha",
+"None of these"
+],
+"page": "209-210",
+"q": "For the intercropping system of sugarcane + potato, which herbicide and dose is recommended?",
+"serial": "1066",
+"src_row": 697,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "209-210:1066"
+}
+],
+"rolled": false,
+"row_from": 680,
+"row_to": 698,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 680,
+"seeded_from": "2026-10-21",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-21",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
