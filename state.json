@@ -195929,8 +195929,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 798,
 "names": {},
+"plan": {
+"bidx_next": 798,
+"built_at": "2026-10-22T14:28:20+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 113-115",
+"pages_list": [
+113,
+114,
+115
+],
+"questions": [
+{
+"expl": "The Central Institute of Temperate Horticulture (CITH) in Srinagar and the Central Institute of Arid Horticulture (CIAH) in Bikaner were both established in 1994, but the question asks for a single correct answer. CITH is the first listed.",
+"key": 0,
+"o": [
+"Central Institute of Temperate Horticulture (CITH), Srinagar",
+"National Research Centre for Citrus (NRCC), Nagpur",
+"Central Institute of Arid Horticulture (CIAH), Bikaner",
+"National Research Centre for Pomegranate (NRCP), Solapur",
+"None of these"
+],
+"page": "113",
+"q": "Which institute was established in 1994 in the field of horticulture?",
+"serial": "785",
+"src_row": 777,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:785"
+},
+{
+"expl": "The National Horticulture Board (NHB) was established in 1984 with its headquarters in Gurgaon, Haryana.",
+"key": 1,
+"o": [
+"New Delhi",
+"Gurgaon",
+"Bangalore",
+"Pune",
+"None of these"
+],
+"page": "113",
+"q": "Where is the headquarters of the National Horticulture Board (NHB) located?",
+"serial": "786",
+"src_row": 778,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:786"
+},
+{
+"expl": "The Ministry of Agriculture announced 2012 as the 'Year of Horticulture'.",
+"key": 1,
+"o": [
+"2005",
+"2012",
+"1984",
+"2006",
+"None of these"
+],
+"page": "113",
+"q": "Which year was declared as the 'Year of Horticulture' by the Ministry of Agriculture?",
+"serial": "787",
+"src_row": 779,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:787"
+},
+{
+"expl": "The National Research Centre for Makhana (NRCM) is specifically located in Darbhanga, Bihar, for Makhana research.",
+"key": 1,
+"o": [
+"National Research Centre for Litchi (NRCL), Muzzafarpur",
+"National Research Centre for Makhana (NRCM), Darbhanga",
+"National Research Centre for Banana (NRCB), Trichy",
+"Central Institute of Subtropical Horticulture (CISTH), Lucknow",
+"None of these"
+],
+"page": "113",
+"q": "Which institute is dedicated to research on Makhana?",
+"serial": "788",
+"src_row": 780,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:788"
+},
+{
+"expl": "The Central Arid Zone Research Institute (CAZRI) is not classified under pomological research institutes in the given source; it is a general arid zone research institute.",
+"key": 2,
+"o": [
+"Central Institute of Subtropical Horticulture (CISTH), Lucknow",
+"National Research Centre for Citrus (NRCC), Nagpur",
+"Central Arid Zone Research Institute (CAZRI), Jodhpur",
+"National Research Centre for Pomegranate (NRCP), Solapur",
+"None of these"
+],
+"page": "113",
+"q": "Which of the following is NOT a pomological research institute?",
+"serial": "789",
+"src_row": 781,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:789"
+},
+{
+"expl": "The National Research Centre for Pomegranate (NRCP) is located in Solapur, Maharashtra.",
+"key": 0,
+"o": [
+"Maharashtra",
+"Karnataka",
+"Tamil Nadu",
+"Bihar",
+"None of these"
+],
+"page": "113",
+"q": "The National Research Centre for Pomegranate (NRCP) is located in which state?",
+"serial": "790",
+"src_row": 782,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:790"
+},
+{
+"expl": "The Central Potato Research Institute (CPRI) in Shimla, Himachal Pradesh, was established in 1949.",
+"key": 1,
+"o": [
+"Indian Institute of Vegetable Research (IIVR), Varanasi",
+"Central Potato Research Institute (CPRI), Shimla",
+"National Research Centre for Banana (NRCB), Trichy",
+"Central Institute of Horticulture Technology (IHT), New Delhi",
+"None of these"
+],
+"page": "113",
+"q": "Which institute was established in 1949?",
+"serial": "791",
+"src_row": 783,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "113:791"
+},
+{
+"expl": "The Central Coffee Research Institute (CCRI) in Chikmagalur, Karnataka, is specifically established for coffee research.",
+"key": 1,
+"o": [
+"Central Plantation Crops Research Institute (CPCRI)",
+"Central Coffee Research Institute (CCRI)",
+"Directorate of Cashew Research (DCR)",
+"Directorate of Oil Palm Research (DOPR)",
+"None of these"
+],
+"page": "114",
+"q": "Which institute is dedicated to research on coffee in India?",
+"serial": "792",
+"src_row": 784,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:792"
+},
+{
+"expl": "The Coconut Development Board (CDB) is located in Cochin, Kerala, as stated in the source.",
+"key": 0,
+"o": [
+"Cochin, Kerala",
+"Calicut, Kerala",
+"Mangalore, Karnataka",
+"Kolkata, West Bengal",
+"None of these"
+],
+"page": "114",
+"q": "The Coconut Development Board (CDB) is headquartered in which city?",
+"serial": "793",
+"src_row": 785,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:793"
+},
+{
+"expl": "The Spices Board was established in 1987 in Cochin, Kerala, under the Ministry of Commerce and Industry.",
+"key": 2,
+"o": [
+"Tea Board of India",
+"Coffee Board of India",
+"Spices Board",
+"Cashew Export Promotion Council of India",
+"None of these"
+],
+"page": "114",
+"q": "Which organization was established in 1987 under the Ministry of Commerce and Industry?",
+"serial": "794",
+"src_row": 786,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:794"
+},
+{
+"expl": "The National Research Centre for Seed Spices (NRCss) is situated in Tabiji, Ajmer, Rajasthan.",
+"key": 2,
+"o": [
+"Kerala",
+"Karnataka",
+"Rajasthan",
+"Tamil Nadu",
+"None of these"
+],
+"page": "114",
+"q": "The National Research Centre for Seed Spices (NRCss) is located in which state?",
+"serial": "795",
+"src_row": 787,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:795"
+},
+{
+"expl": "The Directorate of Medicinal and Aromatic Plants Research (DMAPR) in Anand, Gujarat, was previously known as NRCMAP.",
+"key": 1,
+"o": [
+"Central Institute of Medicinal and Aromatic Plants (CIMAP)",
+"Directorate of Medicinal and Aromatic Plants Research (DMAPR)",
+"National Medicinal Plants Board (NMPB)",
+"Spices Board",
+"None of these"
+],
+"page": "114",
+"q": "Which institute was previously known as the National Research Centre for Medicinal and Aromatic Plants (NRCMAP)?",
+"serial": "796",
+"src_row": 788,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:796"
+},
+{
+"expl": "The Tea Board of India was established in 1954, as mentioned in the source.",
+"key": 1,
+"o": [
+"Coffee Board of India",
+"Tea Board of India",
+"Coconut Development Board",
+"Spices Board",
+"None of these"
+],
+"page": "114",
+"q": "Which board was established in 1954?",
+"serial": "797",
+"src_row": 789,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:797"
+},
+{
+"expl": "The Central Plantation Crops Research Institute (CPCRI) is located in Kasargod, Kerala.",
+"key": 2,
+"o": [
+"Chikmagalur, Karnataka",
+"Puttur, Karnataka",
+"Kasargod, Kerala",
+"Pedavegi, Andhra Pradesh",
+"None of these"
+],
+"page": "114",
+"q": "The Central Plantation Crops Research Institute (CPCRI) is located in which district?",
+"serial": "798",
+"src_row": 790,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "114:798"
+},
+{
+"expl": "The Indian Institute of Crop Processing Technology (IICPT) in Thanjavur, Tamil Nadu, is explicitly dedicated to crop processing technology as per the source.",
+"key": 1,
+"o": [
+"CFTRI, Mysore",
+"IICPT, Thanjavur",
+"CIPHET, Ludhiana",
+"DFRL, Mysore",
+"None of these"
+],
+"page": "115",
+"q": "Which Indian institute is primarily focused on 'Crop Processing Technology'?",
+"serial": "799",
+"src_row": 791,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:799"
+},
+{
+"expl": "CIPHET (Central Post Harvest Engineering and Technology) in Ludhiana was established in 1989, as stated in the source.",
+"key": 2,
+"o": [
+"1958",
+"1986",
+"1989",
+"2004",
+"None of these"
+],
+"page": "115",
+"q": "The year of establishment of CIPHET, Ludhiana is:",
+"serial": "800",
+"src_row": 792,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:800"
+},
+{
+"expl": "The Agri-horticultural Society of India (AHSI) was founded in 1820 in Kolkata, India, as per the source.",
+"key": 1,
+"o": [
+"Royal Horticultural Society",
+"Agri-horticultural Society of India",
+"Horticultural Society of India",
+"International Society of Horticultural Science",
+"None of these"
+],
+"page": "115",
+"q": "Which organization was founded in 1820 in Kolkata, India?",
+"serial": "801",
+"src_row": 793,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:801"
+},
+{
+"expl": "The World Vegetable Centre (WVC) is located in Taiwan, as mentioned in the source (previously known as AVRDC).",
+"key": 2,
+"o": [
+"International Potato Centre",
+"Biodiversity International",
+"World Vegetable Centre",
+"Horticulture Research International",
+"None of these"
+],
+"page": "115",
+"q": "Which international horticultural research center is located in Taiwan?",
+"serial": "802",
+"src_row": 794,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:802"
+},
+{
+"expl": "The International Society of Horticultural Science (ISHS) is based in Leuven, Belgium, and is not an Indian society, unlike the others listed.",
+"key": 2,
+"o": [
+"Indian Society of Ornamental Horticulture",
+"Horticultural Society of India",
+"International Society of Horticultural Science",
+"Indian Society of Vegetable Science",
+"None of these"
+],
+"page": "115",
+"q": "Which of the following is NOT an Indian horticultural society?",
+"serial": "803",
+"src_row": 795,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:803"
+},
+{
+"expl": "NAFED (National Agricultural Cooperative Marketing Federation of India Ltd.) was established in 1958, as per the source.",
+"key": 0,
+"o": [
+"1958",
+"1986",
+"1989",
+"2004",
+"None of these"
+],
+"page": "115",
+"q": "The establishment year of NAFED is:",
+"serial": "804",
+"src_row": 796,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:804"
+},
+{
+"expl": "The International Registration Authority for Bougainvillea (IRAB) is based in New Delhi, as stated in the source.",
+"key": 1,
+"o": [
+"International Registration Authority for Rose",
+"International Registration Authority for Bougainvillea",
+"Horticulture Research International",
+"Biodiversity International",
+"None of these"
+],
+"page": "115",
+"q": "Which authority is responsible for the international registration of Bougainvillea?",
+"serial": "805",
+"src_row": 797,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "115:805"
+}
+],
+"row_from": 777,
+"row_to": 798,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 777,
+"seeded_from": "2026-10-21"
+},
 "qidx": 0,
+"seeded_from": "2026-10-21",
+"skips": [],
 "step": 0
 },
 "malwa": {
