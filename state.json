@@ -195924,7 +195924,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-22T17:57:37+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"250 g/ha",
+"500 g/ha",
+"750 g/ha",
+"1000 g/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the seed rate for Tulsi per hectare?",
+"serial": "1YcJWVgW:944",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:944"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Reduction of surface run-off",
+"Improvement of microclimate",
+"Increment in farm income",
+"Improvement of soil structure",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT an ecological benefit of agroforestry?",
+"serial": "1bxM1Q-4:3872",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3872"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"25%",
+"50%",
+"75%",
+"No air",
+"None of these"
+],
+"page": "",
+"q": "An overrun of about 100% in ice\u2011cream indicates that air constitutes what proportion of its volume?",
+"serial": "128DIQLj:1962",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1962"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Insecta",
+"Arachnida",
+"Myriapoda",
+"Crustacea",
+"None of these"
+],
+"page": "",
+"q": "The class in which head and thorax are fused into a cephalothorax is:",
+"serial": "1sUgWsko:1720",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1720"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mutagen",
+"Mutation",
+"Mutant",
+"Mutagenesis",
+"None of these"
+],
+"page": "",
+"q": "What is the term for a chemical or physical agent capable of inducing mutation?",
+"serial": "1UgnIe-g:604",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:604"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Negative",
+"Positive",
+"Zero",
+"Undefined",
+"None of these"
+],
+"page": "",
+"q": "What will be the standard deviation if all the variate values are negative?",
+"serial": "17U0MEc-:2856",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2856"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cruciferae",
+"Cucurbitaceae",
+"Leguminoceae",
+"Euphorbiaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the cucumber belong to?",
+"serial": "1bxM1Q-4:3110",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3110"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"21.71%",
+"33%",
+"18.2%",
+"0.001%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of India's geographical area is forest cover as of 2021-22?",
+"serial": "17U0MEc-:6",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:6"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Better traction",
+"Higher speed",
+"Larger engine",
+"Lower cost",
+"None of these"
+],
+"page": "",
+"q": "What is the primary advantage of using a special purpose tractor in marshy lands?",
+"serial": "1sUgWsko:6040",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6040"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Tillet",
+"Prevost",
+"Anton de Bary",
+"H.H. Flor",
+"None of these"
+],
+"page": "",
+"q": "Who is known as the father of 'Plant Pathology' and 'Modern Mycology'?",
+"serial": "1UgnIe-g:905",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:905"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cordon System",
+"Espalier System",
+"Tatura Trellis",
+"Bush System",
+"None of these"
+],
+"page": "",
+"q": "Which training system is described as one of the highest yielding systems in peaches?",
+"serial": "1sUgWsko:748",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:748"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"All released eggs are fertilized",
+"Some species spawn annually after reaching maturity",
+"Some species spawn at multi\u2011year intervals",
+"Some species spawn once and then die",
+"None of these"
+],
+"page": "",
+"q": "Which statement about fish spawning is FALSE?",
+"serial": "1sUgWsko:2265",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2265"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Puri Red",
+"Aparna",
+"Jawala Mukhi",
+"Kashi Anmol",
+"None of these"
+],
+"page": "",
+"q": "Which chilli variety is resistant to mosaic disease?",
+"serial": "1YcJWVgW:580",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:580"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Urea",
+"Ammonium sulphate",
+"DAP",
+"Ammonium nitrate",
+"None of these"
+],
+"page": "",
+"q": "Which fertilizer exhibits the highest critical relative humidity (CRH) among those listed?",
+"serial": "128DIQLj:1413",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1413"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Brassica carinata",
+"Brassica napus",
+"Brassica juncea",
+"Brassica campestris",
+"None of these"
+],
+"page": "",
+"q": "Which Brassica species is derived from the cross of Brassica nigra and Brassica oleracea?",
+"serial": "1UgnIe-g:369",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:369"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Roots",
+"Apical meristems",
+"Leaves",
+"Flowers",
+"None of these"
+],
+"page": "",
+"q": "The primary site where vernalization exerts its effect in a plant is the:",
+"serial": "1UgnIe-g:1695",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1695"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Marine oceans",
+"Freshwater lakes, rivers, large ponds and canals",
+"Brackish estuaries",
+"Underground aquifers",
+"None of these"
+],
+"page": "",
+"q": "Pisciculture primarily focuses on fish production in which type of water bodies?",
+"serial": "1sUgWsko:2186",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2186"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Inhibiting acetylcholine esterase",
+"Modulating sodium channels",
+"Opening chloride channels in neurons",
+"Blocking GABA-gated chloride channels",
+"None of these"
+],
+"page": "",
+"q": "What is the primary effect of Avermectins on insects?",
+"serial": "1UgnIe-g:2112",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2112"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"12.34%",
+"15.87%",
+"18.45%",
+"20.00%",
+"None of these"
+],
+"page": "",
+"q": "In 2018-19, agriculture contributed what percentage to India's GDP?",
+"serial": "1bxM1Q-4:304",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:304"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Chewing and lapping",
+"Piercing and sucking",
+"Sponging",
+"Rasping and sucking",
+"None of these"
+],
+"page": "",
+"q": "Honey bees and wasps have which combination of mouth\u2011part types?",
+"serial": "1sUgWsko:1721",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1721"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Shading",
+"Frost protection",
+"Nutrient fixation",
+"Windbreak",
+"None of these"
+],
+"page": "",
+"q": "Which benefit is NOT typically provided by nurse crops?",
+"serial": "1bxM1Q-4:472",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:472"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"4,500 cu.ft",
+"5,500 cu.ft",
+"6,500 cu.ft",
+"7,500 cu.ft",
+"None of these"
+],
+"page": "",
+"q": "Approximately how many cubic feet of stem wood does one acre of teak yield?",
+"serial": "1sUgWsko:5429",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5429"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A gene that is always recessive.",
+"A gene that affects multiple characters.",
+"A gene that is found only in males.",
+"A gene that is found only in females.",
+"None of these"
+],
+"page": "",
+"q": "What is pleiotropy?",
+"serial": "1UgnIe-g:517",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:517"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.002\u20130.05 mm",
+"0.02\u20130.002 mm",
+"0.05\u20130.1 mm",
+"0.1\u20130.25 mm",
+"None of these"
+],
+"page": "",
+"q": "What is the diameter range for silt according to the IISS classification?",
+"serial": "1bxM1Q-4:1623",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1623"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Root knot nematode",
+"Meadow nematode",
+"Pin nematode",
+"Dagger nematode",
+"None of these"
+],
+"page": "",
+"q": "What is the common name for *Pratylenchus* sp.?",
+"serial": "17U0MEc-:2354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2354"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Interest on working capital",
+"Imputed value of family human labour",
+"Rental value of owned land",
+"Depreciation of capital assets",
+"None of these"
+],
+"page": "",
+"q": "What is added to Cost B to calculate Cost C?",
+"serial": "1bxM1Q-4:2335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2335"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bactrocera dorsalis",
+"Cosmopolites sordidus",
+"Chaetanaphothrips signipennis",
+"Pentalonia nigronervosa",
+"None of these"
+],
+"page": "",
+"q": "Which pest is known for causing depressions and premature fruit fall in banana plants?",
+"serial": "1UgnIe-g:2235",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2235"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Annona",
+"Avocado",
+"Fig",
+"Kiwi",
+"None of these"
+],
+"page": "",
+"q": "Which fruit uses Neem cake as a fertilizer?",
+"serial": "1bxM1Q-4:3094",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3094"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Time",
+"Strain",
+"Temperature",
+"Mass",
+"None of these"
+],
+"page": "",
+"q": "According to Hooke's law, within the elastic limit, stress is directly proportional to:",
+"serial": "1bxM1Q-4:3978",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3978"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Maroon",
+"South Kanara",
+"Srivardhan",
+"VTL-3",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a variety of Horticulture 537?",
+"serial": "1bxM1Q-4:3654",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3654"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Dams",
+"Irrigation canals",
+"Vegetative barriers",
+"Drainage ditches",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a measure adopted under soil and water harvesting?",
+"serial": "1bxM1Q-4:1111",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1111"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Litchi",
+"Guava",
+"Mango",
+"Pomegranate",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is richest in calcium?",
+"serial": "1YcJWVgW:418",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:418"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carvone",
+"Eugenol",
+"Thymol",
+"Limonene",
+"None of these"
+],
+"page": "",
+"q": "What is the main constituent of Dill?",
+"serial": "1YcJWVgW:903",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:903"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Seed/Cotyledons",
+"Endosperm and Embryo",
+"Pericarp and Placenta",
+"Aril",
+"None of these"
+],
+"page": "",
+"q": "In cereal crops, the fruit is a caryopsis. What are the main edible parts?",
+"serial": "1bxM1Q-4:542",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:542"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"To rear fish until they reach marketable size",
+"To breed and hatch fish eggs",
+"To hold fish temporarily before selling",
+"To raise fish from fry to fingerling stage",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of a nursery pond in fish farming?",
+"serial": "1bxM1Q-4:4299",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4299"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Displays or changes the attributes of an existing file",
+"Copies files selectively",
+"Displays the disk volume label",
+"Displays the system time",
+"None of these"
+],
+"page": "",
+"q": "What does the ATTRIB command do in DOS?",
+"serial": "1bxM1Q-4:3777",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3777"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Platy",
+"Prismatic",
+"Blocky",
+"Spheroidal",
+"None of these"
+],
+"page": "",
+"q": "Which soil structure type is characterized by thin horizontal layers and is commonly found in recently deposited clay soils?",
+"serial": "1bxM1Q-4:1611",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1611"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Low water potential to high water potential",
+"High water potential to low water potential",
+"Equal water potential to high water potential",
+"High water potential to equal water potential",
+"None of these"
+],
+"page": "",
+"q": "In which direction does water generally move based on water potential?",
+"serial": "1UgnIe-g:1477",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1477"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Deccani",
+"Garole",
+"Kendrapada",
+"Merino",
+"None of these"
+],
+"page": "",
+"q": "Which Indian sheep breed is an admixture of the woolly types of Rajasthan and the hairy types of Andhra Pradesh and Tamil Nadu?",
+"serial": "1sUgWsko:3221",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3221"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"60 cm x 48 cm",
+"50 cm x 50 cm",
+"70 cm x 50 cm",
+"80 cm x 60 cm",
+"None of these"
+],
+"page": "",
+"q": "What are the dimensions of trenches used for soil and moisture conservation?",
+"serial": "1bxM1Q-4:1404",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1404"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"80-100 words/minute",
+"100-120 words/minute",
+"120-140 words/minute",
+"140-160 words/minute",
+"None of these"
+],
+"page": "",
+"q": "What is the average word delivery rate in a radio talk?",
+"serial": "128DIQLj:2303",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2303"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gravitational force",
+"Centrifugal force",
+"Magnetic force",
+"Electric force",
+"None of these"
+],
+"page": "",
+"q": "The principle on which a cream separator operates is?",
+"serial": "128DIQLj:1956",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1956"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bimli",
+"Jute",
+"Kenaf",
+"Roselle",
+"None of these"
+],
+"page": "",
+"q": "Mesta is also known by what name in Andhra Pradesh?",
+"serial": "128DIQLj:593",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:593"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Development of black powdery spores on ovules.",
+"Transformation of floral parts into green leafy structures.",
+"Formation of corky brown patches on fruit skin.",
+"Shrinkage and drying of seeds into mummy-like fruits.",
+"None of these"
+],
+"page": "",
+"q": "Phyllody, a serious disease of sesame and pearl millet, is characterized by which of the following?",
+"serial": "1sUgWsko:3629",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3629"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Strip cropping",
+"Pasture cropping",
+"Terracing",
+"Grass land farming",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is not a vegetative agronomical measure?",
+"serial": "1bxM1Q-4:1121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1121"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To provide insurance to landless agricultural workers",
+"To make girls socially and financially self-reliant through education",
+"To promote manufacturing sector in the country",
+"To connect more people with banking services",
+"None of these"
+],
+"page": "",
+"q": "What is the primary objective of the Beti Bachao Beti Padhao scheme?",
+"serial": "1bxM1Q-4:2215",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2215"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To aerate the soil",
+"To make the soil soft and muddy",
+"To reduce water infiltration",
+"To increase soil compaction",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of puddling in wet tillage?",
+"serial": "1sUgWsko:6134",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6134"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Wood",
+"Metal",
+"Plastic",
+"Concrete",
+"None of these"
+],
+"page": "",
+"q": "What material is commonly used to make perches in a poultry house?",
+"serial": "1bxM1Q-4:4253",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4253"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pond culture",
+"Cage culture",
+"Pen culture",
+"Race\u2011way culture",
+"None of these"
+],
+"page": "",
+"q": "In the enclosure\u2011based classification, which method is specifically adapted to water areas that cannot be drained?",
+"serial": "1sUgWsko:2204",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2204"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase leaf temperature",
+"To reflect radiation and reduce leaf temperature",
+"To promote shoot growth",
+"To open stomata",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of reflecting type chemicals in plants?",
+"serial": "17U0MEc-:324",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:324"
+}
+],
+"set_no": 40,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
