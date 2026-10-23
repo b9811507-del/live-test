@@ -201207,7 +201207,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-23T17:57:39+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"Principle of cultural awareness",
+"Principle of indigenous knowledge",
+"Principle of learning by doing",
+"Principle of participation",
+"None of these"
+],
+"page": "",
+"q": "Which principle of extension emphasizes the importance of local knowledge and practices?",
+"serial": "17U0MEc-:2655",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2655"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Market sharing and price setting policies",
+"Policies aimed at coercing rivals",
+"Policies toward setting the quality of products",
+"Efficiency in the use of resources",
+"None of these"
+],
+"page": "",
+"q": "Market conduct includes which of the following?",
+"serial": "1sUgWsko:4066",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4066"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cytokinin",
+"Auxin",
+"Ethylene",
+"Abscisic acid",
+"None of these"
+],
+"page": "",
+"q": "Which plant hormone is commonly applied to break seed dormancy and induce germination?",
+"serial": "1UgnIe-g:803",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:803"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sulfosulfuron",
+"Benthiocarb",
+"Glyphosate",
+"2,4-D",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a post-emergence herbicide?",
+"serial": "1sUgWsko:5192",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5192"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Yuan Longping",
+"Dr. Gurdev Singh Khush",
+"E.A. Siddiq",
+"Subrahmaniam Nagarajan",
+"None of these"
+],
+"page": "",
+"q": "Which individual is known worldwide for developing \"Hybrid rice\"?",
+"serial": "128DIQLj:133",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:133"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"*Pentalonia nigronervosa*",
+"*Planococcus citri*",
+"*Toxoptera citricida*",
+"*Fusarium oxysporum*",
+"None of these"
+],
+"page": "",
+"q": "What is the vector for Banana Bunchy Top disease?",
+"serial": "1bxM1Q-4:2634",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2634"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Sprouting stage",
+"Flowering stage",
+"Pod formation stage",
+"Grain development stage",
+"None of these"
+],
+"page": "",
+"q": "Which stage is ideal for harvesting soybean as fodder?",
+"serial": "1bxM1Q-4:804",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:804"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"White, transparent, no shading",
+"Grey, opaque, shading",
+"Brown, translucent",
+"Yellow, opaque",
+"None of these"
+],
+"page": "",
+"q": "What is the typical color and opacity of Cirrocumulus clouds?",
+"serial": "1sUgWsko:5722",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5722"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Rambagh",
+"Roshnara Garden",
+"Shalimar Bagh",
+"Nishat Bagh",
+"None of these"
+],
+"page": "",
+"q": "Which Mughal garden is located in New Delhi?",
+"serial": "1sUgWsko:1434",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1434"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Providing food",
+"Producing fuel wood",
+"Acting as wind breaks",
+"Generating NTFPs",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a primary purpose of shelterbelts in forestry?",
+"serial": "1sUgWsko:5500",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5500"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cascade type",
+"Full standard type",
+"Weeping standard type",
+"Half standard type",
+"None of these"
+],
+"page": "",
+"q": "Which type of Bonsai requires deep pots?",
+"serial": "1bxM1Q-4:3374",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3374"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"South-West monsoon",
+"North-East monsoon",
+"Western Disturbances",
+"Summer monsoon",
+"None of these"
+],
+"page": "",
+"q": "Which monsoon is also known as the retreating monsoon?",
+"serial": "17U0MEc-:392",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:392"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2.62 tonnes",
+"3.62 tonnes",
+"4.62 tonnes",
+"5.62 tonnes",
+"None of these"
+],
+"page": "",
+"q": "What is the average yield of rice per hectare in India?",
+"serial": "1sUgWsko:32",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:32"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"W. Johannsen",
+"W. Bateson",
+"T.H. Morgan",
+"Hugo de Vries",
+"None of these"
+],
+"page": "",
+"q": "Which scientist coined the term 'genetics'?",
+"serial": "17U0MEc-:2405",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2405"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Grow in open sunny situations",
+"Grow in extremely scarce water conditions",
+"Grow on another plant",
+"Grow on stones",
+"None of these"
+],
+"page": "",
+"q": "What is the defining characteristic of xerophytes?",
+"serial": "1sUgWsko:836",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:836"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Castration with a knife",
+"Castration with Burdizzo",
+"Surgical castration",
+"Open castration",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a method of castration that does NOT involve cutting?",
+"serial": "1sUgWsko:3071",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3071"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Food",
+"Fodder",
+"Wind breaks",
+"Fuel wood",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a productive function of agroforestry?",
+"serial": "1bxM1Q-4:3879",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3879"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sunhemp",
+"Sesbania rostrata",
+"Cluster beans",
+"Dhaincha",
+"None of these"
+],
+"page": "",
+"q": "Which green manure crop is known for stem nodulation?",
+"serial": "1sUgWsko:7155",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7155"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Leaves",
+"Stem",
+"Grain",
+"Roots",
+"None of these"
+],
+"page": "",
+"q": "Which part of the plant is generally considered the 'sink' in most crops?",
+"serial": "17U0MEc-:304",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:304"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Chenopodiaceae",
+"Brassicaceae",
+"Solanaceae",
+"Fabaceae",
+"None of these"
+],
+"page": "",
+"q": "Which family does beetroot belong to?",
+"serial": "1YcJWVgW:700",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:700"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Straight fertilizer",
+"Complex fertilizer",
+"Mixed fertilizer",
+"Complete fertilizer",
+"None of these"
+],
+"page": "",
+"q": "Which type of fertilizer supplies only one major plant nutrient?",
+"serial": "17U0MEc-:1205",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1205"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"20-25\u00b0C",
+"29-31\u00b0C",
+"14-18\u00b0C",
+"32-35\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "What is the optimal temperature range for Macrobrachium rosenbergii culture?",
+"serial": "1sUgWsko:2523",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2523"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1:10",
+"1:15",
+"1:20",
+"1:25",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended male-to-female ratio for sheep and goat breeding?",
+"serial": "1sUgWsko:3296",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3296"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"-196\u00b0C",
+"-100\u00b0C",
+"-50\u00b0C",
+"-200\u00b0C",
+"None of these"
+],
+"page": "",
+"q": "At what temperature is semen stored for artificial insemination?",
+"serial": "1bxM1Q-4:4184",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4184"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Compression ring and Oil ring",
+"Connecting ring and Fuel ring",
+"Head ring and Liner ring",
+"Exhaust ring and Intake ring",
+"None of these"
+],
+"page": "",
+"q": "The piston rings consist of which two types?",
+"serial": "1sUgWsko:6316",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6316"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Groundnut cake",
+"Maize",
+"Wheat bran",
+"Deoiled rice bran",
+"None of these"
+],
+"page": "",
+"q": "Which ingredient has the highest proportion in the composition of ideal creep feed for lambs?",
+"serial": "1sUgWsko:3288",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3288"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Diptera",
+"Coleoptera",
+"Hemiptera",
+"Lepidoptera",
+"None of these"
+],
+"page": "",
+"q": "Which insect order contains the majority of stored\u2011grain pests?",
+"serial": "1UgnIe-g:2303",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2303"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Malpighian tubules",
+"Nephrocytes",
+"Fat bodies",
+"Oenocytes",
+"None of these"
+],
+"page": "",
+"q": "What is the principal excretory organ in insects?",
+"serial": "17U0MEc-:1771",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1771"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Surge irrigation",
+"Corrugation",
+"Cab legation",
+"Sub-surface irrigation",
+"None of these"
+],
+"page": "",
+"q": "Which irrigation method is an automatic method of surface irrigation?",
+"serial": "17U0MEc-:425",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:425"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Unhusked rice",
+"Polished rice",
+"Parboiled rice",
+"Broken rice",
+"None of these"
+],
+"page": "",
+"q": "What is brown rice?",
+"serial": "1sUgWsko:60",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:60"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Source of animal protein",
+"Source of calcium",
+"Source of magnesium",
+"Source of energy",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of limestone in poultry feed?",
+"serial": "1sUgWsko:3406",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3406"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"6-7 AM",
+"9-10:30 AM",
+"12-1 PM",
+"3-4 PM",
+"None of these"
+],
+"page": "",
+"q": "At what time does barley bloom?",
+"serial": "128DIQLj:326",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:326"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Seed treatment with Metalaxyl",
+"Field sanitation",
+"Application of Chlorine",
+"Spraying Pseudomonas fluorescence",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a management practice for smut of bajra?",
+"serial": "1UgnIe-g:1044",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1044"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Use of baffles",
+"Zigzag columns",
+"Straight path grain flow",
+"High airflow rates",
+"None of these"
+],
+"page": "",
+"q": "Which feature distinguishes non-mixing type continuous flow dryers from mixing type?",
+"serial": "1sUgWsko:6446",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6446"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Presence of H\u207a and Al\u207a\u00b3 ions",
+"High levels of Ca and Mg",
+"Excessive irrigation",
+"Deficiency of nitrogen",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of soil acidity?",
+"serial": "17U0MEc-:1174",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1174"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sclerotia",
+"Scab",
+"Exudation",
+"Canker",
+"None of these"
+],
+"page": "",
+"q": "What is the term for a compact, often hard, mass of dormant fungus mycelium?",
+"serial": "17U0MEc-:2134",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2134"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Firka Development Programme",
+"Nilokheri Project",
+"Etawah Pilot Project",
+"Community Development Programme",
+"None of these"
+],
+"page": "",
+"q": "Which post-independence programme is known as the precursor to the Community Development Program (CDP)?",
+"serial": "128DIQLj:2124",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2124"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Romantic love",
+"Love at first sight",
+"Desire",
+"Joy and friendship",
+"None of these"
+],
+"page": "",
+"q": "What do purple roses signify?",
+"serial": "1bxM1Q-4:3475",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3475"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pusa Ruby",
+"Caro-Rich",
+"Severianin",
+"Roma",
+"None of these"
+],
+"page": "",
+"q": "Which tomato variety is known for high beta-carotene content?",
+"serial": "1YcJWVgW:539",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:539"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"China",
+"Brazil",
+"India",
+"Italy",
+"None of these"
+],
+"page": "",
+"q": "Which country is the largest producer of mandarin?",
+"serial": "1YcJWVgW:218",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:218"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"When successive units of a variable input are used with fixed resources, the addition to total prod\u2026",
+"When more resources are added, the total product increases proportionally.",
+"When all inputs are variable, the marginal productivity increases.",
+"When fixed resources are increased, the total product remains constant.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes the Law of Diminishing Returns in farm management?",
+"serial": "128DIQLj:2491",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "128DIQLj:2491"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"6 months old",
+"9 months old",
+"12 months old",
+"15 months old",
+"None of these"
+],
+"page": "",
+"q": "According to the rule, a goat should not be mated until it is at least:",
+"serial": "1sUgWsko:3366",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3366"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Heteropneustes fossilis",
+"Pearl Spot",
+"Nile Tilapia",
+"Common Carp",
+"None of these"
+],
+"page": "",
+"q": "Which fish is air\u2011breathing?",
+"serial": "1sUgWsko:2504",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2504"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Jam is clear, jelly is opaque",
+"Jam is opaque, jelly is clear translucent",
+"Jam contains fruit pieces, jelly does not",
+"Jam has higher pectin than jelly",
+"None of these"
+],
+"page": "",
+"q": "Which statement correctly distinguishes jam from jelly?",
+"serial": "1YcJWVgW:1213",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1213"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Yellowing of leaves",
+"Crinkling and cupping of leaves",
+"White cast skin at the base of the plant",
+"Skeletonizing of leaves",
+"None of these"
+],
+"page": "",
+"q": "Which symptom is NOT associated with Cabbage aphid (Brevicoryne brassicae) infestation?",
+"serial": "1sUgWsko:2121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2121"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Curcumin",
+"Anthocyanin",
+"Carotene",
+"Querecetin",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of the yellow color in turmeric?",
+"serial": "1bxM1Q-4:2932",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2932"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nitrogen use efficiency",
+"Phosphorus retention in soil",
+"Soil acidity reduction",
+"Potassium availability",
+"None of these"
+],
+"page": "",
+"q": "Neem coated urea primarily improves which aspect of nitrogen management?",
+"serial": "17U0MEc-:1220",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1220"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"0.15-0.3 kg/cm\u00b2",
+"0.5-1.0 kg/cm\u00b2",
+"2.0-3.5 kg/cm\u00b2",
+"4.0-5.0 kg/cm\u00b2",
+"None of these"
+],
+"page": "",
+"q": "What is the pressure range for the tank in a Hand Compressor Sprayer?",
+"serial": "1sUgWsko:6241",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6241"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Oxidation",
+"Hydrolysis",
+"Carbonation",
+"Reduction",
+"None of these"
+],
+"page": "",
+"q": "Which chemical weathering process is considered the most important?",
+"serial": "128DIQLj:1113",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1113"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Potometer",
+"Porometer",
+"Manometer",
+"Hygrometer",
+"None of these"
+],
+"page": "",
+"q": "Which instrument is used to measure transpiration?",
+"serial": "17U0MEc-:383",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:383"
+}
+],
+"set_no": 41,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
