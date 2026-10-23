@@ -201212,8 +201212,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 819,
 "names": {},
+"plan": {
+"bidx_next": 819,
+"built_at": "2026-10-23T14:27:18+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 116-118",
+"pages_list": [
+116,
+117,
+118
+],
+"questions": [
+{
+"expl": "Mango, banana and citrus are listed under Tropical fruits in the source.",
+"key": 0,
+"o": [
+"Tropical fruits",
+"Subtropical fruits",
+"Temperate fruits",
+"Arid and semi-arid fruits",
+"None of these"
+],
+"page": "116",
+"q": "In the classification of fruits by climatic adaptability, which group includes mango, banana and citrus?",
+"serial": "806",
+"src_row": 798,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:806"
+},
+{
+"expl": "The source places AICRP on Potato in Shimla, Himachal Pradesh.",
+"key": 0,
+"o": [
+"AICRP on Potato",
+"AICRP on Mushroom",
+"AICRP on Tuber Crops",
+"AICRP on Floriculture",
+"None of these"
+],
+"page": "116",
+"q": "Which AICRP centre is located at Shimla, Himachal Pradesh?",
+"serial": "807",
+"src_row": 799,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:807"
+},
+{
+"expl": "IFAC is mentioned as being in Bangalore, Karnataka.",
+"key": 0,
+"o": [
+"Bangalore",
+"Pune",
+"Lucknow",
+"Thiruvananthapuram",
+"None of these"
+],
+"page": "116",
+"q": "The International Flower Auction Centre (IFAC) is based in which Indian city?",
+"serial": "808",
+"src_row": 800,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:808"
+},
+{
+"expl": "The International American Spize Trade Association is listed with Washington, D.C., USA.",
+"key": 0,
+"o": [
+"International American Spize Trade Association",
+"International Cut Flower Grower Association",
+"Royal New Zealand Institute of Horticulture",
+"AICRP on Sub\u2011Tropical Fruits",
+"None of these"
+],
+"page": "116",
+"q": "Which organization mentioned in the source is headquartered in Washington, D.C., USA?",
+"serial": "809",
+"src_row": 801,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:809"
+},
+{
+"expl": "Almond appears in the temperate fruits list.",
+"key": 0,
+"o": [
+"Almond",
+"Mango",
+"Papaya",
+"Guava",
+"None of these"
+],
+"page": "116",
+"q": "Which of the following is listed as a temperate fruit in the source?",
+"serial": "810",
+"src_row": 802,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:810"
+},
+{
+"expl": "Date is included in the arid and semi\u2011arid fruits category.",
+"key": 0,
+"o": [
+"Date",
+"Banana",
+"Pineapple",
+"Litchi",
+"None of these"
+],
+"page": "116",
+"q": "Among the fruits below, which one is cited under arid and semi\u2011arid fruits?",
+"serial": "811",
+"src_row": 803,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:811"
+},
+{
+"expl": "The source specifies the centre on Medicinal and Aromatic Plants is in Anand, Gujarat.",
+"key": 0,
+"o": [
+"Gujarat",
+"Karnataka",
+"Kerala",
+"Maharashtra",
+"None of these"
+],
+"page": "116",
+"q": "The AICRP centre that focuses on Medicinal and Aromatic Plants is located in which state?",
+"serial": "812",
+"src_row": 804,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "116:812"
+},
+{
+"expl": "Mango is listed under evergreen fruits.",
+"key": 0,
+"o": [
+"Mango",
+"Apple",
+"Peach",
+"Apricot",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit is evergreen?",
+"serial": "813",
+"src_row": 805,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:813"
+},
+{
+"expl": "Apple appears in the deciduous fruit list.",
+"key": 0,
+"o": [
+"Apple",
+"Litchi",
+"Banana",
+"Guava",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit is deciduous?",
+"serial": "814",
+"src_row": 806,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:814"
+},
+{
+"expl": "Banana is classified as herbaceous growth.",
+"key": 0,
+"o": [
+"Banana",
+"Pomegranate",
+"Jamun",
+"Guava",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit is herbaceous?",
+"serial": "815",
+"src_row": 807,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:815"
+},
+{
+"expl": "Karonda is listed under shrubaceous fruits.",
+"key": 0,
+"o": [
+"Karonda",
+"Pineapple",
+"Guava",
+"Apple",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit is shrubaceous?",
+"serial": "816",
+"src_row": 808,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:816"
+},
+{
+"expl": "Mango is mentioned as a woody fruit.",
+"key": 0,
+"o": [
+"Mango",
+"Pineapple",
+"Karonda",
+"Pomegranate",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit is woody?",
+"serial": "817",
+"src_row": 809,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:817"
+},
+{
+"expl": "The mesocarp is the edible part of mango.",
+"key": 0,
+"o": [
+"Mango",
+"Jamun",
+"Pineapple",
+"Fig",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit\u2019s edible part is the mesocarp?",
+"serial": "818",
+"src_row": 810,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:818"
+},
+{
+"expl": "Almond\u2019s edible part is the seed.",
+"key": 0,
+"o": [
+"Almond",
+"Litchi",
+"Guava",
+"Pomegranate",
+"None of these"
+],
+"page": "117",
+"q": "Which fruit\u2019s edible part is the seed?",
+"serial": "819",
+"src_row": 811,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "117:819"
+},
+{
+"expl": "The edible and fleshy part of custard apple is the pericarp of individual berries, as stated in the source.",
+"key": 1,
+"o": [
+"Epicarp",
+"Pericarp of individual berries",
+"Endosperm",
+"Thalamus",
+"None of these"
+],
+"page": "118",
+"q": "Which part of the custard apple is edible and fleshy?",
+"serial": "820",
+"src_row": 812,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:820"
+},
+{
+"expl": "The source explicitly states that the edible part of coconut is the endosperm.",
+"key": 1,
+"o": [
+"Mesocarp",
+"Endosperm",
+"Pericarp",
+"Thalamus",
+"None of these"
+],
+"page": "118",
+"q": "The edible portion of coconut is derived from which part?",
+"serial": "821",
+"src_row": 813,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:821"
+},
+{
+"expl": "The source lists strawberry as having a fleshy thalamus as its edible part.",
+"key": 1,
+"o": [
+"Banana",
+"Strawberry",
+"Grape",
+"Sweet cherry",
+"None of these"
+],
+"page": "118",
+"q": "Which fruit's edible part is the fleshy thalamus?",
+"serial": "822",
+"src_row": 814,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:822"
+},
+{
+"expl": "The source categorizes citrus and orange under Hesperidium, a type of modified berry.",
+"key": 2,
+"o": [
+"Balausta",
+"Pomegranate",
+"Hesperidium",
+"Amphisarca",
+"None of these"
+],
+"page": "118",
+"q": "Oranges are classified under which type of modified berry?",
+"serial": "823",
+"src_row": 815,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:823"
+},
+{
+"expl": "Banana is a simple fruit (berry), while plum, apricot, and peach are classified as drupes in the source.",
+"key": 3,
+"o": [
+"Plum",
+"Apricot",
+"Peach",
+"Banana",
+"None of these"
+],
+"page": "118",
+"q": "Which of the following fruits is NOT a drupe?",
+"serial": "824",
+"src_row": 816,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:824"
+},
+{
+"expl": "The source states that the edible part of jackfruit consists of bracts, perianth, and seeds.",
+"key": 1,
+"o": [
+"Pericarp and placenta",
+"Bracts, perianth and seeds",
+"Fleshy thalamus",
+"Mesocarp and endocarp",
+"None of these"
+],
+"page": "118",
+"q": "The edible part of jackfruit is composed of which of the following?",
+"serial": "825",
+"src_row": 817,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:825"
+},
+{
+"expl": "The source specifies that the edible part of papaya is the epicarp and mesocarp.",
+"key": 1,
+"o": [
+"Apple",
+"Papaya",
+"Grape",
+"Custard apple",
+"None of these"
+],
+"page": "118",
+"q": "Which fruit's edible portion includes both epicarp and mesocarp?",
+"serial": "826",
+"src_row": 818,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "118:826"
+}
+],
+"row_from": 798,
+"row_to": 819,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 798,
+"seeded_from": "2026-10-22"
+},
 "qidx": 0,
+"seeded_from": "2026-10-22",
+"skips": [],
 "step": 0
 },
 "malwa": {
