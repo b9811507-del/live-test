@@ -201218,9 +201218,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 716,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 716,
+"built_at": "2026-10-23T10:58:32+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 211-216",
+"pages_blocks": [
+"211-212",
+"213-214",
+"216"
+],
+"questions": [
+{
+"expl": "The source lists paraquat, glyphosate and a 20 % salt solution as treatments; 2 % sulfuric acid is not mentioned.",
+"key": 3,
+"o": [
+"Paraquat @ 5 ml/liter of water",
+"Glyphosate @ 7.5 g/liter of water",
+"20 % salt solution",
+"2 % sulfuric acid",
+"None of these"
+],
+"page": "211-212",
+"q": "Which of the following is NOT a recommended treatment for Cuscuta in crops?",
+"serial": "1071",
+"src_row": 698,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "211-212:1071"
+},
+{
+"expl": "Management of Loranthus involves looping off or pruning the infected shoots.",
+"key": 1,
+"o": [
+"Crop rotation",
+"Looping off or pruning infected shoots",
+"Use of glyphosate",
+"Use of 2,4\u2011D",
+"None of these"
+],
+"page": "211-212",
+"q": "Which method is recommended for controlling Loranthus (Mistletoes) in plantation crops?",
+"serial": "1072",
+"src_row": 699,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "211-212:1072"
+},
+{
+"expl": "Cotton is a non\u2011host that secretes Strigol, triggering Striga germination without attachment.",
+"key": 0,
+"o": [
+"Cotton",
+"Wheat",
+"Rice",
+"Maize",
+"None of these"
+],
+"page": "211-212",
+"q": "Which crop is used as a trap crop to induce suicidal germination of Striga?",
+"serial": "1073",
+"src_row": 700,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "211-212:1073"
+},
+{
+"expl": "Strigol is a root exudate that induces germination of Striga seeds.",
+"key": 0,
+"o": [
+"Stimulates germination of Striga seeds",
+"Inhibits Striga growth",
+"Acts as a herbicide",
+"Provides nutrients to host crops",
+"None of these"
+],
+"page": "211-212",
+"q": "What is the primary function of Strigol in Striga management?",
+"serial": "1074",
+"src_row": 701,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "211-212:1074"
+},
+{
+"expl": "A stale seed bed lets weed seeds germinate and then flushes the seedlings before crop planting.",
+"key": 1,
+"o": [
+"A method of sowing a crop after mechanically removing weeds",
+"A strategy of allowing weed seeds to germinate and then flushing them before planting",
+"A technique of applying herbicides to soil",
+"A method of seed sterilization",
+"None of these"
+],
+"page": "211-212",
+"q": "Which of the following best describes a stale seed bed?",
+"serial": "1075",
+"src_row": 702,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "211-212:1075"
+},
+{
+"expl": "Lotus seeds can remain viable for up to 1000 years, far exceeding the others.",
+"key": 3,
+"o": [
+"Chenopodium album \u2013 30 years",
+"Convolvulus arvensis \u2013 50 years",
+"Striga \u2013 20 years",
+"Lotus \u2013 1000 years",
+"None of these"
+],
+"page": "211-212",
+"q": "Which weed seed has the longest longevity?",
+"serial": "1076",
+"src_row": 703,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "211-212:1076"
+},
+{
+"expl": "Rice is listed as the crop with the highest herbicide consumption in India.",
+"key": 0,
+"o": [
+"Rice",
+"Tea",
+"Wheat",
+"Barley",
+"None of these"
+],
+"page": "213-214",
+"q": "Which crop has the highest herbicide consumption in India?",
+"serial": "1081",
+"src_row": 704,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "213-214:1081"
+},
+{
+"expl": "The text identifies Water hyacinth as the \u201cTerror of the Bengal.\u201d",
+"key": 0,
+"o": [
+"Water hyacinth",
+"Cyperus rotundus",
+"Cynodon dactylon",
+"Datura sp.",
+"None of these"
+],
+"page": "213-214",
+"q": "Which weed species is known as the \u201cTerror of the Bengal\u201d?",
+"serial": "1082",
+"src_row": 705,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "213-214:1082"
+},
+{
+"expl": "The source states the average annual herbicide use is 40 g/ha/year.",
+"key": 1,
+"o": [
+"< 0.5 kg/ha",
+"40 g/ha/year",
+"40 kg/ha/year",
+"5 g/ha/year",
+"None of these"
+],
+"page": "213-214",
+"q": "What is the average annual per hectare herbicide consumption in India?",
+"serial": "1083",
+"src_row": 706,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "213-214:1083"
+},
+{
+"expl": "The text says wheat has the highest number of associated weed species worldwide.",
+"key": 1,
+"o": [
+"Rice",
+"Wheat",
+"Barley",
+"Oat",
+"None of these"
+],
+"page": "213-214",
+"q": "Which crop has the highest number of associated weed species worldwide?",
+"serial": "1084",
+"src_row": 707,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "213-214:1084"
+},
+{
+"expl": "Punjab is noted as the state with the highest per hectare pesticide consumption.",
+"key": 2,
+"o": [
+"Maharashtra",
+"Uttar Pradesh",
+"Punjab",
+"Karnataka",
+"None of these"
+],
+"page": "213-214",
+"q": "Which Indian state has the highest per hectare pesticide consumption?",
+"serial": "1085",
+"src_row": 708,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "213-214:1085"
+},
+{
+"expl": "Ethylene is mentioned as the hormone that induces suicidal germination in Striga.",
+"key": 0,
+"o": [
+"Ethylene",
+"Auxin",
+"Gibberellin",
+"Cytokinin",
+"None of these"
+],
+"page": "213-214",
+"q": "Which phytohormone is used to induce suicidal germination in Striga?",
+"serial": "1086",
+"src_row": 709,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "213-214:1086"
+},
+{
+"expl": "V.V. Dokuchaev pioneered the systematic study of soils, earning him the title of the father of modern pedology.",
+"key": 1,
+"o": [
+"J. W. Leather",
+"V. V. Dokuchaev",
+"Charles Darwin",
+"Alfred Wegener",
+"None of these"
+],
+"page": "216",
+"q": "Which scientist is known as the father of modern pedology?",
+"serial": "1091",
+"src_row": 710,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "216:1091"
+},
+{
+"expl": "Granite is an intrusive igneous rock that crystallizes from magma beneath the surface.",
+"key": 1,
+"o": [
+"Basalt",
+"Granite",
+"Limestone",
+"Schist",
+"None of these"
+],
+"page": "216",
+"q": "Which rock type is formed by the cooling of magma below the earth's surface?",
+"serial": "1092",
+"src_row": 711,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "216:1092"
+},
+{
+"expl": "Sedimentary rocks constitute 74% of the near\u2011surface crust, while igneous are 18%.",
+"key": 1,
+"o": [
+"18%",
+"74%",
+"95%",
+"5%",
+"None of these"
+],
+"page": "216",
+"q": "In the near\u2011surface (up to 5 km) of the earth's crust, what percentage of rocks is sedimentary?",
+"serial": "1093",
+"src_row": 712,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "216:1093"
+},
+{
+"expl": "Marble forms when limestone undergoes metamorphism, recrystallizing into pure calcite.",
+"key": 2,
+"o": [
+"Quartzite",
+"Slate",
+"Marble",
+"Gneiss",
+"None of these"
+],
+"page": "216",
+"q": "Which metamorphic rock is derived from limestone?",
+"serial": "1094",
+"src_row": 713,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "216:1094"
+},
+{
+"expl": "Acidic (over\u2011saturated) rocks contain >65% SiO\u2082, exemplified by granite.",
+"key": 1,
+"o": [
+"Basic rocks",
+"Acidic rocks",
+"Intermediate rocks",
+"Sub\u2011basic rocks",
+"None of these"
+],
+"page": "216",
+"q": "Which rock classification has a silica content greater than 65%?",
+"serial": "1095",
+"src_row": 714,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "216:1095"
+},
+{
+"expl": "The mean density of the entire Earth is 5.5 g/cm\u00b3, higher than the crust's density range.",
+"key": 1,
+"o": [
+"2.6 to 3.0 g/cm\u00b3",
+"5.5 g/cm\u00b3",
+"4.0 g/cm\u00b3",
+"6.0 g/cm\u00b3",
+"None of these"
+],
+"page": "216",
+"q": "What is the average density of the Earth as a whole?",
+"serial": "1096",
+"src_row": 715,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "216:1096"
+}
+],
+"rolled": false,
+"row_from": 698,
+"row_to": 716,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 698,
+"seeded_from": "2026-10-22",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-22",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
