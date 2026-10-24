@@ -206779,7 +206779,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-24T17:58:04+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Banarasi",
+"Krishna (NA-5)",
+"Kanchan (NA-4)",
+"Balwant (NA-10)",
+"None of these"
+],
+"page": "",
+"q": "Which ARI variety is a chance seedling of Chakaiya and is a regular bearer?",
+"serial": "1sUgWsko:1139",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1139"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"It relies solely on chemical herbicides",
+"It combines mechanical, chemical, and cultural practices in a planned sequence",
+"It ignores ecological and toxicological considerations",
+"It focuses only on short-term weed suppression",
+"None of these"
+],
+"page": "",
+"q": "How does Integrated Weed Management (IWM) differ from conventional weed control methods?",
+"serial": "1sUgWsko:5241",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5241"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Exocarp",
+"Mesocarp",
+"Endocarp",
+"Seeds",
+"None of these"
+],
+"page": "",
+"q": "In citrus fruit anatomy, the flavedo corresponds to which layer?",
+"serial": "1YcJWVgW:240",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:240"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase fruit size",
+"To propagate plants asexually",
+"To control pests",
+"To enhance soil fertility",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of chip budding in horticulture?",
+"serial": "1sUgWsko:605",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:605"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Muck soils",
+"Peat soils",
+"Lateritic soils",
+"Clayey soils",
+"None of these"
+],
+"page": "",
+"q": "Which soil type shows a poor response to potassium fertilizers?",
+"serial": "1sUgWsko:7228",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7228"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Calcium carbonate",
+"Silica (SiO2)",
+"Clay",
+"Sodium chloride",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cementing material in sedimentary rocks as mentioned in the source?",
+"serial": "1sUgWsko:6828",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6828"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"0.46 sq. ft per bird",
+"1.0 sq. ft per bird",
+"2.0 sq. ft per bird",
+"3.0 sq. ft per bird",
+"None of these"
+],
+"page": "",
+"q": "In a deep\u2011litter system, what floor space is recommended per layer?",
+"serial": "1sUgWsko:3481",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3481"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"4-5 kg/ha",
+"10-12 kg/ha",
+"3.75 kg/ha",
+"15-18 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the common seed rate for bajra cultivation?",
+"serial": "1sUgWsko:200",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:200"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"28 \u00b0C",
+"30 \u00b0C",
+"35 \u00b0C",
+"40 \u00b0C",
+"None of these"
+],
+"page": "",
+"q": "To prevent charcoal rot disease, potato should be harvested at temperatures below?",
+"serial": "1YcJWVgW:620",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:620"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"2n = 24",
+"2n = 34",
+"2n = 44",
+"2n = 54",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number of Gaillardia?",
+"serial": "1YcJWVgW:1105",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1105"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ingo Potrykus and Peter Beyer",
+"Ashish Dutta",
+"Calgene company",
+"Erwinia uredovora",
+"None of these"
+],
+"page": "",
+"q": "Who developed Golden rice?",
+"serial": "1UgnIe-g:1428",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1428"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"30\u201340%",
+"50\u201360%",
+"70\u201380%",
+"90\u2013100%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of the total water volume should be exchanged daily for optimal seabass culture?",
+"serial": "1sUgWsko:2492",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2492"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A printed, bound booklet with a number of pages",
+"A single printed sheet of small size containing preliminary information",
+"A series of illustrated cards telling a complete story",
+"A placard displayed in a public place",
+"None of these"
+],
+"page": "",
+"q": "What is a 'Leaflet' in the context of agricultural publications?",
+"serial": "128DIQLj:2315",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2315"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Numerous lanky tillers from the base",
+"Orange\u2011red vascular bundles at the nodes",
+"Water\u2011soaked chlorotic streaks on leaves",
+"Lengthened internodes",
+"None of these"
+],
+"page": "",
+"q": "Grassy shoot disease primarily results in which of the following growth changes?",
+"serial": "1sUgWsko:3756",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3756"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cucumber",
+"Watermelon",
+"Apple",
+"Citrus",
+"None of these"
+],
+"page": "",
+"q": "Which of the following fruits is native to India?",
+"serial": "17U0MEc-:1349",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1349"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"10 cm",
+"15 cm",
+"25 cm",
+"30 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the depth of the hole magurs make in the bund below the water surface?",
+"serial": "1sUgWsko:2519",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2519"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Atrazine, Simazine",
+"Paraquat, Glyphosate",
+"2,4-D, Dicamba",
+"Metolachlor, Alachlor",
+"None of these"
+],
+"page": "",
+"q": "Which herbicides are used for weed control before sowing in zero tillage?",
+"serial": "17U0MEc-:207",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:207"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Ashok",
+"Brahmi",
+"Kalmegh",
+"Guduchi",
+"None of these"
+],
+"page": "",
+"q": "Which of the following plants is used for its stem bark?",
+"serial": "1bxM1Q-4:3574",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3574"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Greater than 5%",
+"Between 2% and 5%",
+"Less than 2%",
+"Exactly 0.5%",
+"None of these"
+],
+"page": "",
+"q": "Canola oil is distinguished from regular mustard oil by having erucic acid content:",
+"serial": "1sUgWsko:369",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:369"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mixed cropping",
+"Relay cropping",
+"Patch intercropping",
+"Alley cropping",
+"None of these"
+],
+"page": "",
+"q": "Which cropping system involves planting a second crop after the first crop has reached reproductive maturity but before it is harvested?",
+"serial": "1sUgWsko:4530",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4530"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"jhuming",
+"khallu",
+"dahiya",
+"kumri",
+"None of these"
+],
+"page": "",
+"q": "In the northeastern region of India, shifting cultivation is commonly known as?",
+"serial": "1sUgWsko:5463",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5463"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Amount of a nutrient associated with 50% of the maximum possible yield",
+"Total crop yield per unit area",
+"Amount of water needed per crop",
+"Amount of pesticide required per hectare",
+"None of these"
+],
+"page": "",
+"q": "What does the Baule unit measure?",
+"serial": "17U0MEc-:958",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:958"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Diaphorina citri",
+"Toxoptera citricida",
+"A gram-negative, walled phloem-colonizing bacterium",
+"Fusarium oxysporium",
+"None of these"
+],
+"page": "",
+"q": "Which bacterium is responsible for citrus greening disease?",
+"serial": "17U0MEc-:2276",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2276"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Only one testis is present",
+"Two testes are present",
+"No testes are present",
+"Three testes are present",
+"None of these"
+],
+"page": "",
+"q": "What is the characteristic feature of 'Monorchic' in male nematodes?",
+"serial": "17U0MEc-:2373",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2373"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rice",
+"Wheat",
+"Cotton",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "What is the primary crop suitable for Black Soils?",
+"serial": "1bxM1Q-4:1644",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1644"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Soil erodibility",
+"Rainfall and runoff factor",
+"Land slope",
+"Erosion control practices",
+"None of these"
+],
+"page": "",
+"q": "What does the 'K' represent in the Universal Soil Loss Equation (A = RKLSCP)?",
+"serial": "1bxM1Q-4:1417",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1417"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"World Water Day",
+"World Meteorological Day",
+"World Health Day",
+"Earth Day",
+"None of these"
+],
+"page": "",
+"q": "Which observance falls on 22 March each year?",
+"serial": "128DIQLj:111",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:111"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Akshay",
+"Ph",
+"Banganapalli",
+"Chausa",
+"None of these"
+],
+"page": "",
+"q": "Which mango variety is a clone of Dashehari?",
+"serial": "1YcJWVgW:189",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:189"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ridge plough",
+"Disk plough",
+"Harrow",
+"MB plough",
+"None of these"
+],
+"page": "",
+"q": "Which secondary tillage implement helps create a good seed\u2011bed after primary tillage?",
+"serial": "1bxM1Q-4:588",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:588"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Water",
+"Fat",
+"Lactose",
+"Protein",
+"None of these"
+],
+"page": "",
+"q": "In curd, which nutrient has the highest percentage range?",
+"serial": "1sUgWsko:2774",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2774"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Lactation length",
+"Persistency",
+"Intercalving period",
+"Maintenance ration",
+"None of these"
+],
+"page": "",
+"q": "Which term describes the ability of an animal to sustain good daily milk production over a longer period?",
+"serial": "1sUgWsko:2877",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2877"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"The highest level reached by plants",
+"The lowest depth to which air penetrates into the soil",
+"Pertinent factors of the environment in the zone between the highest level reached by plants and th\u2026",
+"The statistical collection of weather conditions",
+"None of these"
+],
+"page": "",
+"q": "What does Micro climatology primarily study?",
+"serial": "1bxM1Q-4:1508",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1bxM1Q-4:1508"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Iron",
+"Magnesium",
+"Manganese",
+"Zinc",
+"None of these"
+],
+"page": "",
+"q": "Which micronutrient is NOT a component of the chlorophyll molecule but is essential for its synthesis?",
+"serial": "128DIQLj:1321",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1321"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Monoploid",
+"Triploid",
+"Dihaploid",
+"Tetraploid",
+"None of these"
+],
+"page": "",
+"q": "What is a diploid obtained through the chromosome doubling of haploids known as?",
+"serial": "1UgnIe-g:328",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:328"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Aphids (Myzus persicae)",
+"Leaf-hopper",
+"White flies (Bemisia tabaci)",
+"Thrips",
+"None of these"
+],
+"page": "",
+"q": "Which insect vector is responsible for transmitting the Tomato spotted wilt Virus?",
+"serial": "1bxM1Q-4:2569",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2569"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5-10%",
+"5-20%",
+"20-30%",
+"30-40%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of pods can be damaged by the plume moth (Exelastis atomosa) in red gram?",
+"serial": "1sUgWsko:1980",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1980"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Agrobacterium tumefaciens",
+"Erwinia amylovora",
+"Puccinia psidii",
+"Alternaria chartarum",
+"None of these"
+],
+"page": "",
+"q": "Which bacterium is the causal agent of Crown gall disease?",
+"serial": "1sUgWsko:3823",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3823"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Complementarity between component crops",
+"Minimum competition for light",
+"Non-overlapping peak nutrient demands",
+"Differences in maturity of at least 30 days",
+"None of these"
+],
+"page": "",
+"q": "Which principle of intercropping ensures that crops do not compete for the same resources at the same time?",
+"serial": "1sUgWsko:4523",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4523"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Saccharum spontaneum",
+"Typha spp.",
+"Amaranthus viridis",
+"Convolvulus arvensis",
+"None of these"
+],
+"page": "",
+"q": "Which plant is used for roof making?",
+"serial": "1bxM1Q-4:1166",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1166"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"IVRI",
+"NDRI",
+"CIRB",
+"CARI",
+"None of these"
+],
+"page": "",
+"q": "Which institution was established first among the listed Indian livestock research institutes?",
+"serial": "128DIQLj:1715",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1715"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Jawahar Rozgar Yojana",
+"Training of Rural Youth for Self Employment",
+"National Rural Employment Programme",
+"Agricultural Technology Management Agency",
+"None of these"
+],
+"page": "",
+"q": "Which rural employment program was launched in 1980 with the objective of increasing employment opportunities in rural areas?",
+"serial": "1sUgWsko:6505",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6505"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Murate of potash",
+"Sulphate of potash",
+"Potassium nitrate",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "Which potassic fertilizer is suitable for fertigation?",
+"serial": "1bxM1Q-4:1724",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1724"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Winged bean",
+"Chekurmanis",
+"Amaranthus",
+"Cucumber",
+"None of these"
+],
+"page": "",
+"q": "Which vegetable is known as the vegetable of the 21st century?",
+"serial": "1YcJWVgW:831",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:831"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"roots",
+"stems",
+"tubers",
+"flowers",
+"None of these"
+],
+"page": "",
+"q": "Which part of the potato plant is most commonly affected by late blight spreading from the leaves?",
+"serial": "1sUgWsko:3848",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3848"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Merge cell",
+"Split cell",
+"Sort",
+"Select",
+"None of these"
+],
+"page": "",
+"q": "Which option is used to arrange rows and columns in ascending or descending order?",
+"serial": "1bxM1Q-4:3813",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3813"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Reddish streaks on the midrib",
+"Yellowing of leaves",
+"Wilting of the plant",
+"Root rot",
+"None of these"
+],
+"page": "",
+"q": "What is a characteristic symptom of young sugarcane plants attacked by top borer caterpillars?",
+"serial": "17U0MEc-:1994",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1994"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Clay soil",
+"Sandy loam to silty loam soil",
+"Peaty soil",
+"Saline soil",
+"None of these"
+],
+"page": "",
+"q": "Which soil type is best adapted for maize cultivation?",
+"serial": "1sUgWsko:149",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:149"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Scion is inserted into a wedge-shaped cut",
+"Scion and stock are of equal thickness and fit like a saddle",
+"A bud is inserted under the bark of the stock",
+"Scion is attached to the stock without cutting",
+"None of these"
+],
+"page": "",
+"q": "What is the key feature of Saddle Grafting?",
+"serial": "1sUgWsko:658",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:658"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"North East monsoon",
+"South West monsoon",
+"South East monsoon",
+"North West monsoon",
+"None of these"
+],
+"page": "",
+"q": "Which monsoon is responsible for causing rainfall in Tamil Nadu?",
+"serial": "17U0MEc-:224",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:224"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Indian mustard",
+"Toria",
+"Taramira",
+"Sarson",
+"None of these"
+],
+"page": "",
+"q": "Which mustard variety is self\u2011pollinating?",
+"serial": "128DIQLj:481",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:481"
+}
+],
+"set_no": 42,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
