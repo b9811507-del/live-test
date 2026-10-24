@@ -206784,8 +206784,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 840,
 "names": {},
+"plan": {
+"bidx_next": 840,
+"built_at": "2026-10-24T14:28:27+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 119-121",
+"pages_list": [
+119,
+120,
+121
+],
+"questions": [
+{
+"expl": "Watermelon is listed under the 'Pepo' category, which includes all cucurbits as per the source.",
+"key": 1,
+"o": [
+"Apple",
+"Watermelon",
+"Strawberry",
+"Fig",
+"None of these"
+],
+"page": "119",
+"q": "Which of the following fruits is classified under the 'Pepo' category?",
+"serial": "827",
+"src_row": 819,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:827"
+},
+{
+"expl": "Custard Apple is explicitly mentioned as an example of 'Etaerio of berries' in the source.",
+"key": 1,
+"o": [
+"Etaerio of drupelets",
+"Etaerio of berries",
+"Etaerio of achenes",
+"Syconus",
+"None of these"
+],
+"page": "119",
+"q": "Which type of fruit is 'Custard Apple' classified as?",
+"serial": "828",
+"src_row": 820,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:828"
+},
+{
+"expl": "Pineapple is listed under the 'Sorosis' category of multiple/composite fruits in the source.",
+"key": 1,
+"o": [
+"Fig",
+"Pineapple",
+"Strawberry",
+"Blackberry",
+"None of these"
+],
+"page": "119",
+"q": "Which fruit belongs to the 'Sorosis' category?",
+"serial": "829",
+"src_row": 821,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:829"
+},
+{
+"expl": "Citrus is categorized under 'Very Low' ethylene evolution (less than 0.1 \u03bcL C2H4 per kg-hr) as per the table.",
+"key": 1,
+"o": [
+"Banana",
+"Citrus",
+"Avocado",
+"Passion fruit",
+"None of these"
+],
+"page": "119",
+"q": "Based on ethylene evolution, which fruit falls under the 'Very Low' class at 20\u00b0C?",
+"serial": "830",
+"src_row": 822,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:830"
+},
+{
+"expl": "Apple is classified under 'Pome', not 'Nut'. Cashew, Litchi, and Peanut are listed under 'Nut'.",
+"key": 3,
+"o": [
+"Cashew",
+"Litchi",
+"Peanut",
+"Apple",
+"None of these"
+],
+"page": "119",
+"q": "Which of these fruits is NOT classified under 'Nut'?",
+"serial": "831",
+"src_row": 823,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:831"
+},
+{
+"expl": "The 'High' class of fruits has an ethylene evolution range of 10.0-100.0 \u03bcL C2H4 per kg-hr as per the source.",
+"key": 2,
+"o": [
+"0.1-1.0 \u03bcL C2H4 per kg-hr",
+"1.0-10.0 \u03bcL C2H4 per kg-hr",
+"10.0-100.0 \u03bcL C2H4 per kg-hr",
+"More than 100 \u03bcL C2H4 per kg-hr",
+"None of these"
+],
+"page": "119",
+"q": "What is the ethylene evolution range for the 'High' class of fruits?",
+"serial": "832",
+"src_row": 824,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:832"
+},
+{
+"expl": "Strawberry is explicitly mentioned as an example of 'Etaerio of achenes' in the source.",
+"key": 1,
+"o": [
+"Blackberry",
+"Strawberry",
+"Raspberry",
+"Longan berry",
+"None of these"
+],
+"page": "119",
+"q": "Which fruit is an example of 'Etaerio of achenes'?",
+"serial": "833",
+"src_row": 825,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "119:833"
+},
+{
+"expl": "Facultative heliophytes are defined as plants that can grow well in full sunlight and also in shade, as per the classification based on light requirement.",
+"key": 1,
+"o": [
+"Plants that grow only in full sunlight",
+"Plants that grow well in full sunlight but can also grow in shade",
+"Plants that grow only in shade",
+"Plants that grow in extremely scarce water conditions",
+"None of these"
+],
+"page": "120",
+"q": "Which type of plant is classified as a 'facultative heliophyte'?",
+"serial": "834",
+"src_row": 826,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:834"
+},
+{
+"expl": "Hydrophytes are plants that grow partially or fully submerged in water, and banana is given as an example in the source.",
+"key": 1,
+"o": [
+"Mango",
+"Banana",
+"Ber",
+"Peach",
+"None of these"
+],
+"page": "120",
+"q": "Which of the following is an example of a hydrophyte?",
+"serial": "835",
+"src_row": 827,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:835"
+},
+{
+"expl": "Xerophytes are explicitly described as plants that grow in extremely scarce water conditions.",
+"key": 1,
+"o": [
+"Grow in open sunny situations",
+"Grow in extremely scarce water conditions",
+"Grow on another plant",
+"Grow on stones",
+"None of these"
+],
+"page": "120",
+"q": "What is the defining characteristic of xerophytes?",
+"serial": "836",
+"src_row": 828,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:836"
+},
+{
+"expl": "Epiphyte is defined as a plant that grows on another plant, with examples like sandal and orchid provided.",
+"key": 1,
+"o": [
+"Lithophyte",
+"Epiphyte",
+"Terrestrial",
+"Petrophyte",
+"None of these"
+],
+"page": "120",
+"q": "Which plant type grows on another plant?",
+"serial": "837",
+"src_row": 829,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:837"
+},
+{
+"expl": "Mesophytes include plants like Mango, Papaya, Guava, Apple, Plum, etc., but banana is classified as a hydrophyte.",
+"key": 2,
+"o": [
+"Guava",
+"Apple",
+"Banana",
+"Plum",
+"None of these"
+],
+"page": "120",
+"q": "Which of these fruits is NOT listed as an example of a mesophyte?",
+"serial": "838",
+"src_row": 830,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:838"
+},
+{
+"expl": "Loquat is listed under terminal bearing on new growth, as per the classification based on bearing behavior.",
+"key": 2,
+"o": [
+"Terminal bearing on old growth",
+"Axillary bearing",
+"Terminal bearing on new growth",
+"Terminal bearing on stones",
+"None of these"
+],
+"page": "120",
+"q": "What is the bearing behavior of Loquat?",
+"serial": "839",
+"src_row": 831,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:839"
+},
+{
+"expl": "Psammophyte is defined as a plant growing in soil having sand and gravel.",
+"key": 1,
+"o": [
+"Lithophyte",
+"Psammophyte",
+"Petrophyte",
+"Epiphyte",
+"None of these"
+],
+"page": "120",
+"q": "Which plant type is described as growing in soil having sand and gravel?",
+"serial": "840",
+"src_row": 832,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "120:840"
+},
+{
+"expl": "Guava is listed under fruits that bear on new growth, while Apple, Pear, and Plum bear on old growth.",
+"key": 1,
+"o": [
+"Apple",
+"Guava",
+"Pear",
+"Plum",
+"None of these"
+],
+"page": "121",
+"q": "Which of the following fruits bears on new growth?",
+"serial": "841",
+"src_row": 833,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:841"
+},
+{
+"expl": "Citrus is explicitly mentioned under mixed bearing, along with Kamrakh and Pomegranate.",
+"key": 0,
+"o": [
+"Citrus",
+"Apple",
+"Guava",
+"Tamarind",
+"None of these"
+],
+"page": "121",
+"q": "Identify the fruit classified under mixed bearing.",
+"serial": "842",
+"src_row": 834,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:842"
+},
+{
+"expl": "Datepalm is listed under the 'Tolerant' category (8 mmhos) for salinity tolerance.",
+"key": 0,
+"o": [
+"Datepalm",
+"Grapefruit",
+"Guava",
+"Pear",
+"None of these"
+],
+"page": "121",
+"q": "Which fruit is categorized as 'Tolerant' (8 mmhos) based on salinity tolerance?",
+"serial": "843",
+"src_row": 835,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:843"
+},
+{
+"expl": "Pineapple is classified under 'Highly Sensitive' to acid tolerance, as per the given classification.",
+"key": 2,
+"o": [
+"Strawberry",
+"Bael",
+"Pineapple",
+"Fig",
+"None of these"
+],
+"page": "121",
+"q": "Among the following, which fruit is highly sensitive to acid tolerance?",
+"serial": "844",
+"src_row": 836,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:844"
+},
+{
+"expl": "Guava bears on new growth, while Apple, Peach, and Plum are listed under 'Bearing on old growth'.",
+"key": 2,
+"o": [
+"Apple",
+"Peach",
+"Guava",
+"Plum",
+"None of these"
+],
+"page": "121",
+"q": "Which fruit is NOT listed under 'Bearing on old growth'?",
+"serial": "845",
+"src_row": 837,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:845"
+},
+{
+"expl": "Apple is listed under 'Moderately Tolerant' (6 to 3 mmhos) for salinity tolerance.",
+"key": 1,
+"o": [
+"Lemon",
+"Apple",
+"Coconut",
+"Banana",
+"None of these"
+],
+"page": "121",
+"q": "Which of these fruits falls under 'Moderately Tolerant' (6 to 3 mmhos) for salinity tolerance?",
+"serial": "846",
+"src_row": 838,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:846"
+},
+{
+"expl": "Bael is listed under 'Medium Tolerant' for acid tolerance, while Fig is 'Highly Tolerant' and Litchi is 'Highly Sensitive'.",
+"key": 1,
+"o": [
+"Fig",
+"Bael",
+"Strawberry",
+"Litchi",
+"None of these"
+],
+"page": "121",
+"q": "Which fruit is classified as 'Medium Tolerant' to acid tolerance?",
+"serial": "847",
+"src_row": 839,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "121:847"
+}
+],
+"row_from": 819,
+"row_to": 840,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 819,
+"seeded_from": "2026-10-23"
+},
 "qidx": 0,
+"seeded_from": "2026-10-23",
+"skips": [],
 "step": 0
 },
 "malwa": {
