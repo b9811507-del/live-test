@@ -212243,9 +212243,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 753,
 "names": {},
+"plan": {
+"batch": 5,
+"bidx_next": 753,
+"built_at": "2026-10-25T10:58:28+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 223-228",
+"pages_blocks": [
+"223-224",
+"225-226",
+"227-228"
+],
+"questions": [
+{
+"expl": "Illuviation is the washing\u2011in of soil constituents that have been removed from the eluvial horizon.",
+"key": 1,
+"o": [
+"Eluviation",
+"Illuviation",
+"Horizonation",
+"Pedoturbation",
+"None of these"
+],
+"page": "223-224",
+"q": "Which process involves the deposition of materials leached from an upper horizon into a lower horizon?",
+"serial": "1131",
+"src_row": 735,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "223-224:1131"
+},
+{
+"expl": "Laterization occurs in warm, humid tropical climates where bacteria dominate the soil biota.",
+"key": 1,
+"o": [
+"Cold and humid; fungi",
+"Warm and humid; bacteria",
+"Arid; plants",
+"Temperate; microbes",
+"None of these"
+],
+"page": "223-224",
+"q": "Laterization, leading to laterite soils, is most characteristic of which climate and dominant organism?",
+"serial": "1132",
+"src_row": 736,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "223-224:1132"
+},
+{
+"expl": "USDA defines fine sand as particles with diameters between 0.10 and 0.25 mm.",
+"key": 1,
+"o": [
+"0.02 \u2013 0.20 mm",
+"0.10 \u2013 0.25 mm",
+"0.002 \u2013 0.05 mm",
+"< 0.002 mm",
+"None of these"
+],
+"page": "223-224",
+"q": "According to USDA classification, the particle size range for fine sand is:",
+"serial": "1133",
+"src_row": 737,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "223-224:1133"
+},
+{
+"expl": "Argillic pedoturbation refers to soil mixing due to the expansion and contraction of clay minerals.",
+"key": 2,
+"o": [
+"Faunal pedoturbation",
+"Floral pedoturbation",
+"Argillic pedoturbation",
+"Mechanical mixing",
+"None of these"
+],
+"page": "223-224",
+"q": "Mixing of soil caused by the swell\u2011shrink behavior of clays is termed:",
+"serial": "1134",
+"src_row": 738,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "223-224:1134"
+},
+{
+"expl": "In arid and semi\u2011arid areas, intense evaporation concentrates soluble salts, leading to salinization.",
+"key": 1,
+"o": [
+"Tropical regions with high rainfall",
+"Arid and semi\u2011arid regions due to high evaporation rates",
+"Cold humid regions because of frost action",
+"Temperate regions owing to leaching",
+"None of these"
+],
+"page": "223-224",
+"q": "Salinization of soils is most common in which regions and why?",
+"serial": "1135",
+"src_row": 739,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "223-224:1135"
+},
+{
+"expl": "Calcification is the buildup of calcium carbonate in soils of arid and semi\u2011arid zones, creating calcic horizons.",
+"key": 2,
+"o": [
+"Decalcification",
+"Salinization",
+"Calcification",
+"Solonization",
+"None of these"
+],
+"page": "223-224",
+"q": "The process that leads to accumulation of calcium carbonate forming a calcic horizon is:",
+"serial": "1136",
+"src_row": 740,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "223-224:1136"
+},
+{
+"expl": "Sandy soil is defined when sand content exceeds 85%.",
+"key": 1,
+"o": [
+"More than 80% silt",
+"More than 85% sand",
+"More than 40% clay (not less than 35%)",
+"More than 70% sand",
+"None of these"
+],
+"page": "225-226",
+"q": "Which of the following percentage ranges defines a sandy soil according to the textural classification?",
+"serial": "1141",
+"src_row": 741,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "225-226:1141"
+},
+{
+"expl": "Clay\u2019s cohesion and stickiness increase resistance to tillage.",
+"key": 1,
+"o": [
+"Low porosity",
+"Cohesion and stickiness",
+"High aeration",
+"Large particle size",
+"None of these"
+],
+"page": "225-226",
+"q": "A soil with a higher clay content is called a heavy soil because it creates greater resistance to implements due to which property?",
+"serial": "1142",
+"src_row": 742,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "225-226:1142"
+},
+{
+"expl": "Loamy sand has the lowest sand % after sand, making it the lightest class.",
+"key": 2,
+"o": [
+"Sandy loam",
+"Loam",
+"Loamy sand",
+"Silt loam",
+"None of these"
+],
+"page": "225-226",
+"q": "After the sand class, which textural class has the lowest sand percentage and is considered the most light?",
+"serial": "1143",
+"src_row": 743,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "225-226:1143"
+},
+{
+"expl": "The first soil texture triangle was created by Whitney in 1911.",
+"key": 0,
+"o": [
+"Whitney, 1911",
+"Whitney, 1925",
+"Smith, 1911",
+"Smith, 1925",
+"None of these"
+],
+"page": "225-226",
+"q": "Who first developed the soil textural triangle and in what year?",
+"serial": "1144",
+"src_row": 744,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "225-226:1144"
+},
+{
+"expl": "Clay particles are described as having a platy shape.",
+"key": 2,
+"o": [
+"Spherical",
+"Cubical",
+"Platy",
+"Irregular",
+"None of these"
+],
+"page": "225-226",
+"q": "According to the properties table, what is the shape of clay particles?",
+"serial": "1145",
+"src_row": 745,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "225-226:1145"
+},
+{
+"expl": "Adding NaOH is a dispersion method, not a distinct step of mechanical analysis.",
+"key": 2,
+"o": [
+"Separation of all particles from each other (dispersion)",
+"Measuring the amount of each separated group",
+"Adding NaOH to disperse the sample",
+"Determining the relative distribution of particles <2 mm",
+"None of these"
+],
+"page": "225-226",
+"q": "Which of the following is NOT a step in mechanical (particle size) analysis?",
+"serial": "1146",
+"src_row": 746,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "225-226:1146"
+},
+{
+"expl": "Stoke's Law states that for fine spherical particles, terminal velocity \u221d r\u00b2 and \u221d 1/viscosity; it is not applicable to sand.",
+"key": 1,
+"o": [
+"It applies to sand particles.",
+"The terminal velocity is directly proportional to the square of the particle radius.",
+"It is inversely proportional to the particle density.",
+"It applies to all soil particles.",
+"None of these"
+],
+"page": "227-228",
+"q": "Which statement about Stoke's Law is correct?",
+"serial": "1151",
+"src_row": 747,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "227-228:1151"
+},
+{
+"expl": "Polysaccharide mucilage produced by roots and microbes binds soil particles into aggregates.",
+"key": 1,
+"o": [
+"Calcium carbonate",
+"Mucilage (polysaccharide)",
+"Silica",
+"Organic matter",
+"None of these"
+],
+"page": "227-228",
+"q": "What is the main binding agent of soil aggregates?",
+"serial": "1152",
+"src_row": 748,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "227-228:1152"
+},
+{
+"expl": "Spheroidal structure, especially crumb (porous) form, is most favorable for plant growth.",
+"key": 3,
+"o": [
+"Platy",
+"Prism-like",
+"Blocky",
+"Spheroidal",
+"None of these"
+],
+"page": "227-228",
+"q": "Which type of soil structure is considered best for agriculture?",
+"serial": "1153",
+"src_row": 749,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "227-228:1153"
+},
+{
+"expl": "Soil structure is described as Grade, Class, then Type (GCT).",
+"key": 1,
+"o": [
+"Type \u2013 Grade \u2013 Class",
+"Grade \u2013 Class \u2013 Type",
+"Class \u2013 Grade \u2013 Type",
+"Grade \u2013 Type \u2013 Class",
+"None of these"
+],
+"page": "227-228",
+"q": "In the GCT sequence for naming soil structure, what is the correct order?",
+"serial": "1154",
+"src_row": 750,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "227-228:1154"
+},
+{
+"expl": "Microaggregates <250 \u00b5m; macroaggregates >250 \u00b5m in diameter.",
+"key": 0,
+"o": [
+"250 \u00b5m",
+"500 \u00b5m",
+"100 \u00b5m",
+"1 mm",
+"None of these"
+],
+"page": "227-228",
+"q": "Macroaggregates are defined as having a diameter greater than:",
+"serial": "1155",
+"src_row": 751,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "227-228:1155"
+},
+{
+"expl": "Mineral soil particles have a typical particle density of 2.65 g/cm\u00b3.",
+"key": 0,
+"o": [
+"2.65 g/cm\u00b3",
+"1.2\u20131.4 g/cm\u00b3",
+"3.0 g/cm\u00b3",
+"0.5 g/cm\u00b3",
+"None of these"
+],
+"page": "227-228",
+"q": "The average particle density of mineral soil is:",
+"serial": "1156",
+"src_row": 752,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "227-228:1156"
+}
+],
+"rolled": false,
+"row_from": 735,
+"row_to": 753,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 735,
+"seeded_from": "2026-10-24",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-24",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
