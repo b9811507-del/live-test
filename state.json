@@ -212232,7 +212232,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-25T17:57:18+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Copper sulphate + lime + water (5:5:50)",
+"Copper sulphate + sodium carbonate + water (5:6:50)",
+"Copper carbonate + red lead + raw linseed oil (8:8:10)",
+"Copper sulphate + lime + water (1:1:10)",
+"None of these"
+],
+"page": "",
+"q": "What is the composition ratio of Bordeaux mixture?",
+"serial": "17U0MEc-:2146",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2146"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Tractors",
+"Power tillers",
+"Combine harvesters",
+"Pumping sets",
+"None of these"
+],
+"page": "",
+"q": "Which machinery has the highest yearly production in India?",
+"serial": "1sUgWsko:6051",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6051"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"January to February",
+"March to April",
+"May to June",
+"September to October",
+"None of these"
+],
+"page": "",
+"q": "When is the flowering time for jackfruit?",
+"serial": "1bxM1Q-4:3031",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3031"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Phytophthora capsici",
+"Phomopsis vexans",
+"Fusarium oxysporum",
+"Alternaria solani",
+"None of these"
+],
+"page": "",
+"q": "Which pathogen causes Phomopsis Blight of Brinjal?",
+"serial": "1UgnIe-g:1128",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1128"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Milk",
+"Wheat",
+"Maize",
+"Sugarcane",
+"None of these"
+],
+"page": "",
+"q": "In the 2016\u201117 global rankings, which commodity did India rank first in?",
+"serial": "1bxM1Q-4:387",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:387"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Garlic",
+"Onion",
+"Beans",
+"Tomato",
+"None of these"
+],
+"page": "",
+"q": "Which vegetable's reported loss range does NOT include the value 10%?",
+"serial": "1bxM1Q-4:3604",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3604"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"6 hours",
+"8 hours",
+"12 hours",
+"24 hours",
+"None of these"
+],
+"page": "",
+"q": "The normal milking interval for dairy cattle is:",
+"serial": "128DIQLj:1884",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1884"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cane sugar or glucose syrup",
+"Salt solution",
+"Vinegar",
+"Oil",
+"None of these"
+],
+"page": "",
+"q": "Candied fruits or vegetables are produced by impregnating them with:",
+"serial": "1bxM1Q-4:3465",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3465"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Exudation",
+"Gummosis",
+"Bleeding",
+"Sap flow",
+"None of these"
+],
+"page": "",
+"q": "When bacterial cells ooze onto the plant surface forming drops or a smear, the symptom is known as:",
+"serial": "1sUgWsko:3624",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3624"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The capacity of the soil to retain water",
+"The capacity of the soil to produce plants under a specified program of management, expressed in te\u2026",
+"The capacity of the soil to resist erosion",
+"The capacity of the soil to absorb nutrients",
+"None of these"
+],
+"page": "",
+"q": "What is soil productivity defined as?",
+"serial": "1bxM1Q-4:1672",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1bxM1Q-4:1672"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Hari Om Ashram Trust award",
+"Punjabrao Deshmukh Women Award",
+"Jawaharlal Nehru award",
+"Jagjivan Ram Kishan award",
+"None of these"
+],
+"page": "",
+"q": "Which award is given for the best work in Ph.D. in the field of Agriculture & Allied Sciences?",
+"serial": "17U0MEc-:117",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:117"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1:5",
+"1:10",
+"1:15",
+"1:20",
+"None of these"
+],
+"page": "",
+"q": "What is the ideal ratio of height to width for shelterbelts under Indian conditions?",
+"serial": "1UgnIe-g:2703",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2703"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Louis Pasteur",
+"Nicolas Appert",
+"Robert Koch",
+"Joseph Lister",
+"None of these"
+],
+"page": "",
+"q": "Who is recognized as the father of food preservation?",
+"serial": "1bxM1Q-4:3420",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3420"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"A. flavus",
+"A. parasiticus",
+"A. nomius",
+"A. niger",
+"None of these"
+],
+"page": "",
+"q": "Which of the following fungi is NOT a known producer of aflatoxin in groundnut?",
+"serial": "128DIQLj:456",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:456"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To maximize water use for high-yield crops",
+"To ensure equitable distribution of irrigation water across the command area",
+"To reduce the cost of irrigation infrastructure",
+"To prioritize water supply to drought-prone areas",
+"None of these"
+],
+"page": "",
+"q": "What is the primary goal of Rotational Water Supply (RWS) in irrigation management?",
+"serial": "1sUgWsko:4657",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4657"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sand",
+"Moist sphagnum moss",
+"Perlite",
+"Sawdust",
+"None of these"
+],
+"page": "",
+"q": "In air layering, what material is used to cover the girdled portion after bark removal?",
+"serial": "1YcJWVgW:95",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:95"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Wischmeier & Smith",
+"Richards and Smith",
+"Hargreaves & McDonald",
+"Nicholas & La-Flitze",
+"None of these"
+],
+"page": "",
+"q": "The Universal Soil Loss Equation (USLE) was formulated by which pair of researchers?",
+"serial": "1bxM1Q-4:303",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:303"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1:1",
+"1:2",
+"1:3",
+"1:4",
+"None of these"
+],
+"page": "",
+"q": "What is the husk to seed ratio in the plant described as a stemless annual herb?",
+"serial": "1YcJWVgW:912",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:912"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Pumpkin",
+"Beetroot",
+"Sweet Potato",
+"Carrot",
+"None of these"
+],
+"page": "",
+"q": "Which vegetable is classified under both 'less perishable' storage life and 'deep' root depth (60-90 cm)?",
+"serial": "1sUgWsko:1287",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1287"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Calcium Chloride",
+"CIPC",
+"Ethephon",
+"GA",
+"None of these"
+],
+"page": "",
+"q": "Which chemical is applied to grapes to hasten ripening?",
+"serial": "1bxM1Q-4:3601",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3601"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Poor man\u2019s cow",
+"Farmers\u2019 friend",
+"Milk machine",
+"Desert camel",
+"None of these"
+],
+"page": "",
+"q": "What is the common nickname for goats in India?",
+"serial": "1sUgWsko:3311",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3311"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"pE = Eh \u00d7 0.0591",
+"pE = Eh \u00f7 0.0591",
+"pE = 0.0591 \u00f7 Eh",
+"pE = Eh + 0.0591",
+"None of these"
+],
+"page": "",
+"q": "What is the correct relationship between the redox potential (Eh) and the electron activity (pE)?",
+"serial": "128DIQLj:1275",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1275"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Littoral zone",
+"Benthic zone",
+"Limnetic zone",
+"Profundal zone",
+"None of these"
+],
+"page": "",
+"q": "Which zone is defined as the open water zone to the depth of effective light penetration?",
+"serial": "17U0MEc-:1699",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1699"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Alluvium",
+"Regur",
+"Laterite",
+"Coastal sands",
+"None of these"
+],
+"page": "",
+"q": "Which soil type predominates in the plateau region of the Gujarat Plains and Hills zone?",
+"serial": "1sUgWsko:5815",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5815"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20 \u00d7 10 cm",
+"20 \u00d7 15 cm",
+"25 \u00d7 25 cm",
+"30 \u00d7 30 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spacing for the SRI method?",
+"serial": "1sUgWsko:14",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:14"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Vitamin B1",
+"Vitamin B12",
+"Vitamin C",
+"Vitamin D",
+"None of these"
+],
+"page": "",
+"q": "Which vitamin is conserved in rice through the process of parboiling?",
+"serial": "17U0MEc-:540",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:540"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.8-1.0 m\u00b2",
+"1.2-1.6 m\u00b2",
+"5.0-6.0 m\u00b2",
+"0.2-0.3 m\u00b2",
+"None of these"
+],
+"page": "",
+"q": "According to NABARD norms, what is the standing or covered area requirement for crossbred cattle aged 6-12 months?",
+"serial": "1sUgWsko:3083",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3083"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"25 kg/ha",
+"30 kg/ha",
+"20 kg/ha",
+"15 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended application rate of ZnSO4 to correct zinc deficiency?",
+"serial": "1bxM1Q-4:648",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:648"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Crop Insurance Scheme (CIS)",
+"National Agricultural Insurance Scheme (NAIS)",
+"National Bank for Agriculture & Rural Development (NABARD)",
+"National Agricultural Research Project (Phase-II)",
+"None of these"
+],
+"page": "",
+"q": "Which scheme launched in 1985 was later renamed as National Agricultural Insurance Scheme (NAIS)?",
+"serial": "17U0MEc-:78",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:78"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Sorghum (Jowar)",
+"Pearl millet (Bajra)",
+"Finger millet (Ragi)",
+"Foxtail millet (Thenai)",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT classified as a major millet?",
+"serial": "1sUgWsko:4306",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4306"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Jassid",
+"Whitefly",
+"Aphid",
+"Bollworm",
+"None of these"
+],
+"page": "",
+"q": "Which pest has an ETL of 0% honeydew in cotton?",
+"serial": "1UgnIe-g:2009",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2009"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.5-0.7",
+"0.7-0.9",
+"0.9-1.1",
+"1.1-1.3",
+"None of these"
+],
+"page": "",
+"q": "What is the appropriate Irrigation Water (IW) to Cumulative Pan Evaporation (CPE) ratio for wheat?",
+"serial": "1sUgWsko:121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:121"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Toria",
+"Banarsi rai",
+"Gobhi sarso",
+"Karan rai",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a common name for B. nigra as per the given data?",
+"serial": "1sUgWsko:385",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:385"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Banana",
+"Pomegranate",
+"Jamun",
+"Guava",
+"None of these"
+],
+"page": "",
+"q": "Which fruit is herbaceous?",
+"serial": "1sUgWsko:815",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:815"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Many genes showing continuous variation",
+"One or few genes showing discontinuous variation",
+"Environmental factors only",
+"Polygenic inheritance with additive effects",
+"None of these"
+],
+"page": "",
+"q": "Qualitative characters are controlled by:",
+"serial": "1UgnIe-g:148",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:148"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Fruit fly (Bactrocera cucurbitae)",
+"Erwinia tracheiphila",
+"Sphaerotheca fuliginea",
+"Podosphaera xanthii",
+"None of these"
+],
+"page": "",
+"q": "Which pest is a serious threat to cucurbits?",
+"serial": "1YcJWVgW:774",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:774"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Parthenogenesis",
+"Apogamy",
+"Apospory",
+"Nucellar embryony",
+"None of these"
+],
+"page": "",
+"q": "Which type of apomixis involves the development of an embryo from synergids or antipodal cells?",
+"serial": "1sUgWsko:5878",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5878"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gujarat",
+"Uttar Pradesh",
+"Maharashtra",
+"West Bengal",
+"None of these"
+],
+"page": "",
+"q": "Which state has the largest area of salt-affected soil in India according to the given data?",
+"serial": "1sUgWsko:7078",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7078"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"21%",
+"33%",
+"46%",
+"38%",
+"None of these"
+],
+"page": "",
+"q": "What is the nitrogen percentage of urea, the solid fertilizer with the highest N content?",
+"serial": "128DIQLj:1383",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1383"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Thailand",
+"India",
+"Brazil",
+"Ethiopia",
+"None of these"
+],
+"page": "",
+"q": "Which country is the largest producer of natural rubber?",
+"serial": "1YcJWVgW:985",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:985"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cecidomyiidae",
+"Agromyzidae",
+"Culicidae",
+"Thripidae",
+"None of these"
+],
+"page": "",
+"q": "Which family does the malaria mosquito belong to?",
+"serial": "17U0MEc-:1844",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1844"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Apple",
+"Guava",
+"Mango",
+"Banana",
+"None of these"
+],
+"page": "",
+"q": "Post-set fruit drop is a major problem in which of the following fruits?",
+"serial": "1sUgWsko:951",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:951"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bihar",
+"Punjab",
+"Uttar Pradesh",
+"Maharashtra",
+"None of these"
+],
+"page": "",
+"q": "Where was the first warehouse in India established?",
+"serial": "128DIQLj:2662",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2662"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Euphorbiaceae",
+"Malvaceae",
+"Solanaceae",
+"Asteraceae",
+"None of these"
+],
+"page": "",
+"q": "The crop \"Castor\" belongs to which plant family?",
+"serial": "1bxM1Q-4:444",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:444"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"RRII-105",
+"RRII-110",
+"RRII-120",
+"RRII-115",
+"None of these"
+],
+"page": "",
+"q": "Which hybrid clone is the highest yielding rubber clone worldwide?",
+"serial": "1sUgWsko:1246",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1246"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Gregor Mendel",
+"de Vries, Carl Correns, and Tschermark",
+"Charles Darwin",
+"Thomas Hunt Morgan",
+"None of these"
+],
+"page": "",
+"q": "Who rediscovered Mendel's laws in 1900?",
+"serial": "17U0MEc-:2390",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2390"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"A harvesting method",
+"An irrigation technique",
+"Ploughing standing crop for weed control",
+"Seed treatment",
+"None of these"
+],
+"page": "",
+"q": "Haloding in maize refers to:",
+"serial": "128DIQLj:306",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:306"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Biliverdin",
+"Oophorphyrin",
+"Carotenoid",
+"Melanin",
+"None of these"
+],
+"page": "",
+"q": "Which pigment is responsible for the brown color of an egg shell?",
+"serial": "1sUgWsko:3403",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3403"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"High temperature",
+"Low temperature",
+"Excessive rainfall",
+"Soil pH",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of bolting in onions?",
+"serial": "17U0MEc-:1359",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1359"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Agricultural Technology Information Centre",
+"Agricultural Training and Information Centre",
+"Agricultural Technology and Innovation Centre",
+"Agricultural Transfer of Information Centre",
+"None of these"
+],
+"page": "",
+"q": "What is the full form of ATIC?",
+"serial": "128DIQLj:2145",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2145"
+}
+],
+"set_no": 43,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
