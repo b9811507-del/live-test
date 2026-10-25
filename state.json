@@ -212237,8 +212237,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 861,
 "names": {},
+"plan": {
+"bidx_next": 861,
+"built_at": "2026-10-25T14:28:32+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 122-124",
+"pages_list": [
+122,
+123,
+124
+],
+"questions": [
+{
+"expl": "Banana is a climacteric fruit, characterized by a sharp rise in respiration after harvesting, unlike non-climacteric fruits like citrus and grape.",
+"key": 2,
+"o": [
+"Mango",
+"Citrus",
+"Banana",
+"Grape",
+"None of these"
+],
+"page": "122",
+"q": "Which of the following fruits exhibits a sharp rise in respiration rate after harvesting?",
+"serial": "848",
+"src_row": 840,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:848"
+},
+{
+"expl": "Pineapple is a non-climacteric fruit, which maintains a steady respiration rate at the time of harvesting.",
+"key": 2,
+"o": [
+"Apple",
+"Guava",
+"Pineapple",
+"Fig",
+"None of these"
+],
+"page": "122",
+"q": "Identify the non-climacteric fruit from the given options.",
+"serial": "849",
+"src_row": 841,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:849"
+},
+{
+"expl": "Date palm is classified under the family Arecaceae, which is a monocot family.",
+"key": 2,
+"o": [
+"Bromeliaceae",
+"Musaceae",
+"Arecaceae",
+"Anacardiaceae",
+"None of these"
+],
+"page": "122",
+"q": "Which family does the date palm belong to under botanical classification?",
+"serial": "850",
+"src_row": 842,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:850"
+},
+{
+"expl": "Strawberry is a short-day plant, requiring a light period of 12 hours or less for optimal growth.",
+"key": 2,
+"o": [
+"Apple",
+"Passion fruit",
+"Strawberry",
+"Banana",
+"None of these"
+],
+"page": "122",
+"q": "Which of the following is a short-day plant?",
+"serial": "851",
+"src_row": 843,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:851"
+},
+{
+"expl": "Papaya belongs to the family Caricaceae, which is a dicot family.",
+"key": 1,
+"o": [
+"Euphorbiaceae",
+"Caricaceae",
+"Myrtaceae",
+"Anacardiaceae",
+"None of these"
+],
+"page": "122",
+"q": "Under which botanical family is papaya classified?",
+"serial": "852",
+"src_row": 844,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:852"
+},
+{
+"expl": "Guava is a day-neutral plant, meaning its growth is not significantly affected by the duration of light exposure.",
+"key": 2,
+"o": [
+"Pineapple",
+"Apple",
+"Guava",
+"Passion fruit",
+"None of these"
+],
+"page": "122",
+"q": "Which fruit is classified as a day-neutral plant?",
+"serial": "853",
+"src_row": 845,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:853"
+},
+{
+"expl": "Jamun is classified under the family Myrtaceae, which also includes guava.",
+"key": 0,
+"o": [
+"Jamun",
+"Cashew",
+"Aonla",
+"Star Gooseberry",
+"None of these"
+],
+"page": "122",
+"q": "Which of the following fruits belongs to the family Myrtaceae?",
+"serial": "854",
+"src_row": 846,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "122:854"
+},
+{
+"expl": "Litchi and Rambutan are explicitly listed under the Sapindaceae family in the source.",
+"key": 1,
+"o": [
+"Sapotaceae",
+"Sapindaceae",
+"Moraceae",
+"Rutaceae",
+"None of these"
+],
+"page": "123",
+"q": "Which family includes both Litchi and Rambutan?",
+"serial": "855",
+"src_row": 847,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:855"
+},
+{
+"expl": "Pomegranate belongs to Punicaceae, while Apple, Pear, and Peach are listed under Rosaceae.",
+"key": 2,
+"o": [
+"Apple",
+"Pear",
+"Pomegranate",
+"Peach",
+"None of these"
+],
+"page": "123",
+"q": "Which of the following crops is NOT a member of the Rosaceae family?",
+"serial": "856",
+"src_row": 848,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:856"
+},
+{
+"expl": "Banana is propagated by Sword Suckers as per the table provided in the source.",
+"key": 2,
+"o": [
+"Runner",
+"Suckers/Slips",
+"Sword Suckers",
+"Soft Wood Cuttings",
+"None of these"
+],
+"page": "123",
+"q": "The propagation method for Banana is:",
+"serial": "857",
+"src_row": 849,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:857"
+},
+{
+"expl": "The source lists Kiwi with a chromosome number of 58.",
+"key": 2,
+"o": [
+"Strawberry",
+"Pineapple",
+"Kiwi",
+"Mango",
+"None of these"
+],
+"page": "123",
+"q": "Which crop has a chromosome number (2n) of 58?",
+"serial": "858",
+"src_row": 850,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:858"
+},
+{
+"expl": "Date Palm is stated to have its origin in West Asia in the provided data.",
+"key": 1,
+"o": [
+"Indo-Burma",
+"West Asia",
+"China",
+"Brazil",
+"None of these"
+],
+"page": "123",
+"q": "The centre of origin for Date Palm is:",
+"serial": "859",
+"src_row": 851,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:859"
+},
+{
+"expl": "Tamarind is explicitly listed under Caesalpiniaceae / Fabaceae or Leguminosae.",
+"key": 0,
+"o": [
+"Caesalpiniaceae / Fabaceae or Leguminosae",
+"Rutaceae",
+"Annonaceae",
+"Vitaceae",
+"None of these"
+],
+"page": "123",
+"q": "Which family does Tamarind belong to?",
+"serial": "860",
+"src_row": 852,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:860"
+},
+{
+"expl": "Veneer grafting is listed as one of the propagation methods for Mango in the source.",
+"key": 2,
+"o": [
+"Runner",
+"Offshoots (suckers)",
+"Veneer grafting",
+"Suckers/Slips",
+"None of these"
+],
+"page": "123",
+"q": "Which of the following is a propagation method for Mango?",
+"serial": "861",
+"src_row": 853,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "123:861"
+},
+{
+"expl": "Atemoya is explicitly mentioned as a man-made hybrid and propagated by T-budding in the source.",
+"key": 1,
+"o": [
+"Custard apple",
+"Atemoya",
+"Papaya",
+"Mango Steen",
+"None of these"
+],
+"page": "124",
+"q": "Which fruit is a man-made hybrid and propagated by T-budding?",
+"serial": "862",
+"src_row": 854,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:862"
+},
+{
+"expl": "Guava is propagated by Stooling, Inarching, and Air layering as per the source, but not by Seed.",
+"key": 3,
+"o": [
+"Stooling",
+"Inarching",
+"Air layering",
+"Seed",
+"None of these"
+],
+"page": "124",
+"q": "The propagation method for Guava includes all EXCEPT:",
+"serial": "863",
+"src_row": 855,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:863"
+},
+{
+"expl": "Persimmon is listed with a chromosome number of 90 (6x), which is the highest in the source.",
+"key": 0,
+"o": [
+"Persimmon",
+"Mango Steen",
+"Jack Fruit",
+"Ber",
+"None of these"
+],
+"page": "124",
+"q": "Which fruit has the highest chromosome number (6x) mentioned in the source?",
+"serial": "864",
+"src_row": 856,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:864"
+},
+{
+"expl": "Fig is explicitly mentioned as propagated by Hard Wood cutting in the source.",
+"key": 0,
+"o": [
+"Fig",
+"Pomegranate",
+"Jamun",
+"Carambola",
+"None of these"
+],
+"page": "124",
+"q": "Identify the fruit propagated by 'Hard Wood cutting' as per the source.",
+"serial": "865",
+"src_row": 857,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:865"
+},
+{
+"expl": "Apple is the only fruit listed in the source as propagated by Whip and Tongue grafting.",
+"key": 0,
+"o": [
+"Apple",
+"Almond",
+"Apricot",
+"Peach",
+"None of these"
+],
+"page": "124",
+"q": "Which of the following fruits is propagated by 'Whip and Tongue grafting'?",
+"serial": "866",
+"src_row": 858,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:866"
+},
+{
+"expl": "Passion fruit is explicitly stated to have originated from Brazil in the source.",
+"key": 0,
+"o": [
+"Brazil",
+"Sri Lanka",
+"Central America",
+"Tropical America",
+"None of these"
+],
+"page": "124",
+"q": "The origin of Passion fruit is:",
+"serial": "867",
+"src_row": 859,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:867"
+},
+{
+"expl": "Almond has a chromosome number of 16 and is propagated by T-budding as per the source.",
+"key": 2,
+"o": [
+"Peach",
+"Pear",
+"Almond",
+"Apricot",
+"None of these"
+],
+"page": "124",
+"q": "Which fruit has a chromosome number of 16 and is propagated by T-budding?",
+"serial": "868",
+"src_row": 860,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "124:868"
+}
+],
+"row_from": 840,
+"row_to": 861,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 840,
+"seeded_from": "2026-10-24"
+},
 "qidx": 0,
+"seeded_from": "2026-10-24",
+"skips": [],
 "step": 0
 },
 "malwa": {
