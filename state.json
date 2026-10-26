@@ -217496,8 +217496,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 882,
 "names": {},
+"plan": {
+"bidx_next": 882,
+"built_at": "2026-10-26T14:27:14+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 125-127",
+"pages_list": [
+125,
+126,
+127
+],
+"questions": [
+{
+"expl": "The SOURCE explicitly states that Plum in Japan is propagated using T-budding.",
+"key": 0,
+"o": [
+"T-budding",
+"Seed",
+"Air layering",
+"Inarching",
+"None of these"
+],
+"page": "125",
+"q": "Which propagation method is used for Plum in Japan?",
+"serial": "869",
+"src_row": 861,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:869"
+},
+{
+"expl": "The SOURCE lists the spacing for Mango as 10 x 10 m\u00b2.",
+"key": 3,
+"o": [
+"5x5 m",
+"6x6 m",
+"8x8 m",
+"10 x 10 m",
+"None of these"
+],
+"page": "125",
+"q": "What is the recommended spacing for Mango cultivation?",
+"serial": "870",
+"src_row": 862,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:870"
+},
+{
+"expl": "The SOURCE specifies that Pineapple has a pH range of 5.5-7.",
+"key": 1,
+"o": [
+"Litchi",
+"Pineapple",
+"Guava",
+"Pear",
+"None of these"
+],
+"page": "125",
+"q": "Which crop has an optimal pH range of 5.5-7 for cultivation?",
+"serial": "871",
+"src_row": 863,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:871"
+},
+{
+"expl": "The SOURCE indicates that Grape is propagated using Hardwood stem cuttings.",
+"key": 0,
+"o": [
+"Grape",
+"Mandarin",
+"Coffee",
+"Coconut",
+"None of these"
+],
+"page": "125",
+"q": "Which of the following crops is propagated by 'Hardwood stem cuttings'?",
+"serial": "872",
+"src_row": 864,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:872"
+},
+{
+"expl": "The SOURCE states that the optimal temperature for Litchi is 16-24\u00b0C.",
+"key": 0,
+"o": [
+"16-24\u00b0C",
+"19-21\u00b0C",
+"23-28\u00b0C",
+"25-29\u00b0C",
+"None of these"
+],
+"page": "125",
+"q": "What is the optimal temperature range for Litchi cultivation?",
+"serial": "873",
+"src_row": 865,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:873"
+},
+{
+"expl": "The SOURCE lists Coconut as propagated by Inarching.",
+"key": 1,
+"o": [
+"Sapota",
+"Coconut",
+"Phalsa",
+"Date palm",
+"None of these"
+],
+"page": "125",
+"q": "Which crop requires 'Inarching' as a propagation method?",
+"serial": "874",
+"src_row": 866,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:874"
+},
+{
+"expl": "The SOURCE specifies that the pH range for Peach is 5.8-6.8.",
+"key": 2,
+"o": [
+"4.5-7.5",
+"5.5-7",
+"5.8-6.8",
+"6-7.5",
+"None of these"
+],
+"page": "125",
+"q": "What is the recommended pH for Peach cultivation?",
+"serial": "875",
+"src_row": 867,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "125:875"
+},
+{
+"expl": "The SOURCE explicitly lists Jamun with a spacing of 12 x 12 m\u00b2, which is the widest among all mentioned crops.",
+"key": 0,
+"o": [
+"Jamun",
+"Coconut",
+"Sweet Orange",
+"Jack fruit",
+"None of these"
+],
+"page": "126",
+"q": "Which fruit crop requires the widest spacing of 12 x 12 m\u00b2 for planting?",
+"serial": "876",
+"src_row": 868,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:876"
+},
+{
+"expl": "The SOURCE states that Sweet Orange thrives in a temperature range of 16-20\u00b0C.",
+"key": 0,
+"o": [
+"Sweet Orange",
+"Apple",
+"Grape",
+"Papaya",
+"None of these"
+],
+"page": "126",
+"q": "For which fruit is the temperature range 16-20\u00b0C most suitable for cultivation?",
+"serial": "877",
+"src_row": 869,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:877"
+},
+{
+"expl": "The SOURCE specifies that Aonla has a pH range of 8.5 (6.5 to 9.5).",
+"key": 0,
+"o": [
+"Aonla",
+"Custard Apple",
+"Banana",
+"Sapota",
+"None of these"
+],
+"page": "126",
+"q": "Which of the following crops has a pH requirement of 8.5 (6.5 to 9.5)?",
+"serial": "878",
+"src_row": 870,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:878"
+},
+{
+"expl": "The SOURCE lists both Banana and Papaya with a spacing of 1.8 x 1.8 m\u00b2, which is the smallest mentioned.",
+"key": 0,
+"o": [
+"Banana and Papaya",
+"Arecanut",
+"Grape",
+"Fig",
+"None of these"
+],
+"page": "126",
+"q": "Identify the fruit crop with the smallest spacing requirement of 1.8 x 1.8 m\u00b2.",
+"serial": "879",
+"src_row": 871,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:879"
+},
+{
+"expl": "The SOURCE explicitly states that Mandarin Orange requires 12-15\u00b0C during the day and 7-8\u00b0C at night.",
+"key": 1,
+"o": [
+"Apple",
+"Mandarin Orange",
+"Persimmon",
+"Plum",
+"None of these"
+],
+"page": "126",
+"q": "Which fruit crop requires a day temperature of 12-15\u00b0C and a night temperature of 7-8\u00b0C?",
+"serial": "880",
+"src_row": 872,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:880"
+},
+{
+"expl": "The SOURCE lists the pH range for Coconut as 5.2-8.0.",
+"key": 0,
+"o": [
+"5.2-8.0",
+"6.5-7.5",
+"5.5-8",
+"6.5-8",
+"None of these"
+],
+"page": "126",
+"q": "What is the pH range for Coconut cultivation as per the SOURCE?",
+"serial": "881",
+"src_row": 873,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:881"
+},
+{
+"expl": "The SOURCE specifies that Coconut requires a temperature range of 20-32\u00b0C and a spacing of 7.5 x 7.5 m\u00b2.",
+"key": 0,
+"o": [
+"Coconut",
+"Jack fruit",
+"Avocado",
+"Lemon and Lime",
+"None of these"
+],
+"page": "126",
+"q": "Which fruit crop has a temperature range of 20-32\u00b0C and a spacing of 7.5 x 7.5 m\u00b2?",
+"serial": "882",
+"src_row": 874,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "126:882"
+},
+{
+"expl": "The source explicitly states that the temperature range for bulb formation in onions is 20-25\u00b0C.",
+"key": 1,
+"o": [
+"12.3-23\u00b0C",
+"20-25\u00b0C",
+"17-20\u00b0C",
+"23\u00b0C",
+"None of these"
+],
+"page": "127",
+"q": "What is the optimal temperature range for bulb formation in onions?",
+"serial": "883",
+"src_row": 875,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:883"
+},
+{
+"expl": "Raisins have the highest carbohydrate content at 77.3%, as per the fruit sources table.",
+"key": 1,
+"o": [
+"Date palm",
+"Raisins",
+"Apricot (dry)",
+"Karonda (dry)",
+"None of these"
+],
+"page": "127",
+"q": "Which of the following dried fruits has the highest carbohydrate content?",
+"serial": "884",
+"src_row": 876,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:884"
+},
+{
+"expl": "The source states that the daily requirement of protein is 60-70 g.",
+"key": 2,
+"o": [
+"40-50 g",
+"50-60 g",
+"60-70 g",
+"70-80 g",
+"None of these"
+],
+"page": "127",
+"q": "What is the daily protein requirement for humans as mentioned in the source?",
+"serial": "885",
+"src_row": 877,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:885"
+},
+{
+"expl": "Lima Bean has the highest protein content at 7.9g/100g among the listed vegetable sources.",
+"key": 2,
+"o": [
+"Cowpea",
+"Pea",
+"Lima Bean",
+"Potato",
+"None of these"
+],
+"page": "127",
+"q": "Which vegetable source has the highest protein content per 100g?",
+"serial": "886",
+"src_row": 878,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:886"
+},
+{
+"expl": "The source specifies that cauliflower thrives in a pH range of 5.5-6.6.",
+"key": 1,
+"o": [
+"4.5-5.5",
+"5.5-6.6",
+"5.8-6.5",
+"6.0-7.0",
+"None of these"
+],
+"page": "127",
+"q": "What is the pH range suitable for cauliflower cultivation?",
+"serial": "887",
+"src_row": 879,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:887"
+},
+{
+"expl": "Sweet Potato is listed under vegetable sources, not fruit sources, in the carbohydrate table.",
+"key": 2,
+"o": [
+"Bael",
+"Banana",
+"Sweet Potato",
+"Date palm",
+"None of these"
+],
+"page": "127",
+"q": "Which of the following is NOT a fruit source of carbohydrates listed in the source?",
+"serial": "888",
+"src_row": 880,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:888"
+},
+{
+"expl": "The source states that the temperature range for vegetative growth in onions is 12.3-23\u00b0C.",
+"key": 2,
+"o": [
+"17-20\u00b0C",
+"20-25\u00b0C",
+"12.3-23\u00b0C",
+"23\u00b0C",
+"None of these"
+],
+"page": "127",
+"q": "What is the temperature range for vegetative growth in onions?",
+"serial": "889",
+"src_row": 881,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "127:889"
+}
+],
+"row_from": 861,
+"row_to": 882,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 861,
+"seeded_from": "2026-10-25"
+},
 "qidx": 0,
+"seeded_from": "2026-10-25",
+"skips": [],
 "step": 0
 },
 "malwa": {
