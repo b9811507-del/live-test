@@ -217502,9 +217502,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 772,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 772,
+"built_at": "2026-10-26T10:58:31+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 229-234",
+"pages_blocks": [
+"229-230",
+"231-232",
+"233-234"
+],
+"questions": [
+{
+"expl": "Bulk density is defined as the mass of dry soil per unit volume, counting both solids and voids.",
+"key": 0,
+"o": [
+"Mass per unit volume of dry soil including pore space",
+"Mass per unit volume of soil solids only",
+"Volume per unit mass of dry soil",
+"Mass per unit volume of water in soil",
+"None of these"
+],
+"page": "229-230",
+"q": "Which of the following best describes bulk density?",
+"serial": "1161",
+"src_row": 753,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "229-230:1161"
+},
+{
+"expl": "The source states sandy soil has a bulk density of 1.7 g/cm\u00b3, higher than clay.",
+"key": 1,
+"o": [
+"1.2 g/cm\u00b3",
+"1.7 g/cm\u00b3",
+"0.5 g/cm\u00b3",
+"1.33 g/cm\u00b3",
+"None of these"
+],
+"page": "229-230",
+"q": "The bulk density of sandy soil is typically:",
+"serial": "1162",
+"src_row": 754,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "229-230:1162"
+},
+{
+"expl": "Porosity = (1\u2011(BD/PD))\u00d7100 = (1\u2011(1.33/2.65))\u00d7100 \u2248 50%.",
+"key": 2,
+"o": [
+"20%",
+"30%",
+"50%",
+"60%",
+"None of these"
+],
+"page": "229-230",
+"q": "If bulk density = 1.33 g/cm\u00b3 and particle density = 2.65 g/cm\u00b3, what is the soil porosity?",
+"serial": "1163",
+"src_row": 755,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "229-230:1163"
+},
+{
+"expl": "Higher organic matter reduces bulk density; the others increase it.",
+"key": 1,
+"o": [
+"Higher mineral content",
+"Higher organic matter content",
+"Soil compaction",
+"Greater soil depth",
+"None of these"
+],
+"page": "229-230",
+"q": "Which factor does NOT increase bulk density?",
+"serial": "1164",
+"src_row": 756,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "229-230:1164"
+},
+{
+"expl": "Macro pores are non\u2011capillary pores larger than 0.06 mm.",
+"key": 0,
+"o": [
+"> 0.06 mm diameter",
+"< 0.06 mm diameter",
+"> 1 mm diameter",
+"< 1 mm diameter",
+"None of these"
+],
+"page": "229-230",
+"q": "Macro pores are defined as:",
+"serial": "1165",
+"src_row": 757,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "229-230:1165"
+},
+{
+"expl": "Black or dark brown soils are associated with high organic matter.",
+"key": 2,
+"o": [
+"Red",
+"Yellow",
+"Black or dark brown",
+"White",
+"None of these"
+],
+"page": "229-230",
+"q": "Which soil colour indicates high organic matter and fertility?",
+"serial": "1166",
+"src_row": 758,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "229-230:1166"
+},
+{
+"expl": "The source states that any factor that increases soil porosity\u2014such as addition of organic matter\u2014decreases thermal conductivity.",
+"key": 1,
+"o": [
+"Increasing tillage depth",
+"Adding organic matter",
+"Applying a surface mulch",
+"Increasing soil temperature",
+"None of these"
+],
+"page": "231-232",
+"q": "Which of the following actions will most likely decrease the thermal conductivity of soil?",
+"serial": "1171",
+"src_row": 759,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "231-232:1171"
+},
+{
+"expl": "The text explicitly says thermal conductivity of sandy soils is higher than that of clay soils.",
+"key": 1,
+"o": [
+"Lower thermal conductivity",
+"Higher thermal conductivity",
+"The same thermal conductivity",
+"Variable conductivity unrelated to texture",
+"None of these"
+],
+"page": "231-232",
+"q": "Compared with clay soils, sandy soils generally have:",
+"serial": "1172",
+"src_row": 760,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "231-232:1172"
+},
+{
+"expl": "Water has a specific heat of 1 cal/g, while dry soil is 0.20 cal/g; thus water\u2019s value is five times larger.",
+"key": 0,
+"o": [
+"Water\u2019s specific heat is five times that of dry soil",
+"Water\u2019s specific heat equals that of dry soil",
+"Dry soil\u2019s specific heat is 1 cal/g",
+"Water\u2019s specific heat is 0.2 cal/g",
+"None of these"
+],
+"page": "231-232",
+"q": "Which statement correctly relates the specific heats of water and dry soil?",
+"serial": "1173",
+"src_row": 761,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "231-232:1173"
+},
+{
+"expl": "According to Atterberg\u2019s definitions, the Upper Plastic Limit is synonymous with the liquid limit.",
+"key": 0,
+"o": [
+"Liquid limit",
+"Plastic limit",
+"Shrinkage limit",
+"Plasticity index",
+"None of these"
+],
+"page": "231-232",
+"q": "The Upper Plastic Limit (UPL) of a soil is also known as:",
+"serial": "1174",
+"src_row": 762,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "231-232:1174"
+},
+{
+"expl": "The source lists 0.2 bars as the strength of a submerged rice field.",
+"key": 0,
+"o": [
+"0.2 bars",
+"2 bars",
+"22 bars",
+"0.02 bars",
+"None of these"
+],
+"page": "231-232",
+"q": "What is the typical soil strength value for a submerged rice field as measured with a cone penetrometer?",
+"serial": "1175",
+"src_row": 763,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "231-232:1175"
+},
+{
+"expl": "The text notes that 90 % of soil\u2011air exchange occurs by diffusion.",
+"key": 0,
+"o": [
+"Diffusion",
+"Mass flow",
+"Convection",
+"Osmosis",
+"None of these"
+],
+"page": "231-232",
+"q": "The predominant mechanism by which air moves between the soil and the atmosphere is:",
+"serial": "1176",
+"src_row": 764,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "231-232:1176"
+},
+{
+"expl": "Root respiration ceases when soil oxygen drops below 2%.",
+"key": 1,
+"o": [
+"10%",
+"2%",
+"5%",
+"15%",
+"None of these"
+],
+"page": "233-234",
+"q": "Crop growth stops when soil oxygen content falls below what percentage?",
+"serial": "1181",
+"src_row": 765,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1181"
+},
+{
+"expl": "ODR below 20\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min halts root growth.",
+"key": 1,
+"o": [
+"10\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"20\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"30\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"40\u00d710\u207b\u2078 g O\u2082/cm\u00b2/min",
+"None of these"
+],
+"page": "233-234",
+"q": "Root growth of most crops stops when the oxygen diffusion rate (ODR) falls below what value?",
+"serial": "1182",
+"src_row": 766,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1182"
+},
+{
+"expl": "Tension is expressed positively; potential is expressed negatively.",
+"key": 2,
+"o": [
+"Both are negative",
+"Both are positive",
+"Tension positive, potential negative",
+"Tension negative, potential positive",
+"None of these"
+],
+"page": "233-234",
+"q": "Which statement correctly describes the sign of soil moisture tension and soil moisture potential?",
+"serial": "1183",
+"src_row": 767,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1183"
+},
+{
+"expl": "Gravitational water is <0.33 bar, draining quickly.",
+"key": 0,
+"o": [
+"0.33 bar",
+"31 bar",
+"10,000 bar",
+">10,000 bar",
+"None of these"
+],
+"page": "233-234",
+"q": "Gravitational water is defined as soil water with tension less than what value?",
+"serial": "1184",
+"src_row": 768,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1184"
+},
+{
+"expl": "Capillary water lies between 0.33 and 31 bar, available to plants.",
+"key": 0,
+"o": [
+"0.33\u201331 bar",
+"31\u201310,000 bar",
+"<0.33 bar",
+">31 bar",
+"None of these"
+],
+"page": "233-234",
+"q": "Capillary water occupies the tension range of",
+"serial": "1185",
+"src_row": 769,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1185"
+},
+{
+"expl": "Available water is between FC and PWP, readily accessible to plants.",
+"key": 0,
+"o": [
+"Field capacity and permanent wilting point",
+"Field capacity and hygroscopic coefficient",
+"Permanent wilting point and hygroscopic coefficient",
+"Above field capacity and below permanent wilting point",
+"None of these"
+],
+"page": "233-234",
+"q": "Available water is the water present between which two soil moisture limits?",
+"serial": "1186",
+"src_row": 770,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1186"
+},
+{
+"expl": "Pressure potential, created by overlying water, is always positive.",
+"key": 0,
+"o": [
+"positive",
+"negative",
+"sometimes positive",
+"sometimes negative",
+"None of these"
+],
+"page": "233-234",
+"q": "Pressure potential in soil water is always",
+"serial": "1187",
+"src_row": 771,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "233-234:1187"
+}
+],
+"rolled": false,
+"row_from": 753,
+"row_to": 772,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 753,
+"seeded_from": "2026-10-25",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-25",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
