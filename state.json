@@ -217491,7 +217491,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-26T17:58:12+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 0,
+"o": [
+"Monoculture",
+"Polyculture",
+"Mixed culture",
+"Aquaponics",
+"None of these"
+],
+"page": "",
+"q": "Which practice is most common in trout culture?",
+"serial": "1sUgWsko:2633",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2633"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Increase in heterozygosity",
+"Reduction in heterozygosity",
+"Increase in fertility",
+"Enhancement of vigor",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of inbreeding depression in cross-pollinated species?",
+"serial": "1UgnIe-g:233",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:233"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"GROMOR",
+"IBDU",
+"CDU",
+"N-Serve",
+"None of these"
+],
+"page": "",
+"q": "What is the trade name of urea & ammonium phosphate grade 29:29:0?",
+"serial": "17U0MEc-:1231",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1231"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Photorespiration",
+"Warburg effect",
+"Photooxidation",
+"Oxidative phosphorylation",
+"None of these"
+],
+"page": "",
+"q": "What is the term for the inhibition of photosynthesis by the presence of oxygen?",
+"serial": "1UgnIe-g:1572",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1572"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Roots",
+"Stem internodes and axillary buds",
+"Flowers",
+"Fruits",
+"None of these"
+],
+"page": "",
+"q": "Which part of the brinjal plant is primarily affected by the 'Little Leaf' disease, leading to a bushy appearance?",
+"serial": "1sUgWsko:3860",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3860"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Water droplets",
+"Ice crystals",
+"Dust particles",
+"Gaseous vapour",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes the composition of Cirrocumulus clouds?",
+"serial": "1sUgWsko:5720",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5720"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"O.T. Avery, C.M. Macleod and M. McCartey",
+"A.D. Hershey and M. Chase",
+"J.D. Watson and F.H.C. Crick",
+"F. Jacob and J. Monod",
+"None of these"
+],
+"page": "",
+"q": "Which scientist demonstrated that DNA is the genetic material in E. coli phage T2?",
+"serial": "1bxM1Q-4:1871",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1871"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Percentage change in quantity supplied / Percentage change in its price",
+"Percentage change in its price / Percentage change in quantity supplied",
+"Change in quantity supplied / Change in its price",
+"Change in its price / Change in quantity supplied",
+"None of these"
+],
+"page": "",
+"q": "What is the formula for price elasticity of supply?",
+"serial": "128DIQLj:2412",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2412"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Water",
+"Ethylene glycol",
+"Sodium chloride",
+"Acetic acid",
+"None of these"
+],
+"page": "",
+"q": "The surface area of clay minerals is determined using which of the following reagents?",
+"serial": "128DIQLj:1268",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1268"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Vitamin A",
+"Vitamin D3",
+"Vitamin E",
+"Vitamin B2",
+"None of these"
+],
+"page": "",
+"q": "Which vitamin deficiency causes xerophthalmia in poultry?",
+"serial": "1sUgWsko:3501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3501"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ber",
+"Jackfruit",
+"Guava",
+"Mango",
+"None of these"
+],
+"page": "",
+"q": "According to the list, which of the following is NOT mentioned as a \u201cPoor man\u2019s fruit\u201d?",
+"serial": "1YcJWVgW:70",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:70"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"50 ppm",
+"0\u201310 ppm",
+"0\u20135 ppm",
+"100\u2013150 ppm",
+"None of these"
+],
+"page": "",
+"q": "What is the typical CO\u2082 compensation point range for C4 plants?",
+"serial": "1UgnIe-g:1557",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1557"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"West Bengal",
+"Rajasthan",
+"Odisha",
+"Andhra Pradesh",
+"None of these"
+],
+"page": "",
+"q": "Which of the following states does NOT have coastal saline soils listed in the table?",
+"serial": "1sUgWsko:7070",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7070"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Leaching",
+"Sub\u2011soiling",
+"Deep\u2011ploughing",
+"Application of lime",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT mentioned as a reclamation method for saline soils?",
+"serial": "128DIQLj:1506",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1506"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Recurrent selection",
+"Pedigree method",
+"Backcross method",
+"Mass selection",
+"None of these"
+],
+"page": "",
+"q": "Which breeding method is described as repeatedly backcrossing hybrid and subsequent progenies to one of the parents, making the genotype increasingly similar to the recurrent parent?",
+"serial": "1sUgWsko:5922",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5922"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Iso-cost lines",
+"Border lines",
+"Iso-clines",
+"Isoquants",
+"None of these"
+],
+"page": "",
+"q": "What are Ridge Lines also known as?",
+"serial": "1bxM1Q-4:2303",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2303"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"hue",
+"value",
+"chroma",
+"saturation",
+"None of these"
+],
+"page": "",
+"q": "In the Munsell colour chart, which component denotes the purity of colour?",
+"serial": "17U0MEc-:1084",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1084"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Seeds",
+"Cuttings",
+"Suckers",
+"Transplanting",
+"None of these"
+],
+"page": "",
+"q": "What is the primary method of propagation for *Cosmos* spp.?",
+"serial": "1bxM1Q-4:3398",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3398"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Iron",
+"Manganese",
+"Zinc",
+"Boron",
+"None of these"
+],
+"page": "",
+"q": "Which micronutrient is most deficient in Indian soils?",
+"serial": "1sUgWsko:7398",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7398"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20-25 q/ha",
+"40-60 q/ha",
+"80-120 q/ha",
+"140-160 q/ha",
+"None of these"
+],
+"page": "",
+"q": "What is the yield range for garden pea?",
+"serial": "1sUgWsko:328",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:328"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pearl millet hybrid",
+"Onion",
+"Cucurbits",
+"Maize",
+"None of these"
+],
+"page": "",
+"q": "Which crop has the highest isolation distance requirement for foundation seed production?",
+"serial": "17U0MEc-:2546",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2546"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Temperature 3-4 \u00b0C, RH 90-95 %",
+"Temperature 23-18 \u00b0C, Vaportight packing",
+"Temperature 5-10 \u00b0C, RH 80-85 %",
+"Temperature 4-5 \u00b0C, RH 70-75 %",
+"None of these"
+],
+"page": "",
+"q": "Which of the following correctly describes fresh storage conditions for potatoes?",
+"serial": "1bxM1Q-4:907",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:907"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Awareness, Interest, Evaluation, Trial, Adoption",
+"Interest, Awareness, Evaluation, Trial, Adoption",
+"Awareness, Evaluation, Interest, Trial, Adoption",
+"Interest, Evaluation, Awareness, Trial, Adoption",
+"None of these"
+],
+"page": "",
+"q": "What is the correct sequence of the stages of the adoption process?",
+"serial": "1bxM1Q-4:2154",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2154"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Katha and Cutch",
+"Rosin and turpentine",
+"Gum Karaya",
+"Tannin",
+"None of these"
+],
+"page": "",
+"q": "Which product is obtained from Chir pine and blue pine?",
+"serial": "1UgnIe-g:2791",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2791"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"4.0-4.5%",
+"10.20%",
+"11.2-11.5%",
+"62.50%",
+"None of these"
+],
+"page": "",
+"q": "What is the approximate percentage of molasses obtained from cane crushing?",
+"serial": "1sUgWsko:4388",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4388"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Curved backward",
+"Straight and long",
+"Lyre shaped",
+"Short and stubby",
+"None of these"
+],
+"page": "",
+"q": "What is the distinctive shape of the horns in the Tharparkar cattle breed?",
+"serial": "1sUgWsko:2957",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2957"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Overlapping",
+"Coincident",
+"Home gardens",
+"Interpolated",
+"None of these"
+],
+"page": "",
+"q": "Which term describes the spatial arrangement of plants in agroforestry that results in dense mixed stands?",
+"serial": "1sUgWsko:5493",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5493"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Zinc Magniz Carbamate",
+"D,Z-78",
+"Contaf",
+"Rogor",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended spray for controlling Rust in groundnut?",
+"serial": "1bxM1Q-4:2604",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2604"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"7% iodine solution",
+"Water",
+"Antiseptic soap",
+"Alcohol",
+"None of these"
+],
+"page": "",
+"q": "What should be used to dip the navel of a newborn calf?",
+"serial": "1bxM1Q-4:4149",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4149"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Study of soil nutrient composition",
+"Application of meteorology to measure and analyze the physical environment in agricultural systems",
+"Breeding of crop varieties for drought resistance",
+"Design of irrigation infrastructure",
+"None of these"
+],
+"page": "",
+"q": "Agro\u2011meteorology is best described as:",
+"serial": "1sUgWsko:5603",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5603"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1\u20132 years",
+"2\u20133 years",
+"3\u20134 years",
+"5\u20136 years",
+"None of these"
+],
+"page": "",
+"q": "In a RAS, at what age does Rainbow Trout typically reach maturity?",
+"serial": "1sUgWsko:2631",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2631"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Stimulates milk ejection",
+"Regulates udder size",
+"Synthesis and maintenance of milk secretion",
+"Increases milk fat content",
+"None of these"
+],
+"page": "",
+"q": "What is the function of Prolactin in lactation?",
+"serial": "1sUgWsko:2789",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2789"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Pummelo",
+"Trifoliate orange",
+"Tahiti lime",
+"Hazara",
+"None of these"
+],
+"page": "",
+"q": "Which citrus species is deciduous?",
+"serial": "1YcJWVgW:221",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:221"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"The Meat Products Order, 1973",
+"The Solvent Extracted Oil, De-oiled Meal, and Edible Flour (Control) Order, 1967",
+"The Agricultural Produce (Grading and Marking) Act, 1937",
+"The Milk and Milk Products Order, 1992",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a law consolidated under the Food Safety and Standards Act, 2006?",
+"serial": "1sUgWsko:4841",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4841"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"50\u201360%",
+"70\u201375%",
+"80\u201385%",
+"90\u201395%",
+"None of these"
+],
+"page": "",
+"q": "The automatic potato planter saves what percentage of operation time compared to conventional methods?",
+"serial": "1sUgWsko:6410",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6410"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"30 kg",
+"20 kg",
+"10 kg",
+"5 kg",
+"None of these"
+],
+"page": "",
+"q": "According to the seed spacing table, what seed rate (kg/ha) corresponds to a spacing of 30 cm x 30 cm?",
+"serial": "1sUgWsko:466",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:466"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Pure white",
+"Bright yellow",
+"Dark brown",
+"Black and red",
+"None of these"
+],
+"page": "",
+"q": "What is the color of the moths of the top borer pest in sugarcane?",
+"serial": "17U0MEc-:1995",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1995"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"True fishes like carp and catfish",
+"Organisms such as prawn, crab, lobster, mussel, oyster, sea cucumber, frog and sea weeds",
+"Only marine mammals",
+"Freshwater algae",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes non\u2011fin fisheries?",
+"serial": "1sUgWsko:2227",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2227"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"70 S ribosomes",
+"Nucleolus",
+"Plasma membrane",
+"Cell wall",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT found in prokaryotic cells?",
+"serial": "17U0MEc-:2421",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2421"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Removal of weed seeds from soil",
+"Increasing weed seed longevity",
+"Promoting weed growth",
+"Enhancing seed dormancy",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of weed seed withdrawal?",
+"serial": "17U0MEc-:840",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:840"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"M9",
+"MM 106",
+"M26",
+"M-27",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is classified as an ultra-dwarf rootstock for apple trees?",
+"serial": "1sUgWsko:1180",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1180"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Phototropism",
+"Apical dominance",
+"Gravitropism",
+"Abscission",
+"None of these"
+],
+"page": "",
+"q": "What is the phenomenon where the apical bud suppresses the growth of lateral buds called?",
+"serial": "1UgnIe-g:1644",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1644"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gram",
+"Arhar",
+"Moong",
+"Masoor",
+"None of these"
+],
+"page": "",
+"q": "Which pulse crop has the highest production in India according to the latest estimate?",
+"serial": "17U0MEc-:13",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:13"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Fish farm",
+"Prawn farm",
+"Seaweed farm",
+"Oyster farm",
+"None of these"
+],
+"page": "",
+"q": "Which type of farm, classified by species, involves cultivation of marine macro\u2011algae?",
+"serial": "1sUgWsko:2220",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2220"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"To increase soil fertility",
+"To control pests, diseases, and weeds",
+"To improve soil texture",
+"To enhance water retention",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of soil solarization?",
+"serial": "1UgnIe-g:960",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:960"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Statice",
+"Marigold",
+"Carnation",
+"Rose",
+"None of these"
+],
+"page": "",
+"q": "Which plant is suitable for dry flowers?",
+"serial": "1YcJWVgW:1000",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1000"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Presence of inhibitors like ABA",
+"Arrest of metabolic activity",
+"Immature embryo",
+"Hard seed coat",
+"None of these"
+],
+"page": "",
+"q": "Morphological endogenous dormancy is characterized by which of the following features?",
+"serial": "1sUgWsko:5002",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5002"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cynodon dactylon",
+"Cenchrus ciliaris",
+"Convolvulus arvensis",
+"Parthenium hysterophorus",
+"None of these"
+],
+"page": "",
+"q": "Which weed is known as 'Bermuda grass, Doob'?",
+"serial": "17U0MEc-:859",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:859"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Translate HLL to machine language",
+"Translate assembly language to machine language",
+"Execute machine language instructions",
+"Manage hardware components",
+"None of these"
+],
+"page": "",
+"q": "What is the primary function of an assembler?",
+"serial": "1bxM1Q-4:3734",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3734"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5%",
+"8%",
+"10%",
+"12%",
+"None of these"
+],
+"page": "",
+"q": "What percentage of total meat production in India is provided by pigs?",
+"serial": "1bxM1Q-4:4119",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4119"
+}
+],
+"set_no": 44,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
