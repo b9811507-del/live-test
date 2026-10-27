@@ -226665,7 +226665,10 @@
 "started_at": "2026-10-27T18:00:24+05:30",
 "step": 8,
 "tmr_note": 34248,
-"tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 241-246\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 131, 132, 133\n\ud83c\udf06 6:00 PM \u00b7 <b>AFO MAINS TEST (NEW PATTERN)</b> \u2014 full-length set 46 (50 questions, +2 / \u22120.5)"
+"tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 241-246\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 131, 132, 133\n\ud83c\udf06 6:00 PM \u00b7 <b>AFO MAINS TEST (NEW PATTERN)</b> \u2014 full-length set 46 (50 questions, +2 / \u22120.5)",
+"unpinned": [
+34160
+]
 },
 "iari": {
 "announced_at": "2026-10-27T14:30:00+05:30",
@@ -230224,7 +230227,8 @@
 34012,
 34039,
 34068,
-34131
+34131,
+34160
 ],
 "version": "v11.4.9"
 }
