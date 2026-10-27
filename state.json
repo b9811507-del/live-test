@@ -222835,8 +222835,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 903,
 "names": {},
+"plan": {
+"bidx_next": 903,
+"built_at": "2026-10-27T14:28:09+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 128-130",
+"pages_list": [
+128,
+129,
+130
+],
+"questions": [
+{
+"expl": "Fats liberate 9.0 calories per gram, which is higher than carbohydrates (4 kcal/g) and proteins (4 kcal/g). Vitamins do not provide energy.",
+"key": 2,
+"o": [
+"Carbohydrates",
+"Proteins",
+"Fats",
+"Vitamins",
+"None of these"
+],
+"page": "128",
+"q": "Which nutrient provides the highest energy per gram when metabolized in the human body?",
+"serial": "890",
+"src_row": 882,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:890"
+},
+{
+"expl": "Pecanut has the highest fat content at 70.0%, as listed in the fruit sources.",
+"key": 3,
+"o": [
+"Avocado",
+"Cashewnut",
+"Almond",
+"Pecanut",
+"None of these"
+],
+"page": "128",
+"q": "Among the given fruit sources, which has the highest percentage of fat content?",
+"serial": "891",
+"src_row": 883,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:891"
+},
+{
+"expl": "Small Bitter Gourd has the lowest fat content at 1.0 g/100g among the vegetable sources provided.",
+"key": 2,
+"o": [
+"Bengal Gram",
+"Potato",
+"Small Bitter Gourd",
+"Carrot",
+"None of these"
+],
+"page": "128",
+"q": "Which vegetable source listed has the lowest fat content per 100g?",
+"serial": "892",
+"src_row": 884,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:892"
+},
+{
+"expl": "Vitamin C is water-soluble, while Vitamins A, D, E, and K are fat-soluble.",
+"key": 2,
+"o": [
+"Vitamin A",
+"Vitamin D",
+"Vitamin C",
+"Vitamin K",
+"None of these"
+],
+"page": "128",
+"q": "Which of the following vitamins is NOT fat-soluble?",
+"serial": "893",
+"src_row": 885,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:893"
+},
+{
+"expl": "The daily requirement of Vitamin A is specified as 1.2 mg/day in the source.",
+"key": 2,
+"o": [
+"0.5 mg/day",
+"1.0 mg/day",
+"1.2 mg/day",
+"2.0 mg/day",
+"None of these"
+],
+"page": "128",
+"q": "What is the daily requirement of Vitamin A for an individual?",
+"serial": "894",
+"src_row": 886,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:894"
+},
+{
+"expl": "Scurvy is caused by Vitamin C deficiency, not Vitamin A. The other symptoms are linked to Vitamin A deficiency.",
+"key": 3,
+"o": [
+"Night blindness",
+"Xerophthalmia",
+"Keratnisation of epithelial cells",
+"Scurvy",
+"None of these"
+],
+"page": "128",
+"q": "Which symptom is NOT associated with Vitamin A deficiency?",
+"serial": "895",
+"src_row": 887,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:895"
+},
+{
+"expl": "Carrot provides the maximum Vitamin A per unit area, as explicitly stated in the source.",
+"key": 0,
+"o": [
+"Carrot",
+"Beet Leaves",
+"Turnip Leaves",
+"Muskmelon",
+"None of these"
+],
+"page": "128",
+"q": "Which vegetable source provides the highest amount of Vitamin A (in IU) per unit area?",
+"serial": "896",
+"src_row": 888,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "128:896"
+},
+{
+"expl": "Bathua Leaves contain 113000 IU of vitamin A per 100g, which is significantly higher than Colocasia Leaves (10278 IU) and other options.",
+"key": 1,
+"o": [
+"Colocasia Leaves",
+"Bathua Leaves",
+"Palak",
+"Pea",
+"None of these"
+],
+"page": "129",
+"q": "Which leafy vegetable has the highest vitamin A content per 100g as per the given data?",
+"serial": "897",
+"src_row": 889,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:897"
+},
+{
+"expl": "The source explicitly states that the daily requirement of Vitamin B1 (Thiamine) is 1.2 mg/day.",
+"key": 1,
+"o": [
+"1.0 mg/day",
+"1.2 mg/day",
+"1.5 mg/day",
+"2.0 mg/day",
+"None of these"
+],
+"page": "129",
+"q": "What is the daily requirement of Vitamin B1 (Thiamine) for humans?",
+"serial": "898",
+"src_row": 890,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:898"
+},
+{
+"expl": "Night blindness is not listed as a deficiency symptom of Vitamin B1. The source lists Beriberi, muscular weakness, loss of weight, neuritis, loss of appetite, and dilation of heart.",
+"key": 2,
+"o": [
+"Beriberi",
+"Muscular weakness",
+"Night blindness",
+"Dilation of heart",
+"None of these"
+],
+"page": "129",
+"q": "Which of the following is NOT a deficiency symptom of Vitamin B1 (Thiamine)?",
+"serial": "899",
+"src_row": 891,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:899"
+},
+{
+"expl": "Cashewnut contains 630 mg/100g of Vitamin B1, which is higher than Walnut (450 mg/100g), Almond (240 mg/100g), and Pea (0.25 mg/100g).",
+"key": 2,
+"o": [
+"Almond",
+"Walnut",
+"Cashewnut",
+"Pea",
+"None of these"
+],
+"page": "129",
+"q": "Among the given sources, which nut has the highest Vitamin B1 (Thiamine) content per 100g?",
+"serial": "900",
+"src_row": 892,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:900"
+},
+{
+"expl": "The source lists dry scaly skin, cracks in the corners of the mouth, and cracking of lips as deficiency symptoms of Vitamin B2 (Riboflavin).",
+"key": 1,
+"o": [
+"Beriberi",
+"Dry scaly skin",
+"Dilation of heart",
+"Loss of appetite",
+"None of these"
+],
+"page": "129",
+"q": "What deficiency symptom is associated with Vitamin B2 (Riboflavin)?",
+"serial": "901",
+"src_row": 893,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:901"
+},
+{
+"expl": "Bael contains 1191 mg/100g of Vitamin B2, which is the highest among the listed fruits (Papaya: 250 mg/100g, Pineapple: 120 mg/100g, Chillies: 0.39 mg/100g).",
+"key": 2,
+"o": [
+"Papaya",
+"Pineapple",
+"Bael",
+"Chillies",
+"None of these"
+],
+"page": "129",
+"q": "Which fruit has the highest Vitamin B2 (Riboflavin) content per 100g as per the data?",
+"serial": "902",
+"src_row": 894,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:902"
+},
+{
+"expl": "The source explicitly states that the daily requirement of Vitamin B3 (Nicotinic acid) is 19 mg/day.",
+"key": 2,
+"o": [
+"15 mg/day",
+"17 mg/day",
+"19 mg/day",
+"21 mg/day",
+"None of these"
+],
+"page": "129",
+"q": "What is the daily requirement of Vitamin B3 (Nicotinic acid)?",
+"serial": "903",
+"src_row": 895,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "129:903"
+},
+{
+"expl": "Pellagra is listed under Vitamin-B6 (Pyridoxine) deficiency symptoms in the source.",
+"key": 0,
+"o": [
+"Vitamin-B6",
+"Vitamin-B12",
+"Vitamin-C",
+"Vitamin-A",
+"None of these"
+],
+"page": "130",
+"q": "Which vitamin deficiency causes pellagra, characterized by nervous breakdown and stomach disorders?",
+"serial": "904",
+"src_row": 896,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:904"
+},
+{
+"expl": "The source explicitly states that the daily requirement of Vitamin-B12 is 2.4 \u00b5g/day.",
+"key": 1,
+"o": [
+"1.3 mg/day",
+"2.4 \u00b5g/day",
+"70 mg/day",
+"122.5 mg/day",
+"None of these"
+],
+"page": "130",
+"q": "What is the daily requirement of Vitamin-B12 (Cyanocobalamin) for humans?",
+"serial": "905",
+"src_row": 897,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:905"
+},
+{
+"expl": "Vitamin-B12 is provided by animal foods only and is not found in vegetables and fruits like spinach.",
+"key": 2,
+"o": [
+"Eggs",
+"Milk",
+"Spinach",
+"Fish",
+"None of these"
+],
+"page": "130",
+"q": "Which of the following is NOT a source of Vitamin-B12 as per the source?",
+"serial": "906",
+"src_row": 898,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:906"
+},
+{
+"expl": "Barbados Cherry has 1400 mg/100g of Vitamin-C, the highest among the listed sources.",
+"key": 2,
+"o": [
+"Guava",
+"Aonla",
+"Barbados Cherry",
+"Drumstick Leaves",
+"None of these"
+],
+"page": "130",
+"q": "Which fruit has the highest Vitamin-C content per 100g according to the source?",
+"serial": "907",
+"src_row": 899,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:907"
+},
+{
+"expl": "Scurvy is explicitly mentioned as a deficiency symptom of Vitamin-C in the source.",
+"key": 2,
+"o": [
+"Pernicious anemia",
+"Pellagra",
+"Scurvy",
+"High Homocysteine",
+"None of these"
+],
+"page": "130",
+"q": "What is a primary deficiency symptom of Vitamin-C?",
+"serial": "908",
+"src_row": 900,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:908"
+},
+{
+"expl": "Litchi has 122.5 mg/100g of Vitamin-B6, the highest among the listed sources.",
+"key": 2,
+"o": [
+"Palak",
+"Amaranthus Leaves",
+"Litchi",
+"Turnip Greens",
+"None of these"
+],
+"page": "130",
+"q": "Which vegetable has the highest Vitamin-B6 content per 100g as per the source?",
+"serial": "909",
+"src_row": 901,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:909"
+},
+{
+"expl": "The source states that approximately 90% of Vitamin-C is obtained from fruits and vegetables.",
+"key": 2,
+"o": [
+"50%",
+"75%",
+"90%",
+"100%",
+"None of these"
+],
+"page": "130",
+"q": "Approximately what percentage of Vitamin-C is obtained from fruits and vegetables?",
+"serial": "910",
+"src_row": 902,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "130:910"
+}
+],
+"row_from": 882,
+"row_to": 903,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 882,
+"seeded_from": "2026-10-26"
+},
 "qidx": 0,
+"seeded_from": "2026-10-26",
+"skips": [],
 "step": 0
 },
 "malwa": {
