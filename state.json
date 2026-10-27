@@ -222830,7 +222830,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-27T17:57:20+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 1,
+"o": [
+"200 kg/ha",
+"300 kg/ha",
+"400 kg/ha",
+"500 kg/ha",
+"None of these"
+],
+"page": "",
+"q": "How much lime should be applied per hectare during pond preparation?",
+"serial": "1sUgWsko:2508",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2508"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"It can be easily modified by farming practices",
+"It determines the soil's chemical composition",
+"It cannot be changed",
+"It is the only property affecting soil fertility",
+"None of these"
+],
+"page": "",
+"q": "What is the primary reason soil texture is considered a basic property of soil?",
+"serial": "1sUgWsko:6927",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6927"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Protein",
+"Fat",
+"NFE",
+"Ash",
+"None of these"
+],
+"page": "",
+"q": "Which proximate principle cannot be determined by analysis?",
+"serial": "128DIQLj:1863",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1863"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Vitamin B5 and B6",
+"Vitamin B1 and B2",
+"Vitamin B12 and B9",
+"Vitamin B3 and B7",
+"None of these"
+],
+"page": "",
+"q": "Goose\u2011stepping in pigs is caused by deficiency of which vitamins?",
+"serial": "128DIQLj:1792",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1792"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Bracon kirkpatricki",
+"Trichogramma japonicum",
+"Aphelinus mali",
+"Encarsia permiciosi",
+"None of these"
+],
+"page": "",
+"q": "Which parasitoid is used to control the pink bollworm in cotton and sugarcane?",
+"serial": "1sUgWsko:1788",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1788"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Guernsey",
+"Red Dane",
+"Holstein",
+"Jersey",
+"None of these"
+],
+"page": "",
+"q": "Which cattle breed mentioned produces milk that is golden yellow due to beta carotene?",
+"serial": "1sUgWsko:3011",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3011"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Carrot",
+"Onion",
+"Beet root",
+"Radish",
+"None of these"
+],
+"page": "",
+"q": "Which crop among the following has the lowest standard moisture content (%) for seeds?",
+"serial": "1sUgWsko:4986",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4986"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"At 20 cm from the ground",
+"At 35 cm from the ground",
+"At 60 cm from the ground",
+"At 8-10 cm from the ground",
+"None of these"
+],
+"page": "",
+"q": "When is the first tipping done in tea bushes?",
+"serial": "1sUgWsko:1208",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1208"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sewagram",
+"Shri Niketan Project",
+"Marthandam project",
+"Gurgaon experiment",
+"None of these"
+],
+"page": "",
+"q": "Which pre-independence community development programme was founded by Rabindranath Tagore?",
+"serial": "128DIQLj:2121",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2121"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Cotton",
+"Jute",
+"Soybean",
+"Jatropha",
+"None of these"
+],
+"page": "",
+"q": "The special name 'Golden fiber' is associated with which crop?",
+"serial": "1sUgWsko:4347",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4347"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Norman Borlaug",
+"Glubler B. Triplets",
+"M. S. Swaminathan",
+"Robert F. Kennedy",
+"None of these"
+],
+"page": "",
+"q": "Who is recognized as the father of zero tillage?",
+"serial": "1sUgWsko:6429",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6429"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Coconut",
+"Kiwi fruit",
+"Tea",
+"Cashew nut",
+"None of these"
+],
+"page": "",
+"q": "The nickname \"Tree of Heaven, Kalpavriksh, Tree of life\" refers to which crop?",
+"serial": "1YcJWVgW:72",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:72"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Colour",
+"Flavour",
+"Nutritional supplement",
+"Preservative",
+"None of these"
+],
+"page": "",
+"q": "Oleoresin extracted from chilli is used in the food industry for which of the following purposes?",
+"serial": "1YcJWVgW:566",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:566"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Heterozygosity",
+"Polyploidy",
+"Homozygosity",
+"Chromosomal rearrangement",
+"None of these"
+],
+"page": "",
+"q": "Self\u2011pollination (autogamy) most directly leads to which genetic condition in the offspring?",
+"serial": "1sUgWsko:5890",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5890"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Held by a negative tension of less than 0.3 atm",
+"Held between field capacity and hygroscopic coefficient",
+"Held at a tension of 0.3 to 31 atm",
+"Held in the root zone of plants",
+"None of these"
+],
+"page": "",
+"q": "What is the primary characteristic of gravitational water in soil?",
+"serial": "17U0MEc-:1187",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1187"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Maharashtra",
+"Gujrat",
+"Agra district in Uttar Pradesh",
+"Marathwada",
+"None of these"
+],
+"page": "",
+"q": "The Bhadawari cattle breed originates from which region?",
+"serial": "1sUgWsko:3191",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3191"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"15-20",
+"1-5",
+"30-40",
+"50-60",
+"None of these"
+],
+"page": "",
+"q": "A typical wheat spike contains how many spikelets?",
+"serial": "128DIQLj:257",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:257"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.8 to 1.0 kg/cm\u00b2",
+"1.1 to 1.4 kg/cm\u00b2",
+"1.5 to 1.8 kg/cm\u00b2",
+"2.0 to 2.5 kg/cm\u00b2",
+"None of these"
+],
+"page": "",
+"q": "What is the typical pressure range for tractor tyres as mentioned in the source?",
+"serial": "1sUgWsko:6083",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6083"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"y = a + bx + cx\u00b2",
+"y = a + bx",
+"y = y + a (1-10^{-kx})",
+"y = dy/dx = (A-y) C",
+"None of these"
+],
+"page": "",
+"q": "Which equation represents a linear response in the relationship between input and output?",
+"serial": "17U0MEc-:204",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:204"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"*Aster*",
+"*Dianthus caryophyllus*",
+"*Chrysanthemum* spp.",
+"*Antirrhinum*",
+"None of these"
+],
+"page": "",
+"q": "Which plant is particularly suited for pots and is known as Carnation Pink?",
+"serial": "1bxM1Q-4:3399",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3399"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Saccharum barberi",
+"Saccharum officinarum",
+"Saccharum spontaneous",
+"Saccharum robustum",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is known as the noble cane?",
+"serial": "17U0MEc-:657",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:657"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"15 April, 1994",
+"1 January, 1995",
+"15 April, 1989",
+"1 January, 1994",
+"None of these"
+],
+"page": "",
+"q": "When was the Dunkel Draft signed, leading to the establishment of the WTO?",
+"serial": "128DIQLj:2691",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2691"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"West Bengal",
+"Tamil Nadu",
+"Maharashtra",
+"Uttar Pradesh",
+"None of these"
+],
+"page": "",
+"q": "Which state in India has the largest area and production of vegetables?",
+"serial": "17U0MEc-:1528",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1528"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Forest soil",
+"Virgin soil",
+"Arable soil",
+"Clay-rich soil",
+"None of these"
+],
+"page": "",
+"q": "In which type of soil is the 'O' horizon typically absent?",
+"serial": "1sUgWsko:6911",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6911"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"AABB",
+"AABBDDRR",
+"ABDR",
+"AB",
+"None of these"
+],
+"page": "",
+"q": "Which genome composition characterizes the allohexaploid wheat (AABBDDRR)?",
+"serial": "1UgnIe-g:385",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:385"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"TPP decreases at an increasing rate",
+"TPP increases at an increasing rate",
+"TPP increases at a decreasing rate",
+"TPP remains constant",
+"None of these"
+],
+"page": "",
+"q": "What happens to the Total Physical Product (TPP) in Stage III of production?",
+"serial": "128DIQLj:2577",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2577"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Imitative Entrepreneur",
+"Fabian Entrepreneur",
+"Innovative Entrepreneur",
+"Drone Entrepreneur",
+"None of these"
+],
+"page": "",
+"q": "Which type of entrepreneur is characterized by a sense of innovativeness and introduces new innovations?",
+"serial": "128DIQLj:2234",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2234"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Urea formaldehyde",
+"Thiourea",
+"Neem Cake",
+"Rock phosphate",
+"None of these"
+],
+"page": "",
+"q": "Which compound is used to reduce the solubility of nitrogen fertilizer in slow-release fertilizers?",
+"serial": "17U0MEc-:1228",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1228"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Only bony fishes",
+"Bony fishes, sharks, and some rays",
+"Molluscs",
+"Fish bearing scales",
+"None of these"
+],
+"page": "",
+"q": "The term \"finfish\" refers to which of the following groups?",
+"serial": "1sUgWsko:2166",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2166"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Sunflower",
+"Rapeseed and Mustard",
+"Groundnut",
+"Black gram",
+"None of these"
+],
+"page": "",
+"q": "Which crop\u2019s oil percentage is enhanced by cool temperature, clear dry weather, bright sunshine and adequate soil moisture?",
+"serial": "1bxM1Q-4:522",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:522"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Aster",
+"Salvia",
+"Carnation",
+"Delphinium",
+"None of these"
+],
+"page": "",
+"q": "Which plant is classified as a short day plant?",
+"serial": "1YcJWVgW:996",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:996"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cardboard sheet",
+"GI sheet",
+"Plastic sheet",
+"Wire mesh",
+"None of these"
+],
+"page": "",
+"q": "Which of the following materials is NOT mentioned as suitable for constructing a brooder guard?",
+"serial": "1sUgWsko:3477",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3477"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Economic and ecological",
+"Productive and protective",
+"Spatial and temporal",
+"Silvipastoral and aquaforestry",
+"None of these"
+],
+"page": "",
+"q": "What are the two functional categories of agroforestry systems?",
+"serial": "1sUgWsko:5494",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5494"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Calcium",
+"None of these"
+],
+"page": "",
+"q": "Which nutrient is referred to as the 'Traffic policeman of the plant'?",
+"serial": "1sUgWsko:7337",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7337"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Piercing and sucking",
+"Rasping",
+"Chewing and lapping",
+"Chewing and biting",
+"None of these"
+],
+"page": "",
+"q": "What type of mouthparts do bees have?",
+"serial": "1UgnIe-g:1860",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1860"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"P solubilizing fungi in plant roots",
+"Nitrogen fixation",
+"Pest control",
+"Soil aeration",
+"None of these"
+],
+"page": "",
+"q": "What is the primary use of VAM (Vascular Arbuscular Mycorrhiza)?",
+"serial": "17U0MEc-:220",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:220"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Domestic procurement only",
+"Import only",
+"Both domestic procurement and import",
+"Export only",
+"None of these"
+],
+"page": "",
+"q": "How can buffer stock be built?",
+"serial": "1sUgWsko:4083",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4083"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Karnataka",
+"Maharashtra",
+"Andhra Pradesh",
+"Gujarat",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a top\u20113 producer state of sunflower in India?",
+"serial": "128DIQLj:433",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:433"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"100 meters",
+"150 meters",
+"180 meters",
+"200 meters",
+"None of these"
+],
+"page": "",
+"q": "What is the certification distance prescribed for loose smut of wheat?",
+"serial": "1sUgWsko:4933",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4933"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Formation of vesicles on the dental pad",
+"Increased flow of saliva with fetid odor",
+"Shooting diarrhea",
+"Temperature rise to 105-107\u00b0F",
+"None of these"
+],
+"page": "",
+"q": "What is a unique feature of Foot and Mouth Disease (FMD) that differentiates it from the first disease described?",
+"serial": "1sUgWsko:2842",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2842"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Surface irrigation",
+"Sub\u2011surface irrigation",
+"Pressurized irrigation",
+"Drip irrigation",
+"None of these"
+],
+"page": "",
+"q": "Which irrigation method accounts for about 95% of India's irrigated area?",
+"serial": "128DIQLj:761",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:761"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"J-shaped",
+"S-shaped",
+"Linear",
+"Parabolic",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes the shape of a logistic population growth curve?",
+"serial": "1UgnIe-g:1962",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1962"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"x\u00b2 = \u03a3 (O-E)\u00b2 / E",
+"x\u00b2 = \u03a3 (O+E)\u00b2 / E",
+"x\u00b2 = \u03a3 (O-E) / E",
+"x\u00b2 = \u03a3 (O+E) / E",
+"None of these"
+],
+"page": "",
+"q": "What is the formula for calculating Chi-square?",
+"serial": "128DIQLj:2815",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2815"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"60%",
+"70%",
+"80%",
+"90%",
+"None of these"
+],
+"page": "",
+"q": "Freshly harvested potatoes contain approximately ___% water.",
+"serial": "1YcJWVgW:602",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:602"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Flowering",
+"Seedling",
+"Tasselling",
+"Blooming",
+"None of these"
+],
+"page": "",
+"q": "During which growth stage is irrigation most critical for groundnut?",
+"serial": "128DIQLj:814",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:814"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Inosilicates",
+"Phyllosilicates",
+"Tectosilicates",
+"Nesosilicates",
+"None of these"
+],
+"page": "",
+"q": "Which silicate mineral group is classified as the most important for clay formation?",
+"serial": "1sUgWsko:6854",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6854"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"12th July 1982",
+"1983",
+"1985",
+"1986",
+"None of these"
+],
+"page": "",
+"q": "When was the National Bank for Agriculture & Rural Development (NABARD) established?",
+"serial": "17U0MEc-:79",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:79"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Molybdenum",
+"Zinc",
+"Boron",
+"Iron",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an immobile nutrient in plants?",
+"serial": "1sUgWsko:7388",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7388"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Increased heterozygosity within the offspring.",
+"Introduction of new species traits.",
+"Exploiting increased homozygosity and differences between inbred lines.",
+"Reducing the number of generations needed for selection.",
+"None of these"
+],
+"page": "",
+"q": "The primary genetic advantage sought in a line crossing is:",
+"serial": "1sUgWsko:2907",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2907"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Setaceous",
+"Filiform",
+"Moniliform",
+"Bipectinate",
+"None of these"
+],
+"page": "",
+"q": "What type of antennae do termites have?",
+"serial": "1bxM1Q-4:2396",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2396"
+}
+],
+"set_no": 45,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
