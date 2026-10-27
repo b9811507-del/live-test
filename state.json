@@ -222841,9 +222841,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 792,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 792,
+"built_at": "2026-10-27T10:57:50+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 235-240",
+"pages_blocks": [
+"235-236",
+"237-238",
+"239-240"
+],
+"questions": [
+{
+"expl": "Superfluous water refers to gravitational water that is temporarily in the soil after rainfall or irrigation and is not used by plants.",
+"key": 2,
+"o": [
+"Capillary water that remains in the soil after irrigation",
+"Hygroscopic water retained by soil particles",
+"Gravitational water temporarily present after rainfall or irrigation",
+"Water held at the permanent wilting point",
+"None of these"
+],
+"page": "235-236",
+"q": "Which of the following best describes superfluous water?",
+"serial": "1191",
+"src_row": 772,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "235-236:1191"
+},
+{
+"expl": "Field capacity is indicated at 0.33 bar (or -33 kPa) in the classification diagram.",
+"key": 1,
+"o": [
+"0 bar",
+"0.33 bar",
+"15 bar",
+"31 bar",
+"None of these"
+],
+"page": "235-236",
+"q": "In the soil water classification diagram, which tension value corresponds to field capacity?",
+"serial": "1192",
+"src_row": 773,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "235-236:1192"
+},
+{
+"expl": "The text states that at saturation the water content is about twice that of the field capacity.",
+"key": 2,
+"o": [
+"Equal",
+"Half",
+"Twice",
+"Three times",
+"None of these"
+],
+"page": "235-236",
+"q": "At saturation, the soil water content is about how many times the water content at field capacity?",
+"serial": "1193",
+"src_row": 774,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "235-236:1193"
+},
+{
+"expl": "PWP is defined at a soil water potential of about -15 bars (or -1500 kPa).",
+"key": 1,
+"o": [
+"-0.33 bar",
+"-15 bar",
+"-31 bar",
+"-60 bar",
+"None of these"
+],
+"page": "235-236",
+"q": "Permanent wilting point occurs at approximately what soil water potential?",
+"serial": "1194",
+"src_row": 775,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "235-236:1194"
+},
+{
+"expl": "The ASM formula uses FC, PWP, bulk density, and depth; soil temperature is not included.",
+"key": 3,
+"o": [
+"Field capacity (FC)",
+"Permanent wilting point (PWP)",
+"Bulk density (pb)",
+"Soil temperature",
+"None of these"
+],
+"page": "235-236",
+"q": "Which of the following is NOT a variable in the formula for available soil moisture (ASM)?",
+"serial": "1195",
+"src_row": 776,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "235-236:1195"
+},
+{
+"expl": "The source lists gravitational, capillary, and hygroscopic water; osmotic water is not mentioned.",
+"key": 3,
+"o": [
+"Gravitational water",
+"Capillary water",
+"Hygroscopic water",
+"Osmotic water",
+"None of these"
+],
+"page": "235-236",
+"q": "Which of the following is NOT a type of soil water mentioned in the source?",
+"serial": "1196",
+"src_row": 777,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "235-236:1196"
+},
+{
+"expl": "The hygroscopic coefficient is defined under conditions of high relative humidity, about 98%.",
+"key": 2,
+"o": [
+"50%",
+"75%",
+"98%",
+"100%",
+"None of these"
+],
+"page": "237-238",
+"q": "At what relative humidity is the hygroscopic coefficient of soil measured?",
+"serial": "1201",
+"src_row": 778,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1201"
+},
+{
+"expl": "The matric suction at the hygroscopic coefficient is about 31 bars.",
+"key": 2,
+"o": [
+"10 bars",
+"20 bars",
+"31 bars",
+"50 bars",
+"None of these"
+],
+"page": "237-238",
+"q": "What is the approximate matric suction of soil at the hygroscopic coefficient?",
+"serial": "1202",
+"src_row": 779,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1202"
+},
+{
+"expl": "Clay soil\u2019s moisture equivalent is greater than its field capacity.",
+"key": 2,
+"o": [
+"Sandy",
+"Loamy",
+"Clay",
+"Silt loam",
+"None of these"
+],
+"page": "237-238",
+"q": "Which soil texture has a moisture equivalent greater than its field capacity?",
+"serial": "1203",
+"src_row": 780,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1203"
+},
+{
+"expl": "pF is defined as the logarithm of soil moisture tension measured in cm of water column.",
+"key": 0,
+"o": [
+"Soil moisture tension in cm of water column",
+"Soil moisture content",
+"Soil density",
+"Hydraulic conductivity",
+"None of these"
+],
+"page": "237-238",
+"q": "The pF value is the logarithm of which of the following?",
+"serial": "1204",
+"src_row": 781,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1204"
+},
+{
+"expl": "Sandy soil\u2019s moisture characteristic curve is L\u2011shaped.",
+"key": 0,
+"o": [
+"L-shaped",
+"I-shaped",
+"U-shaped",
+"S-shaped",
+"None of these"
+],
+"page": "237-238",
+"q": "Which shape best describes the soil moisture characteristic curve of sandy soil?",
+"serial": "1205",
+"src_row": 782,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1205"
+},
+{
+"expl": "Hysteresis shows higher moisture content at a given suction during desorption.",
+"key": 1,
+"o": [
+"Sorption (wetting)",
+"Desorption (drying)",
+"Both processes equally",
+"Neither process",
+"None of these"
+],
+"page": "237-238",
+"q": "In hysteresis, the moisture content at a given suction is greater during which process?",
+"serial": "1206",
+"src_row": 783,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1206"
+},
+{
+"expl": "Richards and Wadleigh suggested that plant\u2011available water decreases with decreasing soil moisture.",
+"key": 1,
+"o": [
+"Veihmeyer and Hendrickson (1927,1950)",
+"Richards and Wadleigh (1952)",
+"Modern concept (25% DASM)",
+"All of the above",
+"None of these"
+],
+"page": "237-238",
+"q": "Which theory states that water availability to plants decreases as soil moisture decreases?",
+"serial": "1207",
+"src_row": 784,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1207"
+},
+{
+"expl": "A permeameter is the tool used to measure soil permeability.",
+"key": 0,
+"o": [
+"Permeameter",
+"Hydrometer",
+"Porosimeter",
+"Soil moisture meter",
+"None of these"
+],
+"page": "237-238",
+"q": "What instrument is used to measure soil permeability?",
+"serial": "1208",
+"src_row": 785,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "237-238:1208"
+},
+{
+"expl": "Darcy\u2019s law assumes laminar, continuous, and steady flow; turbulent flow violates the linear relationship.",
+"key": 3,
+"o": [
+"Laminar flow",
+"Continuous flow",
+"Steady flow",
+"Turbulent flow",
+"None of these"
+],
+"page": "239-240",
+"q": "Which assumption is NOT required for Darcy's law?",
+"serial": "1211",
+"src_row": 786,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "239-240:1211"
+},
+{
+"expl": "Poiseuille\u2019s law states flow \u221d 1/(viscosity \u00d7 length) and \u221d radius\u2074, so viscosity is the inverse factor.",
+"key": 1,
+"o": [
+"Radius",
+"Viscosity",
+"Length",
+"Square of radius",
+"None of these"
+],
+"page": "239-240",
+"q": "According to Poiseuille's law, flow rate in a capillary tube is inversely proportional to which of the following?",
+"serial": "1212",
+"src_row": 787,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "239-240:1212"
+},
+{
+"expl": "Infiltration is the entry of water into unsaturated soil; percolation occurs under saturated conditions.",
+"key": 0,
+"o": [
+"Infiltration",
+"Percolation",
+"Seepage",
+"Leaching",
+"None of these"
+],
+"page": "239-240",
+"q": "In unsaturated soil, the process of water entering the soil surface is called?",
+"serial": "1213",
+"src_row": 788,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "239-240:1213"
+},
+{
+"expl": "Gypsum block resistance is low (400\u2013600 \u03a9) at field capacity and high at wilting point.",
+"key": 0,
+"o": [
+"Field capacity",
+"Permanent wilting point",
+"Saturated",
+"Saline soil",
+"None of these"
+],
+"page": "239-240",
+"q": "A gypsum block reading of 500 ohms indicates which moisture condition?",
+"serial": "1214",
+"src_row": 789,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "239-240:1214"
+},
+{
+"expl": "Depth basis = (\u03b8v \u00d7 depth)/100 = (43.64 % \u00d7 40)/100 = 17.45 cm.",
+"key": 2,
+"o": [
+"10.5 cm",
+"12.3 cm",
+"17.45 cm",
+"20.1 cm",
+"None of these"
+],
+"page": "239-240",
+"q": "Given wet weight 280 g, dry weight 220 g, bulk density 1.6 g/cm\u00b3, depth 40 cm, what is water content on depth basis?",
+"serial": "1215",
+"src_row": 790,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "239-240:1215"
+},
+{
+"expl": "Spirit burning is unsuitable for high\u2011organic soils because organic matter interferes with the combustion process.",
+"key": 2,
+"o": [
+"Gravimetric",
+"Spirit burning",
+"Infrared",
+"Gypsum block",
+"None of these"
+],
+"page": "239-240",
+"q": "Which method is NOT recommended for soils with high organic matter?",
+"serial": "1216",
+"src_row": 791,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "239-240:1216"
+}
+],
+"rolled": false,
+"row_from": 772,
+"row_to": 792,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 772,
+"seeded_from": "2026-10-26",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-26",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
