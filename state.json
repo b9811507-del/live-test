@@ -228727,7 +228727,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-28T17:57:47+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"Kalyan Sona",
+"Safed Lerma",
+"Sharbati Sonara",
+"UP 301",
+"None of these"
+],
+"page": "",
+"q": "Which wheat variety was obtained by gamma\u2011irradiation of Sonora 64?",
+"serial": "128DIQLj:263",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:263"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Litchi",
+"Guava",
+"Apple",
+"Mango",
+"None of these"
+],
+"page": "",
+"q": "Which of the following fruits is NOT typically propagated using air layering?",
+"serial": "1sUgWsko:680",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:680"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wheat and Barley",
+"Paddy and Straw",
+"Dairy and Poultry",
+"Fruits and Vegetables",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is an example of Joint Product?",
+"serial": "1bxM1Q-4:2307",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2307"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Maintaining a lower C:N ratio to promote autotrophic nitrification",
+"Stimulating heterotrophic microbial growth to assimilate nitrogenous waste",
+"Reducing aeration to minimize microbial activity",
+"Using chemical flocculants to remove suspended solids",
+"None of these"
+],
+"page": "",
+"q": "What is the primary principle behind the biofloc technology in aquaculture?",
+"serial": "1sUgWsko:2661",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2661"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"20 cm",
+"25 cm",
+"30 cm",
+"35 cm",
+"None of these"
+],
+"page": "",
+"q": "What is the depth of the manger/water trough for sheep and goat?",
+"serial": "1sUgWsko:3261",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3261"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"NAA",
+"GA\u00b3",
+"IAA",
+"Cytokinin",
+"None of these"
+],
+"page": "",
+"q": "Which plant growth regulator is applied to induce parthenocarpic fruit formation in guava?",
+"serial": "1YcJWVgW:338",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:338"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Particle density includes pore space, while bulk density does not.",
+"Bulk density includes pore space, while particle density does not.",
+"Particle density is always higher than bulk density for all soil types.",
+"Bulk density is the weight of soil solids per unit volume of solids.",
+"None of these"
+],
+"page": "",
+"q": "What is the primary difference between particle density and bulk density of soil?",
+"serial": "1sUgWsko:6966",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6966"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"M-9",
+"M-1",
+"M-3",
+"M-5",
+"None of these"
+],
+"page": "",
+"q": "Which interstock is commonly used in apple to overcome graft incompatibility?",
+"serial": "1YcJWVgW:449",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:449"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Aphelenchoides besseyi",
+"Aphelenchoides ritzemabosi",
+"Aphelenchoides composticola",
+"Ditylenchus angustus",
+"None of these"
+],
+"page": "",
+"q": "Which nematode is known as the 'White tip' or 'rice leaf' nematode?",
+"serial": "17U0MEc-:2351",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2351"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dark green and brittle young leaves",
+"Premature initiation of floral buds",
+"Velvety appearance of pedicels",
+"Un-developed leaf blade",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a symptom of boron deficiency in cauliflower?",
+"serial": "1sUgWsko:1613",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1613"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"The number of parts of sugar to be added to one part of juice",
+"The acidity of the extract",
+"The total soluble solids (TSS) of the juice",
+"The viscosity of the extract",
+"None of these"
+],
+"page": "",
+"q": "In the Jelmeter test, the reading taken after one minute of flow indicates:",
+"serial": "1bxM1Q-4:3460",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3460"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Flopping",
+"Wilting",
+"Root rot",
+"Sinking",
+"None of these"
+],
+"page": "",
+"q": "The wilting of plants due to waterlogged conditions is called:",
+"serial": "128DIQLj:841",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:841"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Less than 500 mm",
+"Less than 750 mm",
+"More than 1150 mm",
+"Between 750 mm and 1150 mm",
+"None of these"
+],
+"page": "",
+"q": "What is the annual rainfall range for dry farming?",
+"serial": "17U0MEc-:306",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:306"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Propping",
+"Denavelling",
+"Detrashing",
+"Desuckering",
+"None of these"
+],
+"page": "",
+"q": "Which special practice involves removal of the male flower bud?",
+"serial": "1YcJWVgW:203",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:203"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"-3 to +3",
+"-1 to +1",
+"0 to 1",
+"-\u221e to +\u221e",
+"None of these"
+],
+"page": "",
+"q": "The range of the coefficient of skewness for any distribution is:",
+"serial": "128DIQLj:2783",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2783"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Presence of a snout or beak",
+"Photogenic organ",
+"Sclerotized elytra",
+"Predatory behavior",
+"None of these"
+],
+"page": "",
+"q": "What is the characteristic feature of the Curculionidae family?",
+"serial": "17U0MEc-:1857",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1857"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Jabalpur, MP",
+"Coimbatore, Tamil Nadu",
+"Bangalore, Karnataka",
+"Shimla, HP",
+"None of these"
+],
+"page": "",
+"q": "Where is the Institute of Wood Science and Technology located?",
+"serial": "1UgnIe-g:2653",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2653"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"North\u2013South",
+"East\u2013West",
+"South\u2013North",
+"West\u2013East",
+"None of these"
+],
+"page": "",
+"q": "Which orientation of a shelterbelt protects against winds coming from the western quarter?",
+"serial": "1UgnIe-g:2705",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2705"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"15",
+"10",
+"20",
+"5",
+"None of these"
+],
+"page": "",
+"q": "How many essential amino acids are there?",
+"serial": "17U0MEc-:3079",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:3079"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Its diploid chromosome number",
+"Its haploid chromosome number",
+"The number of autosomes only",
+"The number of sex chromosomes only",
+"None of these"
+],
+"page": "",
+"q": "The maximum possible number of linkage groups in a species equals",
+"serial": "1UgnIe-g:494",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:494"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lambda phage",
+"M13 phage",
+"Both A and B",
+"Ti plasmid",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a common bacteriophage vector used in plant biotechnology?",
+"serial": "1UgnIe-g:1394",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1394"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Sodium benzoate",
+"Potassium meta bisulphite (KMS)",
+"Benzoic acid",
+"Sulphur dioxide",
+"None of these"
+],
+"page": "",
+"q": "Which chemical preservative is most suitable for preserving the squash of colourful fruits like Phalsa and Jamun?",
+"serial": "1YcJWVgW:1177",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1177"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Prevention",
+"Eradication",
+"Suppression",
+"Management",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a principle of weed control?",
+"serial": "1sUgWsko:5153",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5153"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Single Action Disc Harrow",
+"Double Action Disc Harrow",
+"Off-Set Disc Harrow",
+"Tandem Disc Harrow",
+"None of these"
+],
+"page": "",
+"q": "Which disc harrow type has one right-hand gang and one left-hand gang operating in tandem?",
+"serial": "1sUgWsko:6192",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6192"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5\u201110 gm",
+"20\u201130 gm",
+"40\u201150 gm",
+"60\u201170 gm",
+"None of these"
+],
+"page": "",
+"q": "Approximately how much waste feed does a duck produce daily that can be used as fish feed?",
+"serial": "1sUgWsko:3540",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3540"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Yellowing and crinkling of leaves",
+"Curling of leaves and sooty mold growth",
+"Defoliation and boring into heads",
+"White cast skin at the base of the plant",
+"None of these"
+],
+"page": "",
+"q": "What is the characteristic symptom of Mustard aphid (Lipaphis erysimi) infestation on plants?",
+"serial": "1sUgWsko:2118",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2118"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Further investment is profitable",
+"More profits can be made by producing less output",
+"Point of maximum profit",
+"Production should be discontinued",
+"None of these"
+],
+"page": "",
+"q": "What does the condition MR > MC indicate in agricultural production?",
+"serial": "128DIQLj:2501",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2501"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Al\u00b3\u207a",
+"Ca\u00b2\u207a",
+"Mg\u00b2\u207a",
+"K\u207a",
+"None of these"
+],
+"page": "",
+"q": "Which cation has the highest flocculation (aggregation) power in soils?",
+"serial": "128DIQLj:1271",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1271"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Asteraceae",
+"Liliaceae",
+"Rosaceae",
+"Fabaceae",
+"None of these"
+],
+"page": "",
+"q": "Gerbera belongs to which botanical family?",
+"serial": "1YcJWVgW:1079",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1079"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Intercropping",
+"Multistoried cropping",
+"Mixed cropping",
+"Relay cropping",
+"None of these"
+],
+"page": "",
+"q": "What is the term for cultivating two or more crops of different heights simultaneously on the same piece of land?",
+"serial": "17U0MEc-:279",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:279"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Co 2",
+"Sree Vishakam",
+"Gajendra",
+"H - 226",
+"None of these"
+],
+"page": "",
+"q": "Which variety of Tapioca/Cassava is NOT listed in the source?",
+"serial": "1bxM1Q-4:3224",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3224"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Low yield",
+"High susceptibility to pests",
+"Intensive management and input requirements",
+"Poor taste",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a major drawback of hybrid maize in India?",
+"serial": "1UgnIe-g:264",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:264"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Puccinia.",
+"Cuscuta.",
+"Phytophthora.",
+"Erysiphe.",
+"None of these"
+],
+"page": "",
+"q": "Which of the following plant parasites is phanerogamic?",
+"serial": "1UgnIe-g:925",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:925"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Chemical weeding",
+"Mechanical weeding",
+"Hand weeding",
+"Biological control",
+"None of these"
+],
+"page": "",
+"q": "What is the primary method of managing weeds in cumin fields?",
+"serial": "17U0MEc-:777",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:777"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Clay and clay loam",
+"Sandy",
+"Silty",
+"Peaty",
+"None of these"
+],
+"page": "",
+"q": "Which type of soil is best suited for rice cultivation?",
+"serial": "17U0MEc-:497",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:497"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Date palm",
+"Raisins",
+"Apricot (dry)",
+"Karonda (dry)",
+"None of these"
+],
+"page": "",
+"q": "Which of the following dried fruits has the highest carbohydrate content?",
+"serial": "1sUgWsko:884",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:884"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Endoderm",
+"Mesoderm",
+"Ectoderm",
+"Neural crest",
+"None of these"
+],
+"page": "",
+"q": "The ovaries and testes of grasshoppers originate from which germ layer?",
+"serial": "1UgnIe-g:1917",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1917"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Channa spp.",
+"Clarias batraches",
+"Puntius sp",
+"Wallago attu",
+"None of these"
+],
+"page": "",
+"q": "Which of the following fish is NOT listed as a common predatory fish in the source?",
+"serial": "1sUgWsko:2335",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2335"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"H.H. Flor",
+"E.F. Smith",
+"T.J. Burrill",
+"Adolf Mayer",
+"None of these"
+],
+"page": "",
+"q": "The gene\u2011for\u2011gene hypothesis for flax rust was proposed by which scientist in 1942?",
+"serial": "1sUgWsko:3649",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3649"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Spicules",
+"Gubernaculums",
+"Bursa",
+"All of the above",
+"None of these"
+],
+"page": "",
+"q": "Which of the following structures are classified as secondary sexual organs in male nematodes?",
+"serial": "17U0MEc-:2374",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2374"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Autumn",
+"Rain",
+"Summer",
+"Harvest",
+"None of these"
+],
+"page": "",
+"q": "The word \"Kharif\" is derived from Arabic and means what?",
+"serial": "1bxM1Q-4:438",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:438"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Calcium",
+"None of these"
+],
+"page": "",
+"q": "Mycorrhizal fungi most significantly increase the soil availability of which nutrient?",
+"serial": "1bxM1Q-4:361",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:361"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Myzus persicae (Green peach aphid)",
+"Aphis gossypii",
+"Aphis craccivora",
+"Aphis fabae",
+"None of these"
+],
+"page": "",
+"q": "Which aphid species is the primary vector for papaya ring spot virus?",
+"serial": "1UgnIe-g:1165",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1165"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Constant pressure combustion",
+"Constant volume combustion",
+"Adiabatic combustion",
+"Isothermal combustion",
+"None of these"
+],
+"page": "",
+"q": "Which type of combustion is associated with spark ignition engines?",
+"serial": "1sUgWsko:6291",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6291"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"7:4:1",
+"5:3:2",
+"6:5:1",
+"8:4:2",
+"None of these"
+],
+"page": "",
+"q": "Ratio of Flower: Pegs: Pods in groundnut is?",
+"serial": "1bxM1Q-4:757",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:757"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Fusarium udum",
+"Gibberella indica",
+"Aceria cajani",
+"Pigeon Pea Sterility Mosaic Virus",
+"None of these"
+],
+"page": "",
+"q": "What is the perfect stage of the causal organism for wilt in pigeon pea?",
+"serial": "1UgnIe-g:1074",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1074"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Linseed, Cotton, Sunflower",
+"Clusterbean, Mesta, Safflower and castor",
+"Sunhemp, Gram, Berseem",
+"Sesame, Brinjal, Pumpkin",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops has a seed rate ratio of 1:50?",
+"serial": "1sUgWsko:4983",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4983"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Improper pollination",
+"Low temperature injury",
+"Boron deficiency",
+"Fusarium moniliforme infection",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of 'Jhumka' in mangoes?",
+"serial": "1bxM1Q-4:2955",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2955"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"CO-2",
+"CO-1",
+"CO-3",
+"DHS-1",
+"None of these"
+],
+"page": "",
+"q": "Which sapota variety is a clonal selection from Baramasi?",
+"serial": "1YcJWVgW:292",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:292"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To propagate plants asexually",
+"To increase soil fertility",
+"To control pest infestations",
+"To enhance flower color",
+"None of these"
+],
+"page": "",
+"q": "What is the primary purpose of grafting in horticulture?",
+"serial": "1sUgWsko:653",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:653"
+}
+],
+"set_no": 46,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
