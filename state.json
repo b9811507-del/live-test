@@ -228732,8 +228732,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 924,
 "names": {},
+"plan": {
+"bidx_next": 924,
+"built_at": "2026-10-28T14:27:52+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 131-133",
+"pages_list": [
+131,
+132,
+133
+],
+"questions": [
+{
+"expl": "Vitamin D deficiency leads to rickets in children and osteomalacia in adults.",
+"key": 0,
+"o": [
+"Vitamin D",
+"Vitamin E",
+"Vitamin K",
+"Calcium",
+"None of these"
+],
+"page": "131",
+"q": "Which vitamin deficiency causes rickets in children and osteomalacia in adults?",
+"serial": "911",
+"src_row": 903,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:911"
+},
+{
+"expl": "Vitamin D is produced in the skin when it is exposed to sunlight.",
+"key": 0,
+"o": [
+"Vitamin D",
+"Vitamin E",
+"Vitamin K",
+"Vitamin A",
+"None of these"
+],
+"page": "131",
+"q": "Which vitamin is synthesized by the body through exposure to sunlight?",
+"serial": "912",
+"src_row": 904,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:912"
+},
+{
+"expl": "The text states sweet corn is a rich source of vitamin E.",
+"key": 1,
+"o": [
+"Vitamin D",
+"Vitamin E",
+"Vitamin K",
+"Vitamin A",
+"None of these"
+],
+"page": "131",
+"q": "Sweet corn is a rich source of which vitamin?",
+"serial": "913",
+"src_row": 905,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:913"
+},
+{
+"expl": "Vitamin K is anti\u2011morrhagic and deficiency leads to delayed, faulty blood coagulation.",
+"key": 3,
+"o": [
+"It is an anti\u2011sterility vitamin.",
+"It is an anti\u2011morrhagic vitamin.",
+"Its deficiency causes delayed coagulation of blood.",
+"Both B and C are correct.",
+"None of these"
+],
+"page": "131",
+"q": "The daily requirement of vitamin K is 0.015 mg/day. Which statement is true?",
+"serial": "914",
+"src_row": 906,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:914"
+},
+{
+"expl": "The text lists calcium with a daily requirement of 500\u2013600 mg/day.",
+"key": 0,
+"o": [
+"Calcium",
+"Phosphorus",
+"Iron",
+"Magnesium",
+"None of these"
+],
+"page": "131",
+"q": "Which mineral has a daily requirement of 500\u2013600 mg/day?",
+"serial": "915",
+"src_row": 907,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:915"
+},
+{
+"expl": "Agathi contains 1130 mg of calcium per 100 g, the highest among the options.",
+"key": 2,
+"o": [
+"Litchi",
+"Karonda",
+"Agathi",
+"Curly leaf",
+"None of these"
+],
+"page": "131",
+"q": "Which food source provides the highest calcium content per 100 g?",
+"serial": "916",
+"src_row": 908,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:916"
+},
+{
+"expl": "The text lists kidney degeneration and liver necrosis as symptoms of vitamin E deficiency.",
+"key": 1,
+"o": [
+"Vitamin D",
+"Vitamin E",
+"Vitamin K",
+"Vitamin A",
+"None of these"
+],
+"page": "131",
+"q": "Deficiency of which vitamin leads to degeneration of kidney and necrosis of liver?",
+"serial": "917",
+"src_row": 909,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "131:917"
+},
+{
+"expl": "The source states the daily iron requirement is 20 mg per day.",
+"key": 0,
+"o": [
+"20 mg/day",
+"15 mg/day",
+"30 mg/day",
+"25 mg/day",
+"None of these"
+],
+"page": "132",
+"q": "What is the daily iron requirement for an adult?",
+"serial": "918",
+"src_row": 910,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:918"
+},
+{
+"expl": "The list of common names identifies Jackfruit as the national fruit of Bangladesh.",
+"key": 1,
+"o": [
+"Mango",
+"Jackfruit",
+"Papaya",
+"Guava",
+"None of these"
+],
+"page": "132",
+"q": "Which fruit is known as the \"National fruit of Bangladesh\"?",
+"serial": "919",
+"src_row": 911,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:919"
+},
+{
+"expl": "Mango is described as the \"King of Tropical fruits\" among its many epithets.",
+"key": 1,
+"o": [
+"Banana",
+"Mango",
+"Pineapple",
+"Jackfruit",
+"None of these"
+],
+"page": "132",
+"q": "Which fruit carries the nickname \"King of Tropical fruits\"?",
+"serial": "920",
+"src_row": 912,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:920"
+},
+{
+"expl": "Dry Karonda contributes 39.1% of iron, the highest among the given sources.",
+"key": 0,
+"o": [
+"Dry Karonda",
+"Date (Pind)",
+"Amaranthus Leaves",
+"Walnut",
+"None of these"
+],
+"page": "132",
+"q": "Among the listed sources, which provides the highest percentage of iron?",
+"serial": "921",
+"src_row": 913,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:921"
+},
+{
+"expl": "The source lists garlic as containing 187 mg of iron per 100 g.",
+"key": 0,
+"o": [
+"187 mg",
+"0.45 mg",
+"22.9 mg",
+"39.1 mg",
+"None of these"
+],
+"page": "132",
+"q": "What is the iron content of garlic per 100 g?",
+"serial": "922",
+"src_row": 914,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:922"
+},
+{
+"expl": "Cashewnut shows 0.45% iron, which is higher than walnut's 0.38%.",
+"key": 0,
+"o": [
+"Cashewnut",
+"Walnut",
+"Both have equal iron percentage",
+"Neither contains iron",
+"None of these"
+],
+"page": "132",
+"q": "Which nut has a higher iron percentage according to the data?",
+"serial": "923",
+"src_row": 915,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:923"
+},
+{
+"expl": "Guava is described with the nickname \"Apple of the tropics\" in the source.",
+"key": 0,
+"o": [
+"Guava",
+"Papaya",
+"Pineapple",
+"Banana",
+"None of these"
+],
+"page": "132",
+"q": "Which fruit is referred to as the \"Apple of the tropics\"?",
+"serial": "924",
+"src_row": 916,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "132:924"
+},
+{
+"expl": "The SOURCE explicitly lists 'Queen of tropical fruits' as a title for Mango steen.",
+"key": 0,
+"o": [
+"Mango steen",
+"Avocado",
+"Litchi",
+"Pomegranate",
+"None of these"
+],
+"page": "133",
+"q": "Which fruit is commonly referred to as the 'Queen of tropical fruits'?",
+"serial": "925",
+"src_row": 917,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:925"
+},
+{
+"expl": "The SOURCE states that Apple is known as the 'King of temperate fruits'.",
+"key": 0,
+"o": [
+"Apple",
+"Kiwifruit",
+"Persimmon",
+"Fig",
+"None of these"
+],
+"page": "133",
+"q": "The 'King of temperate fruits' is a title associated with which fruit?",
+"serial": "926",
+"src_row": 918,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:926"
+},
+{
+"expl": "The SOURCE identifies Persimmon as the 'National fruit of Japan'.",
+"key": 0,
+"o": [
+"Persimmon",
+"Litchi",
+"Apple",
+"Kiwifruit",
+"None of these"
+],
+"page": "133",
+"q": "Which fruit is called the 'National fruit of Japan'?",
+"serial": "927",
+"src_row": 919,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:927"
+},
+{
+"expl": "The SOURCE specifies that Semi-arid regions have a GP of 90-150 days.",
+"key": 1,
+"o": [
+"0-90 days",
+"90-150 days",
+"150-210 days",
+"210-270 days",
+"None of these"
+],
+"page": "133",
+"q": "What is the growing period (GP) range for a Semi-arid region in the described system?",
+"serial": "928",
+"src_row": 920,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:928"
+},
+{
+"expl": "The SOURCE explicitly states that Walnut is the 'King of nuts'.",
+"key": 0,
+"o": [
+"Walnut",
+"Pecanut",
+"Aonla",
+"Ber",
+"None of these"
+],
+"page": "133",
+"q": "Which fruit is known as the 'King of nuts'?",
+"serial": "929",
+"src_row": 921,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:929"
+},
+{
+"expl": "The SOURCE lists 'Fruit of paradise' as a title for Datepalm.",
+"key": 0,
+"o": [
+"Datepalm",
+"Pomegranate",
+"Fig",
+"Custard apple",
+"None of these"
+],
+"page": "133",
+"q": "The title 'Fruit of paradise' is associated with which fruit?",
+"serial": "930",
+"src_row": 922,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:930"
+},
+{
+"expl": "The SOURCE explicitly refers to Litchi as the 'Queen of subtropical fruit'.",
+"key": 0,
+"o": [
+"Litchi",
+"Mango steen",
+"Avocado",
+"Persimmon",
+"None of these"
+],
+"page": "133",
+"q": "Which fruit is described as the 'Queen of subtropical fruit'?",
+"serial": "931",
+"src_row": 923,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "133:931"
+}
+],
+"row_from": 903,
+"row_to": 924,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 903,
+"seeded_from": "2026-10-27"
+},
 "qidx": 0,
+"seeded_from": "2026-10-27",
+"skips": [],
 "step": 0
 },
 "malwa": {
