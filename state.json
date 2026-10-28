@@ -228738,9 +228738,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 812,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 812,
+"built_at": "2026-10-28T10:58:20+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 241-246",
+"pages_blocks": [
+"241-242",
+"243-244",
+"245-246"
+],
+"questions": [
+{
+"expl": "Neutron scattering is limited by surface soil escape and organic matter slowing neutrons, but clay content does not affect its suitability.",
+"key": 2,
+"o": [
+"It is not suitable for measuring surface soil (top 15 cm).",
+"It is not suitable for organic soils.",
+"It is not suitable for measuring moisture in soils with high clay content.",
+"It can be used for quick and continuous measurement.",
+"None of these"
+],
+"page": "241-242",
+"q": "Which of the following is NOT a limitation of the neutron scattering technique for soil moisture measurement?",
+"serial": "1221",
+"src_row": 792,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1221"
+},
+{
+"expl": "Tensiometers are limited to suction values between 0 and 0.85 bar, suitable for sandy soils.",
+"key": 0,
+"o": [
+"0\u20130.85 bar",
+"0\u20131.5 bar",
+"0\u20132 bar",
+"0\u20135 bar",
+"None of these"
+],
+"page": "241-242",
+"q": "The tensiometer provides continuous readings of soil matric suction in which range?",
+"serial": "1222",
+"src_row": 793,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1222"
+},
+{
+"expl": "The pressure plate (or membrane) method measures FC and PWP ex\u2011situ at pressures from \u20130.1 to \u201315 bar.",
+"key": 2,
+"o": [
+"Neutron scattering",
+"Tensiometer",
+"Pressure plate",
+"TDR",
+"None of these"
+],
+"page": "241-242",
+"q": "Which apparatus is used to estimate field capacity and permanent wilting point under laboratory conditions?",
+"serial": "1223",
+"src_row": 794,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1223"
+},
+{
+"expl": "Montmorillonite is commercially known as bentonite.",
+"key": 0,
+"o": [
+"Bentonite",
+"Kaolinite",
+"Illite",
+"Smectite",
+"None of these"
+],
+"page": "241-242",
+"q": "The commercial name for montmorillonite is?",
+"serial": "1224",
+"src_row": 795,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1224"
+},
+{
+"expl": "Pressure potential is the only component that can be positive; others are negative or zero.",
+"key": 2,
+"o": [
+"Matric potential",
+"Gravitational potential",
+"Pressure potential",
+"Osmotic potential",
+"None of these"
+],
+"page": "241-242",
+"q": "Which component of soil water potential is always positive?",
+"serial": "1225",
+"src_row": 796,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1225"
+},
+{
+"expl": "Rice and Typha can germinate without oxygen, unlike wheat.",
+"key": 2,
+"o": [
+"Rice",
+"Typha",
+"Both A and B",
+"Wheat",
+"None of these"
+],
+"page": "241-242",
+"q": "Plants that do not require oxygen for germination include which of the following?",
+"serial": "1226",
+"src_row": 797,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1226"
+},
+{
+"expl": "TDR measures soil moisture by analysing the dielectric constant of water in the soil.",
+"key": 3,
+"o": [
+"Neutron scattering",
+"Tensiometer readings",
+"Pressure plate measurements",
+"Dielectric constant of water",
+"None of these"
+],
+"page": "241-242",
+"q": "The TDR method of soil moisture assessment is based on?",
+"serial": "1227",
+"src_row": 798,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "241-242:1227"
+},
+{
+"expl": "The table lists potato\u2019s optimum pH range as 5.0\u20135.5.",
+"key": 2,
+"o": [
+"Rice",
+"Wheat",
+"Potato",
+"Soybean",
+"None of these"
+],
+"page": "243-244",
+"q": "Which crop requires a soil pH of 5.0\u20135.5 for optimal growth?",
+"serial": "1231",
+"src_row": 799,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "243-244:1231"
+},
+{
+"expl": "Actinomycetes are noted to prefer a pH of 7.0\u20137.8, slightly alkaline conditions.",
+"key": 2,
+"o": [
+"Bacteria",
+"Fungi",
+"Actinomycetes",
+"Protozoa",
+"None of these"
+],
+"page": "243-244",
+"q": "Which microorganism thrives best in a slightly alkaline soil (pH 7.0\u20137.8)?",
+"serial": "1232",
+"src_row": 800,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "243-244:1232"
+},
+{
+"expl": "H\u207a ions directly increase soil acidity; Al\u00b3\u207a contributes indirectly through hydrolysis.",
+"key": 2,
+"o": [
+"Al\u00b3\u207a hydrolysis",
+"Ca\u00b2\u207a salts",
+"H\u207a ions themselves",
+"Organic matter decomposition",
+"None of these"
+],
+"page": "243-244",
+"q": "Which factor contributes directly to soil acidity by releasing H\u207a ions?",
+"serial": "1233",
+"src_row": 801,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "243-244:1233"
+},
+{
+"expl": "Flooding raises pH in acidic soils, stabilizing around 6.5\u20137.2 within a month.",
+"key": 1,
+"o": [
+"Lowers pH further",
+"Raises pH",
+"Has no effect",
+"Makes soil more alkaline permanently",
+"None of these"
+],
+"page": "243-244",
+"q": "What is the immediate effect of flooding on an acidic soil?",
+"serial": "1234",
+"src_row": 802,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "243-244:1234"
+},
+{
+"expl": "Montmorillonite, a 2:1 clay, has a high buffering capacity compared to kaolinite.",
+"key": 1,
+"o": [
+"Kaolinite (1:1 type)",
+"Montmorillonite (2:1 type)",
+"Illite (1:1 type)",
+"Smectite (2:1 type)",
+"None of these"
+],
+"page": "243-244",
+"q": "Which clay type provides the highest buffering capacity in soil?",
+"serial": "1235",
+"src_row": 803,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "243-244:1235"
+},
+{
+"expl": "Ammoniacal nitrogen fertilizers raise soil acidity, whereas nitrate increases alkalinity.",
+"key": 0,
+"o": [
+"Ammoniacal",
+"Nitrate",
+"Urea",
+"Ammonium sulfate",
+"None of these"
+],
+"page": "243-244",
+"q": "Which N\u2011fertilizer form increases soil acidity?",
+"serial": "1236",
+"src_row": 804,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "243-244:1236"
+},
+{
+"expl": "Kaolinite is a 1:1 silicate clay; its strong hydrogen bonds prevent expansion and isomorphous substitution does not occur.",
+"key": 0,
+"o": [
+"It is a 1:1 type clay with strong hydrogen bonding and no expansion when wetted.",
+"It is a 2:1 type clay with weak van der Waals forces allowing expansion.",
+"It has a 2:1:1 structure and is highly expandable.",
+"It is a 1:1 type clay with isomorphous substitution occurring.",
+"None of these"
+],
+"page": "245-246",
+"q": "Which of the following statements correctly describes kaolinite?",
+"serial": "1241",
+"src_row": 805,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1241"
+},
+{
+"expl": "Chlorite is a 2:1:1 or 2:2 (tetramorphic) clay with an extra magnesium octahedral layer.",
+"key": 1,
+"o": [
+"2:1 type (expanding)",
+"2:1:1 or 2:2 (tetramorphic)",
+"1:1 type",
+"2:1 type (non\u2011expanding)",
+"None of these"
+],
+"page": "245-246",
+"q": "Chlorite belongs to which structural classification of clay minerals?",
+"serial": "1242",
+"src_row": 806,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1242"
+},
+{
+"expl": "Silicon is surrounded by four oxygen atoms in a tetrahedral arrangement, giving a coordination number of 4.",
+"key": 0,
+"o": [
+"4",
+"6",
+"8",
+"12",
+"None of these"
+],
+"page": "245-246",
+"q": "What is the coordination number of silicon in the tetrahedral sheet of a clay mineral?",
+"serial": "1243",
+"src_row": 807,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1243"
+},
+{
+"expl": "Montmorillonite has a 2:1 structure with weak interlayer bonds, leading to a large internal surface area and high CEC.",
+"key": 2,
+"o": [
+"Kaolinite",
+"Vermiculite",
+"Montmorillonite",
+"Illite",
+"None of these"
+],
+"page": "245-246",
+"q": "Which clay mineral is known for having a high cation exchange capacity due to its large internal surface area?",
+"serial": "1244",
+"src_row": 808,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1244"
+},
+{
+"expl": "Dioctahedral units are dominated by aluminium; trioctahedral units are dominated by magnesium.",
+"key": 0,
+"o": [
+"Aluminium (Al\u00b3\u207a)",
+"Magnesium (Mg\u00b2\u207a)",
+"Iron (Fe\u00b2\u207a)",
+"Calcium (Ca\u00b2\u207a)",
+"None of these"
+],
+"page": "245-246",
+"q": "In a dioctahedral octahedral unit of a clay mineral, which cation predominates?",
+"serial": "1245",
+"src_row": 809,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1245"
+},
+{
+"expl": "Montmorillonite is a 2:1 type clay; kaolinite, halloysite, and anauxite are 1:1 types.",
+"key": 2,
+"o": [
+"Kaolinite",
+"Halloysite",
+"Montmorillonite",
+"Anauxite",
+"None of these"
+],
+"page": "245-246",
+"q": "Which of the following is NOT a 1:1 type silicate clay mineral?",
+"serial": "1246",
+"src_row": 810,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1246"
+},
+{
+"expl": "Natural soil colloids are mostly negatively charged, influencing cation exchange and soil behavior.",
+"key": 1,
+"o": [
+"Positive",
+"Negative",
+"Neutral",
+"Variable depending on pH",
+"None of these"
+],
+"page": "245-246",
+"q": "Colloidal particles in natural soil systems are predominantly what charge?",
+"serial": "1247",
+"src_row": 811,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "245-246:1247"
+}
+],
+"rolled": false,
+"row_from": 792,
+"row_to": 812,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 792,
+"seeded_from": "2026-10-27",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-27",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
