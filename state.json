@@ -233720,9 +233720,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 832,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 832,
+"built_at": "2026-10-29T10:58:09+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 247-252",
+"pages_blocks": [
+"247-248",
+"249-250",
+"251-252"
+],
+"questions": [
+{
+"expl": "Black soils or Vertisols are characterized by a high content of montmorillonite, as listed in Table 2.",
+"key": 1,
+"o": [
+"Kaolinite",
+"Montmorillonite",
+"Illite",
+"Allophane",
+"None of these"
+],
+"page": "247-248",
+"q": "Which clay mineral is dominant in black soil (Vertisols)?",
+"serial": "1251",
+"src_row": 812,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "247-248:1251"
+},
+{
+"expl": "Isomorphous substitution, where one cation is replaced by another of similar size, creates the main negative charges in clay minerals.",
+"key": 2,
+"o": [
+"Exposed crystal edges",
+"Anion exchange",
+"Isomorphous substitution",
+"Organic colloids",
+"None of these"
+],
+"page": "247-248",
+"q": "The primary source of negative charge on clay minerals is:",
+"serial": "1252",
+"src_row": 813,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "247-248:1252"
+},
+{
+"expl": "Negative charges that depend on pH arise from exposed crystal edges of clay minerals, unlike the pH\u2011independent charges from isomorphous substitution.",
+"key": 1,
+"o": [
+"Isomorphous substitution",
+"Exposed crystal edges",
+"Anion exchange",
+"All of the above",
+"None of these"
+],
+"page": "247-248",
+"q": "Which of the following contributes to pH\u2011dependent negative charge on clay minerals?",
+"serial": "1253",
+"src_row": 814,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "247-248:1253"
+},
+{
+"expl": "Allophane is an amorphous clay mineral formed from the alteration of volcanic ash.",
+"key": 1,
+"o": [
+"A crystalline mica mineral",
+"An amorphous clay derived from volcanic ash",
+"A dominant mineral in laterite soils",
+"A type of organic colloid",
+"None of these"
+],
+"page": "247-248",
+"q": "Allophane is best described as:",
+"serial": "1254",
+"src_row": 815,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "247-248:1254"
+},
+{
+"expl": "The order H\u207a > Cs > Rb > K > Na > Li shows Na\u207a is lower than K\u207a, meaning Na\u207a is more easily replaced.",
+"key": 2,
+"o": [
+"H\u207a",
+"K\u207a",
+"Na\u207a",
+"Li\u207a",
+"None of these"
+],
+"page": "247-248",
+"q": "According to the replacing power order, which monovalent cation is most easily displaced from soil colloids?",
+"serial": "1255",
+"src_row": 816,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "247-248:1255"
+},
+{
+"expl": "The relative order of anion exchange is SiO\u2084\u2074\u207b > H\u2082PO\u2084\u207b > SO\u2084\u00b2\u207b > NO\u2083\u207b > Cl\u207b, making silicate the strongest exchanger.",
+"key": 3,
+"o": [
+"Cl\u207b",
+"NO\u2083\u207b",
+"SO\u2084\u00b2\u207b",
+"SiO\u2084\u2074\u207b",
+"None of these"
+],
+"page": "247-248",
+"q": "Which anion has the highest relative exchange capacity in soils?",
+"serial": "1256",
+"src_row": 817,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "247-248:1256"
+},
+{
+"expl": "Anion adsorption decreases as CEC/AEC ratio rises; Kaolinite has the lowest ratio (0.5), thus highest anion adsorption.",
+"key": 2,
+"o": [
+"Montmorillonite",
+"Illite",
+"Kaolinite",
+"All of them have equal capacity",
+"None of these"
+],
+"page": "249-250",
+"q": "Which clay mineral has the highest anion adsorption capacity based on its CEC/AEC ratio?",
+"serial": "1261",
+"src_row": 818,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1261"
+},
+{
+"expl": "Monovalent cations thicken the diffuse layer, raising the zeta potential; lower pH reduces it.",
+"key": 2,
+"o": [
+"Increase in soil pH",
+"Addition of divalent cations",
+"Increase in monovalent cations",
+"Decrease in soil pH",
+"None of these"
+],
+"page": "249-250",
+"q": "Which factor increases the zeta potential of a soil?",
+"serial": "1262",
+"src_row": 819,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1262"
+},
+{
+"expl": "PBS 50\u201180% indicates medium fertility according to the given scale.",
+"key": 1,
+"o": [
+"Highly fertile",
+"Medium fertile",
+"Low fertility",
+"Very low fertility",
+"None of these"
+],
+"page": "249-250",
+"q": "A soil with a percent base saturation of 65% is classified as?",
+"serial": "1263",
+"src_row": 820,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1263"
+},
+{
+"expl": "Flooded soils lose oxygen, leading to sequential reduction and a drop in Eh.",
+"key": 1,
+"o": [
+"Eh increases as oxygen is retained",
+"Eh decreases as oxygen escapes and NO\u2083\u207b, MnO\u2082, Fe\u2082O\u2083 are reduced",
+"Eh remains constant",
+"Eh becomes more positive due to nitrate formation",
+"None of these"
+],
+"page": "249-250",
+"q": "During submergence, which of the following best describes the change in redox potential (Eh)?",
+"serial": "1264",
+"src_row": 821,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1264"
+},
+{
+"expl": "Anaerobic conditions halt nitrification; mineralization stops at ammonification, making NH\u2084\u207a dominant.",
+"key": 1,
+"o": [
+"Nitrate (NO\u2083\u207b)",
+"Ammonium (NH\u2084\u207a)",
+"Nitrite (NO\u2082\u207b)",
+"Nitrogen gas (N\u2082)",
+"None of these"
+],
+"page": "249-250",
+"q": "In anaerobic, submerged soils, the dominant form of nitrogen is?",
+"serial": "1265",
+"src_row": 822,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1265"
+},
+{
+"expl": "Fe\u00b2\u207a concentration drops 100\u2011fold per unit pH increase as stated in the source.",
+"key": 2,
+"o": [
+"Increases 10-fold",
+"Decreases 10-fold",
+"Decreases 100-fold",
+"Remains unchanged",
+"None of these"
+],
+"page": "249-250",
+"q": "How does Fe\u00b2\u207a concentration change with a unit increase in soil pH?",
+"serial": "1266",
+"src_row": 823,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1266"
+},
+{
+"expl": "The AEC order is OH\u207b > H\u2082PO\u2084\u207b > SO\u2084\u00b2\u207b > NO\u2083\u207b > Cl\u207b; thus Cl\u207b has the lowest capacity.",
+"key": 3,
+"o": [
+"OH\u207b",
+"H\u2082PO\u2084\u207b",
+"SO\u2084\u00b2\u207b",
+"Cl\u207b",
+"None of these"
+],
+"page": "249-250",
+"q": "Which anion has the lowest anion exchange capacity (AEC) among the following?",
+"serial": "1267",
+"src_row": 824,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1267"
+},
+{
+"expl": "Ethylene glycol (or its monoethyl ether) is used to measure clay surface area.",
+"key": 1,
+"o": [
+"Water",
+"Ethylene glycol",
+"Sodium chloride",
+"Acetic acid",
+"None of these"
+],
+"page": "249-250",
+"q": "The surface area of clay minerals is determined using which of the following reagents?",
+"serial": "1268",
+"src_row": 825,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "249-250:1268"
+},
+{
+"expl": "Flocculation order is Al\u00b3\u207a > Ca\u00b2\u207a > Mg\u00b2\u207a > K\u207a > Na\u207a, so Al\u00b3\u207a is the strongest.",
+"key": 0,
+"o": [
+"Al\u00b3\u207a",
+"Ca\u00b2\u207a",
+"Mg\u00b2\u207a",
+"K\u207a",
+"None of these"
+],
+"page": "251-252",
+"q": "Which cation has the highest flocculation (aggregation) power in soils?",
+"serial": "1271",
+"src_row": 826,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "251-252:1271"
+},
+{
+"expl": "Calcium ions bridge soil particles, promoting aggregate stability.",
+"key": 1,
+"o": [
+"Al\u00b3\u207a",
+"Ca\u00b2\u207a",
+"Mg\u00b2\u207a",
+"Na\u207a",
+"None of these"
+],
+"page": "251-252",
+"q": "Good soil aggregates are primarily formed by which cation?",
+"serial": "1272",
+"src_row": 827,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "251-252:1272"
+},
+{
+"expl": "OM = OC \u00d7 1.724; 3 % \u00d7 1.724 = 5.172 %.",
+"key": 1,
+"o": [
+"4.5 %",
+"5.172 %",
+"3.448 %",
+"2.76 %",
+"None of these"
+],
+"page": "251-252",
+"q": "Using the Bemmelen factor, what is the organic matter content of a soil that has 3 % organic carbon?",
+"serial": "1273",
+"src_row": 828,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "251-252:1273"
+},
+{
+"expl": "Kaolinite is the most abundant clay mineral in soils.",
+"key": 0,
+"o": [
+"Kaolinite",
+"Montmorillonite",
+"Illite",
+"Serpentine",
+"None of these"
+],
+"page": "251-252",
+"q": "Which clay mineral is most widely occurring in soils?",
+"serial": "1274",
+"src_row": 829,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "251-252:1274"
+},
+{
+"expl": "By definition, pE = Eh / 0.0591.",
+"key": 1,
+"o": [
+"pE = Eh \u00d7 0.0591",
+"pE = Eh \u00f7 0.0591",
+"pE = 0.0591 \u00f7 Eh",
+"pE = Eh + 0.0591",
+"None of these"
+],
+"page": "251-252",
+"q": "What is the correct relationship between the redox potential (Eh) and the electron activity (pE)?",
+"serial": "1275",
+"src_row": 830,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "251-252:1275"
+},
+{
+"expl": "Humus contains about 5\u20135.5 % nitrogen, giving a C:N ratio of ~10:1.",
+"key": 2,
+"o": [
+"1\u20132 %",
+"3\u20134 %",
+"5\u20135.5 %",
+"10\u201312 %",
+"None of these"
+],
+"page": "251-252",
+"q": "The nitrogen content in humus and organic matter is approximately:",
+"serial": "1276",
+"src_row": 831,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "251-252:1276"
+}
+],
+"rolled": false,
+"row_from": 812,
+"row_to": 832,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 812,
+"seeded_from": "2026-10-28",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-28",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
