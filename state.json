@@ -233714,8 +233714,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 945,
 "names": {},
+"plan": {
+"bidx_next": 945,
+"built_at": "2026-10-29T14:27:58+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 134-136",
+"pages_list": [
+134,
+135,
+136
+],
+"questions": [
+{
+"expl": "Mango and papaya are explicitly mentioned as very good sources of beta-carotene (1990 ug and 880 ug per 100 g respectively), while oranges and lemons are not cited for beta-carotene but for vitamin C and limonoids.",
+"key": 2,
+"o": [
+"Mango",
+"Papaya",
+"Orange",
+"Lemon",
+"None of these"
+],
+"page": "134",
+"q": "Which of the following crops is NOT a good source of beta-carotene?",
+"serial": "932",
+"src_row": 924,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:932"
+},
+{
+"expl": "The definition provided states that a chimera is a plant or plant part composed of genetically different layers or tissues in an individual.",
+"key": 2,
+"o": [
+"A plant with uniform genetic makeup",
+"A mutation expressed in the form of genetically identical layers",
+"A plant or plant part composed of genetically different layers or tissues",
+"A disease-resistant variety developed through hybridization",
+"None of these"
+],
+"page": "134",
+"q": "What is the primary defining feature of a chimera in vegetatively propagated crops?",
+"serial": "933",
+"src_row": 925,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:933"
+},
+{
+"expl": "The source explicitly mentions that oranges, lemons, limes, and grapefruits are rich in limonoids, which are effective against cancer.",
+"key": 2,
+"o": [
+"Carotenoids",
+"Flavonoids",
+"Limonoids",
+"Anthocyanins",
+"None of these"
+],
+"page": "134",
+"q": "Which phytochemical class found in citrus fruits like oranges and lemons is effective against cancer?",
+"serial": "934",
+"src_row": 926,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:934"
+},
+{
+"expl": "The source states that the pre-humid zones have a growing period of more than 270 days per year.",
+"key": 3,
+"o": [
+"Arid zone",
+"Semi-arid zone",
+"Humid zone",
+"Pre-humid zone",
+"None of these"
+],
+"page": "134",
+"q": "In which agro-climatic zone do plants experience a growing period (GP) of more than 270 days per year?",
+"serial": "935",
+"src_row": 927,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:935"
+},
+{
+"expl": "The source lists oranges, lemons, limes, and grapefruits as principal sources of vitamin C and folate.",
+"key": 2,
+"o": [
+"Mango",
+"Papaya",
+"Orange",
+"Banana",
+"None of these"
+],
+"page": "134",
+"q": "Which of the following fruits is cited as a principal source of vitamin C and folate?",
+"serial": "936",
+"src_row": 928,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:936"
+},
+{
+"expl": "The source specifies that papaya contains 880 ug of beta-carotene per 100 grams.",
+"key": 0,
+"o": [
+"880 ug",
+"1990 ug",
+"1500 ug",
+"2500 ug",
+"None of these"
+],
+"page": "134",
+"q": "What is the beta-carotene content of papaya per 100 grams?",
+"serial": "937",
+"src_row": 929,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:937"
+},
+{
+"expl": "The source states that in vegetatively propagated crops, mutations express in the form of chimeras.",
+"key": 1,
+"o": [
+"As uniform genetic variations",
+"As chimeras",
+"As disease-resistant traits",
+"As hybrid vigor",
+"None of these"
+],
+"page": "134",
+"q": "How do mutations typically express in vegetatively propagated crops according to the source?",
+"serial": "938",
+"src_row": 930,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "134:938"
+},
+{
+"expl": "Dioecious plants have separate male and female individuals. Papaya is listed under dioecious plants in the source.",
+"key": 1,
+"o": [
+"Banana",
+"Papaya",
+"Mango",
+"Pomegranate",
+"None of these"
+],
+"page": "135",
+"q": "Which of the following plants is an example of a dioecious plant?",
+"serial": "939",
+"src_row": 931,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "135:939"
+},
+{
+"expl": "Cleistogamy is a mechanism where flowers remain closed, ensuring self-pollination. It is explicitly listed as a factor favoring self-pollination in the source.",
+"key": 2,
+"o": [
+"Dichogamy",
+"Heterostyly",
+"Cleistogamy",
+"Self-incompatibility",
+"None of these"
+],
+"page": "135",
+"q": "Which mechanism ensures self-pollination in plants?",
+"serial": "940",
+"src_row": 932,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "135:940"
+},
+{
+"expl": "The source explicitly states that PDSD is found in Avocado.",
+"key": 1,
+"o": [
+"Walnut",
+"Avocado",
+"Banana",
+"Fig",
+"None of these"
+],
+"page": "135",
+"q": "In which plant is Protogynous diurnally synchronous dichogamy (PDSD) observed?",
+"serial": "941",
+"src_row": 933,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "135:941"
+},
+{
+"expl": "Homogamy is listed under factors favoring self-pollination, while unisexuality, dichogamy, and heterostyly favor cross-pollination.",
+"key": 2,
+"o": [
+"Unisexuality",
+"Dichogamy",
+"Homogamy",
+"Heterostyly",
+"None of these"
+],
+"page": "135",
+"q": "Which of the following is NOT a factor favoring cross-pollination?",
+"serial": "942",
+"src_row": 934,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "135:942"
+},
+{
+"expl": "Monoecious plants have both male and female flowers on the same individual. Fig is listed under monoecious plants in the source.",
+"key": 2,
+"o": [
+"Date Palm",
+"Papaya",
+"Fig",
+"Pomegranate",
+"None of these"
+],
+"page": "135",
+"q": "Which plant is an example of a monoecious plant?",
+"serial": "943",
+"src_row": 935,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "135:943"
+},
+{
+"expl": "Protandry is the maturation of male flowers before female flowers, while Protogyny is the maturation of female flowers before male flowers, as indicated in the source.",
+"key": 2,
+"o": [
+"Protandry involves female flowers maturing first, while Protogyny involves male flowers maturing fi\u2026",
+"Protandry is a type of self-pollination, while Protogyny is a type of cross-pollination",
+"Protandry involves male flowers maturing first, while Protogyny involves female flowers maturing fi\u2026",
+"Protandry and Protogyny are both mechanisms of cleistogamy",
+"None of these"
+],
+"page": "135",
+"q": "What is the primary difference between Protandry and Protogyny?",
+"serial": "944",
+"src_row": 936,
+"topic": "Horticulture",
+"trunc": 2,
+"uid": "135:944"
+},
+{
+"expl": "Apricot is listed under cross-pollination in the source, while Papaya, Grape, and Kiwi are listed under self-pollination.",
+"key": 1,
+"o": [
+"Papaya",
+"Apricot",
+"Grape",
+"Kiwi",
+"None of these"
+],
+"page": "135",
+"q": "Which of the following plants is an example of a plant exhibiting cross-pollination?",
+"serial": "945",
+"src_row": 937,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "135:945"
+},
+{
+"expl": "The source explicitly states that IBA (Indole-3-Butyric Acid) is the commercial hormone used for cuttings.",
+"key": 2,
+"o": [
+"NAA",
+"2,4-D",
+"IBA",
+"GA3",
+"None of these"
+],
+"page": "136",
+"q": "Which hormone is commercially used to induce rooting in cuttings?",
+"serial": "946",
+"src_row": 938,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:946"
+},
+{
+"expl": "Bahar treatment is defined in the source as the induction of flowering in the desired season.",
+"key": 1,
+"o": [
+"To increase fruit size",
+"To induce flowering in the desired season",
+"To control pests",
+"To enhance root growth",
+"None of these"
+],
+"page": "136",
+"q": "What is the primary purpose of Bahar treatment in fruit cultivation?",
+"serial": "947",
+"src_row": 939,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:947"
+},
+{
+"expl": "The source specifies that gibberellins (GAs) are used to overcome the chilling requirement in temperate fruits.",
+"key": 2,
+"o": [
+"Auxins",
+"Cytokinins",
+"Gibberellins",
+"Ethylene",
+"None of these"
+],
+"page": "136",
+"q": "Which group of gibberellins (GAs) is used to overcome the chilling requirement in temperate fruits?",
+"serial": "948",
+"src_row": 940,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:948"
+},
+{
+"expl": "The source states that NAA is used at 25-50 ppm as a spray solution to induce greater fruit set.",
+"key": 1,
+"o": [
+"5-10 ppm",
+"25-50 ppm",
+"100-150 ppm",
+"200 ppm",
+"None of these"
+],
+"page": "136",
+"q": "At what concentration is NAA typically used as a spray solution on trees to induce greater fruit set?",
+"serial": "949",
+"src_row": 941,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:949"
+},
+{
+"expl": "The source explicitly lists Mango and Apple as fruits with self-thinning capacity.",
+"key": 2,
+"o": [
+"Guava and Banana",
+"Citrus and Grapes",
+"Mango and Apple",
+"Pomegranate and Litchi",
+"None of these"
+],
+"page": "136",
+"q": "Which of the following fruits has self-thinning capacity?",
+"serial": "950",
+"src_row": 942,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:950"
+},
+{
+"expl": "The source mentions that post-set fruit drop is a major problem in Mango.",
+"key": 2,
+"o": [
+"Apple",
+"Guava",
+"Mango",
+"Banana",
+"None of these"
+],
+"page": "136",
+"q": "Post-set fruit drop is a major problem in which of the following fruits?",
+"serial": "951",
+"src_row": 943,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:951"
+},
+{
+"expl": "The source states that NAA is used to induce greater fruit set and is applied as a spray solution on trees.",
+"key": 2,
+"o": [
+"IBA",
+"GA3",
+"NAA",
+"2,4-D",
+"None of these"
+],
+"page": "136",
+"q": "Which hormone is primarily used to induce greater fruit set in trees when applied as a spray?",
+"serial": "952",
+"src_row": 944,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "136:952"
+}
+],
+"row_from": 924,
+"row_to": 945,
+"skip_rows": [],
+"src": "iari",
+"trunc": 2
+},
+"plan_seed": {
+"bidx": 924,
+"seeded_from": "2026-10-28"
+},
 "qidx": 0,
+"seeded_from": "2026-10-28",
+"skips": [],
 "step": 0
 },
 "malwa": {
