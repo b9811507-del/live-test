@@ -233709,7 +233709,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-29T17:57:28+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"5%",
+"6%",
+"7%",
+"8%",
+"None of these"
+],
+"page": "",
+"q": "What is the fat percentage in the milk of Murrah buffalo as referenced in IBPS AFO 2016?",
+"serial": "1sUgWsko:3177",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3177"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"25-50%",
+"50-75%",
+"75-100%",
+"100-125%",
+"None of these"
+],
+"page": "",
+"q": "What is the yield range for Dry Seeded Rainfed Un-Puddled Lowland Rice compared to normal rice?",
+"serial": "1sUgWsko:49",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:49"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Annuals",
+"Shrubs",
+"Herbs",
+"Climbers",
+"None of these"
+],
+"page": "",
+"q": "In a shrubbery border, the primary type of plant cultivated is:",
+"serial": "1YcJWVgW:1005",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1005"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"January 2004",
+"January 2005",
+"January 2006",
+"January 2003",
+"None of these"
+],
+"page": "",
+"q": "When did the Seed Act 2004 come into force?",
+"serial": "1sUgWsko:5053",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5053"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"6-8%",
+"10-20%",
+"20-30%",
+"30-40%",
+"None of these"
+],
+"page": "",
+"q": "What is the final moisture content of dehydrated fruits?",
+"serial": "1YcJWVgW:1173",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1173"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Cucurbits",
+"Persimmon",
+"Wood Apple",
+"Avocado",
+"None of these"
+],
+"page": "",
+"q": "The symptom \"withering of tendrils\" is characteristic of which group?",
+"serial": "1YcJWVgW:1153",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1153"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Red",
+"White",
+"Pink",
+"Yellow",
+"None of these"
+],
+"page": "",
+"q": "What is the phenotype of the heterozygous F1 progeny (Rr) when a red flower (RR) Mirabilis jalapa is crossed with a white flower (rr)?",
+"serial": "1UgnIe-g:485",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:485"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Kesar",
+"Alphonso",
+"Banganapalli",
+"Rajapuri",
+"None of these"
+],
+"page": "",
+"q": "Which of the following mango varieties is NOT commonly grown in Gujarat?",
+"serial": "1bxM1Q-4:2940",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2940"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rekha",
+"Double Century",
+"Kent",
+"Pusa Chikni",
+"None of these"
+],
+"page": "",
+"q": "Which variety is associated with tuberose?",
+"serial": "17U0MEc-:1351",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1351"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"To get off-season yield",
+"To increase pest resistance",
+"To enhance vegetable color",
+"To reduce water usage",
+"None of these"
+],
+"page": "",
+"q": "What is the primary objective of greenhouse cultivation of vegetables?",
+"serial": "1YcJWVgW:823",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:823"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Hydrophyte",
+"Hydroponics",
+"Humus",
+"Hybrid",
+"None of these"
+],
+"page": "",
+"q": "Which term describes the process of growing plants in water containing essential nutrients?",
+"serial": "1sUgWsko:4728",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4728"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"November - December",
+"February - March",
+"End of May to Mid June",
+"September - October",
+"None of these"
+],
+"page": "",
+"q": "What is the best time for pruning the horticulture crop?",
+"serial": "1bxM1Q-4:3042",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3042"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"0.3-0.5 kg",
+"0.7-1 kg",
+"1.5-2 kg",
+"2-3 kg",
+"None of these"
+],
+"page": "",
+"q": "After one year, what is the expected weight range of Labeo rohita under favorable conditions?",
+"serial": "1sUgWsko:2443",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2443"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Significant improvement",
+"Moderate improvement",
+"No improvement",
+"Negative impact",
+"None of these"
+],
+"page": "",
+"q": "What is the response of Pigeon Pea to applied potassium (K) in terms of yield improvement?",
+"serial": "1sUgWsko:308",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:308"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Ethylene dichloride + Carbon Tetrachloride (1:3)",
+"Methyl bromide + Aluminium phosphide",
+"Ethylene dichloride + Carbon Tetrachloride (3:1)",
+"Malathion + Fenvalerate",
+"None of these"
+],
+"page": "",
+"q": "Which chemical mixture is used for fumigation in storage pest management as per AFO-2018?",
+"serial": "1sUgWsko:2149",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2149"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Tourmaline",
+"Olivine",
+"Biotite",
+"Pyrolusite",
+"None of these"
+],
+"page": "",
+"q": "Which silicate mineral is a recognized source of boron for plants?",
+"serial": "17U0MEc-:1092",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1092"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Alluvial",
+"Colluvial",
+"Sedentary",
+"Eolian",
+"None of these"
+],
+"page": "",
+"q": "Parent material that forms in its original place without transportation is called:",
+"serial": "1sUgWsko:6764",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6764"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Fe",
+"Zn",
+"Mg",
+"Ca",
+"None of these"
+],
+"page": "",
+"q": "Which element is universally deficient in grape plants?",
+"serial": "1YcJWVgW:348",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:348"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Magnesium",
+"Calcium",
+"Phosphorus",
+"Potassium",
+"None of these"
+],
+"page": "",
+"q": "Which element is specifically mentioned as essential for pod development in groundnut?",
+"serial": "1bxM1Q-4:768",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:768"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Seed sowing",
+"Hydroseeding",
+"Turf method",
+"Sod cutting",
+"None of these"
+],
+"page": "",
+"q": "What is the best and quickest method for planting grass in a lawn?",
+"serial": "17U0MEc-:1647",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1647"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"To prevent the entry of predators",
+"To filter the water entering the pond",
+"To prevent the escape of fish",
+"To regulate the water flow",
+"None of these"
+],
+"page": "",
+"q": "What is the purpose of tying a small mesh size screen at the inlets and outlets of embankment ponds?",
+"serial": "1bxM1Q-4:4305",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4305"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Mustard",
+"Wheat",
+"Barley",
+"Tobacco",
+"None of these"
+],
+"page": "",
+"q": "Which crop is listed last?",
+"serial": "1sUgWsko:4442",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4442"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Wheat",
+"Marigold",
+"Corn",
+"Rice",
+"None of these"
+],
+"page": "",
+"q": "Which plant is known to act as an antagonistic plant against root-knot nematodes?",
+"serial": "1UgnIe-g:2532",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2532"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Central Tractor Organization (CTO)",
+"Allahabad Agriculture Institute",
+"Eicher Good Earth",
+"TAFE",
+"None of these"
+],
+"page": "",
+"q": "Which organization was responsible for importing high horsepower crawler tractors in the 1940s?",
+"serial": "1sUgWsko:6015",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6015"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Profit from sales",
+"Percentage of sales value",
+"Fixed salary",
+"Service charge per transaction",
+"None of these"
+],
+"page": "",
+"q": "How do commission agents primarily earn their income?",
+"serial": "1sUgWsko:4076",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4076"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Proximity to feed storages, hay stacks, silo, and manure pits",
+"High manger curbs",
+"Narrow gates",
+"Protruding nails",
+"None of these"
+],
+"page": "",
+"q": "What is a key factor in the efficient utilization of labor in cattle yards?",
+"serial": "1bxM1Q-4:4127",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4127"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"T-budding",
+"Grafting",
+"Layering",
+"Cutting",
+"None of these"
+],
+"page": "",
+"q": "Which technique is used for preparing standards in roses?",
+"serial": "1bxM1Q-4:3371",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3371"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"India",
+"China",
+"Brazil",
+"USA",
+"None of these"
+],
+"page": "",
+"q": "Which country is the leading producer of Brinjal?",
+"serial": "1YcJWVgW:546",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:546"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Rainfall at 50% probability to potential evapotranspiration",
+"Potential evapotranspiration to rainfall at 50% probability",
+"Rainfall at 90% probability to potential evapotranspiration",
+"Rainfall to actual evapotranspiration",
+"None of these"
+],
+"page": "",
+"q": "The Moisture Availability Index (MAI) is defined as the ratio of which two parameters?",
+"serial": "1sUgWsko:4281",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4281"
+},
+{
+"expl": "",
+"key": 4,
+"o": [
+"Assam",
+"Bihar",
+"Punjab",
+"Tamil Nadu",
+"None of these"
+],
+"page": "",
+"q": "Which of the following states does NOT grow Turmeric?",
+"serial": "1bxM1Q-4:3308",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3308"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"94%",
+"85%",
+"75%",
+"65%",
+"None of these"
+],
+"page": "",
+"q": "What is the approximate percentage of cellulose in cotton fibre?",
+"serial": "1sUgWsko:226",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:226"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"10 %",
+"15 %",
+"20 %",
+"25 %",
+"None of these"
+],
+"page": "",
+"q": "What is the maximum theoretical overrun in butter?",
+"serial": "128DIQLj:1954",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1954"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"At sowing",
+"15\u201120 days after sowing",
+"45\u201160 days after sowing",
+"At tasseling",
+"None of these"
+],
+"page": "",
+"q": "Halosulfuron methyl (Sempra) is applied at which growth stage of maize for effective weed control?",
+"serial": "17U0MEc-:611",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:611"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"BOD test",
+"pH test",
+"Turbidity test",
+"Nitrate test",
+"None of these"
+],
+"page": "",
+"q": "Which test is used to assess the self\u2011purification capacity of a water body?",
+"serial": "17U0MEc-:25",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:25"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"The practice of timber harvesting",
+"The theory and practice involving the creation, conservation, scientific management of forests and\u2026",
+"The study of soil composition",
+"The management of wildlife populations",
+"None of these"
+],
+"page": "",
+"q": "Which of the following best describes forestry?",
+"serial": "1UgnIe-g:2620",
+"src_row": null,
+"topic": "",
+"trunc": 1,
+"uid": "1UgnIe-g:2620"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Die back",
+"Powdery mildew",
+"Rust",
+"Black spot",
+"None of these"
+],
+"page": "",
+"q": "Which disease is considered the most serious for rose plants?",
+"serial": "17U0MEc-:1352",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1352"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Apple",
+"Walnut",
+"Carrot",
+"Potato",
+"None of these"
+],
+"page": "",
+"q": "What is the highest source of energy among the given options?",
+"serial": "17U0MEc-:1361",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1361"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Oxygen",
+"Hydrogen",
+"Cytochrome",
+"NADH",
+"None of these"
+],
+"page": "",
+"q": "What is the final electron acceptor in the Electron Transport Chain (ETC)?",
+"serial": "1UgnIe-g:1597",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1597"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Absorption by soil",
+"Photodecomposition",
+"Thermo-degradation",
+"Volatilization",
+"None of these"
+],
+"page": "",
+"q": "Which environmental fate process involves breakdown of herbicides by sunlight?",
+"serial": "128DIQLj:1022",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1022"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Developing Mars to resemble Earth's environment",
+"Creating new plant species",
+"Improving soil quality on Earth",
+"Developing new farming techniques",
+"None of these"
+],
+"page": "",
+"q": "What is terra-forming?",
+"serial": "17U0MEc-:199",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:199"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Avery, MacLeod & McCarty",
+"Hershey & Chase",
+"Beadle & Tatum",
+"Freese",
+"None of these"
+],
+"page": "",
+"q": "Which scientists provided experimental support that DNA is the genetic material?",
+"serial": "1UgnIe-g:446",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:446"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Rice",
+"Wheat",
+"Root and tuber crops",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "Which crops are most commonly grown under furrow irrigation?",
+"serial": "1sUgWsko:4595",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4595"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Kaolinite",
+"Vermiculite",
+"Montmorillonite",
+"Illite",
+"None of these"
+],
+"page": "",
+"q": "Which clay mineral is known for having a high cation exchange capacity due to its large internal surface area?",
+"serial": "128DIQLj:1244",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1244"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Jammu & Kashmir",
+"Himachal Pradesh",
+"Uttarakhand",
+"Punjab",
+"None of these"
+],
+"page": "",
+"q": "Which state in India is the largest producer of Saffron?",
+"serial": "1bxM1Q-4:3305",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3305"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"CRD",
+"RBD",
+"LSD",
+"Factorial Design",
+"None of these"
+],
+"page": "",
+"q": "Which experimental design provides the maximum number of degrees of freedom for error?",
+"serial": "17U0MEc-:2935",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2935"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"SSP (19 % Ca)",
+"Super phosphate",
+"DAP",
+"MAP",
+"None of these"
+],
+"page": "",
+"q": "Among the listed water\u2011soluble fertilizers, which one provides the highest calcium content?",
+"serial": "1sUgWsko:7217",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7217"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Reduction of water and oxidation of CO2",
+"Oxidation of glucose and reduction of O2",
+"Oxidation of O2 and reduction of CO2",
+"Reduction of glucose and oxidation of water",
+"None of these"
+],
+"page": "",
+"q": "What is the primary redox process in respiration?",
+"serial": "1UgnIe-g:1618",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1618"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"High nitrogen",
+"Sudden rains",
+"Low humidity",
+"High soil pH",
+"None of these"
+],
+"page": "",
+"q": "Which of the following factors is NOT associated with fruit cracking in the listed crops?",
+"serial": "1sUgWsko:1591",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1591"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"5 tonnes",
+"10 tonnes",
+"15 tonnes",
+"20 tonnes",
+"None of these"
+],
+"page": "",
+"q": "What is the typical annual fish production (in tonnes per hectare) reported for composite fish culture?",
+"serial": "1sUgWsko:2321",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2321"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1:250,000",
+"1:50,000",
+"1:4,000 \u2013 1:8,000",
+"1:15,000",
+"None of these"
+],
+"page": "",
+"q": "Which map scale is used for cadastral maps in detailed soil surveys?",
+"serial": "128DIQLj:1566",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:1566"
+}
+],
+"set_no": 47,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 1
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
