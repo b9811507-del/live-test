@@ -239160,6 +239160,8 @@
 "cd": 1,
 "congrats_sent": 34513,
 "cta_sent": "off",
+"done_at": "2026-10-30T11:11:48+05:30",
+"elapsed_s": 845,
 "expl_in_poll": 20,
 "file_msg": 34514,
 "file_sent": "MALWA_VOL_1_p253-258_20Q_2026-10-30.html",
@@ -239169,8 +239171,18 @@
 "lb_rows": 38,
 "lb_sent": true,
 "lock_ts": 1793338869.6146142,
-"locked_by": "41008513786",
+"locked_by": "",
 "msg_ann": 34489,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 34491,
 "names": {
 "1023152775": "Anjali \ud83d\udc9b\u2764\ufe0f",
@@ -239212,6 +239224,8 @@
 "8567101693": "Tushar",
 "8824694648": "RISK2797"
 },
+"paid_msg": 34516,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 6,
@@ -239632,7 +239646,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-10-30T11:00:22+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 34515,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 259-264\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 137, 138, 139",
 "vol": 0
