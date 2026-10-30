@@ -238639,8 +238639,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 966,
 "names": {},
+"plan": {
+"bidx_next": 966,
+"built_at": "2026-10-30T14:27:52+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 137-139",
+"pages_list": [
+137,
+138,
+139
+],
+"questions": [
+{
+"expl": "North Indian mango cultivars are monoembryonic and self-incompatible, while polyembryonic seeds are a trait of South Indian varieties.",
+"key": 1,
+"o": [
+"Alternate bearing habit",
+"Polyembryonic seeds",
+"Self-incompatible",
+"Monoembryonic seeds",
+"None of these"
+],
+"page": "137",
+"q": "Which of the following is NOT a characteristic of North Indian mango cultivars?",
+"serial": "953",
+"src_row": 945,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:953"
+},
+{
+"expl": "The source explicitly states that the ideal storage temperature for mangoes is 5-16\u00b0C for different varieties.",
+"key": 1,
+"o": [
+"5-10\u00b0C",
+"5-16\u00b0C",
+"10-20\u00b0C",
+"15-25\u00b0C",
+"None of these"
+],
+"page": "137",
+"q": "What is the ideal temperature range for storing mangoes of different varieties?",
+"serial": "954",
+"src_row": 946,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:954"
+},
+{
+"expl": "The source specifies that Vellaicollumban is an allo-octaploid with 2n = 8X = 80.",
+"key": 2,
+"o": [
+"Langra",
+"Dashehari",
+"Vellaicollumban",
+"Totapuri",
+"None of these"
+],
+"page": "137",
+"q": "Which mango cultivar is classified as an allo-octaploid with 2n = 8X = 80?",
+"serial": "955",
+"src_row": 947,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:955"
+},
+{
+"expl": "The source mentions that mangoes are highly susceptible to low temperature injury, with chilling injury symptoms including loss of flavor and undesirable softening.",
+"key": 1,
+"o": [
+"Sunburn injury",
+"Chilling injury",
+"Frostbite injury",
+"Heat stress injury",
+"None of these"
+],
+"page": "137",
+"q": "Mango fruits are highly susceptible to which type of injury when exposed to low temperatures?",
+"serial": "956",
+"src_row": 948,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:956"
+},
+{
+"expl": "South Indian mango cultivars like Neelum are polyembryonic and produce seedlings that are true to type, unlike North Indian varieties which require vegetative propagation.",
+"key": 2,
+"o": [
+"Langra",
+"Dashehari",
+"Neelum",
+"Sindhu",
+"None of these"
+],
+"page": "137",
+"q": "Which of the following is a South Indian mango cultivar known for being true to type when grown from seedlings?",
+"serial": "957",
+"src_row": 949,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:957"
+},
+{
+"expl": "The source states that the viability of mango seeds is 30 days.",
+"key": 1,
+"o": [
+"15 days",
+"30 days",
+"45 days",
+"60 days",
+"None of these"
+],
+"page": "137",
+"q": "What is the viability period of mango seeds?",
+"serial": "958",
+"src_row": 950,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:958"
+},
+{
+"expl": "The source explicitly mentions that mango fruits contain the highest amount of Vitamin A (4800 IU), followed by papaya.",
+"key": 2,
+"o": [
+"Vitamin C",
+"Vitamin D",
+"Vitamin A",
+"Vitamin K",
+"None of these"
+],
+"page": "137",
+"q": "Which vitamin is found in the highest quantity in mango fruits compared to other fruits mentioned?",
+"serial": "959",
+"src_row": 951,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "137:959"
+},
+{
+"expl": "Inarching is explicitly stated as having over 95% success rate and being the most popular method in South India for commercial propagation.",
+"key": 1,
+"o": [
+"Veneer grafting",
+"Inarching",
+"Epicotyl grafting",
+"Soft wood grafting",
+"None of these"
+],
+"page": "138",
+"q": "Which propagation method of mango has a success rate of over 95% and is most popular in South India for commercial purposes?",
+"serial": "960",
+"src_row": 952,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:960"
+},
+{
+"expl": "Smudging is described as making a smoky fire below the tree canopy to induce early flowering.",
+"key": 1,
+"o": [
+"To control pests",
+"To induce early flowering",
+"To improve fruit color",
+"To prevent fruit drop",
+"None of these"
+],
+"page": "138",
+"q": "What is the primary purpose of smudging in mango cultivation?",
+"serial": "961",
+"src_row": 953,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:961"
+},
+{
+"expl": "Bappakkai, Olour, and Chandrakaran are listed as polyembryonic rootstocks, while Langra is not mentioned in the source.",
+"key": 3,
+"o": [
+"Bappakkai",
+"Olour",
+"Chandrakaran",
+"Langra",
+"None of these"
+],
+"page": "138",
+"q": "Which of the following is NOT a polyembryonic rootstock for mango?",
+"serial": "962",
+"src_row": 954,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:962"
+},
+{
+"expl": "The table specifies that mango is available in West Bengal from May to August.",
+"key": 1,
+"o": [
+"March to Mid August",
+"May to August",
+"June to August",
+"Mid April to July",
+"None of these"
+],
+"page": "138",
+"q": "During which months is mango available in West Bengal?",
+"serial": "963",
+"src_row": 955,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:963"
+},
+{
+"expl": "NAA at 50 ppm is explicitly mentioned as a method to prevent pre-harvest fruit drop in mango.",
+"key": 1,
+"o": [
+"2,4-D",
+"NAA",
+"GA3",
+"Ethrel",
+"None of these"
+],
+"page": "138",
+"q": "Which chemical is used at 50 ppm to prevent pre-harvest fruit drop in mango?",
+"serial": "964",
+"src_row": 956,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:964"
+},
+{
+"expl": "The source states that the optimum storage temperature for mango is 13\u00b0C.",
+"key": 1,
+"o": [
+"10\u00b0C",
+"13\u00b0C",
+"15\u00b0C",
+"8\u00b0C",
+"None of these"
+],
+"page": "138",
+"q": "What is the optimal storage temperature for mango fruits?",
+"serial": "965",
+"src_row": 957,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:965"
+},
+{
+"expl": "Andhra Pradesh has the earliest availability period (March to Mid August) compared to other states listed in the table.",
+"key": 0,
+"o": [
+"Andhra Pradesh",
+"Maharashtra",
+"Uttar Pradesh",
+"Himachal Pradesh",
+"None of these"
+],
+"page": "138",
+"q": "Which of the following states has the earliest mango availability period?",
+"serial": "966",
+"src_row": 958,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "138:966"
+},
+{
+"expl": "Mulgoa is explicitly mentioned as the 'Mother of all coloured mango cultivars' and is used for making preserves in the source.",
+"key": 1,
+"o": [
+"Alphonso",
+"Mulgoa",
+"Dashehari",
+"Kesar",
+"None of these"
+],
+"page": "139",
+"q": "Which mango variety is known as the 'Mother of all coloured mango cultivars' and is used for making preserves?",
+"serial": "967",
+"src_row": 959,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:967"
+},
+{
+"expl": "The source states that the combination of waxing (3%) along with hot-water treatment results in good quality fruits with extended storage life.",
+"key": 2,
+"o": [
+"Waxing (5%) + Cold storage",
+"Vapour Heat treatment only",
+"Waxing (3%) + Hot-water treatment",
+"Hot-water treatment only",
+"None of these"
+],
+"page": "139",
+"q": "Which treatment combination is recommended for extending the storage life of mango fruits?",
+"serial": "968",
+"src_row": 960,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:968"
+},
+{
+"expl": "Sai Sugandha has the highest percentage of perfect/bisexual flowers at 74%, as per the source.",
+"key": 1,
+"o": [
+"Langra",
+"Sai Sugandha",
+"Dashehari",
+"Rumani",
+"None of these"
+],
+"page": "139",
+"q": "Which mango variety has the highest percentage of perfect/bisexual flowers?",
+"serial": "969",
+"src_row": 961,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:969"
+},
+{
+"expl": "Lalsinduri is explicitly mentioned as a Powdery Mildew resistant variety in the source.",
+"key": 2,
+"o": [
+"Alphonso",
+"Edward",
+"Lalsinduri",
+"Kesar",
+"None of these"
+],
+"page": "139",
+"q": "Which variety is resistant to Powdery Mildew?",
+"serial": "970",
+"src_row": 962,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:970"
+},
+{
+"expl": "The source states that Alphonso and Dashehari are the most suitable varieties for canning purposes.",
+"key": 2,
+"o": [
+"Banganapalli",
+"Neelum",
+"Alphonso and Dashehari",
+"Chausa",
+"None of these"
+],
+"page": "139",
+"q": "Which mango variety is most suitable for canning purposes?",
+"serial": "971",
+"src_row": 963,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:971"
+},
+{
+"expl": "The source specifies that Kanyakumari district of Tamil Nadu produces off-season mangoes due to its microclimate.",
+"key": 1,
+"o": [
+"Karnataka",
+"Kanyakumari district of Tamil Nadu",
+"Gujarat",
+"Andhra Pradesh",
+"None of these"
+],
+"page": "139",
+"q": "Which district in India is known for producing 'off-season' mangoes due to its microclimate?",
+"serial": "972",
+"src_row": 964,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:972"
+},
+{
+"expl": "The source states that the ideal mango varieties should have a high ratio of edible to non-edible matter between 3.31 to 4.0.",
+"key": 1,
+"o": [
+"2.5 to 3.0",
+"3.31 to 4.0",
+"4.0 to 5.0",
+"1.5 to 2.0",
+"None of these"
+],
+"page": "139",
+"q": "What is the ideal ratio of edible to non-edible matter in mango varieties?",
+"serial": "973",
+"src_row": 965,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "139:973"
+}
+],
+"row_from": 945,
+"row_to": 966,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 945,
+"seeded_from": "2026-10-29"
+},
 "qidx": 0,
+"seeded_from": "2026-10-29",
+"skips": [],
 "step": 0
 },
 "malwa": {
