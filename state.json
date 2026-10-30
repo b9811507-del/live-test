@@ -238645,9 +238645,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 852,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 852,
+"built_at": "2026-10-30T10:57:37+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 253-258",
+"pages_blocks": [
+"253-254",
+"255-256",
+"257-258"
+],
+"questions": [
+{
+"expl": "Lignin is listed as the most resistant material in the decomposition sequence.",
+"key": 2,
+"o": [
+"Sugar and starch",
+"Protein",
+"Lignin",
+"Hemicellulose",
+"None of these"
+],
+"page": "253-254",
+"q": "Which component of organic residues is most resistant to decomposition?",
+"serial": "1281",
+"src_row": 832,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "253-254:1281"
+},
+{
+"expl": "CH4 is produced under anaerobic (water\u2011logged) conditions, not aerobic soils.",
+"key": 1,
+"o": [
+"Carbon dioxide (CO2)",
+"Methane (CH4)",
+"Nitrate (NO3-)",
+"Water (H2O)",
+"None of these"
+],
+"page": "253-254",
+"q": "In well\u2011aerated (aerobic) soils, which of the following is NOT a typical end product of organic matter decomposition?",
+"serial": "1282",
+"src_row": 833,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "253-254:1282"
+},
+{
+"expl": "The source states that actinomycetes are important at the final stage of decomposition.",
+"key": 2,
+"o": [
+"Bacteria",
+"Fungi",
+"Actinomycetes",
+"Algae",
+"None of these"
+],
+"page": "253-254",
+"q": "Which group of microorganisms plays the key role at the terminal stage of organic matter decomposition?",
+"serial": "1283",
+"src_row": 834,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "253-254:1283"
+},
+{
+"expl": "Fulvic acid is described as soluble in both acid and base, unlike humic acid.",
+"key": 0,
+"o": [
+"Soluble in both acid and base",
+"Acid\u2011insoluble but base\u2011soluble",
+"Insoluble in both acid and base",
+"Having the highest carbon content among humic substances",
+"None of these"
+],
+"page": "253-254",
+"q": "Fulvic acid differs from humic acid in that it is:",
+"serial": "1284",
+"src_row": 835,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "253-254:1284"
+},
+{
+"expl": "The source notes the optimum pH for nitrification is 8.5, with activity ceasing below 5.0.",
+"key": 2,
+"o": [
+"4.5",
+"5.0",
+"8.5",
+"10.0",
+"None of these"
+],
+"page": "253-254",
+"q": "What is the optimum pH for nitrification in soils?",
+"serial": "1285",
+"src_row": 836,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "253-254:1285"
+},
+{
+"expl": "Denitrification reduces nitrate or nitrite to N2O and N2, as stated in the source.",
+"key": 1,
+"o": [
+"Carbon dioxide (CO2) and methane (CH4)",
+"Nitrous oxide (N2O) and nitrogen gas (N2)",
+"Ammonia (NH3) and nitric oxide (NO)",
+"Oxygen (O2) and hydrogen (H2)",
+"None of these"
+],
+"page": "253-254",
+"q": "Denitrification primarily converts nitrate (NO3-) into which gaseous forms?",
+"serial": "1286",
+"src_row": 837,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "253-254:1286"
+},
+{
+"expl": "The source states that phosphatase catalyzes the mineralization of organic phosphorus.",
+"key": 0,
+"o": [
+"Phosphatase",
+"Nitrase",
+"Sulfatase",
+"Amylase",
+"None of these"
+],
+"page": "255-256",
+"q": "Which enzyme is responsible for the mineralization of organic phosphorus in soils?",
+"serial": "1291",
+"src_row": 838,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1291"
+},
+{
+"expl": "A C:S ratio >50:1 leads to sulphur immobilization, as indicated in the text.",
+"key": 1,
+"o": [
+"Sulphur mineralization",
+"Sulphur immobilization",
+"Nitrification",
+"Phosphorus fixation",
+"None of these"
+],
+"page": "255-256",
+"q": "When the soil carbon to sulfur (C:S) ratio exceeds 50:1, which process predominates?",
+"serial": "1292",
+"src_row": 839,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1292"
+},
+{
+"expl": "Desulfovibrio (and Desulfotomaculum) are listed as sulphate\u2011reducing bacteria producing H\u2082S under anaerobic conditions.",
+"key": 0,
+"o": [
+"Desulfovibrio",
+"Thiobacillus",
+"Bacillus",
+"Pseudomonas",
+"None of these"
+],
+"page": "255-256",
+"q": "Which bacteria reduce sulphates to toxic hydrogen sulphide in anaerobic soils?",
+"serial": "1293",
+"src_row": 840,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1293"
+},
+{
+"expl": "The source provides the factor 2.24 for ppm to kg/ha conversion.",
+"key": 1,
+"o": [
+"1.0",
+"2.24",
+"5.0",
+"10.0",
+"None of these"
+],
+"page": "255-256",
+"q": "What is the conversion factor for changing ppm to kg/ha as given in the source?",
+"serial": "1294",
+"src_row": 841,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1294"
+},
+{
+"expl": "The relationship OM% = N% \u00d7 20 is stated in the key facts.",
+"key": 2,
+"o": [
+"10",
+"15",
+"20",
+"25",
+"None of these"
+],
+"page": "255-256",
+"q": "Soil organic matter (OM) percentage can be estimated by multiplying the nitrogen percentage by which factor?",
+"serial": "1295",
+"src_row": 842,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1295"
+},
+{
+"expl": "High temperature is cited as the primary cause of low SOM in Indian soils.",
+"key": 1,
+"o": [
+"Low rainfall",
+"High temperature",
+"High pH",
+"Low C:N ratio",
+"None of these"
+],
+"page": "255-256",
+"q": "What is identified as the main reason for low organic matter in Indian soils?",
+"serial": "1296",
+"src_row": 843,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1296"
+},
+{
+"expl": "Fungi are noted as the organisms that decompose lignin.",
+"key": 1,
+"o": [
+"Bacteria",
+"Fungi",
+"Algae",
+"Protozoa",
+"None of these"
+],
+"page": "255-256",
+"q": "Which group of microorganisms is primarily responsible for lignin decomposition?",
+"serial": "1297",
+"src_row": 844,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "255-256:1297"
+},
+{
+"expl": "Soil productivity refers to the soil's ability to yield a crop when managed under a particular set of practices.",
+"key": 1,
+"o": [
+"retain water for longer periods",
+"produce a crop under a specific system of management",
+"maintain a high organic matter content",
+"resist pest attacks",
+"None of these"
+],
+"page": "257-258",
+"q": "Soil productivity is defined as the capability of a soil to:",
+"serial": "1301",
+"src_row": 845,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1301"
+},
+{
+"expl": "The text states that the total number of essential plant nutrients is 17.",
+"key": 2,
+"o": [
+"12",
+"15",
+"17",
+"20",
+"None of these"
+],
+"page": "257-258",
+"q": "According to the source, how many essential plant nutrients are recognized?",
+"serial": "1302",
+"src_row": 846,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1302"
+},
+{
+"expl": "Arnon\u2019s three criteria involve life\u2011cycle completion, non\u2011replaceability, and direct metabolic involvement; soil absorption is not a criterion.",
+"key": 3,
+"o": [
+"A plant cannot complete its life cycle without the element",
+"The element\u2019s function can be replaced by another mineral element",
+"The element is directly involved in plant metabolism",
+"The element must be absorbed from the soil",
+"None of these"
+],
+"page": "257-258",
+"q": "Which of the following is NOT one of Arnon's criteria for a mineral element to be considered essential?",
+"serial": "1303",
+"src_row": 847,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1303"
+},
+{
+"expl": "Calcium belongs to the secondary nutrients group, also referred to as amendment nutrients.",
+"key": 1,
+"o": [
+"Primary nutrient",
+"Secondary (amendment) nutrient",
+"Micronutrient",
+"Structural nutrient",
+"None of these"
+],
+"page": "257-258",
+"q": "Calcium (Ca) is classified as which type of nutrient?",
+"serial": "1304",
+"src_row": 848,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1304"
+},
+{
+"expl": "Mg is listed as highly mobile, and deficiencies of mobile nutrients appear initially in lower or older leaves.",
+"key": 2,
+"o": [
+"Calcium (Ca)",
+"Zinc (Zn)",
+"Magnesium (Mg)",
+"Iron (Fe)",
+"None of these"
+],
+"page": "257-258",
+"q": "Which highly mobile nutrient typically shows deficiency symptoms first on older leaves?",
+"serial": "1305",
+"src_row": 849,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1305"
+},
+{
+"expl": "The source classifies H2PO4- as an immobile nutrient that gets fixed in the soil.",
+"key": 2,
+"o": [
+"Nitrate (NO3-)",
+"Ammonium (NH4+)",
+"Dihydrogen phosphate (H2PO4-)",
+"Potassium (K+)",
+"None of these"
+],
+"page": "257-258",
+"q": "Which nutrient is considered immobile in soil because it becomes fixed?",
+"serial": "1306",
+"src_row": 850,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1306"
+},
+{
+"expl": "Sodium is noted as essential for growth and water relations in sugar beet.",
+"key": 1,
+"o": [
+"It is essential for photosynthesis",
+"It improves growth and water relations",
+"It enhances nitrogen fixation",
+"It serves as a structural component of cell walls",
+"None of these"
+],
+"page": "257-258",
+"q": "Sodium (Na) is a beneficial element. What specific role does it play in sugar beet cultivation?",
+"serial": "1307",
+"src_row": 851,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "257-258:1307"
+}
+],
+"rolled": false,
+"row_from": 832,
+"row_to": 852,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 832,
+"seeded_from": "2026-10-29",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-29",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
