@@ -238634,7 +238634,921 @@
 "afo": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-10-30T17:57:23+05:30",
+"kind": "mongo",
+"label": "AFO MAINS TEST (NEW PATTERN)",
+"n": 50,
+"pages": "AFO full-length set (new pattern)",
+"questions": [
+{
+"expl": "",
+"key": 2,
+"o": [
+"They are heterozygous",
+"They are genetically diverse",
+"They are homozygous due to the same genotype",
+"They are selected based on phenotype only",
+"None of these"
+],
+"page": "",
+"q": "What is a key characteristic of plants in a pure line variety?",
+"serial": "1sUgWsko:5921",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5921"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Lily",
+"Canna",
+"Dahlia",
+"Gladiolus",
+"None of these"
+],
+"page": "",
+"q": "Which of the following plants is classified as a bulbous plant?",
+"serial": "1bxM1Q-4:3522",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3522"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Bacillus thuringiensis",
+"Agrobacterium tumefaciens",
+"Bacillus amyloliquefaciens",
+"Pseudomonas fluorescens",
+"None of these"
+],
+"page": "",
+"q": "Glyphosate-resistant soybeans carry a transgene from which organism?",
+"serial": "1UgnIe-g:1439",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1439"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Zinc Magniz Carbamet spray",
+"Copper oxy chloride + Streptocycline spray",
+"Hinosan spray",
+"Adiphinphos spray",
+"None of these"
+],
+"page": "",
+"q": "What is the recommended treatment for controlling the blast disease in rice?",
+"serial": "1bxM1Q-4:2575",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2575"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Palm weevil (Rhynchophorus palmarum)",
+"Pine sawyer (Monochamus alternatus)",
+"Beetle",
+"Moth",
+"None of these"
+],
+"page": "",
+"q": "The dauer larvae of Bursaphelenchus xylophilus are transmitted to healthy pine trees by which vector?",
+"serial": "1UgnIe-g:2496",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2496"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"High moisture content and tender texture",
+"Low temperature injury",
+"Mineral deficiency",
+"High humidity",
+"None of these"
+],
+"page": "",
+"q": "What is the primary cause of mechanical losses in postharvest handling?",
+"serial": "1bxM1Q-4:3587",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3587"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Shallow",
+"Medium",
+"Deep",
+"Very Deep",
+"None of these"
+],
+"page": "",
+"q": "What is the classification of ploughing with a depth of 15-20 cm?",
+"serial": "17U0MEc-:410",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:410"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Gross income minus Cost A\u2081",
+"Gross income minus Cost A\u2082",
+"Gross income minus Cost B",
+"Gross income minus Cost C",
+"None of these"
+],
+"page": "",
+"q": "What is the farm business income for an owner farmer?",
+"serial": "128DIQLj:2521",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2521"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Stylar end",
+"Pedicel",
+"Seed cavity",
+"Stem",
+"None of these"
+],
+"page": "",
+"q": "Fruit splitting in pomegranate most often starts at which part of the fruit?",
+"serial": "1sUgWsko:1596",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1596"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Ammonium Sulphate",
+"Ammonium Chloride",
+"Urea",
+"Potassium Nitrate",
+"None of these"
+],
+"page": "",
+"q": "Which type of nitrogen fertilizer is known for its acidic residual nature and is not recommended for chlorine-sensitive crops like tomato and tobacco?",
+"serial": "1sUgWsko:7193",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:7193"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"1904",
+"1937",
+"1950",
+"1965",
+"None of these"
+],
+"page": "",
+"q": "When was the cooperative movement started in India?",
+"serial": "17U0MEc-:2809",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2809"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Amount of water evaporated by a crop",
+"Amount of water transpired by a crop to produce unit amount of dry matter",
+"Amount of water stored in the soil",
+"Amount of water lost through runoff",
+"None of these"
+],
+"page": "",
+"q": "What is the transpiration ratio approach in irrigation scheduling?",
+"serial": "17U0MEc-:403",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:403"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Paranotal theory",
+"Endosymbiotic theory",
+"Germ layer theory",
+"Cell theory",
+"None of these"
+],
+"page": "",
+"q": "Which theory explains the origin of wings in insects?",
+"serial": "1UgnIe-g:1864",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1864"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"1972",
+"1980",
+"1988",
+"1990",
+"None of these"
+],
+"page": "",
+"q": "When was the Joint Forest Management programme officially launched by the Government of India?",
+"serial": "1UgnIe-g:2800",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:2800"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1995",
+"1996",
+"1998",
+"2000",
+"None of these"
+],
+"page": "",
+"q": "In which year were the first generation Bt crops approved for commercial production?",
+"serial": "17U0MEc-:692",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:692"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Mango",
+"Apple",
+"Orange",
+"Pineapple",
+"None of these"
+],
+"page": "",
+"q": "What is the suitable fruit for jam making mentioned in the source?",
+"serial": "1YcJWVgW:1209",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:1209"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"A type of autotriploid crop",
+"A man-made cereal developed by crossing wheat and rye",
+"A chemical used to induce polyploidy",
+"A disease-resistant variety of potato",
+"None of these"
+],
+"page": "",
+"q": "What is Triticale?",
+"serial": "17U0MEc-:2477",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:2477"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Chisel Plough",
+"Disc Plough",
+"Blade Plough",
+"Cultivator",
+"None of these"
+],
+"page": "",
+"q": "Which implement has the highest draft per unit width among the listed options?",
+"serial": "1sUgWsko:6354",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6354"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Flowering stage",
+"Pegging stage",
+"Pod formation stage",
+"Vegetative phase",
+"None of these"
+],
+"page": "",
+"q": "Which of the following stages is NOT listed as a critical stage for irrigation of groundnut?",
+"serial": "1bxM1Q-4:764",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:764"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Closed impeller",
+"Semi-open impeller",
+"Open impeller",
+"Axial impeller",
+"None of these"
+],
+"page": "",
+"q": "Which type of impeller is most suitable for pumping water mixed with sand and gravel?",
+"serial": "128DIQLj:2894",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:2894"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"2n=4",
+"2n=6",
+"2n=8",
+"2n=10",
+"None of these"
+],
+"page": "",
+"q": "What is the chromosome number in Haplopappus gracilis?",
+"serial": "1UgnIe-g:536",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:536"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Novelty, Distinctness, Uniformity and Stability (N-DUS)",
+"Novelty, Inventiveness, Industrial application & usefulness",
+"New, Useful, Non-obvious",
+"Novelty, Usefulness, Non-obviousness, Industrial applicability",
+"None of these"
+],
+"page": "",
+"q": "What are the requirements for the protection of a new variety under PPV & FR?",
+"serial": "1UgnIe-g:834",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:834"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Dorsal vessel",
+"Ventricular muscle",
+"Spiracle",
+"Trachea",
+"None of these"
+],
+"page": "",
+"q": "Which organ is the principal pulsating organ that causes the flow of hemolymph in insects?",
+"serial": "1UgnIe-g:1908",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1908"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"1%",
+"1.5%",
+"2%",
+"2.5%",
+"None of these"
+],
+"page": "",
+"q": "What is the premium rate for Rabi crops under PMFBY?",
+"serial": "17U0MEc-:182",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:182"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"June\u2011September",
+"March",
+"November",
+"January",
+"None of these"
+],
+"page": "",
+"q": "In the northern and north\u2011western states of India, during which month should ponds be stocked to avoid severe winter effects?",
+"serial": "1sUgWsko:2404",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2404"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Relative humidity",
+"Direct solar radiation",
+"Soil moisture tension",
+"Wind direction",
+"None of these"
+],
+"page": "",
+"q": "What does a Pyrheliometer measure?",
+"serial": "1bxM1Q-4:1528",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1528"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"0.5 cm",
+"1 cm",
+"2 cm",
+"5 cm",
+"None of these"
+],
+"page": "",
+"q": "In the A\u201d horizon, spheroidal aggregates are typically not larger than what diameter?",
+"serial": "17U0MEc-:1059",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "17U0MEc-:1059"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Netherlands",
+"Germany",
+"India",
+"Tamil Nadu",
+"None of these"
+],
+"page": "",
+"q": "Which country is the highest producer of loose flowers?",
+"serial": "1YcJWVgW:988",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:988"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Wheat",
+"Sugarcane",
+"Maize",
+"Tomato",
+"None of these"
+],
+"page": "",
+"q": "Which of the following crops is NOT listed as a host for Mythimna separata (armyworm)?",
+"serial": "1sUgWsko:1863",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1863"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Maharashtra",
+"Karnataka",
+"Gujarat",
+"Tamil Nadu",
+"None of these"
+],
+"page": "",
+"q": "Which Indian state is the highest producer of Sapota?",
+"serial": "1YcJWVgW:283",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:283"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"6-7 t/ha vs 2-3 t/ha conventional",
+"2-3 t/ha vs 6-7 t/ha conventional",
+"10-12 t/ha vs 5-6 t/ha conventional",
+"4-5 t/ha vs 1-2 t/ha conventional",
+"None of these"
+],
+"page": "",
+"q": "Average yield of rice under SRI compared to conventional methods is:",
+"serial": "128DIQLj:211",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "128DIQLj:211"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Apomixis",
+"Vegetative propagation",
+"Balanced lethal system",
+"Inbred line",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a method to utilize heterosis?",
+"serial": "1UgnIe-g:238",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:238"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Lepidoptera",
+"Coleoptera",
+"Homoptera (aphids)",
+"Diptera",
+"None of these"
+],
+"page": "",
+"q": "The filter chamber, which helps prevent dilution of digestive enzymes, is characteristic of which group?",
+"serial": "1UgnIe-g:1946",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:1946"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Rotifers",
+"Egg yolk",
+"Finely powdered oil cake",
+"Wheat grains",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT listed as a supplementary feed for the spawn stage?",
+"serial": "1sUgWsko:2251",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2251"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Terminal rolling and drying of leaves",
+"Yellow or silvery streaks on leaves",
+"Stunted growth with purple spots",
+"Root rot with white mycelium",
+"None of these"
+],
+"page": "",
+"q": "What is the typical symptom of thrips attack on young rice seedlings?",
+"serial": "1sUgWsko:1810",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:1810"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Moisture content where plant wilts but can still extract water",
+"Moisture content where plant wilts and dies",
+"Moisture content where plant reaches maximum growth",
+"Moisture content where plant has no water",
+"None of these"
+],
+"page": "",
+"q": "Permanent wilting point is defined as:",
+"serial": "1bxM1Q-4:1043",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1043"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Stomata closing",
+"Film forming",
+"Reflecting",
+"Photosynthetic boosting",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is NOT a type of anti\u2011transpirant mentioned?",
+"serial": "1sUgWsko:4283",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:4283"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Stage I",
+"Stage II",
+"Stage III",
+"MP never becomes negative",
+"None of these"
+],
+"page": "",
+"q": "At which stage does the Marginal Product (MP) become negative?",
+"serial": "1bxM1Q-4:2284",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:2284"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Nellore",
+"Guntur",
+"Tharparkar",
+"Hariana",
+"None of these"
+],
+"page": "",
+"q": "What is the synonym for the Ongole cattle breed?",
+"serial": "1sUgWsko:2935",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2935"
+},
+{
+"expl": "",
+"key": 2,
+"o": [
+"Cellulose",
+"Hemicellulose",
+"Lignin",
+"Pectin",
+"None of these"
+],
+"page": "",
+"q": "What is the most abundant chemical present in the cell wall?",
+"serial": "1sUgWsko:5858",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5858"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Diallylsulfide",
+"Gingerol",
+"Piperine",
+"Capsaicin",
+"None of these"
+],
+"page": "",
+"q": "What is the primary pungent component in Garlic?",
+"serial": "1bxM1Q-4:3317",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:3317"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Kaolinite",
+"Chlorite",
+"Vermiculite",
+"Illite",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is a 2:2 type (or 2:1:1) clay mineral?",
+"serial": "1sUgWsko:6892",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:6892"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Self\u2011pollinated",
+"Cross\u2011pollinated",
+"Setrpolllnated",
+"Autogamous",
+"None of these"
+],
+"page": "",
+"q": "A plant that shows less than 5% cross\u2011pollination is considered?",
+"serial": "1sUgWsko:5863",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:5863"
+},
+{
+"expl": "",
+"key": 3,
+"o": [
+"Wheat bran",
+"Oats",
+"Linseed oil seeds",
+"Barley",
+"None of these"
+],
+"page": "",
+"q": "Which of the following feeds is NOT listed as suitable for post\u2011parturient cows?",
+"serial": "1bxM1Q-4:4161",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:4161"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"It covers the entire field and moves almost unguided",
+"It requires precise control of water flow",
+"It is highly labor intensive",
+"It has high water application efficiency",
+"None of these"
+],
+"page": "",
+"q": "Which statement about flooding irrigation is true?",
+"serial": "1bxM1Q-4:1000",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1000"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Mahadevpuri",
+"Darjeeling",
+"Sweeping",
+"Karnataka",
+"None of these"
+],
+"page": "",
+"q": "The Malwi breed is also known by which of the following synonyms?",
+"serial": "1sUgWsko:2972",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:2972"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"15-20 feet",
+"20-25 feet",
+"25-30 feet",
+"10-15 feet",
+"None of these"
+],
+"page": "",
+"q": "What is the total height range of an elevated cage layer house?",
+"serial": "1sUgWsko:3456",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1sUgWsko:3456"
+},
+{
+"expl": "",
+"key": 1,
+"o": [
+"Frequent tilling of the soil",
+"Maintaining organic matter levels and encouraging soil biological activity",
+"Using synthetic fertilizers",
+"Planting only one type of crop",
+"None of these"
+],
+"page": "",
+"q": "Which practice is essential for maintaining long-term soil fertility in organic farming?",
+"serial": "1bxM1Q-4:1438",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1bxM1Q-4:1438"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Castor",
+"Rice",
+"Maize",
+"Cotton",
+"None of these"
+],
+"page": "",
+"q": "Which crop requires the least number of field inspections?",
+"serial": "1UgnIe-g:850",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1UgnIe-g:850"
+},
+{
+"expl": "",
+"key": 0,
+"o": [
+"Karonda",
+"Tamarind",
+"Phalsa",
+"Banana",
+"None of these"
+],
+"page": "",
+"q": "Which of the following is the richest source of iron among the listed plants?",
+"serial": "1YcJWVgW:408",
+"src_row": null,
+"topic": "",
+"trunc": 0,
+"uid": "1YcJWVgW:408"
+}
+],
+"set_no": 48,
+"skip_rows": [],
+"src": "mongo:agri.afo_sets",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 },
 "iari": {
