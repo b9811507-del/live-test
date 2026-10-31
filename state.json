@@ -243620,8 +243620,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 987,
 "names": {},
+"plan": {
+"bidx_next": 987,
+"built_at": "2026-10-31T14:27:08+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 140-142",
+"pages_list": [
+140,
+141,
+142
+],
+"questions": [
+{
+"expl": "Sindhu is explicitly described as a seedless variety with the stone being 3% of the total fruit weight.",
+"key": 2,
+"o": [
+"Mallika",
+"Amrapalli",
+"Sindhu",
+"Ratna",
+"None of these"
+],
+"page": "140",
+"q": "Which hybrid mango variety is a seedless variety with a stone constituting only 3% of the total fruit weight?",
+"serial": "974",
+"src_row": 966,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:974"
+},
+{
+"expl": "Amrapalli is described as suitable for High-Density Planting (HDP) with a triangular system at 2.5 x 2.5 m\u00b2 spacing.",
+"key": 2,
+"o": [
+"Square system",
+"Rectangular system",
+"Triangular system",
+"Hexagonal system",
+"None of these"
+],
+"page": "140",
+"q": "The hybrid variety 'Amrapalli' is best suited for which planting system at a spacing of 2.5 x 2.5 m\u00b2?",
+"serial": "975",
+"src_row": 967,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:975"
+},
+{
+"expl": "Ratna is the hybrid of Neelum and Alphonso, and it is explicitly stated to be free from spongy tissue and fibre.",
+"key": 1,
+"o": [
+"Mallika",
+"Ratna",
+"Arka Puneet",
+"Sindhu",
+"None of these"
+],
+"page": "140",
+"q": "Which mango hybrid is derived from the cross between Neelum and Alphonso and is free from spongy tissue and fibre?",
+"serial": "976",
+"src_row": 968,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:976"
+},
+{
+"expl": "Langra is specified to be stored at 14\u00b0C with 85-90% relative humidity.",
+"key": 2,
+"o": [
+"Dashehari",
+"Mallika",
+"Langra",
+"Chausa",
+"None of these"
+],
+"page": "140",
+"q": "For which mango variety is the recommended storage temperature 14\u00b0C with 85-90% relative humidity?",
+"serial": "977",
+"src_row": 969,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:977"
+},
+{
+"expl": "Arka Puneet is described as a regular bearer, free from spongy tissue, and suitable for canning, but there is no mention of it being seedless.",
+"key": 2,
+"o": [
+"Regular bearer",
+"Free from spongy tissue",
+"Seedless variety",
+"Suitable for canning",
+"None of these"
+],
+"page": "140",
+"q": "Which of the following is NOT a characteristic of the mango hybrid 'Arka Puneet'?",
+"serial": "978",
+"src_row": 970,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:978"
+},
+{
+"expl": "The source states the average yield as 1000-2000 fruits per tree.",
+"key": 1,
+"o": [
+"500-1000 fruits",
+"1000-2000 fruits",
+"2000-3000 fruits",
+"3000-4000 fruits",
+"None of these"
+],
+"page": "140",
+"q": "What is the average yield range per tree for mango varieties mentioned in the source?",
+"serial": "979",
+"src_row": 971,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:979"
+},
+{
+"expl": "Ambika is explicitly described as a late-ripening variety derived from Amrapali x Janardhan Pasand.",
+"key": 0,
+"o": [
+"Ambika",
+"Pusa Peetamber",
+"Arka Anmol",
+"Sai Sughanda",
+"None of these"
+],
+"page": "140",
+"q": "Which mango variety is a late-ripening variety developed from the cross Amrapali x Janardhan Pasand?",
+"serial": "980",
+"src_row": 972,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "140:980"
+},
+{
+"expl": "Banana is known as Antique fruit crop, Tree of Wisdom, Tree of Paradise, Adams fig, Kalpataru, and Apple of Paradise. 'Golden Apple' is not listed as a common name in the source.",
+"key": 2,
+"o": [
+"Tree of Wisdom",
+"Apple of Paradise",
+"Golden Apple",
+"Kalpataru",
+"None of these"
+],
+"page": "141",
+"q": "Which of the following is NOT a common name for banana?",
+"serial": "981",
+"src_row": 973,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:981"
+},
+{
+"expl": "The source explicitly states that the origin of Musa balbisiana is Burma.",
+"key": 2,
+"o": [
+"Malaysia",
+"India",
+"Burma",
+"Thailand",
+"None of these"
+],
+"page": "141",
+"q": "The origin of Musa balbisiana is associated with which country?",
+"serial": "982",
+"src_row": 974,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:982"
+},
+{
+"expl": "Banana is described as a humid tropical, monocotyledonous, monocarpic, herbaceous, and perennial plant in the source.",
+"key": 1,
+"o": [
+"Annual, dicotyledonous, herbaceous",
+"Perennial, monocotyledonous, herbaceous",
+"Biennial, dicotyledonous, woody",
+"Perennial, monocotyledonous, woody",
+"None of these"
+],
+"page": "141",
+"q": "What is the botanical classification of banana in terms of its life cycle and growth habit?",
+"serial": "983",
+"src_row": 975,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:983"
+},
+{
+"expl": "The source states that the most commonly used tissue culture method in banana is Shoot tip culture.",
+"key": 2,
+"o": [
+"Root tip culture",
+"Leaf culture",
+"Shoot tip culture",
+"Seed culture",
+"None of these"
+],
+"page": "141",
+"q": "Which propagation method is most commonly used for tissue culture in banana?",
+"serial": "984",
+"src_row": 976,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:984"
+},
+{
+"expl": "The source explicitly mentions that banana is a heavy feeder of potassium (K), with a requirement of 450 mg.",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Calcium",
+"None of these"
+],
+"page": "141",
+"q": "What is the primary nutrient that banana is a heavy feeder of?",
+"serial": "985",
+"src_row": 977,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:985"
+},
+{
+"expl": "The source states that chilling injury in banana occurs at temperatures below 12\u00b0C.",
+"key": 1,
+"o": [
+"Below 10\u00b0C",
+"Below 12\u00b0C",
+"Below 15\u00b0C",
+"Below 20\u00b0C",
+"None of these"
+],
+"page": "141",
+"q": "At what temperature does chilling injury occur in banana?",
+"serial": "986",
+"src_row": 978,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:986"
+},
+{
+"expl": "The source specifies that the water requirement through drip irrigation for banana is 10-25 litres per plant.",
+"key": 1,
+"o": [
+"5-10 litres",
+"10-25 litres",
+"25-40 litres",
+"40-50 litres",
+"None of these"
+],
+"page": "141",
+"q": "What is the water requirement for banana through drip irrigation per plant?",
+"serial": "987",
+"src_row": 979,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "141:987"
+},
+{
+"expl": "Karnataka has the highest banana area among Indian states.",
+"key": 0,
+"o": [
+"Karnataka",
+"Kerala",
+"Andhra Pradesh",
+"Gujarat",
+"None of these"
+],
+"page": "142",
+"q": "Which Indian state has the largest banana area?",
+"serial": "988",
+"src_row": 980,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:988"
+},
+{
+"expl": "Andhra Pradesh produces the most bananas compared to other states.",
+"key": 0,
+"o": [
+"Andhra Pradesh",
+"Gujarat",
+"Maharashtra",
+"Karnataka",
+"None of these"
+],
+"page": "142",
+"q": "Which state leads in banana production?",
+"serial": "989",
+"src_row": 981,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:989"
+},
+{
+"expl": "Alluvial and volcanic soils provide the ideal conditions for banana growth.",
+"key": 0,
+"o": [
+"Alluvial and volcanic soils",
+"Clay soils",
+"Loam soils",
+"Sandy soils",
+"None of these"
+],
+"page": "142",
+"q": "What soil type is best for banana cultivation?",
+"serial": "990",
+"src_row": 982,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:990"
+},
+{
+"expl": "Bananas thrive best in soils with a pH of 5.5 to 8.0, performing well between 6.5 and 7.5.",
+"key": 0,
+"o": [
+"5.5\u20138.0",
+"4.0\u20136.0",
+"7.5\u20139.0",
+"6.0\u20137.0",
+"None of these"
+],
+"page": "142",
+"q": "What is the optimal soil pH range for banana plants?",
+"serial": "991",
+"src_row": 983,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:991"
+},
+{
+"expl": "Sword suckers are more vigorous, grow faster, and bear fruit earlier, making them the preferred choice.",
+"key": 0,
+"o": [
+"Sword suckers",
+"Water suckers",
+"Rhizome",
+"Tissue culture",
+"None of these"
+],
+"page": "142",
+"q": "Which banana sucker type is preferred by farmers for vigorous growth?",
+"serial": "992",
+"src_row": 984,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:992"
+},
+{
+"expl": "Sword suckers typically weigh between 500 and 750 grams.",
+"key": 0,
+"o": [
+"500\u2013750 g",
+"1.5\u20132 kg",
+"200\u2013400 g",
+"2\u20133 kg",
+"None of these"
+],
+"page": "142",
+"q": "What is the average weight of a sword sucker?",
+"serial": "993",
+"src_row": 985,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:993"
+},
+{
+"expl": "Dwarf bananas reach harvest maturity in 11 to 14 months post-planting.",
+"key": 0,
+"o": [
+"11\u201314 months",
+"14\u201316 months",
+"7\u20139 months",
+"90\u2013120 days",
+"None of these"
+],
+"page": "142",
+"q": "What is the typical harvest period for dwarf bananas after planting?",
+"serial": "994",
+"src_row": 986,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "142:994"
+}
+],
+"row_from": 966,
+"row_to": 987,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 966,
+"seeded_from": "2026-10-30"
+},
 "qidx": 0,
+"seeded_from": "2026-10-30",
+"skips": [],
 "step": 0
 },
 "malwa": {
