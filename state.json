@@ -243626,9 +243626,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 872,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 872,
+"built_at": "2026-10-31T10:58:21+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 259-264",
+"pages_blocks": [
+"259-260",
+"261-262",
+"263-264"
+],
+"questions": [
+{
+"expl": "Potassium improves crop quality, regulates stomatal movement, and prevents lodging, earning it the title \"quality element.\"",
+"key": 0,
+"o": [
+"Potassium",
+"Phosphorus",
+"Calcium",
+"Magnesium",
+"None of these"
+],
+"page": "259-260",
+"q": "Which element is known as the \"quality element\" due to its role in enhancing crop quality and preventing lodging?",
+"serial": "1311",
+"src_row": 852,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "259-260:1311"
+},
+{
+"expl": "Vanadium pentoxide (V2O5) is the most common form of vanadium in soils and can substitute for Mo in nitrogen fixation.",
+"key": 0,
+"o": [
+"V2O5",
+"V2O3",
+"V2O4",
+"V2O6",
+"None of these"
+],
+"page": "259-260",
+"q": "What is the primary form of vanadium that is most commonly found in soils and can partially substitute molybdenum for nitrogen fixation?",
+"serial": "1312",
+"src_row": 853,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "259-260:1312"
+},
+{
+"expl": "Phosphorus is stored in seeds as phytin and is a key component of ATP, ADP, and other energy-carrying molecules.",
+"key": 0,
+"o": [
+"Phosphorus",
+"Calcium",
+"Potassium",
+"Magnesium",
+"None of these"
+],
+"page": "259-260",
+"q": "Which nutrient is stored in seeds as phytin and is crucial for energy transfer in the form of ATP and ADP?",
+"serial": "1313",
+"src_row": 854,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "259-260:1313"
+},
+{
+"expl": "Silicon does not serve as a source of nitrogen; it provides structural strength, disease resistance, and yield improvement.",
+"key": 2,
+"o": [
+"Imparts strength to rice stem",
+"Enhances disease resistance",
+"Acts as a primary source of nitrogen",
+"Improves crop yield and quality",
+"None of these"
+],
+"page": "259-260",
+"q": "Silicon is classified as a ballast element but also has several functional roles in rice. Which of the following is NOT one of its functions?",
+"serial": "1314",
+"src_row": 855,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "259-260:1314"
+},
+{
+"expl": "Nitrogen is taken up as NH4+ in rice and gives leaves their dark green hue as part of chlorophyll.",
+"key": 0,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Calcium",
+"Magnesium",
+"None of these"
+],
+"page": "259-260",
+"q": "Which essential macronutrient is absorbed by rice primarily as NH4+ and is responsible for the dark green colour of leaves?",
+"serial": "1315",
+"src_row": 856,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "259-260:1315"
+},
+{
+"expl": "Magnesium sits at the centre of the chlorophyll molecule, making it essential for photosynthesis.",
+"key": 0,
+"o": [
+"Magnesium",
+"Calcium",
+"Potassium",
+"Phosphorus",
+"None of these"
+],
+"page": "259-260",
+"q": "Which element is essential for the formation of chlorophyll and acts as the central atom in the chlorophyll molecule?",
+"serial": "1316",
+"src_row": 857,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "259-260:1316"
+},
+{
+"expl": "Iron is not part of the chlorophyll structure, yet it is required for chlorophyll biosynthesis.",
+"key": 0,
+"o": [
+"Iron",
+"Magnesium",
+"Manganese",
+"Zinc",
+"None of these"
+],
+"page": "261-262",
+"q": "Which micronutrient is NOT a component of the chlorophyll molecule but is essential for its synthesis?",
+"serial": "1321",
+"src_row": 858,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1321"
+},
+{
+"expl": "The cofactor is composed of Fe and Mo in a 7:1 ratio.",
+"key": 2,
+"o": [
+"1:1",
+"3:1",
+"7:1",
+"10:1",
+"None of these"
+],
+"page": "261-262",
+"q": "The iron\u2013molybdenum cofactor of nitrogenase contains iron and molybdenum in what ratio?",
+"serial": "1322",
+"src_row": 859,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1322"
+},
+{
+"expl": "Sulphur-containing compounds such as cysteine give cruciferous plants, onion and garlic their distinct smell.",
+"key": 0,
+"o": [
+"Sulphur",
+"Chlorine",
+"Boron",
+"Manganese",
+"None of these"
+],
+"page": "261-262",
+"q": "Which element contributes to the characteristic odour of onions and garlic?",
+"serial": "1323",
+"src_row": 860,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1323"
+},
+{
+"expl": "Manganese is part of the Mn\u2011SOD and the water\u2011splitting enzyme in PSII, and it also aids chlorophyll synthesis.",
+"key": 0,
+"o": [
+"Manganese",
+"Iron",
+"Copper",
+"Zinc",
+"None of these"
+],
+"page": "261-262",
+"q": "Which micronutrient is a component of the water\u2011oxidizing complex in photosystem II and helps in chlorophyll formation?",
+"serial": "1324",
+"src_row": 861,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1324"
+},
+{
+"expl": "Boron is essential for pollen tube growth, seed development and carbohydrate translocation.",
+"key": 0,
+"o": [
+"Boron",
+"Manganese",
+"Iron",
+"Copper",
+"None of these"
+],
+"page": "261-262",
+"q": "Which micronutrient is crucial for pollen germination and sugar translocation in plants?",
+"serial": "1325",
+"src_row": 862,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1325"
+},
+{
+"expl": "Copper is part of plastoquinone and plastocyanin, which transfer electrons in the photosynthetic electron transport chain.",
+"key": 0,
+"o": [
+"Copper",
+"Iron",
+"Magnesium",
+"Manganese",
+"None of these"
+],
+"page": "261-262",
+"q": "Which micronutrient functions as an electron carrier in plastoquinone and plastocyanin during photosynthesis?",
+"serial": "1326",
+"src_row": 863,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1326"
+},
+{
+"expl": "High levels of chlorine suppress several plant diseases and also acts as a cofactor in the Mn\u2011containing water\u2011splitting enzyme of PSII.",
+"key": 0,
+"o": [
+"Chlorine",
+"Sulphur",
+"Zinc",
+"Iron",
+"None of these"
+],
+"page": "261-262",
+"q": "Which micronutrient, when abundant, suppresses diseases such as take\u2011all in wheat and downy mildew in pearl millet?",
+"serial": "1327",
+"src_row": 864,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "261-262:1327"
+},
+{
+"expl": "Nickel is required for urease activity, which hydrolyzes urea into ammonia and CO\u2082.",
+"key": 1,
+"o": [
+"Zinc",
+"Nickel",
+"Iron",
+"Manganese",
+"None of these"
+],
+"page": "263-264",
+"q": "Which micronutrient is an essential component of the enzyme urease?",
+"serial": "1331",
+"src_row": 865,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1331"
+},
+{
+"expl": "Potassium deficiency causes tip and marginal scorching of older leaves as the most distinctive sign.",
+"key": 1,
+"o": [
+"V\u2011shaped chlorosis in cereals",
+"Tip and marginal scorching",
+"Uniform yellowing of younger leaves",
+"Interveinal chlorosis in older leaves",
+"None of these"
+],
+"page": "263-264",
+"q": "What is the most characteristic symptom of potassium deficiency in older leaves?",
+"serial": "1332",
+"src_row": 866,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1332"
+},
+{
+"expl": "Hidden hunger describes significant yield loss while potassium deficiency symptoms remain unseen.",
+"key": 1,
+"o": [
+"Excessive potassium uptake without yield increase",
+"Yield reductions without visible potassium deficiency symptoms",
+"Excessive potassium uptake with yield increase",
+"Visible potassium deficiency symptoms but no yield loss",
+"None of these"
+],
+"page": "263-264",
+"q": "The term \"Hidden hunger\" in relation to potassium refers to:",
+"serial": "1333",
+"src_row": 867,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1333"
+},
+{
+"expl": "Both iron and manganese deficiencies produce interveinal chlorosis on new leaves.",
+"key": 2,
+"o": [
+"Iron",
+"Manganese",
+"Both iron and manganese",
+"Calcium",
+"None of these"
+],
+"page": "263-264",
+"q": "Interveinal chlorosis on new (upper) leaves indicates deficiency of which nutrients?",
+"serial": "1334",
+"src_row": 868,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1334"
+},
+{
+"expl": "Calcium deficiency leads to terminal bud breakdown, giving a bushy look.",
+"key": 0,
+"o": [
+"Calcium",
+"Magnesium",
+"Sulphur",
+"Boron",
+"None of these"
+],
+"page": "263-264",
+"q": "Which nutrient deficiency causes breakdown of terminal buds and a bushy plant appearance?",
+"serial": "1335",
+"src_row": 869,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1335"
+},
+{
+"expl": "Sulphur is immobile; its deficiency causes uniform yellowing of younger leaves.",
+"key": 1,
+"o": [
+"Nitrogen",
+"Sulphur",
+"Magnesium",
+"Iron",
+"None of these"
+],
+"page": "263-264",
+"q": "Uniform yellowing on younger leaves is a symptom of deficiency of which immobile nutrient?",
+"serial": "1336",
+"src_row": 870,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1336"
+},
+{
+"expl": "Tip and marginal scorching is a potassium deficiency symptom, not phosphorus.",
+"key": 3,
+"o": [
+"Stunted growth with dark blue\u2011green leaves",
+"Slender stems and limited root system",
+"Rusty lesions in potato tubers",
+"Tip and marginal scorching of older leaves",
+"None of these"
+],
+"page": "263-264",
+"q": "Which of the following is NOT a symptom of phosphorus deficiency?",
+"serial": "1337",
+"src_row": 871,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "263-264:1337"
+}
+],
+"rolled": false,
+"row_from": 852,
+"row_to": 872,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 852,
+"seeded_from": "2026-10-30",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-30",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
