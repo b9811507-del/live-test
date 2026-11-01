@@ -248667,8 +248667,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1008,
 "names": {},
+"plan": {
+"bidx_next": 1008,
+"built_at": "2026-11-01T14:27:24+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 143-145",
+"pages_list": [
+143,
+144,
+145
+],
+"questions": [
+{
+"expl": "The source lists Maharashtra Kharif season as June-July.",
+"key": 0,
+"o": [
+"June-July",
+"October-November",
+"February-April",
+"August-September",
+"None of these"
+],
+"page": "143",
+"q": "According to the table, which months constitute the Kharif planting season for banana in Maharashtra?",
+"serial": "995",
+"src_row": 987,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:995"
+},
+{
+"expl": "The wet\u2011land table specifies Feb.\u2013Apr. for those varieties.",
+"key": 1,
+"o": [
+"January\u2011February",
+"February\u2011April",
+"June\u2011August",
+"November\u2011December",
+"None of these"
+],
+"page": "143",
+"q": "For wet\u2011land banana cultivation, which planting period is recommended for the varieties Poovan, Rasthali and Monthan?",
+"serial": "996",
+"src_row": 988,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:996"
+},
+{
+"expl": "At 1.5 \u00d7 1.5 m spacing, the table gives 4444 plants/ha.",
+"key": 1,
+"o": [
+"3086",
+"4444",
+"2267",
+"750",
+"None of these"
+],
+"page": "143",
+"q": "What is the plant density (plants per hectare) for garden land when spacing is 1.5 m \u00d7 1.5 m?",
+"serial": "997",
+"src_row": 989,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:997"
+},
+{
+"expl": "The high\u2011density guideline states 1.8 \u00d7 3.6 m gives 4600 plants/ha for Cavendish.",
+"key": 0,
+"o": [
+"4600",
+"5000",
+"3086",
+"4444",
+"None of these"
+],
+"page": "143",
+"q": "High\u2011density planting for Cavendish varieties uses spacing of 1.8 m \u00d7 3.6 m. Approximately how many plants per hectare does this correspond to?",
+"serial": "998",
+"src_row": 990,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:998"
+},
+{
+"expl": "The table \u2018Spacing Based on Varieties\u2019 lists 3 m \u00d7 3 m for tallest varieties.",
+"key": 1,
+"o": [
+"2.54 m \u00d7 2.54 m",
+"3 m \u00d7 3 m",
+"1.8 m \u00d7 1.8 m",
+"3.6 m \u00d7 3.6 m",
+"None of these"
+],
+"page": "143",
+"q": "Which spacing is recommended for the tallest banana varieties?",
+"serial": "999",
+"src_row": 991,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:999"
+},
+{
+"expl": "The hill banana spacing row shows 3.6 \u00d7 3.6 m.",
+"key": 2,
+"o": [
+"1.8 \u00d7 1.8 m",
+"2.1 \u00d7 2.1 m",
+"3.6 \u00d7 3.6 m",
+"2.54 \u00d7 2.54 m",
+"None of these"
+],
+"page": "143",
+"q": "In hill banana cultivation (Sirumalai), the planting season is June to August. Which spacing is specified for hill banana?",
+"serial": "1000",
+"src_row": 992,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:1000"
+},
+{
+"expl": "The garden\u2011land row states planting in Jan\u2011Feb and Nov\u2011Dec.",
+"key": 0,
+"o": [
+"January\u2011February and November\u2011December",
+"February\u2011April and June\u2011August",
+"April\u2011May and August\u2011September",
+"June\u2011July and October\u2011November",
+"None of these"
+],
+"page": "143",
+"q": "For garden land, the recommended planting periods include two separate windows. Which combination correctly lists them?",
+"serial": "1001",
+"src_row": 993,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "143:1001"
+},
+{
+"expl": "The source explicitly states that Lady finger is resistant to bunchy top virus.",
+"key": 2,
+"o": [
+"Dwarf Cavendish",
+"Robusta",
+"Lady finger",
+"Nendran",
+"None of these"
+],
+"page": "144",
+"q": "Which banana variety is specifically mentioned as resistant to bunchy top virus?",
+"serial": "1002",
+"src_row": 994,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1002"
+},
+{
+"expl": "The table lists the plant population for the paired row system as 5200 per hectare.",
+"key": 1,
+"o": [
+"4440",
+"5200",
+"3080",
+"2260",
+"None of these"
+],
+"page": "144",
+"q": "What is the plant population per hectare for the paired row planting system?",
+"serial": "1003",
+"src_row": 995,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1003"
+},
+{
+"expl": "The source lists Denavelling, Dehandling, Desuckering, Thrasing, and Mattoking as special practices, but not Pruning.",
+"key": 3,
+"o": [
+"Denavelling",
+"Dehandling",
+"Desuckering",
+"Pruning",
+"None of these"
+],
+"page": "144",
+"q": "Which of the following is NOT a special practice in banana cultivation?",
+"serial": "1004",
+"src_row": 996,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1004"
+},
+{
+"expl": "The table states that Robusta and Nendran have a planting distance of 1.8 m x 1.8 m.",
+"key": 1,
+"o": [
+"Dwarf Cavendish",
+"Robusta and Nendran",
+"Rasthali and Poovan",
+"Square System",
+"None of these"
+],
+"page": "144",
+"q": "For which banana varieties is the planting distance 1.8 m x 1.8 m?",
+"serial": "1005",
+"src_row": 997,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1005"
+},
+{
+"expl": "The drip irrigation dose table specifies 20 L/plant/day for the 5th month.",
+"key": 1,
+"o": [
+"15 L/plant/day",
+"20 L/plant/day",
+"25 L/plant/day",
+"30 L/plant/day",
+"None of these"
+],
+"page": "144",
+"q": "What is the drip irrigation dose for banana plants in the 5th month?",
+"serial": "1006",
+"src_row": 998,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1006"
+},
+{
+"expl": "The source explicitly mentions Nendran (and Chipsona) as suitable for chips.",
+"key": 2,
+"o": [
+"Grand naine",
+"Champa",
+"Nendran",
+"Poovan",
+"None of these"
+],
+"page": "144",
+"q": "Which banana variety is suitable for making chips?",
+"serial": "1007",
+"src_row": 999,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1007"
+},
+{
+"expl": "The source states that desuckering is done three times in a year.",
+"key": 2,
+"o": [
+"Once",
+"Twice",
+"Three times",
+"Four times",
+"None of these"
+],
+"page": "144",
+"q": "How many times in a year is desuckering typically done in banana cultivation?",
+"serial": "1008",
+"src_row": 1000,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "144:1008"
+},
+{
+"expl": "The source explicitly states that Rasthali is grown for a premium price in the market.",
+"key": 2,
+"o": [
+"Poovan",
+"Monthan",
+"Rasthali",
+"Robusta",
+"None of these"
+],
+"page": "145",
+"q": "Which banana variety is specifically mentioned as being grown for a premium price in the market?",
+"serial": "1009",
+"src_row": 1001,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1009"
+},
+{
+"expl": "Bunch thinning involves removing one to two small bottom hands to ensure uniform bunch development.",
+"key": 1,
+"o": [
+"To increase the number of hands in the bunch",
+"To facilitate uniform bunch development by removing small bottom hands",
+"To delay the ripening process",
+"To reduce the need for propping",
+"None of these"
+],
+"page": "145",
+"q": "What is the primary purpose of bunch thinning in banana cultivation?",
+"serial": "1010",
+"src_row": 1002,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1010"
+},
+{
+"expl": "The source states that furrow planting is mostly practiced in Gujarat and Maharashtra.",
+"key": 2,
+"o": [
+"Pit Planting",
+"Trench Planting",
+"Furrow Planting",
+"Multistoried System",
+"None of these"
+],
+"page": "145",
+"q": "Which planting system is most commonly practiced in Gujarat and Maharashtra for banana cultivation?",
+"serial": "1011",
+"src_row": 1003,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1011"
+},
+{
+"expl": "The source specifies storage at 13\u00b0C and 85-95% relative humidity for 2-3 weeks.",
+"key": 1,
+"o": [
+"10\u00b0C and 70-80% RH",
+"13\u00b0C and 85-95% RH",
+"15\u00b0C and 90-95% RH",
+"8\u00b0C and 80-90% RH",
+"None of these"
+],
+"page": "145",
+"q": "What is the recommended storage temperature and relative humidity for bananas to extend shelf life for 2-3 weeks?",
+"serial": "1012",
+"src_row": 1004,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1012"
+},
+{
+"expl": "Robusta has a yield range of 50-60 t/ha/year, which is the highest among the listed varieties.",
+"key": 3,
+"o": [
+"Poovan",
+"Monthan",
+"Rasthali",
+"Robusta",
+"None of these"
+],
+"page": "145",
+"q": "Which banana variety has the highest yield range (t/ha/year) as per the given data?",
+"serial": "1013",
+"src_row": 1005,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1013"
+},
+{
+"expl": "The source explicitly states that bunch covering is essential in Dwarf Cavendish and Silk group for attractive fruits.",
+"key": 2,
+"o": [
+"Poovan and Neypooran",
+"Monthan and Robusta",
+"Dwarf Cavendish and Silk group",
+"Rasthali and Monthan",
+"None of these"
+],
+"page": "145",
+"q": "For which banana group is bunch covering essential to produce attractive fruits?",
+"serial": "1014",
+"src_row": 1006,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1014"
+},
+{
+"expl": "The source clearly states that the family of citrus is Rutaceae.",
+"key": 2,
+"o": [
+"Solanaceae",
+"Poaceae",
+"Rutaceae",
+"Fabaceae",
+"None of these"
+],
+"page": "145",
+"q": "What is the family of the citrus crop as mentioned in the source?",
+"serial": "1015",
+"src_row": 1007,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "145:1015"
+}
+],
+"row_from": 987,
+"row_to": 1008,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 987,
+"seeded_from": "2026-10-31"
+},
 "qidx": 0,
+"seeded_from": "2026-10-31",
+"skips": [],
 "step": 0
 },
 "malwa": {
