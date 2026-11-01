@@ -248673,9 +248673,438 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 894,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 894,
+"built_at": "2026-11-01T10:57:44+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 22,
+"pages": "Book pages 265-270",
+"pages_blocks": [
+"265-266",
+"267-268",
+"269-270"
+],
+"questions": [
+{
+"expl": "The source states that yellowing in lucerne is caused by a boron deficiency.",
+"key": 0,
+"o": [
+"Boron",
+"Sulphur",
+"Calcium",
+"Manganese",
+"None of these"
+],
+"page": "265-266",
+"q": "Yellowing of young leaves in lucerne is a symptom of deficiency in which nutrient?",
+"serial": "1341",
+"src_row": 872,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1341"
+},
+{
+"expl": "Tip hooking is listed as a symptom of calcium deficiency.",
+"key": 0,
+"o": [
+"Calcium",
+"Magnesium",
+"Boron",
+"Zinc",
+"None of these"
+],
+"page": "265-266",
+"q": "Tip hooking of leaves is primarily associated with deficiency of which element?",
+"serial": "1342",
+"src_row": 873,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1342"
+},
+{
+"expl": "The text notes that little leaf in citrus is due to copper deficiency.",
+"key": 1,
+"o": [
+"Zinc",
+"Copper",
+"Manganese",
+"Iron",
+"None of these"
+],
+"page": "265-266",
+"q": "Little leaf syndrome in citrus plants is caused by deficiency of which nutrient?",
+"serial": "1343",
+"src_row": 874,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1343"
+},
+{
+"expl": "It is stated that Mo deficiency symptoms look like N deficiency because nitrate cannot be metabolized.",
+"key": 0,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Sulphur",
+"Potassium",
+"None of these"
+],
+"page": "265-266",
+"q": "Molybdenum deficiency symptoms resemble those of which other nutrient deficiency?",
+"serial": "1344",
+"src_row": 875,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1344"
+},
+{
+"expl": "The toxicity section says excess N leads to luxurious vegetative growth that lowers yield and quality.",
+"key": 1,
+"o": [
+"Reduced vegetative growth and higher yield",
+"High vegetative growth reducing economic yield and quality",
+"Improved root development",
+"Increased fruit size",
+"None of these"
+],
+"page": "265-266",
+"q": "What is the main effect of excessive nitrogen on crop growth?",
+"serial": "1345",
+"src_row": 876,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1345"
+},
+{
+"expl": "Sulphur toxicity in such soils is referred to as 'akiochi' in the source.",
+"key": 0,
+"o": [
+"Akiochi",
+"Whip tail",
+"Little leaf",
+"Weeping willow habit",
+"None of these"
+],
+"page": "265-266",
+"q": "In poorly drained rice soils, sulfur toxicity is commonly known as what disorder?",
+"serial": "1346",
+"src_row": 877,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1346"
+},
+{
+"expl": "Silicon deficiency causes withering of leaves and a weeping willow growth habit.",
+"key": 0,
+"o": [
+"Silicon",
+"Chlorine",
+"Calcium",
+"Molybdenum",
+"None of these"
+],
+"page": "265-266",
+"q": "Which nutrient deficiency leads to a weeping willow habit of growth?",
+"serial": "1347",
+"src_row": 878,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1347"
+},
+{
+"expl": "The source lists white or yellow emerging leaves (white bud in maize) as a zinc deficiency symptom.",
+"key": 0,
+"o": [
+"Zinc",
+"Copper",
+"Manganese",
+"Boron",
+"None of these"
+],
+"page": "265-266",
+"q": "White or yellow emerging leaves in maize are indicative of deficiency in which nutrient?",
+"serial": "1348",
+"src_row": 879,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "265-266:1348"
+},
+{
+"expl": "The law was first formulated by Carl Sprengel in 1828, before Liebig popularized it.",
+"key": 0,
+"o": [
+"Carl Sprengel",
+"Justus von Liebig",
+"John Bennet",
+"Robert Brown",
+"None of these"
+],
+"page": "267-268",
+"q": "Who initially developed Liebig's law of minimum?",
+"serial": "1351",
+"src_row": 880,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1351"
+},
+{
+"expl": "Iron (Fe) is listed with a concentration of 100 ppm, the highest among the elements shown.",
+"key": 0,
+"o": [
+"Fe",
+"Cu",
+"Mo",
+"Ni",
+"None of these"
+],
+"page": "267-268",
+"q": "Which essential element has the highest concentration (ppm) in the table on page 267?",
+"serial": "1352",
+"src_row": 881,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1352"
+},
+{
+"expl": "C.N. Acharya devised the trench method, which is considered the most effective way to make FYM.",
+"key": 1,
+"o": [
+"Heap method",
+"Trench method",
+"Pit method",
+"Windrow method",
+"None of these"
+],
+"page": "267-268",
+"q": "Which FYM preparation method was developed by C.N. Acharya and is regarded as the best?",
+"serial": "1353",
+"src_row": 882,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1353"
+},
+{
+"expl": "The text states that about 60\u201170 % of phosphorus supplied by FYM is available to the first crop.",
+"key": 1,
+"o": [
+"30%",
+"60-70%",
+"70%",
+"90%",
+"None of these"
+],
+"page": "267-268",
+"q": "Approximately what proportion of phosphorus from FYM becomes available to the first crop?",
+"serial": "1354",
+"src_row": 883,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1354"
+},
+{
+"expl": "Eisenia fetida, the Red Wiggler, is identified as the most commonly employed species for vermicomposting.",
+"key": 0,
+"o": [
+"Eisenia fetida",
+"Eudrilus eugeniae",
+"Perionyx excavatus",
+"Lumbricus terrestris",
+"None of these"
+],
+"page": "267-268",
+"q": "Which earthworm species is most widely used in vermicomposting?",
+"serial": "1355",
+"src_row": 884,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1355"
+},
+{
+"expl": "Penicillium is listed as the most dominant rhizosphere fungus.",
+"key": 0,
+"o": [
+"Penicillium",
+"Aspergillus",
+"Fusarium",
+"Rhizobium",
+"None of these"
+],
+"page": "267-268",
+"q": "The most dominant fungi in the rhizosphere is:",
+"serial": "1356",
+"src_row": 885,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1356"
+},
+{
+"expl": "Molybdenum is presented in the form of the molybdate ion, MoO4^2-.",
+"key": 0,
+"o": [
+"MoO4^2-",
+"MoS2",
+"MoCl5",
+"MoO3",
+"None of these"
+],
+"page": "267-268",
+"q": "What is the ion/chemical form of molybdenum listed as essential for plants?",
+"serial": "1357",
+"src_row": 886,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "267-268:1357"
+},
+{
+"expl": "The source states that vermicomposting requires moisture of 50-60% for optimal worm activity.",
+"key": 2,
+"o": [
+"30-40%",
+"40-50%",
+"50-60%",
+"60-70%",
+"None of these"
+],
+"page": "269-270",
+"q": "What is the optimal moisture range to maintain in a vermicompost bed?",
+"serial": "1361",
+"src_row": 887,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1361"
+},
+{
+"expl": "Sheep penning is defined as the traditional practice of keeping sheep overnight on a field to add nutrients via their excreta.",
+"key": 1,
+"o": [
+"Rotational grazing",
+"Sheep penning",
+"Fodder cropping",
+"Silvopasture",
+"None of these"
+],
+"page": "269-270",
+"q": "Confining sheep to a farmland overnight to enrich the soil with their droppings is known as:",
+"serial": "1362",
+"src_row": 888,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1362"
+},
+{
+"expl": "The source lists \"Night soil\" as the term for human excreta in both solid and liquid forms.",
+"key": 0,
+"o": [
+"Night soil",
+"Sewage water",
+"Sludge",
+"Manure",
+"None of these"
+],
+"page": "269-270",
+"q": "Human excreta (both solid and liquid) are collectively called:",
+"serial": "1363",
+"src_row": 889,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1363"
+},
+{
+"expl": "Sesbania rostrata is identified in the source as the stem\u2011nodulating green manure crop.",
+"key": 0,
+"o": [
+"Sesbania rostrata",
+"Crotalaria juncea",
+"Sunflower",
+"Mustard",
+"None of these"
+],
+"page": "269-270",
+"q": "Which crop is a stem\u2011nodulating (aerial N\u2011fixing) green manure?",
+"serial": "1364",
+"src_row": 890,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1364"
+},
+{
+"expl": "The source defines concentrated organic manures as those with relatively high NPK concentrations compared with bulky manures.",
+"key": 0,
+"o": [
+"Contain higher concentrations of NPK nutrients",
+"Decompose more slowly",
+"Are derived only from animal sources",
+"Must be composted before use",
+"None of these"
+],
+"page": "269-270",
+"q": "Concentrated organic manures differ from bulky organic manures because they:",
+"serial": "1365",
+"src_row": 891,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1365"
+},
+{
+"expl": "Oilcake nutrients are reported to be available to crops 7\u201110 days after application.",
+"key": 2,
+"o": [
+"1-3 days",
+"4-6 days",
+"7-10 days",
+"11-14 days",
+"None of these"
+],
+"page": "269-270",
+"q": "Nutrients from oilcakes become available to crops after approximately how many days?",
+"serial": "1366",
+"src_row": 892,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1366"
+},
+{
+"expl": "Rapid nutrient release is characteristic of chemical fertilizers, not an advantage mentioned for organic manures.",
+"key": 1,
+"o": [
+"Enhances soil fertility by adding organic matter",
+"Provides a rapid nutrient release for plants",
+"Improves soil structure and water retention",
+"Increases microbial activity in the soil",
+"None of these"
+],
+"page": "269-270",
+"q": "Which statement is NOT an advantage of organic manures listed in the source?",
+"serial": "1367",
+"src_row": 893,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "269-270:1367"
+}
+],
+"rolled": false,
+"row_from": 872,
+"row_to": 894,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 872,
+"seeded_from": "2026-10-31",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-10-31",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
