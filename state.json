@@ -248959,6 +248959,8 @@
 "cd": 1,
 "congrats_sent": 34781,
 "cta_sent": "off",
+"done_at": "2026-11-01T14:42:33+05:30",
+"elapsed_s": 905,
 "expl_in_poll": 21,
 "file_msg": 34782,
 "file_sent": "IARI_p143-145_21Q_2026-11-01.html",
@@ -248968,8 +248970,18 @@
 "lb_rows": 17,
 "lb_sent": true,
 "lock_ts": 1793524309.543597,
-"locked_by": "41290952869",
+"locked_by": "",
 "msg_ann": 34756,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 34758,
 "names": {
 "1027390571": "Sns",
@@ -248990,6 +249002,8 @@
 "8501796920": "Sei123",
 "8567101693": "Tushar"
 },
+"paid_msg": 34784,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 1008,
@@ -249424,7 +249438,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-11-01T14:30:23+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 34783,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 271-276\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 146, 147, 148"
 },
