@@ -252447,9 +252447,456 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 917,
 "names": {},
+"plan": {
+"batch": 6,
+"bidx_next": 917,
+"built_at": "2026-11-02T10:58:10+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 23,
+"pages": "Book pages 271-276",
+"pages_blocks": [
+"271-272",
+"273-274",
+"275-276"
+],
+"questions": [
+{
+"expl": "Sodium nitrate (Chile saltpetre) is recorded as the world\u2019s first chemical fertilizer.",
+"key": 0,
+"o": [
+"Sodium nitrate",
+"Calcium nitrate",
+"Ammonium sulphate",
+"Urea",
+"None of these"
+],
+"page": "271-272",
+"q": "Which fertilizer was the first chemical fertilizer used globally?",
+"serial": "1371",
+"src_row": 894,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1371"
+},
+{
+"expl": "The Fertilizer Control Order (FCO) was passed in 1957 and later revised in 1985.",
+"key": 0,
+"o": [
+"1957",
+"1965",
+"1972",
+"1985",
+"None of these"
+],
+"page": "271-272",
+"q": "The Fertilizer Control Order was first enacted in which year?",
+"serial": "1372",
+"src_row": 895,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1372"
+},
+{
+"expl": "Straight fertilizers supply only one primary nutrient; potassium chloride provides only potassium.",
+"key": 2,
+"o": [
+"Diammonium phosphate (DAP)",
+"A physical mix of urea and SSP",
+"Potassium chloride",
+"Ammonium phosphate sulphate",
+"None of these"
+],
+"page": "271-272",
+"q": "Which of the following is a straight fertilizer?",
+"serial": "1373",
+"src_row": 896,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1373"
+},
+{
+"expl": "Fertilizer grade expresses the guaranteed minimum percentages of N, P\u2082O\u2085 and K\u2082O respectively.",
+"key": 0,
+"o": [
+"18% N, 10% P\u2082O\u2085, 0% K\u2082O",
+"N:P:K ratio of 18:10:0",
+"18% N, 10% K\u2082O, 0% P\u2082O\u2085",
+"18% N, 10% N, 0% P\u2082O\u2085",
+"None of these"
+],
+"page": "271-272",
+"q": "The label \"18:10:0\" on a fertilizer indicates:",
+"serial": "1374",
+"src_row": 897,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1374"
+},
+{
+"expl": "Anhydrous ammonia requires 148 kg CaCO\u2083 per 100 kg to neutralise, the largest value in the table.",
+"key": 2,
+"o": [
+"Ammonium sulphate",
+"Ammonium nitrate",
+"Anhydrous ammonia",
+"Diammonium phosphate (DAP)",
+"None of these"
+],
+"page": "271-272",
+"q": "Which fertilizer has the highest equivalent acidity among those listed?",
+"serial": "1375",
+"src_row": 898,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1375"
+},
+{
+"expl": "Calcium cyanamide has the highest equivalent basicity (63), making it best for acidic soils.",
+"key": 0,
+"o": [
+"Calcium cyanamide",
+"Sodium nitrate",
+"Potassium nitrate",
+"Dicalcium phosphate (DCP)",
+"None of these"
+],
+"page": "271-272",
+"q": "Which fertilizer is most suitable for acidic soils because of its basicity?",
+"serial": "1376",
+"src_row": 899,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1376"
+},
+{
+"expl": "Nitrate fertilizers are usually applied as top dressings, not as basal applications.",
+"key": 3,
+"o": [
+"They are highly mobile and soluble in soils",
+"They increase soil pH due to a basic residual effect",
+"They are prone to denitrification in water\u2011logged soils",
+"They are best applied as a basal fertilizer",
+"None of these"
+],
+"page": "271-272",
+"q": "Which statement about nitrate fertilizers is FALSE?",
+"serial": "1377",
+"src_row": 900,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1377"
+},
+{
+"expl": "High\u2011analysis fertilizers contain more than 25 % of primary nutrients; urea contains about 46 % nitrogen.",
+"key": 2,
+"o": [
+"Single super phosphate (SSP)",
+"Sodium nitrate",
+"Urea",
+"Ammonium sulphate",
+"None of these"
+],
+"page": "271-272",
+"q": "Among the following, which is a high\u2011analysis fertilizer?",
+"serial": "1378",
+"src_row": 901,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "271-272:1378"
+},
+{
+"expl": "Ammonium ions are held on the clay complex, reducing their movement with water and thus limiting leaching.",
+"key": 1,
+"o": [
+"High solubility",
+"Adsorption of NH4+ on the clay complex",
+"Rapid nitrification",
+"High pH increase",
+"None of these"
+],
+"page": "273-274",
+"q": "Which characteristic of ammonium\u2011based fertilizers helps minimize leaching losses?",
+"serial": "1381",
+"src_row": 902,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1381"
+},
+{
+"expl": "Ammonium nitrate contains both NH4+ and NO3\u2011 ions, providing the two nitrogen forms.",
+"key": 2,
+"o": [
+"Urea",
+"Calcium cyanamide",
+"Ammonium nitrate",
+"Isobutylidene diurea",
+"None of these"
+],
+"page": "273-274",
+"q": "Which fertilizer supplies both nitrate and ammonium forms of nitrogen?",
+"serial": "1382",
+"src_row": 903,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1382"
+},
+{
+"expl": "Urea (NH2CONH2) contains 46% nitrogen by weight, the highest among solid N fertilizers.",
+"key": 2,
+"o": [
+"21%",
+"33%",
+"46%",
+"38%",
+"None of these"
+],
+"page": "273-274",
+"q": "What is the nitrogen percentage of urea, the solid fertilizer with the highest N content?",
+"serial": "1383",
+"src_row": 904,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1383"
+},
+{
+"expl": "Biuret, formed at temperatures >180 \u00b0C, can be toxic to plants, so its presence is limited in commercial urea.",
+"key": 1,
+"o": [
+"It increases nitrogen content",
+"It is toxic to plants",
+"It enhances urea solubility",
+"It reduces moisture content",
+"None of these"
+],
+"page": "273-274",
+"q": "Why is biuret considered an undesirable impurity in urea fertilizers?",
+"serial": "1384",
+"src_row": 905,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1384"
+},
+{
+"expl": "Urease accelerates the conversion of urea to ammonia, which then nitrifies to nitrate.",
+"key": 1,
+"o": [
+"Nitrifying bacteria",
+"Urease",
+"Phosphatase",
+"Ammonia oxidase",
+"None of these"
+],
+"page": "273-274",
+"q": "The hydrolysis of applied urea in soil is catalyzed by which enzyme?",
+"serial": "1385",
+"src_row": 906,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1385"
+},
+{
+"expl": "Neem coated urea is a coated SRNF with a nitrogen content of 46%.",
+"key": 1,
+"o": [
+"Sulphur coated urea",
+"Neem coated urea",
+"Isobutylidene diurea",
+"Urea formaldehyde",
+"None of these"
+],
+"page": "273-274",
+"q": "Which slow\u2011release nitrogen fertilizer is coated with neem and contains 46% nitrogen?",
+"serial": "1386",
+"src_row": 907,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1386"
+},
+{
+"expl": "Regulations allow only up to 1% moisture by weight in urea to maintain its quality.",
+"key": 1,
+"o": [
+"0.5%",
+"1%",
+"2%",
+"5%",
+"None of these"
+],
+"page": "273-274",
+"q": "What is the maximum permissible moisture limit in commercial urea?",
+"serial": "1387",
+"src_row": 908,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "273-274:1387"
+},
+{
+"expl": "Nitrapyrin (N-Serve) is listed among chemical nitrification inhibitors; the other choices are a natural inhibitor, a urease inhibitor, and a fertilizer.",
+"key": 0,
+"o": [
+"Nitrapyrin (N-Serve)",
+"Neem cake",
+"Hydroquinone",
+"Calcium nitrate",
+"None of these"
+],
+"page": "275-276",
+"q": "Which of the following is a chemical nitrification inhibitor?",
+"serial": "1391",
+"src_row": 909,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1391"
+},
+{
+"expl": "When pH is below 7, H2PO4- is the main plant\u2011available orthophosphate.",
+"key": 2,
+"o": [
+"HPO4\u00b2-",
+"PO4\u2073-",
+"H2PO4-",
+"H3PO4",
+"None of these"
+],
+"page": "275-276",
+"q": "At soil pH 6.5, which phosphate ion is the predominant plant\u2011available form?",
+"serial": "1392",
+"src_row": 910,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1392"
+},
+{
+"expl": "Calcium nitrate reacts with potassium sulphate to produce calcium sulphate, which can clog drip lines.",
+"key": 0,
+"o": [
+"Calcium nitrate",
+"Calcium ammonium nitrate",
+"Ammonium nitrate",
+"Urea",
+"None of these"
+],
+"page": "275-276",
+"q": "Which fertilizer cannot be mixed with potassium sulphate in fertigation because it forms calcium sulphate?",
+"serial": "1393",
+"src_row": 911,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1393"
+},
+{
+"expl": "The hygroscopicity order is Ammonium nitrate > Urea > Ammonium sulphate.",
+"key": 0,
+"o": [
+"Ammonium nitrate",
+"Urea",
+"Ammonium sulphate",
+"Calcium nitrate",
+"None of these"
+],
+"page": "275-276",
+"q": "Which nitrogen fertilizer has the greatest hygroscopicity?",
+"serial": "1394",
+"src_row": 912,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1394"
+},
+{
+"expl": "Basic slag (a citric\u2011acid\u2011soluble fertilizer) is ideal for acidic soils and long\u2011duration crops.",
+"key": 1,
+"o": [
+"Triple superphosphate",
+"Basic slag",
+"Monoammonium phosphate",
+"Rock phosphate",
+"None of these"
+],
+"page": "275-276",
+"q": "Which phosphatic fertilizer is most suitable for acidic soils and long\u2011duration crops?",
+"serial": "1395",
+"src_row": 913,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1395"
+},
+{
+"expl": "P2O5 = P \u00d7 2.29; the reverse factor is 0.43.",
+"key": 1,
+"o": [
+"0.43",
+"2.29",
+"1.5",
+"3.0",
+"None of these"
+],
+"page": "275-276",
+"q": "To convert elemental phosphorus (P) to its oxide equivalent (P2O5), which factor is used?",
+"serial": "1396",
+"src_row": 914,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1396"
+},
+{
+"expl": "CAN contains equal parts nitrate\u2011N and ammoniacal\u2011N, i.e., 50% each.",
+"key": 1,
+"o": [
+"25%",
+"50%",
+"75%",
+"100%",
+"None of these"
+],
+"page": "275-276",
+"q": "In calcium ammonium nitrate (CAN), what percentage of nitrogen is present as nitrate?",
+"serial": "1397",
+"src_row": 915,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1397"
+},
+{
+"expl": "NBPT (also called Agrotain) is listed as a urease inhibitor, whereas DCD and KN3 are nitrification inhibitors and ST is a nitrification/urease inhibitor combo.",
+"key": 1,
+"o": [
+"DCD",
+"NBPT",
+"KN3",
+"ST",
+"None of these"
+],
+"page": "275-276",
+"q": "Which of the following compounds acts as a urease inhibitor?",
+"serial": "1398",
+"src_row": 916,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "275-276:1398"
+}
+],
+"rolled": false,
+"row_from": 894,
+"row_to": 917,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 894,
+"seeded_from": "2026-11-01",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-01",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
