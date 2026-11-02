@@ -252441,8 +252441,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1029,
 "names": {},
+"plan": {
+"bidx_next": 1029,
+"built_at": "2026-11-02T14:27:51+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 146-148",
+"pages_list": [
+146,
+147,
+148
+],
+"questions": [
+{
+"expl": "The table explicitly lists 'Citrus aurantifolia' as the scientific name for Acid lime / Sour lime / Kagzi lime.",
+"key": 1,
+"o": [
+"Rangpur lime",
+"Acid lime / Sour lime / Kagzi lime",
+"Tahiti lime",
+"Lemon",
+"None of these"
+],
+"page": "146",
+"q": "Which of the following citrus species has the scientific name 'Citrus aurantifolia'?",
+"serial": "1016",
+"src_row": 1008,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1016"
+},
+{
+"expl": "The table states that Kinnow mandarin is a hybrid of 'King x Willow leaf'.",
+"key": 0,
+"o": [
+"King and Willow leaf",
+"King and Sour orange",
+"Willow leaf and Sweet orange",
+"Nobilis and Deliciosa",
+"None of these"
+],
+"page": "146",
+"q": "Kinnow mandarin is a hybrid of which two mandarin varieties?",
+"serial": "1017",
+"src_row": 1009,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1017"
+},
+{
+"expl": "The table lists 'C. grandis' as the scientific name for Pummelo.",
+"key": 1,
+"o": [
+"Grape Fruit",
+"Pummelo",
+"Sweet orange",
+"Citron",
+"None of these"
+],
+"page": "146",
+"q": "Which citrus species is scientifically classified as 'C. grandis'?",
+"serial": "1018",
+"src_row": 1010,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1018"
+},
+{
+"expl": "The table specifies 'C. jambhiri' as the scientific name for Rough Lemon.",
+"key": 0,
+"o": [
+"Citrus jambhiri",
+"Citrus limon",
+"Citrus medica",
+"Citrus latifolia",
+"None of these"
+],
+"page": "146",
+"q": "Rough Lemon belongs to which genus and species?",
+"serial": "1019",
+"src_row": 1011,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1019"
+},
+{
+"expl": "Sour orange is classified under Oranges, not Mandarin/Tangerine, as per the table.",
+"key": 3,
+"o": [
+"King mandarin",
+"Willow leaf Mandarin",
+"Kinnow mandarin",
+"Sour orange",
+"None of these"
+],
+"page": "146",
+"q": "Which of the following is NOT a variety of Mandarin/Tangerine?",
+"serial": "1020",
+"src_row": 1012,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1020"
+},
+{
+"expl": "The table lists 'C. Paradise' as the scientific name for Grape Fruit.",
+"key": 1,
+"o": [
+"C. grandis",
+"C. Paradise",
+"C. Sinensis",
+"C. aurantium",
+"None of these"
+],
+"page": "146",
+"q": "What is the scientific name for Grape Fruit as per the given classification?",
+"serial": "1021",
+"src_row": 1013,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1021"
+},
+{
+"expl": "The table explicitly categorizes Pummelo under 'Pummelo & Grape fruit'.",
+"key": 2,
+"o": [
+"Sweet orange",
+"Citron",
+"Pummelo",
+"Lemon",
+"None of these"
+],
+"page": "146",
+"q": "Which citrus species is classified under the category 'Pummelo & Grape fruit'?",
+"serial": "1022",
+"src_row": 1014,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "146:1022"
+},
+{
+"expl": "The table explicitly states that Mandarin (loose jacket) is highly susceptible to waterlogging.",
+"key": 1,
+"o": [
+"Sweet orange",
+"Mandarin (loose jacket)",
+"Grapefruit",
+"Pummelo",
+"None of these"
+],
+"page": "147",
+"q": "Which citrus variety is known to be highly susceptible to waterlogging?",
+"serial": "1023",
+"src_row": 1015,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1023"
+},
+{
+"expl": "The table mentions that the Double ring method is the best irrigation method for Sweet orange.",
+"key": 2,
+"o": [
+"Flood irrigation",
+"Drip irrigation",
+"Double ring method",
+"Sprinkler irrigation",
+"None of these"
+],
+"page": "147",
+"q": "Which irrigation method is best suited for Sweet orange cultivation?",
+"serial": "1024",
+"src_row": 1016,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1024"
+},
+{
+"expl": "The table states that Kagzi lime is the indicator plant for Tristiza and is highly susceptible to it.",
+"key": 2,
+"o": [
+"Citrus canker",
+"Greening",
+"Tristiza",
+"Powdery mildew",
+"None of these"
+],
+"page": "147",
+"q": "Which citrus disease is Kagzi lime highly susceptible to, making it an indicator plant?",
+"serial": "1025",
+"src_row": 1017,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1025"
+},
+{
+"expl": "The table specifies that grapefruit contains Naringin, which has anti-malarial activity.",
+"key": 2,
+"o": [
+"Vitamin C",
+"Limonene",
+"Naringin",
+"Hesperidin",
+"None of these"
+],
+"page": "147",
+"q": "What is the primary bioactive compound in grapefruit with anti-malarial activity?",
+"serial": "1026",
+"src_row": 1018,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1026"
+},
+{
+"expl": "The table lists Pummelo under monoembryonic species, while Mandarin, Sweet orange, and Acid lime are polyembryonic.",
+"key": 2,
+"o": [
+"Mandarin",
+"Sweet orange",
+"Pummelo",
+"Acid lime",
+"None of these"
+],
+"page": "147",
+"q": "Which of the following citrus species is NOT polyembryonic?",
+"serial": "1027",
+"src_row": 1019,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1027"
+},
+{
+"expl": "The source explicitly states that Trifoliate orange is the deciduous citrus species.",
+"key": 2,
+"o": [
+"Mandarin",
+"Sweet orange",
+"Trifoliate orange",
+"Grapefruit",
+"None of these"
+],
+"page": "147",
+"q": "Which citrus species is deciduous?",
+"serial": "1028",
+"src_row": 1020,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1028"
+},
+{
+"expl": "The source mentions that the TSS content of most citrus fruits is 8-12%.",
+"key": 1,
+"o": [
+"5-8%",
+"8-12%",
+"12-15%",
+"15-20%",
+"None of these"
+],
+"page": "147",
+"q": "What is the TSS content range for most citrus fruits?",
+"serial": "1029",
+"src_row": 1021,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "147:1029"
+},
+{
+"expl": "The source explicitly states that Rangpur lime is the most promising rootstock for mandarin and sweet orange.",
+"key": 1,
+"o": [
+"Rough lemon",
+"Rangpur lime",
+"Cleopatra mandarin",
+"Trifoliate orange",
+"None of these"
+],
+"page": "148",
+"q": "Which citrus rootstock is most promising for both mandarin and sweet orange?",
+"serial": "1030",
+"src_row": 1022,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1030"
+},
+{
+"expl": "The source mentions that citrus fruits have a special kind of fruit skin referred to as 'leathery rind'.",
+"key": 1,
+"o": [
+"Smooth and thin",
+"Leathery rind",
+"Hard and woody",
+"Fleshy and soft",
+"None of these"
+],
+"page": "148",
+"q": "What is the primary characteristic of the skin of citrus fruits?",
+"serial": "1031",
+"src_row": 1023,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1031"
+},
+{
+"expl": "The table in the source lists Nagpur as the finest variety of mandarin.",
+"key": 2,
+"o": [
+"Coorg",
+"Khasi (Sikkim)",
+"Nagpur",
+"Satsuma",
+"None of these"
+],
+"page": "148",
+"q": "Which variety of mandarin is known as the finest variety?",
+"serial": "1032",
+"src_row": 1024,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1032"
+},
+{
+"expl": "The source states that citrus canker is the most serious disease of Acid lime.",
+"key": 1,
+"o": [
+"Tristeza",
+"Citrus canker",
+"Gummosis",
+"Greening",
+"None of these"
+],
+"page": "148",
+"q": "Which disease is most serious for Acid lime?",
+"serial": "1033",
+"src_row": 1025,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1033"
+},
+{
+"expl": "The source specifies the pH range for citrus as 5.5 to 6.5.",
+"key": 1,
+"o": [
+"4.5 to 5.5",
+"5.5 to 6.5",
+"6.5 to 7.5",
+"7.5 to 8.5",
+"None of these"
+],
+"page": "148",
+"q": "What is the ideal pH range for citrus cultivation?",
+"serial": "1034",
+"src_row": 1026,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1034"
+},
+{
+"expl": "The source states that Kinnow is developed by crossing King Orange and Willow Leaf.",
+"key": 2,
+"o": [
+"Nagpur mandarin",
+"Washington navel",
+"Kinnow",
+"Satsuma",
+"None of these"
+],
+"page": "148",
+"q": "Which citrus variety is a cross between King Orange and Willow Leaf?",
+"serial": "1035",
+"src_row": 1027,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1035"
+},
+{
+"expl": "The table in the source lists Jaidevi as an acid lime variety with a pleasant aroma.",
+"key": 3,
+"o": [
+"Pramalini",
+"Vikram",
+"Chakradhar",
+"Jaidevi",
+"None of these"
+],
+"page": "148",
+"q": "Which acid lime variety is known for its pleasant aroma?",
+"serial": "1036",
+"src_row": 1028,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "148:1036"
+}
+],
+"row_from": 1008,
+"row_to": 1029,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1008,
+"seeded_from": "2026-11-01"
+},
 "qidx": 0,
+"seeded_from": "2026-11-01",
+"skips": [],
 "step": 0
 },
 "malwa": {
