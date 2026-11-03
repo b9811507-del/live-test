@@ -254424,8 +254424,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1050,
 "names": {},
+"plan": {
+"bidx_next": 1050,
+"built_at": "2026-11-03T14:27:21+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 149-151",
+"pages_list": [
+149,
+150,
+151
+],
+"questions": [
+{
+"expl": "Enology (or Oenology) is the science of wine making, as explicitly stated in the source.",
+"key": 1,
+"o": [
+"Viticulture",
+"Enology",
+"Oenology",
+"Pomology",
+"None of these"
+],
+"page": "149",
+"q": "Which scientific term refers to the study of wine making?",
+"serial": "1037",
+"src_row": 1029,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1037"
+},
+{
+"expl": "The red color in grapes is due to anthocyanins, with Malvin constituting 40-60% of these pigments.",
+"key": 2,
+"o": [
+"Chlorophyll",
+"Carotenoids",
+"Anthocyanins",
+"Flavonoids",
+"None of these"
+],
+"page": "149",
+"q": "What is the primary reason for the red color in grapes?",
+"serial": "1038",
+"src_row": 1030,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1038"
+},
+{
+"expl": "Thompson Seedless variety accounts for 55% of the area under grape cultivation in India.",
+"key": 2,
+"o": [
+"Muscat",
+"Bangalore Blue",
+"Thompson Seedless",
+"Anab-e-Shahi",
+"None of these"
+],
+"page": "149",
+"q": "Which variety of grape accounts for the largest area under cultivation in India?",
+"serial": "1039",
+"src_row": 1031,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1039"
+},
+{
+"expl": "The type of parthenocarpy in grapes is Stermospermocarpy, as mentioned in the source.",
+"key": 1,
+"o": [
+"Stenospermocarpy",
+"Stermospermocarpy",
+"Apomixis",
+"Parthenogenesis",
+"None of these"
+],
+"page": "149",
+"q": "What type of parthenocarpy is observed in grapes?",
+"serial": "1040",
+"src_row": 1032,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1040"
+},
+{
+"expl": "Tartaric acid is the acid commercially extracted from grapes, as per the source.",
+"key": 2,
+"o": [
+"Citric acid",
+"Malic acid",
+"Tartaric acid",
+"Oxalic acid",
+"None of these"
+],
+"page": "149",
+"q": "Which acid is commercially extracted from grapes?",
+"serial": "1041",
+"src_row": 1033,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1041"
+},
+{
+"expl": "The ideal soil pH range for grape cultivation is 6.5 to 8.0, though grapes can tolerate a broader range of 4 to 9.5.",
+"key": 2,
+"o": [
+"4.0 to 5.5",
+"5.5 to 7.0",
+"6.5 to 8.0",
+"8.0 to 9.5",
+"None of these"
+],
+"page": "149",
+"q": "What is the ideal soil pH range for grape cultivation?",
+"serial": "1042",
+"src_row": 1034,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1042"
+},
+{
+"expl": "IBA at 2000 ppm is used as a growth regulator for grape cuttings, applied via the quick dip method for 10 seconds.",
+"key": 1,
+"o": [
+"NAA, 1000 ppm, soak for 24 hours",
+"IBA, 2000 ppm, quick dip for 10 seconds",
+"GA3, 500 ppm, foliar spray",
+"2,4-D, 100 ppm, stem injection",
+"None of these"
+],
+"page": "149",
+"q": "Which growth regulator is commercially used for grape cuttings, and what is its application method?",
+"serial": "1043",
+"src_row": 1035,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "149:1043"
+},
+{
+"expl": "The Bower System covers about 80% of the vineyard area in India, making it the most widely adopted.",
+"key": 0,
+"o": [
+"Bower System",
+"Kniffin System",
+"Telephone System",
+"Head System",
+"None of these"
+],
+"page": "150",
+"q": "Which training system is most widely adopted in Indian vineyards?",
+"serial": "1044",
+"src_row": 1036,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1044"
+},
+{
+"expl": "Bangalore Blue is listed under wine grapes, not raisin grapes.",
+"key": 2,
+"o": [
+"Thompson Seedless",
+"Arkavati",
+"Bangalore Blue",
+"Arka Kanchan",
+"None of these"
+],
+"page": "150",
+"q": "Which variety of grape is NOT listed under raisin grapes in the source?",
+"serial": "1045",
+"src_row": 1037,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1045"
+},
+{
+"expl": "The source specifies that Thompson Seedless has a TSS of 20-22% when used as a wine grape.",
+"key": 1,
+"o": [
+"18-20%",
+"20-22%",
+"22-24%",
+"15-18%",
+"None of these"
+],
+"page": "150",
+"q": "What is the TSS range for Thompson Seedless when used as a wine grape?",
+"serial": "1046",
+"src_row": 1038,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1046"
+},
+{
+"expl": "The Head System is explicitly stated as the least expensive training system.",
+"key": 3,
+"o": [
+"Bower System",
+"Kniffin System",
+"Telephone System",
+"Head System",
+"None of these"
+],
+"page": "150",
+"q": "Which training system is described as the least expensive?",
+"serial": "1047",
+"src_row": 1039,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1047"
+},
+{
+"expl": "The source specifies a spacing of 3 x 2 m for Muscat.",
+"key": 1,
+"o": [
+"2 x 2 m",
+"3 x 2 m",
+"4 x 3 m",
+"1.8 x 1.2 m",
+"None of these"
+],
+"page": "150",
+"q": "What is the recommended spacing for Muscat variety of grapes?",
+"serial": "1048",
+"src_row": 1040,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1048"
+},
+{
+"expl": "The Espalier System is another name for the Kniffin System, not the Telephone System.",
+"key": 3,
+"o": [
+"Uses T-trellis",
+"More expensive than Bower System",
+"Less popular due to high cost",
+"Also called Espalier System",
+"None of these"
+],
+"page": "150",
+"q": "Which of the following is NOT a feature of the Telephone System?",
+"serial": "1049",
+"src_row": 1041,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1049"
+},
+{
+"expl": "The source states that the ideal planting time for Karnataka and Tamil Nadu is Dec. \u2013 Jan.",
+"key": 2,
+"o": [
+"Feb. \u2013 March",
+"Nov. \u2013 Jan.",
+"Dec. \u2013 Jan.",
+"Oct. \u2013 Nov.",
+"None of these"
+],
+"page": "150",
+"q": "When is the ideal time for planting grapes in Karnataka and Tamil Nadu?",
+"serial": "1050",
+"src_row": 1042,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "150:1050"
+},
+{
+"expl": "Nipping is the removal of terminal buds at the 12-15 node stage to prevent staggered growth of grape berries, ensuring uniform development.",
+"key": 1,
+"o": [
+"To increase the number of terminal buds",
+"To avoid staggered growth of grape berries",
+"To enhance the color of the berries",
+"To reduce the sugar content in berries",
+"None of these"
+],
+"page": "151",
+"q": "What is the primary purpose of 'nipping' in grape cultivation?",
+"serial": "1051",
+"src_row": 1043,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1051"
+},
+{
+"expl": "Forward pruning, also called winter pruning, is done in September-October for fruiting, and vines aged one year or more can undergo this pruning.",
+"key": 2,
+"o": [
+"Back pruning",
+"Girdling",
+"Forward pruning",
+"Nipping",
+"None of these"
+],
+"page": "151",
+"q": "Which pruning type is performed in September-October for fruiting in grapes?",
+"serial": "1052",
+"src_row": 1044,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1052"
+},
+{
+"expl": "The ideal TSS for raisin grapes is 22-23\u00b0 Brix, which is also the standard range for this purpose.",
+"key": 2,
+"o": [
+"15\u00b0 Brix",
+"18\u00b0 Brix",
+"22-23\u00b0 Brix",
+"30\u00b0 Brix",
+"None of these"
+],
+"page": "151",
+"q": "What is the ideal TSS (Total Soluble Solids) for grapes intended for raisin production?",
+"serial": "1053",
+"src_row": 1045,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1053"
+},
+{
+"expl": "Magnesium (Mg) deficiency is a universal problem in grape cultivation, and Iron (Fe) deficiency is most common in Black soil.",
+"key": 3,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Iron",
+"Magnesium",
+"None of these"
+],
+"page": "151",
+"q": "Which nutrient deficiency is most common in grape cultivation in Black soil?",
+"serial": "1054",
+"src_row": 1046,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1054"
+},
+{
+"expl": "Veraison is the stage when grape berries begin to ripen, marking the transition from growth to maturation.",
+"key": 1,
+"o": [
+"Calyptra stage",
+"Veraison",
+"Girdling",
+"Nipping",
+"None of these"
+],
+"page": "151",
+"q": "What is the stage called when grape berries begin to ripen?",
+"serial": "1055",
+"src_row": 1047,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1055"
+},
+{
+"expl": "Ethrel is applied at 250-500 ppm during the berry ripening stage to ensure uniform ripening in grapes.",
+"key": 1,
+"o": [
+"GA3",
+"Ethrel",
+"2,4-D",
+"NAA",
+"None of these"
+],
+"page": "151",
+"q": "Which growth regulator is used for uniform ripening of grapes at 250-500 ppm concentration?",
+"serial": "1056",
+"src_row": 1048,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1056"
+},
+{
+"expl": "For export purposes, the berry size must be at least 18 mm in diameter, along with other quality parameters.",
+"key": 2,
+"o": [
+"10 mm",
+"15 mm",
+"18 mm",
+"20 mm",
+"None of these"
+],
+"page": "151",
+"q": "What is the minimum berry size required for grape export purposes?",
+"serial": "1057",
+"src_row": 1049,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "151:1057"
+}
+],
+"row_from": 1029,
+"row_to": 1050,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1029,
+"seeded_from": "2026-11-02"
+},
 "qidx": 0,
+"seeded_from": "2026-11-02",
+"skips": [],
 "step": 0
 },
 "malwa": {
