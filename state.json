@@ -254430,9 +254430,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 935,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 935,
+"built_at": "2026-11-03T10:58:28+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 277-282",
+"pages_blocks": [
+"277-278",
+"279-280",
+"281-282"
+],
+"questions": [
+{
+"expl": "Raw bone meal has 20\u201125% P\u2082O\u2085, which can be higher than the fixed 22% in steamed bone meal.",
+"key": 0,
+"o": [
+"Raw bone meal",
+"Steamed bone meal",
+"Both have equal P\u2082O\u2085",
+"Neither",
+"None of these"
+],
+"page": "277-278",
+"q": "Which bone\u2011meal type contains the higher percentage of P\u2082O\u2085?",
+"serial": "1401",
+"src_row": 917,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "277-278:1401"
+},
+{
+"expl": "Lawes developed SSP in 1840 and later established its commercial production in 1843.",
+"key": 0,
+"o": [
+"Single Super Phosphate (SSP)",
+"Double Super Phosphate (DSP)",
+"Triple Super Phosphate (TSP)",
+"Diammonium Phosphate (DAP)",
+"None of these"
+],
+"page": "277-278",
+"q": "Which phosphorus fertilizer was first synthesized by J.B. Lawes in 1840?",
+"serial": "1402",
+"src_row": 918,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "277-278:1402"
+},
+{
+"expl": "K\u2082SO\u2084 contains no chloride ions, making it suitable for crops that are sensitive to chloride.",
+"key": 1,
+"o": [
+"Muriate of Potash (KCl)",
+"Potassium Sulphate (K\u2082SO\u2084)",
+"Potassium Nitrate (KNO\u2083)",
+"Potassium Polyphosphate",
+"None of these"
+],
+"page": "277-278",
+"q": "Which potassic fertilizer can be safely applied to chloride\u2011sensitive crops such as sugarcane?",
+"serial": "1403",
+"src_row": 919,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "277-278:1403"
+},
+{
+"expl": "Using the conversion K = K\u2082O \u00d7 0.83, 48 % \u00d7 0.83 \u2248 39.8 %, rounded to 40 %.",
+"key": 0,
+"o": [
+"40%",
+"57.6%",
+"58%",
+"48%",
+"None of these"
+],
+"page": "277-278",
+"q": "A fertilizer analysis shows 48% K\u2082O. Approximate elemental K content is:",
+"serial": "1404",
+"src_row": 920,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "277-278:1404"
+},
+{
+"expl": "DAP\u2019s maximum moisture limit is 2.5 %, lower than SSP\u2019s 12 % (powder) or 5 % (granulated).",
+"key": 2,
+"o": [
+"SSP (powdered)",
+"SSP (granulated)",
+"DAP",
+"Muriate of Potash (MOP)",
+"None of these"
+],
+"page": "277-278",
+"q": "Which fertilizer has the lowest permissible moisture limit?",
+"serial": "1405",
+"src_row": 921,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "277-278:1405"
+},
+{
+"expl": "The source defines sulphur deficiency as available S below 10 ppm.",
+"key": 1,
+"o": [
+"5 ppm",
+"10 ppm",
+"15 ppm",
+"20 ppm",
+"None of these"
+],
+"page": "277-278",
+"q": "Soil is considered sulphur deficient when available sulphur is less than:",
+"serial": "1406",
+"src_row": 922,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "277-278:1406"
+},
+{
+"expl": "The source lists EDTA as Ethylenediaminetetraacetic Acid.",
+"key": 0,
+"o": [
+"Ethylenediaminetetraacetic Acid",
+"Diethylenetriaminepentaacetic Acid",
+"Ethylene diamine tricarboxylic acid",
+"Ethylenediamine tetrapropionic acid",
+"None of these"
+],
+"page": "279-280",
+"q": "In the context of micronutrient fertilizers, what does the abbreviation EDTA represent?",
+"serial": "1411",
+"src_row": 923,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "279-280:1411"
+},
+{
+"expl": "Ammonium nitrate has a CRH of 59, the lowest among the listed fertilizers, making it the most hygroscopic.",
+"key": 3,
+"o": [
+"Urea",
+"Ammonium sulphate",
+"DAP",
+"Ammonium nitrate",
+"None of these"
+],
+"page": "279-280",
+"q": "Which of the following fertilizers has the lowest critical relative humidity, indicating it is the most hygroscopic?",
+"serial": "1412",
+"src_row": 924,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "279-280:1412"
+},
+{
+"expl": "DAP shows a CRH of 82.8, the highest value in the provided data.",
+"key": 2,
+"o": [
+"Urea",
+"Ammonium sulphate",
+"DAP",
+"Ammonium nitrate",
+"None of these"
+],
+"page": "279-280",
+"q": "Which fertilizer exhibits the highest critical relative humidity (CRH) among those listed?",
+"serial": "1413",
+"src_row": 925,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "279-280:1413"
+},
+{
+"expl": "The table lists Apatite as the mineral source supplying phosphorus.",
+"key": 1,
+"o": [
+"Organic matter",
+"Apatite",
+"Gypsum",
+"Pyrite",
+"None of these"
+],
+"page": "279-280",
+"q": "According to the soil nutrient source table, which mineral is a primary source of phosphorus for plants?",
+"serial": "1414",
+"src_row": 926,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "279-280:1414"
+},
+{
+"expl": "Organic matter is identified as the source of nitrogen in the soil nutrient source table.",
+"key": 2,
+"o": [
+"Apatite",
+"Gypsum",
+"Organic matter",
+"Fe & Al phosphate",
+"None of these"
+],
+"page": "279-280",
+"q": "Which mineral source listed supplies nitrogen to plants?",
+"serial": "1415",
+"src_row": 927,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "279-280:1415"
+},
+{
+"expl": "The source states that urea has a water solubility of 110%, the highest among the listed fertilizers.",
+"key": 0,
+"o": [
+"Urea",
+"DAP",
+"MOP",
+"Anhydrous ammonia",
+"None of these"
+],
+"page": "281-282",
+"q": "Which fertilizer mentioned has the highest reported water solubility?",
+"serial": "1421",
+"src_row": 928,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1421"
+},
+{
+"expl": "The source notes that potassium (K+) is the most dominant cation in the protoplasm and cytoplasm.",
+"key": 1,
+"o": [
+"Calcium (Ca)",
+"Potassium (K+)",
+"Sodium (Na+)",
+"Magnesium (Mg2+)",
+"None of these"
+],
+"page": "281-282",
+"q": "In plant cells, which cation is most dominant in the protoplasm and cytoplasm?",
+"serial": "1422",
+"src_row": 929,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1422"
+},
+{
+"expl": "The optimum ratio listed is 13:2:1:1 for Ca:Mg:K:P.",
+"key": 0,
+"o": [
+"13:2:1:1",
+"10:5:2:1",
+"12:3:2:2",
+"15:3:1:1",
+"None of these"
+],
+"page": "281-282",
+"q": "What is the optimum Ca:Mg:K:P ratio of soil as given in the text?",
+"serial": "1423",
+"src_row": 930,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1423"
+},
+{
+"expl": "The source indicates that India meets 100% of its potash requirements through imports because potassic fertilizers are not produced domestically.",
+"key": 1,
+"o": [
+"India produces all its potash domestically.",
+"India imports 100% of its potash requirements.",
+"Potassic fertilizers are manufactured in India but not used.",
+"India is a net exporter of potash.",
+"None of these"
+],
+"page": "281-282",
+"q": "Which statement correctly describes India's potash situation?",
+"serial": "1424",
+"src_row": 931,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1424"
+},
+{
+"expl": "The NBS scheme was launched on 1st April, 2010, as stated in the source.",
+"key": 1,
+"o": [
+"1 April 2005",
+"1 April 2010",
+"1 April 2015",
+"1 April 2020",
+"None of these"
+],
+"page": "281-282",
+"q": "When was the Nutrient Based Subsidy (NBS) scheme launched?",
+"serial": "1425",
+"src_row": 932,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1425"
+},
+{
+"expl": "The source specifies potassium nitrate as the most suitable potassium fertilizer for foliar application.",
+"key": 0,
+"o": [
+"Potassium nitrate",
+"Muriate of potash (MOP)",
+"Di-ammonium phosphate (DAP)",
+"Ammonium sulfate",
+"None of these"
+],
+"page": "281-282",
+"q": "Which fertilizer is identified as most suitable for foliar spray?",
+"serial": "1426",
+"src_row": 933,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1426"
+},
+{
+"expl": "The table lists Rhizobium spp. as the symbiotic nitrogen\u2011fixing microorganism for legumes.",
+"key": 2,
+"o": [
+"Azospirillum brasilense",
+"Azotobacter chroococcum",
+"Rhizobium spp.",
+"Blue\u2011green algae",
+"None of these"
+],
+"page": "281-282",
+"q": "Which microorganism is associated with symbiotic nitrogen fixation in legumes?",
+"serial": "1427",
+"src_row": 934,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "281-282:1427"
+}
+],
+"rolled": false,
+"row_from": 917,
+"row_to": 935,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 917,
+"seeded_from": "2026-11-02",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-02",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
