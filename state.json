@@ -256084,9 +256084,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 955,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 955,
+"built_at": "2026-11-04T10:58:03+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 283-288",
+"pages_blocks": [
+"283-284",
+"285-286",
+"287-288"
+],
+"questions": [
+{
+"expl": "Azolla is a water fern that forms a nitrogen\u2011fixing association with cyanobacteria such as Anabaena and is used as green manure in rice fields.",
+"key": 0,
+"o": [
+"Azolla",
+"Acetobacter",
+"Frankia",
+"Beijerinckia",
+"None of these"
+],
+"page": "283-284",
+"q": "Which biofertilizer is a water fern that fixes atmospheric nitrogen in paddy fields through a symbiosis with cyanobacteria?",
+"serial": "1431",
+"src_row": 935,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1431"
+},
+{
+"expl": "Leghaemoglobin binds oxygen, keeping its concentration low so that the oxygen\u2011sensitive nitrogenase enzyme can function while still allowing nodule respiration.",
+"key": 1,
+"o": [
+"Provide nitrogen directly to the plant",
+"Maintain a low oxygen concentration to protect nitrogenase",
+"Store carbon compounds",
+"Transport water within the nodule",
+"None of these"
+],
+"page": "283-284",
+"q": "What is the primary role of leghaemoglobin in effective Rhizobium nodules?",
+"serial": "1432",
+"src_row": 936,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1432"
+},
+{
+"expl": "Component\u2011I of nitrogenase is the Mo\u2011Fe protein, the catalytic site where atmospheric N\u2082 is reduced to ammonia.",
+"key": 0,
+"o": [
+"Component\u2011I (Mo\u2011Fe protein)",
+"Component\u2011II (Fe protein)",
+"Leghaemoglobin",
+"Acetyl\u2011CoA carboxylase",
+"None of these"
+],
+"page": "283-284",
+"q": "Which component of the nitrogenase enzyme contains molybdenum\u2011iron?",
+"serial": "1433",
+"src_row": 937,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1433"
+},
+{
+"expl": "R. meliloti nodulates lucerne (Medicago) and its reported nitrogen\u2011fixation range is 100\u2013150 kg N per hectare.",
+"key": 0,
+"o": [
+"R. meliloti",
+"R. trifolii",
+"R. phaseoli",
+"R. lupini",
+"None of these"
+],
+"page": "283-284",
+"q": "According to Table 2, which Rhizobium species associated with lucerne can fix up to 150 kg N ha\u207b\u00b9?",
+"serial": "1434",
+"src_row": 938,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1434"
+},
+{
+"expl": "The Acetylene Reduction Assay (ARA) exploits nitrogenase\u2019s ability to reduce acetylene to ethylene, providing a rapid estimate of fixation activity.",
+"key": 0,
+"o": [
+"Acetylene Reduction Assay",
+"N\u00b9\u2075 method",
+"Kjeldahl method",
+"Dumas combustion",
+"None of these"
+],
+"page": "283-284",
+"q": "Which assay measures nitrogenase activity by converting acetylene to ethylene?",
+"serial": "1435",
+"src_row": 939,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1435"
+},
+{
+"expl": "Azotobacter is a free\u2011living, aerobic nitrogen\u2011fixing bacterium and is placed under non\u2011symbiotic aerobic biofertilizers.",
+"key": 2,
+"o": [
+"Symbiotic with nodules",
+"Associative symbiotic",
+"Non\u2011symbiotic aerobic",
+"Non\u2011symbiotic anaerobic",
+"None of these"
+],
+"page": "283-284",
+"q": "In the classification of biofertilizers, Azotobacter belongs to which group?",
+"serial": "1436",
+"src_row": 940,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1436"
+},
+{
+"expl": "VAM fungi extend hyphal networks that release enzymes, mobilizing phosphorus bound in organic or mineral forms, making it available to the host plant.",
+"key": 1,
+"o": [
+"Solubilizing inorganic phosphorus",
+"Mobilizing phosphorus from organic matter or mineral sources",
+"Fixing atmospheric nitrogen",
+"Producing phytohormones",
+"None of these"
+],
+"page": "283-284",
+"q": "Vesicular\u2011arbuscular mycorrhizal (VAM) fungi such as Glomus primarily help plants by:",
+"serial": "1437",
+"src_row": 941,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "283-284:1437"
+},
+{
+"expl": "Mycorrhiza literally means 'fungus root' and denotes the symbiotic relationship between fungi and plant roots.",
+"key": 0,
+"o": [
+"Mycorrhiza",
+"Mycobacteria",
+"Rhizobium",
+"Lichen",
+"None of these"
+],
+"page": "285-286",
+"q": "What term describes the mutualistic association between certain fungi and the roots of higher plants?",
+"serial": "1441",
+"src_row": 942,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "285-286:1441"
+},
+{
+"expl": "The Hartig net, a network of fungal hyphae between root cortical cells, is a hallmark of ectomycorrhizal associations.",
+"key": 0,
+"o": [
+"Hartig net",
+"Arbuscule",
+"Vesicle",
+"Peloton",
+"None of these"
+],
+"page": "285-286",
+"q": "Which structure is characteristic of ectomycorrhiza and distinguishes it from endomycorrhiza?",
+"serial": "1442",
+"src_row": 943,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "285-286:1442"
+},
+{
+"expl": "Aluminum and iron react with soluble phosphorus to produce AlPO\u2084 and FePO\u2084, which are insoluble.",
+"key": 0,
+"o": [
+"Al\u00b3\u207a and Fe\u00b3\u207a",
+"Ca\u00b2\u207a and Mg\u00b2\u207a",
+"Na\u207a and K\u207a",
+"Zn\u00b2\u207a and Cu\u00b2\u207a",
+"None of these"
+],
+"page": "285-286",
+"q": "In acidic soils, phosphorus becomes unavailable mainly because it forms insoluble compounds with which ions?",
+"serial": "1443",
+"src_row": 944,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "285-286:1443"
+},
+{
+"expl": "Vermiculite traps K\u207a ions most effectively among 2:1 clay minerals.",
+"key": 0,
+"o": [
+"Vermiculite",
+"Illite",
+"Kaolinite",
+"Montmorillonite",
+"None of these"
+],
+"page": "285-286",
+"q": "Which 2:1 clay mineral has the highest capacity for potassium fixation?",
+"serial": "1444",
+"src_row": 945,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "285-286:1444"
+},
+{
+"expl": "NH\u2084\u207a has the highest competitive ability to occupy exchange sites, thereby reducing K\u207a fixation.",
+"key": 0,
+"o": [
+"NH\u2084\u207a",
+"Ca\u00b2\u207a",
+"Mg\u00b2\u207a",
+"Na\u207a",
+"None of these"
+],
+"page": "285-286",
+"q": "According to the competitive ability order for reducing K\u207a fixation, which ion is most effective?",
+"serial": "1445",
+"src_row": 946,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "285-286:1445"
+},
+{
+"expl": "Q denotes the quantity factor, i.e., the overall nutrient pool in the soil, both accessible and locked forms.",
+"key": 0,
+"o": [
+"Total nutrient reserves in the soil (available + unavailable)",
+"Concentration of nutrient in the soil solution",
+"Rate of nutrient uptake by plants",
+"Soil pH affecting nutrient availability",
+"None of these"
+],
+"page": "285-286",
+"q": "In the Q/I relationship for nutrients, the 'Q' factor represents:",
+"serial": "1446",
+"src_row": 947,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "285-286:1446"
+},
+{
+"expl": "Assimilation is defined as the conversion of absorbed inorganic nutrients into organic substances for growth and metabolism.",
+"key": 0,
+"o": [
+"Assimilation",
+"Translocation",
+"Mineralization",
+"Fixation",
+"None of these"
+],
+"page": "287-288",
+"q": "What term describes the metabolic conversion of inorganic nutrients absorbed by plants into organic compounds such as proteins and nucleic acids?",
+"serial": "1451",
+"src_row": 948,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1451"
+},
+{
+"expl": "Molybdenum is a component of nitrate reductase; deficiency blocks nitrate reduction, causing nitrate buildup.",
+"key": 0,
+"o": [
+"Nitrate reductase",
+"Glutamine synthetase",
+"Rubisco",
+"Sulphate reductase",
+"None of these"
+],
+"page": "287-288",
+"q": "Which enzyme requires molybdenum as a constituent, and its deficiency leads to accumulation of nitrate in plants?",
+"serial": "1452",
+"src_row": 949,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1452"
+},
+{
+"expl": "The source states that nitrate assimilation occurs mainly in the leaves, with only a small amount in roots.",
+"key": 0,
+"o": [
+"Leaves",
+"Roots",
+"Stems",
+"Flowers",
+"None of these"
+],
+"page": "287-288",
+"q": "In which plant part is nitrate assimilation primarily carried out?",
+"serial": "1453",
+"src_row": 950,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1453"
+},
+{
+"expl": "Root interception, where roots physically contact nutrients, accounts for the appreciable calcium uptake.",
+"key": 2,
+"o": [
+"Mass flow",
+"Diffusion",
+"Root interception",
+"Active transport",
+"None of these"
+],
+"page": "287-288",
+"q": "Which nutrient movement mechanism to roots is most responsible for calcium uptake?",
+"serial": "1454",
+"src_row": 951,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1454"
+},
+{
+"expl": "High phosphorus levels antagonize cationic micronutrients such as iron, manganese, zinc, and copper.",
+"key": 0,
+"o": [
+"Cationic micronutrients (Fe, Mn, Zn, Cu)",
+"Anionic macronutrients (NO\u2083\u207b, SO\u2084\u00b2\u207b)",
+"Secondary nutrients (Ca, Mg)",
+"All nutrients equally",
+"None of these"
+],
+"page": "287-288",
+"q": "Excessive application of phosphorus in soil most directly reduces the uptake of which group of nutrients?",
+"serial": "1455",
+"src_row": 952,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1455"
+},
+{
+"expl": "The source lists the permissible soil erosion limit as 11.2 tons ha\u207b\u00b9 yr\u207b\u00b9.",
+"key": 0,
+"o": [
+"11.2",
+"16.35",
+"5.53",
+"6000",
+"None of these"
+],
+"page": "287-288",
+"q": "What is the permissible limit of soil erosion in India (tons per hectare per year)?",
+"serial": "1456",
+"src_row": 953,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1456"
+},
+{
+"expl": "Nitrogen is optimally available in soils with a pH between 6.0 and 8.0.",
+"key": 0,
+"o": [
+"6.0-8.0",
+"<6.0",
+"7.0-8.0",
+"5.5-7.0",
+"None of these"
+],
+"page": "287-288",
+"q": "What is the optimum pH range for nitrogen availability in soils?",
+"serial": "1457",
+"src_row": 954,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "287-288:1457"
+}
+],
+"rolled": false,
+"row_from": 935,
+"row_to": 955,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 935,
+"seeded_from": "2026-11-03",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-03",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
