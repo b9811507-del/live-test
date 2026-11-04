@@ -256077,11 +256077,14 @@
 "step": 8
 },
 "iari": {
+"announced_at": "2026-11-04T14:30:03+05:30",
 "ans": {},
 "bidx": 1071,
 "lock_ts": 1793782797.4196901,
 "locked_by": "41803509389",
+"msg_ann": 35064,
 "names": {},
+"pinned_ann": true,
 "plan": {
 "bidx_next": 1071,
 "built_at": "2026-11-04T14:28:06+05:30",
@@ -256487,7 +256490,7 @@
 "qidx": 0,
 "seeded_from": "2026-11-03",
 "skips": [],
-"step": 0
+"step": 1
 },
 "malwa": {
 "announced_at": "2026-11-04T11:00:00+05:30",
