@@ -256078,8 +256078,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1071,
 "names": {},
+"plan": {
+"bidx_next": 1071,
+"built_at": "2026-11-04T14:28:06+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 152-154",
+"pages_list": [
+152,
+153,
+154
+],
+"questions": [
+{
+"expl": "Thompson seedless is explicitly stated as the ruling variety in India and the leading raisin grape variety in the SOURCE.",
+"key": 1,
+"o": [
+"Crimson seedless",
+"Thompson seedless",
+"Perlette",
+"Arka Neelamani",
+"None of these"
+],
+"page": "152",
+"q": "Which grape variety is the ruling variety in India and the leading raisin grape variety?",
+"serial": "1058",
+"src_row": 1050,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1058"
+},
+{
+"expl": "Nipping is defined in the SOURCE as the removal of the terminal bud at the 12-15 node stage.",
+"key": 2,
+"o": [
+"Removing 20% berries at pea stage",
+"Tying clusters in the pandal after fruit set",
+"Removal of terminal bud at 12-15 node stage",
+"Tipping shoots after fruit set",
+"None of these"
+],
+"page": "152",
+"q": "What is the primary purpose of 'nipping' in grape cultivation?",
+"serial": "1059",
+"src_row": 1051,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1059"
+},
+{
+"expl": "Arka Kanchan is listed under seeded varieties, while the others are seedless varieties in the SOURCE.",
+"key": 0,
+"o": [
+"Arka Kanchan",
+"Flame seedless",
+"Thompson seedless",
+"Sonaka Seedless",
+"None of these"
+],
+"page": "152",
+"q": "Which of the following is NOT a seedless variety of grapes?",
+"serial": "1060",
+"src_row": 1052,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1060"
+},
+{
+"expl": "The SOURCE explicitly states that the botanical name (B.N.) of papaya is Carica papaya.",
+"key": 0,
+"o": [
+"Carica papaya",
+"Caricaceae",
+"Tropical America",
+"Caricaxanthin",
+"None of these"
+],
+"page": "152",
+"q": "What is the botanical name of papaya?",
+"serial": "1061",
+"src_row": 1053,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1061"
+},
+{
+"expl": "Akarati is described in the SOURCE as suitable for table and raisin purposes.",
+"key": 2,
+"o": [
+"Shard seedless",
+"Arka Shyam",
+"Akarati",
+"New Perlette",
+"None of these"
+],
+"page": "152",
+"q": "Which grape variety is suitable for both table and raisin purposes?",
+"serial": "1062",
+"src_row": 1054,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1062"
+},
+{
+"expl": "The SOURCE states that the chromosome number of papaya is 2n=18.",
+"key": 1,
+"o": [
+"2n=16",
+"2n=18",
+"2n=20",
+"2n=22",
+"None of these"
+],
+"page": "152",
+"q": "What is the chromosome number of papaya?",
+"serial": "1063",
+"src_row": 1055,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1063"
+},
+{
+"expl": "The SOURCE describes New Perlette as a self-thinning variety and an induced table mutant.",
+"key": 2,
+"o": [
+"Coloured seedless",
+"Suitable for juice and wine making",
+"Self-thinning variety, induced table mutant",
+"Leading raisin grape variety",
+"None of these"
+],
+"page": "152",
+"q": "Which of the following is a characteristic of the 'New Perlette' grape variety?",
+"serial": "1064",
+"src_row": 1056,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "152:1064"
+},
+{
+"expl": "The source states the optimum temperature for papaya cultivation is 30-35\u00b0C.",
+"key": 0,
+"o": [
+"30-35\u00b0C",
+"35-38\u00b0C",
+"21-33\u00b0C",
+"10-15\u00b0C",
+"None of these"
+],
+"page": "153",
+"q": "What is the optimum temperature range for papaya cultivation?",
+"serial": "1065",
+"src_row": 1057,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1065"
+},
+{
+"expl": "Papaya grows best in soils with pH between 6 and 7.",
+"key": 1,
+"o": [
+"5-6",
+"6-7",
+"7-8",
+"8-9",
+"None of these"
+],
+"page": "153",
+"q": "Which soil pH range is most suitable for papaya growth?",
+"serial": "1066",
+"src_row": 1058,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1066"
+},
+{
+"expl": "High temperature exceeding 35\u00b0C leads to female sterility in papaya.",
+"key": 2,
+"o": [
+">30\u00b0C",
+">33\u00b0C",
+">35\u00b0C",
+">38\u00b0C",
+"None of these"
+],
+"page": "153",
+"q": "Exposure to temperatures above which value can cause female sterility in papaya?",
+"serial": "1067",
+"src_row": 1059,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1067"
+},
+{
+"expl": "GA at 50 ppm is listed as increasing femaleness in dioecious papaya types.",
+"key": 0,
+"o": [
+"GA",
+"IAA",
+"Cytokinin",
+"Abscisic acid",
+"None of these"
+],
+"page": "153",
+"q": "Which growth regulator, when applied at 50 ppm, increases femaleness in dioecious papaya?",
+"serial": "1068",
+"src_row": 1060,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1068"
+},
+{
+"expl": "The source gives the annual papain yield as 250-375 kg per hectare.",
+"key": 0,
+"o": [
+"250-375 kg/ha",
+"500-600 kg/ha",
+"1500-1600 kg/ha",
+"2000-2500 kg/ha",
+"None of these"
+],
+"page": "153",
+"q": "The annual yield of papain from standard papaya cultivation is approximately:",
+"serial": "1069",
+"src_row": 1061,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1069"
+},
+{
+"expl": "Papain drying at 50-55\u00b0C yields better colour and quality.",
+"key": 2,
+"o": [
+"30-35\u00b0C",
+"40-45\u00b0C",
+"50-55\u00b0C",
+"60-65\u00b0C",
+"None of these"
+],
+"page": "153",
+"q": "At what temperature range can papain be dried artificially to obtain better colour and quality?",
+"serial": "1070",
+"src_row": 1062,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1070"
+},
+{
+"expl": "Seeds are best stored at 10\u00b0C according to the source.",
+"key": 2,
+"o": [
+"0\u00b0C",
+"5\u00b0C",
+"10\u00b0C",
+"15\u00b0C",
+"None of these"
+],
+"page": "153",
+"q": "What is the recommended storage temperature for papaya seeds to maintain viability?",
+"serial": "1071",
+"src_row": 1063,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "153:1071"
+},
+{
+"expl": "Papain is extracted from the milky latex obtained from 70-90 days old mature fruits of the papaya plant.",
+"key": 1,
+"o": [
+"Leaves",
+"Milky latex from mature fruits",
+"Seeds",
+"Roots",
+"None of these"
+],
+"page": "154",
+"q": "Which part of the papaya plant is used for the extraction of papain enzyme?",
+"serial": "1072",
+"src_row": 1064,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1072"
+},
+{
+"expl": "The male:female ratio in dioecious papaya varieties is specified as 1:10.",
+"key": 1,
+"o": [
+"1:5",
+"1:10",
+"1:1",
+"1:15",
+"None of these"
+],
+"page": "154",
+"q": "What is the correct male:female ratio in dioecious papaya varieties?",
+"serial": "1073",
+"src_row": 1065,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1073"
+},
+{
+"expl": "CO-5 is explicitly mentioned as the variety with the highest papain content.",
+"key": 2,
+"o": [
+"Pusa Giant",
+"Sunrise Solo",
+"CO-5",
+"Pusa Nanha",
+"None of these"
+],
+"page": "154",
+"q": "Which papaya variety is known for the highest papain content?",
+"serial": "1074",
+"src_row": 1066,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1074"
+},
+{
+"expl": "The inflorescence type of papaya is described as axillary panicles.",
+"key": 1,
+"o": [
+"Terminal raceme",
+"Axillary panicles",
+"Compound corymb",
+"Spike",
+"None of these"
+],
+"page": "154",
+"q": "What is the type of inflorescence in papaya?",
+"serial": "1075",
+"src_row": 1067,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1075"
+},
+{
+"expl": "Papain is used for tenderizing meat, clarifying beer, and degumming natural silk, but not for manufacturing synthetic rubber.",
+"key": 2,
+"o": [
+"Tenderization of meat",
+"Clarifying beer",
+"Manufacture of synthetic rubber",
+"Degumming natural silk",
+"None of these"
+],
+"page": "154",
+"q": "Which of the following is NOT a use of papain enzyme?",
+"serial": "1076",
+"src_row": 1068,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1076"
+},
+{
+"expl": "High-density planting (HDP) for papaya is recommended at a spacing of 1.2 m \u00d7 1.2 m.",
+"key": 1,
+"o": [
+"1.8 m \u00d7 1.8 m",
+"1.2 m \u00d7 1.2 m",
+"1.6 m \u00d7 1.6 m",
+"2.0 m \u00d7 2.0 m",
+"None of these"
+],
+"page": "154",
+"q": "What is the recommended spacing for high-density planting (HDP) of papaya?",
+"serial": "1077",
+"src_row": 1069,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1077"
+},
+{
+"expl": "SunUp is explicitly mentioned as the world's first transgenic papaya variety.",
+"key": 1,
+"o": [
+"Rainbow",
+"SunUp",
+"Hawai",
+"Pusa Nanha",
+"None of these"
+],
+"page": "154",
+"q": "Which transgenic papaya variety was the world's first?",
+"serial": "1078",
+"src_row": 1070,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "154:1078"
+}
+],
+"row_from": 1050,
+"row_to": 1071,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1050,
+"seeded_from": "2026-11-03"
+},
 "qidx": 0,
+"seeded_from": "2026-11-03",
+"skips": [],
 "step": 0
 },
 "malwa": {
