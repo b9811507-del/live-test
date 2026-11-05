@@ -257920,8 +257920,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1092,
 "names": {},
+"plan": {
+"bidx_next": 1092,
+"built_at": "2026-11-05T14:27:20+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 155-157",
+"pages_list": [
+155,
+156,
+157
+],
+"questions": [
+{
+"expl": "Psidium friedrichsthalianum, also known as Costa Rican guava or china guava, produces small fruits of globose shape as per the source.",
+"key": 2,
+"o": [
+"Psidium guineense",
+"Psidium cattleianum",
+"Psidium friedrichsthalianum",
+"Psidium guajava",
+"None of these"
+],
+"page": "155",
+"q": "Which species of guava produces small fruits of globose shape?",
+"serial": "1079",
+"src_row": 1071,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1079"
+},
+{
+"expl": "The botanical name of guava, as stated in the source, is Psidium guajava.",
+"key": 2,
+"o": [
+"Psidium cattleianum",
+"Psidium guineense",
+"Psidium guajava",
+"Psidium friedrichsthalianum",
+"None of these"
+],
+"page": "155",
+"q": "What is the botanical name of the guava plant?",
+"serial": "1080",
+"src_row": 1072,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1080"
+},
+{
+"expl": "Guava is a very rich and cheap source of vitamin C (100 to 260 mg per 100 gm of pulp), so low vitamin C content is incorrect.",
+"key": 3,
+"o": [
+"Multiple seeded berry",
+"Cyme inflorescence",
+"High pectin content",
+"Low vitamin C content",
+"None of these"
+],
+"page": "155",
+"q": "Which of the following is NOT a characteristic of guava fruit?",
+"serial": "1081",
+"src_row": 1073,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1081"
+},
+{
+"expl": "Commercially, guava is propagated by inarch grafting, though wedge grafting is also recommended for rapid multiplication.",
+"key": 2,
+"o": [
+"Stooling",
+"Air layering",
+"Inarch grafting",
+"Wedge grafting",
+"None of these"
+],
+"page": "155",
+"q": "What is the most suitable method of propagation for guava as per commercial practices?",
+"serial": "1082",
+"src_row": 1074,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1082"
+},
+{
+"expl": "The source states that Uttar Pradesh leads in both area and production of guava, followed by Madhya Pradesh.",
+"key": 1,
+"o": [
+"Madhya Pradesh",
+"Uttar Pradesh",
+"Maharashtra",
+"Karnataka",
+"None of these"
+],
+"page": "155",
+"q": "Which Indian state leads in both area and production of guava?",
+"serial": "1083",
+"src_row": 1075,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1083"
+},
+{
+"expl": "The source lists the chromosome number (2n) of guava as 22 and 33, but the primary and most commonly cited value is 22.",
+"key": 1,
+"o": [
+"18",
+"22",
+"33",
+"44",
+"None of these"
+],
+"page": "155",
+"q": "What is the chromosome number (2n) of guava as mentioned in the source?",
+"serial": "1084",
+"src_row": 1076,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1084"
+},
+{
+"expl": "Psidium cattleianum is known as strawberry or cattley guava, as per the source.",
+"key": 1,
+"o": [
+"Brazilian guava",
+"Strawberry guava",
+"Costa Rican guava",
+"China guava",
+"None of these"
+],
+"page": "155",
+"q": "Which of the following is a common name for Psidium cattleianum?",
+"serial": "1085",
+"src_row": 1077,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "155:1085"
+},
+{
+"expl": "Chittidar is explicitly mentioned in the source as the guava variety with the highest TSS.",
+"key": 2,
+"o": [
+"L-49",
+"Allahabad Safeda",
+"Chittidar",
+"Arka Mridula",
+"None of these"
+],
+"page": "156",
+"q": "Which guava variety is known for having the highest TSS (Total Soluble Solids)?",
+"serial": "1086",
+"src_row": 1078,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1086"
+},
+{
+"expl": "The source states that Mrig bahar (winter crop) is most preferred because the fruits are highly superior in quality.",
+"key": 1,
+"o": [
+"Higher yield",
+"Superior fruit quality",
+"Easier harvesting",
+"Resistance to pests",
+"None of these"
+],
+"page": "156",
+"q": "What is the primary reason for preferring the winter crop (Mrig bahar) over the rainy season crop in guava cultivation?",
+"serial": "1087",
+"src_row": 1079,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1087"
+},
+{
+"expl": "Arka Mridula is described as having high pectin content (1.041%), making it suitable for processing, so 'low pectin content' is incorrect.",
+"key": 3,
+"o": [
+"Soft-seeded dwarf variety",
+"Fruit weight of 180 g",
+"High TSS (12 Brix)",
+"Low pectin content",
+"None of these"
+],
+"page": "156",
+"q": "Which of the following is NOT a characteristic of the Arka Mridula guava variety?",
+"serial": "1088",
+"src_row": 1080,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1088"
+},
+{
+"expl": "Crop regulation involves taking the winter crop instead of the rainy season crop to escape the attack of Fruit Fly.",
+"key": 1,
+"o": [
+"To increase the number of crops per year",
+"To escape the attack of Fruit Fly",
+"To enhance flower color",
+"To reduce water usage",
+"None of these"
+],
+"page": "156",
+"q": "What is the purpose of 'crop regulation' in guava cultivation as mentioned in the source?",
+"serial": "1089",
+"src_row": 1081,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1089"
+},
+{
+"expl": "The source specifies that deblossoming of the rainy season crop involves NAA 600 ppm + urea @ 1.5%.",
+"key": 2,
+"o": [
+"Root exposure before monsoon",
+"Root pruning before monsoon",
+"Deblossoming of rainy season crop",
+"Spraying of GA\u2083 for fruit set",
+"None of these"
+],
+"page": "156",
+"q": "Which bahar treatment involves the use of NAA 600 ppm and urea @ 1.5%?",
+"serial": "1090",
+"src_row": 1082,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1090"
+},
+{
+"expl": "The source clearly states that the best quality guava is obtained during the winter season when night temperatures are below 10\u00b0C.",
+"key": 2,
+"o": [
+"Rainy season",
+"Summer season",
+"Winter season (Night temperature <10\u00b0C)",
+"Spring season",
+"None of these"
+],
+"page": "156",
+"q": "In which season is the best quality guava obtained according to the source?",
+"serial": "1091",
+"src_row": 1083,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1091"
+},
+{
+"expl": "Arka Mridula is described as having high pectin content (1.041%), making it suitable for jelly making.",
+"key": 2,
+"o": [
+"L-49",
+"Allahabad Safeda",
+"Arka Mridula",
+"Red Fleshed",
+"None of these"
+],
+"page": "156",
+"q": "Which guava variety is specifically mentioned as suitable for jelly making due to high pectin content?",
+"serial": "1092",
+"src_row": 1084,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "156:1092"
+},
+{
+"expl": "The table explicitly states that Ambe Bahar (February) has water stress in December\u2013January.",
+"key": 0,
+"o": [
+"Ambe Bahar",
+"Hasta Bahar",
+"Meig Bahar",
+"None of the above",
+"None of these"
+],
+"page": "157",
+"q": "Which Bahar in guava cultivation has water stress during December to January?",
+"serial": "1093",
+"src_row": 1085,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1093"
+},
+{
+"expl": "The HDP (Hedge-row system) in guava uses a spacing of 6 m x 3 m, as per the given table.",
+"key": 1,
+"o": [
+"Square system",
+"Hedge-row system",
+"Meadow orchard system",
+"Traditional system",
+"None of these"
+],
+"page": "157",
+"q": "In high-density planting of guava, which system uses a spacing of 6 m x 3 m?",
+"serial": "1094",
+"src_row": 1086,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1094"
+},
+{
+"expl": "The Meadow orchard system for guava has 5000 plants per hectare, as stated in the table.",
+"key": 2,
+"o": [
+"278",
+"555",
+"5000",
+"400",
+"None of these"
+],
+"page": "157",
+"q": "What is the total number of plants per hectare in the Meadow orchard system for guava?",
+"serial": "1095",
+"src_row": 1087,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1095"
+},
+{
+"expl": "The time required from flowering to fruit maturity in guava is explicitly given as 130-150 days.",
+"key": 1,
+"o": [
+"100-120 days",
+"130-150 days",
+"160-180 days",
+"90-110 days",
+"None of these"
+],
+"page": "157",
+"q": "How many days are required from flowering to fruit maturity in guava?",
+"serial": "1096",
+"src_row": 1088,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1096"
+},
+{
+"expl": "Pineapple is a rich source of Vitamin A and C, but not Vitamin D, as per the source.",
+"key": 2,
+"o": [
+"Symbol of friendship and hospitality",
+"Belongs to the family Bromeliaceae",
+"Rich source of Vitamin D",
+"Can be grown in plains under shade",
+"None of these"
+],
+"page": "157",
+"q": "Which of the following is NOT a characteristic of pineapple as described in the source?",
+"serial": "1097",
+"src_row": 1089,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1097"
+},
+{
+"expl": "The average yield of guava is stated as 9 t/ha, though it can be higher.",
+"key": 1,
+"o": [
+"5 t/ha",
+"9 t/ha",
+"15 t/ha",
+"25 t/ha",
+"None of these"
+],
+"page": "157",
+"q": "What is the average yield of guava per hectare as mentioned in the source?",
+"serial": "1098",
+"src_row": 1090,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1098"
+},
+{
+"expl": "The Meadow orchard system for guava uses the variety Allahabad Safeda, as per the table.",
+"key": 1,
+"o": [
+"L-49",
+"Allahabad Safeda",
+"Ambe Bahar",
+"Hasta Bahar",
+"None of these"
+],
+"page": "157",
+"q": "Which variety of guava is associated with the Meadow orchard system in high-density planting?",
+"serial": "1099",
+"src_row": 1091,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "157:1099"
+}
+],
+"row_from": 1071,
+"row_to": 1092,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1071,
+"seeded_from": "2026-11-04"
+},
 "qidx": 0,
+"seeded_from": "2026-11-04",
+"skips": [],
 "step": 0
 },
 "malwa": {
