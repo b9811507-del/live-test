@@ -257926,9 +257926,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 974,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 974,
+"built_at": "2026-11-05T10:57:57+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 289-294",
+"pages_blocks": [
+"289-290",
+"291-292",
+"293-294"
+],
+"questions": [
+{
+"expl": "Soil erosion is defined as the detachment and transportation of soil from one place to another by water or wind.",
+"key": 1,
+"o": [
+"Soil degradation",
+"Soil erosion",
+"Soil compaction",
+"Soil salinization",
+"None of these"
+],
+"page": "289-290",
+"q": "What term describes the detachment and transport of soil by water or wind?",
+"serial": "1461",
+"src_row": 955,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "289-290:1461"
+},
+{
+"expl": "Natural erosion\u2019s loss rate is equal to or less than formation, making it less harmful; accelerated erosion\u2019s loss rate exceeds formation due to human activities.",
+"key": 2,
+"o": [
+"Natural erosion occurs faster than soil formation, while accelerated erosion does not.",
+"Accelerated erosion is caused solely by natural weathering processes.",
+"In natural erosion, soil loss does not exceed soil formation; in accelerated erosion, loss exceeds\u2026",
+"Both types have identical rates of soil loss relative to formation.",
+"None of these"
+],
+"page": "289-290",
+"q": "Which statement correctly distinguishes natural (geological) erosion from accelerated (anthropogenic) erosion?",
+"serial": "1462",
+"src_row": 956,
+"topic": "Soil Science",
+"trunc": 1,
+"uid": "289-290:1462"
+},
+{
+"expl": "The source states that rill erosion starts only when runoff exceeds 0.3\u20110.7 mm per second.",
+"key": 1,
+"o": [
+"0.1\u20110.2 mm/s",
+"0.3\u20110.7 mm/s",
+"1.0\u20111.5 mm/s",
+"2.0\u20112.5 mm/s",
+"None of these"
+],
+"page": "289-290",
+"q": "Rill erosion typically begins when runoff velocity exceeds which range?",
+"serial": "1463",
+"src_row": 957,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "289-290:1463"
+},
+{
+"expl": "The table lists Small gullies (G2) as having depth up to 3 m and width greater than 18 m.",
+"key": 1,
+"o": [
+"G1 (Very small)",
+"G2 (Small)",
+"G3 (Medium)",
+"G4 (Deep & Narrow)",
+"None of these"
+],
+"page": "289-290",
+"q": "According to the gully classification table, which class is characterized by a depth up to 3 m and a width greater than 18 m?",
+"serial": "1464",
+"src_row": 958,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "289-290:1464"
+},
+{
+"expl": "The USLE component C stands for soil cover and management, influencing the amount of soil exposed to erosion.",
+"key": 2,
+"o": [
+"Rainfall and runoff intensity",
+"Soil erodibility",
+"Soil cover and management practices",
+"Slope length",
+"None of these"
+],
+"page": "289-290",
+"q": "In the Universal Soil Loss Equation (USLE), the factor \"C\" represents:",
+"serial": "1465",
+"src_row": 959,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "289-290:1465"
+},
+{
+"expl": "Sheet erosion removes a thin, uniform layer of topsoil and is referred to as the death of the farmer.",
+"key": 2,
+"o": [
+"Splash erosion",
+"Rill erosion",
+"Sheet erosion",
+"Gully erosion",
+"None of these"
+],
+"page": "289-290",
+"q": "Which form of water erosion is often called the \"death of the farmer\" because it removes a thin, uniform layer of fertile topsoil?",
+"serial": "1466",
+"src_row": 960,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "289-290:1466"
+},
+{
+"expl": "The text states that for stable soils the K value generally ranges from 0.2 to 0.3.",
+"key": 1,
+"o": [
+"0.1 \u2013 0.2",
+"0.2 \u2013 0.3",
+"0.3 \u2013 0.4",
+"0.4 \u2013 0.5",
+"None of these"
+],
+"page": "291-292",
+"q": "What is the typical range of the soil erodibility factor (K) for stable soils?",
+"serial": "1471",
+"src_row": 961,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "291-292:1471"
+},
+{
+"expl": "Erosivity describes the ability of agents (rain, wind) to cause erosion, whereas erodibility describes how easily the soil itself erodes.",
+"key": 1,
+"o": [
+"Erosivity is the soil's susceptibility to erosion.",
+"Erosivity refers to the capacity of agents to cause erosion.",
+"Erodibility is the capacity of agents to cause erosion.",
+"Both terms mean the same thing.",
+"None of these"
+],
+"page": "291-292",
+"q": "Which statement correctly distinguishes erosivity from erodibility?",
+"serial": "1472",
+"src_row": 962,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "291-292:1472"
+},
+{
+"expl": "The source notes that a four\u2011times increase in slope raises soil carrying capacity by 32 times.",
+"key": 2,
+"o": [
+"8",
+"16",
+"32",
+"64",
+"None of these"
+],
+"page": "291-292",
+"q": "If the slope is increased fourfold, by what factor does the soil carrying capacity increase?",
+"serial": "1473",
+"src_row": 963,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "291-292:1473"
+},
+{
+"expl": "The text explicitly states that soil loss is proportional to slope length to the power of 0.5.",
+"key": 1,
+"o": [
+"0.25",
+"0.5",
+"1",
+"2",
+"None of these"
+],
+"page": "291-292",
+"q": "Soil loss by water erosion is proportional to the slope length raised to which power?",
+"serial": "1474",
+"src_row": 964,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "291-292:1474"
+},
+{
+"expl": "Saltation accounts for 50\u201175% of the contribution, the highest among the listed mechanisms.",
+"key": 0,
+"o": [
+"Saltation",
+"Surface creep",
+"Suspension",
+"All contribute equally",
+"None of these"
+],
+"page": "291-292",
+"q": "Which wind\u2011erosion mechanism contributes the greatest percentage of total soil movement?",
+"serial": "1475",
+"src_row": 965,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "291-292:1475"
+},
+{
+"expl": "The equation definition lists \u2018F\u2019 as the soil textural class factor.",
+"key": 2,
+"o": [
+"Soil cloddiness factor",
+"Surface cover factor",
+"Soil textural class factor",
+"Wind direction factor",
+"None of these"
+],
+"page": "291-292",
+"q": "In the wind erosion equation E = IRKFCWDB, what does the variable \u2018F\u2019 represent?",
+"serial": "1476",
+"src_row": 966,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "291-292:1476"
+},
+{
+"expl": "The letter V in the equation stands for Vegetation, representing its protective effect against wind erosion.",
+"key": 3,
+"o": [
+"I (Soil Erodibility Index)",
+"K (Surface Roughness)",
+"C (Climate)",
+"V (Vegetation)",
+"None of these"
+],
+"page": "293-294",
+"q": "In the Chepil and Woodruff equation (E = IKCLV) for wind erosion, which variable denotes the influence of vegetation?",
+"serial": "1481",
+"src_row": 967,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1481"
+},
+{
+"expl": "Threshold velocity is stated as 12-16 km/h, varying with soil texture and moisture.",
+"key": 1,
+"o": [
+"5-8 km/h",
+"12-16 km/h",
+"20-25 km/h",
+"30-35 km/h",
+"None of these"
+],
+"page": "293-294",
+"q": "What is the typical range of threshold velocity, the minimum wind speed required to initiate soil particle movement?",
+"serial": "1482",
+"src_row": 968,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1482"
+},
+{
+"expl": "Wave erosion is defined as erosion caused by combined wind and water action, primarily affecting canal and river banks.",
+"key": 1,
+"o": [
+"Sloping agricultural fields",
+"Canal and river banks",
+"Coastal dunes",
+"Desert plains",
+"None of these"
+],
+"page": "293-294",
+"q": "Wave erosion mainly occurs on which type of landform?",
+"serial": "1483",
+"src_row": 969,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1483"
+},
+{
+"expl": "The table shows that for slopes between 1% and 2%, the ratio is 4:1.",
+"key": 1,
+"o": [
+"5:1",
+"4:1",
+"3:1",
+"2:1",
+"None of these"
+],
+"page": "293-294",
+"q": "For a slope of 1.5%, what is the recommended maximum width ratio of erosion\u2011permitting to erosion\u2011retarding crops in strip cropping?",
+"serial": "1484",
+"src_row": 970,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1484"
+},
+{
+"expl": "Graded bunds are recommended for slopes of 6\u201110% according to the engineering measures table.",
+"key": 1,
+"o": [
+"Contour bunding",
+"Graded bunds",
+"Zing terracing",
+"Bench terracing",
+"None of these"
+],
+"page": "293-294",
+"q": "Which mechanical soil\u2011conservation measure is suitable for slopes between 6% and 10%?",
+"serial": "1485",
+"src_row": 971,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1485"
+},
+{
+"expl": "Outward sloping benches are designed for low rainfall areas (<750 mm) and shallow soils.",
+"key": 1,
+"o": [
+"High rainfall (>750 mm) with poor infiltration",
+"Low rainfall (<750 mm) with shallow soils",
+"Medium rainfall",
+"Arid regions with deep soils",
+"None of these"
+],
+"page": "293-294",
+"q": "Outward sloping bench terraces are most appropriate under which condition?",
+"serial": "1486",
+"src_row": 972,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1486"
+},
+{
+"expl": "The source states that a gabion structure needs a minimum catchment area of 5 hectares.",
+"key": 2,
+"o": [
+"1 hectare",
+"3 hectares",
+"5 hectares",
+"10 hectares",
+"None of these"
+],
+"page": "293-294",
+"q": "What is the minimum catchment area required to construct a gabion structure?",
+"serial": "1487",
+"src_row": 973,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "293-294:1487"
+}
+],
+"rolled": false,
+"row_from": 955,
+"row_to": 974,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 1,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 955,
+"seeded_from": "2026-11-04",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-04",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
