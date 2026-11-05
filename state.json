@@ -259546,6 +259546,28 @@
 ],
 "vol": 0
 }
+},
+"2026-11-06": {
+"afo": {
+"ans": {},
+"closed": "schedule_end",
+"done_at": "2026-11-06T00:26:59+05:30",
+"names": {},
+"qidx": 0,
+"step": 8
+},
+"iari": {
+"ans": {},
+"names": {},
+"qidx": 0,
+"step": 0
+},
+"malwa": {
+"ans": {},
+"names": {},
+"qidx": 0,
+"step": 0
+}
 }
 },
 "desk": {
