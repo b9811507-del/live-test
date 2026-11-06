@@ -259558,8 +259558,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1113,
 "names": {},
+"plan": {
+"bidx_next": 1113,
+"built_at": "2026-11-06T14:28:09+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 158-160",
+"pages_list": [
+158,
+159,
+160
+],
+"questions": [
+{
+"expl": "The Kew variety is explicitly described as fiberless and highly suitable for canning in the source.",
+"key": 2,
+"o": [
+"Mauritius",
+"Queen",
+"Kew",
+"Smooth Cayenne",
+"None of these"
+],
+"page": "158",
+"q": "Which variety of pineapple is most suitable for canning and is fiberless?",
+"serial": "1100",
+"src_row": 1092,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1100"
+},
+{
+"expl": "The source states that pineapple leaves are silvery white due to the presence of trichomes.",
+"key": 1,
+"o": [
+"Chlorophyll deficiency",
+"Presence of trichomes",
+"High nitrogen content",
+"Excessive water retention",
+"None of these"
+],
+"page": "158",
+"q": "What is the primary reason for the silvery-white color of pineapple leaves?",
+"serial": "1101",
+"src_row": 1093,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1101"
+},
+{
+"expl": "Suckers produce fruits after 12-17 months, which is the shortest duration among the listed options.",
+"key": 2,
+"o": [
+"Crowns",
+"Slips",
+"Suckers",
+"Seeds",
+"None of these"
+],
+"page": "158",
+"q": "Which planting material of pineapple produces fruits the earliest?",
+"serial": "1102",
+"src_row": 1094,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1102"
+},
+{
+"expl": "The source specifies that a soil pH of 4.5-5 is preferable for pineapple growth.",
+"key": 2,
+"o": [
+"6.0-7.0",
+"5.5-6.5",
+"4.5-5.0",
+"3.0-4.0",
+"None of these"
+],
+"page": "158",
+"q": "At what pH range is pineapple soil most preferable for growth?",
+"serial": "1103",
+"src_row": 1095,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1103"
+},
+{
+"expl": "The source explicitly states that the type of fruit in pineapple is Sorosis.",
+"key": 2,
+"o": [
+"Drupe",
+"Pome",
+"Sorosis",
+"Berry",
+"None of these"
+],
+"page": "158",
+"q": "What is the type of fruit in pineapple classified as?",
+"serial": "1104",
+"src_row": 1096,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1104"
+},
+{
+"expl": "The source attributes the 'Collar of Slips' disorder to high nitrogen fertilization and high rainfall along with relatively low temperature.",
+"key": 2,
+"o": [
+"Multiple Crowns",
+"Fruit and Crown Fasciation",
+"Collar of Slips",
+"Sun-Scald",
+"None of these"
+],
+"page": "158",
+"q": "Which disorder in pineapple is caused by high nitrogen fertilization and high rainfall with low temperature?",
+"serial": "1105",
+"src_row": 1097,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1105"
+},
+{
+"expl": "The source clearly states that the edible portion of the pineapple fruit is the Peduncle.",
+"key": 2,
+"o": [
+"Pericarp",
+"Seed",
+"Peduncle",
+"Receptacle",
+"None of these"
+],
+"page": "158",
+"q": "What is the edible portion of the pineapple fruit?",
+"serial": "1106",
+"src_row": 1098,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "158:1106"
+},
+{
+"expl": "Size C is defined as fruits weighing between 800 and 1100 g.",
+"key": 2,
+"o": [
+"1500 g and over",
+"1100-1500 g",
+"800-1100 g",
+"Less than 800 g",
+"None of these"
+],
+"page": "159",
+"q": "Which weight corresponds to size C in the grading standards?",
+"serial": "1107",
+"src_row": 1099,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1107"
+},
+{
+"expl": "The botanical name of pomegranate is Punica granatum.",
+"key": 0,
+"o": [
+"Punica granatum",
+"Punica armeniaca",
+"Punica malabarica",
+"Punica indica",
+"None of these"
+],
+"page": "159",
+"q": "What is the botanical name of the fruit commonly called Anar?",
+"serial": "1108",
+"src_row": 1100,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1108"
+},
+{
+"expl": "Anthocyanin imparts the red hue to the fruit\u2019s aril and skin.",
+"key": 0,
+"o": [
+"Anthocyanin",
+"Chlorophyll",
+"Carotenoids",
+"Flavonoids",
+"None of these"
+],
+"page": "159",
+"q": "The red colour in the aril and skin of pomegranate is due to which compound?",
+"serial": "1109",
+"src_row": 1101,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1109"
+},
+{
+"expl": "A temperature of 35\u201338 \u00b0C is needed for optimal development and sweetness.",
+"key": 2,
+"o": [
+"25-30\u00b0C",
+"30-35\u00b0C",
+"35-38\u00b0C",
+"38-40\u00b0C",
+"None of these"
+],
+"page": "159",
+"q": "What temperature range is required for proper fruit development, maturity and sweetness of pomegranate?",
+"serial": "1110",
+"src_row": 1102,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1110"
+},
+{
+"expl": "The fruit is ready for harvest 120\u2013130 days after fruit set.",
+"key": 1,
+"o": [
+"90-100 days",
+"120-130 days",
+"150-160 days",
+"180-190 days",
+"None of these"
+],
+"page": "159",
+"q": "How many days after fruit set does a pomegranate become ready for harvest?",
+"serial": "1111",
+"src_row": 1103,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1111"
+},
+{
+"expl": "Seedlessness arises from the lack of lignification of the testa.",
+"key": 0,
+"o": [
+"lignifications of testa",
+"lignifications of endocarp",
+"lignifications of pericarp",
+"lignifications of seed coat",
+"None of these"
+],
+"page": "159",
+"q": "Seedlessness in pomegranate is due to lack of what?",
+"serial": "1112",
+"src_row": 1104,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1112"
+},
+{
+"expl": "Maharashtra is the leading pomegranate producing state, covering 70% of the area.",
+"key": 1,
+"o": [
+"Gujarat",
+"Maharashtra",
+"Karnataka",
+"Rajasthan",
+"None of these"
+],
+"page": "159",
+"q": "Which Indian state accounts for about 70% of the pomegranate growing area?",
+"serial": "1113",
+"src_row": 1105,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "159:1113"
+},
+{
+"expl": "Ambe Bahar is explicitly stated as the most common type favored by farmers and is practiced in high rainfall and humid areas.",
+"key": 0,
+"o": [
+"Ambe Bahar",
+"Mrig Bahar",
+"Hasth Bahar",
+"Spring Bahar",
+"None of these"
+],
+"page": "160",
+"q": "Which type of Bahar is most commonly favored by farmers and is practiced in high rainfall and humid areas?",
+"serial": "1114",
+"src_row": 1106,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1114"
+},
+{
+"expl": "The source clearly states that hardening peels disorder occurs due to prolonged drought conditions.",
+"key": 1,
+"o": [
+"Excessive rainfall",
+"Prolonged drought",
+"High humidity",
+"Low temperature",
+"None of these"
+],
+"page": "160",
+"q": "The hardening peels disorder in the crop occurs due to which environmental condition?",
+"serial": "1115",
+"src_row": 1107,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1115"
+},
+{
+"expl": "Ruby is described as a multiple cross hybrid developed at IIHR for aril color and seed mellowness.",
+"key": 2,
+"o": [
+"CO-1",
+"Mridula",
+"Ruby",
+"Amlidana",
+"None of these"
+],
+"page": "160",
+"q": "Which variety is a multiple cross hybrid developed at IIHR for aril color and seed mellowness?",
+"serial": "1116",
+"src_row": 1108,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1116"
+},
+{
+"expl": "Hasth Bahar is explicitly mentioned as the type preferred for export purposes.",
+"key": 2,
+"o": [
+"Ambe Bahar",
+"Mrig Bahar",
+"Hasth Bahar",
+"Spring Bahar",
+"None of these"
+],
+"page": "160",
+"q": "Which Bahar type is preferred for export purposes?",
+"serial": "1117",
+"src_row": 1109,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1117"
+},
+{
+"expl": "The source lists cutting and air layering as commercial propagation methods, but not grafting.",
+"key": 2,
+"o": [
+"Hardwood cuttings",
+"Air layering",
+"Grafting",
+"Cutting",
+"None of these"
+],
+"page": "160",
+"q": "Which of the following is NOT a method of commercial propagation for this crop?",
+"serial": "1118",
+"src_row": 1110,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1118"
+},
+{
+"expl": "Mridula is described with these specific numerical characteristics (fruit weight, TSS, and acidity).",
+"key": 1,
+"o": [
+"CO-1",
+"Mridula",
+"Ruby",
+"Amlidana",
+"None of these"
+],
+"page": "160",
+"q": "Which variety has a fruit weight of about 250 g, with TSS 16.32% and acidity 0.47%?",
+"serial": "1119",
+"src_row": 1111,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1119"
+},
+{
+"expl": "Kandhari is listed under the hard-seeded varieties in the provided table.",
+"key": 2,
+"o": [
+"Dholka",
+"Paper shell",
+"Kandhari",
+"Mridula",
+"None of these"
+],
+"page": "160",
+"q": "Which of the following is a hard-seeded variety?",
+"serial": "1120",
+"src_row": 1112,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "160:1120"
+}
+],
+"row_from": 1092,
+"row_to": 1113,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1092,
+"seeded_from": "2026-11-05"
+},
 "qidx": 0,
+"seeded_from": "2026-11-05",
+"skips": [],
 "step": 0
 },
 "malwa": {
