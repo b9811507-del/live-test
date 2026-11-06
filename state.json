@@ -259564,9 +259564,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 995,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 995,
+"built_at": "2026-11-06T10:58:35+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 295-300",
+"pages_blocks": [
+"295-296",
+"297-298",
+"299-300"
+],
+"questions": [
+{
+"expl": "Agrostology is the discipline that focuses on grasses.",
+"key": 0,
+"o": [
+"Agrostology",
+"Bryology",
+"Mycology",
+"Dendrology",
+"None of these"
+],
+"page": "295-296",
+"q": "What is the scientific study of grasses called?",
+"serial": "1491",
+"src_row": 974,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1491"
+},
+{
+"expl": "The source states sand mulch works well in heavy black soil.",
+"key": 0,
+"o": [
+"Heavy black soil",
+"Red laterite soil",
+"Sandy loam",
+"Alluvial clay",
+"None of these"
+],
+"page": "295-296",
+"q": "Sand mulch is most effective in which soil type?",
+"serial": "1492",
+"src_row": 975,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1492"
+},
+{
+"expl": "The formula given is S/2 + 3, where S is the percent slope.",
+"key": 0,
+"o": [
+"S/2 + 3",
+"S + 5",
+"(S*2) - 1",
+"(S/3) + 2",
+"None of these"
+],
+"page": "295-296",
+"q": "How is the spacing between two consecutive bunds calculated?",
+"serial": "1493",
+"src_row": 976,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1493"
+},
+{
+"expl": "These parameters define a saline (solonchak) soil.",
+"key": 0,
+"o": [
+"Saline soil",
+"Alkali (sodic) soil",
+"Saline\u2011alkali soil",
+"Degraded alkali soil",
+"None of these"
+],
+"page": "295-296",
+"q": "Which soil classification matches EC > 4 dS/m, ESP < 15, and pH < 8.5?",
+"serial": "1494",
+"src_row": 977,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1494"
+},
+{
+"expl": "Fine sand particles are identified as the most erodible by wind.",
+"key": 0,
+"o": [
+"Fine sand",
+"Coarse sand",
+"Silt",
+"Clay",
+"None of these"
+],
+"page": "295-296",
+"q": "Particles most susceptible to wind erosion are:",
+"serial": "1495",
+"src_row": 978,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1495"
+},
+{
+"expl": "Sewan grass (Lasiurus sindicus) is noted for dune stabilization.",
+"key": 0,
+"o": [
+"Sewan grass (Lasiurus sindicus)",
+"Bermuda grass",
+"Ryegrass",
+"Vetiver",
+"None of these"
+],
+"page": "295-296",
+"q": "Which grass species is recommended for sand\u2011dune stabilization?",
+"serial": "1496",
+"src_row": 979,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1496"
+},
+{
+"expl": "Alkali soils have low EC, high ESP, and alkaline pH (>8.5).",
+"key": 0,
+"o": [
+"EC < 4 dS/m, ESP > 15, pH > 8.5",
+"EC > 4 dS/m, ESP < 15, pH < 8.5",
+"EC > 4 dS/m, ESP > 15, pH > 8.5",
+"EC < 4 dS/m, ESP < 15, pH < 8.5",
+"None of these"
+],
+"page": "295-296",
+"q": "An alkali (sodic) soil is characterized by which combination of properties?",
+"serial": "1497",
+"src_row": 980,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "295-296:1497"
+},
+{
+"expl": "The source lists >1.5 ppm as the unsafe range for boron in plants.",
+"key": 2,
+"o": [
+"< 0.7 ppm (Safe)",
+"0.7\u20111.5 ppm (Marginal)",
+"> 1.5 ppm (Unsafe)",
+"0.5 ppm (Safe)",
+"None of these"
+],
+"page": "297-298",
+"q": "Which boron concentration level is classified as unsafe for plant growth?",
+"serial": "1501",
+"src_row": 981,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1501"
+},
+{
+"expl": "Acidic soils are most extensive in Assam, followed by West Bengal.",
+"key": 2,
+"o": [
+"Gujarat",
+"Uttar Pradesh",
+"Assam",
+"West Bengal",
+"None of these"
+],
+"page": "297-298",
+"q": "Which Indian state has the greatest area of acidic soils?",
+"serial": "1502",
+"src_row": 982,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1502"
+},
+{
+"expl": "ENR = [Na\u207a] / ([Cl\u207b] + [SO\u2084\u00b2\u207b]) as given in the source.",
+"key": 0,
+"o": [
+"Cl\u207b and SO\u2084\u00b2\u207b",
+"Cl\u207b and NO\u2083\u207b",
+"Ca\u00b2\u207a and SO\u2084\u00b2\u207b",
+"Mg\u00b2\u207a and HCO\u2083\u207b",
+"None of these"
+],
+"page": "297-298",
+"q": "The electro neutrality ratio (ENR) is defined as Na\u207a divided by the sum of which ions?",
+"serial": "1503",
+"src_row": 983,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1503"
+},
+{
+"expl": "The flocculation order is Al\u00b3\u207a > Ca\u00b2\u207a > Mg\u00b2\u207a > K\u207a > Na\u207a, so Al\u00b3\u207a is the strongest flocculant.",
+"key": 3,
+"o": [
+"Na\u207a",
+"K\u207a",
+"Mg\u00b2\u207a",
+"Al\u00b3\u207a",
+"None of these"
+],
+"page": "297-298",
+"q": "Which cation exhibits the highest flocculating power in soil suspensions?",
+"serial": "1504",
+"src_row": 984,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1504"
+},
+{
+"expl": "For EC < 5 dS/m, TDS = EC \u00d7 640; 4 \u00d7 640 = 2 560 ppm.",
+"key": 0,
+"o": [
+"2 560 ppm",
+"3 200 ppm",
+"3 840 ppm",
+"4 000 ppm",
+"None of these"
+],
+"page": "297-298",
+"q": "If a soil solution has an electrical conductivity (EC) of 4 dS/m, what is its approximate total dissolved solids (TDS) in ppm?",
+"serial": "1505",
+"src_row": 985,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1505"
+},
+{
+"expl": "Leaching, sub\u2011soiling, and deep\u2011ploughing are listed; lime application is not.",
+"key": 3,
+"o": [
+"Leaching",
+"Sub\u2011soiling",
+"Deep\u2011ploughing",
+"Application of lime",
+"None of these"
+],
+"page": "297-298",
+"q": "Which of the following is NOT mentioned as a reclamation method for saline soils?",
+"serial": "1506",
+"src_row": 986,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1506"
+},
+{
+"expl": "The source notes that calcareous soils have low availability of phosphorus and iron.",
+"key": 1,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Potassium",
+"Sulfur",
+"None of these"
+],
+"page": "297-298",
+"q": "Calcareous soils are especially low in the availability of which nutrient?",
+"serial": "1507",
+"src_row": 987,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1507"
+},
+{
+"expl": "Alkali soils are characterized by Na\u207a as the most dominant cation.",
+"key": 2,
+"o": [
+"H\u207a",
+"Ca\u00b2\u207a",
+"Na\u207a",
+"K\u207a",
+"None of these"
+],
+"page": "297-298",
+"q": "Which cation is dominant in alkali (sodic) soils?",
+"serial": "1508",
+"src_row": 988,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "297-298:1508"
+},
+{
+"expl": "Profile inversion is defined as turning over the soil to place the salty surface layer beneath less salty subsoil.",
+"key": 0,
+"o": [
+"Profile inversion",
+"Sanding (Marling)",
+"Scrapping",
+"Mulching",
+"None of these"
+],
+"page": "299-300",
+"q": "What soil reclamation practice involves turning over the soil to bury salty topsoil under less salty layers?",
+"serial": "1511",
+"src_row": 989,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "299-300:1511"
+},
+{
+"expl": "The reaction Na2CO3 + CaSO4\u00b72H2O \u2192 CaCO3 (precipitate) + Na2SO4 shows calcium carbonate precipitates.",
+"key": 0,
+"o": [
+"Calcium carbonate",
+"Sodium sulfate",
+"Calcium sulfate",
+"Sodium carbonate",
+"None of these"
+],
+"page": "299-300",
+"q": "In the gypsum amendment reaction for sodic soils, which compound is formed as a precipitate?",
+"serial": "1512",
+"src_row": 990,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "299-300:1512"
+},
+{
+"expl": "Multiplying the GR by 1.25 gives the gypsum factor, providing the actual gypsum needed.",
+"key": 2,
+"o": [
+"0.75",
+"1.0",
+"1.25",
+"2.0",
+"None of these"
+],
+"page": "299-300",
+"q": "The gypsum requirement (GR) for sodic soil reclamation is calculated using GR = (ESP_initial \u2013 ESP_final) \u00d7 (CEC/100). To obtain the actual gypsum amount, this result is multiplied by:",
+"serial": "1513",
+"src_row": 991,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "299-300:1513"
+},
+{
+"expl": "Dhaincha tolerates salinity primarily by diluting the absorbed salt within its tissues.",
+"key": 1,
+"o": [
+"Salt exclusion",
+"Salt dilution",
+"Osmoregulation",
+"Salt accumulation",
+"None of these"
+],
+"page": "299-300",
+"q": "Which salt\u2011tolerance mechanism is exhibited by Dhaincha?",
+"serial": "1514",
+"src_row": 992,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "299-300:1514"
+},
+{
+"expl": "The text states that rice is the most tolerant crop to soil sodicity.",
+"key": 1,
+"o": [
+"Barley",
+"Rice",
+"Sugar beet",
+"Cotton",
+"None of these"
+],
+"page": "299-300",
+"q": "According to the source, which crop shows the greatest tolerance to soil sodicity?",
+"serial": "1515",
+"src_row": 993,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "299-300:1515"
+},
+{
+"expl": "The source notes that exchangeable acidity is highest in smectite and lowest in kaolinite.",
+"key": 0,
+"o": [
+"Smectite",
+"Kaolinite",
+"Illite",
+"Chlorite",
+"None of these"
+],
+"page": "299-300",
+"q": "Exchangeable (salt\u2011replaceable) acidity is highest in which clay mineral?",
+"serial": "1516",
+"src_row": 994,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "299-300:1516"
+}
+],
+"rolled": false,
+"row_from": 974,
+"row_to": 995,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 974,
+"seeded_from": "2026-11-05",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-05",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
