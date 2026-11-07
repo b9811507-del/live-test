@@ -92,6 +92,20 @@ def sell_open(E, key):
     return (not u) or str(E.daykey()) < u
 
 
+CA_CHAT = "-4485392227"
+
+
+def ca_offer_price(E):
+    """Diwali offer (admin 7-Nov): first 50 members of the CA group pay ₹51; from 50 -> ₹99.
+    Live-checked every time, so the flip happens by itself the moment the group hits 50."""
+    try:
+        r = ptg(E, "getChatMemberCount", chat_id=CA_CHAT) or 0
+        n = int(r if isinstance(r, (int, float)) else (r.get("count") or 0))
+        return "₹99" if n >= 50 else "₹51"
+    except Exception:
+        return "₹51"
+
+
 def provider_token():
     return (os.environ.get("PAY_PROVIDER_TOKEN", "") or "").strip()
 
@@ -172,26 +186,31 @@ def line(pairs):
 def group_text(E):
     # v12.3 LOCKED (user-locked 3-Oct): name+details line, then fees + JOIN NOW line.
     # JOIN NOW = per-batch deep link -> bot opens that batch's payment section instantly.
-    def row(name, fee, key):
-        return ("%s\n\u3000\u3000<b>%s\u3000\u3000<a href=\"%s\">\U0001F4B3 JOIN NOW</a></b>"
-                % (name, fee, deep_link(E, key)))
+    def row(fee, key):
+        return ("\u3000\u3000<b>%s\u3000\u3000<a href=\"%s\">\U0001F4B3 JOIN NOW</a></b>"
+                % (fee, deep_link(E, key)))
     def fee(key):
+        if key == "ca":
+            return ca_offer_price(E)   # Diwali offer: ₹51 until the group has 50 members
         b = batch(key) or {}
         return b.get("price") or ""
     rows = [
-        ("\U0001F4D8 IARI BOOK MCQ BATCH (7400+ Q)", "iari"),
-        ("\U0001F4DA MALWA BOOK VOL 1+2+HORTICULTURE (3000+2800+1250 Q)", "malwa"),
-        ("\U0001F33E NEMRAJ SUNDA BOOK BATCH (3100+ Q)", "nemraj"),
-        ("\U0001F4D7 RK SHARMA BOOK BATCH (4500+ Q)", "rksharma"),
-        ("\U0001F306 AFO SELECTION BATCH (400+ subject test \u00b7 100+ full length test)", "afo"),
-        ("\U0001F38B UPSSSC SUGARCANE PREMIUM BATCH (Complete UP Special + Computer + Agriculture according syllabus)", "cane"),
-        ("\U0001F404 PASHUDHAN ADHIKARI BATCH (Section A+C 25 test \u00b7 A+B 25 test)", "pashu"),
+        ("\U0001F4D8 IARI BOOK MCQ BATCH (7400+ Q)", "iari", None),
+        ("\U0001F4DA MALWA BOOK VOL 1+2+HORTICULTURE (3000+2800+1250 Q)", "malwa", None),
+        ("\U0001F33E NEMRAJ SUNDA BOOK BATCH (3100+ Q)", "nemraj", None),
+        ("\U0001F4D7 RK SHARMA BOOK BATCH (4500+ Q)", "rksharma", None),
+        ("\U0001F306 AFO SELECTION BATCH (400+ subject test \u00b7 100+ full length test)", "afo", None),
+        ("\U0001F38B UPSSSC SUGARCANE PREMIUM BATCH (Complete UP Special + Computer + Agriculture according syllabus)", "cane", None),
+        ("\U0001F404 PASHUDHAN ADHIKARI BATCH (Section A+C 25 test \u00b7 A+B 25 test)", "pashu", None),
+        ("<b>\U0001F4F0 DAILY CURRENT AFFAIRS BATCH</b> (Last 24 hrs complete current affairs PDF \u00b7 "
+         "bilingual \u00b7 important images \u00b7 weekly PDF \u00b7 monthly PDF)",
+         "ca", "\U0001FA94 <b>DIWALI OFFER</b> \u2014 First 50 students only!"),
     ]
     parts = ["<b>\U0001F393 ALL PAID BATCHES \u2014 AGRI QUIZ WORLD</b>", ""]
-    for name, key in rows:
+    for name, key, extra in rows:
         if not sell_open(E, key):      # exam done / date passed -> auto-hide (admin orders 11-Oct)
             continue
-        parts += [row(name, fee(key), key), ""]
+        parts += [name] + ([extra] if extra else []) + [row(fee(key), key), ""]
     parts.append("\u267E\uFE0F <b>Unlimited attempts</b> \u00b7 \u23F3 <b>Lifetime validity</b> \u2014 pay once, the batch is yours for life.")
     return "\n".join(parts)
 
