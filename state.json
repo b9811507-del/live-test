@@ -261135,8 +261135,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1134,
 "names": {},
+"plan": {
+"bidx_next": 1134,
+"built_at": "2026-11-07T14:27:02+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 161-163",
+"pages_list": [
+161,
+162,
+163
+],
+"questions": [
+{
+"expl": "The SOURCE explicitly states that 'Solapur lal' is a biofortified variety.",
+"key": 1,
+"o": [
+"Wonderfull",
+"Solapur lal",
+"Mridula",
+"Bhagwa",
+"None of these"
+],
+"page": "161",
+"q": "Which of the following mango varieties is biofortified?",
+"serial": "1121",
+"src_row": 1113,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1121"
+},
+{
+"expl": "The SOURCE mentions that the average fruit size of 'Wonderfull' is 700 gm.",
+"key": 2,
+"o": [
+"500 gm",
+"600 gm",
+"700 gm",
+"800 gm",
+"None of these"
+],
+"page": "161",
+"q": "What is the average fruit size of the 'Wonderfull' mango variety?",
+"serial": "1122",
+"src_row": 1114,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1122"
+},
+{
+"expl": "The SOURCE states that Mridula, Bhagwa, and Ganesh are evergreen cultivars.",
+"key": 1,
+"o": [
+"Wonderfull and Solapur lal",
+"Mridula, Bhagwa and Ganesh",
+"Mridula and Solapur lal",
+"Bhagwa and Wonderfull",
+"None of these"
+],
+"page": "161",
+"q": "Which of these mango cultivars are evergreen?",
+"serial": "1123",
+"src_row": 1115,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1123"
+},
+{
+"expl": "The SOURCE specifies that 12A grade is preferred in Northern and Southern India.",
+"key": 1,
+"o": [
+"10A",
+"12A",
+"15A",
+"18A",
+"None of these"
+],
+"page": "161",
+"q": "What is the preferred mango grade in Northern and Southern India?",
+"serial": "1124",
+"src_row": 1116,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1124"
+},
+{
+"expl": "The SOURCE states that a 10-year-old tree gives 150-200 fruits per year.",
+"key": 2,
+"o": [
+"50-100",
+"100-150",
+"150-200",
+"200-250",
+"None of these"
+],
+"page": "161",
+"q": "How many fruits does a 10-year-old mango tree typically yield per year?",
+"serial": "1125",
+"src_row": 1117,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1125"
+},
+{
+"expl": "The SOURCE mentions that fruits can be stored for 15 to 20 days under ambient temperature.",
+"key": 2,
+"o": [
+"5-10 days",
+"10-15 days",
+"15-20 days",
+"20-25 days",
+"None of these"
+],
+"page": "161",
+"q": "For how many days can mango fruits be stored under ambient temperature?",
+"serial": "1126",
+"src_row": 1118,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1126"
+},
+{
+"expl": "The SOURCE states that at 5\u00b0C with 90-95% RH, mango fruits can be stored for 2 months.",
+"key": 1,
+"o": [
+"1 month",
+"2 months",
+"3 months",
+"4 months",
+"None of these"
+],
+"page": "161",
+"q": "At 5\u00b0C with 90-95% relative humidity, how long can mango fruits be stored?",
+"serial": "1127",
+"src_row": 1119,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "161:1127"
+},
+{
+"expl": "The SOURCE explicitly states the botanical name of Aonla as Emblicu officinulis, which is a common misspelling of Emblica officinalis.",
+"key": 0,
+"o": [
+"Emblica officinalis",
+"Phyllanthus emblica",
+"Terminalia chebula",
+"Mangifera indica",
+"None of these"
+],
+"page": "162",
+"q": "What is the botanical name of Aonla?",
+"serial": "1128",
+"src_row": 1120,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1128"
+},
+{
+"expl": "The SOURCE clearly mentions that Aonla belongs to the family Euphorbiaceae.",
+"key": 1,
+"o": [
+"Rutaceae",
+"Euphorbiaceae",
+"Anacardiaceae",
+"Myrtaceae",
+"None of these"
+],
+"page": "162",
+"q": "Which family does Aonla belong to?",
+"serial": "1129",
+"src_row": 1121,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1129"
+},
+{
+"expl": "The SOURCE specifies the chromosome number of Aonla as 2n=28.",
+"key": 1,
+"o": [
+"2n=22",
+"2n=28",
+"2n=30",
+"2n=18",
+"None of these"
+],
+"page": "162",
+"q": "What is the chromosome number of Aonla?",
+"serial": "1130",
+"src_row": 1122,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1130"
+},
+{
+"expl": "The SOURCE states that the edible portion of Aonla is the Mesocarp and Endocarp.",
+"key": 3,
+"o": [
+"Exocarp",
+"Mesocarp only",
+"Endocarp only",
+"Mesocarp and Endocarp",
+"None of these"
+],
+"page": "162",
+"q": "Which part of the Aonla fruit is edible?",
+"serial": "1131",
+"src_row": 1123,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1131"
+},
+{
+"expl": "The SOURCE mentions that Aonla is propagated by patch budding in North India.",
+"key": 2,
+"o": [
+"Seed propagation",
+"Cutting",
+"Patch budding",
+"Layering",
+"None of these"
+],
+"page": "162",
+"q": "What is the primary method of propagation for Aonla in North India?",
+"serial": "1132",
+"src_row": 1124,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1132"
+},
+{
+"expl": "The SOURCE provides the annual water requirement of Aonla as 777.6 liters per tree.",
+"key": 2,
+"o": [
+"500 liters",
+"700 liters",
+"777.6 liters",
+"900 liters",
+"None of these"
+],
+"page": "162",
+"q": "What is the average annual water requirement per Aonla tree?",
+"serial": "1133",
+"src_row": 1125,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1133"
+},
+{
+"expl": "The SOURCE states that the economic yield of Aonla starts at 4-5 years after planting.",
+"key": 1,
+"o": [
+"2-3 years",
+"4-5 years",
+"6-7 years",
+"8-10 years",
+"None of these"
+],
+"page": "162",
+"q": "When does the economic yield of Aonla start after planting?",
+"serial": "1134",
+"src_row": 1126,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "162:1134"
+},
+{
+"expl": "Banarasi is explicitly mentioned as suitable for murabba in the source.",
+"key": 0,
+"o": [
+"Banarasi",
+"Krishna (NA-5)",
+"Fransis (Hathijhool)",
+"Chakaiya",
+"None of these"
+],
+"page": "163",
+"q": "Which variety of ARI is most suitable for making murabba?",
+"serial": "1135",
+"src_row": 1127,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1135"
+},
+{
+"expl": "The source states that Fransis (Hathijhool) has a TSS of 12%.",
+"key": 1,
+"o": [
+"10%",
+"12%",
+"14%",
+"8%",
+"None of these"
+],
+"page": "163",
+"q": "What is the Total Soluble Solids (TSS) percentage of the Fransis (Hathijhool) variety?",
+"serial": "1136",
+"src_row": 1128,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1136"
+},
+{
+"expl": "Chinese Ber (Zizyphus jujuba) is described as deciduous and highly resistant to frost in the source.",
+"key": 1,
+"o": [
+"Indian Ber (Zizyphus mauritiana)",
+"Chinese Ber (Zizyphus jujuba)",
+"Zizyphus nummularia",
+"Zizyphus rotundifolia",
+"None of these"
+],
+"page": "163",
+"q": "Which ber variety is deciduous and highly resistant to frost?",
+"serial": "1137",
+"src_row": 1129,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1137"
+},
+{
+"expl": "The source specifies that maturity is identified by the seed color changing from creamy white to brown.",
+"key": 1,
+"o": [
+"Creamy white to green",
+"Creamy white to brown",
+"Brown to black",
+"Green to yellow",
+"None of these"
+],
+"page": "163",
+"q": "At what stage is the maturity of ARI fruits identified by the change in seed color?",
+"serial": "1138",
+"src_row": 1130,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1138"
+},
+{
+"expl": "Kanchan (NA-4) is described as a chance seedling of Chakaiya and a regular bearer in the source.",
+"key": 2,
+"o": [
+"Banarasi",
+"Krishna (NA-5)",
+"Kanchan (NA-4)",
+"Balwant (NA-10)",
+"None of these"
+],
+"page": "163",
+"q": "Which ARI variety is a chance seedling of Chakaiya and is a regular bearer?",
+"serial": "1139",
+"src_row": 1131,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1139"
+},
+{
+"expl": "The source lists the botanical name of Sapota as Achras sapota.",
+"key": 0,
+"o": [
+"Achras sapota",
+"Manilkara zapota",
+"Sapodilla indica",
+"Zizyphus sapota",
+"None of these"
+],
+"page": "163",
+"q": "What is the botanical name of Sapota?",
+"serial": "1140",
+"src_row": 1132,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1140"
+},
+{
+"expl": "The source explicitly states that NA-6 is the best variety for candy preparation.",
+"key": 1,
+"o": [
+"Banarasi",
+"NA-6",
+"Chakaiya",
+"Fransis (Hathijhool)",
+"None of these"
+],
+"page": "163",
+"q": "Which ARI variety is best suited for candy preparation?",
+"serial": "1141",
+"src_row": 1133,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "163:1141"
+}
+],
+"row_from": 1113,
+"row_to": 1134,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1113,
+"seeded_from": "2026-11-06"
+},
 "qidx": 0,
+"seeded_from": "2026-11-06",
+"skips": [],
 "step": 0
 },
 "malwa": {
