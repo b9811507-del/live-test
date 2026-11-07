@@ -261141,9 +261141,474 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1019,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 1019,
+"built_at": "2026-11-07T10:58:19+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 24,
+"pages": "Book pages 301-306",
+"pages_blocks": [
+"301-302",
+"303-304",
+"305-306"
+],
+"questions": [
+{
+"expl": "Residual acidity is the non\u2011exchangeable H+ and Al3+ held by organic matter and clay.",
+"key": 0,
+"o": [
+"Exchangeable H+ and Al3+ ions bound to organic matter and clay",
+"Active H+ ions in the soil solution",
+"Nitrate ions from fertilizers",
+"Calcium carbonate particles",
+"None of these"
+],
+"page": "301-302",
+"q": "Residual acidity in soils comprises which of the following?",
+"serial": "1521",
+"src_row": 995,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1521"
+},
+{
+"expl": "Basic N fertilizers in nitrate form are listed as a reclamation method; ammonium\u2011based fertilizers are not.",
+"key": 3,
+"o": [
+"Application of liming materials",
+"Use of rock phosphate",
+"Flooding",
+"Application of basic nitrogen fertilizers (nitrate form)",
+"None of these"
+],
+"page": "301-302",
+"q": "Which of the following is NOT a method for reclamation of acidic soils?",
+"serial": "1522",
+"src_row": 996,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1522"
+},
+{
+"expl": "The standard ratio recommended for pH determination is 1 part soil to 2.5 parts water.",
+"key": 1,
+"o": [
+"1:1",
+"1:2.5",
+"1:5",
+"1:10",
+"None of these"
+],
+"page": "301-302",
+"q": "What is the optimum soil\u2011to\u2011water suspension ratio for measuring soil pH?",
+"serial": "1523",
+"src_row": 997,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1523"
+},
+{
+"expl": "A liming factor of 1.5 to 2.0 is generally applied when estimating lime needed to raise pH.",
+"key": 1,
+"o": [
+"0.5\u20131.0",
+"1.5\u20132.0",
+"2.5\u20133.0",
+"3.5\u20134.0",
+"None of these"
+],
+"page": "301-302",
+"q": "The commonly used liming factor in lime\u2011requirement calculations falls within which range?",
+"serial": "1524",
+"src_row": 998,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1524"
+},
+{
+"expl": "Small millets are listed under crops with low response to liming, unlike the others.",
+"key": 2,
+"o": [
+"Pigeon pea",
+"Soybean",
+"Small millets",
+"Maize",
+"None of these"
+],
+"page": "301-302",
+"q": "Which crop shows a low response to liming?",
+"serial": "1525",
+"src_row": 999,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1525"
+},
+{
+"expl": "If 100 kg CaO equals 179 kg CaCO\u2083, then 100 kg CaCO\u2083 corresponds to 100/179 \u2248 55.9 kg CaO.",
+"key": 0,
+"o": [
+"\u224855.9 kg",
+"100 kg",
+"179 kg",
+"200 kg",
+"None of these"
+],
+"page": "301-302",
+"q": "Calcium oxide (CaO) has a CCE of 179%. How many kilograms of CaO are equivalent to 100 kg of pure CaCO\u2083?",
+"serial": "1526",
+"src_row": 1000,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1526"
+},
+{
+"expl": "The source specifies gypsum\u2019s solubility in water as 0.25%.",
+"key": 0,
+"o": [
+"Its solubility in water is 0.25%",
+"It is used to reclaim degraded alkali soils",
+"It has a CCE of 179%",
+"It supplies nitrogen to crops",
+"None of these"
+],
+"page": "301-302",
+"q": "Which statement about gypsum is correct?",
+"serial": "1527",
+"src_row": 1001,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1527"
+},
+{
+"expl": "The conversion given is 1 dS/m = 1 mS/cm.",
+"key": 1,
+"o": [
+"0.1 mS/cm",
+"1 mS/cm",
+"10 mS/cm",
+"100 mS/cm",
+"None of these"
+],
+"page": "301-302",
+"q": "1 dS/m is equivalent to how many mS/cm?",
+"serial": "1528",
+"src_row": 1002,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "301-302:1528"
+},
+{
+"expl": "SAR reflects the proportion of Na\u207a relative to Ca\u00b2\u207a and Mg\u00b2\u207a; a higher SAR raises the Exchangeable Sodium Percentage in the soil.",
+"key": 0,
+"o": [
+"Exchangeable Sodium Percentage (ESP)",
+"Soil organic matter content",
+"Cation exchange capacity (CEC)",
+"Soil pH",
+"None of these"
+],
+"page": "303-304",
+"q": "A high Sodium Adsorption Ratio (SAR) in irrigation water primarily increases which soil parameter?",
+"serial": "1531",
+"src_row": 1003,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1531"
+},
+{
+"expl": "Sodic water causes deflocculation, crusting, pH rise and toxicity; it does not enhance seedling emergence.",
+"key": 0,
+"o": [
+"Improved seedling emergence",
+"Soil crust formation",
+"Increase in soil pH",
+"Sodium toxicity to plants",
+"None of these"
+],
+"page": "303-304",
+"q": "Which of the following is NOT an effect of sodic water on soil properties?",
+"serial": "1532",
+"src_row": 1004,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1532"
+},
+{
+"expl": "RSC = (carbonate + bicarbonate) minus the sum of calcium and magnesium, expressed in meq/L.",
+"key": 0,
+"o": [
+"(CO\u2083\u00b2\u207b + HCO\u2083\u207b) \u2013 (Ca\u00b2\u207a + Mg\u00b2\u207a)",
+"(Ca\u00b2\u207a + Mg\u00b2\u207a) \u2013 (CO\u2083\u00b2\u207b + HCO\u2083\u207b)",
+"(Na\u207a + K\u207a) \u2013 (Cl\u207b + SO\u2084\u00b2\u207b)",
+"(EC of water) \u00d7 (SAR)",
+"None of these"
+],
+"page": "303-304",
+"q": "The Residual Sodium Carbonate (RSC) of irrigation water is calculated as:",
+"serial": "1533",
+"src_row": 1005,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1533"
+},
+{
+"expl": "The source advises applying agricultural\u2011grade gypsum when SAR is greater than 20 to mitigate sodicity.",
+"key": 2,
+"o": [
+"10",
+"15",
+"20",
+"25",
+"None of these"
+],
+"page": "303-304",
+"q": "According to recommended management practices, gypsum should be applied when the SAR of irrigation water exceeds:",
+"serial": "1534",
+"src_row": 1006,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1534"
+},
+{
+"expl": "Salt Index is negative for good quality water and positive for water that is unsuitable for irrigation.",
+"key": 1,
+"o": [
+"Good water quality",
+"Unsuitable water for irrigation",
+"Neutral effect on crops",
+"High fertilizer efficiency",
+"None of these"
+],
+"page": "303-304",
+"q": "A positive Salt Index value for irrigation water indicates:",
+"serial": "1535",
+"src_row": 1007,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1535"
+},
+{
+"expl": "One formula for LR is the ratio of EC of irrigation water to EC of drainage water.",
+"key": 0,
+"o": [
+"EC of irrigation water \u00f7 EC of drainage water",
+"EC of drainage water \u00f7 EC of irrigation water",
+"Depth of irrigation \u00f7 Depth of drainage",
+"Total cations \u00f7 Soluble sodium",
+"None of these"
+],
+"page": "303-304",
+"q": "Leaching requirement (LR) can be estimated using which of the following ratios?",
+"serial": "1536",
+"src_row": 1008,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1536"
+},
+{
+"expl": "The source states that SSP below 60% denotes good quality water for irrigation.",
+"key": 2,
+"o": [
+"30%",
+"45%",
+"60%",
+"75%",
+"None of these"
+],
+"page": "303-304",
+"q": "Irrigation water is considered suitable when its Soluble Sodium Percentage (SSP) is less than:",
+"serial": "1537",
+"src_row": 1009,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1537"
+},
+{
+"expl": "CSSRI classifies water salinity based on its EC measured in deci\u2011Siemens per metre.",
+"key": 0,
+"o": [
+"Electrical Conductivity (EC) in dS/m",
+"Soil pH",
+"Sodium Adsorption Ratio (SAR)",
+"Residual Sodium Carbonate (RSC)",
+"None of these"
+],
+"page": "303-304",
+"q": "In the CSSRI classification, which parameter is used to categorize water salinity levels?",
+"serial": "1538",
+"src_row": 1010,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "303-304:1538"
+},
+{
+"expl": "The source states that the most dominant salt in saline water is NaCl, followed by Na2SO4.",
+"key": 0,
+"o": [
+"NaCl",
+"Na2SO4",
+"KCl",
+"MgSO4",
+"None of these"
+],
+"page": "305-306",
+"q": "Which salt is most dominant in saline irrigation water?",
+"serial": "1541",
+"src_row": 1011,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1541"
+},
+{
+"expl": "Acidic soils are reclaimed by the application of lime, as mentioned in the key facts.",
+"key": 0,
+"o": [
+"Lime",
+"Gypsum",
+"Sulfur",
+"Organic compost",
+"None of these"
+],
+"page": "305-306",
+"q": "What amendment is recommended to reclaim acidic soils?",
+"serial": "1542",
+"src_row": 1012,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1542"
+},
+{
+"expl": "The sequence given is Entisols \u2192 Inceptisols \u2192 Aridisols \u2192 Mollisols \u2192 Alfisols, so Alfisols come directly after Mollisols.",
+"key": 0,
+"o": [
+"Alfisols",
+"Spodosols",
+"Ultisols",
+"Oxisols",
+"None of these"
+],
+"page": "305-306",
+"q": "According to the development sequence of soil orders, which order follows Mollisols?",
+"serial": "1543",
+"src_row": 1013,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1543"
+},
+{
+"expl": "Citrus is listed as a crop sensitive to boron toxicity, whereas sugar beet, carrot, and cabbage are tolerant.",
+"key": 0,
+"o": [
+"Citrus",
+"Sugar beet",
+"Carrot",
+"Cabbage",
+"None of these"
+],
+"page": "305-306",
+"q": "Which crop is identified as sensitive to boron toxicity?",
+"serial": "1544",
+"src_row": 1014,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1544"
+},
+{
+"expl": "The source specifies the critical value of soil ECe for seed crop germination as 2 dS/m.",
+"key": 1,
+"o": [
+"0.5 dS/m",
+"2 dS/m",
+"5 dS/m",
+"10 dS/m",
+"None of these"
+],
+"page": "305-306",
+"q": "What is the critical soil electrical conductivity (ECe) for germination of seed crops?",
+"serial": "1545",
+"src_row": 1015,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1545"
+},
+{
+"expl": "Entisols cover 18% of the world\u2019s land area, the largest proportion among soil orders.",
+"key": 0,
+"o": [
+"Entisols",
+"Inceptisols",
+"Alfisols",
+"Oxisols",
+"None of these"
+],
+"page": "305-306",
+"q": "Which soil order occupies the largest area worldwide?",
+"serial": "1546",
+"src_row": 1016,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1546"
+},
+{
+"expl": "Azonal soils are described as young soils with little horizon development, mostly influenced by parent material.",
+"key": 2,
+"o": [
+"Zonal soils",
+"Intrazonal soils",
+"Azonal soils",
+"Pedocals",
+"None of these"
+],
+"page": "305-306",
+"q": "Soils primarily influenced by local parent material are classified as which genetic type?",
+"serial": "1547",
+"src_row": 1017,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1547"
+},
+{
+"expl": "Alluvial soils are listed under azonal soils, while halomorphic, hydromorphic, and solonetz are intrazonal examples.",
+"key": 3,
+"o": [
+"Halomorphic soils",
+"Hydromorphic soils",
+"Solonetz",
+"Alluvial soils",
+"None of these"
+],
+"page": "305-306",
+"q": "Which of the following is NOT an example of intrazonal soils?",
+"serial": "1548",
+"src_row": 1018,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "305-306:1548"
+}
+],
+"rolled": false,
+"row_from": 995,
+"row_to": 1019,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 995,
+"seeded_from": "2026-11-06",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-06",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
