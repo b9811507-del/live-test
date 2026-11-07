@@ -55,6 +55,10 @@ DEFAULTS = [
      "chat": "-1003947957354",
      "perks": "Pashudhan Adhikari syllabus classes · daily MCQ tests · structured notes · "
               "unlimited attempts with best explanation"},
+    {"key": "ca", "emoji": "📰", "title": "DAILY CURRENT AFFAIRS BATCH", "price": "₹51",
+     "chat": "-1004485392227",
+     "perks": "Last 24 hours complete current affairs PDF (bilingual) with important images · "
+              "weekly current affairs PDF · monthly PDF · Diwali offer for the first 50 students"},
 ]
 LINK_HOURS = int(os.environ.get("PAID_LINK_HOURS", "24"))
 PAID_VERIFY = (os.environ.get("PAID_VERIFY", "auto") or "auto").lower()
@@ -92,7 +96,7 @@ def sell_open(E, key):
     return (not u) or str(E.daykey()) < u
 
 
-CA_CHAT = "-4485392227"
+CA_CHAT = "-1004485392227"
 
 
 def ca_offer_price(E):
