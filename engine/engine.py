@@ -87,7 +87,7 @@ SHEETS = {
     "malwa_vol2": "1UgnIe-g8Fh0GiwtbQpSHgtlVtPk2hEngzBW5idqFD_E",
     "malwa_horti": "1YcJWVgWofbLkzOGeeDuPke7XPpyW_EETn9LeEEuz_dE",
     "iari": "1sUgWskoLr7U16kVtKWb1o5-GItSv5UPumD9VCH3T4NI",
-    "nemraj": "17U0MEc-3lXtKUH1WNBaHKNO25E7nS7BL2f9WymeGXY4",
+    "nemraj": "17U0MEc-QxLEPkNU354TyIqXH1X5aQ3dPrXK2i77Mrf4",
     "rksharma": "1bxM1Q-4hPwx9oTeTHuBFwyvJlYF6PuY1YfrNmvSaLlo",
 }
 SHEET_HEADERS = ["serial", "page", "topic", "q", "o1", "o2", "o3", "o4", "o5", "key", "expl"]
@@ -105,7 +105,7 @@ JOBS = {
     # v13 (admin 8-Nov): 6 PM slot -> daily 30Q topic-wise mix from ALL sheets (pattern confirmed:
     # Agronomy 4 · Soil 4 · Horti 4 · Animal 4 · Ento/Path 3 · Engineering 3 · Economics 3 · Genetics 2 · Stats/Meteo 2 · General 1)
     "mix": {"go": 18 * 3600, "time_label": "6:00 PM IST", "emoji": "🌆", "kind": "mix", "right": 1.0,
-            "wrong": -0.25, "n": 30, "label": "AGRI MIX TEST"},
+            "wrong": -0.25, "n": 30, "first_day": "2026-11-12", "label": "AGRI MIX TEST"},
 }
 ORDER = ["malwa", "iari", "afo", "mix"]
 ALLOWED_UPDATES = ["message", "callback_query", "poll", "poll_answer", "chat_join_request", "my_chat_member"]
@@ -1010,6 +1010,8 @@ def announce_text(job, day, plan):
     lines += [tr.t("ann_body", n=plan["n"]),
               tr.t("ann_score", right=fmt_num(cfg["right"]),
                    wrong=fmt_num(abs(float(cfg["wrong"]))) if cfg["wrong"] < 0 else fmt_num(cfg["wrong"]))]
+    if day < "2026-11-12":
+        lines += ["", tr.t("ann_mix_promo")]
     return "\n".join(lines)
 
 
@@ -1750,6 +1752,8 @@ def is_closed(job, day):
     cfg = JOBS[job]
     if cfg.get("last_day") and day > cfg["last_day"]:
         return "schedule_end"
+    if cfg.get("first_day") and day < cfg["first_day"]:
+        return "schedule_start"
     return None
 
 
