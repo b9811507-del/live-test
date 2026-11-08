@@ -226,7 +226,7 @@ T = {
     "schedule_head": "🗓 <b>Tomorrow's plan</b>",
     "schedule_malwa": "☀️ 11:00 AM · <b>%(label)s</b> — book pages %(pages)s",
     "schedule_iari": "🌤 2:30 PM · <b>%(label)s</b> — book pages %(pages)s",
-    "schedule_afo": "🌆 6:00 PM · <b>%(label)s</b> — full-length set %(set_no)s (50 questions, +2 / −0.5)",
+    "schedule_mix": "🌆 6:00 PM · <b>%(label)s</b> — 30 mixed questions (topic-wise, all subjects)",
     "schedule_pages_unknown": "(continues automatically)",
     "lb_row_right": "correct",
     "lb_row_wrong": "incorrect",
@@ -235,7 +235,7 @@ T = {
     "congrats_nobody": "🎉 <b>%(label)s completed</b> — thank you all! Answer submissions were not recorded this time. See you tomorrow! 🌾",
     "series_complete": ("🎊 <b>%(label)s COMPLETE</b> — the full series has been finished. "
                         "Thank you to every participant! 🌾\nThis slot is now closed. A new series will be announced soon."),
-    "cta": "🌾 Daily schedule: 11:00 AM Malwa Book · 2:30 PM IARI Book · 6:00 PM AFO Mains — @agriquizworld",
+    "cta": "🌾 Daily schedule: 11:00 AM Malwa Book · 2:30 PM IARI Book · 6:00 PM Agri Mix Test — @agriquizworld",
     # ---- paid batches (last message after every test)
     "paid_title": "🎓 <b>PAID BATCHES — ENROLMENT OPEN</b>",
     "paid_teaser": "Touch and join — see all batches, pay by Razorpay, get your instant join link.",
@@ -297,7 +297,7 @@ T = {
                      "<b>Invite Users</b> right, then the pending links will be issued on the next pass."),
     # ---- result file
     "rf_title": "%(label)s · DAILY TEST RESULT",
-    "rf_caption": ("📗 <b>%(label)s</b> · Pages %(pages)s · %(n)s Q · daily test %(date)s — "
+    "rf_caption": ("📗 <b>%(label)s</b> · %(pages)s · %(n)s Q · daily test %(date)s — "
                    "open & attempt with timer, answers + explanations inside 📄"),
 }
 
