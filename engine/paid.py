@@ -98,6 +98,19 @@ def sell_open(E, key):
 
 CA_CHAT = "-1004485392227"
 
+# Diwali 25% off (admin 7-Nov): 7-11 Nov (5 days, daily countdown), 12-Nov se original price.
+DIWALI_PRICE = {"iari": "\u20b975", "malwa": "\u20b9115", "nemraj": "\u20b975", "rksharma": "\u20b975", "cane": "\u20b9115"}
+
+
+def diwali_left(E):
+    try:
+        import datetime
+        today = datetime.date.fromisoformat(str(E.daykey()))
+        n = (datetime.date(2026, 11, 11) - today).days + 1
+        return n if n >= 1 else 0
+    except Exception:
+        return 0
+
 
 def ca_offer_price(E):
     """Diwali offer (admin 7-Nov): first 50 members of the CA group pay ₹51; from 50 -> ₹99.
@@ -210,7 +223,11 @@ def group_text(E):
          "bilingual \u00b7 important images \u00b7 weekly PDF \u00b7 monthly PDF)",
          "ca", "\U0001FA94 <b>DIWALI OFFER</b> \u2014 First 50 students only!"),
     ]
+    _n = diwali_left(E)
     parts = ["<b>\U0001F393 ALL PAID BATCHES \u2014 AGRI QUIZ WORLD</b>", ""]
+    if _n:
+        parts += ["\U0001FA94 <b>DIWALI OFFER</b> \u2014 25% OFF",
+                  "\u23F0 Only %d day%s left \u2014 <b>Hurry up!</b>" % (_n, "s" if _n > 1 else ""), ""]
     for name, key, extra in rows:
         if not sell_open(E, key):      # exam done / date passed -> auto-hide (admin orders 11-Oct)
             continue
