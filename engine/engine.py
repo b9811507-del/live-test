@@ -102,8 +102,12 @@ JOBS = {
              "right": 1.0, "wrong": -0.25, "pages_per_day": 3, "sid": "iari", "label": "IARI BOOK MCQ 2026"},
     "afo": {"go": 18 * 3600, "time_label": "6:00 PM IST", "emoji": "🌆", "kind": "mongo", "right": 2.0,
             "wrong": -0.5, "n": 50, "last_day": "2026-11-01", "label": "AFO MAINS TEST (NEW PATTERN)"},
+    # v13 (admin 8-Nov): 6 PM slot -> daily 30Q topic-wise mix from ALL sheets (pattern confirmed:
+    # Agronomy 4 · Soil 4 · Horti 4 · Animal 4 · Ento/Path 3 · Engineering 3 · Economics 3 · Genetics 2 · Stats/Meteo 2 · General 1)
+    "mix": {"go": 18 * 3600, "time_label": "6:00 PM IST", "emoji": "🌆", "kind": "mix", "right": 1.0,
+            "wrong": -0.25, "n": 30, "label": "AGRI MIX TEST"},
 }
-ORDER = ["malwa", "iari", "afo"]
+ORDER = ["malwa", "iari", "afo", "mix"]
 ALLOWED_UPDATES = ["message", "callback_query", "poll", "poll_answer", "chat_join_request", "my_chat_member"]
 ANNOUNCE_LEAD = int(os.environ.get("ANNOUNCE_LEAD", "0"))     # v12 simple: announce exactly at 11:00/2:30/6:00
 COUNTDOWN_SECS = int(os.environ.get("COUNTDOWN_SECS", "15"))  # v12: 15s countdown timer message after announce
@@ -808,6 +812,79 @@ def plan_afo(day, j):
     return plan, [], None
 
 
+MIX_QUOTA = [  # (bucket, topic-regex, quota) — first match wins; last bucket = fallback
+    ("Agronomy", r"agronomy|weed", 4),
+    ("Soil Science", r"soil", 4),
+    ("Horticulture", r"horti", 4),
+    ("Animal Husbandry", r"animal|dairy|poultry|livestock|fisher|piscicult|apicult|veterinary", 4),
+    ("Entomology & Plant Pathology", r"entom|patholog|plant protection|pest", 3),
+    ("Agricultural Engineering", r"engineering|machinery|power", 3),
+    ("Agricultural Economics & Extension", r"economic|extension|marketing|business|finance|trade", 3),
+    ("Genetics & Plant Breeding", r"genetic|breeding|biotech", 2),
+    ("Statistics & Meteorology", r"statistic|meteorolog|climatolog|computer|informatics", 2),
+    ("General Agriculture", r".", 1),
+]
+MIX_SOURCES = ["malwa_vol1", "malwa_vol2", "malwa_horti", "iari", "nemraj", "rksharma"]
+
+
+def plan_mix(day, j):
+    """Daily 6 PM mixed paper (admin 8-Nov): 30 questions, topic-wise from ALL sheets.
+    Confirmed pattern: Agronomy 4 · Soil 4 · Horti 4 · Animal 4 · Ento/Path 3 · Engineering 3 ·
+    Economics 3 · Genetics 2 · Stats/Meteo 2 · General 1. Never repeats a row used by an earlier
+    mix test (journal key mix_used). Scoring like the daily book tests (+1 / -0.25)."""
+    st = jload()
+    used = set(st.get("mix_used") or [])
+    buckets = {name: [] for name, _rx, _q in MIX_QUOTA}
+    for sid in MIX_SOURCES:
+        try:
+            rows = sheet_rows(sid)
+        except Exception as e:
+            log("mix: sheet %s unreadable (%s)" % (sid, str(e)[:60]))
+            continue
+        for r in rows:
+            if "%s:r%s" % (sid, r["src_row"]) in used:
+                continue
+            topic = (r.get("topic") or "").lower()
+            for name, rx, _q in MIX_QUOTA:
+                if re.search(rx, topic):
+                    buckets[name].append((sid, r))
+                    break
+    rnd = random.Random("mix:" + day)
+    picked, skips = [], []
+    for name, _rx, quota in MIX_QUOTA:
+        pool = buckets[name]
+        rnd.shuffle(pool)
+        take = 0
+        for sid, r in pool:
+            if take >= quota:
+                break
+            opts, trunc, ok = fit_options([en(o) for o in r["opts"]], r["key"])
+            qt, qtr = fit_question(en(r["q"]))
+            if not ok:
+                skips.append({"src_row": r["src_row"], "serial": r["serial"], "why": "option-limit collision"})
+                continue
+            picked.append({"uid": "mix:%s:r%s" % (sid, r["src_row"]), "serial": str(len(picked) + 1),
+                           "page": r["page"], "topic": en(r.get("topic") or ""), "q": qt, "o": opts,
+                           "key": r["key"], "trunc": trunc + qtr, "expl": en(r.get("expl") or "")[:600],
+                           "src_row": r["src_row"], "bucket": name})
+            used.add("%s:r%s" % (sid, r["src_row"]))
+            take += 1
+        if take < quota:
+            log("mix: bucket %s short (%d/%d)" % (name, take, quota))
+    if not picked:
+        return None, skips, "empty_source"
+    rnd.shuffle(picked)                     # topics interleaved in the paper order
+    for i, p in enumerate(picked):
+        p["serial"] = str(i + 1)
+    st["mix_used"] = sorted(used)
+    jsave(st, "mix used rows booked")
+    plan = {"src": "mix:" + ",".join(MIX_SOURCES), "kind": "mix", "n": len(picked),
+            "label": JOBS["mix"]["label"], "pages": "All subjects (topic-wise mix)",
+            "questions": picked, "trunc": sum(p["trunc"] for p in picked), "skip_rows": skips,
+            "built_at": istnow().isoformat(timespec="seconds")}
+    return plan, skips, None
+
+
 def prev_cursor(st, day, job):
     """v11.4.1: a new day's job state is empty, so the book cursor is seeded from the most recent
     previous day that actually ran this job (journal `bidx`/`vol` = where that day finished).
@@ -862,6 +939,8 @@ def prebuild(job, day=None, st=None):
         plan, skips, why = plan_iari(day, j)
     elif job == "afo":
         plan, skips, why = plan_afo(day, j)
+    elif job == "mix":
+        plan, skips, why = plan_mix(day, j)
     else:
         raise EngineError("unknown job " + job)
     if plan is None:
@@ -1050,7 +1129,7 @@ def tomorrow_plan_text(job, day, st):
     jm = ((st.get("days") or {}).get(day) or {}).get("malwa") or {}
     ji = ((st.get("days") or {}).get(day) or {}).get("iari") or {}
     lines = [tr.t("schedule_head"), ""]
-    want = ("malwa", "iari") if job in ("malwa", "iari") else ("malwa", "iari", "afo")
+    want = ("malwa", "iari") if job in ("malwa", "iari") else ("malwa", "iari", "mix")
     # v11.4.11 (admin order 18-Sep): preview must match prebuild reality — if today's entry has
     # no cursor (skipped/sealed day), seed via prev_cursor, else IARI shows stale page list.
     def _eff(j, jb):
@@ -1076,16 +1155,8 @@ def tomorrow_plan_text(job, day, st):
                 lines.append(tr.t("schedule_iari", label=esc(pi.get("label")), pages=esc(pages)))
             else:
                 lines.append(tr.t("schedule_iari", label="IARI BOOK MCQ 2026", pages=tr.t("schedule_pages_unknown")))
-        if "afo" in want:
-            set_no = "-"
-            try:
-                import afo_mongo
-                db, _ = afo_mongo.db_handle()
-                doc = db.afo_sets.find_one({"date": tmr}) or {}
-                set_no = doc.get("set_no", "-")
-            except Exception:
-                pass
-            lines.append(tr.t("schedule_afo", label=JOBS["afo"]["label"], set_no=set_no))
+        if "mix" in want:
+            lines.append(tr.t("schedule_mix", label=JOBS["mix"]["label"]))
     except Exception as e:
         log("tomorrow plan skipped:", str(e)[:110])
         return None
@@ -1244,9 +1315,11 @@ def paper_data(job, day, plan):
         ptext, plabel = "%s-%s" % (pages[0], pages[-1]), "Page %d to %d" % (pages[0], pages[-1])
     elif pages:
         ptext, plabel = ", ".join(str(p) for p in pages), "Pages %s" % ", ".join(str(p) for p in pages)
-    else:                                            # AFO: mongo set, no book pages
-        ptext = plabel = "Full-length set %s" % (plan.get("set_no") or "")
-        ptext, plabel = ptext.strip(), ptext.strip()
+    else:                                            # AFO/mix: no book pages
+        if plan.get("set_no"):
+            ptext = plabel = ("Full-length set %s" % plan.get("set_no")).strip()
+        else:
+            ptext = plabel = str(plan.get("pages") or "All subjects").strip()
     label = plan.get("label") or job.upper()
     book = "%s — Pages %s" % (label, ptext) if pages else "%s — %s" % (label, plabel)
     per = {}
@@ -1294,7 +1367,7 @@ def file_short(job, plan):
     label = re.sub(r"[^A-Z0-9]+", "_", str(plan.get("label") or job).upper()).strip("_")
     if job == "malwa":
         return label.replace("_BOOK_", "_") or "MALWA"
-    return {"iari": "IARI", "afo": "AFO"}.get(job) or label or job.upper()
+    return {"iari": "IARI", "afo": "AFO", "mix": "AGRI_MIX"}.get(job) or label or job.upper()
 
 
 def short_label(label):
@@ -1610,7 +1683,7 @@ def run_job(job, day=None, st=None, force=False):
         path, pages_txt = paper_html(job, day, plan)
         doc = tg_file(path, chat_id=chat, caption=tr.t("rf_caption", label=plan.get("label") or job.upper(),
                                                         date=day_label(day), n=plan["n"],
-                                                        pages=pages_txt))
+                                                        pages=(("Pages " + pages_txt) if pages_txt[:1].isdigit() else pages_txt)))
         if doc:
             j["file_sent"] = os.path.basename(path)
             j["file_msg"] = doc.get("message_id")
