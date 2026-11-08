@@ -208,9 +208,12 @@ def group_text(E):
                 % (fee, deep_link(E, key)))
     def fee(key):
         if key == "ca":
-            return ca_offer_price(E)   # Diwali offer: ₹51 until the group has 50 members
+            return ca_offer_price(E)   # CA ka apna Diwali offer (₹51 first 50) - untouched
         b = batch(key) or {}
-        return b.get("price") or ""
+        p = b.get("price") or ""
+        if diwali_left(E) and key in DIWALI_PRICE:
+            return "<s>%s</s> %s" % (p, DIWALI_PRICE[key])   # Diwali 25% off (7-11 Nov)
+        return p
     rows = [
         ("\U0001F4D8 IARI BOOK MCQ BATCH (7400+ Q)", "iari", None),
         ("\U0001F4DA MALWA BOOK VOL 1+2+HORTICULTURE (3000+2800+1250 Q)", "malwa", None),
