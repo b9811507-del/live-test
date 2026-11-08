@@ -207,7 +207,7 @@ T = {
     "ann_pages_range": "📖 %(pages)s",
     "tomorrow_note": "📖 Tomorrow (%(date)s): <b>%(label)s</b> — book pages %(pages)s",
     "ann_score": "🏆 +%(right)s correct · −%(wrong)s incorrect · leaderboard & result file at the end 📄",
-    "ann_diwali": ("🪔 <b>DIWALI OFFER — 25% OFF</b> on all batches · "
+    "ann_diwali": ("🪔 <b>DIWALI OFFER — 25%% OFF</b> on all batches · "
                    "⏰ Only %(n)s left — <b>Hurry up!</b>"),
     "ann_mix_promo": ("🌆 <b>NEW from 12 Nov</b> — daily 6:00 PM · 30-question <b>MIX test</b> "
                       "(all agriculture topics — Agronomy, Soil, Horticulture, Animal Husbandry and more)"),
