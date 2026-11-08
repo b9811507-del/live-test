@@ -39,9 +39,9 @@ IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 JOBS = {
     "malwa": {"go": 11*3600, "label": "11:00 AM"},
     "iari": {"go": 14*3600+30*60, "label": "2:30 PM"},
-    "afo": {"go": 18*3600, "label": "6:00 PM"},
+    "mix": {"go": 18*3600, "label": "6:00 PM"},
 }
-ORDER = ["malwa", "iari", "afo"]
+ORDER = ["malwa", "iari", "mix"]
 
 WORKER_URL = "https://live-test-free.upsssc360.workers.dev"
 WORKER_T_URL = WORKER_URL + "/t"
