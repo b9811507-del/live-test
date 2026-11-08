@@ -999,6 +999,15 @@ def pages_text(job, plan):
     return ""
 
 
+def diwali_left(day):
+    """Days left of the 7-11 Nov Diwali 25% offer (admin order); 0 after 11-Nov."""
+    try:
+        n = (dt.date(2026, 11, 11) - dt.date.fromisoformat(str(day))).days + 1
+        return n if n >= 1 else 0
+    except Exception:
+        return 0
+
+
 def announce_text(job, day, plan):
     """Announce in professional English: title / date+time / pages (malwa+iari) / questions / scoring."""
     cfg = JOBS[job]
@@ -1010,6 +1019,9 @@ def announce_text(job, day, plan):
     lines += [tr.t("ann_body", n=plan["n"]),
               tr.t("ann_score", right=fmt_num(cfg["right"]),
                    wrong=fmt_num(abs(float(cfg["wrong"]))) if cfg["wrong"] < 0 else fmt_num(cfg["wrong"]))]
+    dl = diwali_left(day)
+    if dl:
+        lines += ["", tr.t("ann_diwali", n="%d day%s" % (dl, "s" if dl > 1 else ""))]
     if day < "2026-11-12":
         lines += ["", tr.t("ann_mix_promo")]
     return "\n".join(lines)
