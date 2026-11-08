@@ -262821,8 +262821,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1155,
 "names": {},
+"plan": {
+"bidx_next": 1155,
+"built_at": "2026-11-08T14:27:56+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 164-166",
+"pages_list": [
+164,
+165,
+166
+],
+"questions": [
+{
+"expl": "The Ber plant can tolerate alkaline soils (pH up to 9.5) and sodic soils, as stated in the source. Hence, option B is incorrect.",
+"key": 1,
+"o": [
+"Tolerates high temperature up to 40\u00b0C",
+"Cannot grow in alkaline soils",
+"Tolerates salinity up to 21 m.mhos/cm",
+"Can be grown in extreme moisture stress",
+"None of these"
+],
+"page": "164",
+"q": "Which of the following is NOT a characteristic of the Ber plant?",
+"serial": "1142",
+"src_row": 1134,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1142"
+},
+{
+"expl": "The source explicitly states that seed dormancy in Ber is overcome by breaking the endocarp or soaking seeds in GA3 500 PPM for 24 hours.",
+"key": 1,
+"o": [
+"Soaking seeds in water for 48 hours",
+"Breaking the endocarp or soaking seeds in GA3 500 PPM for 24 hours",
+"Cold stratification for 30 days",
+"Exposing seeds to direct sunlight",
+"None of these"
+],
+"page": "164",
+"q": "What is the primary method to overcome seed dormancy in Ber?",
+"serial": "1143",
+"src_row": 1135,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1143"
+},
+{
+"expl": "The source mentions that Chhuhara variety's fruits are suitable for heating and making dry fruits like dates.",
+"key": 2,
+"o": [
+"Elaichi",
+"Gola",
+"Chhuhara",
+"Banarasi",
+"None of these"
+],
+"page": "164",
+"q": "Which variety of Ber is known for its fruits being suitable for making dry fruits like dates?",
+"serial": "1144",
+"src_row": 1136,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1144"
+},
+{
+"expl": "The source specifies that the best time for planting Ber is from July to September.",
+"key": 2,
+"o": [
+"January to March",
+"April to June",
+"July to September",
+"October to December",
+"None of these"
+],
+"page": "164",
+"q": "What is the best time for planting Ber?",
+"serial": "1145",
+"src_row": 1137,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1145"
+},
+{
+"expl": "The source identifies the fruit fly (Carpomiya vesuviana) as the major pest that infests Ber at the pea stage.",
+"key": 1,
+"o": [
+"Aphids",
+"Fruit fly (Carpomiya vesuviana)",
+"Whitefly",
+"Mealybug",
+"None of these"
+],
+"page": "164",
+"q": "Which pest infests Ber at the pea stage?",
+"serial": "1146",
+"src_row": 1138,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1146"
+},
+{
+"expl": "The source states that the maturity time for Ber fruits is 150-175 days after flowering.",
+"key": 2,
+"o": [
+"90-100 days",
+"120-140 days",
+"150-175 days",
+"180-200 days",
+"None of these"
+],
+"page": "164",
+"q": "What is the maturity time for Ber fruits after flowering?",
+"serial": "1147",
+"src_row": 1139,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1147"
+},
+{
+"expl": "The source lists I-Budding, T-Budding, and Shield Budding as propagation methods for Ber, but does not mention grafting.",
+"key": 3,
+"o": [
+"I-Budding",
+"T-Budding",
+"Shield Budding",
+"Grafting",
+"None of these"
+],
+"page": "164",
+"q": "Which propagation method is NOT used for Ber?",
+"serial": "1148",
+"src_row": 1140,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "164:1148"
+},
+{
+"expl": "The botanical name of Date Palm, as stated in the source, is Phoenix dactylifera.",
+"key": 1,
+"o": [
+"Phoenix canariensis",
+"Phoenix dactylifera",
+"Cocos nucifera",
+"Areca catechu",
+"None of these"
+],
+"page": "165",
+"q": "What is the botanical name of the Date Palm?",
+"serial": "1149",
+"src_row": 1141,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1149"
+},
+{
+"expl": "The source specifies that Date Palm requires a rain-free period during ripening, mild temperatures during flowering and ripening, and is susceptible to frost. High humidity during flowering is not mentioned as suitable.",
+"key": 3,
+"o": [
+"Prolonged hot dry summer",
+"Moderate winter",
+"Rain-free period during ripening",
+"High humidity during flowering",
+"None of these"
+],
+"page": "165",
+"q": "Which of the following is NOT a suitable climate condition for Date Palm cultivation?",
+"serial": "1150",
+"src_row": 1142,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1150"
+},
+{
+"expl": "The source states that the Gandara stage (4-13 weeks after pollination) has hard, green-colored fruits.",
+"key": 3,
+"o": [
+"Chimiri",
+"Doka",
+"Khalal",
+"Gandara",
+"None of these"
+],
+"page": "165",
+"q": "At which stage of Date Palm fruit development are the fruits hard, green, and inedible?",
+"serial": "1151",
+"src_row": 1143,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1151"
+},
+{
+"expl": "The source explicitly mentions that 1 kg of fully ripe fresh dates provides approximately 3150 calories.",
+"key": 1,
+"o": [
+"2500 calories",
+"3150 calories",
+"3500 calories",
+"2800 calories",
+"None of these"
+],
+"page": "165",
+"q": "What is the approximate calorie content of 1 kg of fully ripe fresh dates?",
+"serial": "1152",
+"src_row": 1144,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1152"
+},
+{
+"expl": "The source states that Halawy is the most popular variety in India, with yellow fruits at the doka stage.",
+"key": 3,
+"o": [
+"Khadrawy",
+"Barhee",
+"Zahid",
+"Halawy",
+"None of these"
+],
+"page": "165",
+"q": "Which variety of Date Palm is most popular in India and has yellow fruits at the doka stage?",
+"serial": "1153",
+"src_row": 1145,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1153"
+},
+{
+"expl": "The source specifies that retaining 1300-1600 fruits in 8-10 bunches per palm is optimum after thinning.",
+"key": 1,
+"o": [
+"800-1000 fruits in 5-6 bunches",
+"1300-1600 fruits in 8-10 bunches",
+"2000-2500 fruits in 12-15 bunches",
+"500-700 fruits in 3-4 bunches",
+"None of these"
+],
+"page": "165",
+"q": "What is the optimum number of fruits to retain per palm after thinning for Date Palm?",
+"serial": "1154",
+"src_row": 1146,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1154"
+},
+{
+"expl": "The source clearly states that the required heat unit for Date Palm cultivation is 3300.",
+"key": 2,
+"o": [
+"2500",
+"3000",
+"3300",
+"3800",
+"None of these"
+],
+"page": "165",
+"q": "What is the required heat unit for Date Palm cultivation?",
+"serial": "1155",
+"src_row": 1147,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "165:1155"
+},
+{
+"expl": "The SOURCE explicitly states that the ideal weight for commercial propagation offshoots is 8-10 kg.",
+"key": 1,
+"o": [
+"5-7 kg",
+"8-10 kg",
+"15-20 kg",
+"25-35 kg",
+"None of these"
+],
+"page": "166",
+"q": "What is the ideal weight range for commercial propagation offshoots in date palm?",
+"serial": "1156",
+"src_row": 1148,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1156"
+},
+{
+"expl": "The SOURCE specifies that 'Doka' stage fruits are harvested for processing Chhuhara, with a recovery of 33-35%.",
+"key": 2,
+"o": [
+"Dang",
+"Pind",
+"Doka",
+"Tamar",
+"None of these"
+],
+"page": "166",
+"q": "Which stage of date palm fruit is harvested for processing into 'Chhuhara'?",
+"serial": "1157",
+"src_row": 1149,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1157"
+},
+{
+"expl": "The SOURCE clearly mentions the male to female ratio as 2-3:100 for date palm.",
+"key": 1,
+"o": [
+"1:10",
+"2-3:100",
+"5:50",
+"10:100",
+"None of these"
+],
+"page": "166",
+"q": "What is the male to female ratio recommended for date palm cultivation?",
+"serial": "1158",
+"src_row": 1150,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1158"
+},
+{
+"expl": "The SOURCE states that cross pollination in fig is known as Caprification.",
+"key": 2,
+"o": [
+"Self-pollination",
+"Wind pollination",
+"Cross pollination",
+"Animal pollination",
+"None of these"
+],
+"page": "166",
+"q": "Which pollination method is referred to as 'Caprification' in fig cultivation?",
+"serial": "1159",
+"src_row": 1151,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1159"
+},
+{
+"expl": "The SOURCE attributes post-harvest losses in date palm mainly to rain, with losses ranging from 32-40%.",
+"key": 2,
+"o": [
+"High temperature",
+"Pest infestation",
+"Rain",
+"Improper storage",
+"None of these"
+],
+"page": "166",
+"q": "What is the primary cause of post-harvest losses in date palm?",
+"serial": "1160",
+"src_row": 1152,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1160"
+},
+{
+"expl": "The SOURCE specifies that for fresh consumption, dates are harvested at the peak of Doka stage, when the color turns green to yellow.",
+"key": 1,
+"o": [
+"Dang",
+"Peak of Doka",
+"Pind",
+"Tamar",
+"None of these"
+],
+"page": "166",
+"q": "At what stage are dates harvested for fresh consumption?",
+"serial": "1161",
+"src_row": 1153,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1161"
+},
+{
+"expl": "The SOURCE states that the yield under irrigated conditions is 200 kg/palm.",
+"key": 2,
+"o": [
+"40-50 kg/palm",
+"100-150 kg/palm",
+"200 kg/palm",
+"250-300 kg/palm",
+"None of these"
+],
+"page": "166",
+"q": "What is the typical yield of date palm under irrigated conditions?",
+"serial": "1162",
+"src_row": 1154,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "166:1162"
+}
+],
+"row_from": 1134,
+"row_to": 1155,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1134,
+"seeded_from": "2026-11-07"
+},
 "qidx": 0,
+"seeded_from": "2026-11-07",
+"skips": [],
 "step": 0
 },
 "malwa": {
