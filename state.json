@@ -262827,9 +262827,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1040,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 1040,
+"built_at": "2026-11-08T10:58:12+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 307-312",
+"pages_blocks": [
+"307-308",
+"309-310",
+"311-312"
+],
+"questions": [
+{
+"expl": "The table lists Alfisols with the formative element 'Alf', noted as the meaningless syllable.",
+"key": 1,
+"o": [
+"Entisols",
+"Alfisols",
+"Oxisols",
+"Vertisols",
+"None of these"
+],
+"page": "307-308",
+"q": "Which soil order's formative element is described as the \"meaning less syllable\"?",
+"serial": "1551",
+"src_row": 1019,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1551"
+},
+{
+"expl": "The key points state that the least well\u2011defined category of soil classification is Family.",
+"key": 0,
+"o": [
+"Family",
+"Order",
+"Suborder",
+"Series",
+"None of these"
+],
+"page": "307-308",
+"q": "In the hierarchy of soil classification, which category is the least well\u2011defined?",
+"serial": "1552",
+"src_row": 1020,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1552"
+},
+{
+"expl": "Among the endopedons, Duripan is defined as a sub\u2011surface horizon cemented by silica.",
+"key": 0,
+"o": [
+"Duripan",
+"Fragipan",
+"Calcic",
+"Gypsic",
+"None of these"
+],
+"page": "307-308",
+"q": "The sub\u2011surface horizon cemented mainly by silica is called?",
+"serial": "1553",
+"src_row": 1021,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1553"
+},
+{
+"expl": "Alluvial soils are described as deficient in N and P but rich in K.",
+"key": 0,
+"o": [
+"Potassium",
+"Nitrogen",
+"Phosphorus",
+"Calcium",
+"None of these"
+],
+"page": "307-308",
+"q": "Which nutrient is relatively abundant in Indian alluvial soils?",
+"serial": "1554",
+"src_row": 1022,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1554"
+},
+{
+"expl": "The description notes that black soils lack a marked B horizon, resulting in an AC horizon profile.",
+"key": 1,
+"o": [
+"Presence of a distinct B horizon",
+"Absence of a B horizon (AC profile)",
+"Thick organic O horizon",
+"Multiple C horizons",
+"None of these"
+],
+"page": "307-308",
+"q": "Black soils (Vertisols) of the Deccan Plateau are characterized by which profile feature?",
+"serial": "1555",
+"src_row": 1023,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1555"
+},
+{
+"expl": "Red soils are classified under Alfisols and are characterized by an argillic sub\u2011surface horizon.",
+"key": 0,
+"o": [
+"Alfisols \u2013 Argillic",
+"Oxisols \u2013 Oxic",
+"Vertisols \u2013 Calcic",
+"Entisols \u2013 Plaggen",
+"None of these"
+],
+"page": "307-308",
+"q": "Red soils belong to which soil order and have which diagnostic sub\u2011surface horizon?",
+"serial": "1556",
+"src_row": 1024,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1556"
+},
+{
+"expl": "Umbric epipedon is similar to Mollic but has a base saturation of less than 50%.",
+"key": 1,
+"o": [
+"Mollic",
+"Umbric",
+"Histic",
+"Ochric",
+"None of these"
+],
+"page": "307-308",
+"q": "Which epipedon is defined by a base saturation of less than 50%?",
+"serial": "1557",
+"src_row": 1025,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "307-308:1557"
+},
+{
+"expl": "The source states that laterite soils belong to the soil orders Ultisols and also Oxisols.",
+"key": 2,
+"o": [
+"Ultisols only",
+"Oxisols only",
+"Both Ultisols and Oxisols",
+"Aridisols",
+"None of these"
+],
+"page": "309-310",
+"q": "Laterite soils are classified under which soil order(s)?",
+"serial": "1561",
+"src_row": 1026,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1561"
+},
+{
+"expl": "Laterite soils are described as rich in iron, aluminum, titanium, and manganese oxides, giving them a low SiO2:R2O3 ratio.",
+"key": 1,
+"o": [
+"Calcium carbonate oxides",
+"Iron and aluminum oxides",
+"Organic matter oxides",
+"Silicate minerals",
+"None of these"
+],
+"page": "309-310",
+"q": "A low silica to sesquioxide (SiO2:R2O3) ratio in laterite soils primarily reflects a high concentration of which oxides?",
+"serial": "1562",
+"src_row": 1027,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1562"
+},
+{
+"expl": "The source lists \"kallar\" as the local name for saline soil in Punjab.",
+"key": 0,
+"o": [
+"Saline soil",
+"Acid sulphate soil",
+"Peaty soil",
+"Laterite soil",
+"None of these"
+],
+"page": "309-310",
+"q": "In Punjab, the locally used term \"kallar\" refers to which type of soil?",
+"serial": "1563",
+"src_row": 1028,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1563"
+},
+{
+"expl": "Acidity arises from sulphuric acid formed by oxidation of iron pyrite (FeS2) present in the soil.",
+"key": 1,
+"o": [
+"Gypsum",
+"Iron pyrite (FeS2)",
+"Calcite",
+"Halite",
+"None of these"
+],
+"page": "309-310",
+"q": "The strong acidity (pH ~3.5) of peat soils in Kerala after drainage is mainly due to oxidation of which mineral?",
+"serial": "1564",
+"src_row": 1029,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1564"
+},
+{
+"expl": "Organic soil is defined as having more than 20% organic matter by weight.",
+"key": 1,
+"o": [
+"10%",
+"20%",
+"30%",
+"40%",
+"None of these"
+],
+"page": "309-310",
+"q": "According to the source, a soil is classified as organic when its organic matter content exceeds what percentage by weight?",
+"serial": "1565",
+"src_row": 1030,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1565"
+},
+{
+"expl": "The detailed soil survey section specifies cadastral maps at scales of 1:4,000 to 1:8,000.",
+"key": 2,
+"o": [
+"1:250,000",
+"1:50,000",
+"1:4,000 \u2013 1:8,000",
+"1:15,000",
+"None of these"
+],
+"page": "309-310",
+"q": "Which map scale is used for cadastral maps in detailed soil surveys?",
+"serial": "1566",
+"src_row": 1031,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1566"
+},
+{
+"expl": "The key points note that Murthy published the Benchmark Soils of India in 1982.",
+"key": 1,
+"o": [
+"1976",
+"1982",
+"1990",
+"2000",
+"None of these"
+],
+"page": "309-310",
+"q": "The \"Benchmark Soils of India\" was published in which year?",
+"serial": "1567",
+"src_row": 1032,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "309-310:1567"
+},
+{
+"expl": "The source defines this smallest delineated area as a mapping unit.",
+"key": 0,
+"o": [
+"Mapping unit",
+"Plot",
+"Parcel",
+"Zone",
+"None of these"
+],
+"page": "311-312",
+"q": "The smallest area on a map that can be delineated by a single boundary at the scale being used is called",
+"serial": "1571",
+"src_row": 1033,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1571"
+},
+{
+"expl": "A larger denominator (1:50,000) represents a smaller scale map.",
+"key": 1,
+"o": [
+"1:25,000",
+"1:50,000",
+"Both have the same scale",
+"Neither; both are large scales",
+"None of these"
+],
+"page": "311-312",
+"q": "Between maps of scales 1:25,000 and 1:50,000, which map has the smaller scale?",
+"serial": "1572",
+"src_row": 1034,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1572"
+},
+{
+"expl": "The source attributes the development of the scheme to Klingbeil and Montgomery.",
+"key": 0,
+"o": [
+"Klingbeil and Montgomery",
+"USDA and FAO",
+"Soil Conservation Service only",
+"FAO alone",
+"None of these"
+],
+"page": "311-312",
+"q": "The Land Capability Classification scheme was developed by",
+"serial": "1573",
+"src_row": 1035,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1573"
+},
+{
+"expl": "Classes I through IV are described as suitable for crop cultivation, whereas V\u2013VIII are not.",
+"key": 0,
+"o": [
+"Classes I\u2013IV",
+"Classes V\u2013VIII",
+"Classes II and III only",
+"Classes I and V",
+"None of these"
+],
+"page": "311-312",
+"q": "Which Land Capability Classes are considered suitable for cultivation?",
+"serial": "1574",
+"src_row": 1036,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1574"
+},
+{
+"expl": "The source lists \"w\" as the code for wetness limitations.",
+"key": 1,
+"o": [
+"Erosion hazard",
+"Wetness",
+"Soil limitation/rooting zone",
+"Climatic limitation",
+"None of these"
+],
+"page": "311-312",
+"q": "In the limitation notation used for land capability, the letter \"w\" denotes",
+"serial": "1575",
+"src_row": 1037,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1575"
+},
+{
+"expl": "The text states that Troug is the father of soil testing.",
+"key": 1,
+"o": [
+"John Bennet",
+"Troug",
+"Clarke",
+"Smith",
+"None of these"
+],
+"page": "311-312",
+"q": "Who is recognized as the father of soil testing?",
+"serial": "1576",
+"src_row": 1038,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1576"
+},
+{
+"expl": "The sampling procedure specifies making the V\u2011shaped cut to a depth of 15 cm.",
+"key": 2,
+"o": [
+"5 cm",
+"10 cm",
+"15 cm",
+"30 cm",
+"None of these"
+],
+"page": "311-312",
+"q": "During soil sampling, the recommended depth for the V\u2011shaped cut is",
+"serial": "1577",
+"src_row": 1039,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "311-312:1577"
+}
+],
+"rolled": false,
+"row_from": 1019,
+"row_to": 1040,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1019,
+"seeded_from": "2026-11-07",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-07",
+"skips": [],
+"step": 0,
+"vol": 0
 }
 }
 },
