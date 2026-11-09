@@ -264308,9 +264308,384 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1059,
 "names": {},
+"plan": {
+"batch": 7,
+"bidx_next": 1059,
+"built_at": "2026-11-09T10:57:28+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 19,
+"pages": "Book pages 313-318",
+"pages_blocks": [
+"313-314",
+"315-316",
+"317-318"
+],
+"questions": [
+{
+"expl": "The table lists the adequate (medium) range for Zn as 0.6\u20111.2 ppm. Values below are deficient and above are excess.",
+"key": 1,
+"o": [
+"< 0.6 ppm",
+"0.6 \u2013 1.2 ppm",
+"> 1.2 ppm",
+"0.3 \u2013 0.9 ppm",
+"None of these"
+],
+"page": "313-314",
+"q": "According to the nutrient range table, which concentration range of zinc (Zn) in soil is considered adequate?",
+"serial": "1581",
+"src_row": 1040,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "313-314:1581"
+},
+{
+"expl": "The source states that the most deficient secondary nutrient in Indian soils is sulphur.",
+"key": 0,
+"o": [
+"Sulphur (S)",
+"Magnesium (Mg)",
+"Calcium (Ca)",
+"Copper (Cu)",
+"None of these"
+],
+"page": "313-314",
+"q": "Which secondary nutrient is reported as the most deficient in Indian soils?",
+"serial": "1582",
+"src_row": 1041,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "313-314:1582"
+},
+{
+"expl": "DRIS (Diagnosis and Recommendation Integrated System) analyses nutrient ratios rather than individual concentrations.",
+"key": 1,
+"o": [
+"Absolute nutrient concentrations",
+"Nutrient ratios",
+"Soil pH levels",
+"Organic matter content",
+"None of these"
+],
+"page": "313-314",
+"q": "The DRIS approach, introduced by Beaufils in 1973, differs from traditional analysis by focusing on what?",
+"serial": "1583",
+"src_row": 1042,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "313-314:1583"
+},
+{
+"expl": "The indicator plant list assigns potato as the indicator for both potassium and magnesium.",
+"key": 0,
+"o": [
+"Potato",
+"Sunflower",
+"Wheat",
+"Sorghum",
+"None of these"
+],
+"page": "313-314",
+"q": "Which indicator plant is used to assess magnesium (Mg) status in soil?",
+"serial": "1584",
+"src_row": 1043,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "313-314:1584"
+},
+{
+"expl": "NUI for nitrogen in rice is given as 30\u201140%, while other crops show 50\u201160%.",
+"key": 0,
+"o": [
+"30\u201140%",
+"50\u201160%",
+"15\u201120%",
+"70\u201180%",
+"None of these"
+],
+"page": "313-314",
+"q": "For rice cultivation, the fertilizer nutrient use efficiency (NUI) for nitrogen is approximately what percentage?",
+"serial": "1585",
+"src_row": 1044,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "313-314:1585"
+},
+{
+"expl": "A molal solution is defined as one mole of solute per kilogram of solvent.",
+"key": 1,
+"o": [
+"Liter of solution",
+"Kilogram of solvent",
+"Kilogram of solution",
+"Liter of solvent",
+"None of these"
+],
+"page": "313-314",
+"q": "In a molal solution, the amount of solute is expressed per unit of what?",
+"serial": "1586",
+"src_row": 1045,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "313-314:1586"
+},
+{
+"expl": "Nessler reagent is potassium tetraiodomercurate, K\u2082HgI\u2084.",
+"key": 0,
+"o": [
+"K\u2082HgI\u2084",
+"KMnO\u2084",
+"BaCl\u2082",
+"Eriochrome Black T",
+"None of these"
+],
+"page": "315-316",
+"q": "The Nessler reagent used in soil testing is composed of which compound?",
+"serial": "1591",
+"src_row": 1046,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1591"
+},
+{
+"expl": "Total phosphorus is measured by the vanadomolybdate yellow colour method.",
+"key": 0,
+"o": [
+"Vanadomolybdate yellow colour method",
+"Mehlich BaCl\u2082-TEA method",
+"Flame photometer",
+"Eriochrome Black T indicator",
+"None of these"
+],
+"page": "315-316",
+"q": "Which method is employed to estimate total phosphorus in a plant sample?",
+"serial": "1592",
+"src_row": 1047,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1592"
+},
+{
+"expl": "Flame photometry is used for K, Na, Ca, and Mg estimation.",
+"key": 0,
+"o": [
+"Flame photometer",
+"Spectrophotometer",
+"Atomic absorption spectrometer",
+"Ion\u2011chromatograph",
+"None of these"
+],
+"page": "315-316",
+"q": "The total potassium in a plant sample is estimated using which instrument?",
+"serial": "1593",
+"src_row": 1048,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1593"
+},
+{
+"expl": "Potassium permanganate is the self\u2011indicator for soil tests.",
+"key": 0,
+"o": [
+"Potassium permanganate (KMnO\u2084)",
+"Eriochrome Black T",
+"Nessler reagent",
+"Mehlich reagent",
+"None of these"
+],
+"page": "315-316",
+"q": "Which reagent serves as the self\u2011indicator in soil testing?",
+"serial": "1594",
+"src_row": 1049,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1594"
+},
+{
+"expl": "Mn ratings are <2 ppm low, 2\u20115 ppm medium, >5 ppm high.",
+"key": 0,
+"o": [
+"<2 ppm low, 2\u20115 ppm medium, >5 ppm high",
+"<5 ppm low, 5\u201110 ppm medium, >10 ppm high",
+"<1 ppm low, 1\u20113 ppm medium, >3 ppm high",
+"<10 ppm low, 10\u201120 ppm medium, >20 ppm high",
+"None of these"
+],
+"page": "315-316",
+"q": "What is the correct rating for available manganese (Mn) in soil?",
+"serial": "1595",
+"src_row": 1050,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1595"
+},
+{
+"expl": "Dokuchaev is credited with the zonality concept.",
+"key": 0,
+"o": [
+"Dokuchaev",
+"Waksman",
+"Liebig",
+"Marbut",
+"None of these"
+],
+"page": "315-316",
+"q": "Who introduced the Zonality concept in soil science?",
+"serial": "1596",
+"src_row": 1051,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1596"
+},
+{
+"expl": "N. C. Brady wrote \"The Nature and Properties of Soil.\"",
+"key": 0,
+"o": [
+"The Nature and Properties of Soil",
+"Soil Fertility and Fertilizers",
+"Text Book of Soil Science",
+"Introductory Soil Science",
+"None of these"
+],
+"page": "315-316",
+"q": "Which book is authored by N. C. Brady?",
+"serial": "1597",
+"src_row": 1052,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "315-316:1597"
+},
+{
+"expl": "Slickenside is a planar polishing surface formed by sliding contact, a characteristic feature of black soils (Vertisols).",
+"key": 1,
+"o": [
+"Loam",
+"Black soil (Vertisols)",
+"Sandy soil",
+"Peaty soil",
+"None of these"
+],
+"page": "317-318",
+"q": "Which soil type is characterized by slickenside feature?",
+"serial": "1601",
+"src_row": 1053,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "317-318:1601"
+},
+{
+"expl": "Hydration refers to the adsorption of water molecules onto a hydrophilic surface.",
+"key": 0,
+"o": [
+"Hydration",
+"Hydrophobicity",
+"Osmosis",
+"Capillarity",
+"None of these"
+],
+"page": "317-318",
+"q": "The adsorption of water by a hydrophilic surface is called?",
+"serial": "1602",
+"src_row": 1054,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "317-318:1602"
+},
+{
+"expl": "Albite is a feldspar mineral; Gibbsite, Corundum, and Diaspore belong to the aluminium mineral group.",
+"key": 1,
+"o": [
+"Gibbsite",
+"Albite",
+"Corundum",
+"Diaspore",
+"None of these"
+],
+"page": "317-318",
+"q": "Which mineral is NOT a member of the aluminium mineral group?",
+"serial": "1603",
+"src_row": 1055,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "317-318:1603"
+},
+{
+"expl": "Unsaturated flow decreases from clay to loam to sandy soils: Clay > Loamy > Sandy.",
+"key": 0,
+"o": [
+"Clay > Loamy > Sandy",
+"Sandy > Loamy > Clay",
+"Loamy > Clay > Sandy",
+"Sandy > Clay > Loamy",
+"None of these"
+],
+"page": "317-318",
+"q": "What is the correct order of unsaturated flow in soils from highest to lowest?",
+"serial": "1604",
+"src_row": 1056,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "317-318:1604"
+},
+{
+"expl": "Bacillus (rod\u2011shaped) is the most dominant soil bacterium, followed by Pseudomonas.",
+"key": 1,
+"o": [
+"Pseudomonas",
+"Bacillus",
+"Rhizobium",
+"Thiobacillus",
+"None of these"
+],
+"page": "317-318",
+"q": "The most dominant bacteria in soil are?",
+"serial": "1605",
+"src_row": 1057,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "317-318:1605"
+},
+{
+"expl": "A balanced fertilizer typically has an NPK ratio of 4:2:1.",
+"key": 0,
+"o": [
+"4:2:1",
+"1:1:1",
+"3:2:2",
+"2:4:1",
+"None of these"
+],
+"page": "317-318",
+"q": "The optimum NPK ratio of a balanced fertilizer is?",
+"serial": "1606",
+"src_row": 1058,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "317-318:1606"
+}
+],
+"rolled": false,
+"row_from": 1040,
+"row_to": 1059,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1040,
+"seeded_from": "2026-11-08",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-08",
+"skips": [],
+"step": 0,
+"vol": 0
 },
 "mix": {
 "ans": {},
