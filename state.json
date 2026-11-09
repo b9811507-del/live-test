@@ -264302,8 +264302,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1176,
 "names": {},
+"plan": {
+"bidx_next": 1176,
+"built_at": "2026-11-09T14:28:01+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 167-169",
+"pages_list": [
+167,
+168,
+169
+],
+"questions": [
+{
+"expl": "The text explicitly states that the pollination agent for fig trees is the fig wasp, scientifically named Blastophaga psenes.",
+"key": 1,
+"o": [
+"Honeybee",
+"Blastophaga psenes",
+"Bumblebee",
+"Moth",
+"None of these"
+],
+"page": "167",
+"q": "Which pollination agent is specifically associated with fig trees?",
+"serial": "1163",
+"src_row": 1155,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1163"
+},
+{
+"expl": "The source clearly mentions that the Common fig is the variety commercially grown in India.",
+"key": 2,
+"o": [
+"Adriatic fig",
+"Smyrna fig",
+"Common fig",
+"Capri fig",
+"None of these"
+],
+"page": "167",
+"q": "What is the primary variety of fig commercially grown in India?",
+"serial": "1164",
+"src_row": 1156,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1164"
+},
+{
+"expl": "The source states that Smyrna fig is suitable for drying, while Adriatic fig is mentioned for its pink flesh.",
+"key": 3,
+"o": [
+"Common fig",
+"Capri fig",
+"Adriatic fig",
+"Smyrna fig",
+"None of these"
+],
+"page": "167",
+"q": "Which fig variety is most suitable for drying purposes?",
+"serial": "1165",
+"src_row": 1157,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1165"
+},
+{
+"expl": "The source provides the sugar content of fresh fig as 16% and dried fig as 52%.",
+"key": 2,
+"o": [
+"16%",
+"25%",
+"52%",
+"38%",
+"None of these"
+],
+"page": "167",
+"q": "What is the total sugar content of dried fig fruit?",
+"serial": "1166",
+"src_row": 1158,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1166"
+},
+{
+"expl": "The source lists hardwood cuttings, air layering, shield/patch budding, and side grafting as propagation methods, but not seed propagation.",
+"key": 2,
+"o": [
+"Hardwood cuttings",
+"Air layering",
+"Seed propagation",
+"Shield budding",
+"None of these"
+],
+"page": "167",
+"q": "Which method is NOT listed as a propagation technique for fig trees in the source?",
+"serial": "1167",
+"src_row": 1159,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1167"
+},
+{
+"expl": "The source explicitly states that the botanical name of litchi is Litchi chinensis.",
+"key": 1,
+"o": [
+"Litchi indica",
+"Litchi chinensis",
+"Litchi sapindus",
+"Litchi subtropicalis",
+"None of these"
+],
+"page": "167",
+"q": "What is the botanical name of litchi?",
+"serial": "1168",
+"src_row": 1160,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1168"
+},
+{
+"expl": "The source mentions that the chromosome number of litchi is 2n=30.",
+"key": 1,
+"o": [
+"2n=28",
+"2n=30",
+"2n=32",
+"2n=24",
+"None of these"
+],
+"page": "167",
+"q": "What is the chromosome number of litchi as per the source?",
+"serial": "1169",
+"src_row": 1161,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "167:1169"
+},
+{
+"expl": "Swarna Roopa is explicitly mentioned as a seedless litchi variety developed in India (CHES, Ranchi) and is highly resistant to fruit cracking.",
+"key": 2,
+"o": [
+"Haak Yip",
+"Taiso",
+"Swarna Roopa",
+"Bombai",
+"None of these"
+],
+"page": "168",
+"q": "Which litchi variety developed in India is highly resistant to fruit cracking?",
+"serial": "1170",
+"src_row": 1162,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1170"
+},
+{
+"expl": "The source states the chromosome number of apple as 2n=34.",
+"key": 1,
+"o": [
+"2n=22",
+"2n=34",
+"2n=46",
+"2n=18",
+"None of these"
+],
+"page": "168",
+"q": "What is the chromosome number of apple (Malus domestica)?",
+"serial": "1171",
+"src_row": 1163,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1171"
+},
+{
+"expl": "The source explicitly refers to Himachal Pradesh as the 'Apple bowl of India'.",
+"key": 0,
+"o": [
+"Himachal Pradesh",
+"Jammu & Kashmir",
+"Uttarakhand",
+"Arunachal Pradesh",
+"None of these"
+],
+"page": "168",
+"q": "Which state in India is known as the 'Apple bowl of India'?",
+"serial": "1172",
+"src_row": 1164,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1172"
+},
+{
+"expl": "The source specifies that apple undergoes cross pollination.",
+"key": 2,
+"o": [
+"Self-pollination",
+"Wind pollination",
+"Cross pollination",
+"Insect pollination",
+"None of these"
+],
+"page": "168",
+"q": "What is the primary method of pollination in apple (Malus domestica)?",
+"serial": "1173",
+"src_row": 1165,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1173"
+},
+{
+"expl": "The source states that litchi fruits are stored at 0\u00b0C to 1\u00b0C after pre-cooling.",
+"key": 1,
+"o": [
+"-5\u00b0C to -2\u00b0C",
+"0\u00b0C to 1\u00b0C",
+"2\u00b0C to 4\u00b0C",
+"5\u00b0C to 7\u00b0C",
+"None of these"
+],
+"page": "168",
+"q": "At what temperature are litchi fruits stored after pre-cooling?",
+"serial": "1174",
+"src_row": 1166,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1174"
+},
+{
+"expl": "Kinnow is not listed among the litchi varieties in the source, while the others are explicitly mentioned.",
+"key": 3,
+"o": [
+"Waichee",
+"Rose scented",
+"Muzaffarpur",
+"Kinnow",
+"None of these"
+],
+"page": "168",
+"q": "Which of the following is NOT a litchi variety mentioned in the source?",
+"serial": "1175",
+"src_row": 1167,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1175"
+},
+{
+"expl": "The source states that the economic life of an apple tree is 30 years.",
+"key": 2,
+"o": [
+"20 years",
+"25 years",
+"30 years",
+"40 years",
+"None of these"
+],
+"page": "168",
+"q": "What is the economic life of an apple tree as per the source?",
+"serial": "1176",
+"src_row": 1168,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "168:1176"
+},
+{
+"expl": "The source explicitly states that the most common method of planting system is the Square system.",
+"key": 2,
+"o": [
+"Rectangular system",
+"Hexagonal system",
+"Square system",
+"Quincunx system",
+"None of these"
+],
+"page": "169",
+"q": "Which planting system is most commonly used for fruit orchards as per the given source?",
+"serial": "1177",
+"src_row": 1169,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1177"
+},
+{
+"expl": "The source specifies the storage temperature for apples as -1.1 to 0\u00b0C.",
+"key": 1,
+"o": [
+"-2.0 to -1.0\u00b0C",
+"-1.1 to 0\u00b0C",
+"0 to 1.0\u00b0C",
+"1.0 to 2.0\u00b0C",
+"None of these"
+],
+"page": "169",
+"q": "What is the recommended storage temperature range for apples to maintain quality?",
+"serial": "1178",
+"src_row": 1170,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1178"
+},
+{
+"expl": "The source states that apple varieties are self-unfruitful due to self-incompatibility.",
+"key": 1,
+"o": [
+"Due to lack of pollinators",
+"Due to self-incompatibility",
+"Due to poor soil conditions",
+"Due to excessive watering",
+"None of these"
+],
+"page": "169",
+"q": "Why are apple varieties described as 'self-unfruitful' in the given source?",
+"serial": "1179",
+"src_row": 1171,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1179"
+},
+{
+"expl": "The source explicitly mentions M-27 as the ultra-dwarf rootstock for apple trees.",
+"key": 3,
+"o": [
+"M9",
+"MM 106",
+"M26",
+"M-27",
+"None of these"
+],
+"page": "169",
+"q": "Which of the following is classified as an ultra-dwarf rootstock for apple trees?",
+"serial": "1180",
+"src_row": 1172,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1180"
+},
+{
+"expl": "The source states that crab apples are cultivated for ornamental purposes due to their attractive flower and fruit colors.",
+"key": 2,
+"o": [
+"For high yield",
+"For disease resistance",
+"For ornamental purposes",
+"For long storage life",
+"None of these"
+],
+"page": "169",
+"q": "What is the primary purpose of cultivating crab apples as mentioned in the source?",
+"serial": "1181",
+"src_row": 1173,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1181"
+},
+{
+"expl": "The source specifies Patharnakh as a low-chilling pear cultivar requiring 150 hours below 7\u00b0C.",
+"key": 2,
+"o": [
+"Bartlett",
+"Anjou",
+"Patharnakh",
+"Kieffer",
+"None of these"
+],
+"page": "169",
+"q": "Which pear cultivar is mentioned as a low-chilling variety requiring only 150 hours below 7\u00b0C?",
+"serial": "1182",
+"src_row": 1174,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1182"
+},
+{
+"expl": "The source states that a well-maintained pear orchard can yield 30-40 tonnes per hectare per year.",
+"key": 2,
+"o": [
+"10-20 tonnes",
+"20-30 tonnes",
+"30-40 tonnes",
+"40-50 tonnes",
+"None of these"
+],
+"page": "169",
+"q": "What is the expected yield range for a well-maintained pear orchard per hectare per year?",
+"serial": "1183",
+"src_row": 1175,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "169:1183"
+}
+],
+"row_from": 1155,
+"row_to": 1176,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1155,
+"seeded_from": "2026-11-08"
+},
 "qidx": 0,
+"seeded_from": "2026-11-08",
+"skips": [],
 "step": 0
 },
 "malwa": {
