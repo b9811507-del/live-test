@@ -265708,8 +265708,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1197,
 "names": {},
+"plan": {
+"bidx_next": 1197,
+"built_at": "2026-11-10T14:28:00+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 170-172",
+"pages_list": [
+170,
+171,
+172
+],
+"questions": [
+{
+"expl": "The source states that temperatures lower than 2\u20113 \u00b0C do not break dormancy.",
+"key": 0,
+"o": [
+"Below 2\u20113 \u00b0C",
+"Above 5 \u00b0C",
+"Between 10\u201112 \u00b0C",
+"At 15 \u00b0C",
+"None of these"
+],
+"page": "170",
+"q": "Which temperature condition will NOT break dormancy ?",
+"serial": "1184",
+"src_row": 1176,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1184"
+},
+{
+"expl": "The ideal pH given in the source is 5.8 to 6.8.",
+"key": 1,
+"o": [
+"4.5 \u2013 5.5",
+"5.8 \u2013 6.8",
+"6.5 \u2013 7.5",
+"7.0 \u2013 8.0",
+"None of these"
+],
+"page": "170",
+"q": "What is the ideal soil pH range for optimal growth ?",
+"serial": "1185",
+"src_row": 1177,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1185"
+},
+{
+"expl": "The source lists peach seed oil content as 40\u201150 %.",
+"key": 1,
+"o": [
+"20 % \u2013 30 %",
+"40 % \u2013 50 %",
+"60 % \u2013 70 %",
+"80 % \u2013 90 %",
+"None of these"
+],
+"page": "170",
+"q": "Peach seed oil content in falls within which percentage range?",
+"serial": "1186",
+"src_row": 1178,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1186"
+},
+{
+"expl": "H.D.P. is specified as 3 \u00d7 3 m\u00b2 in the source.",
+"key": 1,
+"o": [
+"2 m \u00d7 2 m",
+"3 m \u00d7 3 m",
+"4 m \u00d7 4 m",
+"5 m \u00d7 5 m",
+"None of these"
+],
+"page": "170",
+"q": "What is the recommended plant spacing (H.D.P.) for ?",
+"serial": "1187",
+"src_row": 1179,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1187"
+},
+{
+"expl": "The source gives a range of 519\u2011889 plants per hectare for the Tatura trellis system.",
+"key": 1,
+"o": [
+"400 \u2013 500 plants/ha",
+"519 \u2013 889 plants/ha",
+"900 \u2013 1,000 plants/ha",
+"1,100 \u2013 1,200 plants/ha",
+"None of these"
+],
+"page": "170",
+"q": "In the Tatura trellis system, approximately how many plants are cultivated per hectare?",
+"serial": "1188",
+"src_row": 1180,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1188"
+},
+{
+"expl": "The meadow system is reported to have 666 plants per hectare.",
+"key": 1,
+"o": [
+"500 plants/ha",
+"666 plants/ha",
+"800 plants/ha",
+"1,000 plants/ha",
+"None of these"
+],
+"page": "170",
+"q": "How many plants per hectare are grown in the meadow system for?",
+"serial": "1189",
+"src_row": 1181,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1189"
+},
+{
+"expl": "Yield is stated as 7\u201110 tonnes per hectare in the source.",
+"key": 1,
+"o": [
+"3 \u2013 5 tonnes/ha",
+"7 \u2013 10 tonnes/ha",
+"12 \u2013 15 tonnes/ha",
+"20 \u2013 25 tonnes/ha",
+"None of these"
+],
+"page": "170",
+"q": "What is the expected grain yield of per hectare?",
+"serial": "1190",
+"src_row": 1182,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "170:1190"
+},
+{
+"expl": "Coconut (Cocus nucifera) is classified under the family Arecaceae, as per the given data.",
+"key": 2,
+"o": [
+"Tea",
+"Coffee",
+"Coconut",
+"Cocoa",
+"None of these"
+],
+"page": "171",
+"q": "Which of the following crops belongs to the family Arecaceae?",
+"serial": "1191",
+"src_row": 1183,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1191"
+},
+{
+"expl": "Rubber is propagated through seeds, as listed in the propagation column of the source.",
+"key": 0,
+"o": [
+"Seed",
+"Soft Wood grafting",
+"Single node cutting",
+"Forket budding",
+"None of these"
+],
+"page": "171",
+"q": "The propagation method for Rubber (Hevea brasiliensis) is:",
+"serial": "1192",
+"src_row": 1184,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1192"
+},
+{
+"expl": "Cocoa (Theobroma cocoa) has a fruit type categorized as Drupe (Pod), as per the source.",
+"key": 1,
+"o": [
+"Areca nut",
+"Cocoa",
+"Cashew",
+"Tea",
+"None of these"
+],
+"page": "171",
+"q": "Which crop has a fruit type classified as 'Drupe'?",
+"serial": "1193",
+"src_row": 1185,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1193"
+},
+{
+"expl": "Coffee thrives in a pH range of 4.5 to 6.5, as specified in the source.",
+"key": 1,
+"o": [
+"4.5 to 5.5",
+"4.5 to 6.5",
+"5.2 to 8.0",
+"4.5 to 8.0",
+"None of these"
+],
+"page": "171",
+"q": "The pH range for optimal growth of Coffee is:",
+"serial": "1194",
+"src_row": 1186,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1194"
+},
+{
+"expl": "Cocoa is propagated using Forket budding, as mentioned in the propagation methods for Cocoa.",
+"key": 2,
+"o": [
+"Tea",
+"Coconut",
+"Cocoa",
+"Rubber",
+"None of these"
+],
+"page": "171",
+"q": "Which of the following crops is propagated by 'Forket budding'?",
+"serial": "1195",
+"src_row": 1187,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1195"
+},
+{
+"expl": "Betel Vine's botanical name is Piper betle, as listed in the source.",
+"key": 0,
+"o": [
+"Piper betle",
+"Areca catechu",
+"Theobroma cocoa",
+"Camellia sinensis",
+"None of these"
+],
+"page": "171",
+"q": "The botanical name of Betel Vine is:",
+"serial": "1196",
+"src_row": 1188,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1196"
+},
+{
+"expl": "Cocoa has a pH range of 4.5 to 8.0, which is the widest among the listed crops.",
+"key": 2,
+"o": [
+"Tea",
+"Coconut",
+"Cocoa",
+"Rubber",
+"None of these"
+],
+"page": "171",
+"q": "Which crop has the widest pH range for growth?",
+"serial": "1197",
+"src_row": 1189,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "171:1197"
+},
+{
+"expl": "Theaflavins and thearufigens are oxidation products of catechins during fermentation, giving black tea its brown colour.",
+"key": 0,
+"o": [
+"Theaflavins and Thearufigens",
+"Aflavins & arubigins",
+"Catechins",
+"L-Theanine",
+"None of these"
+],
+"page": "172",
+"q": "Which compound is responsible for the colour of black tea?",
+"serial": "1198",
+"src_row": 1190,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1198"
+},
+{
+"expl": "Tea plants thrive best between 20\u00b0C and 27\u00b0C; temperatures outside this range reduce growth and quality.",
+"key": 1,
+"o": [
+"15-20\u00b0C",
+"20-27\u00b0C",
+"25-30\u00b0C",
+"30-35\u00b0C",
+"None of these"
+],
+"page": "172",
+"q": "What is the optimum temperature range for tea cultivation?",
+"serial": "1199",
+"src_row": 1191,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1199"
+},
+{
+"expl": "Sandy loam rich in organic matter provides good drainage and nutrient availability, ideal for tea.",
+"key": 1,
+"o": [
+"Clay loam",
+"Sandy loam rich in organic matter",
+"Loam",
+"Silt loam",
+"None of these"
+],
+"page": "172",
+"q": "Which soil type is ideal for tea cultivation?",
+"serial": "1200",
+"src_row": 1192,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1200"
+},
+{
+"expl": "Sulphur deficiency leads to chlorosis and yellowing of tea leaves, as sulphur is essential for chlorophyll synthesis.",
+"key": 2,
+"o": [
+"Nitrogen",
+"Phosphorus",
+"Sulphur",
+"Potassium",
+"None of these"
+],
+"page": "172",
+"q": "Which nutrient deficiency causes yellowing of tea leaves?",
+"serial": "1201",
+"src_row": 1193,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1201"
+},
+{
+"expl": "Single Hedge System uses 1.20 m \u00d7 0.75 m spacing, yielding 10,800 plants per hectare.",
+"key": 0,
+"o": [
+"1.20 x 0.75 m",
+"1.35 x 0.75 m",
+"1.20 x 0.50 m",
+"1.35 x 0.50 m",
+"None of these"
+],
+"page": "172",
+"q": "What is the spacing used in Single Hedge System?",
+"serial": "1202",
+"src_row": 1194,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1202"
+},
+{
+"expl": "Green tea is harvested and processed without fermentation, retaining its green colour.",
+"key": 2,
+"o": [
+"Black tea",
+"Oolong tea",
+"Green tea",
+"Yellow tea",
+"None of these"
+],
+"page": "172",
+"q": "Which type of tea is non-fermented?",
+"serial": "1203",
+"src_row": 1195,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1203"
+},
+{
+"expl": "The scientific study of tea is termed Tsiology, a specialized branch of plant science.",
+"key": 0,
+"o": [
+"Tsiology",
+"Theology",
+"Botany",
+"Phytology",
+"None of these"
+],
+"page": "172",
+"q": "The study of tea is known as?",
+"serial": "1204",
+"src_row": 1196,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "172:1204"
+}
+],
+"row_from": 1176,
+"row_to": 1197,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1176,
+"seeded_from": "2026-11-09"
+},
 "qidx": 0,
+"seeded_from": "2026-11-09",
+"skips": [],
 "step": 0
 },
 "malwa": {
