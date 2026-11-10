@@ -265714,9 +265714,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1080,
 "names": {},
+"plan": {
+"batch": 8,
+"bidx_next": 1080,
+"built_at": "2026-11-10T10:58:04+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 320-324",
+"pages_blocks": [
+"320",
+"321-322",
+"323-324"
+],
+"questions": [
+{
+"expl": "D.N. Walia is recognized as the father of agrometeorology globally.",
+"key": 1,
+"o": [
+"L. A. Ramdas",
+"D.N. Walia",
+"Koppen",
+"Galileo",
+"None of these"
+],
+"page": "320",
+"q": "Who is considered the father of agrometeorology worldwide?",
+"serial": "1611",
+"src_row": 1059,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1611"
+},
+{
+"expl": "IMD was founded in 1875 with its headquarters initially in Calcutta.",
+"key": 1,
+"o": [
+"1873",
+"1875",
+"1905",
+"1944",
+"None of these"
+],
+"page": "320",
+"q": "In which year was the India Meteorological Department (IMD) established?",
+"serial": "1612",
+"src_row": 1060,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1612"
+},
+{
+"expl": "Up to 5.6 km, about half of the atmosphere\u2019s mass resides.",
+"key": 1,
+"o": [
+"15%",
+"50%",
+"85%",
+"99%",
+"None of these"
+],
+"page": "320",
+"q": "What percentage of the atmospheric mass is contained up to an altitude of 5.6 km?",
+"serial": "1613",
+"src_row": 1061,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1613"
+},
+{
+"expl": "India receives roughly 1194 mm of rainfall each year.",
+"key": 0,
+"o": [
+"1194 mm",
+"800 mm",
+"1500 mm",
+"4000 BCM",
+"None of these"
+],
+"page": "320",
+"q": "What is the average annual rainfall of India?",
+"serial": "1614",
+"src_row": 1062,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1614"
+},
+{
+"expl": "Soil air contains 8\u201310 times more CO\u2082 than atmospheric air.",
+"key": 2,
+"o": [
+"2-3 times",
+"4-5 times",
+"8-10 times",
+"12-15 times",
+"None of these"
+],
+"page": "320",
+"q": "Compared to atmospheric air, the CO\u2082 content in soil air is how many times higher?",
+"serial": "1615",
+"src_row": 1063,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1615"
+},
+{
+"expl": "The present average CO\u2082 level is 421 parts per million.",
+"key": 1,
+"o": [
+"400 ppm",
+"421 ppm",
+"450 ppm",
+"500 ppm",
+"None of these"
+],
+"page": "320",
+"q": "What is the current global average CO\u2082 concentration in the atmosphere?",
+"serial": "1616",
+"src_row": 1064,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1616"
+},
+{
+"expl": "A crop rainy day is defined as receiving at least 5 mm of rain in 24 hours.",
+"key": 1,
+"o": [
+"2.5 mm/day",
+"5 mm/day",
+"10 mm/day",
+"15 mm/day",
+"None of these"
+],
+"page": "320",
+"q": "What is the rainfall threshold for a crop rainy day?",
+"serial": "1617",
+"src_row": 1065,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "320:1617"
+},
+{
+"expl": "The troposphere extends from the surface to about 18 km at the equator.",
+"key": 0,
+"o": [
+"8\u201318 km",
+"8\u201350 km",
+"18\u201350 km",
+"50\u201385 km",
+"None of these"
+],
+"page": "321-322",
+"q": "What is the altitude range of the troposphere at the equator?",
+"serial": "1621",
+"src_row": 1066,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "321-322:1621"
+},
+{
+"expl": "Ozone absorbs UV radiation, causing temperature to rise with altitude in the stratosphere.",
+"key": 1,
+"o": [
+"It decreases",
+"It increases",
+"It remains constant",
+"It fluctuates randomly",
+"None of these"
+],
+"page": "321-322",
+"q": "How does temperature change with altitude in the stratosphere?",
+"serial": "1622",
+"src_row": 1067,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "321-322:1622"
+},
+{
+"expl": "The ozone layer is located in the lower stratosphere (20\u201330 km).",
+"key": 1,
+"o": [
+"Troposphere",
+"Stratosphere",
+"Mesosphere",
+"Thermosphere",
+"None of these"
+],
+"page": "321-322",
+"q": "Which atmospheric layer contains the ozone layer that protects life on Earth?",
+"serial": "1623",
+"src_row": 1068,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "321-322:1623"
+},
+{
+"expl": "The transition layer between troposphere and stratosphere is the tropopause.",
+"key": 0,
+"o": [
+"Tropopause",
+"Stratopause",
+"Mesopause",
+"Thermopause",
+"None of these"
+],
+"page": "321-322",
+"q": "What is the boundary called between the troposphere and the stratosphere?",
+"serial": "1624",
+"src_row": 1069,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "321-322:1624"
+},
+{
+"expl": "PET is Potential Evapotranspiration, calculated from temperature.",
+"key": 1,
+"o": [
+"Precipitation",
+"Potential Evapotranspiration",
+"Actual Evapotranspiration",
+"Temperature",
+"None of these"
+],
+"page": "321-322",
+"q": "In the MDI formula, what does PET stand for?",
+"serial": "1625",
+"src_row": 1070,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "321-322:1625"
+},
+{
+"expl": "Semi\u2011arid climates have MDI values between \u201333.33 and \u201366.66.",
+"key": 1,
+"o": [
+"\u2264 \u201366.66",
+"\u201333.33 to \u201366.66",
+"\u201333.33 to 0",
+"> \u201366.66",
+"None of these"
+],
+"page": "321-322",
+"q": "What is the MDI value range for a semi\u2011arid climate?",
+"serial": "1626",
+"src_row": 1071,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "321-322:1626"
+},
+{
+"expl": "MAI is calculated by dividing the rainfall that occurs with 75% probability by the PET.",
+"key": 0,
+"o": [
+"Rainfall at 75% probability \u00f7 Potential Evapotranspiration (PET)",
+"PET \u00f7 Rainfall at 75% probability",
+"Rainfall \u00f7 PET \u00d7 100",
+"(Rainfall + PET) / 2",
+"None of these"
+],
+"page": "323-324",
+"q": "Which formula correctly defines the Moisture Availability Index (MAI) as used by Hargreaves?",
+"serial": "1631",
+"src_row": 1072,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1631"
+},
+{
+"expl": "The semiarid category is defined by AI values between 0.2 and 0.5.",
+"key": 2,
+"o": [
+"0.01 \u2013 0.03",
+"0.03 \u2013 0.2",
+"0.2 \u2013 0.5",
+"0.5 \u2013 0.65",
+"None of these"
+],
+"page": "323-324",
+"q": "According to the Aridity Index (AI) classification, which AI range corresponds to a semiarid climate?",
+"serial": "1632",
+"src_row": 1073,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1632"
+},
+{
+"expl": "Sub\u2011humid zones have a PE index between 32 and 63.",
+"key": 2,
+"o": [
+"128 and above",
+"64 \u2013 127",
+"32 \u2013 63",
+"16 \u2013 31",
+"None of these"
+],
+"page": "323-324",
+"q": "In Thornthwaite's classification, what PE (Precipitation Effectiveness) index range characterises a sub\u2011humid province?",
+"serial": "1633",
+"src_row": 1074,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1633"
+},
+{
+"expl": "For tropical climates, Troll requires the coolest month\u2019s mean temperature to exceed 18 \u00b0C.",
+"key": 2,
+"o": [
+"\u2264 10 \u00b0C",
+"12 \u00b0C \u2013 15 \u00b0C",
+"> 18 \u00b0C",
+"\u2264 18 \u00b0C",
+"None of these"
+],
+"page": "323-324",
+"q": "Troll's climate classification states that, in a tropical climate, the mean monthly temperature of the coolest month is:",
+"serial": "1634",
+"src_row": 1075,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1634"
+},
+{
+"expl": "Humid regions receive over 1000 mm of annual rainfall.",
+"key": 3,
+"o": [
+"Less than 250 mm",
+"250 \u2013 500 mm",
+"500 \u2013 1000 mm",
+"More than 1000 mm",
+"None of these"
+],
+"page": "323-324",
+"q": "Based on rainfall amount, which range defines a \u2018Humid\u2019 climate category?",
+"serial": "1635",
+"src_row": 1076,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1635"
+},
+{
+"expl": "Maharashtra has the highest extent of semiarid climate in India.",
+"key": 1,
+"o": [
+"Gujarat",
+"Maharashtra",
+"Rajasthan",
+"Tamil Nadu",
+"None of these"
+],
+"page": "323-324",
+"q": "Which Indian state possesses the largest area of semiarid climate?",
+"serial": "1636",
+"src_row": 1077,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1636"
+},
+{
+"expl": "Temperature typically decreases by about 6.5 \u00b0C for every kilometre increase in altitude.",
+"key": 1,
+"o": [
+"4.0 \u00b0C per km",
+"6.5 \u00b0C per km",
+"9.8 \u00b0C per km",
+"12 \u00b0C per km",
+"None of these"
+],
+"page": "323-324",
+"q": "What is the average environmental lapse rate used to describe temperature change with altitude?",
+"serial": "1637",
+"src_row": 1078,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1637"
+},
+{
+"expl": "The standard observatory dimensions are 180 ft by 120 ft (approximately 55 m \u00d7 36 m).",
+"key": 0,
+"o": [
+"180 \u00d7 120 ft (55 \u00d7 36 m)",
+"60 \u00d7 40 m",
+"100 \u00d7 80 ft",
+"200 \u00d7 150 ft",
+"None of these"
+],
+"page": "323-324",
+"q": "What is the standard size of an agrometeorological observatory as specified in the source?",
+"serial": "1638",
+"src_row": 1079,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "323-324:1638"
+}
+],
+"rolled": false,
+"row_from": 1059,
+"row_to": 1080,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1059,
+"seeded_from": "2026-11-09",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-09",
+"skips": [],
+"step": 0,
+"vol": 0
 },
 "mix": {
 "ans": {},
