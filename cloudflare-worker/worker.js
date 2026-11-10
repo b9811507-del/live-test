@@ -19,12 +19,47 @@ const BATCHES = [
   { key: "malwa", emoji: "📚", title: "MALWA BOOK VOL 1+2+HORTICULTURE", price: "₹151", chat: "-1003761821341", perks: "Malwa Vol-1, Vol-2 and Horticulture books' full MCQ practice · daily 20-question tests · PDF notes" },
   { key: "nemraj", emoji: "🌾", title: "NEMRAJ SUNDA BOOK BATCH", price: "₹99", chat: "-1003853396327", perks: "Nemraj Sunda book MCQs · topic-wise practice · full-length mock papers" },
   { key: "rksharma", emoji: "📗", title: "RK SHARMA BOOK BATCH", price: "₹99", chat: "-1003880198347", perks: "R.K. Sharma book MCQs · subject-wise practice · revision notes" },
-  { key: "afo", emoji: "🌆", title: "AFO SELECTION BATCH", price: "₹251", chat: "-1003687531473", perks: "AFO mains full-length tests (new pattern) · previous-year papers · selection-focused practice" },
-  { key: "cane", emoji: "🎋", title: "SUGARCANE PREMIUM BATCH", price: "₹151", chat: "-1003707610763", perks: "Sugarcane premium classes · daily tests · revision notes" },
-  { key: "pashu", emoji: "🐄", title: "PASHUDHAN ADHIKARI BATCH", price: "₹151", chat: "-1003947957354", perks: "Pashudhan Adhikari syllabus classes · daily MCQ tests · structured notes" },
+  { key: "afo", emoji: "🌆", title: "AFO SELECTION BATCH", price: "₹251", chat: "-1003687531473", until: "2026-10-30", perks: "AFO mains full-length tests (new pattern) · previous-year papers · selection-focused practice" },
+  { key: "cane", emoji: "🎋", title: "UPSSSC SUGARCANE PREMIUM BATCH", price: "₹151", chat: "-1003707610763", until: "2026-11-25", perks: "Complete UP Special + Computer + Agriculture according syllabus · premium classes · daily tests" },
+  { key: "pashu", emoji: "🐄", title: "PASHUDHAN ADHIKARI BATCH", price: "₹151", chat: "-1003947957354", until: "2026-10-11", perks: "Pashudhan Adhikari syllabus classes · daily MCQ tests · structured notes" },
+  { key: "ca", emoji: "📰", title: "DAILY CURRENT AFFAIRS BATCH", price: "₹51", chat: "-1004485392227", perks: "Last 24 hours complete current affairs PDF (bilingual) with important images · weekly current affairs PDF · monthly PDF · Diwali offer for the first 50 students" },
 ];
 
 function batchByKey(k) { return BATCHES.find(b => b.key === k); }
+function istToday() { return new Date(Date.now() + 330 * 60000).toISOString().slice(0, 10); }
+async function rzpOwnedBatches(env, uid) {
+  try {
+    const keyId = env.RAZORPAY_KEY_ID, keySec = env.RAZORPAY_KEY_SECRET;
+    if (!keyId || !keySec) return [];
+    const auth = btoa(`${keyId}:${keySec}`);
+    const res = await fetch("https://api.razorpay.com/v1/payments?count=100", { headers: { "Authorization": `Basic ${auth}` } });
+    const j = await res.json().catch(() => ({}));
+    const owned = new Set();
+    for (const p of (j.items || [])) {
+      const n = p.notes || {};
+      if (p.status === "captured" && String(n.uid || "") === String(uid) && n.batch) owned.add(n.batch);
+    }
+    return [...owned];
+  } catch (e) { console.log("rzpOwned err", e.message); return []; }
+}
+function sellOpen(b) { return b && (!b.until || istToday() < b.until); }
+const DIWALI_PRICE = { iari: "₹75", malwa: "₹115", nemraj: "₹75", rksharma: "₹75", cane: "₹115" };
+function diwaliLeft() {
+  const d = Math.round((Date.parse("2026-11-11T00:00:00Z") - Date.parse(istToday() + "T00:00:00Z")) / 86400000) + 1;
+  return d >= 1 ? d : 0;
+}
+async function livePrice(env, b) {
+  if (b && b.key === "ca") {
+    try {
+      const r = await tg(env.PAID_BOT_TOKEN, "getChatMemberCount", { chat_id: b.chat });
+      const n = typeof r === "number" ? r : (r && r.count) || 0;
+      return n >= 50 ? "₹99" : "₹51";
+    } catch { return "₹51"; }
+  }
+  const dn = diwaliLeft();
+  if (dn && DIWALI_PRICE[b.key]) return DIWALI_PRICE[b.key];   // Diwali 25% off (7-11 Nov), auto-revert
+  return b.price;
+}
 function priceAmount(price) { const digits = (price || "").replace(/\D/g, ""); return digits ? parseInt(digits) : 0; }
 
 async function tg(token, method, body) {
@@ -55,15 +90,87 @@ async function rzpCreateLink(env, batchKey, title, amount, uid, name) {
   return j.id ? j : null;
 }
 
+/* ONE-LINK JOURNAL: invites.json (root) — written ONLY by this worker. state.json is churned by
+   the engine on every question, so its Contents PUTs 409'd silently and the mint-once journal
+   never landed (10-Nov: 1 payment -> 2 links -> 2 students). This file has no competing writers. */
+async function readInvite(env, batchKey, uid) {
+  const repo = env.GITHUB_REPO || "b9811507-del/live-test"; const gh = env.GITHUB_TOKEN;
+  if (!gh) return null;
+  try {
+    const meta = await fetch(`https://api.github.com/repos/${repo}/contents/invites.json`, { headers: { Authorization: `Bearer ${gh}`, Accept: "application/vnd.github+json", "User-Agent": "agri-quiz-worker" } }).then(r => r.json());
+    if (!meta || meta.content === undefined) return null;
+    const st = JSON.parse(decodeURIComponent(escape(atob(String(meta.content).replace(/\n/g, "")))));
+    return ((st.users || {})[String(uid)] || {})[batchKey] || null;
+  } catch (e) { console.log("readInvite err", e.message); return null; }
+}
+
+async function journalInvite(env, uid, batchKey, rec) {
+  const repo = env.GITHUB_REPO || "b9811507-del/live-test"; const gh = env.GITHUB_TOKEN;
+  if (!gh) return false;
+  for (let i = 0; i < 5; i++) {
+    try {
+      const meta = await fetch(`https://api.github.com/repos/${repo}/contents/invites.json`, { headers: { Authorization: `Bearer ${gh}`, Accept: "application/vnd.github+json", "User-Agent": "agri-quiz-worker" } }).then(r => r.json());
+      let st = { users: {} };
+      if (meta && meta.content) { try { st = JSON.parse(decodeURIComponent(escape(atob(String(meta.content).replace(/\n/g, ""))))); } catch (_) {} }
+      st.users = st.users || {};
+      const u = st.users[String(uid)] = st.users[String(uid)] || {};
+      u[batchKey] = Object.assign({}, u[batchKey] || {}, rec);
+      const body = { message: `state: invite journaled ${batchKey}/${uid}`, content: btoa(unescape(encodeURIComponent(JSON.stringify(st)))), branch: "main" };
+      if (meta && meta.sha) body.sha = meta.sha;
+      const res = await fetch(`https://api.github.com/repos/${repo}/contents/invites.json`, { method: "PUT", headers: { Authorization: `Bearer ${gh}`, Accept: "application/vnd.github+json", "Content-Type": "application/json", "User-Agent": "agri-quiz-worker" }, body: JSON.stringify(body) });
+      if (res.ok) return true;
+      console.log("invite PUT fail", res.status);
+    } catch (e) { console.log("journalInvite err", e.message); }
+    await new Promise(r => setTimeout(r, 700 + i * 600));
+  }
+  return false;
+}
+
+async function ensureInvite(env, batchKey, uid) {
+  /* HARD RULE (admin 7-Nov, hardened 10-Nov): ek payment = sirf EK invite link (member_limit=1),
+     us se sirf EK student. (1) already-member kabhi nayi link nahi; (2) journaled link WOHI
+     dobara; (3) journal fail = fresh link REVOKE (dusra link bane hi nahi); (4) race me jo link
+     pehle journal ho wahi live, apni revoke. */
+  const b = batchByKey(batchKey); const token = env.PAID_BOT_TOKEN;
+  if (!b || !token) return null;
+  const member = await tg(token, "getChatMember", { chat_id: b.chat, user_id: uid }).catch(() => null);
+  const joined = !!(member && ["member", "administrator", "restricted", "creator"].includes(member.status));
+  if (joined) return { link: null, joined: true };
+  const rec = await readInvite(env, batchKey, uid);
+  if (rec && rec.link) return { link: rec.link, joined: false };
+  const invite = await tg(token, "createChatInviteLink", { chat_id: b.chat, member_limit: 1, creates_join_request: false, name: `${batchKey}-${String(uid).slice(-6)}` });
+  const link = invite && invite.invite_link;
+  if (!link) { console.log(`Invite link fail for ${batchKey} chat ${b.chat}`); return null; }
+  const ok = await journalInvite(env, uid, batchKey, { link, link_status: "issued", issued_at: new Date().toISOString(), title: b.title });
+  if (!ok) {
+    await tg(token, "revokeChatInviteLink", { chat_id: b.chat, invite_link: link }).catch(() => {});
+    console.log(`journal failed -> revoked fresh link ${batchKey}/${uid}`);
+    return { link: null, joined: false, retry: true };
+  }
+  const now = await readInvite(env, batchKey, uid);
+  if (now && now.link && now.link !== link) {
+    await tg(token, "revokeChatInviteLink", { chat_id: b.chat, invite_link: link }).catch(() => {});
+    return { link: now.link, joined: false };
+  }
+  return { link, joined: false };
+}
+
 async function createInviteAndSend(env, batchKey, uid) {
   const b = batchByKey(batchKey); const token = env.PAID_BOT_TOKEN;
   if (!b || !token) return null;
-  const invite = await tg(token, "createChatInviteLink", { chat_id: b.chat, member_limit: 1, creates_join_request: false, name: `${batchKey}-${String(uid).slice(-6)}` });
-  const link = invite?.invite_link;
-  if (!link) { console.log(`Invite link fail for ${batchKey} chat ${b.chat}`); return null; }
-  const text = `✅ <b>Payment verified!</b> — ${b.title}\n\n🎉 Aapka payment confirm ho gaya!\n\n👉 Join link (one-time, 1 user only):\n${link}\n\n⏰ Ye link sirf ek baar kaam karega, jaldi join kar lo!\n\n<b>Ek payment = ek link</b> ✅`;
+  const got = await ensureInvite(env, batchKey, uid);
+  if (!got) return null;
+  if (got.joined) {
+    await tg(token, "sendMessage", { chat_id: String(uid), text: `✅ Aap <b>${b.title}</b> ke already member ho — dobara join karne ki zaroorat nahi.`, parse_mode: "HTML" });
+    return got.link || null;
+  }
+  if (!got.link) {
+    await tg(token, "sendMessage", { chat_id: String(uid), text: `⏳ <b>${b.title}</b> — payment verified. Link system busy thi; 1 minute baad dobara <b>Rejoin</b> dabayein — wahi ek-time link aayegi.`, parse_mode: "HTML" });
+    return null;
+  }
+  const text = `✅ <b>Payment verified!</b> — ${b.title}\n\n🎉 Aapka payment confirm ho gaya!\n\n👉 Join link (one-time, 1 user only):\n${got.link}\n\n⏰ Ye link sirf ek student ke liye hai — ek baar use hote hi band.\n\n<b>Ek payment = ek link = ek student</b> ✅`;
   await tg(token, "sendMessage", { chat_id: String(uid), text, parse_mode: "HTML", disable_web_page_preview: true });
-  return link;
+  return got.link;
 }
 
 async function sendMessage(env, uid, text, keyboard=null) {
@@ -76,8 +183,11 @@ async function sendCatalog(env, uid, greeting=true) {
   const intro = greeting
     ? `👋 <b>AGRI QUIZ WORLD — Paid Batches</b>\n\nHar batch me: ♾️ <b>Unlimited attempts</b> · ⏳ <b>Lifetime validity</b> · pay once, yours for life.\nNeeche apne batch ke button — <b>Pay & Join</b> — dabaiye; turant aapka personal Razorpay link khulega, payment verify hote hi <b>one-time join link</b> yahin aayega.`
     : `Pick your batch — tap <b>Pay & Join</b> below it:`;
-  await sendMessage(env, uid, intro);
-  for (const b of BATCHES) {
+  const dn = diwaliLeft();
+  await sendMessage(env, uid, intro + (dn ? `\n\n🪔 <b>DIWALI OFFER — 25% OFF</b> · ⏰ Only ${dn} day${dn > 1 ? "s" : ""} left — <b>Hurry up!</b>` : ""));
+  for (let b of BATCHES) {
+    if (!sellOpen(b)) continue;
+    b = { ...b, price: await livePrice(env, b) };
     const amt = priceAmount(b.price);
     const body = `${b.emoji} <b>${b.title}</b>\n\nFee: <b>${b.price}</b>\n♾️ Unlimited attempts · ⏳ Lifetime validity · instant join after payment\n\n${b.perks}`;
     const cb = amt ? `rzp:${b.key}` : `batch:${b.key}`;
@@ -88,8 +198,10 @@ async function sendCatalog(env, uid, greeting=true) {
 }
 
 async function sendBatchDetail(env, uid, key) {
-  const b = batchByKey(key);
+  let b = batchByKey(key);
   if (!b) return sendMessage(env, uid, `This batch is not open right now — tap a batch from /start to see what's available.`);
+  if (!sellOpen(b)) return sendMessage(env, uid, `⏳ <b>${b.title}</b> ka enrolment band ho chuka hai — is batch ka time poora ho gaya. Baaki batches dekhne ke liye /start dabayein.`);
+  b = { ...b, price: await livePrice(env, b) };
   const body = `${b.emoji} <b>${b.title}</b>\n\nFee: <b>${b.price}</b> · ♾️ <b>Unlimited attempts</b> · ⏳ <b>Lifetime validity</b>\n\n${b.perks}\n\n👉 Tap <b>Pay & Join</b> — you get a personal Razorpay link instantly; the moment payment is verified your one-time join link arrives in this chat.`;
   const amt = priceAmount(b.price);
   const rows = [];
@@ -105,6 +217,7 @@ async function sendMyBatches(env, uid) {
     const users = (st.paid?.users) || {};
     const urec = users[String(uid)] || {};
     const batches = urec.batches || {};
+    for (const k of await rzpOwnedBatches(env, uid)) if (!batches[k]) batches[k] = { at: "" };
     const links = st.paid?.links || {};
     const openLinks = Object.entries(links).filter(([lid, r]) => String(r.uid) === String(uid) && !["paid","expired","cancelled"].includes(r.status));
     if (Object.keys(batches).length === 0 && openLinks.length === 0) {
@@ -120,7 +233,7 @@ async function sendMyBatches(env, uid) {
       const kbRows = [];
       for (const [k, rec] of Object.entries(batches)) {
         const b = batchByKey(k) || { title: k.toUpperCase() };
-        txt += `• <b>${b.title}</b> — ${String(rec.at||"").slice(0,10)}\n`;
+        txt += `• <b>${b.title}</b>${rec.at ? " — " + String(rec.at).slice(0,10) : ""}\n`;
         kbRows.push([{ text: `🔁 Re-join ${b.title.slice(0,30)}`, callback_data: `reissue:${k}` }]);
       }
       return sendMessage(env, uid, txt, { inline_keyboard: kbRows });
@@ -133,7 +246,7 @@ async function sendMyBatches(env, uid) {
 
 async function handlePaidMessage(env, msg) {
   const chat = msg.chat || {};
-  if (chat.type !== "private") return;
+  if (chat.type !== "private") { console.log(`GROUP-ACTIVITY chat_id=${chat.id} type=${chat.type} title=${chat.title}`); return; }
   const uid = String(chat.id);
   const text = (msg.text || "").trim();
   const low = text.toLowerCase();
@@ -150,10 +263,11 @@ async function handlePaidMessage(env, msg) {
     console.log(`/start payload: ${payload} from ${uid}`);
     if (payload.startsWith("paid_")) {
       const key = payload.replace("paid_", "").split(/[^a-z]/)[0];
-      await sendBatchDetail(env, uid, key);
+      if (key && (await rzpOwnedBatches(env, uid)).includes(key)) await createInviteAndSend(env, key, uid);
+      else await sendBatchDetail(env, uid, key);
       try {
         const repo = env.GITHUB_REPO || "b9811507-del/live-test"; const ghToken = env.GITHUB_TOKEN;
-        if (ghToken) await fetch(`https://api.github.com/repos/${repo}/actions/workflows/slot-chain.yml/dispatches`, { method: "POST", headers: { "Authorization": `Bearer ${ghToken}`, "Accept": "application/vnd.github+json", "Content-Type": "application/json" }, body: JSON.stringify({ ref: "main" }) });
+        if (ghToken) await fetch(`https://api.github.com/repos/${repo}/actions/workflows/slot-chain.yml/dispatches`, { method: "POST", headers: { "Authorization": `Bearer ${ghToken}`, "Accept": "application/vnd.github+json", "Content-Type": "application/json", "User-Agent": "agri-quiz-worker" }, body: JSON.stringify({ ref: "main" }) });
       } catch {}
       return;
     }
@@ -178,13 +292,15 @@ async function handlePaidCallback(env, cb) {
   else if (data.startsWith("reissue:")) batchKey = data.split(":")[1];
   else if (data === "catalog") { await sendCatalog(env, uid, false); return; }
   if (!batchKey) return;
-  const b = batchByKey(batchKey); if (!b) return;
+  let b = batchByKey(batchKey); if (!b) return;
+  b = { ...b, price: await livePrice(env, b) };
   if (data.startsWith("reissue:")) {
     try {
       const raw = await fetch(GITHUB_RAW + "?t=" + Date.now()).then(r => r.text());
       const st = JSON.parse(raw);
       const urec = (st.paid?.users?.[String(uid)]?.batches?.[batchKey]);
-      if (urec) await createInviteAndSend(env, batchKey, uid);
+      const rzpOk = !urec && (await rzpOwnedBatches(env, uid)).includes(batchKey);
+      if (urec || rzpOk) await createInviteAndSend(env, batchKey, uid);
       else await sendMessage(env, uid, `ℹ️ Aapke paas <b>${b.title}</b> ka access nahi mila. Pehle pay karo.`, { inline_keyboard: [[{ text: `💳 Pay ${b.price} now`, callback_data: `rzp:${batchKey}` }]] });
     } catch (e) { console.log("reissue err", e.message); }
     return;
@@ -196,6 +312,8 @@ async function handlePaidCallback(env, cb) {
   }
   if (data.startsWith("rzp:") || data.startsWith("invoice:")) {
     if (!isPrivate) { await tg(token, "answerCallbackQuery", { callback_query_id: cb.id, url: `https://t.me/AgriquizWorld_bot?start=buy_${batchKey}` }).catch(()=>{}); return; }
+    if (!sellOpen(b)) { await sendMessage(env, uid, `⏳ <b>${b.title}</b> ka enrolment band ho chuka hai — is batch ka time poora ho gaya.`); return; }
+    if ((await rzpOwnedBatches(env, uid)).includes(batchKey)) { await createInviteAndSend(env, batchKey, uid); return; }
     const amt = priceAmount(b.price);
     if (amt <= 0) { await sendMessage(env, uid, `⚠️ ${b.title} ka price set nahi hai, admin se contact karo.`); return; }
     const link = await rzpCreateLink(env, batchKey, b.title, amt, uid, fromName);
@@ -244,7 +362,7 @@ async function handleRzpWebhook(env, request) {
       console.log(`RZP instant join link issued for ${batchKey}/${uid}: ${joinLink ? "ok" : "fail"}`);
       try {
         const repo = env.GITHUB_REPO || "b9811507-del/live-test"; const ghToken = env.GITHUB_TOKEN;
-        if (ghToken) await fetch(`https://api.github.com/repos/${repo}/actions/workflows/slot-chain.yml/dispatches`, { method: "POST", headers: { "Authorization": `Bearer ${ghToken}`, "Accept": "application/vnd.github+json", "Content-Type": "application/json" }, body: JSON.stringify({ ref: "main" }) });
+        if (ghToken) await fetch(`https://api.github.com/repos/${repo}/actions/workflows/slot-chain.yml/dispatches`, { method: "POST", headers: { "Authorization": `Bearer ${ghToken}`, "Accept": "application/vnd.github+json", "Content-Type": "application/json", "User-Agent": "agri-quiz-worker" }, body: JSON.stringify({ ref: "main" }) });
       } catch {}
     }
   }
@@ -351,10 +469,10 @@ export default {
         // v12 SIMPLE: only dispatch slot-chain.yml (main dispatcher) — not keepwarm-agent
         const res = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/slot-chain.yml/dispatches`, {
           method: "POST",
-          headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github+json", "Content-Type": "application/json" },
+          headers: { "Authorization": `Bearer ${token}`, "Accept": "application/vnd.github+json", "Content-Type": "application/json", "User-Agent": "agri-quiz-worker" },
           body: JSON.stringify({ ref: "main" })
         });
-        console.log("dispatch slot-chain status", res.status);
+        console.log("dispatch slot-chain status", res.status, res.ok ? "ok" : (await res.text()).slice(0, 150));
       } else console.log("no GITHUB_TOKEN in env");
     } catch (e) { console.log("scheduled err", e.message); }
   }
