@@ -266115,6 +266115,8 @@
 "cd": 1,
 "congrats_sent": 35426,
 "cta_sent": "off",
+"done_at": "2026-11-10T11:12:22+05:30",
+"elapsed_s": 854,
 "expl_in_poll": 21,
 "file_msg": 35427,
 "file_sent": "MALWA_VOL_1_p320-324_21Q_2026-11-10.html",
@@ -266124,8 +266126,18 @@
 "lb_rows": 29,
 "lb_sent": true,
 "lock_ts": 1794289301.4413927,
-"locked_by": "42762256078",
+"locked_by": "",
 "msg_ann": 35401,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 35403,
 "names": {
 "1014639293": "Yadavnave",
@@ -266158,6 +266170,8 @@
 "8784388482": "Vaishnavi",
 "8797499130": "Rbaghel001"
 },
+"paid_msg": 35429,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 8,
@@ -266597,7 +266611,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-11-10T11:00:21+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 35428,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 325-330\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 170, 171, 172",
 "vol": 0
