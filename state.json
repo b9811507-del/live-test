@@ -267451,8 +267451,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1218,
 "names": {},
+"plan": {
+"bidx_next": 1218,
+"built_at": "2026-11-11T14:28:19+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 173-175",
+"pages_list": [
+173,
+174,
+175
+],
+"questions": [
+{
+"expl": "Centering is specifically done to induce more axillary or lateral buds, as stated in the source.",
+"key": 1,
+"o": [
+"To remove dead and diseased branches",
+"To induce more axillary or lateral buds",
+"To maintain bush height at 60 cm",
+"To rejuvenate old bushes by cutting near ground level",
+"None of these"
+],
+"page": "173",
+"q": "What is the primary purpose of centering in tea cultivation?",
+"serial": "1205",
+"src_row": 1197,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1205"
+},
+{
+"expl": "The main leader stem should be cut at a height of about 20 cm from the ground, leaving 8-10 matured leaves.",
+"key": 1,
+"o": [
+"10-15 cm from the ground",
+"20 cm from the ground",
+"35 cm from the ground",
+"60 cm from the ground",
+"None of these"
+],
+"page": "173",
+"q": "At what height should the main leader stem be cut during centering?",
+"serial": "1206",
+"src_row": 1198,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1206"
+},
+{
+"expl": "Tipping is defined as the removal of the terminal portion of the shoot, specifically 4 leaves and a bud.",
+"key": 0,
+"o": [
+"Removal of terminal portion of shoot (4 leaves and a bud)",
+"Cutting the entire bush near ground level",
+"Pruning to maintain bush height at 35-45 cm",
+"Removal of dead and diseased branches",
+"None of these"
+],
+"page": "173",
+"q": "What is the definition of 'tipping' in tea cultivation?",
+"serial": "1207",
+"src_row": 1199,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1207"
+},
+{
+"expl": "The first tipping is done at a height of 35 cm from the ground, as per the source.",
+"key": 1,
+"o": [
+"At 20 cm from the ground",
+"At 35 cm from the ground",
+"At 60 cm from the ground",
+"At 8-10 cm from the ground",
+"None of these"
+],
+"page": "173",
+"q": "When is the first tipping done in tea bushes?",
+"serial": "1208",
+"src_row": 1200,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1208"
+},
+{
+"expl": "Rejuvenation pruning involves cutting the whole bush near the ground level (less than 30 cm) to rejuvenate it.",
+"key": 2,
+"o": [
+"Hard pruning",
+"Medium pruning",
+"Rejuvenation pruning",
+"Light pruning",
+"None of these"
+],
+"page": "173",
+"q": "Which type of pruning is done to rejuvenate tea bushes by cutting near the ground level?",
+"serial": "1209",
+"src_row": 1201,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1209"
+},
+{
+"expl": "The height of the permanent bush frame is specified as 35-45 cm from the ground level.",
+"key": 1,
+"o": [
+"20-30 cm",
+"35-45 cm",
+"50-60 cm",
+"65-70 cm",
+"None of these"
+],
+"page": "173",
+"q": "What is the height range for the permanent bush frame in tea cultivation?",
+"serial": "1210",
+"src_row": 1202,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1210"
+},
+{
+"expl": "Pollarding of shade trees should be done at a height of 8-10 m from the ground level before heavy rains.",
+"key": 1,
+"o": [
+"5-7 m",
+"8-10 m",
+"12-15 m",
+"20 m",
+"None of these"
+],
+"page": "173",
+"q": "At what height should shade trees be pollarded prior to heavy rains?",
+"serial": "1211",
+"src_row": 1203,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "173:1211"
+},
+{
+"expl": "The term 'Two leaves and a bud' specifically refers to the plucking of the extreme tip of a growing branch with an unopened bud and two leaves.",
+"key": 1,
+"o": [
+"Fine plucking",
+"Two leaves and a bud",
+"Rush plucking",
+"Lean plucking",
+"None of these"
+],
+"page": "174",
+"q": "What is the term used for plucking the extreme tip of a growing tea branch consisting of an unopened bud and two leaves?",
+"serial": "1212",
+"src_row": 1204,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1212"
+},
+{
+"expl": "In South India, plucking is done at weekly intervals during March to May.",
+"key": 1,
+"o": [
+"June - August",
+"March - May",
+"September - November",
+"December - February",
+"None of these"
+],
+"page": "174",
+"q": "During which months is tea plucking done at weekly intervals in South India?",
+"serial": "1213",
+"src_row": 1205,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1213"
+},
+{
+"expl": "During the rush period, tea harvesting is done at intervals of 7 to 10 days.",
+"key": 1,
+"o": [
+"5-7 days",
+"7-10 days",
+"10-12 days",
+"14-15 days",
+"None of these"
+],
+"page": "174",
+"q": "What is the harvesting interval during the rush period for tea?",
+"serial": "1214",
+"src_row": 1206,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1214"
+},
+{
+"expl": "A 3% moisture level is advisable for packing tea leaves; exceeding 6% impairs keeping quality.",
+"key": 1,
+"o": [
+"2%",
+"3%",
+"5%",
+"6%",
+"None of these"
+],
+"page": "174",
+"q": "What is the maximum advisable moisture level for packing tea leaves to maintain keeping quality?",
+"serial": "1215",
+"src_row": 1207,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1215"
+},
+{
+"expl": "The fiber called coir, used for making mats and ropes, is obtained from the husk of the coconut.",
+"key": 2,
+"o": [
+"Shell",
+"Kernel",
+"Husk",
+"Endosperm",
+"None of these"
+],
+"page": "174",
+"q": "Which part of the coconut is used to make coir, a fiber used for mats and ropes?",
+"serial": "1216",
+"src_row": 1208,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1216"
+},
+{
+"expl": "Copra, the dried kernel of coconut, contains 65 to 70 percent oil.",
+"key": 2,
+"o": [
+"50-55%",
+"60-65%",
+"65-70%",
+"70-75%",
+"None of these"
+],
+"page": "174",
+"q": "What is the oil content percentage in copra obtained from coconut?",
+"serial": "1217",
+"src_row": 1209,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1217"
+},
+{
+"expl": "Lakshadweep has the highest productivity of coconut nuts, with 19,730 nuts per hectare.",
+"key": 3,
+"o": [
+"Kerala",
+"Tamil Nadu",
+"Karnataka",
+"Lakshadweep",
+"None of these"
+],
+"page": "174",
+"q": "Which Indian state has the highest productivity of coconut nuts per hectare?",
+"serial": "1218",
+"src_row": 1210,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "174:1218"
+},
+{
+"expl": "Coir is explicitly stated to be obtained from the mesocarp of the coconut fruit.",
+"key": 1,
+"o": [
+"Endocarp",
+"Mesocarp",
+"Exocarp",
+"Seed coat",
+"None of these"
+],
+"page": "175",
+"q": "Which part of the coconut fruit is used to obtain coir?",
+"serial": "1219",
+"src_row": 1211,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1219"
+},
+{
+"expl": "Crown cleaning is defined as the removal and destruction of pest-affected parts and also to avoid decaying of debris in leaf axils.",
+"key": 1,
+"o": [
+"To enhance flower color",
+"To remove and destroy pest-affected parts",
+"To increase nut size",
+"To reduce water requirement",
+"None of these"
+],
+"page": "175",
+"q": "What is the primary purpose of crown cleaning in coconut cultivation?",
+"serial": "1220",
+"src_row": 1212,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1220"
+},
+{
+"expl": "The source explicitly states that crown choking or button shedding is caused by boron deficiency.",
+"key": 2,
+"o": [
+"Nitrogen",
+"Potassium",
+"Boron",
+"Phosphorus",
+"None of these"
+],
+"page": "175",
+"q": "Which nutrient deficiency causes 'button shedding' or crown choking in coconut?",
+"serial": "1221",
+"src_row": 1213,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1221"
+},
+{
+"expl": "The source specifies the optimum temperature range for coconut as 20\u00b0C to 32\u00b0C.",
+"key": 1,
+"o": [
+"15\u00b0C to 25\u00b0C",
+"20\u00b0C to 32\u00b0C",
+"25\u00b0C to 35\u00b0C",
+"10\u00b0C to 20\u00b0C",
+"None of these"
+],
+"page": "175",
+"q": "What is the optimum temperature range for coconut cultivation?",
+"serial": "1222",
+"src_row": 1214,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1222"
+},
+{
+"expl": "The source states that it takes 5 months for the complete development of a leaf from initiation to emergence.",
+"key": 1,
+"o": [
+"3 months",
+"5 months",
+"7 months",
+"9 months",
+"None of these"
+],
+"page": "175",
+"q": "How long does it take for a coconut leaf to develop completely from initiation to emergence?",
+"serial": "1223",
+"src_row": 1215,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1223"
+},
+{
+"expl": "The source mentions that milling copra is most popular in Southern India, with Kerala contributing 60-65%.",
+"key": 2,
+"o": [
+"Tamil Nadu",
+"Karnataka",
+"Kerala",
+"Andhra Pradesh",
+"None of these"
+],
+"page": "175",
+"q": "Which Indian state has the highest percentage of milling copra production?",
+"serial": "1224",
+"src_row": 1216,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1224"
+},
+{
+"expl": "The source specifies the square system spacing for coconut as 7.5 m x 7.5 m.",
+"key": 2,
+"o": [
+"5 m x 5 m",
+"6 m x 6 m",
+"7.5 m x 7.5 m",
+"10 m x 10 m",
+"None of these"
+],
+"page": "175",
+"q": "What is the recommended spacing for coconut cultivation under the square system?",
+"serial": "1225",
+"src_row": 1217,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "175:1225"
+}
+],
+"row_from": 1197,
+"row_to": 1218,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1197,
+"seeded_from": "2026-11-10"
+},
 "qidx": 0,
+"seeded_from": "2026-11-10",
+"skips": [],
 "step": 0
 },
 "malwa": {
