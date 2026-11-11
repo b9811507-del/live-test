@@ -268182,7 +268182,10 @@
 "started_at": "2026-11-11T14:30:25+05:30",
 "step": 8,
 "tmr_note": 35516,
-"tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 331-336\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 176, 177, 178"
+"tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 331-336\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 176, 177, 178",
+"unpinned": [
+35460
+]
 },
 "malwa": {
 "announced_at": "2026-11-11T11:00:00+05:30",
@@ -270945,7 +270948,8 @@
 35343,
 35372,
 35401,
-35430
+35430,
+35460
 ],
 "version": "v11.4.9"
 }
