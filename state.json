@@ -267457,9 +267457,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1100,
 "names": {},
+"plan": {
+"batch": 8,
+"bidx_next": 1100,
+"built_at": "2026-11-11T10:57:32+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 325-330",
+"pages_blocks": [
+"325-326",
+"327-328",
+"329-330"
+],
+"questions": [
+{
+"expl": "Cloud cover is quantified in oktas, where 1 octa equals 12% of the sky.",
+"key": 0,
+"o": [
+"Okta",
+"mm of Hg",
+"km/hr",
+"Pascals",
+"None of these"
+],
+"page": "325-326",
+"q": "Which unit is used to express cloud cover in meteorological observations?",
+"serial": "1641",
+"src_row": 1080,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "325-326:1641"
+},
+{
+"expl": "A Fortin or mercurial barometer uses mercury and gives the most precise atmospheric pressure readings.",
+"key": 1,
+"o": [
+"Aneroid Barometer",
+"Fortin Barometer (Mercurial)",
+"Barograph",
+"Anemometer",
+"None of these"
+],
+"page": "325-326",
+"q": "The instrument that provides the most accurate measurement of atmospheric pressure is:",
+"serial": "1642",
+"src_row": 1081,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "325-326:1642"
+},
+{
+"expl": "A lysimeter is a container that measures water loss through evapotranspiration and leaching.",
+"key": 0,
+"o": [
+"Lysimeter",
+"Pyranometer",
+"Psychrometer",
+"Anemograph",
+"None of these"
+],
+"page": "325-326",
+"q": "Which device is specifically designed to determine actual evapotranspiration and leaching loss from soil?",
+"serial": "1643",
+"src_row": 1082,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "325-326:1643"
+},
+{
+"expl": "The Assmann psychrometer is designed for canopy measurements of relative humidity.",
+"key": 0,
+"o": [
+"Assmann Psychrometer",
+"Hair Hygrometer",
+"Hygrograph",
+"Psychrometer (dry/wet bulb)",
+"None of these"
+],
+"page": "325-326",
+"q": "The instrument used to measure relative humidity inside a crop canopy is:",
+"serial": "1644",
+"src_row": 1083,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "325-326:1644"
+},
+{
+"expl": "An anemograph logs wind velocity and direction together over time.",
+"key": 2,
+"o": [
+"Anemometer",
+"Wind Vane",
+"Anemograph",
+"Barograph",
+"None of these"
+],
+"page": "325-326",
+"q": "Which instrument records both wind speed and wind direction simultaneously?",
+"serial": "1645",
+"src_row": 1084,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "325-326:1645"
+},
+{
+"expl": "A pyranometer records the combined short\u2011wave solar radiation reaching the surface.",
+"key": 1,
+"o": [
+"Pyrheliometer",
+"Pyranometer",
+"Pyrgeometer",
+"Infrared Thermometer",
+"None of these"
+],
+"page": "325-326",
+"q": "The device that measures total incoming solar radiation (global radiation) is known as a:",
+"serial": "1646",
+"src_row": 1085,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "325-326:1646"
+},
+{
+"expl": "An infiltrometer is specifically designed to determine the rate at which water infiltrates into the soil.",
+"key": 1,
+"o": [
+"EEG",
+"Infiltrometer",
+"Seismograph",
+"Tensiometer",
+"None of these"
+],
+"page": "327-328",
+"q": "Which instrument is used to measure the infiltration rate of water into soil?",
+"serial": "1651",
+"src_row": 1086,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "327-328:1651"
+},
+{
+"expl": "A Stevenson screen is mounted 1.22 m (4 ft) above the ground to provide standardized meteorological measurements.",
+"key": 1,
+"o": [
+"3.08 m",
+"1.22 m",
+"0.75 m",
+"0.30 m",
+"None of these"
+],
+"page": "327-328",
+"q": "What is the height of a Stevenson screen above the ground surface?",
+"serial": "1652",
+"src_row": 1087,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "327-328:1652"
+},
+{
+"expl": "Fresh snow reflects most of the incoming solar radiation, giving it an albedo of 80\u201395%.",
+"key": 2,
+"o": [
+"Black soil (dry) \u2013 14%",
+"Water surface \u2013 5\u20138%",
+"Fresh snow \u2013 80\u201395%",
+"Wheat \u2013 23\u201325%",
+"None of these"
+],
+"page": "327-328",
+"q": "Which of the following surfaces has the highest albedo value?",
+"serial": "1653",
+"src_row": 1088,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "327-328:1653"
+},
+{
+"expl": "Solar radiation intensity is measured in Watts per square meter in the SI system.",
+"key": 0,
+"o": [
+"Watts/m\u00b2",
+"Lux",
+"Langley/min",
+"cal/cm\u00b2/min",
+"None of these"
+],
+"page": "327-328",
+"q": "What is the SI unit used to express solar radiation intensity?",
+"serial": "1654",
+"src_row": 1089,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "327-328:1654"
+},
+{
+"expl": "Direct radiation delivers 42% of the PAR, whereas diffused radiation delivers 65%.",
+"key": 0,
+"o": [
+"42%",
+"65%",
+"50%",
+"30%",
+"None of these"
+],
+"page": "327-328",
+"q": "In direct solar radiation, what percentage of the photosynthetically active radiation (PAR) is received?",
+"serial": "1655",
+"src_row": 1090,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "327-328:1655"
+},
+{
+"expl": "A Stevenson screen houses thermometers, hygrometers, and sometimes barometers, making all listed instruments suitable.",
+"key": 3,
+"o": [
+"Thermometer",
+"Anemometer",
+"Barometer",
+"All of the above",
+"None of these"
+],
+"page": "327-328",
+"q": "Which instruments are typically placed inside a Stevenson screen?",
+"serial": "1656",
+"src_row": 1091,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "327-328:1656"
+},
+{
+"expl": "PAR is defined as the portion of the solar spectrum between 400 and 700 nanometres.",
+"key": 0,
+"o": [
+"400-700 nm",
+"390-760 nm",
+"700-1000 nm",
+"200-400 nm",
+"None of these"
+],
+"page": "329-330",
+"q": "What wavelength range defines Photosynthetically Active Radiation (PAR)?",
+"serial": "1661",
+"src_row": 1092,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1661"
+},
+{
+"expl": "For horizontal leaves the extinction coefficient is given as 0.7 to 1.0.",
+"key": 1,
+"o": [
+"0.3-0.5",
+"0.7-1.0",
+"1.0-1.5",
+"0.1-0.2",
+"None of these"
+],
+"page": "329-330",
+"q": "The extinction coefficient (K) for horizontal leaves typically falls within which range?",
+"serial": "1662",
+"src_row": 1093,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1662"
+},
+{
+"expl": "Maximum temperature is measured at 2:00 pm, while the highest solar radiation occurs at noon.",
+"key": 1,
+"o": [
+"12:00 noon",
+"2:00 pm",
+"4:00 am",
+"6:00 pm",
+"None of these"
+],
+"page": "329-330",
+"q": "At what time of day is the maximum air temperature usually recorded?",
+"serial": "1663",
+"src_row": 1094,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1663"
+},
+{
+"expl": "Virga describes rain or snow that evaporates completely before reaching the surface.",
+"key": 1,
+"o": [
+"Drizzle droplets are larger than 0.5 mm",
+"Virga refers to droplets that evaporate before reaching the ground",
+"Rainfall intensity >5 cm/hr is considered light rain",
+"Freezing fog is called glaze",
+"None of these"
+],
+"page": "329-330",
+"q": "Which statement about precipitation phenomena is correct?",
+"serial": "1664",
+"src_row": 1095,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1664"
+},
+{
+"expl": "Mawsynram records approximately 11,871 mm of rainfall per year, making it the world\u2019s wettest location.",
+"key": 2,
+"o": [
+"5,000 mm",
+"8,500 mm",
+"11,871 mm",
+"15,000 mm",
+"None of these"
+],
+"page": "329-330",
+"q": "The wettest place on Earth, Mawsynram (Meghalaya), receives an average annual rainfall of about:",
+"serial": "1665",
+"src_row": 1096,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1665"
+},
+{
+"expl": "Kelvin is obtained by adding 273 to the Celsius value: 25 + 273 = 298 K.",
+"key": 0,
+"o": [
+"298 K",
+"298.15 K",
+"298.0 K",
+"298.5 K",
+"None of these"
+],
+"page": "329-330",
+"q": "Convert 25 \u00b0C to Kelvin. Which answer is correct?",
+"serial": "1666",
+"src_row": 1097,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1666"
+},
+{
+"expl": "ER = Total rainfall \u2013 losses due to runoff, evaporation, etc., so both runoff and evaporation are subtracted.",
+"key": 2,
+"o": [
+"Runoff only",
+"Evaporation only",
+"Runoff and evaporation",
+"Infiltration",
+"None of these"
+],
+"page": "329-330",
+"q": "Effective rainfall (ER) is calculated by subtracting which components from total rainfall?",
+"serial": "1667",
+"src_row": 1098,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1667"
+},
+{
+"expl": "Radiation transfers heat via electromagnetic waves and can occur in vacuum, unlike conduction and convection.",
+"key": 2,
+"o": [
+"Conduction",
+"Convection",
+"Radiation",
+"All require a medium",
+"None of these"
+],
+"page": "329-330",
+"q": "Which mode of heat transfer does NOT require a material medium?",
+"serial": "1668",
+"src_row": 1099,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "329-330:1668"
+}
+],
+"rolled": false,
+"row_from": 1080,
+"row_to": 1100,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1080,
+"seeded_from": "2026-11-10",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-10",
+"skips": [],
+"step": 0,
+"vol": 0
 },
 "mix": {
 "ans": {},
