@@ -270684,7 +270684,590 @@
 "mix": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-11-12T17:58:34+05:30",
+"kind": "mix",
+"label": "AGRI MIX TEST",
+"n": 30,
+"pages": "All subjects (topic-wise mix)",
+"questions": [
+{
+"bucket": "Agricultural Engineering",
+"expl": "'L' Type Blade is described as working well in trashy conditions, effective in cutting weeds, but not pulverizing soil much.",
+"key": 2,
+"o": [
+"Twisted Blade",
+"Straight Blade",
+"'L' Type Blade",
+"Curved Blade",
+"None of these"
+],
+"page": "892",
+"q": "Which blade type in a Rotary Tiller is most effective in cutting weeds but does not pulverize soil much?",
+"serial": "1",
+"src_row": 6178,
+"topic": "Agricultural Engineering",
+"trunc": 0,
+"uid": "mix:iari:r6178"
+},
+{
+"bucket": "Entomology & Plant Pathology",
+"expl": "Early-stage Tobacco caterpillars scrape chlorophyll, giving leaves a papery white appearance, as stated in the SOURCE.",
+"key": 1,
+"o": [
+"Skeletonisation of leaves",
+"Papery white appearance due to chlorophyll scraping",
+"Heavy defoliation",
+"Irregular holes on petioles",
+"None of these"
+],
+"page": "289",
+"q": "The early-stage damage symptom of Tobacco caterpillar includes:",
+"serial": "2",
+"src_row": 2003,
+"topic": "Entomology",
+"trunc": 0,
+"uid": "mix:iari:r2003"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "The source explains that egg hiding is a maternal instinct of jungle fowl and may develop in domestic fowl allowed freedom of movement.",
+"key": 1,
+"o": [
+"Lack of nesting space",
+"Maternal instinct from jungle fowl ancestry",
+"Excessive light in the laying area",
+"Nutritional imbalance",
+"None of these"
+],
+"page": "503",
+"q": "What is the primary reason for egg hiding in domestic fowl?",
+"serial": "3",
+"src_row": 3490,
+"topic": "Animal Husbandry and Poultry Farming",
+"trunc": 0,
+"uid": "mix:iari:r3490"
+},
+{
+"bucket": "Genetics & Plant Breeding",
+"expl": "Hugo de Vries, Erich Correns, and Erich Tschermak were the scientists who rediscovered Mendel's work in 1900.",
+"key": 1,
+"o": [
+"Charles Darwin, Alfred Wallace, Thomas Huxley",
+"Hugo de Vries, Erich Correns, Erich Tschermak",
+"Louis Pasteur, Robert Koch, Joseph Lister",
+"James Watson, Francis Crick, Rosalind Franklin",
+"None of these"
+],
+"page": "278",
+"q": "Which of the following scientists were involved in the rediscovery of Mendel's work?",
+"serial": "4",
+"src_row": 1914,
+"topic": "Genetics and Plant Breeding",
+"trunc": 0,
+"uid": "mix:rksharma:r1914"
+},
+{
+"bucket": "Horticulture",
+"expl": "Caturra is a natural mutant variety that appeared in the 2020 RRB\u2011SO exam.",
+"key": 0,
+"o": [
+"Caturra",
+"Arabica",
+"Robusta",
+"Catimor",
+"None of these"
+],
+"page": "178",
+"q": "Which coffee variety is a natural mutant and was asked in RRB\u2011SO 2020?",
+"serial": "5",
+"src_row": 1232,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:iari:r1232"
+},
+{
+"bucket": "Statistics & Meteorology",
+"expl": "The troposphere contains most water vapour and aerosols, making it the region where weather occurs.",
+"key": 0,
+"o": [
+"Troposphere",
+"Stratosphere",
+"Mesosphere",
+"Thermosphere",
+"None of these"
+],
+"page": "805",
+"q": "Which atmospheric layer is described as the \"seat of weather phenomena\"?",
+"serial": "6",
+"src_row": 5579,
+"topic": "Agricultural Meteorology",
+"trunc": 0,
+"uid": "mix:iari:r5579"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "If a ruminant stops ruminating, it is a sign of ill health, as rumination is a normal digestive process.",
+"key": 2,
+"o": [
+"The animal is well-fed",
+"The animal is in good health",
+"The animal is ill",
+"The animal is resting",
+"None of these"
+],
+"page": "436",
+"q": "What does a ruminant's cessation of rumination typically indicate?",
+"serial": "7",
+"src_row": 3021,
+"topic": "Animal Husbandry and Poultry Farming",
+"trunc": 0,
+"uid": "mix:iari:r3021"
+},
+{
+"bucket": "Soil Science",
+"expl": "Excess nitrogen causes plants to be dark green in color and new growth will be succulent, but plants become more susceptible to disease and insect infestation.",
+"key": 2,
+"o": [
+"Uniform yellowing of older leaves",
+"Purple coloration of leaves",
+"Dark green color and succulent new growth",
+"Bronzy appearance on leaves",
+"None of these"
+],
+"page": "258",
+"q": "Which of the following is a symptom of excess nitrogen in plants?",
+"serial": "8",
+"src_row": 1775,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:rksharma:r1775"
+},
+{
+"bucket": "Statistics & Meteorology",
+"expl": "The normal sea surface temperature is 23\u00b0C.",
+"key": 1,
+"o": [
+"18\u00b0C",
+"23\u00b0C",
+"28\u00b0C",
+"32\u00b0C",
+"None of these"
+],
+"page": "231",
+"q": "What is the normal sea surface temperature?",
+"serial": "9",
+"src_row": 1587,
+"topic": "Agricultural Meteorology",
+"trunc": 0,
+"uid": "mix:rksharma:r1587"
+},
+{
+"bucket": "Entomology & Plant Pathology",
+"expl": "Pasteur and Koch jointly linked Anthrax in cattle to a bacterial cause.",
+"key": 0,
+"o": [
+"Louis Pasteur and Robert Koch",
+"Leeuwenhoek and Micheli",
+"Adolf Mayer and Anton de Bary",
+"Tillet and Prevost",
+"None of these"
+],
+"page": "365",
+"q": "In 1876, which pair of scientists reported that Anthrax disease in cattle was caused by a bacterium?",
+"serial": "10",
+"src_row": 2526,
+"topic": "Agricultural Entomology",
+"trunc": 0,
+"uid": "mix:rksharma:r2526"
+},
+{
+"bucket": "General Agriculture",
+"expl": "In plant cells, the nucleus is typically located on one side in the peripheral cytoplasm, unlike animal cells where it is usually centrally located.",
+"key": 1,
+"o": [
+"In the center of the cell",
+"On one side in the peripheral cytoplasm",
+"Inside the vacuole",
+"Attached to the cell wall",
+"None of these"
+],
+"page": "97",
+"q": "Where is the nucleus located in a plant cell?",
+"serial": "11",
+"src_row": 677,
+"topic": "Cell Biology",
+"trunc": 0,
+"uid": "mix:malwa_vol2:r677"
+},
+{
+"bucket": "Agricultural Engineering",
+"expl": "Land leveling is described as a permanent improvement done to smoothen the contours of the land.",
+"key": 1,
+"o": [
+"To increase soil fertility",
+"To smoothen the contours of the land",
+"To remove all weeds permanently",
+"To add organic matter to the soil",
+"None of these"
+],
+"page": "892",
+"q": "What is the primary purpose of land leveling in agriculture?",
+"serial": "12",
+"src_row": 6179,
+"topic": "Agricultural Engineering",
+"trunc": 0,
+"uid": "mix:iari:r6179"
+},
+{
+"bucket": "Agronomy",
+"expl": "The text states Phalaris minor has developed resistance to isoproturon.",
+"key": 1,
+"o": [
+"Carthamus oxycantha",
+"Phalaris minor",
+"Avena fatua",
+"Chenopodium album",
+"None of these"
+],
+"page": "207-208",
+"q": "Which weed has developed resistance to isoproturon in wheat?",
+"serial": "13",
+"src_row": 687,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r687"
+},
+{
+"bucket": "Agricultural Engineering",
+"expl": "Farm work is broadly divided into tractive work and stationary work. Mechanical work is not a separate category.",
+"key": 2,
+"o": [
+"Tractive work",
+"Stationary work",
+"Mechanical work",
+"Manual work",
+"None of these"
+],
+"page": "580-581",
+"q": "Which of the following is NOT a type of farm work?",
+"serial": "14",
+"src_row": 1961,
+"topic": "Agricultural Engineering",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r1961"
+},
+{
+"bucket": "Entomology & Plant Pathology",
+"expl": "The source specifies that the septa in Pherodin SL should be changed once in 3 weeks.",
+"key": 1,
+"o": [
+"Once in 2 weeks",
+"Once in 3 weeks",
+"Once in 4 weeks",
+"Once in 6 weeks",
+"None of these"
+],
+"page": "281",
+"q": "What is the recommended frequency for changing the septa in a pheromone trap (Pherodin SL) for pest control in finger millet?",
+"serial": "15",
+"src_row": 1949,
+"topic": "Entomology",
+"trunc": 0,
+"uid": "mix:iari:r1949"
+},
+{
+"bucket": "Soil Science",
+"expl": "The source states that ferrous sulphate is commonly used as a foliar spray in crops like groundnut and soybean.",
+"key": 2,
+"o": [
+"Manganese sulphate",
+"Zinc sulphate",
+"Ferrous sulphate",
+"Borax",
+"None of these"
+],
+"page": "1040",
+"q": "Which micronutrient fertilizer is specifically mentioned as suitable for foliar spray in groundnut and soybean?",
+"serial": "16",
+"src_row": 7205,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:iari:r7205"
+},
+{
+"bucket": "Agronomy",
+"expl": "The source states that the Modified Penmann method is the best and widely followed for measuring ET.",
+"key": 0,
+"o": [
+"Modified Penmann",
+"Blaney and Criddle",
+"Thornthwaite",
+"Penman\u2013Monteith",
+"None of these"
+],
+"page": "213",
+"q": "The best and widely followed method for measuring evapotranspiration (ET) is?",
+"serial": "17",
+"src_row": 1472,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:rksharma:r1472"
+},
+{
+"bucket": "Agricultural Economics & Extension",
+"expl": "Marginal Cost (MC) is defined as the change in cost associated with an increase of one unit of output.",
+"key": 0,
+"o": [
+"The change in cost associated with an increase of one unit of output",
+"The total cost divided by the number of units produced",
+"The cost of inputs supplied by the farmer himself",
+"The actual money expenses directly incurred in raising a farm commodity",
+"None of these"
+],
+"page": "337",
+"q": "Which of the following best defines Marginal Cost (MC)?",
+"serial": "18",
+"src_row": 2325,
+"topic": "Agricultural Economics",
+"trunc": 0,
+"uid": "mix:rksharma:r2325"
+},
+{
+"bucket": "Genetics & Plant Breeding",
+"expl": "Trisomy is an exception to the Law of Segregation because it involves an extra chromosome, which can affect the segregation of alleles.",
+"key": 2,
+"o": [
+"Complete Dominance",
+"Incomplete Dominance",
+"Trisomy",
+"Law of Uniformity",
+"None of these"
+],
+"page": "69",
+"q": "Which of the following is an exception to the Law of Segregation?",
+"serial": "19",
+"src_row": 482,
+"topic": "Plant Genetics",
+"trunc": 0,
+"uid": "mix:malwa_vol2:r482"
+},
+{
+"bucket": "Soil Science",
+"expl": "Acidic soils are most extensive in Assam, followed by West Bengal.",
+"key": 2,
+"o": [
+"Gujarat",
+"Uttar Pradesh",
+"Assam",
+"West Bengal",
+"None of these"
+],
+"page": "297-298",
+"q": "Which Indian state has the greatest area of acidic soils?",
+"serial": "20",
+"src_row": 982,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r982"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "Carotene gives colostrum its characteristic yellow colour.",
+"key": 1,
+"o": [
+"High fat content",
+"Carotene",
+"High lactose",
+"High protein",
+"None of these"
+],
+"page": "357-358",
+"q": "The yellow hue of colostrum is primarily due to the presence of which compound?",
+"serial": "21",
+"src_row": 1185,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r1185"
+},
+{
+"bucket": "Horticulture",
+"expl": "Brinjal (Solanum melongena) originates from the Indo-Burma region.",
+"key": 2,
+"o": [
+"Africa",
+"India",
+"Indo-Burma",
+"South America",
+"None of these"
+],
+"page": "450",
+"q": "What is the origin of the Brinjal (Solanum melongena)?",
+"serial": "22",
+"src_row": 3117,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:rksharma:r3117"
+},
+{
+"bucket": "Agronomy",
+"expl": "In the Universal Soil Loss Equation, 'S' represents the steepness of land slope.",
+"key": 0,
+"o": [
+"S",
+"L",
+"C",
+"P",
+"None of these"
+],
+"page": "205",
+"q": "Which factor in the Universal Soil Loss Equation represents the steepness of land slope?",
+"serial": "23",
+"src_row": 1417,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:rksharma:r1417"
+},
+{
+"bucket": "Horticulture",
+"expl": "Langra shows the highest perfect flower percentage at 69.8 %.",
+"key": 2,
+"o": [
+"Alphonso",
+"Kesar",
+"Langra",
+"Dasheri",
+"None of these"
+],
+"page": "23",
+"q": "Which mango variety has the highest percentage of perfect (bisexual) flowers?",
+"serial": "24",
+"src_row": 159,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:malwa_horti:r159"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "The table specifies that under optimum conditions, the average milk yield of Red Sindhi cattle is 3400 kg.",
+"key": 2,
+"o": [
+"1700 kg",
+"2500 kg",
+"3400 kg",
+"4200 kg",
+"None of these"
+],
+"page": "419",
+"q": "Under optimum conditions, what is the average milk yield of Red Sindhi cattle?",
+"serial": "25",
+"src_row": 2899,
+"topic": "Animal Husbandry and Poultry Farming",
+"trunc": 0,
+"uid": "mix:iari:r2899"
+},
+{
+"bucket": "Agricultural Economics & Extension",
+"expl": "The Central Agmark Laboratory is situated in Nagpur, Maharashtra, and was established in 1937.",
+"key": 1,
+"o": [
+"Faridabad, Haryana",
+"Nagpur, Maharashtra",
+"Jaipur, Rajasthan",
+"Delhi",
+"None of these"
+],
+"page": "524-525",
+"q": "Where is the Central Agmark Laboratory situated?",
+"serial": "26",
+"src_row": 1763,
+"topic": "Agricultural Economics",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r1763"
+},
+{
+"bucket": "Horticulture",
+"expl": "Capsicum sp. is listed among the shrubs that produce beautiful berries.",
+"key": 1,
+"o": [
+"Allamanda cathartica",
+"Capsicum sp.",
+"Jasminum sp.",
+"Hibiscus rosa-sinensis",
+"None of these"
+],
+"page": "485",
+"q": "Which shrub produces beautiful berries?",
+"serial": "27",
+"src_row": 3363,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:rksharma:r3363"
+},
+{
+"bucket": "Agricultural Economics & Extension",
+"expl": "The MRPS for supplementary enterprises is zero because an increase or decrease in one product does not affect the production level of the other product.",
+"key": 2,
+"o": [
+"> 0 (Positive)",
+"< 0 (Negative)",
+"= 0 (Zero)",
+"1 (One)",
+"None of these"
+],
+"page": "516-517",
+"q": "What is the Marginal Rate of Product Substitution (MRPS) for supplementary enterprises?",
+"serial": "28",
+"src_row": 1737,
+"topic": "Agricultural Economics",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r1737"
+},
+{
+"bucket": "Agronomy",
+"expl": "Saline-alkaline and waterlogged soils are unfit for Pigeon Pea cultivation as they hinder its growth.",
+"key": 1,
+"o": [
+"Fertile and well-drained loamy soils",
+"Saline-alkaline soils",
+"Sandy soils",
+"Clay soils",
+"None of these"
+],
+"page": "44",
+"q": "Which soil type is unfit for Pigeon Pea cultivation?",
+"serial": "29",
+"src_row": 302,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:iari:r302"
+},
+{
+"bucket": "Soil Science",
+"expl": "Blood meal, when dried and powdered, is used as a manure.",
+"key": 1,
+"o": [
+"As a pesticide",
+"As a manure",
+"As a herbicide",
+"As a fungicide",
+"None of these"
+],
+"page": "248",
+"q": "What is the primary use of blood meal in agriculture?",
+"serial": "30",
+"src_row": 1702,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:rksharma:r1702"
+}
+],
+"skip_rows": [],
+"src": "mix:malwa_vol1,malwa_vol2,malwa_horti,iari,nemraj,rksharma",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 }
 }
