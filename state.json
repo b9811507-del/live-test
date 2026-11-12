@@ -269911,6 +269911,9 @@
 "step": 8,
 "tmr_note": 35544,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 5-342\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 176, 177, 178",
+"unpinned": [
+35489
+],
 "vol": 0
 },
 "mix": {
@@ -271766,7 +271769,8 @@
 35372,
 35401,
 35430,
-35460
+35460,
+35489
 ],
 "version": "v11.4.9"
 }
