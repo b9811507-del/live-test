@@ -269403,6 +269403,8 @@
 "cd": 1,
 "congrats_sent": 35571,
 "cta_sent": "off",
+"done_at": "2026-11-12T14:43:04+05:30",
+"elapsed_s": 938,
 "expl_in_poll": 21,
 "file_msg": 35572,
 "file_sent": "IARI_p176-178_21Q_2026-11-12.html",
@@ -269412,8 +269414,18 @@
 "lb_rows": 23,
 "lb_sent": true,
 "lock_ts": 1794474735.2412896,
-"locked_by": "43187131156",
+"locked_by": "",
 "msg_ann": 35546,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 35548,
 "names": {
 "1018630900": "Janaki",
@@ -269440,6 +269452,8 @@
 "904220981": "Bhardwaj jii \ud83d\udd25\ud83d\udd25",
 "978721999": "Roshanjhaktr"
 },
+"paid_msg": 35574,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "bidx_next": 1239,
@@ -269874,7 +269888,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-11-12T14:30:26+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 35573,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 5-342\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 179, 180, 181"
 },
