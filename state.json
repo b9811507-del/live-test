@@ -269126,8 +269126,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1239,
 "names": {},
+"plan": {
+"bidx_next": 1239,
+"built_at": "2026-11-12T14:27:21+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 176-178",
+"pages_list": [
+176,
+177,
+178
+],
+"questions": [
+{
+"expl": "The source explicitly states that the origin of cashew (Anacardium occidentale) is Brazil.",
+"key": 1,
+"o": [
+"India",
+"Brazil",
+"Sri Lanka",
+"Kenya",
+"None of these"
+],
+"page": "176",
+"q": "Which country is the origin of cashew (Anacardium occidentale)?",
+"serial": "1226",
+"src_row": 1218,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1226"
+},
+{
+"expl": "The source mentions that malic acid is the predominant acid in the cashew apple.",
+"key": 2,
+"o": [
+"Citric acid",
+"Ascorbic acid",
+"Malic acid",
+"Tartaric acid",
+"None of these"
+],
+"page": "176",
+"q": "What is the predominant acid found in the cashew apple?",
+"serial": "1227",
+"src_row": 1219,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1227"
+},
+{
+"expl": "The source lists dwarf varieties (e.g., Chowghat green dwarf, Kalpa Raksha, Gangabandom) and separately mentions tall varieties, so 'Tall variety' is not a dwarf variety.",
+"key": 3,
+"o": [
+"Chowghat green dwarf",
+"Kalpa Raksha",
+"Gangabandom",
+"Tall variety",
+"None of these"
+],
+"page": "176",
+"q": "Which of the following is NOT a dwarf variety of arecanut (AR)?",
+"serial": "1228",
+"src_row": 1220,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1228"
+},
+{
+"expl": "The source specifies that copra should be dried to 6% moisture.",
+"key": 1,
+"o": [
+"5%",
+"6%",
+"7%",
+"8%",
+"None of these"
+],
+"page": "176",
+"q": "What is the moisture content to which copra should be dried?",
+"serial": "1229",
+"src_row": 1221,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1229"
+},
+{
+"expl": "The source states that the highest nut yield is obtained during March-May (35%).",
+"key": 3,
+"o": [
+"June-August",
+"September-November",
+"December-February",
+"March-May",
+"None of these"
+],
+"page": "176",
+"q": "During which months is the highest yield of arecanut nuts obtained?",
+"serial": "1230",
+"src_row": 1222,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1230"
+},
+{
+"expl": "The source lists the processing sequence as Roasting => Shelling => Extraction of oil => Peeling => Grading => Packing.",
+"key": 1,
+"o": [
+"Shelling => Roasting => Peeling => Grading",
+"Roasting => Shelling => Peeling => Grading",
+"Peeling => Roasting => Shelling => Grading",
+"Grading => Roasting => Shelling => Peeling",
+"None of these"
+],
+"page": "176",
+"q": "What is the correct sequence of processing steps for cashew nuts?",
+"serial": "1231",
+"src_row": 1223,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1231"
+},
+{
+"expl": "The source explicitly mentions the tea mosquito bug (Helopeltis antonii) as the major pest of cashew.",
+"key": 1,
+"o": [
+"Stem borer",
+"Tea mosquito bug",
+"Aphids",
+"Whitefly",
+"None of these"
+],
+"page": "176",
+"q": "Which pest is identified as the major pest of cashew in the source?",
+"serial": "1232",
+"src_row": 1224,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "176:1232"
+},
+{
+"expl": "Arabica is self\u2011pollinated while robusta is cross\u2011pollinated.",
+"key": 0,
+"o": [
+"Coffea arabica",
+"Coffea robusta",
+"Both species",
+"Neither species",
+"None of these"
+],
+"page": "177",
+"q": "Which coffee species is self\u2011pollinated?",
+"serial": "1233",
+"src_row": 1225,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1233"
+},
+{
+"expl": "Robusta fruit development lasts 10\u201111 months as stated in the source.",
+"key": 2,
+"o": [
+"6\u20117 months",
+"8\u20119 months",
+"10\u201111 months",
+"12\u201113 months",
+"None of these"
+],
+"page": "177",
+"q": "How many months does fruit development take in Coffea robusta?",
+"serial": "1234",
+"src_row": 1226,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1234"
+},
+{
+"expl": "Arabica grows best at 15\u201125 \u00b0C.",
+"key": 1,
+"o": [
+"10\u201115 \u00b0C",
+"15\u201125 \u00b0C",
+"20\u201130 \u00b0C",
+"25\u201135 \u00b0C",
+"None of these"
+],
+"page": "177",
+"q": "What is the optimal temperature range for Coffea arabica cultivation?",
+"serial": "1235",
+"src_row": 1227,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1235"
+},
+{
+"expl": "The single stem training system is the most common method in India.",
+"key": 1,
+"o": [
+"Multi\u2011stem system",
+"Single stem system",
+"Shade\u2011net system",
+"Trellis system",
+"None of these"
+],
+"page": "177",
+"q": "Which training system is most commonly used for coffee in India?",
+"serial": "1236",
+"src_row": 1228,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1236"
+},
+{
+"expl": "Arabica is topped when it reaches about 75 cm.",
+"key": 1,
+"o": [
+"50 cm",
+"75 cm",
+"100 cm",
+"120 cm",
+"None of these"
+],
+"page": "177",
+"q": "At what height is an Arabica coffee plant topped in the single stem system?",
+"serial": "1237",
+"src_row": 1229,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1237"
+},
+{
+"expl": "The source lists centering, desuckering, handling and nipping; thinning is not mentioned.",
+"key": 2,
+"o": [
+"Centering",
+"Desuckering",
+"Thinning",
+"Nipping",
+"None of these"
+],
+"page": "177",
+"q": "Which of the following is NOT listed as a pruning practice for coffee?",
+"serial": "1238",
+"src_row": 1230,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1238"
+},
+{
+"expl": "India uniquely grows all its coffee under shade.",
+"key": 1,
+"o": [
+"India grows coffee only under full sun.",
+"India is the only country that grows all its coffee under shade.",
+"Coffee in India is harvested only once a year.",
+"Indian coffee requires soil pH above 7.",
+"None of these"
+],
+"page": "177",
+"q": "Which statement about coffee cultivation in India is correct?",
+"serial": "1239",
+"src_row": 1231,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "177:1239"
+},
+{
+"expl": "Caturra is a natural mutant variety that appeared in the 2020 RRB\u2011SO exam.",
+"key": 0,
+"o": [
+"Caturra",
+"Arabica",
+"Robusta",
+"Catimor",
+"None of these"
+],
+"page": "178",
+"q": "Which coffee variety is a natural mutant and was asked in RRB\u2011SO 2020?",
+"serial": "1240",
+"src_row": 1232,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1240"
+},
+{
+"expl": "Arabica coffee in India is processed by the parchment (wet) method.",
+"key": 0,
+"o": [
+"Arabica",
+"Robusta",
+"Caturra",
+"Catimor",
+"None of these"
+],
+"page": "178",
+"q": "In India, which coffee variety is processed by the parchment coffee method?",
+"serial": "1241",
+"src_row": 1233,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1241"
+},
+{
+"expl": "Robusta requires 72 hours of natural fermentation.",
+"key": 2,
+"o": [
+"24\u201336 hrs",
+"48\u201360 hrs",
+"72 hrs",
+"96 hrs",
+"None of these"
+],
+"page": "178",
+"q": "What is the natural fermentation time for Robusta coffee?",
+"serial": "1242",
+"src_row": 1234,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1242"
+},
+{
+"expl": "The coffee berry borer (Hypothenemus hampei) is the main pest.",
+"key": 1,
+"o": [
+"Coffee leaf rust",
+"Coffee berry borer",
+"Coffee leaf miner",
+"Coffee stem borer",
+"None of these"
+],
+"page": "178",
+"q": "What is the serious pest of coffee?",
+"serial": "1243",
+"src_row": 1235,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1243"
+},
+{
+"expl": "Sanraman is a dwarf variety planted 1 \u00d7 1 m apart.",
+"key": 2,
+"o": [
+"1.5\u20132.0 m",
+"2.5 m",
+"1 \u00d7 1 m",
+"3 \u00d7 3 m",
+"None of these"
+],
+"page": "178",
+"q": "What is the spacing requirement for the dwarf Sanraman coffee variety?",
+"serial": "1244",
+"src_row": 1236,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1244"
+},
+{
+"expl": "The rubber tree is scientifically named Hevea brasiliensis.",
+"key": 0,
+"o": [
+"Hevea brasiliensis",
+"Quercus robur",
+"Gossypium hirsutum",
+"Pinus radiata",
+"None of these"
+],
+"page": "178",
+"q": "What is the botanical name of the rubber tree?",
+"serial": "1245",
+"src_row": 1237,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1245"
+},
+{
+"expl": "RRII-105 is the highest yielding hybrid clone of rubber.",
+"key": 0,
+"o": [
+"RRII-105",
+"RRII-110",
+"RRII-120",
+"RRII-115",
+"None of these"
+],
+"page": "178",
+"q": "Which hybrid clone is the highest yielding rubber clone worldwide?",
+"serial": "1246",
+"src_row": 1238,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "178:1246"
+}
+],
+"row_from": 1218,
+"row_to": 1239,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1218,
+"seeded_from": "2026-11-11"
+},
 "qidx": 0,
+"seeded_from": "2026-11-11",
+"skips": [],
 "step": 0
 },
 "malwa": {
