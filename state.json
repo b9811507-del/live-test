@@ -269131,11 +269131,14 @@
 "step": 0
 },
 "malwa": {
+"announced_at": "2026-11-12T11:00:00+05:30",
 "ans": {},
 "bidx": 1118,
 "lock_ts": 1794461369.965641,
 "locked_by": "43161421590",
+"msg_ann": 35520,
 "names": {},
+"pinned_ann": true,
 "plan": {
 "batch": 8,
 "bidx_next": 1118,
@@ -269492,7 +269495,7 @@
 "qidx": 0,
 "seeded_from": "2026-11-11",
 "skips": [],
-"step": 0,
+"step": 1,
 "vol": 0
 },
 "mix": {
