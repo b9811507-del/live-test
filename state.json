@@ -269132,9 +269132,366 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1118,
 "names": {},
+"plan": {
+"batch": 8,
+"bidx_next": 1118,
+"built_at": "2026-11-12T10:57:05+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 18,
+"pages": "Book pages 331-336",
+"pages_blocks": [
+"331-332",
+"333-334",
+"335-336"
+],
+"questions": [
+{
+"expl": "El Ni\u00f1o is associated with abnormal warming of Pacific sea surface temperatures, leading to deficient rainfall (drought) in India.",
+"key": 1,
+"o": [
+"Increased rainfall",
+"Deficient rainfall",
+"No change in rainfall",
+"Increased rainfall in other regions",
+"None of these"
+],
+"page": "331-332",
+"q": "El Ni\u00f1o causes which of the following rainfall patterns in India?",
+"serial": "1671",
+"src_row": 1100,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "331-332:1671"
+},
+{
+"expl": "La Ni\u00f1a is characterized by cooling of Pacific sea surface temperatures, causing increased rainfall over India.",
+"key": 1,
+"o": [
+"Decreased rainfall",
+"Increased rainfall",
+"No change in rainfall",
+"Increased rainfall in other regions",
+"None of these"
+],
+"page": "331-332",
+"q": "La Ni\u00f1a leads to which rainfall pattern over the Indian subcontinent?",
+"serial": "1672",
+"src_row": 1101,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "331-332:1672"
+},
+{
+"expl": "Deficit is defined as \u201320 % to \u201359 % of the annual normal rainfall.",
+"key": 1,
+"o": [
+"Normal",
+"Deficit",
+"Scarce/Deficit",
+"Excess",
+"None of these"
+],
+"page": "331-332",
+"q": "According to the Coefficient of Variation table, a rainfall of \u201335 % of the annual normal falls under which category?",
+"serial": "1673",
+"src_row": 1102,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "331-332:1673"
+},
+{
+"expl": "Southwest Monsoon accounts for 296 M ha\u2011m, i.e., 74 % of the annual total.",
+"key": 2,
+"o": [
+"Winter",
+"Pre\u2011monsoon",
+"Southwest Monsoon",
+"Northeast Monsoon",
+"None of these"
+],
+"page": "331-332",
+"q": "Which season contributes 74 % of India\u2019s annual water resources?",
+"serial": "1674",
+"src_row": 1103,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "331-332:1674"
+},
+{
+"expl": "The SI conversion given is 1 atm = 101.5 kPa.",
+"key": 0,
+"o": [
+"101.5 kPa",
+"100 kPa",
+"1013 kPa",
+"760 kPa",
+"None of these"
+],
+"page": "331-332",
+"q": "1 atm is equivalent to how many kilopascals (kPa)?",
+"serial": "1675",
+"src_row": 1104,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "331-332:1675"
+},
+{
+"expl": "Relative humidity of 70 % means there is a 30 % deficit of water vapour relative to saturation.",
+"key": 1,
+"o": [
+"70 % of saturation is present",
+"30 % deficit of water vapour for saturation",
+"30 % excess of water vapour",
+"70 % excess of water vapour",
+"None of these"
+],
+"page": "331-332",
+"q": "If the relative humidity is 70 %, what does this indicate?",
+"serial": "1676",
+"src_row": 1105,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "331-332:1676"
+},
+{
+"expl": "GDD = [(28+12)/2] \u2013 10 = 20 \u2013 10 = 10 GDD.",
+"key": 0,
+"o": [
+"10 GDD",
+"8 GDD",
+"12 GDD",
+"14 GDD",
+"None of these"
+],
+"page": "333-334",
+"q": "A farmer records a maximum temperature of 28\u00b0C and a minimum temperature of 12\u00b0C on a particular day. If the base temperature for the crop is 10\u00b0C, what is the Growing Degree Days (GDD) for that day?",
+"serial": "1681",
+"src_row": 1106,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "333-334:1681"
+},
+{
+"expl": "The base temperature for wheat is 4.5\u00b0C as stated in the source.",
+"key": 0,
+"o": [
+"4.5\u00b0C",
+"10\u00b0C",
+"15\u00b0C",
+"20\u00b0C",
+"None of these"
+],
+"page": "333-334",
+"q": "What is the base temperature for wheat?",
+"serial": "1682",
+"src_row": 1107,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "333-334:1682"
+},
+{
+"expl": "Frost, fog, mist, and dew are condensation forms; rain is precipitation.",
+"key": 0,
+"o": [
+"Frost",
+"Fog",
+"Mist",
+"Rain",
+"None of these"
+],
+"page": "333-334",
+"q": "Which of the following is a form of condensation but not precipitation?",
+"serial": "1683",
+"src_row": 1108,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "333-334:1683"
+},
+{
+"expl": "Frost injury happens when temperatures drop below freezing, i.e., 0\u00b0C.",
+"key": 0,
+"o": [
+"0\u00b0C",
+"5\u00b0C",
+"-5\u00b0C",
+"10\u00b0C",
+"None of these"
+],
+"page": "333-334",
+"q": "Frost injury to crops occurs when temperatures fall below what threshold?",
+"serial": "1684",
+"src_row": 1109,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "333-334:1684"
+},
+{
+"expl": "Castor is mentioned as a frost\u2011sensitive crop in the source.",
+"key": 0,
+"o": [
+"Castor",
+"Wheat",
+"Rice",
+"Sugarcane",
+"None of these"
+],
+"page": "333-334",
+"q": "Which crop listed below is known to be frost\u2011sensitive?",
+"serial": "1685",
+"src_row": 1110,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "333-334:1685"
+},
+{
+"expl": "Drought irrigation is not listed as a frost protection method in the source.",
+"key": 3,
+"o": [
+"Spray of sulphuric acid (0.1%)",
+"Mulching",
+"Sprinkler irrigation in the evening",
+"Drought irrigation",
+"None of these"
+],
+"page": "333-334",
+"q": "Which of the following is NOT a recommended protective measure against frost?",
+"serial": "1686",
+"src_row": 1111,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "333-334:1686"
+},
+{
+"expl": "The Arabian Sea branch supplies roughly 770 mm, about 80% of the total rainfall.",
+"key": 1,
+"o": [
+"Bay of Bengal Branch",
+"Arabian Sea Branch",
+"Northeast Monsoon",
+"Western Disturbance",
+"None of these"
+],
+"page": "335-336",
+"q": "Which monsoon branch contributes about 80% of India\u2019s annual rainfall?",
+"serial": "1691",
+"src_row": 1112,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "335-336:1691"
+},
+{
+"expl": "Tamil Nadu records about 700 mm of rainfall in the October\u2011December period.",
+"key": 1,
+"o": [
+"Andhra Pradesh",
+"Tamil Nadu",
+"Kerala",
+"Maharashtra",
+"None of these"
+],
+"page": "335-336",
+"q": "During the Northeast Monsoon, which state receives 700 mm of rainfall?",
+"serial": "1692",
+"src_row": 1113,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "335-336:1692"
+},
+{
+"expl": "Isolated rain is defined as covering <25% (<1/3) of the area.",
+"key": 0,
+"o": [
+"Isolated rain",
+"Scattered rain",
+"Widespread rain",
+"Heavy rain",
+"None of these"
+],
+"page": "335-336",
+"q": "Which type of rainfall covers less than one\u2011third of the area?",
+"serial": "1693",
+"src_row": 1114,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "335-336:1693"
+},
+{
+"expl": "Isopluvial lines connect points of equal rainfall depth.",
+"key": 2,
+"o": [
+"Isobar",
+"Isopleth",
+"Isopluvial",
+"Isohyet",
+"None of these"
+],
+"page": "335-336",
+"q": "Which contour line joins points of equal rainfall depth?",
+"serial": "1694",
+"src_row": 1115,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "335-336:1694"
+},
+{
+"expl": "Nowcasting is used for 0\u20136 hour predictions.",
+"key": 3,
+"o": [
+"Short\u2011Range",
+"Medium\u2011Range",
+"Long\u2011Range",
+"Nowcasting",
+"None of these"
+],
+"page": "335-336",
+"q": "Which weather\u2011forecasting type has a validity period of 0\u20136 hours?",
+"serial": "1695",
+"src_row": 1116,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "335-336:1695"
+},
+{
+"expl": "Photosynthesis is not mentioned among the hydrological cycle processes.",
+"key": 3,
+"o": [
+"Evaporation",
+"Condensation",
+"Infiltration",
+"Photosynthesis",
+"None of these"
+],
+"page": "335-336",
+"q": "Which process is NOT listed as part of the hydrological cycle in the source?",
+"serial": "1696",
+"src_row": 1117,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "335-336:1696"
+}
+],
+"rolled": false,
+"row_from": 1100,
+"row_to": 1118,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1100,
+"seeded_from": "2026-11-11",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-11",
+"skips": [],
+"step": 0,
+"vol": 0
 },
 "mix": {
 "ans": {},
