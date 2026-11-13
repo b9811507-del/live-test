@@ -272287,6 +272287,8 @@
 "cd": 1,
 "congrats_sent": 35640,
 "cta_sent": "off",
+"done_at": "2026-11-13T11:12:37+05:30",
+"elapsed_s": 889,
 "expl_in_poll": 21,
 "file_msg": 35641,
 "file_sent": "MALWA_VOL_1_p5-342_21Q_2026-11-13.html",
@@ -272296,8 +272298,18 @@
 "lb_rows": 18,
 "lb_sent": true,
 "lock_ts": 1794548517.3152952,
-"locked_by": "43372129654",
+"locked_by": "",
 "msg_ann": 35615,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 35617,
 "names": {
 "1107062740": "AADYA\ud83c\udf34\ud83e\udd9c\ud83e\uddff",
@@ -272319,6 +272331,8 @@
 "8797499130": "Rbaghel001",
 "978174619": "Kuldeep758"
 },
+"paid_msg": 35643,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "batch": 8,
@@ -272758,7 +272772,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-11-13T11:00:23+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 35642,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 343-348\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 179, 180, 181",
 "vol": 0
