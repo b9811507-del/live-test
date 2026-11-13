@@ -273552,7 +273552,590 @@
 "mix": {
 "ans": {},
 "names": {},
+"plan": {
+"built_at": "2026-11-13T17:57:47+05:30",
+"kind": "mix",
+"label": "AGRI MIX TEST",
+"n": 30,
+"pages": "All subjects (topic-wise mix)",
+"questions": [
+{
+"bucket": "Soil Science",
+"expl": "Cobalt is essential for the growth of symbiotic microorganisms like Rhizobium, which are involved in nitrogen fixation, and it is also required for the formation of vitamin B12.",
+"key": 1,
+"o": [
+"It directly fixes nitrogen in the soil",
+"It is essential for the formation of vitamin B12 in symbiotic microorganisms",
+"It acts as a catalyst for the conversion of nitrates to ammonia",
+"It enhances the solubility of nitrogen in water",
+"None of these"
+],
+"page": "1060",
+"q": "What is the primary role of cobalt in nitrogen fixation?",
+"serial": "1",
+"src_row": 7347,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:iari:r7347"
+},
+{
+"bucket": "Agronomy",
+"expl": "Cotton\u2019s botanical name is given as Gossipium spp., which is the same as Gossypium.",
+"key": 0,
+"o": [
+"Gossypium spp.",
+"Glycine max spp.",
+"Zea mays spp.",
+"Triticum spp.",
+"None of these"
+],
+"page": "118",
+"q": "The botanical name of cotton is ____.",
+"serial": "2",
+"src_row": 815,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:rksharma:r815"
+},
+{
+"bucket": "Horticulture",
+"expl": "Copra, the dried kernel of coconut, contains 65 to 70 percent oil.",
+"key": 2,
+"o": [
+"50-55%",
+"60-65%",
+"65-70%",
+"70-75%",
+"None of these"
+],
+"page": "174",
+"q": "What is the oil content percentage in copra obtained from coconut?",
+"serial": "3",
+"src_row": 1209,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:iari:r1209"
+},
+{
+"bucket": "Entomology & Plant Pathology",
+"expl": "Rangpur lime rootstock is specifically mentioned as tolerant to CTV.",
+"key": 1,
+"o": [
+"Sour orange",
+"Rangpur lime",
+"Grapefruit",
+"Acid lime",
+"None of these"
+],
+"page": "543",
+"q": "Which rootstock is tolerant to Citrus tristeza virus (CTV)?",
+"serial": "4",
+"src_row": 3770,
+"topic": "Plant Pathology",
+"trunc": 0,
+"uid": "mix:iari:r3770"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "The source states that Casein protein does not coagulate while heating, unlike other proteins like Lacto-Albumin and Lacto-Globulin.",
+"key": 0,
+"o": [
+"Casein",
+"Lacto-Albumin",
+"Lacto-Globulin",
+"Albumin",
+"None of these"
+],
+"page": "391",
+"q": "Which protein in milk does NOT coagulate upon heating?",
+"serial": "5",
+"src_row": 2708,
+"topic": "Animal Husbandry and Poultry Farming",
+"trunc": 0,
+"uid": "mix:iari:r2708"
+},
+{
+"bucket": "Soil Science",
+"expl": "The B horizon in arid zones often accumulates calcium carbonate (CaCO\u2083) and related salts.",
+"key": 2,
+"o": [
+"Iron oxides",
+"Aluminum oxides",
+"Calcium carbonate",
+"Silica sand",
+"None of these"
+],
+"page": "153",
+"q": "In arid regions, which mineral is commonly deposited in the B (illuvial) horizon?",
+"serial": "6",
+"src_row": 1033,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:nemraj:r1033"
+},
+{
+"bucket": "Agricultural Economics & Extension",
+"expl": "The source categorizes wants into necessaries, comforts, and luxuries, defining necessaries as essential for existence and efficiency.",
+"key": 0,
+"o": [
+"Necessaries",
+"Comforts",
+"Luxuries",
+"All of the above",
+"None of these"
+],
+"page": "560",
+"q": "Which type of want is described as essential for existence and maintaining efficiency?",
+"serial": "7",
+"src_row": 3888,
+"topic": "Agricultural Economics",
+"trunc": 0,
+"uid": "mix:iari:r3888"
+},
+{
+"bucket": "Entomology & Plant Pathology",
+"expl": "The Spotted pod borer (Maruca testulalis) is known for webbing together the flowers and feeding on them, as well as boring into the pods.",
+"key": 1,
+"o": [
+"Gram pod borer (Helicoverpa armigera)",
+"Spotted pod borer (Maruca testulalis)",
+"Bean pod moth (Etiella zinckenella)",
+"Gram cutworm (Agrotis ipsilon)",
+"None of these"
+],
+"page": "313",
+"q": "Which pest webs together the flowers and feeds on them, also boring into the pods?",
+"serial": "8",
+"src_row": 2189,
+"topic": "Entomology",
+"trunc": 0,
+"uid": "mix:malwa_vol2:r2189"
+},
+{
+"bucket": "Soil Science",
+"expl": "Oxisols are defined by an Oxic horizon and do not contain an Argillic horizon.",
+"key": 0,
+"o": [
+"Oxisols",
+"Vertisols",
+"Aridisols",
+"Ultisols",
+"None of these"
+],
+"page": "1012",
+"q": "Which soil order is characterized by an Oxic horizon and lacks an Argillic horizon?",
+"serial": "9",
+"src_row": 7008,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:iari:r7008"
+},
+{
+"bucket": "Statistics & Meteorology",
+"expl": "Randomization is the principle used to reduce bias in experimental design by allocating treatments randomly to experimental units.",
+"key": 1,
+"o": [
+"Replication",
+"Randomization",
+"Local control",
+"Data transformation",
+"None of these"
+],
+"page": "564-565",
+"q": "Which principle of experimental design is used to reduce bias?",
+"serial": "10",
+"src_row": 1901,
+"topic": "Agricultural Statistics",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r1901"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "The ICAR-Central Institute of Cotton Research is specifically mentioned as being located in Nagpur.",
+"key": 0,
+"o": [
+"ICAR-Central Institute of Cotton Research",
+"ICAR-Central Institute for Research on Goats",
+"ICAR-Central Institute of Agricultural Engineering",
+"ICAR-Central Institute for Arid Horticulture",
+"None of these"
+],
+"page": "634",
+"q": "Which of the following ICAR institutes is located in Nagpur?",
+"serial": "11",
+"src_row": 4380,
+"topic": "Fisheries Science",
+"trunc": 0,
+"uid": "mix:rksharma:r4380"
+},
+{
+"bucket": "Soil Science",
+"expl": "Ammonium nitrate has a CRH of 59, the lowest among the listed fertilizers, making it the most hygroscopic.",
+"key": 3,
+"o": [
+"Urea",
+"Ammonium sulphate",
+"DAP",
+"Ammonium nitrate",
+"None of these"
+],
+"page": "279-280",
+"q": "Which of the following fertilizers has the lowest critical relative humidity, indicating it is the most hygroscopic?",
+"serial": "12",
+"src_row": 924,
+"topic": "Soil Science",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r924"
+},
+{
+"bucket": "Agronomy",
+"expl": "The source states that higher doses of nitrogen during the ripening stage decrease sucrose content.",
+"key": 2,
+"o": [
+"Phosphorus",
+"Potash",
+"Nitrogen",
+"Sulphur",
+"None of these"
+],
+"page": "61",
+"q": "Which nutrient's higher dose during the ripening stage decreases sucrose content in sugarcane?",
+"serial": "13",
+"src_row": 423,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:iari:r423"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "Carassius auratus is listed among the larvivorous fishes, which prefer mosquito larvae and feed on them throughout their life.",
+"key": 0,
+"o": [
+"Carassius auratus",
+"Catla catla",
+"Labeo rohita",
+"Cirrhinus cirrhosa",
+"None of these"
+],
+"page": "620",
+"q": "Which of the following fish species is known for its larvivorous nature?",
+"serial": "14",
+"src_row": 4277,
+"topic": "Animal Husbandry and Poultry Farming",
+"trunc": 0,
+"uid": "mix:rksharma:r4277"
+},
+{
+"bucket": "General Agriculture",
+"expl": "Disaccharides are linked by glycosidic bonds, as stated in the source. Peptide and ester bonds involve amino acids and fatty acids respectively.",
+"key": 2,
+"o": [
+"Peptide bond",
+"Ester bond",
+"Glycosidic bond",
+"Hydrogen bond",
+"None of these"
+],
+"page": "246",
+"q": "Two monosaccharides join to form a disaccharide through which type of bond?",
+"serial": "15",
+"src_row": 1719,
+"topic": "Plant Biochemistry",
+"trunc": 0,
+"uid": "mix:malwa_vol2:r1719"
+},
+{
+"bucket": "Horticulture",
+"expl": "The basic taxonomic category or basic unit of classification is species.",
+"key": 2,
+"o": [
+"Genus",
+"Family",
+"Species",
+"Order",
+"None of these"
+],
+"page": "180",
+"q": "What is the basic unit of classification in taxonomy?",
+"serial": "16",
+"src_row": 1257,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:malwa_horti:r1257"
+},
+{
+"bucket": "Entomology & Plant Pathology",
+"expl": "Armyworms (Mythimna separata) are nocturnal; their larvae feed at night and can completely defoliate rice plants.",
+"key": 0,
+"o": [
+"Mythimna separata (Armyworm)",
+"Cnaphalocrocis medialis (Leaf folder)",
+"Platygaster oryzae (Parasitoid)",
+"Hierophylus banian (Grasshopper)",
+"None of these"
+],
+"page": "311",
+"q": "Which pest\u2019s larvae are nocturnal and cause defoliation of rice crops during night-time feeding?",
+"serial": "17",
+"src_row": 2173,
+"topic": "Entomology",
+"trunc": 0,
+"uid": "mix:malwa_vol2:r2173"
+},
+{
+"bucket": "Agricultural Engineering",
+"expl": "The source specifies that the groundnut thresher can be run by a 5 hp electric motor with a capacity of 400 kg pods/hr.",
+"key": 2,
+"o": [
+"Paddy thresher",
+"Maize thresher",
+"Groundnut thresher",
+"CIAE Multi crop thresher",
+"None of these"
+],
+"page": "920",
+"q": "Which thresher can be run by a 5 hp electric motor and has a capacity of 400 kg pods/hr?",
+"serial": "18",
+"src_row": 6376,
+"topic": "Agricultural Engineering",
+"trunc": 0,
+"uid": "mix:iari:r6376"
+},
+{
+"bucket": "Genetics & Plant Breeding",
+"expl": "Somatic hybridization involves the fusion of somatic cells, allowing genetic material from different plants to merge.",
+"key": 1,
+"o": [
+"Crossing of two genotypically different plants via pollen",
+"Fusion of somatic cells from different plants to combine their genomes",
+"Infection of a plant by a bacteriophage",
+"Artificial selection of desirable traits over generations",
+"None of these"
+],
+"page": "859",
+"q": "Which definition best matches somatic hybridization?",
+"serial": "19",
+"src_row": 5948,
+"topic": "Plant Breeding",
+"trunc": 0,
+"uid": "mix:iari:r5948"
+},
+{
+"bucket": "Animal Husbandry",
+"expl": "The source states that fish contains about 18-20% protein on a fresh-weight basis.",
+"key": 2,
+"o": [
+"10-12%",
+"15-17%",
+"18-20%",
+"22-25%",
+"None of these"
+],
+"page": "387",
+"q": "What is the approximate protein content of fish on a fresh-weight basis?",
+"serial": "20",
+"src_row": 2682,
+"topic": "Fisheries",
+"trunc": 0,
+"uid": "mix:iari:r2682"
+},
+{
+"bucket": "Agricultural Engineering",
+"expl": "The Henderson equation is the most popular equation for determining Equilibrium Moisture Content (EMC).",
+"key": 2,
+"o": [
+"Newton's equation",
+"Einstein's equation",
+"Henderson equation",
+"Boyle's equation",
+"None of these"
+],
+"page": "585",
+"q": "Which equation is commonly used for determining Equilibrium Moisture Content (EMC) in grains?",
+"serial": "21",
+"src_row": 4034,
+"topic": "Agricultural Engineering",
+"trunc": 0,
+"uid": "mix:rksharma:r4034"
+},
+{
+"bucket": "Agronomy",
+"expl": "Methyl-bromide is an example of a temporary soil sterilant, which sterilizes the soil for a relatively short period, usually 15-16 weeks.",
+"key": 2,
+"o": [
+"Triazines",
+"Phenyl ureas",
+"Methyl-bromide",
+"Glyphosate",
+"None of these"
+],
+"page": "135",
+"q": "Which of the following is an example of a temporary soil sterilant?",
+"serial": "22",
+"src_row": 904,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:nemraj:r904"
+},
+{
+"bucket": "Statistics & Meteorology",
+"expl": "Uttar Pradesh is the largest producer of milk in India as per the data provided.",
+"key": 0,
+"o": [
+"Uttar Pradesh",
+"Rajasthan",
+"Punjab",
+"Gujarat",
+"None of these"
+],
+"page": "427",
+"q": "Which state in India is the largest producer of milk?",
+"serial": "23",
+"src_row": 2947,
+"topic": "Agricultural Statistics",
+"trunc": 0,
+"uid": "mix:nemraj:r2947"
+},
+{
+"bucket": "Horticulture",
+"expl": "The text explicitly states that the variety developed using Genetic Male Sterility (GMS) is CH-1.",
+"key": 0,
+"o": [
+"CH-1",
+"Arka Mohini",
+"Pusa Deepti",
+"Punjab lal",
+"None of these"
+],
+"page": "455",
+"q": "Which variety of chilli is developed using Genetic Male Sterility (GMS)?",
+"serial": "24",
+"src_row": 3155,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:rksharma:r3155"
+},
+{
+"bucket": "Agricultural Engineering",
+"expl": "An unconfined aquifer, also known as a free or phreatic aquifer, has water that is not under pressure.",
+"key": 2,
+"o": [
+"Confined aquifer",
+"Artesian aquifer",
+"Unconfined aquifer",
+"Pressure aquifer",
+"None of these"
+],
+"page": "589",
+"q": "Which type of aquifer is characterized by water not being under pressure?",
+"serial": "25",
+"src_row": 4062,
+"topic": "Agricultural Engineering",
+"trunc": 0,
+"uid": "mix:rksharma:r4062"
+},
+{
+"bucket": "Agricultural Economics & Extension",
+"expl": "Entropy is defined as the ability to minimize the uncertainty or disorganization of a system at the receiving end.",
+"key": 1,
+"o": [
+"To maximize the uncertainty of a system",
+"To minimize the uncertainty or disorganization of a system at the receiving end",
+"To increase the randomness of the message",
+"To create more choices for the audience",
+"None of these"
+],
+"page": "450-451",
+"q": "What is the primary purpose of entropy in communication?",
+"serial": "26",
+"src_row": 1512,
+"topic": "Agricultural Extension",
+"trunc": 0,
+"uid": "mix:malwa_vol1:r1512"
+},
+{
+"bucket": "Genetics & Plant Breeding",
+"expl": "Dolly the sheep is historically recognized as the first cloned mammal, developed in Scotland.",
+"key": 0,
+"o": [
+"Dolly the sheep",
+"Bollgard Cotton",
+"FlavrSavr Tomato",
+"New Leaf Potato",
+"None of these"
+],
+"page": "207",
+"q": "Which of the following is the first cloned mammal in the world?",
+"serial": "27",
+"src_row": 1442,
+"topic": "Plant Biotechnology",
+"trunc": 0,
+"uid": "mix:malwa_vol2:r1442"
+},
+{
+"bucket": "Horticulture",
+"expl": "The source states the average yield as 1000-2000 fruits per tree.",
+"key": 1,
+"o": [
+"500-1000 fruits",
+"1000-2000 fruits",
+"2000-3000 fruits",
+"3000-4000 fruits",
+"None of these"
+],
+"page": "140",
+"q": "What is the average yield range per tree for mango varieties mentioned in the source?",
+"serial": "28",
+"src_row": 971,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "mix:iari:r971"
+},
+{
+"bucket": "Agronomy",
+"expl": "The application rate of Metribuzin for potato farming is 300.00 g/acre.",
+"key": 1,
+"o": [
+"1600.00 g/acre",
+"300.00 g/acre",
+"400-600 g/acre",
+"700.00 g/acre",
+"None of these"
+],
+"page": "188",
+"q": "What is the application rate of Metribuzin for potato farming?",
+"serial": "29",
+"src_row": 1296,
+"topic": "Agronomy",
+"trunc": 0,
+"uid": "mix:rksharma:r1296"
+},
+{
+"bucket": "Agricultural Economics & Extension",
+"expl": "A binomial distribution is an example of a discrete distribution where the variable can take only integer values.",
+"key": 1,
+"o": [
+"Normal distribution",
+"Binomial distribution",
+"Exponential distribution",
+"Uniform distribution",
+"None of these"
+],
+"page": "418",
+"q": "Which of the following is an example of a discrete distribution?",
+"serial": "30",
+"src_row": 2889,
+"topic": "Agricultural Economics",
+"trunc": 0,
+"uid": "mix:nemraj:r2889"
+}
+],
+"skip_rows": [],
+"src": "mix:malwa_vol1,malwa_vol2,malwa_horti,iari,nemraj,rksharma",
+"trunc": 0
+},
 "qidx": 0,
+"skips": [],
 "step": 0
 }
 }
