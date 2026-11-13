@@ -271934,9 +271934,420 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1139,
 "names": {},
+"plan": {
+"batch": 8,
+"bidx_next": 1139,
+"built_at": "2026-11-13T10:57:45+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 21,
+"pages": "Book pages 5-342",
+"pages_blocks": [
+"337-338",
+"5-340",
+"341-342"
+],
+"questions": [
+{
+"expl": "Geostationary satellites orbit at an altitude of 36,000 km to match Earth's rotation.",
+"key": 0,
+"o": [
+"36,000 km",
+"20,000 km",
+"12,000 km",
+"8,000 km",
+"None of these"
+],
+"page": "337-338",
+"q": "At what altitude are geostationary satellites placed above the Earth?",
+"serial": "1701",
+"src_row": 1118,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "337-338:1701"
+},
+{
+"expl": "The IMD model incorporates 16 distinct input parameters for forecasting.",
+"key": 1,
+"o": [
+"12",
+"16",
+"20",
+"24",
+"None of these"
+],
+"page": "337-338",
+"q": "How many input parameters does the IMD long\u2011range weather forecasting model use?",
+"serial": "1702",
+"src_row": 1119,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "337-338:1702"
+},
+{
+"expl": "Cold deserts are characteristic of the Ladakh and J&K areas.",
+"key": 1,
+"o": [
+"Rajasthan",
+"Ladakh and Jammu & Kashmir",
+"Gujarat",
+"Punjab",
+"None of these"
+],
+"page": "337-338",
+"q": "Cold desert (cold arid zone) is found in which region?",
+"serial": "1703",
+"src_row": 1120,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "337-338:1703"
+},
+{
+"expl": "Sandy soil loses heat quickly, increasing frost damage risk.",
+"key": 2,
+"o": [
+"Clay",
+"Loam",
+"Sandy",
+"Silt",
+"None of these"
+],
+"page": "337-338",
+"q": "Frost damage is more common in which type of soil?",
+"serial": "1704",
+"src_row": 1121,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "337-338:1704"
+},
+{
+"expl": "Dry adiabatic lapse rate is 10\u00b0C per kilometer of altitude change.",
+"key": 1,
+"o": [
+"5\u00b0C/km",
+"10\u00b0C/km",
+"15\u00b0C/km",
+"20\u00b0C/km",
+"None of these"
+],
+"page": "337-338",
+"q": "What is the dry adiabatic lapse rate?",
+"serial": "1705",
+"src_row": 1122,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "337-338:1705"
+},
+{
+"expl": "Approximately 3,700\u20134,100 calories of solar energy are needed per gram of dry matter.",
+"key": 2,
+"o": [
+"1,000\u20131,500 cal",
+"2,000\u20132,500 cal",
+"3,700\u20134,100 cal",
+"5,000\u20135,500 cal",
+"None of these"
+],
+"page": "337-338",
+"q": "How much solar radiation is required to produce 1 gram of dry plant matter?",
+"serial": "1706",
+"src_row": 1123,
+"topic": "Agrometeorology",
+"trunc": 0,
+"uid": "337-338:1706"
+},
+{
+"expl": "The census data shows a rise from 512 million to 535.78 million, a 4.6% increase.",
+"key": 0,
+"o": [
+"4.6%",
+"5.2%",
+"3.8%",
+"6.1%",
+"None of these"
+],
+"page": "5-340",
+"q": "Which of the following best represents the increase in total livestock population in India from 2012 to 2019?",
+"serial": "1711",
+"src_row": 1124,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1711"
+},
+{
+"expl": "The livestock sector contributes about 4.11% to India\u2019s GDP.",
+"key": 0,
+"o": [
+"4.11%",
+"6.5%",
+"3.2%",
+"5.8%",
+"None of these"
+],
+"page": "5-340",
+"q": "What is the approximate share of the livestock sector in India's total GDP?",
+"serial": "1712",
+"src_row": 1125,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1712"
+},
+{
+"expl": "West Bengal had the highest cattle population of 192.49 million.",
+"key": 0,
+"o": [
+"West Bengal",
+"Uttar Pradesh",
+"Rajasthan",
+"Tamil Nadu",
+"None of these"
+],
+"page": "5-340",
+"q": "According to the 20th livestock census, which Indian state had the highest cattle population?",
+"serial": "1713",
+"src_row": 1126,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1713"
+},
+{
+"expl": "One LSU equals five sheep or goats.",
+"key": 1,
+"o": [
+"3",
+"5",
+"2",
+"4",
+"None of these"
+],
+"page": "5-340",
+"q": "In the livestock unit (LSU) system, how many sheep or goats equal one LSU?",
+"serial": "1714",
+"src_row": 1127,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1714"
+},
+{
+"expl": "IVRI was founded in 1889, earlier than the others.",
+"key": 0,
+"o": [
+"IVRI",
+"NDRI",
+"CIRB",
+"CARI",
+"None of these"
+],
+"page": "5-340",
+"q": "Which institution was established first among the listed Indian livestock research institutes?",
+"serial": "1715",
+"src_row": 1128,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1715"
+},
+{
+"expl": "Carpet grade wool constitutes 85% of total wool production.",
+"key": 0,
+"o": [
+"85%",
+"70%",
+"60%",
+"75%",
+"None of these"
+],
+"page": "5-340",
+"q": "What percentage of India's total wool production is carpet grade wool?",
+"serial": "1716",
+"src_row": 1129,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1716"
+},
+{
+"expl": "The first independent census was held in 1951.",
+"key": 0,
+"o": [
+"1951",
+"1955",
+"1960",
+"1948",
+"None of these"
+],
+"page": "5-340",
+"q": "The first livestock census in independent India was conducted in which year?",
+"serial": "1717",
+"src_row": 1130,
+"topic": "General Agriculture",
+"trunc": 0,
+"uid": "5-340:1717"
+},
+{
+"expl": "The source notes that the last\u2011born piglet is known as a Runt.",
+"key": 0,
+"o": [
+"Runt",
+"Card",
+"Crit",
+"Suckling",
+"None of these"
+],
+"page": "341-342",
+"q": "The last\u2011born piglet is commonly referred to as what?",
+"serial": "1721",
+"src_row": 1131,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1721"
+},
+{
+"expl": "Indigenous humped cattle belong to the species Bos indicus.",
+"key": 1,
+"o": [
+"Bos taurus",
+"Bos indicus",
+"Bos primigenius",
+"Bos grunniens",
+"None of these"
+],
+"page": "341-342",
+"q": "Indigenous humped cattle are scientifically known as?",
+"serial": "1722",
+"src_row": 1132,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1722"
+},
+{
+"expl": "The family listed for cattle is Bovidae.",
+"key": 0,
+"o": [
+"Bovidae",
+"Cervidae",
+"Equidae",
+"Suidae",
+"None of these"
+],
+"page": "341-342",
+"q": "Cattle belong to which biological family?",
+"serial": "1723",
+"src_row": 1133,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1723"
+},
+{
+"expl": "The text states that about 36% of total livestock is contributed by cattle.",
+"key": 1,
+"o": [
+"25%",
+"36%",
+"48%",
+"60%",
+"None of these"
+],
+"page": "341-342",
+"q": "Cattle contribute approximately what percentage to the total livestock of India?",
+"serial": "1724",
+"src_row": 1134,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1724"
+},
+{
+"expl": "The nutrient conversion efficiency for milk production is given as 38%.",
+"key": 1,
+"o": [
+"25%",
+"38%",
+"45%",
+"52%",
+"None of these"
+],
+"page": "341-342",
+"q": "Milk production in a cow has a nutrient conversion efficiency of about?",
+"serial": "1725",
+"src_row": 1135,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1725"
+},
+{
+"expl": "The source lists 13 pairs (26 ribs) for a cow.",
+"key": 1,
+"o": [
+"12 pairs",
+"13 pairs",
+"14 pairs",
+"15 pairs",
+"None of these"
+],
+"page": "341-342",
+"q": "A cow has how many pairs of ribs?",
+"serial": "1726",
+"src_row": 1136,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1726"
+},
+{
+"expl": "Exotic cattle have an average dry period of 60 days.",
+"key": 0,
+"o": [
+"60 days",
+"75 days",
+"90 days",
+"120 days",
+"None of these"
+],
+"page": "341-342",
+"q": "The average dry period for exotic cattle is approximately how many days?",
+"serial": "1727",
+"src_row": 1137,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1727"
+},
+{
+"expl": "The conversion rate of beta carotene to vitamin A is 24%.",
+"key": 1,
+"o": [
+"12%",
+"24%",
+"36%",
+"48%",
+"None of these"
+],
+"page": "341-342",
+"q": "Conversion of beta carotene to vitamin A in cattle is about?",
+"serial": "1728",
+"src_row": 1138,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "341-342:1728"
+}
+],
+"rolled": false,
+"row_from": 1118,
+"row_to": 1139,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1118,
+"seeded_from": "2026-11-12",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-12",
+"skips": [],
+"step": 0,
+"vol": 0
 },
 "mix": {
 "ans": {},
