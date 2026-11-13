@@ -273551,7 +273551,9 @@
 },
 "mix": {
 "announced_at": "2026-11-13T18:00:00+05:30",
-"ans": {},
+"ans": {
+"0": {}
+},
 "cd": 1,
 "lock_ts": 1794573027.3394806,
 "locked_by": "43425252046",
@@ -274141,9 +274143,13 @@
 "src": "mix:malwa_vol1,malwa_vol2,malwa_horti,iari,nemraj,rksharma",
 "trunc": 0
 },
+"poll_ids": {
+"0": "6321289774845920853"
+},
 "qidx": 0,
 "sent_i": 0,
 "skips": [],
+"start_saved": true,
 "started_at": "2026-11-13T18:00:25+05:30",
 "step": 2
 }
