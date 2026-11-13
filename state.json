@@ -271928,8 +271928,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1260,
 "names": {},
+"plan": {
+"bidx_next": 1260,
+"built_at": "2026-11-13T14:28:20+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 179-181",
+"pages_list": [
+179,
+180,
+181
+],
+"questions": [
+{
+"expl": "The SOURCE explicitly states that commercial propagation of rubber trees is done via forket budding.",
+"key": 1,
+"o": [
+"Grafting",
+"Forket budding",
+"Layering",
+"Cutting",
+"None of these"
+],
+"page": "179",
+"q": "Which propagation method is commercially used for rubber trees?",
+"serial": "1247",
+"src_row": 1239,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1247"
+},
+{
+"expl": "Tapping is a controlled wounding process to cut open latex vessels or remove coagulum that blocks them, as described in the SOURCE.",
+"key": 1,
+"o": [
+"To remove excess leaves",
+"To cut open latex vessels or remove coagulum blocking them",
+"To fertilize the tree",
+"To prune branches for better growth",
+"None of these"
+],
+"page": "179",
+"q": "What is the primary purpose of tapping in rubber trees?",
+"serial": "1248",
+"src_row": 1240,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1248"
+},
+{
+"expl": "The SOURCE specifies that the tapping depth should be 1 mm close to the cambium.",
+"key": 1,
+"o": [
+"2 mm close to cambium",
+"1 mm close to cambium",
+"3 mm close to cambium",
+"0.5 mm close to cambium",
+"None of these"
+],
+"page": "179",
+"q": "At what depth should tapping be done in rubber trees to avoid damage?",
+"serial": "1249",
+"src_row": 1241,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1249"
+},
+{
+"expl": "The SOURCE lists Metrolac and Latex meter as instruments for measuring rubber percentage, while hydrometer and refractometer are not mentioned.",
+"key": 2,
+"o": [
+"Metrolac",
+"Latex meter",
+"Hydrometer",
+"Refractometer",
+"None of these"
+],
+"page": "179",
+"q": "Which instrument is NOT used for measuring rubber percentage in latex?",
+"serial": "1250",
+"src_row": 1242,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1250"
+},
+{
+"expl": "The SOURCE classifies Dura as the oil palm variant with a shell present.",
+"key": 2,
+"o": [
+"Pisifera",
+"Tenera",
+"Dura",
+"Hybrid",
+"None of these"
+],
+"page": "179",
+"q": "Which type of oil palm variant has a shell present?",
+"serial": "1251",
+"src_row": 1243,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1251"
+},
+{
+"expl": "The SOURCE states that oil palm is an entomophilous crop, with pollination facilitated by weevils (Elaeidobius kamerunicus).",
+"key": 2,
+"o": [
+"Anemophilous",
+"Hydrophilous",
+"Entomophilous",
+"Self-pollination",
+"None of these"
+],
+"page": "179",
+"q": "What is the mode of pollination in oil palm?",
+"serial": "1252",
+"src_row": 1244,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1252"
+},
+{
+"expl": "The SOURCE describes cocoa as a shade-loving evergreen tree and a rich source of polyphenols and antioxidants.",
+"key": 1,
+"o": [
+"Oil palm",
+"Cocoa",
+"Palmyrah",
+"Rubber",
+"None of these"
+],
+"page": "179",
+"q": "Which crop among the following is described as a shade-loving evergreen tree and a rich source of polyphenols and antioxidants?",
+"serial": "1253",
+"src_row": 1245,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "179:1253"
+},
+{
+"expl": "Tomato is listed under the 'Raceme' type of inflorescence in the classification provided.",
+"key": 2,
+"o": [
+"Carrot",
+"Beet root",
+"Tomato",
+"Lettuce",
+"None of these"
+],
+"page": "180",
+"q": "Which of the following vegetables belongs to the 'Raceme' type of inflorescence?",
+"serial": "1254",
+"src_row": 1246,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1254"
+},
+{
+"expl": "Garlic's scientific name is explicitly given as *Allium sativum* in the botanical classification.",
+"key": 1,
+"o": [
+"Allium cepa",
+"Allium sativum",
+"Dioscorea alata",
+"Colocasia esculenta",
+"None of these"
+],
+"page": "180",
+"q": "The scientific name of garlic is:",
+"serial": "1255",
+"src_row": 1247,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1255"
+},
+{
+"expl": "Colocasia (Taro) is classified under the family *Araceae* as per the botanical classification.",
+"key": 2,
+"o": [
+"Amaryllidaceae",
+"Graminae",
+"Araceae",
+"Liliaceae",
+"None of these"
+],
+"page": "180",
+"q": "Which family does Colocasia (Taro) belong to?",
+"serial": "1256",
+"src_row": 1248,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1256"
+},
+{
+"expl": "Lettuce is the only vegetable listed under the 'Capitulum' type of inflorescence.",
+"key": 1,
+"o": [
+"Moringa",
+"Lettuce",
+"Coriander",
+"Sweet Potato",
+"None of these"
+],
+"page": "180",
+"q": "Which vegetable is classified under the 'Capitulum' type of inflorescence?",
+"serial": "1257",
+"src_row": 1249,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1257"
+},
+{
+"expl": "Yam (*Dioscorea alata*) is classified under Dicotyledoneae, while the others are monocotyledons.",
+"key": 2,
+"o": [
+"Sweet corn",
+"Asparagus",
+"Yam",
+"Onion",
+"None of these"
+],
+"page": "180",
+"q": "Which of the following crops is NOT a monocotyledon?",
+"serial": "1258",
+"src_row": 1250,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1258"
+},
+{
+"expl": "Moringa and Palak are explicitly listed under the 'Panicle' type of inflorescence.",
+"key": 2,
+"o": [
+"Raceme",
+"Cyme",
+"Panicle",
+"Spike",
+"None of these"
+],
+"page": "180",
+"q": "Which inflorescence type includes 'Moringa' and 'Palak'?",
+"serial": "1259",
+"src_row": 1251,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1259"
+},
+{
+"expl": "Lesser Yam is classified under the genus *Dioscorea* as per the botanical classification.",
+"key": 1,
+"o": [
+"Allium",
+"Dioscorea",
+"Colocasia",
+"Zea",
+"None of these"
+],
+"page": "180",
+"q": "The crop 'Lesser Yam' belongs to which genus?",
+"serial": "1260",
+"src_row": 1252,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "180:1260"
+},
+{
+"expl": "New Zealand spinach is explicitly listed under the family Aizoaceae in the source.",
+"key": 1,
+"o": [
+"Amaranthaceae",
+"Aizoaceae",
+"Chenopodiaceae",
+"Brassicaceae",
+"None of these"
+],
+"page": "181",
+"q": "Which family does New Zealand spinach (Tetragonia expansa) belong to?",
+"serial": "1261",
+"src_row": 1253,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1261"
+},
+{
+"expl": "Palak is identified as Beta vulgaris var. bengalensis in the source.",
+"key": 1,
+"o": [
+"Spinacia oleracea",
+"Beta vulgaris var. bengalensis",
+"Beta vulgaris",
+"Chenopodium album",
+"None of these"
+],
+"page": "181",
+"q": "The botanical name of Palak is:",
+"serial": "1262",
+"src_row": 1254,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1262"
+},
+{
+"expl": "Turnip is listed as B. campestris var. rapa, not a variety of Brassica oleracea, while cabbage, cauliflower, and Brussels sprout are varieties of Brassica oleracea.",
+"key": 2,
+"o": [
+"Cabbage",
+"Cauliflower",
+"Turnip",
+"Brussels sprout",
+"None of these"
+],
+"page": "181",
+"q": "Which of the following is NOT a variety of Brassica oleracea?",
+"serial": "1263",
+"src_row": 1255,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1263"
+},
+{
+"expl": "Bitter gourd is listed under the family Cucurbitaceae in the source.",
+"key": 0,
+"o": [
+"Cucurbitaceae",
+"Solanaceae",
+"Brassicaceae",
+"Asteraceae",
+"None of these"
+],
+"page": "181",
+"q": "Bitter gourd (Momordica charantia) belongs to which plant family?",
+"serial": "1264",
+"src_row": 1256,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1264"
+},
+{
+"expl": "Tapioca/cassava (Manihot esculenta) is explicitly listed under Euphorbiaceae in the source.",
+"key": 0,
+"o": [
+"Tapioca/cassava",
+"Sweet potato",
+"Jerusalem artichoke",
+"Lettuce",
+"None of these"
+],
+"page": "181",
+"q": "Which of these is a member of the family Euphorbiaceae?",
+"serial": "1265",
+"src_row": 1257,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1265"
+},
+{
+"expl": "Chinese cabbage is listed as B. campestris var. pekinensis in the source.",
+"key": 0,
+"o": [
+"B. campestris var. pekinensis",
+"B. juncea",
+"Raphanus sativus",
+"Brassica oleracea var. capitata",
+"None of these"
+],
+"page": "181",
+"q": "The botanical name of Chinese cabbage is:",
+"serial": "1266",
+"src_row": 1258,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1266"
+},
+{
+"expl": "Jerusalem artichoke (Helianthus tuberosus) belongs to Asteraceae, while pumpkin, cucumber, and bottle gourd are listed under Cucurbitaceae.",
+"key": 2,
+"o": [
+"Pumpkin",
+"Cucumber",
+"Jerusalem artichoke",
+"Bottle gourd",
+"None of these"
+],
+"page": "181",
+"q": "Which of the following is NOT a member of the Cucurbitaceae family?",
+"serial": "1267",
+"src_row": 1259,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "181:1267"
+}
+],
+"row_from": 1239,
+"row_to": 1260,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1239,
+"seeded_from": "2026-11-12"
+},
 "qidx": 0,
+"seeded_from": "2026-11-12",
+"skips": [],
 "step": 0
 },
 "malwa": {
