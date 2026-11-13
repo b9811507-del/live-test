@@ -274208,10 +274208,14 @@
 "8567101693": 1
 }
 },
+"answered_total": 595,
 "cd": 1,
 "expl_in_poll": 30,
 "last_off": 210677044,
+"lb_parts": 1,
 "lb_parts_sent": 1,
+"lb_rows": 38,
+"lb_sent": true,
 "lock_ts": 1794574020.282836,
 "locked_by": "43425252046",
 "msg_ann": 35673,
@@ -274839,6 +274843,7 @@
 "src": "mix:malwa_vol1,malwa_vol2,malwa_horti,iari,nemraj,rksharma",
 "trunc": 0
 },
+"players": 38,
 "poll_ids": {
 "0": "6321289774845920853",
 "1": "6321289774845920854",
@@ -274877,7 +274882,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-11-13T18:00:25+05:30",
-"step": 3
+"step": 4
 }
 }
 },
