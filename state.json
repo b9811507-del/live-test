@@ -274212,6 +274212,8 @@
 "cd": 1,
 "congrats_sent": 35707,
 "cta_sent": "off",
+"done_at": "2026-11-13T18:17:46+05:30",
+"elapsed_s": 1195,
 "expl_in_poll": 30,
 "file_msg": 35708,
 "file_sent": "AGRI_MIX_p61-1060_30Q_2026-11-13.html",
@@ -274221,8 +274223,18 @@
 "lb_rows": 38,
 "lb_sent": true,
 "lock_ts": 1794574020.282836,
-"locked_by": "43425252046",
+"locked_by": "",
 "msg_ann": 35673,
+"msg_order": [
+"announce pinned",
+"timer 15s countdown",
+"quiz-polls 25s 0.5s gap",
+"leaderboard",
+"top3",
+"file",
+"tomorrow-plan",
+"paid batches LAST"
+],
 "msg_timer": 35675,
 "names": {
 "1019931097": "Ak88040",
@@ -274264,6 +274276,8 @@
 "905783811": "\ud835\udc11\ud835\udc28\ud835\udc2c\ud835\udc21\ud835\udc1a\ud835\udc27\u00b3",
 "932303620": "Vulli shruthi"
 },
+"paid_msg": 35710,
+"partial": false,
 "pinned_ann": true,
 "plan": {
 "built_at": "2026-11-13T17:57:47+05:30",
@@ -274886,7 +274900,7 @@
 "skips": [],
 "start_saved": true,
 "started_at": "2026-11-13T18:00:25+05:30",
-"step": 4,
+"step": 8,
 "tmr_note": 35709,
 "tmr_note_text": "\ud83d\uddd3 <b>Tomorrow's plan</b>\n\n\u2600\ufe0f 11:00 AM \u00b7 <b>MALWA BOOK VOL 1</b> \u2014 book pages 343-348\n\ud83c\udf24 2:30 PM \u00b7 <b>IARI BOOK MCQ 2026</b> \u2014 book pages 182, 183, 184\n\ud83c\udf06 6:00 PM \u00b7 <b>AGRI MIX TEST</b> \u2014 30 mixed questions (topic-wise, all subjects)"
 }
