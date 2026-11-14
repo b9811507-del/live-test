@@ -274927,9 +274927,11 @@
 "announced_at": "2026-11-14T11:00:00+05:30",
 "ans": {},
 "bidx": 1159,
-"lock_ts": 1794634182.949059,
+"cd": 1,
+"lock_ts": 1794634224.8196425,
 "locked_by": "43561621769",
 "msg_ann": 35714,
+"msg_timer": 35716,
 "names": {},
 "pinned_ann": true,
 "plan": {
@@ -275323,8 +275325,10 @@
 },
 "qidx": 0,
 "seeded_from": "2026-11-13",
+"sent_i": 0,
 "skips": [],
-"step": 1,
+"started_at": "2026-11-14T11:00:23+05:30",
+"step": 2,
 "vol": 0
 },
 "mix": {
