@@ -274925,9 +274925,402 @@
 },
 "malwa": {
 "ans": {},
+"bidx": 1159,
 "names": {},
+"plan": {
+"batch": 8,
+"bidx_next": 1159,
+"built_at": "2026-11-14T10:57:56+05:30",
+"kind": "sheet",
+"label": "MALWA BOOK VOL 1",
+"n": 20,
+"pages": "Book pages 343-348",
+"pages_blocks": [
+"343-344",
+"345-346",
+"347-348"
+],
+"questions": [
+{
+"expl": "Gir is the top indigenous milk producer with 2000\u20112500 L/lactation and is also regarded as a superior beef breed.",
+"key": 0,
+"o": [
+"Gir",
+"Red Sindhi",
+"Rathi",
+"Deoni",
+"None of these"
+],
+"page": "343-344",
+"q": "Which indigenous Indian cattle breed is the highest milk producer (2000-2500 L/lactation) and is also known as a best beef breed?",
+"serial": "1731",
+"src_row": 1139,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "343-344:1731"
+},
+{
+"expl": "Rathi is noted for having the highest fat percentage in milk among indigenous breeds.",
+"key": 1,
+"o": [
+"Gir",
+"Rathi",
+"Red Sindhi",
+"Deoni",
+"None of these"
+],
+"page": "343-344",
+"q": "Among deshi breeds, which one has the highest fat content in its milk?",
+"serial": "1732",
+"src_row": 1140,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "343-344:1732"
+},
+{
+"expl": "Kankrej cattle exhibit the \"Swai Chaal\" gait, where the back leg reaches farther than the front leg.",
+"key": 2,
+"o": [
+"Tharparkar",
+"Nagori",
+"Kankrej",
+"Mewati",
+"None of these"
+],
+"page": "343-344",
+"q": "Which breed is famous for its peculiar gait called \"Swai Chaal\" that speeds up ploughing?",
+"serial": "1733",
+"src_row": 1141,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "343-344:1733"
+},
+{
+"expl": "Jersey cows have the longest lactation length among cattle breeds, lasting 365 days.",
+"key": 2,
+"o": [
+"Holstein Friesian",
+"Ayrshire",
+"Jersey",
+"Gir",
+"None of these"
+],
+"page": "343-344",
+"q": "Which exotic cattle breed has the longest lactation period of 365 days?",
+"serial": "1734",
+"src_row": 1142,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "343-344:1734"
+},
+{
+"expl": "Vechur is a small, dwarf breed commonly called the miniature cow.",
+"key": 2,
+"o": [
+"Ongole",
+"Nagori",
+"Vechur",
+"Dangi",
+"None of these"
+],
+"page": "343-344",
+"q": "Which breed is known as a dwarf or miniature cow?",
+"serial": "1735",
+"src_row": 1143,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "343-344:1735"
+},
+{
+"expl": "Nagori is recognized as the premier draught breed in Rajasthan, suitable for heavy farm work.",
+"key": 2,
+"o": [
+"Amritmahal",
+"Hallikar",
+"Nagori",
+"Malvi",
+"None of these"
+],
+"page": "343-344",
+"q": "Which breed is considered the best draught breed of Rajasthan?",
+"serial": "1736",
+"src_row": 1144,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "343-344:1736"
+},
+{
+"expl": "The source states Brown Swiss has the highest milk lactose among exotic breeds (5 %).",
+"key": 0,
+"o": [
+"Brown Swiss",
+"Red Dane",
+"Karan Swiss",
+"Karan Fries",
+"None of these"
+],
+"page": "345-346",
+"q": "Which exotic cattle breed has the highest milk lactose content?",
+"serial": "1741",
+"src_row": 1145,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1741"
+},
+{
+"expl": "Frieswal is noted as the highest milk\u2011producing cross breed (14 l/day or 4000 l/lactation).",
+"key": 2,
+"o": [
+"Karan Swiss",
+"Karan Fries",
+"Frieswal",
+"Jersindh",
+"None of these"
+],
+"page": "345-346",
+"q": "Which cross\u2011breed cattle is reported to have the highest milk production?",
+"serial": "1742",
+"src_row": 1146,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1742"
+},
+{
+"expl": "The text lists Taylor (Patna) as the first cross\u2011breed cattle developed in India.",
+"key": 0,
+"o": [
+"Taylor (Patna)",
+"Karan Swiss",
+"Frieswal",
+"Jersindh",
+"None of these"
+],
+"page": "345-346",
+"q": "What was the first cross\u2011breed cattle developed in India?",
+"serial": "1743",
+"src_row": 1147,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1743"
+},
+{
+"expl": "Swamp buffalo (Bubalus carabanesis) is reported to have 48 chromosomes.",
+"key": 0,
+"o": [
+"Swamp buffalo",
+"Water buffalo",
+"Wild buffalo",
+"All of the above",
+"None of these"
+],
+"page": "345-346",
+"q": "Which buffalo species has 48 chromosomes?",
+"serial": "1744",
+"src_row": 1148,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1744"
+},
+{
+"expl": "The source indicates that the highest percentage of buffaloes show heat in May\u2013July.",
+"key": 1,
+"o": [
+"March\u2013May",
+"May\u2013July",
+"August\u2013October",
+"November\u2013January",
+"None of these"
+],
+"page": "345-346",
+"q": "During which months do most buffaloes show heat?",
+"serial": "1745",
+"src_row": 1149,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1745"
+},
+{
+"expl": "The average period of lactation in buffalo is given as 281 days.",
+"key": 1,
+"o": [
+"250 days",
+"281 days",
+"300 days",
+"350 days",
+"None of these"
+],
+"page": "345-346",
+"q": "What is the average lactation period of a buffalo?",
+"serial": "1746",
+"src_row": 1150,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1746"
+},
+{
+"expl": "The text states that the mechanism of heat tolerance is found in buffalo.",
+"key": 1,
+"o": [
+"Cattle",
+"Buffalo",
+"Goat",
+"Sheep",
+"None of these"
+],
+"page": "345-346",
+"q": "Which animal is known to possess a mechanism of heat tolerance?",
+"serial": "1747",
+"src_row": 1151,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1747"
+},
+{
+"expl": "Wallowing, the behavior of rolling in water or mud, is described as being found only in buffalo.",
+"key": 1,
+"o": [
+"Cattle",
+"Buffalo",
+"Goat",
+"Sheep",
+"None of these"
+],
+"page": "345-346",
+"q": "Which animal rolls in water or mud to cool itself?",
+"serial": "1748",
+"src_row": 1152,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "345-346:1748"
+},
+{
+"expl": "Bhadawari buffalo milk has the highest fat percentage (13\u201114%).",
+"key": 1,
+"o": [
+"Nili\u2011Ravi",
+"Bhadawari",
+"Mehsana",
+"Jafarabadi",
+"None of these"
+],
+"page": "347-348",
+"q": "Which buffalo breed is renowned for having the highest fat content (13\u201114%) in its milk?",
+"serial": "1751",
+"src_row": 1153,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "347-348:1751"
+},
+{
+"expl": "Jamunapari goats are mostly white and are the top milk\u2011producing breed in India.",
+"key": 1,
+"o": [
+"Black coat",
+"White colour and high milk yield",
+"Large body size",
+"Short horns",
+"None of these"
+],
+"page": "347-348",
+"q": "Jamunapari is considered the highest milk producing goat breed in India. Which characteristic is most associated with this breed?",
+"serial": "1752",
+"src_row": 1154,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "347-348:1752"
+},
+{
+"expl": "Mehsana is the only buffalo breed that has a black switch tail.",
+"key": 0,
+"o": [
+"Mehsana",
+"Surati",
+"Nili\u2011Ravi",
+"Bhadawari",
+"None of these"
+],
+"page": "347-348",
+"q": "Which buffalo breed is identified by a black switch tail?",
+"serial": "1753",
+"src_row": 1155,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "347-348:1753"
+},
+{
+"expl": "Goats are known as the enemy of vegetation and the walking refrigerator.",
+"key": 2,
+"o": [
+"Cow",
+"Buffalo",
+"Goat",
+"Sheep",
+"None of these"
+],
+"page": "347-348",
+"q": "Which animal is popularly referred to as the \"Enemy of vegetation\" and the \"Walking refrigerator\"?",
+"serial": "1754",
+"src_row": 1156,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "347-348:1754"
+},
+{
+"expl": "Jafarabadi buffalo has drooping horns and is ideal for agriculture.",
+"key": 0,
+"o": [
+"Jafarabadi",
+"Bhadawari",
+"Mehsana",
+"Surati",
+"None of these"
+],
+"page": "347-348",
+"q": "Which buffalo breed, with drooping horns, is best suited for agricultural operations?",
+"serial": "1755",
+"src_row": 1157,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "347-348:1755"
+},
+{
+"expl": "Black Bengal goats are meat\u2011purpose breeds with a black coat.",
+"key": 0,
+"o": [
+"Black Bengal",
+"Sirohi",
+"Jamunapari",
+"Gaddi",
+"None of these"
+],
+"page": "347-348",
+"q": "Which goat breed is classified under the \"Meat purpose\" category and is known for its black coat?",
+"serial": "1756",
+"src_row": 1158,
+"topic": "Animal Husbandry and Dairy Science",
+"trunc": 0,
+"uid": "347-348:1756"
+}
+],
+"rolled": false,
+"row_from": 1139,
+"row_to": 1159,
+"skip_rows": [],
+"src": "malwa_vol1",
+"trunc": 0,
+"vol": 0,
+"vol_index": 0
+},
+"plan_seed": {
+"bidx": 1139,
+"seeded_from": "2026-11-13",
+"vol": 0
+},
 "qidx": 0,
-"step": 0
+"seeded_from": "2026-11-13",
+"skips": [],
+"step": 0,
+"vol": 0
 },
 "mix": {
 "ans": {},
