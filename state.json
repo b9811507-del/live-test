@@ -274919,8 +274919,413 @@
 },
 "iari": {
 "ans": {},
+"bidx": 1281,
 "names": {},
+"plan": {
+"bidx_next": 1281,
+"built_at": "2026-11-14T14:27:45+05:30",
+"kind": "sheet",
+"label": "IARI BOOK MCQ 2026",
+"n": 21,
+"pages": "Pages 182-184",
+"pages_list": [
+182,
+183,
+184
+],
+"questions": [
+{
+"expl": "The scientific name of Cluster bean is explicitly listed as Cyamopsis tetragonoloba in the source.",
+"key": 0,
+"o": [
+"Cyamopsis tetragonoloba",
+"Dolichos lablab",
+"Phaseolus lunatus",
+"Psophocarpus tetragonolobus",
+"None of these"
+],
+"page": "182",
+"q": "Which of the following is the scientific name of Cluster bean?",
+"serial": "1268",
+"src_row": 1260,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1268"
+},
+{
+"expl": "Tomato (Solanum lycopersicum) is listed under Solanaceae, while Bhendi, Carrot, and Coriander belong to Malvaceae, Umbelliferae, and Umbelliferae respectively.",
+"key": 1,
+"o": [
+"Bhendi",
+"Tomato",
+"Carrot",
+"Coriander",
+"None of these"
+],
+"page": "182",
+"q": "The family 'Solanaceae' includes which of the following crops?",
+"serial": "1269",
+"src_row": 1261,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1269"
+},
+{
+"expl": "Carrot is listed under the Winter Season crops, while Okra, Tomato, and Cluster bean are categorized under Rainy or Summer seasons.",
+"key": 2,
+"o": [
+"Okra (Bhendi)",
+"Tomato",
+"Carrot",
+"Cluster bean",
+"None of these"
+],
+"page": "182",
+"q": "Which crop is classified under the 'Winter Season' of cultivation?",
+"serial": "1270",
+"src_row": 1262,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1270"
+},
+{
+"expl": "The scientific name of Methi/Fenugreek is given as Trigonella foenum graecum in the source.",
+"key": 0,
+"o": [
+"Trigonella foenum graecum",
+"Canavalia gladiate",
+"Vigna sinensis",
+"Psophocarpus tetragonolobus",
+"None of these"
+],
+"page": "182",
+"q": "What is the scientific name of Fenugreek (Methi)?",
+"serial": "1271",
+"src_row": 1263,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1271"
+},
+{
+"expl": "Bhendi (Abelmoschus esculentus) belongs to Malvaceae, while Cowpea, Hyacinth bean, and Winged bean are listed under Fabaceae.",
+"key": 3,
+"o": [
+"Cowpea",
+"Hyacinth bean",
+"Winged bean",
+"Bhendi",
+"None of these"
+],
+"page": "182",
+"q": "Which of the following is NOT a member of the family 'Fabaceae' (Leguminosae)?",
+"serial": "1272",
+"src_row": 1264,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1272"
+},
+{
+"expl": "Ridge gourd and Sponge gourd are listed under the category where 'Meso & Pericarp' is the edible portion.",
+"key": 2,
+"o": [
+"Placenta",
+"Endocarp",
+"Meso & Pericarp",
+"Seed",
+"None of these"
+],
+"page": "182",
+"q": "In the classification based on edible portion, which part is edible in Ridge gourd and Sponge gourd?",
+"serial": "1273",
+"src_row": 1265,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1273"
+},
+{
+"expl": "Okra (Bhendi) is explicitly listed under Rainy Season crops, while Peas, Carrot, and Onion are categorized under Winter or Mild Winter seasons.",
+"key": 2,
+"o": [
+"Peas",
+"Carrot",
+"Okra (Bhendi)",
+"Onion",
+"None of these"
+],
+"page": "182",
+"q": "Which of the following crops is classified under the 'Rainy Season' of cultivation?",
+"serial": "1274",
+"src_row": 1266,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "182:1274"
+},
+{
+"expl": "Carrot is listed under 'Underground' in the classification based on the part used, as it is a root vegetable.",
+"key": 1,
+"o": [
+"Cabbage",
+"Carrot",
+"Tomato",
+"Brinjal",
+"None of these"
+],
+"page": "183",
+"q": "Which of the following vegetables is classified under 'Underground' based on the part used?",
+"serial": "1275",
+"src_row": 1267,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1275"
+},
+{
+"expl": "Tomato is explicitly listed as a climacteric fruit in the classification based on the climacteric pattern.",
+"key": 2,
+"o": [
+"Pumpkin",
+"Cucumber",
+"Tomato",
+"Chilli",
+"None of these"
+],
+"page": "183",
+"q": "Which vegetable is an example of a 'Climacteric' fruit?",
+"serial": "1276",
+"src_row": 1268,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1276"
+},
+{
+"expl": "Potato is listed under 'Short day Plant' in the photoperiodism classification.",
+"key": 2,
+"o": [
+"Cowpea",
+"Okra",
+"Potato",
+"Cucumber",
+"None of these"
+],
+"page": "183",
+"q": "Which of these is a 'Short day Plant' according to the photoperiodism classification?",
+"serial": "1277",
+"src_row": 1269,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1277"
+},
+{
+"expl": "Asparagus is listed under 'Hardy' in the classification based on hardiness.",
+"key": 2,
+"o": [
+"Amaranth",
+"Okra",
+"Asparagus",
+"Brinjal",
+"None of these"
+],
+"page": "183",
+"q": "Which vegetable is classified as 'Hardy' based on its ability to withstand frost and low temperature?",
+"serial": "1278",
+"src_row": 1270,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1278"
+},
+{
+"expl": "Tomato is climacteric, while the others (Pumpkin, Cucumber, Watermelon) are non-climacteric as per the source.",
+"key": 2,
+"o": [
+"Pumpkin",
+"Cucumber",
+"Tomato",
+"Watermelon",
+"None of these"
+],
+"page": "183",
+"q": "Which of the following is NOT a 'Non-Climacteric' vegetable?",
+"serial": "1279",
+"src_row": 1271,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1279"
+},
+{
+"expl": "Palak (Spinach) is listed under 'Tender Stem & leaves' in the classification based on the part used.",
+"key": 0,
+"o": [
+"Palak",
+"Carrot",
+"Tomato",
+"Potato",
+"None of these"
+],
+"page": "183",
+"q": "Which vegetable is classified under 'Tender Stem & leaves' based on the part used?",
+"serial": "1280",
+"src_row": 1272,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1280"
+},
+{
+"expl": "Cucumber is listed under 'Day neutral plant' in the photoperiodism classification.",
+"key": 1,
+"o": [
+"Tomato",
+"Cucumber",
+"Potato",
+"Onion",
+"None of these"
+],
+"page": "183",
+"q": "Which of these is a 'Day neutral plant' according to the photoperiodism classification?",
+"serial": "1281",
+"src_row": 1273,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "183:1281"
+},
+{
+"expl": "Spinach is listed under 'very perishable' with a storage life of 0-4 weeks in the given classification.",
+"key": 0,
+"o": [
+"Spinach",
+"Sweet Potato",
+"Pumpkin",
+"Onion",
+"None of these"
+],
+"page": "184",
+"q": "Which of the following vegetables is classified as 'very perishable' with a storage life of 0-4 weeks?",
+"serial": "1282",
+"src_row": 1274,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1282"
+},
+{
+"expl": "Cowpea is categorized under 'very deep' root depth (120-180 cm) in the source.",
+"key": 0,
+"o": [
+"Cowpea",
+"Tomato",
+"Muskmelon",
+"Carrot",
+"None of these"
+],
+"page": "184",
+"q": "Which vegetable has the deepest root depth (120-180 cm) according to the provided data?",
+"serial": "1283",
+"src_row": 1275,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1283"
+},
+{
+"expl": "Potato is the only vegetable listed under 'very low' water requirement in the source.",
+"key": 3,
+"o": [
+"Sweet Pepper, Cole Crops, Radish",
+"Tomato, Brinjal, Chilli",
+"Pumpkin, Ash gourd",
+"Potato",
+"None of these"
+],
+"page": "184",
+"q": "Which group of vegetables requires 'very low' water for growth?",
+"serial": "1284",
+"src_row": 1276,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1284"
+},
+{
+"expl": "Sweet Potato is classified under 'less perishable' (12 weeks), not 'perishable' (4-8 weeks).",
+"key": 2,
+"o": [
+"Cauliflower",
+"Tomato",
+"Sweet Potato",
+"Mushroom",
+"None of these"
+],
+"page": "184",
+"q": "Which vegetable is NOT classified under 'perishable' (4-8 weeks) storage life?",
+"serial": "1285",
+"src_row": 1277,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1285"
+},
+{
+"expl": "Onion is listed under 'shallow' root depth (30-60 cm) in the source.",
+"key": 0,
+"o": [
+"Onion",
+"Potato",
+"Brinjal",
+"Carrot",
+"None of these"
+],
+"page": "184",
+"q": "Which vegetable has a 'shallow' root depth (30-60 cm)?",
+"serial": "1286",
+"src_row": 1278,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1286"
+},
+{
+"expl": "Sweet Potato is listed under 'less perishable' (12 weeks) and 'deep' root depth (60-90 cm).",
+"key": 2,
+"o": [
+"Pumpkin",
+"Beetroot",
+"Sweet Potato",
+"Carrot",
+"None of these"
+],
+"page": "184",
+"q": "Which vegetable is classified under both 'less perishable' storage life and 'deep' root depth (60-90 cm)?",
+"serial": "1287",
+"src_row": 1279,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1287"
+},
+{
+"expl": "Watermelon is listed under 'moderate' water requirement in the source.",
+"key": 0,
+"o": [
+"Watermelon",
+"Radish",
+"Ash gourd",
+"Sweet Pepper",
+"None of these"
+],
+"page": "184",
+"q": "Which of the following vegetables is classified under 'moderate' water requirement?",
+"serial": "1288",
+"src_row": 1280,
+"topic": "Horticulture",
+"trunc": 0,
+"uid": "184:1288"
+}
+],
+"row_from": 1260,
+"row_to": 1281,
+"skip_rows": [],
+"src": "iari",
+"trunc": 0
+},
+"plan_seed": {
+"bidx": 1260,
+"seeded_from": "2026-11-13"
+},
 "qidx": 0,
+"seeded_from": "2026-11-13",
+"skips": [],
 "step": 0
 },
 "malwa": {
